@@ -1,0 +1,34 @@
+{
+  "connections": [
+    {
+      "id": "conn-1",
+      "from": "node-4",
+      "to": "node-5",
+      "label": "then"
+    },
+    {
+      "id": "conn-2",
+      "from": "node-5",
+      "to": "node-6",
+      "label": "then"
+    },
+    {
+      "id": "conn-3",
+      "from": "node-6",
+      "to": "node-7",
+      "label": "log"
+    },
+    {
+      "id": "conn-4",
+      "from": "node-9",
+      "to": "node-6",
+      "label": "for more accuracy"
+    },
+    {
+      "id": "conn-5",
+      "from": "node-8",
+      "to": "node-6",
+      "label": "for more speed"
+    }
+  ]
+}

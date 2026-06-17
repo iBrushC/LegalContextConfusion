@@ -1,0 +1,1 @@
+Prepare context, either for rot, confusion, or hallucination

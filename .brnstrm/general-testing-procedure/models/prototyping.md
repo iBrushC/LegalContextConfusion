@@ -1,0 +1,1 @@
+Use DeepSeek V4 Flash because it's cheapest to prototype with

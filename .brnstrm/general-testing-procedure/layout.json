@@ -1,0 +1,112 @@
+{
+  "id": "new-board",
+  "name": "General Testing Procedure",
+  "nodes": [
+    {
+      "id": "node-1",
+      "name": "Source",
+      "slug": "source",
+      "x": -265,
+      "y": -171,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-2",
+      "name": "Models to Test",
+      "slug": "models-to-test",
+      "x": -22,
+      "y": -180,
+      "w": 271,
+      "h": 173
+    },
+    {
+      "id": "node-3",
+      "name": "Prototyping",
+      "slug": "prototyping",
+      "x": 277,
+      "y": -160,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-4",
+      "name": "Init",
+      "slug": "init",
+      "x": -440,
+      "y": 151,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-5",
+      "name": "Prepare Context",
+      "slug": "prepare-context",
+      "x": -136,
+      "y": 150,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-6",
+      "name": "Run + Eval Model",
+      "slug": "run-eval-model",
+      "x": 166,
+      "y": 153,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-7",
+      "name": "Metrics",
+      "slug": "metrics",
+      "x": 473,
+      "y": 141,
+      "w": 240,
+      "h": 163
+    },
+    {
+      "id": "node-8",
+      "name": "Batching",
+      "slug": "batching",
+      "x": 17,
+      "y": 347,
+      "w": 220,
+      "h": 140
+    },
+    {
+      "id": "node-9",
+      "name": "Multirunning",
+      "slug": "multirunning",
+      "x": 299,
+      "y": 357,
+      "w": 220,
+      "h": 140
+    }
+  ],
+  "camera": {
+    "x": 429.0984288403775,
+    "y": 326.012894289909,
+    "scale": 0.5612998636232004
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "x": -299,
+      "y": -242,
+      "w": 851,
+      "h": 281,
+      "label": "Models",
+      "slug": "models"
+    },
+    {
+      "id": "section-2",
+      "x": -479,
+      "y": 110,
+      "w": 1327,
+      "h": 417,
+      "label": "General Testing",
+      "slug": "general-testing"
+    }
+  ]
+}

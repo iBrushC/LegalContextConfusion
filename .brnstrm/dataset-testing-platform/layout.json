@@ -1,0 +1,202 @@
+{
+  "id": "dataset-testing-platform",
+  "name": "Dataset Testing Platform",
+  "nodes": [
+    {
+      "id": "node-1",
+      "name": "CUAD Probe",
+      "slug": "cuad-probe",
+      "x": -230,
+      "y": -180,
+      "w": 491,
+      "h": 291
+    },
+    {
+      "id": "node-2",
+      "name": "MAUD Probe",
+      "slug": "maud-probe",
+      "x": 289,
+      "y": -178,
+      "w": 401,
+      "h": 286
+    },
+    {
+      "id": "node-3",
+      "name": "CUAD Init",
+      "slug": "cuad-init",
+      "x": -52,
+      "y": 291,
+      "w": 454,
+      "h": 312
+    },
+    {
+      "id": "node-4",
+      "name": "MAUD Init",
+      "slug": "maud-init",
+      "x": 430,
+      "y": 301,
+      "w": 473,
+      "h": 293
+    },
+    {
+      "id": "node-5",
+      "name": "Rot Construction",
+      "slug": "rot-construction",
+      "x": 91,
+      "y": 1193,
+      "w": 427,
+      "h": 230
+    },
+    {
+      "id": "node-6",
+      "name": "Confusion Construction",
+      "slug": "confusion-construction",
+      "x": 1040,
+      "y": 1145,
+      "w": 496,
+      "h": 326
+    },
+    {
+      "id": "node-7",
+      "name": "Hallucination Construction",
+      "slug": "hallucination-construction",
+      "x": 554,
+      "y": 1163,
+      "w": 450,
+      "h": 290
+    },
+    {
+      "id": "node-8",
+      "name": "Filler Corpora",
+      "slug": "filler-corpora",
+      "x": 555,
+      "y": 800,
+      "w": 456,
+      "h": 257
+    },
+    {
+      "id": "node-9",
+      "name": "Position & Length Sweep",
+      "slug": "position-length-sweep",
+      "x": 1047,
+      "y": 783,
+      "w": 497,
+      "h": 290
+    },
+    {
+      "id": "node-10",
+      "name": "CUAD Eval",
+      "slug": "cuad-eval",
+      "x": 346,
+      "y": 1651,
+      "w": 470,
+      "h": 272
+    },
+    {
+      "id": "node-11",
+      "name": "MAUD Eval",
+      "slug": "maud-eval",
+      "x": 844,
+      "y": 1673,
+      "w": 446,
+      "h": 229
+    },
+    {
+      "id": "node-12",
+      "name": "Abstention Eval",
+      "slug": "abstention-eval",
+      "x": 378,
+      "y": 1956,
+      "w": 407,
+      "h": 224
+    },
+    {
+      "id": "node-13",
+      "name": "Wrong-Document Eval",
+      "slug": "wrong-document-eval",
+      "x": 851,
+      "y": 1951,
+      "w": 432,
+      "h": 234
+    },
+    {
+      "id": "node-14",
+      "name": "Degradation Curves",
+      "slug": "degradation-curves",
+      "x": 614,
+      "y": 2365,
+      "w": 408,
+      "h": 224
+    },
+    {
+      "id": "node-15",
+      "name": "Reuse Base Procedure",
+      "slug": "reuse-base-procedure",
+      "x": 790,
+      "y": -163,
+      "w": 448,
+      "h": 258
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-1",
+      "x": -262,
+      "y": -256,
+      "w": 984,
+      "h": 399,
+      "label": "Datasets",
+      "slug": "datasets"
+    },
+    {
+      "id": "section-2",
+      "x": -84,
+      "y": 215,
+      "w": 1019,
+      "h": 420,
+      "label": "Init — Sampling",
+      "slug": "init-sampling"
+    },
+    {
+      "id": "section-3",
+      "x": 59,
+      "y": 707,
+      "w": 1517,
+      "h": 796,
+      "label": "Prepare Context",
+      "slug": "prepare-context"
+    },
+    {
+      "id": "section-4",
+      "x": 314,
+      "y": 1575,
+      "w": 1008,
+      "h": 642,
+      "label": "Run + Eval",
+      "slug": "run-eval"
+    },
+    {
+      "id": "section-5",
+      "x": 582,
+      "y": 2289,
+      "w": 472,
+      "h": 332,
+      "label": "Metrics",
+      "slug": "metrics"
+    },
+    {
+      "id": "section-6",
+      "x": 758,
+      "y": -239,
+      "w": 512,
+      "h": 366,
+      "label": "Models & Runtime",
+      "slug": "models-runtime"
+    }
+  ],
+  "camera": {
+    "x": 255.62866206782917,
+    "y": 145.01622105580185,
+    "scale": 0.39727556333609754
+  }
+}
