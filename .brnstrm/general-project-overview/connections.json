@@ -1,0 +1,49 @@
+{
+  "connections": [
+    {
+      "id": "conn-1",
+      "from": "node-2",
+      "to": "node-3",
+      "label": "type 1"
+    },
+    {
+      "id": "conn-2",
+      "from": "node-2",
+      "to": "node-4",
+      "label": "type 2"
+    },
+    {
+      "id": "conn-3",
+      "from": "node-5",
+      "to": "node-6",
+      "label": "type 1"
+    },
+    {
+      "id": "conn-4",
+      "from": "node-5",
+      "to": "node-7",
+      "label": "type 2"
+    },
+    {
+      "id": "conn-5",
+      "from": "section-4",
+      "to": "section-1",
+      "label": "branch 1",
+      "kind": "section"
+    },
+    {
+      "id": "conn-6",
+      "from": "section-4",
+      "to": "section-2",
+      "label": "branch 2",
+      "kind": "section"
+    },
+    {
+      "id": "conn-7",
+      "from": "section-4",
+      "to": "section-3",
+      "label": "branch 3",
+      "kind": "section"
+    }
+  ]
+}

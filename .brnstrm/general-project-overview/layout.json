@@ -1,0 +1,121 @@
+{
+  "id": "untitled-board",
+  "name": "General Project Overview",
+  "nodes": [
+    {
+      "id": "node-1",
+      "name": "Project Overview",
+      "slug": "project-overview",
+      "x": 760,
+      "y": -887,
+      "w": 594,
+      "h": 257
+    },
+    {
+      "id": "node-2",
+      "name": "General Rot",
+      "slug": "general-rot",
+      "x": 221,
+      "y": -438,
+      "w": 265,
+      "h": 225
+    },
+    {
+      "id": "node-3",
+      "name": "Head Rot",
+      "slug": "head-rot",
+      "x": -79,
+      "y": -141,
+      "w": 414,
+      "h": 126
+    },
+    {
+      "id": "node-4",
+      "name": "Tail Rot",
+      "slug": "tail-rot",
+      "x": 371,
+      "y": -141,
+      "w": 414,
+      "h": 126
+    },
+    {
+      "id": "node-5",
+      "name": "General Confusion",
+      "slug": "general-confusion",
+      "x": 1011,
+      "y": -450,
+      "w": 265,
+      "h": 225
+    },
+    {
+      "id": "node-6",
+      "name": "Related Legal",
+      "slug": "related-legal",
+      "x": 885,
+      "y": -153,
+      "w": 240,
+      "h": 149
+    },
+    {
+      "id": "node-7",
+      "name": "Legal Adjacent",
+      "slug": "legal-adjacent",
+      "x": 1161,
+      "y": -153,
+      "w": 240,
+      "h": 149
+    },
+    {
+      "id": "node-8",
+      "name": "General Hallucination",
+      "slug": "general-hallucination",
+      "x": 1501,
+      "y": -318,
+      "w": 348,
+      "h": 182
+    }
+  ],
+  "camera": {
+    "x": 146.43621351471944,
+    "y": 599.9287763769928,
+    "scale": 0.45253142079773623
+  },
+  "sections": [
+    {
+      "id": "section-1",
+      "x": -111,
+      "y": -514,
+      "w": 928,
+      "h": 531,
+      "label": "Context Rot",
+      "slug": "context-rot"
+    },
+    {
+      "id": "section-2",
+      "x": 853,
+      "y": -526,
+      "w": 580,
+      "h": 554,
+      "label": "Context Confusion",
+      "slug": "context-confusion"
+    },
+    {
+      "id": "section-3",
+      "x": 1469,
+      "y": -394,
+      "w": 412,
+      "h": 290,
+      "label": "Hallucination",
+      "slug": "hallucination"
+    },
+    {
+      "id": "section-4",
+      "x": 728,
+      "y": -963,
+      "w": 658,
+      "h": 365,
+      "label": "Overview",
+      "slug": "overview"
+    }
+  ]
+}
