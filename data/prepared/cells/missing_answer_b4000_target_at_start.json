@@ -1,0 +1,381 @@
+{
+  "cell_id": "missing_answer_b4000_target_at_start",
+  "modality": "missing_answer",
+  "focus": "abstention",
+  "budget_tokens": 4000,
+  "position": "target_at_start",
+  "actual_tokens": 4000,
+  "actual_chars": 16000,
+  "target_document_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+  "distractor_ids": [
+    "IntegrityMediaInc_20010329_10-K405_EX-10.17_2373875_EX-10.17_Co-Branding Agreement"
+  ],
+  "target_offset": 93,
+  "target_end": 1800,
+  "target_fits": true,
+  "filler_source": "cuad-other-contracts",
+  "filler_repeated": false,
+  "context": "<document id=\"CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3\">\nSCHEDULE TO Software License, Customization and Maintenance Agreement    Supplier Name:  Cardlytics, Inc.  Agreement Number:  CW251207\n\nSupplier Address:\n\n\n\n621 North Avenue NE Suite C-30 Atlanta, GA 30308\n\nAddendum Number:\n\n\n\nCW255039\n\nSupplier Telephone:  888.798.5802  Addendum Effective Date  March 3, 2011\n\nThis Schedule (\"Schedule\") is made as of the effective date set forth above to that Software License, Customization, and Maintenance Agreement, by and between Cardlytics, Inc. (\"Supplier\") and Bank of America, N. A, (\"Bank of America\"), dated November 5, 2010, as amended (\"SLCMA\"). Each capitalized term used but not defined herein shall have the meaning assigned in the SLCMA.\n\nWHEREAS, Bank of America and Supplier entered into the SLCMA in order to set forth the terms and conditions pursuant to which Supplier provides certain Software to Bank of America,\n\nWHEREAS, the parties desire to add to the SLCMA the Supplier Offer Placement System Software;\n\nNOW THEREFORE, in consideration of the promises and accords made herein, and the exchange of such good and valuable consideration, the receipt and sufficiency of which is hereby acknowledged, Bank of America and Supplier agree as follows:\n\nThe attached Schedule [A] is hereby incorporated into the SLCMA describing the Offer Placement System Software for use by Bank of America.\n\nTHE FOREGOING IS UNDERSTOOD AND AGREED TO BY:   Cardlytics, Inc. (\"Supplier\")   Bank of America, N.A. (\"Bank of America\")\n\nBy:  /s/ Scott Grimes  By:  /s/ Chandra Torrence\n\nName: Scott Grimes  Name: Chandra Torrence\n\nTitle:  Chief Executive Officer  Title:  V.P., Sourcing Manager\n\nDate:  3/4/11  Date:  3/3/11    1.\n\nSource: CARDLYTICS, INC., S-1, 1/12/2018\n</document>\n\n<document id=\"IntegrityMediaInc_20010329_10-K405_EX-10.17_2373875_EX-10.17_Co-Branding Agreement\">\n1                                                                    EXHIBIT 10.17\n\n               PRODUCT DEVELOPMENT AND CO-BRANDING AGREEMENT\n\n                         \"SONGS 4 WORSHIP SERIES\"\n\n                      EXCLUDING CONFIDENTIAL PORTIONS\n\n/1/ Indicates information which has been redacted pursuant to a request for     confidential treatment.\n\n2\n\n                    INDEX TO THE CONFIDENTIAL PORTIONS\n\n      PAGE                      SECTION                     LINE(S)          ----                      -------                     -------                                                             1                          1(c)                    3, 4, and 5           3                          3(a)              4, 5, 10, 11, 12 and 13           4                          4(c)                     2, 4 and 5           4                          4(d)                   2, 3, 4 and 5           5                           5                           2\n\n3\n\n               PRODUCT DEVELOPMENT AND CO-BRANDING AGREEMENT                             \"SONGS 4 WORSHIP SERIES\"\n\n      This Agreement, entered into this the 10th day of January 2000, by and between INTEGRITY INCORPORATED, a Delaware corporation with principal offices at 1000 Cody Road, Mobile, Alabama (\"Integrity\") and TIME LIFE, INC., a Delaware corporation d/b/a Time Life Music, with principal offices located at 2000 Duke Street, Alexandria, Virginia 22314 (\"TL\"). The parties wish to produce a series of recorded compilations and companion song books featuring praise and worship repertoires, which will be co-branded and co-marketed throughout the world. Now, therefore, the parties agree as follows:\n\n1.       Product Concept and Creation.\n\n      a.       Product description. The product to be created under the                   series trade name \"Songs 4 Worship\" will be a praise and                   worship continuity series, with each volume in the series                   containing approximately 22 songs. Each volume will be                   manufactured in Double CD, Double Cassette, and song book                   formats, with standard double jewel boxes, inlays, booklets                   and j-cards (the \"Product\"). TL and Integrity will jointly                   develop the repertoire, and all repertoire selections are                   subject to master, mechanical and print rights clearance in                   accordance with the financial terms established below. The                   exact songbook format, song selection and number of songbook                   volumes has not yet been determined, and TL has no obligation                   to sell any songbooks produced pursuant to this Agreement.\n\n      b.       Branding. The Product will prominently display the \"Songs 4                   Worship\" logo and trademark (or other logo as mutually                   approved) and will also bear the labels of \"Time Life Music\"                   and \"Integrity Music\" in equal proportion on the exterior of                   Product packaging. The \"Integrity Music\" and \"Time Life Music\"                   logos will be used on advertising whenever possible, and it is                   understood that neither logo will be used without the other                   with reference to the Product.\n\n      c.       Integrity's responsibilities. Integrity will obtain master                   lease and print agreements with all third party owners of                   masters embodied in the Product at its own expense. Mechanical                   rates will not exceed [**]/1/ percent ([**]/1/%) of the                   then-current statutory rate, and Print licenses will not                   exceed a prorated portion of [**]/1/ percent ([**]/1/%) of the                   retail selling price, Integrity will also manufacture the                   Product and sell to TL its requirements for resale.\n\n--------------- /1/ Indicates information which has been redacted pursuant to a request for     confidential treatment.\n\n4\n\nSource: INTEGRITY MEDIA INC, 10-K405, 3/29/2001\n\n\n\n\n\n      d.       TL's responsibilities. At its sole expense, TL will create all                   artwork for Product covers and packaging, and furnish                   Integrity with the same for manufacturing of the Products. All                   such artwork will be subject to Integrity's reasonable                   approval. (Integrity agrees to respond to any request for                   approval within five (5) business days after Integrity's                   receipt of request and samples.) In addition, TL will pay all                   mastering expense required in preparation for manufacturing.\n\n      e.       Shared expenses. The parties agree to share equally in costs                   of additional products created (excluding the Product, and                   song books, which such song books shall be created at                   Integrity's sole discretion and expense), by mutual agreement                   under the \"Songs 4 Worship\" branding.\n\n2.       Marketing and Distribution.\n\n      a.       Time Life Distribution. TL will hold exclusive worldwide                   rights to promote and sell the product through the following                   distribution channels: Outgoing telemarketing, General Market                   retail, and General Market catalogs, and exclusive rights                   within the United States for Television Direct response. TL                   will have Internet and e-commerce rights with respect to its                   own web site and other General Market e-commerce. In addition,                   TL may cross-sell the products to its internal list by inserts                   placed in mailings for other TL products and services (but                   excluding direct mail campaigns for the Product.) TL may                   obtain television and/or direct response rights in certain                   international territories upon Integrity's agreement.\n\n      b.       Integrity Distribution. Integrity will hold exclusive                   worldwide rights to promote and sell the product to/through                   the following distribution channels: Christian retail (CBA or                   Christian Booksellers Association markets), direct mail                   (including continuity sales, church sales, digital and                   e-commerce sales.) Integrity will have Internet and e-commerce                   rights with respect to its own web site and other Christian                   e-commerce. Integrity shall have the right to license                   distribution of the Product through all channels of                   distribution throughout the remainder of the world.\n\n      c.       Selling Price. The parties agree that the initial suggested                   retail selling price for the products will be $19.95 for CD's,                   $17.95 for Cassettes, and $19.95 for song books. Any change in                   the suggested retail selling price will be mutually agreed by                   the parties. The parties acknowledge that they cannot control                   the prices set by independent retailers and resellers, but                   agree that sales by the parties hereto via e-commerce will be                   the same, and such will be mutually agreed.\n\n                                    2\n\n5\n\n      d.       Mailing Lists. The parties hereby agree that they will                   mutually share mailing list data of purchasers of the products                   created hereunder in exchange for names of equal value, (i.e.,                   an expired name for an expired name, active buyer for active                   buyer.) TL specifically agrees to supply Integrity with data                   on former subscribers to its \"Songs 4 Life\" series, who have                   subsequently canceled for the express purpose of soliciting                   Product continuity subscriptions.\n\n      e.       Retail release. The, parties will mutually agree upon the date                   the products shall be released to retail (General Market and                   CBA); and it is hereby agreed that such release shall be                   simultaneous (i.e., television and direct response will have a                   period of exclusivity before the products are available at                   retail).\n\n3.       Product sales to TL.\n\n      a.       Integrity will, upon receipt of approved purchase orders from                   TL, sell to TL in non-returnable box lot quantities, TL's                   requirements products rates calculated on the following basis                   (plus freight). The copyright royalty on recorded products is                   based on [**]/1/% of the then current statutory mechanical                   rate, and on song books, [**]/1/ percent ([**]/1/%) of the                   retail selling price (prorated to each copyright holder).                   Integrity may adjust the prices charged to TL on each volume                   to accurately reflect the then-current royalty obligation to                   all parties, including Integrity.\n\n                                                                            CD           Cassette        Song book\n\nSource: INTEGRITY MEDIA INC, 10-K405, 3/29/2001\n\n\n\n\n\n                                                                         ---------       --------        ---------                                                                                                                      Manufacturing                                              $ [**]/1/       $ [**]/1/       $ [**]/1/                  (May be adjusted if actual costs exceed above amounts)\n\n              Master Lease royalty                                         [**]/1/         [**]/1/         -None-\n\n              Copyright royalty                                            [**]/1/         [**]/1/         [**]/1/                  (Based on 75% of $.075 statutory rate X 22)                -----           -----           -----\n\n                                   Approximate Total                     $ [**]/1/       $ [**]/1/       $ [**]/1/\n\n      b.       In consideration of the above pricing, TL guarantees to                   purchase from Integrity a minimum of ten thousand (10,000)                   units of each recorded Product during the first thirty-two                   (32) months of release. TL's initial order for each recorded                   Product shall be a minimum of five thousand (5,000) units.\n\n--------------- /1/ Indicates information which has been redacted pursuant to a request for     confidential treatment.\n\n                                    3\n\n6\n\n      c.       TL may purchase from Integrity limited quantities of the                   Product for its promotional use, at the Manufacturing cost set                   forth in paragraph 3(a) above, provided the quantity of such                   purchases does not exceed seven percent (7%) of the total                   royalty bearing units of such Product title purchased by TL,                   TL warrants that any units so purchased, whether or not                   labeled \"promotional only\" or cut-out, will be given away for                   purposes of promotion of the Products, and will not be sold.                   If for any reason, Integrity and TL are subject to lower \"free                   goods\" limits by any third party license, the foregoing shall                   be adjusted to comply with any such license(s).\n\n4.       Royalties payable by Integrity.\n\n      a.       Integrity will pay and be responsible for all royalties due to                   owners of the recorded masters, which such royalties will be                   inclusive of all performer, artist, producer and other fees.\n\n      b.       Integrity will pay and be responsible for all royalties to the                   copyright owners of the compositions embodied in the recorded                   masters (or song books), such royalties commonly known as                   mechanical royalties or print royalties.\n\n      c.       On sales of recorded products pursuant to this Agreement (less                   any returns) Integrity will pay to TL royalties in the amount                   of [**]/1/ ($[**]/1/) for each and every unit of the product                   sold by Integrity in the United States pursuant to this                   Agreement, and [**]/1/ the foregoing rate or [**]/1/ percent                   ([**]/1/%) of Integrity's net receipts, whichever is less, on                   subject products outside the United States. For purposes of                   this Agreement, \"net receipts\" shall be the amount received by                   a party in the United States, after deduction of any exchange                   fees, commissions, or expenses to collect.\n\n      d.       On sales of printed products (song books) pursuant to this                   Agreement (less any returns) Integrity will pay to TL                   royalties in the amount of [**]/1/ ($[**]/1/) for each and                   every unit of the product sold by Integrity in the United                   States pursuant to this Agreement, and [**]/1/ the foregoing                   rate or [**]/1/ percent ([**]/1/%) of Integrity's net                   receipts, whichever is less, on subject products outside the                   United States. No royalties will be paid to TL on printed                   products, until Integrity shall have recouped its                   out-of-pocket production costs from such royalties payable to                   TL pursuant to this subparagraph.\n\n--------------- /1/ Indicates information which has been redacted pursuant to a request for     confidential treatment.\n\n                                    4\n\n7\n\n5.       Royalties payable by TL. On sales of products pursuant to this       \n</document>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Document Name",
+      "category": "Document Name",
+      "question": "Highlight the parts (if any) of this contract related to \"Document Name\" that should be reviewed by a lawyer. Details: The name of the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "SCHEDULE TO Software License, Customization and Maintenance Agreement",
+          "answer_start": 0
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Parties",
+      "category": "Parties",
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "Cardlytics, Inc.",
+          "answer_start": 89
+        },
+        {
+          "text": "Bank of America, N. A",
+          "answer_start": 505
+        },
+        {
+          "text": "Bank of America",
+          "answer_start": 505
+        },
+        {
+          "text": "Supplier",
+          "answer_start": 73
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Agreement Date",
+      "category": "Agreement Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Agreement Date\" that should be reviewed by a lawyer. Details: The date of the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "3/4/11",
+          "answer_start": 1638
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Effective Date",
+      "category": "Effective Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Effective Date\" that should be reviewed by a lawyer. Details: The date when the contract is effective ",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "March 3, 2011",
+          "answer_start": 297
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Expiration Date",
+      "category": "Expiration Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details: On what date will the contract's initial term expire?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q06",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Renewal Term",
+      "category": "Renewal Term",
+      "question": "Highlight the parts (if any) of this contract related to \"Renewal Term\" that should be reviewed by a lawyer. Details: What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q07",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Notice Period To Terminate Renewal",
+      "category": "Notice Period To Terminate Renewal",
+      "question": "Highlight the parts (if any) of this contract related to \"Notice Period To Terminate Renewal\" that should be reviewed by a lawyer. Details: What is the notice period required to terminate renewal?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q08",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Governing Law",
+      "category": "Governing Law",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: Which state/country's law governs the interpretation of the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q09",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Most Favored Nation",
+      "category": "Most Favored Nation",
+      "question": "Highlight the parts (if any) of this contract related to \"Most Favored Nation\" that should be reviewed by a lawyer. Details: Is there a clause that if a third party gets better terms on the licensing or sale of technology/goods/services described in the contract, the buyer of such technology/goods/services under the contract shall be entitled to those better terms?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q10",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Non-Compete",
+      "category": "Non-Compete",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Compete\" that should be reviewed by a lawyer. Details: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q11",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Exclusivity",
+      "category": "Exclusivity",
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing  commitment with the counterparty? This includes a commitment to procure all “requirements” from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on  collaborating or working with other parties), whether during the contract or  after the contract ends (or both).",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q12",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__No-Solicit Of Customers",
+      "category": "No-Solicit Of Customers",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Customers\" that should be reviewed by a lawyer. Details: Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q13",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Competitive Restriction Exception",
+      "category": "Competitive Restriction Exception",
+      "question": "Highlight the parts (if any) of this contract related to \"Competitive Restriction Exception\" that should be reviewed by a lawyer. Details: This category includes the exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers above.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q14",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__No-Solicit Of Employees",
+      "category": "No-Solicit Of Employees",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Employees\" that should be reviewed by a lawyer. Details: Is there a restriction on a party’s soliciting or hiring employees and/or contractors from the  counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q15",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Non-Disparagement",
+      "category": "Non-Disparagement",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Disparagement\" that should be reviewed by a lawyer. Details: Is there a requirement on a party not to disparage the counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q16",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Termination For Convenience",
+      "category": "Termination For Convenience",
+      "question": "Highlight the parts (if any) of this contract related to \"Termination For Convenience\" that should be reviewed by a lawyer. Details: Can a party terminate this  contract without cause (solely by giving a notice and allowing a waiting  period to expire)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q17",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Rofr/Rofo/Rofn",
+      "category": "Rofr/Rofo/Rofn",
+      "question": "Highlight the parts (if any) of this contract related to \"Rofr/Rofo/Rofn\" that should be reviewed by a lawyer. Details: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q18",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Change Of Control",
+      "category": "Change Of Control",
+      "question": "Highlight the parts (if any) of this contract related to \"Change Of Control\" that should be reviewed by a lawyer. Details: Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q19",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Anti-Assignment",
+      "category": "Anti-Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details: Is consent or notice required of a party if the contract is assigned to a third party?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q20",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Revenue/Profit Sharing",
+      "category": "Revenue/Profit Sharing",
+      "question": "Highlight the parts (if any) of this contract related to \"Revenue/Profit Sharing\" that should be reviewed by a lawyer. Details: Is one party required to share revenue or profit with the counterparty for any technology, goods, or services?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q21",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Price Restrictions",
+      "category": "Price Restrictions",
+      "question": "Highlight the parts (if any) of this contract related to \"Price Restrictions\" that should be reviewed by a lawyer. Details: Is there a restriction on the  ability of a party to raise or reduce prices of technology, goods, or  services provided?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q22",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Minimum Commitment",
+      "category": "Minimum Commitment",
+      "question": "Highlight the parts (if any) of this contract related to \"Minimum Commitment\" that should be reviewed by a lawyer. Details: Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q23",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Volume Restriction",
+      "category": "Volume Restriction",
+      "question": "Highlight the parts (if any) of this contract related to \"Volume Restriction\" that should be reviewed by a lawyer. Details: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q24",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Ip Ownership Assignment",
+      "category": "Ip Ownership Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Ip Ownership Assignment\" that should be reviewed by a lawyer. Details: Does intellectual property created  by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q25",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Joint Ip Ownership",
+      "category": "Joint Ip Ownership",
+      "question": "Highlight the parts (if any) of this contract related to \"Joint Ip Ownership\" that should be reviewed by a lawyer. Details: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q26",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__License Grant",
+      "category": "License Grant",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: Does the contract contain a license granted by one party to its counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q27",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Non-Transferable License",
+      "category": "Non-Transferable License",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Transferable License\" that should be reviewed by a lawyer. Details: Does the contract limit the ability of a party to transfer the license being granted to a third party?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q28",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Affiliate License-Licensor",
+      "category": "Affiliate License-Licensor",
+      "question": "Highlight the parts (if any) of this contract related to \"Affiliate License-Licensor\" that should be reviewed by a lawyer. Details: Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor? ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q29",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Affiliate License-Licensee",
+      "category": "Affiliate License-Licensee",
+      "question": "Highlight the parts (if any) of this contract related to \"Affiliate License-Licensee\" that should be reviewed by a lawyer. Details: Does the contract contain a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q30",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Unlimited/All-You-Can-Eat-License",
+      "category": "Unlimited/All-You-Can-Eat-License",
+      "question": "Highlight the parts (if any) of this contract related to \"Unlimited/All-You-Can-Eat-License\" that should be reviewed by a lawyer. Details: Is there a clause granting one party an “enterprise,” “all you can eat” or unlimited usage license?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q31",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Irrevocable Or Perpetual License",
+      "category": "Irrevocable Or Perpetual License",
+      "question": "Highlight the parts (if any) of this contract related to \"Irrevocable Or Perpetual License\" that should be reviewed by a lawyer. Details: Does the contract contain a  license grant that is irrevocable or perpetual?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q32",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Source Code Escrow",
+      "category": "Source Code Escrow",
+      "question": "Highlight the parts (if any) of this contract related to \"Source Code Escrow\" that should be reviewed by a lawyer. Details: Is one party required to deposit its source code into escrow with a third party, which can be released to the counterparty upon the occurrence of certain events (bankruptcy,  insolvency, etc.)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q33",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Post-Termination Services",
+      "category": "Post-Termination Services",
+      "question": "Highlight the parts (if any) of this contract related to \"Post-Termination Services\" that should be reviewed by a lawyer. Details: Is a party subject to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q34",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Audit Rights",
+      "category": "Audit Rights",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Does a party have the right to  audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q35",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Uncapped Liability",
+      "category": "Uncapped Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Uncapped Liability\" that should be reviewed by a lawyer. Details: Is a party’s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q36",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Cap On Liability",
+      "category": "Cap On Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details: Does the contract include a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q37",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Liquidated Damages",
+      "category": "Liquidated Damages",
+      "question": "Highlight the parts (if any) of this contract related to \"Liquidated Damages\" that should be reviewed by a lawyer. Details: Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q38",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Warranty Duration",
+      "category": "Warranty Duration",
+      "question": "Highlight the parts (if any) of this contract related to \"Warranty Duration\" that should be reviewed by a lawyer. Details: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q39",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Insurance",
+      "category": "Insurance",
+      "question": "Highlight the parts (if any) of this contract related to \"Insurance\" that should be reviewed by a lawyer. Details: Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q40",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Covenant Not To Sue",
+      "category": "Covenant Not To Sue",
+      "question": "Highlight the parts (if any) of this contract related to \"Covenant Not To Sue\" that should be reviewed by a lawyer. Details: Is a party restricted from contesting the validity of the counterparty’s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q41",
+      "source_id": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3__Third Party Beneficiary",
+      "category": "Third Party Beneficiary",
+      "question": "Highlight the parts (if any) of this contract related to \"Third Party Beneficiary\" that should be reviewed by a lawyer. Details: Is there a non-contracting party who is a beneficiary to some or all of the clauses in the contract and therefore can enforce its rights against a contracting party?",
+      "is_impossible": true,
+      "answers": []
+    }
+  ]
+}

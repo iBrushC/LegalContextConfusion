@@ -59,16 +59,16 @@ from score_outputs import aggregate, extract_json, results_of, score_cell  # noq
 DEFAULT_PREPARED = Path("data/prepared")
 DEFAULT_OUT = Path("data/results")
 
-# Friendly name -> OpenRouter slug. SLUGS ARE PLACEHOLDERS — verify each at
-# https://openrouter.ai/models and/or override via --models-config.
+# Friendly name -> OpenRouter slug. Verified against the live OpenRouter models
+# list on 2026-06-17. Override any of them via --models-config.
 MODEL_REGISTRY = {
-    "claude":   "anthropic/claude-opus-4.8",                  # VERIFY
-    "chatgpt":  "openai/gpt-5.4",                              # VERIFY
-    "gemini":   "google/gemini-3.1-pro",                      # VERIFY
-    "deepseek": "deepseek/deepseek-v4",                       # VERIFY
-    "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # VERIFY
-    "mimo":     "xiaomi/mimo-v2.5-pro",                       # VERIFY
-    "glm":      "z-ai/glm-5.2",                               # VERIFY
+    "claude":   "anthropic/claude-opus-4.8",                  # Opus 4.8
+    "chatgpt":  "openai/gpt-5.4-pro",                         # GPT 5.4 Pro
+    "gemini":   "google/gemini-3.1-pro-preview",             # Gemini 3.1 Pro
+    "deepseek": "deepseek/deepseek-v4-pro",                   # DeepSeek 4 Pro
+    "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # Nemotron 3 Ultra
+    "mimo":     "xiaomi/mimo-v2.5-pro",                       # MiMo v2.5 Pro
+    "glm":      "z-ai/glm-5.2",                               # GLM 5.2
 }
 ALIASES = {
     "gpt": "chatgpt", "openai": "chatgpt",
@@ -78,7 +78,7 @@ ALIASES = {
     "mimo-v2.5-pro": "mimo", "mimo2.5": "mimo",
     "glm5": "glm", "glm-5.2": "glm",
 }
-# Cheapest model for prototyping (reuse-base-procedure card). VERIFY.
+# Cheapest model for prototyping (reuse-base-procedure card).
 PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 
@@ -169,6 +169,19 @@ def _fmt(v) -> str:
     return f"{v:.3f}" if isinstance(v, (int, float)) else str(v)
 
 
+def _reasoning_config(effort: str | None) -> dict | None:
+    """Map the --reasoning-effort flag to OpenRouter's `reasoning` field.
+
+    low/medium/high -> {"effort": ...}; "none" -> disable thinking entirely;
+    None (flag omitted) -> send nothing, leaving the model's own default.
+    """
+    if not effort:
+        return None
+    if effort == "none":
+        return {"enabled": False}
+    return {"effort": effort}
+
+
 # --------------------------------------------------------------------------- #
 # Per (cell x model x run) execution
 # --------------------------------------------------------------------------- #
@@ -180,6 +193,7 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
     raws, parseds, perrs, busages, blats, errors = [], [], [], [], [], []
     total_usage = {"prompt_tokens": 0, "completion_tokens": 0, "cost": 0.0}
     total_latency = 0.0
+    reasoning = _reasoning_config(getattr(args, "reasoning_effort", None))
 
     for qbatch in batches:
         if mock:
@@ -187,7 +201,9 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
         else:
             resp = call_openrouter(slug, build_messages(cell, qbatch), api_key,
                                    args.max_tokens, args.temperature,
-                                   args.timeout, args.retries)
+                                   args.timeout, args.retries, reasoning)
+            # live per-batch progress so a slow model doesn't look hung
+            print("." if resp["error"] is None else "x", end="", flush=True)
             if args.sleep:
                 time.sleep(args.sleep)
 
@@ -250,8 +266,35 @@ def load_cells(prepared: Path, limit: int | None) -> list[Path]:
     return paths[:limit] if limit else paths
 
 
+def _clean_api_key(key: str) -> str:
+    """Strip surrounding quotes and any invisible / non-ASCII contaminants.
+
+    Pasting a key from a webpage often injects invisible characters (word
+    joiners U+2060, narrow no-break spaces U+202F, zero-width spaces, smart
+    quotes, BOM, ...) that are never part of a real key but crash urllib's
+    latin-1 header encoding. A valid key is printable ASCII, so we keep only
+    printable-ASCII characters and warn about anything removed.
+    """
+    raw = key.strip().strip("\"'")
+    cleaned = "".join(c for c in raw if 33 <= ord(c) <= 126)
+    dropped = [c for c in raw if not (33 <= ord(c) <= 126)]
+    if dropped:
+        codes = ", ".join(sorted({f"U+{ord(c):04X}" for c in dropped}))
+        print(f"warning: removed {len(dropped)} hidden/non-ASCII char(s) "
+              f"({codes}) from OPENROUTER_API_KEY — your .env has invisible "
+              f"characters; consider re-typing the key.")
+    if not cleaned:
+        raise SystemExit("error: OPENROUTER_API_KEY is empty after cleaning.")
+    return cleaned
+
+
 def load_done(path: Path) -> tuple[set, list[dict]]:
-    """Existing (model, cell_id, run_index) keys + records, for resuming."""
+    """Existing run records + the keys worth skipping on resume.
+
+    Only SUCCESSFUL rows (scored > 0) mark a (model, cell_id, run_index) as
+    done. Rows that errored or parse-failed are left out, so a plain re-run
+    retries just those cells while keeping completed work.
+    """
     done, records = set(), []
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
@@ -262,7 +305,8 @@ def load_done(path: Path) -> tuple[set, list[dict]]:
         except json.JSONDecodeError:
             continue  # tolerate a half-written final line
         records.append(rec)
-        done.add((rec.get("model"), rec.get("cell_id"), rec.get("run_index")))
+        if rec.get("metrics", {}).get("scored", 0) > 0:
+            done.add((rec.get("model"), rec.get("cell_id"), rec.get("run_index")))
     return done, records
 
 
@@ -288,9 +332,18 @@ def main() -> None:
                         help="cap number of cells (cheap testing)")
     parser.add_argument("--question-batch-size", type=int, default=0,
                         help="questions per request (0 = all in one; e.g. 5)")
-    parser.add_argument("--max-tokens", type=int, default=4096,
-                        help="completion token cap (default: 4096)")
+    parser.add_argument("--max-tokens", type=int, default=16000,
+                        help="completion token CAP (default: 16000). It's a ceiling, "
+                             "not a spend — but reasoning models burn it on hidden "
+                             "thinking, so it must cover reasoning + the JSON answer "
+                             "or you get an empty 'content'.")
     parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--reasoning-effort",
+                        choices=("low", "medium", "high", "none"), default=None,
+                        help="control reasoning models' thinking budget via "
+                             "OpenRouter (low/medium/high, or 'none' to disable). "
+                             "Default: the model's own setting. Use 'low' to free "
+                             "token budget for the answer and cut cost.")
     parser.add_argument("--timeout", type=float, default=120.0)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--sleep", type=float, default=0.0,
@@ -310,11 +363,11 @@ def main() -> None:
 
     print(f"Models ({len(models)}):")
     for name, slug in models:
-        flag = "  <- VERIFY slug" if slug in MODEL_REGISTRY.values() else ""
-        print(f"  {name:12} {slug}{flag}")
+        print(f"  {name:12} {slug}")
     batch_desc = "all" if args.question_batch_size <= 0 else args.question_batch_size
+    reason_desc = f"   Reasoning: {args.reasoning_effort}" if args.reasoning_effort else ""
     print(f"Cells: {len(cell_paths)}   Runs/cell: {args.runs}   "
-          f"Questions/request: {batch_desc}   Total cell-runs: {total}")
+          f"Questions/request: {batch_desc}   Total cell-runs: {total}{reason_desc}")
 
     if args.dry_run:
         first = json.loads(cell_paths[0].read_text(encoding="utf-8"))
@@ -338,6 +391,8 @@ def main() -> None:
             "error: OPENROUTER_API_KEY not set. Export it for a real run, "
             "or pass --mock to test the pipeline offline."
         )
+    if api_key:
+        api_key = _clean_api_key(api_key)
     if args.mock:
         print("\n[MOCK] gold-perfect answers, no API calls")
 
@@ -362,12 +417,17 @@ def main() -> None:
                         print(f"  {name:10} {cell['cell_id']:40} r{run_idx}  skip")
                         continue
 
+                    # print the prefix first; run_cell_model emits a dot per
+                    # batch in between, then we finish the line with the score.
+                    print(f"  {name:10} {cell['cell_id']:40} r{run_idx} ",
+                          end="", flush=True)
                     res = run_cell_model(cell, slug, batches, api_key, args, args.mock)
                     record = {
                         "model": name, "model_slug": slug,
                         "cell_id": cell["cell_id"], "modality": cell["modality"],
                         "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
                         "position": cell["position"], "run_index": run_idx,
+                        "reasoning_effort": args.reasoning_effort,
                         "batch_size": (args.question_batch_size
                                        if args.question_batch_size > 0
                                        else len(cell["questions"])),
@@ -394,7 +454,7 @@ def main() -> None:
                                   f"abst={_fmt(m['abstention_rate'])}")
                         if m["n_unscored"]:
                             status += f" unscored={m['n_unscored']}"
-                    print(f"  {name:10} {cell['cell_id']:40} r{run_idx}  {status}")
+                    print(f" {status}")
 
     summary = aggregate(runs)
     (args.out / "summary.json").write_text(

@@ -12,6 +12,7 @@ of raising, so the caller can record it as a failed run row.
 
 from __future__ import annotations
 
+import http.client
 import json
 import time
 import urllib.error
@@ -25,15 +26,19 @@ _RETRY_CODES = (408, 409, 429, 500, 502, 503, 504)
 
 def call_openrouter(slug: str, messages: list[dict], api_key: str,
                     max_tokens: int, temperature: float, timeout: float,
-                    retries: int) -> dict:
+                    retries: int, reasoning: dict | None = None) -> dict:
     """POST a chat completion to OpenRouter and return a uniform result dict."""
-    body = json.dumps({
+    payload = {
         "model": slug,
         "messages": messages,
         "temperature": temperature,
         "max_tokens": max_tokens,
         "usage": {"include": True},  # ask OpenRouter to return cost when available
-    }).encode("utf-8")
+    }
+    if reasoning is not None:
+        # control reasoning-model thinking budget so it doesn't eat max_tokens
+        payload["reasoning"] = reasoning
+    body = json.dumps(payload).encode("utf-8")
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -54,17 +59,28 @@ def call_openrouter(slug: str, messages: list[dict], api_key: str,
                 "error": None,
             }
         except urllib.error.HTTPError as e:
-            detail = e.read()[:300].decode("utf-8", "ignore")
+            try:
+                detail = e.read()[:300].decode("utf-8", "ignore")
+            except Exception:
+                detail = ""
             err = f"HTTP {e.code}: {detail}"
             if e.code in _RETRY_CODES and attempt < retries:
                 time.sleep(2 ** attempt)
                 continue
             return {"content": None, "usage": {},
                     "latency_s": round(time.monotonic() - t0, 3), "error": err}
-        except (urllib.error.URLError, TimeoutError, OSError) as e:
+        except (urllib.error.URLError, TimeoutError, OSError,
+                http.client.HTTPException) as e:
+            # transient network / truncated-read errors (incl. IncompleteRead) — retry
             if attempt < retries:
                 time.sleep(2 ** attempt)
                 continue
+            return {"content": None, "usage": {},
+                    "latency_s": round(time.monotonic() - t0, 3),
+                    "error": f"{type(e).__name__}: {e}"}
+        except Exception as e:
+            # anything unexpected (e.g. a malformed response shape) — record it,
+            # never let one bad response abort the whole sweep
             return {"content": None, "usage": {},
                     "latency_s": round(time.monotonic() - t0, 3),
                     "error": f"{type(e).__name__}: {e}"}
