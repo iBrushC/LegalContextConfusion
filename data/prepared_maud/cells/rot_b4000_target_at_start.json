@@ -7,57 +7,130 @@
   "position": "target_at_start",
   "actual_tokens": 4000,
   "actual_chars": 16000,
-  "target_document_id": "contract_90",
-  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+  "target_document_id": "contract_138",
+  "target_document_title": "dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS",
   "distractor_ids": [
-    "filler_010",
-    "filler_002",
-    "filler_012",
-    "filler_003"
+    "the_shades_of_toffee-0117",
+    "ghosts_in_the_great_war-0077",
+    "stubborn_people-0000",
+    "stubborn_people-0134"
   ],
   "target_fits": false,
   "target_truncated": true,
-  "filler_source": "synthetic-nonlegal",
+  "filler_source": "rot-sections:data\\rot",
   "filler_repeated": false,
-  "context": "<DOCUMENT id=\"contract_90\" title=\"AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …\">\nExhibit 2.1 \n\n\nExecution Version     \n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nby and among: \n\n\nANALOG DEVICES, INC., a Massachusetts corporation; \n\n\nMAGNETO CORP., a Delaware corporation; \n\n\nand \n\n\nMAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation    Dated as of July 12, 2020       \n\n\n\n\n\n\n\n\n________________\n\n\nSECTION 1  THE MERGER    1 1.1    The Merger    1 1.2    Closing    2 1.3    Certificate of Incorporation and Bylaws    2 1.4    Directors and Officers of the Surviving Corporation    2 1.5    Conversion of Securities    3 1.6    Certain Adjustments    3 1.7    Options; Stock Based Awards    3 1.8    No Fractional Shares    4 1.9    Closing of Transfer Books    5 1.10  Exchange of Certificates and Cancellation of Book-Entry Positions    5 1.11  Further Action    7 1.12  Tax Withholding    7 1.13  Tax Treatment    8 SECTION 2  REPRESENTATIONS AND WARRANTIES OF THE COMPANY    8 2.1    Due Organization and Good Standing; Subsidiaries    8 2.2    Organizational Documents    9 2.3    Capitalization    9 2.4    Reports; Financial Statements; Internal Controls    10 2.5    Absence of Certain Changes    12 2.6    Intellectual Property and Related Matters    12 2.7    Title to Assets; Real Property    14 2.8    Contracts    15 2.9    Compliance with Legal Requirements    17 2.10  Legal Proceedings; Investigations; Orders    18 2.11  Certain Business Practices    19 2.12  Tax Matters    19 2.13  Employee Benefit Plans    21 2.14  Labor Matters    22 2.15  Environmental Matters    22 2.16  Insurance    23 2.17  Authority; Binding Nature of Agreement    23 2.18  Vote Required    24   i\n\n\n\n\n\n\n\n\n________________\n\n\n2.19  Non-Contravention; Consents    24 2.20  Takeover Statutes    24 2.21  Ownership of Parent Common Stock    25 2.22  Opinion of Financial Advisor    25 2.23  Brokers    25 2.24  Information Supplied    25 SECTION 3  REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB    25 3.1    Due Organization and Good Standing; Subsidiaries    25 3.2    Organizational Documents    26 3.3    Capitalization    26 3.4    Reports; Financial Statements; Internal Controls    27 3.5    Absence of Certain Changes    29 3.6    Contracts    29 3.7    Compliance with Legal Requirements    29 3.8    Legal Proceedings; Investigations; Orders    31 3.9    Certain Business Practices    31 3.10  Tax Matters    31 3.11  Authority; Binding Nature of Agreement    31 3.12  Vote Required    32 3.13  Non-Contravention; Consents    33 3.14  Takeover Statutes    33 3.15  Ownership of Company Common Stock    33 3.16  Opinion of Financial Advisors    33 3.17  Brokers    33 3.18  Information Supplied    33 3.19  Acquisition Sub    34 SECTION 4  COVENANTS    34 4.1  Interim Operations    34 4.2  Company No Solicitation    39 4.3  Parent No Solicitation    40 4.4  Registration Statement; Joint Proxy Statement/Prospectus    42 4.5  Meeting of the Company’s Stockholders; Company Change in Recommendation    43   ii\n\n\n\n\n\n\n\n\n________________\n\n\n4.6    Meeting of Parent’s Shareholders; Parent Change in Recommendation    46 4.7    Filings; Other Action    49 4.8    Access    52 4.9    Interim Operations of Acquisition Sub    53 4.10  Publicity    54 4.11  Company ESPP; Other Employee Benefits    54 4.12  Certain Tax Matters    56 4.13  Indemnification; Directors’ and Officers’ Insurance    57 4.14  Stockholder Litigation    58 4.15  Obligations of Acquisition Sub    59 4.16  Stock Exchange Listing and Delisting    59 4.17  Section 16 Matters    59 4.18  Parent Vote    59 4.19  Director Resignations    59 4.20  Takeover Statutes    59 SECTION 5  CONDITIONS TO EACH PARTY’S OBLIGATION TO EFFECT THE MERGER    59 5.1  Conditions Precedent to Each Party’s Obligations    59 5.2  Additional Conditions Precedent to Parent’s Obligations    60 5.3  Additional Conditions Precedent to the Company’s Obligations    61 SECTION 6  TERMINATION    62 6.1  Termination    62 6.2  Effect of Termination    63 6.3  Termination Fees    64 SECTION 7  MISCELLANEOUS PROVISIONS    66 7.1  Amendment    66 7.2  Waiver    66 7.3  No Survival of Representations and Warranties    66 7.4  Entire Agreement; Non-Reliance; Third-Party Beneficiaries    66 7.5  Applicable Law; Jurisdiction    68 7.6  Payment of Expenses    68 7.7  Assignability; Parties in Interest    68 7.8  Notices    68   iii\n\n\n\n\n\n\n\n\n________________\n\n\n7.9    Severability    69 7.10  Counterparts    70 7.11  Obligations of the Surviving Corporation    70 7.12  Specific Performance    70 7.13  Disclosure Schedules    70 7.14  Construction    71   Exhibits    \n\n\nExhibit A   Certain Definitions     iv\n\n\n\n\n\n\n\n\n________________\n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nTHIS AGREEMENT AND PLAN OF MERGER (this “Agreement”) is made and entered into as of July 12, 2020, by and among: ANALOG DEVICES, INC., a Massachusetts corporation (“Parent”); MAGNETO CORP., a Delaware corporation and a wholly owned subsidiary of Parent (“Acquisition Sub”); and MAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation (the “Company”). Certain capitalized terms used in this Agreement are defined in Exhibit A. \n\n\nRECITALS \n\n\nA.    The parties intend that Acquisition Sub be merged with and into the Company (the “Merger”) in accordance with this Agreement and the General Corporation Law of the State of Delaware (the “DGCL”). Upon consummation of the Merger, Acquisition Sub will cease to exist and the Company will continue as the Surviving Corporation and a wholly owned Subsidiary of Parent. \n\n\nB.    The Company Board has unanimously: (i) determined that the Merger is fair to and in the best interests of the Company and its stockholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that the Company’s stockholders adopt this Agreement. \n\n\nC.    The Parent Board has unanimously: (i) determined that the terms of this Agreement and the Merger are fair to, and in the best interests of, Parent and its shareholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that Parent’s shareholders approve the issuance of shares of Parent Common Stock in connection with the Merger on the terms and subject to the conditions set forth in this Agreement. \n\n\nD.    The board of directors of Acquisition Sub has: (i) determined that it is in the best interests of its sole stockholder for Acquisition Sub to enter into this Agreement; (ii) approved and declared advisable this Agreement and the transactions contemplated hereby, including the Merger; and (iii) recommended that its sole stockholder adopt this Agreement. \n\n\nE.    It is intended that, for U.S. federal income Tax purposes, the Merger will qualify as a “reorganization” within the meaning of Section 368(a) of the Code and that this Agreement be, and is hereby adopted as, a “plan of reorganization” for purposes of Sections 354 and 361 of the Code. \n\n\nAGREEMENT \n\n\nThe parties to this Agreement, in consideration of the representations, warranties, covenants and agreements set forth herein and for other good and valuable consideration, the receipt and adequacy of which are hereby acknowledged, and intending to be legally bound, agree as follows: \n\n\nSECTION 1    THE MERGER 1.1    The Merger. At the Effective Time, Acquisition Sub shall be merged with and into the Company in accordance with the DGCL and upon the terms and subject to the conditions set forth in this Agreement, whereupon the separate existence of Acquisition Sub shall cease and the Company shall be the surviving corporation (the “Surviving Corporation”) in the Merger and a \n</DOCUMENT>\n\n<DOCUMENT id=\"filler_010\" title=\"non-legal filler\">\nce before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the co\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_002\" title=\"non-legal filler\">\nornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correctin\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_012\" title=\"non-legal filler\">\nslowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm b\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_003\" title=\"non-legal filler\">\ng it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mor\n</DOCUMENT>",
+  "context": "<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nExhibit 2.1   AGREEMENT AND PLAN OF MERGER \n\n\ndated as of \n\n\nFebruary 16, 2021 \n\n\namong \n\n\nTRIBUNE PUBLISHING COMPANY, \n\n\nTRIBUNE ENTERPRISES, LLC \n\n\nand \n\n\nTRIBUNE MERGER SUB, INC.       TABLE OF CONTENTS     \n\n\n  Page     Article 1  Definitions   Section 1.01.  Definitions 1 Section 1.02.  Other Definitional and Interpretative Provisions 11    Article 2  The Merger   Section 2.01.  The Merger 12 Section 2.02.  Conversion of Shares 12 Section 2.03.  Surrender and Payment 13 Section 2.04.  Dissenting Shares 15 Section 2.05.  Treatment of Equity Awards 15 Section 2.06.  Adjustments 16 Section 2.07.  Lost Certificates 16 Section 2.08.  Withholding Rights 17    Article 3  The Surviving Corporation   Section 3.01.  Certificate of Incorporation 17 Section 3.02.  Bylaws 17 Section 3.03.  Directors and Officers 17    Article 4  Representations and Warranties of the Company   Section 4.01.  Corporate Existence and Power 18 Section 4.02.  Corporate Authorization 18 Section 4.03.  Governmental Authorization 19 Section 4.04.  Non-Contravention 19 Section 4.05.  Capitalization 19 Section 4.06.  Subsidiaries 21 Section 4.07.  SEC Filings; Internal Control 22 Section 4.08.  Financial Statements 23 Section 4.09.  Disclosure Documents 23 Section 4.10.  Absence of Certain Changes 24 Section 4.11.  No Undisclosed Material Liabilities 24 Section 4.12.  Compliance with Laws; Permits 24 Section 4.13.  Compliance with Anti-Corruption and Anti-Money Laundering Laws; Sanctions 25 Section 4.14.  Litigation 25 Section 4.15.  Properties 26     i  \n\n\n\n\n\n\n\n\n________________\n\n\n     Section 4.16.  Intellectual Property; Data Privacy and Security 27 Section 4.17.  Taxes 28 Section 4.18.  Employee Benefit Plans 30 Section 4.19.  Employee and Labor Matters 31 Section 4.20.  Environmental Matters 33 Section 4.21.  Material Contracts 33 Section 4.22.  Insurance 35 Section 4.23.  Finders’ Fees 36 Section 4.24.  Opinion of Financial Advisor 36 Section 4.25.  Antitakeover Statutes 36 Section 4.26.  Transactions with Affiliates 36 Section 4.27.  Acknowledgement of No Other Representations and Warranties 36    Article 5  Representations and Warranties of Parent   Section 5.01.  Corporate Existence and Power 37 Section 5.02.  Corporate Authorization 37 Section 5.03.  Governmental Authorization 38 Section 5.04.  Non-Contravention 38 Section 5.05.  Disclosure Documents 38 Section 5.06.  Litigation 39 Section 5.07.  Finders’ Fees 39 Section 5.08.  Knowledge of Parent 39 Section 5.09.  Ownership of Common Stock 39 Section 5.10.  Guarantee; Equity Commitment Letter; Financing 40 Section 5.11.  Solvency 40 Section 5.12.  Management Agreements 41 Section 5.13.  Acknowledgement of No Other Representations and Warranties 41    Article 6  Covenants of the Company   Section 6.01.  Conduct of the Company 42 Section 6.02.  Company Stockholder Meeting 45 Section 6.03.  Access to Information 46 Section 6.04.  No Solicitation; Other Offers 47 Section 6.05.  Stock Exchange Delisting 50 Section 6.06.  Financing Cooperation; Baltimore Sun; Asset Dispositions 50    Article 7  Covenants of Parent   Section 7.01.  Conduct of Parent 54 Section 7.02.  Obligations of Merger Sub 55 Section 7.03.  Director and Officer Liability 55 Section 7.04.  Employee Matters 57   ii       Section 7.05.  Parent Voting Agreement 58    Article 8  Covenants of Parent and the Company   Section 8.01.  Regulatory Undertakings; Reasonable Best Efforts 59 Section 8.02.  Certain Filings 61 Section 8.03.  Public Announcements 62 Section 8.04.  Merger Sub Approval Without Meeting of Stockholders 63 Section 8.05.  Section 16 Matters 63 Section 8.06.  Notices of Certain Events 63 Section 8.07.  Litigation and Proceedings 63 Section 8.08.  Takeover Statutes 64    Article 9  Conditions to the Merger   Section 9.01.  Conditions to the Obligations of Each Party 64 Section 9.02.  Conditions to the Obligations of Parent and Merger Sub 64 Section 9.03.  Conditions to the Obligations of the Company 65 Section 9.04.  Frustration of Closing Conditions 66    Article 10  Termination  \n\n\n\n\n\n\n\n\n________________\n\n\nSection 10.01.  Termination 66 Section 10.02.  Effect of Termination 68    Article 11  Miscellaneous   Section 11.01.  Notices 69 Section 11.02.  No Survival 70 Section 11.03.  Amendments and Waivers 70 Section 11.04.  Expenses 70 Section 11.05.  Disclosure Schedule 72 Section 11.06.  Binding Effect; Benefit; Assignment 72 Section 11.07.  Governing Law 72 Section 11.08.  Jurisdiction 73 Section 11.09.  WAIVER OF JURY TRIAL 73 Section 11.10.  Counterparts; Effectiveness 73 Section 11.11.  Entire Agreement 73 Section 11.12.  Severability 73 Section 11.13.  Specific Performance 74   iii        AGREEMENT AND PLAN OF MERGER   AGREEMENT AND PLAN OF MERGER (this “Agreement”) dated as of February 16, 2021, among Tribune Publishing Company, a Delaware corporation (the “Company”), Tribune Enterprises, LLC, a Delaware limited liability company (“Parent”), and Tribune Merger Sub, Inc., a Delaware corporation and a wholly owned subsidiary of Parent (“Merger Sub”).    W I T N E S S E T H :   WHEREAS, the board of directors of the Company (the “Board of Directors”), acting upon the unanimous recommendation of a special committee thereof consisting only of independent and disinterested directors (the “Special Committee”), and the respective boards of directors of Parent and Merger Sub, have approved and declared advisable that the respective stockholders of the Company and Merger Sub approve and adopt this Agreement pursuant to which, among other things, Parent would acquire the Company by means of a merger of Merger Sub with and into the Company on the terms and subject to the conditions set forth in this Agreement; and   WHEREAS, the Company, Parent and Merger Sub desire to make certain representations, warranties, covenants and agreements in connection with this Agreement.   NOW, THEREFORE, in consideration of the foregoing and the representations, warranties, covenants and agreements contained herein, the parties hereto agree as follows:   ARTICLE 1 DEFINITIONS   Section 1.01. Definitions. (a) As used herein, the following terms have the following meanings:   “1933 Act” means the Securities Act of 1933.   “1934 Act” means the Securities Exchange Act of 1934.   “Acquisition Proposal” means, other than the transactions contemplated by this Agreement, any Third Party offer or proposal relating to (i) any acquisition or purchase, direct or indirect, of 20% or more of the consolidated assets of the Company and its Subsidiaries or 20% or more of any class of equity or voting securities of the Company or any of its Subsidiaries whose assets, individually or in the aggregate, constitute 20% or more of the consolidated assets of the Company, (ii) any tender offer (including a self-tender offer) or exchange offer that, if consummated, would result in such Third Party beneficially owning 20% or more of any class of equity or voting securities of the       Company or any of its Subsidiaries whose assets, individually or in the aggregate, constitute 20% or more of the consolidated assets of the Company or (iii) a merger, consolidation, share exchange, business combination, asset sale, reorganization, recapitalization, liquidation, dissolution or other similar transaction involving the Company or any of its Subsidiaries pursuant to which any Person or group (or the stockholders of any Person) would own, directly or indirectly, 20% or more of the aggregate voting power of the Company after giving effect to the consummation of such transaction.   “Adverse Recommendation Change” means, with respect to the Board of Directors (or any committee thereof), (a) withholding, withdrawing, amending, qualifying or modifying, or publicly proposing to withhold, withdraw, amend, qualify or modify, the Compa\n</DOCUMENT>\n\n<DOCUMENT id=\"the_shades_of_toffee-0117\" title=\"non-legal story excerpt\">\n\"I'd rather die,\" Toffee said.\n\n\"Well,\" Cecil shrugged, \"if you'd really rather, it can be arranged.\"\n\n\"It won't work!\" Marc said desperately. \"It's preposterous!\"\n\n\"It worked with you, didn't it?\" Cecil pointed out.\n\nMarc thought back to his frenzied flight to the top of the Wynant. A\nchill passed through him; anything was possible.\n\n\"But why the whole city?\" he asked. \"Why not just a building or a\nretired battleship?\"\n\n\"More spectacular,\" Cecil said. \"It'll cause more comment.\"\n\n\"That's so understated,\" Toffee said, \"it's below the level of reason.\"\nShe looked at Marc. \"They're mad,\" she said, \"raving.\"\n\n\"I know,\" Marc said in hushed tones. \"They're just mad enough.\"\n\n\"Oh, you bet we are,\" Cecil said with a sudden mood of happiness.\n\"We're regular ogres, aren't we, Gerald?\"\n\n\"Well, I wouldn't say _regular_ ogres,\" Gerald answered.\n\n\"Would you say _irregular_ ogres?\"\n\n\"No,\" Gerald said with due consideration. \"Irregular sort of suggests\nthose advertisements. You know the ones about people who are\nuncomfortable because....\"\n\n\"Just listen to them!\" Toffee moaned. \"They're planning on blowing up\nthe city and they go on about it as giddy as a couple of spinsters in\nspring! What difference does it make what kind of ogres you are? You're\nperfectly abhorrent, both of you.\"\n\nCecil smiled his crooked smile at Toffee. \"Thanks,\" he said modestly.\n</DOCUMENT>\n\n<DOCUMENT id=\"ghosts_in_the_great_war-0077\" title=\"non-legal story excerpt\">\nNext day we received the sad news that this young officer had died\nfrom sickness, three days after Armistice was signed.\n\nPORT ERIN\n\nIN October, 1916, I returned from Liverpool (where I had been\nworking), for a few weeks holiday at my own home. Early one morning\n(between two and three o'clock), I was awakened by hearing singing in\nmy bedroom. I knew the voice quite well—it was that of a young man\nwho had been brought up in the same street as I, and had been\neducated at the same school. He was singing a verse of a hymn, quite\nloud and heartily. I got no more sleep that night and was very upset,\nas I knew this boy was fighting in France. A few days after, I met\nhis sister and she told me they had had word to say that her brother\nwas missing. A couple of weeks went by and word came to say that he\nhad been killed.\n\nNORWICH\n\nIN October, 1917, I was staying with my four little children in a\nvillage near Lowestoft. My husband, a skipper of a steam drifter, was\nat sea. On the night of October 7th, I was awakened by a loud bang.\nAt the same time the bed seemed floating on water. I looked up to see\nmy husband bending over me, and he seemed to put cold, wet hands on\neach side of my face, then disappeared. Two days afterwards, I was\ninformed that his vessel had struck a mine and was lost with all\nhands, about the time he appeared to me. Three or four months after,\nI again saw my husband, this time looking through the window. He had\nwith him another man who was a great chum of his. He also was a\nskipper. A few days later, I was told that at the same time as I saw\nthem this man went down with his ship in the channel raid.\n\nBOLTON\n\nAT 6:30 on the evening of the 15th April, 1917, during a German raid\non our trenches on the Ploegsteert Front, my chum was killed at my\nside. As mutually arranged in case of such an event, I wrote his\npeople. Ten days afterwards I received a letter from my chum’s\nsister, in which was stated that her mother died the same evening\nthat he was killed. She died at 10 p.m.\n\nAt 8 p.m. the mother had called the family to her room. She then told\nthem that Billy (the son) had appeared to her and told her that he\nhad been “knocked out,” but would meet her very shortly.\n\nOLDHAM\n\nONE evening during the late war I sat reading when I felt someone\nblow in my neck. I was just about to turn round when I heard a scream\ncoming from upstairs. I went to see the reason, and, to my surprise,\nI saw my little girl sitting up in bed terrified. I took her in my\narms and asked her what was the matter. She still looked afraid of a\nsomething, and said, “Look, mama,” and, pointing to a corner of the\nroom, added, “There's daddy; a man up that tree has shot him; I saw\nhim do it, and now my daddy is dead.” She fainted in my arms as she\nrepeated “dead.” I ran to give her a drink to revive her, thinking it\nwas just a nightmare she had had. Eventually, she fell asleep. The\nfollowing week, I had news that my husband had been killed in action.\nOn making inquiries, I found he had been shot by a sniper who was\nposted in a tree, and at the same hour as he had appeared to my\nlittle girl.\n\nBARNSTAPLE, DEVON\n</DOCUMENT>\n\n<DOCUMENT id=\"stubborn_people-0000\" title=\"non-legal story excerpt\">\n“They told me in Bend that you’d help me. I--I’m looking for a homestead\nhere.”\n\n“A homestead, ma’am?”\n\n“Never mind how I look!” she cried. “And don’t try to argue me out of\nit! I’ve argued all the way from Portland, and it’s settled. If you\nwon’t help me, I’ll have to get some one else. I want a homestead near\nBurnt Creek.”\n\n“Why near Burnt Creek, ma’am?”\n\n“For--for reasons.”\n\nThere was metal in her. She wore clothes that stamped her as a refined\ncity woman, and her hands and clear skin were plain enough witnesses\nthat she had never trafficked much with spade and bucket. Still, Bud\ndid not make the mistake of arguing. He saw her determined little chin\nwith the dab of a freckle on it. She was another of those stubborn\npeople--such kind as made good in this country. They never knew when\nthey were licked.\n\n“Why, sure, I’ll help you, ma’am,” he agreed affably. “Most everybody\ncomes to me sooner or later, around here, leastwise. But it’s powerful\nhot here. Come in an’ have some lemonade.”\n\nIt was a great deal later, when the courtesies were dispensed with and\nthe subject of land well talked over, that Bud thought of the Hazen\nplace. “I been thinkin’,” said he, spoiling a new cigar, “that you’ll\nbe all by yourself. It’s a hard life any way you take it, an’ if you\nc’d get near other folks it’d be a great boost. I’ve located durn near\nevery other family in these parts, an’ it strikes me there’s a nice\nsection about an hour’s ride from here, adjoinin’ Jim Hunter’s place.”\n\nHer head came up of a sudden and a sparkle of triumph set her blue eyes\nto shining. “That’s the place I want!” she cried.\n\nIt staggered Bud. “Why, ma’am, how do you know? Mebbe you wouldn’t like\nit at all. Better wait till you see it.”\n\n“I do know! Is there a house on it?”\n\n“Ordinarily the go’ment don’t furnish houses,” said Bud with the\nsuggestion of dryness. “But it so happens ol’ man Hazen took this up an’\ngot plumb discouraged. He went to Bend. You c’n take up the rights fer\nnext to nothin’. I’ll see about that. There’s a house, well, an’ barn on\nit.”\n\nShe sprang from the chair. “Mr. Bud, can’t we go right over and move in\nnow? I want to get started.”\n\nHer face was tinted with a pink excitement and her mouth, which Bud\ndecided was about as kissable a one as he had ever seen, was puckered\nin determination. She was finding a great satisfaction in something.\nThe puzzled storekeeper watched her. “Why, I reckon you could,\nbut----”\n</DOCUMENT>\n\n<DOCUMENT id=\"stubborn_people-0134\" title=\"non-legal story excerpt\">\nBut the afternoon was not to be lonely. He had just started on the\nlemonade when the sputter of the Bend Klamath stage motor reached him.\nThe vehicle swayed out of the forest, climbed the ruts of the road,\nskidded perilously amid a shower of sand, and brought a boiling radiator\nnose and nose with the porch. The driver had a passenger this trip. A\nwoman it was, veiled against the dirt and sun. Teddy Hanson climbed away\nfrom his wheel and helped her to the porch.\n\n“Aw,” he said, “now what’s the good of stoppin’ at a horrible hole like\nthis, ma’am? Gosh, think how lonely I’ll be all the way to Klamath.”\n\n“Flattery,” said the girl. She drew back the veil and Bud, greatly\npuzzled by this visit, found himself looking at an extre\n</DOCUMENT>",
   "questions": [
     {
       "qa_id": "q01",
-      "category": "Deal Protection and Related Provisions",
-      "question": "Acquisition Proposal Timing-Answer",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
       "answer_type": "multiple_choice",
       "gold_answers": [
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        "\"Resulting from\""
       ],
       "gold_labels": [
         "0"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
-        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        "\"Arising from/out of\"",
+        "\"Arising from/out of\", \"Relating to\"",
+        "\"Arising from/out of\", Other",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "\"Resulting from\", \"Arising from/out of\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Attributable to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", \"Attributable to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", \"Attributable to\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", Other",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Arising from/out of\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Attributable to\"",
+        "\"Resulting from\", \"Relating to\"",
+        "No"
       ],
       "subquestions": [
-        "Different Acquisition Proposal must close during Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        "\"Attributable to\"",
+        "\"Relating to\""
       ],
-      "source_question": "Acquisition Proposal Timing-Answer",
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
       "answers": [
         {
-          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+          "text": "\"Resulting from\""
         }
       ]
     },
     {
       "qa_id": "q02",
       "category": "Material Adverse Effect",
-      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "War or terrorism, Natural disaster"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "War or terrorism",
+        "War or terrorism, Natural disaster",
+        "War or terrorism, Natural disaster, \"act of God\"",
+        "War or terrorism, Natural disaster, \"act of God\", force majeure",
+        "War or terrorism, Natural disaster, force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "War or terrorism, Natural disaster"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "announcement, consummation"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "announcement",
+        "announcement, consummation",
+        "announcement, pendency",
+        "announcement, pendency, consummation"
+      ],
+      "subquestions": [
+        "No",
+        "announcement",
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement, consummation"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Change in law (Y/N)",
       "answer_type": "multiple_choice",
       "gold_answers": [
         "Yes"
@@ -66,12 +139,12 @@
         "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "No",
         "Yes"
       ],
       "subquestions": [],
-      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "source_question": "Change in law (Y/N)",
       "answers": [
         {
           "text": "Yes"
@@ -79,110 +152,7 @@
       ]
     },
     {
-      "qa_id": "q03",
-      "category": "Deal Protection and Related Provisions",
-      "question": "Definition contains knowledge requirement - answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Known, but consequences unknown or not reasonably foreseeable, at signing"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Known, but consequences unknown or not reasonably foreseeable, at signing",
-        "Known, but consequences unknown, at signing",
-        "Not known and not reasonably foreseeable at signing",
-        "Not known at signing"
-      ],
-      "subquestions": [],
-      "source_question": "Definition contains knowledge requirement - answer",
-      "answers": [
-        {
-          "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
-        }
-      ]
-    },
-    {
-      "qa_id": "q04",
-      "category": "Operating and Efforts Covenant",
-      "question": "General Antitrust Efforts Standard-Answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Reasonable best efforts"
-      ],
-      "gold_labels": [
-        "2"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Commercially reasonable efforts",
-        "Flat standard",
-        "Reasonable best efforts"
-      ],
-      "subquestions": [],
-      "source_question": "General Antitrust Efforts Standard-Answer",
-      "answers": [
-        {
-          "text": "Reasonable best efforts"
-        }
-      ]
-    },
-    {
       "qa_id": "q05",
-      "category": "Operating and Efforts Covenant",
-      "question": "Buyer consent requirement (negative interim covenant)-Answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Consent may not be unreasonably withheld, conditioned or delayed"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Consent may not be unreasonably withheld, conditioned or delayed",
-        "Flat consent"
-      ],
-      "subquestions": [],
-      "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
-      "answers": [
-        {
-          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
-        }
-      ]
-    },
-    {
-      "qa_id": "q06",
-      "category": "Material Adverse Effect",
-      "question": "FLS (MAE) applies to",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "No"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": true,
-      "answer_options": [
-        "No",
-        "ability to consummate transaction",
-        "business and operation of Target",
-        "business and operation of Target, ability to consummate transaction"
-      ],
-      "subquestions": [
-        "ability to consummate transaction"
-      ],
-      "source_question": "FLS (MAE) applies to",
-      "answers": [
-        {
-          "text": "No"
-        }
-      ]
-    },
-    {
-      "qa_id": "q07",
       "category": "Deal Protection and Related Provisions",
       "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
       "answer_type": "multiple_choice",
@@ -193,6 +163,7 @@
         "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
         "Acquisition Proposal only",
         "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
@@ -206,33 +177,9 @@
       ]
     },
     {
-      "qa_id": "q08",
+      "qa_id": "q06",
       "category": "Material Adverse Effect",
-      "question": "Actions required under transaction agreement-Answer (Y/N)",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Yes"
-      ],
-      "gold_labels": [
-        "1"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "No",
-        "Yes"
-      ],
-      "subquestions": [],
-      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
-      "answers": [
-        {
-          "text": "Yes"
-        }
-      ]
-    },
-    {
-      "qa_id": "q09",
-      "category": "Operating and Efforts Covenant",
-      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
       "answer_type": "multiple_choice",
       "gold_answers": [
         "No"
@@ -240,13 +187,14 @@
       "gold_labels": [
         "0"
       ],
-      "is_impossible": true,
+      "is_impossible": false,
+      "is_negative": true,
       "answer_options": [
         "No",
         "Yes"
       ],
       "subquestions": [],
-      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "source_question": "Matters listed on disclosure schedules-Answer (Y/N)",
       "answers": [
         {
           "text": "No"
@@ -254,28 +202,196 @@
       ]
     },
     {
-      "qa_id": "q10",
+      "qa_id": "q07",
       "category": "Conditions to Closing",
-      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
       "answer_type": "multiple_choice",
       "gold_answers": [
-        "Accurate in all respects with de minimis exception"
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes"
       ],
       "gold_labels": [
-        "3"
+        "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "Accurate in all material respects",
-        "Accurate in all respects",
-        "Accurate in all respects with below-threshold carveout",
-        "Accurate in all respects with de minimis exception"
+        "Authority, Approval, Enforceability",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Authority, Approval, Enforceability, No MAE, Opinion of Financial Advisor, Other",
+        "Authority, Approval, Enforceability, Organization, Brokers' Fee",
+        "Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other",
+        "Capitalization-Other, Approval, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, No MAE, Brokers' Fee, Rights Agreement, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, No-Conflict, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Tax",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Enforceability, Brokers' Fee",
+        "Capitalization-Other, Authority, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Enforceability, Organization, No MAE, Brokers' Fee, Opinion of Financial Advisor, No-Conflict",
+        "Capitalization-Other, Authority, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, No MAE",
+        "Capitalization-Other, No MAE, Other"
       ],
-      "subquestions": [],
-      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "subquestions": [
+        "Approval",
+        "Subsidiaries"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
       "answers": [
         {
-          "text": "Accurate in all respects with de minimis exception"
+          "text": "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "General R&Ws, fundamental/Special R&Ws"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "General R&Ws",
+        "General R&Ws, Capitalization R&Ws",
+        "General R&Ws, Capitalization R&Ws, Specified R&Ws only",
+        "General R&Ws, Capitalization R&Ws, fundamental/Special R&Ws",
+        "General R&Ws, Specified R&Ws only",
+        "General R&Ws, fundamental/Special R&Ws",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws, fundamental/Special R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Any breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Any breach of no-shop, (Material) breach of other provisions of agreement",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop resulting in a Superior Offer, (Material) breach of other provisions of agreement",
+        "Material breach of no-shop, (Material) breach of other provisions of agreement",
+        "Other"
+      ],
+      "subquestions": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Any breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
         }
       ]
     }

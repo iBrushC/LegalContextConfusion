@@ -7,54 +7,127 @@
   "position": "target_at_end",
   "actual_tokens": 4000,
   "actual_chars": 16000,
-  "target_document_id": "contract_90",
-  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+  "target_document_id": "contract_138",
+  "target_document_title": "dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS",
   "distractor_ids": [
-    "contract_144"
+    "contract_110"
   ],
   "target_fits": false,
   "target_truncated": true,
   "filler_source": "maud-other-agreements",
   "filler_repeated": false,
-  "context": "<DOCUMENT id=\"contract_144\" title=\"________________\">\nExhibit 2.1   EXECUTION COPY     AGREEMENT AND PLAN OF MERGER   Dated as of September 9, 2020,   Among   AUSTIN HOLDCO INC.,   AUSTIN BIDCO INC.,   And   VIRTUSA CORPORATION    \n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  TABLE OF CONTENTS   \n\n\n PAGE \n\n\nARTICLE I THE MERGER 1 Section 1.01. The Merger 1 Section 1.02. Closing 2 Section 1.03. Effective Time 2 Section 1.04. Effects 2 Section 1.05. Organizational Documents 2 Section 1.06. Directors and Officers 3 \n\n\nARTICLE II EFFECT ON THE CAPITAL STOCK OF THE CONSTITUENT CORPORATIONS; EXCHANGE OF CERTIFICATES 3 Section 2.01. Effect on Capital Stock 3 Section 2.02. Exchange of Certificates 4 \n\n\nARTICLE III REPRESENTATIONS AND WARRANTIES OF THE COMPANY 7 Section 3.01. Organization, Standing and Power 7 Section 3.02. Company Subsidiaries; Equity Interests 7 Section 3.03. Capital Structure 8 Section 3.04. Authority; Execution and Delivery; Enforceability 10 Section 3.05. No Conflicts; Consents 11 Section 3.06. SEC Documents; Undisclosed Liabilities 11 Section 3.07. Information Supplied 13 Section 3.08. Absence of Certain Changes or Events 13 Section 3.09. Taxes 14 Section 3.10. Company Benefit Plans 17 Section 3.11. Litigation 19 Section 3.12. Compliance with Applicable Laws; Permits 19 Section 3.13. Brokers and Other Advisors 20 Section 3.14. Opinion of Financial Advisor 20 Section 3.15. Environmental Matters 20 Section 3.16. Material Contracts 21 Section 3.17. Title to Properties 24 Section 3.18. Intellectual Property 24 Section 3.19. Labor Matters 28 Section 3.20. Vote Required 29   \n\n\n-i-\n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  TABLE OF CONTENTS (continued)    Page Section 3.21. Privacy and Data Security 30 Section 3.22. Relationships with Customers and Distributors 31 Section 3.23. Affiliate Transactions; Insider Interests 31 Section 3.24. Certain Business Practices 31 Section 3.25. Insurance 32 Section 3.26. Disclaimer of Other Representations and Warranties 33 \n\n\nARTICLE IV REPRESENTATIONS AND WARRANTIES OF PARENT AND SUB 33 Section 4.01. Organization, Standing and Power 33 Section 4.02. Interim Operations of Sub 33 Section 4.03. Authority; Execution and Delivery; Enforceability 34 Section 4.04. No Conflicts; Consents 34 Section 4.05. Information Supplied 34 Section 4.06. Brokers 35 Section 4.07. Financing 35 Section 4.08. Limited Guarantees 36 Section 4.09. Solvency 36 Section 4.10. Disclaimer of Other Representations and Warranties 37 Section 4.11. Anti-Money Laundering Laws 38 Section 4.12. Not an Interested Stockholder 38 Section 4.13. Absence of Certain Agreements 38 Section 4.14. Stockholder, Labor and Employee Matters 38 \n\n\nARTICLE V COVENANTS RELATING TO CONDUCT OF BUSINESS 39 Section 5.01. Conduct of Business 39 Section 5.02. No Solicitation 44 \n\n\nARTICLE VI ADDITIONAL AGREEMENTS 48 Section 6.01. Preparation of the Proxy Statement; Stockholders Meeting 48 Section 6.02. Access to Information; Confidentiality 49 Section 6.03. Reasonable Best Efforts; Notification 50 Section 6.04. Employee Matters; Benefit Plans 52 Section 6.05. Company Stock Awards 53 Section 6.06. Takeover Laws 55 Section 6.07. Indemnification and Insurance 56   \n\n\n-ii-\n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  TABLE OF CONTENTS (continued)    Page Section 6.08. Fees and Expenses 58 Section 6.09. Public Announcements 58 Section 6.10. Transaction Litigation 59 Section 6.11. Financing 59 Section 6.12. Stock Exchange Delisting and Deregistration 62 Section 6.13. Resignation of Directors 63 Section 6.14. Transfer Restrictions 63 Section 6.15. Company Series A Preferred Stock 63 Section 6.16. Payoff Letter 63 Section 6.17. Section 16 Matters 63 \n\n\nARTICLE VII CONDITIONS PRECEDENT 63 Section 7.01. Conditions to Each Party’s Obligation To Effect The Merger 63 Section 7.02. Conditions to Obligations of Parent and Sub 64 Section 7.03. Conditions to Obligation of the Company 65 \n\n\nARTICLE VIII TERMINATION, AMENDMENT AND WAIVER 65 Section 8.01. Termination 65 Section 8.02. Effect of Termination 67 Section 8.03. Amendment 70 Section 8.04. Extension; Waiver 70 Section 8.05. Procedure for Termination, Amendment, Extension or Waiver 71 \n\n\nARTICLE IX GENERAL PROVISIONS 71 Section 9.01. Nonsurvival of Representations and Warranties 71 Section 9.02. Notices 71 Section 9.03. Definitions 72 Section 9.04. Interpretation; Disclosure Letters 81 Section 9.05. Severability 81 Section 9.06. Counterparts 82 Section 9.07. Entire Agreement; No Third-Party Beneficiaries; No Recourse 82 Section 9.08. Governing Law 83 Section 9.09. Assignment 83 Section 9.10. Enforcement 83 Section 9.11. Debt Financing Matters 85 EXHIBIT A -- CERTIFICATE OF INCORPORATION OF THE SURVIVING CORPORATION     \n\n\n-iii-\n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  INDEX OF DEFINED TERMS   Terms  Section Action  Section 3.11 Acquisition Agreement  Section 5.02(b) Acquisition Proposal  Section 5.02(e) Adverse Recommendation Change  Section 5.02(b) Affiliate or affiliate  Section 9.03 Agreement  Preamble Alternative Financing  Section 6.11(d) Anticorruption Laws  Section 3.24(a) Antitrust Laws  Section 6.03(e) Applicable Percentage  Section 6.05(d) Appraisal Shares  Section 2.01(d) Assumed Company Stock Award  Section 6.05(d) Bankruptcy and Equity Exception  Section 3.04 business day  Section 9.03 Cause  Section 6.05(d) Certificate  Section 2.01(c)(ii) Certificate of Merger  Section 1.03 CFIUS  Section 9.03 CFIUS Approval  Section 9.03 CFIUS Filing  Section 6.03(b) Closing  Section 1.02 Closing Company Stock Award  Section 6.05(d) Closing Date  Section 1.02 Code  Section 2.02(h) Collection Costs  Section 8.02(e) Commitment Letters  Section 4.07 Company  Preamble Company Benefit Plan  Section 3.10(a) Company Board  Section 3.04(b) Company Board Recommendation  Section 3.04(b) Company Bylaws  Section 3.01 Company Capital Stock  Section 3.03 Company Charter  Section 3.01 Company Common Stock  Recitals Company Disclosure Letter  Article III Company Five-Year PSU Awards  Section 3.03(b) Company Intellectual Property  Section 3.18 Company Licensed Registrations  Section 3.18(a) Company Material Adverse Effect  Section 9.03 Company Owned IP  Section 5.01(a)(xi) Company Owned Registrations  Section 3.18(a) Company Preferred Stock  Section 3.03 Company PRSU Awards  Section 3.03(b) Company Registrations  Section 3.18(a) Company Related Parties  Section 8.02(f)   \n\n\n-v-\n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  INDEX OF DEFINED TERMS (continued)   Terms  Section Company Restricted Shares  Section 3.03(d) Company RSU Awards  Section 3.03(d) Company SEC Documents  Section 3.06(a) Company Series A Preferred Stock  Section 3.03(a) Company Software  Section 3.18(l) Company Stock Awards  Section 3.03(d) Company Stock Options  Section 3.03(d) Company Stockholder Approval  Section 3.20 Company Stockholders Meeting  Section 6.01(b) Company Stock Plans  Section 6.05(d) Company Subsidiaries  Section 3.01 Compliant  Section 9.03 Confidentiality Agreement  Section 6.02 Continuing Employees  Section 6.04 Contract  Section 3.03(c) control  Section 9.03 Conveyance Taxes  Section 6.08 Corporation  Exhibit A Current Premium  Section 6.07(b) Debt Financing Sources  Section 9.03 DGCL  Section 1.01 DOJ  Section 6.03(a) DPA  Section 9.03 Draft CFIUS Filing  Section 6.03(b) Earliest Marketing Period Start Date  Section 9.03 Effective Time  Section 1.03 Environmental Laws  Section 3.15(a) Equity Commitment Letters  Section 4.07 Equity Financing  Section 4.07 ERISA  Section 3.10(a) Exchange Act  Section 3.03(e) Exchange Fund  Section 2.02(b) Existing Credit Agreement  Section 6.16 Expenses  Section 8.02(c) Fairness Opinion  Section 3.14 Filed Company SEC Documents  Article III Financing  Section 4.07 Financing Expenses  Section 6.11(f) Foreign Antitrust Laws  Section 6.03(a) Foreign Company Benefit Plan  Section 3.10(i) FTC  Section 6.03(a) GAAP  Section 3.06(b) Good Reason  Section 6.05(d) Governmental Entity  Section 2.02(e) Grant Date  Section 3.03   \n\n\n-vi-\n\n\n\n\n\n\n\n\n________________\n\n\n\n\n\n\n  INDE\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_90\" title=\"AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …\">\nExhibit 2.1 \n\n\nExecution Version     \n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nby and among: \n\n\nANALOG DEVICES, INC., a Massachusetts corporation; \n\n\nMAGNETO CORP., a Delaware corporation; \n\n\nand \n\n\nMAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation    Dated as of July 12, 2020       \n\n\n\n\n\n\n\n\n________________\n\n\nSECTION 1  THE MERGER    1 1.1    The Merger    1 1.2    Closing    2 1.3    Certificate of Incorporation and Bylaws    2 1.4    Directors and Officers of the Surviving Corporation    2 1.5    Conversion of Securities    3 1.6    Certain Adjustments    3 1.7    Options; Stock Based Awards    3 1.8    No Fractional Shares    4 1.9    Closing of Transfer Books    5 1.10  Exchange of Certificates and Cancellation of Book-Entry Positions    5 1.11  Further Action    7 1.12  Tax Withholding    7 1.13  Tax Treatment    8 SECTION 2  REPRESENTATIONS AND WARRANTIES OF THE COMPANY    8 2.1    Due Organization and Good Standing; Subsidiaries    8 2.2    Organizational Documents    9 2.3    Capitalization    9 2.4    Reports; Financial Statements; Internal Controls    10 2.5    Absence of Certain Changes    12 2.6    Intellectual Property and Related Matters    12 2.7    Title to Assets; Real Property    14 2.8    Contracts    15 2.9    Compliance with Legal Requirements    17 2.10  Legal Proceedings; Investigations; Orders    18 2.11  Certain Business Practices    19 2.12  Tax Matters    19 2.13  Employee Benefit Plans    21 2.14  Labor Matters    22 2.15  Environmental Matters    22 2.16  Insurance    23 2.17  Authority; Binding Nature of Agreement    23 2.18  Vote Required    24   i\n\n\n\n\n\n\n\n\n________________\n\n\n2.19  Non-Contravention; Consents    24 2.20  Takeover Statutes    24 2.21  Ownership of Parent Common Stock    25 2.22  Opinion of Financial Advisor    25 2.23  Brokers    25 2.24  Information Supplied    25 SECTION 3  REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB    25 3.1    Due Organization and Good Standing; Subsidiaries    25 3.2    Organizational Documents    26 3.3    Capitalization    26 3.4    Reports; Financial Statements; Internal Controls    27 3.5    Absence of Certain Changes    29 3.6    Contracts    29 3.7    Compliance with Legal Requirements    29 3.8    Legal Proceedings; Investigations; Orders    31 3.9    Certain Business Practices    31 3.10  Tax Matters    31 3.11  Authority; Binding Nature of Agreement    31 3.12  Vote Required    32 3.13  Non-Contravention; Consents    33 3.14  Takeover Statutes    33 3.15  Ownership of Company Common Stock    33 3.16  Opinion of Financial Advisors    33 3.17  Brokers    33 3.18  Information Supplied    33 3.19  Acquisition Sub    34 SECTION 4  COVENANTS    34 4.1  Interim Operations    34 4.2  Company No Solicitation    39 4.3  Parent No Solicitation    40 4.4  Registration Statement; Joint Proxy Statement/Prospectus    42 4.5  Meeting of the Company’s Stockholders; Company Change in Recommendation    43   ii\n\n\n\n\n\n\n\n\n________________\n\n\n4.6    Meeting of Parent’s Shareholders; Parent Change in Recommendation    46 4.7    Filings; Other Action    49 4.8    Access    52 4.9    Interim Operations of Acquisition Sub    53 4.10  Publicity    54 4.11  Company ESPP; Other Employee Benefits    54 4.12  Certain Tax Matters    56 4.13  Indemnification; Directors’ and Officers’ Insurance    57 4.14  Stockholder Litigation    58 4.15  Obligations of Acquisition Sub    59 4.16  Stock Exchange Listing and Delisting    59 4.17  Section 16 Matters    59 4.18  Parent Vote    59 4.19  Director Resignations    59 4.20  Takeover Statutes    59 SECTION 5  CONDITIONS TO EACH PARTY’S OBLIGATION TO EFFECT THE MERGER    59 5.1  Conditions Precedent to Each Party’s Obligations    59 5.2  Additional Conditions Precedent to Parent’s Obligations    60 5.3  Additional Conditions Precedent to the Company’s Obligations    61 SECTION 6  TERMINATION    62 6.1  Termination    62 6.2  Effect of Termination    63 6.3  Termination Fees    64 SECTION 7  MISCELLANEOUS PROVISIONS    66 7.1  Amendment    66 7.2  Waiver    66 7.3  No Survival of Representations and Warranties    66 7.4  Entire Agreement; Non-Reliance; Third-Party Beneficiaries    66 7.5  Applicable Law; Jurisdiction    68 7.6  Payment of Expenses    68 7.7  Assignability; Parties in Interest    68 7.8  Notices    68   iii\n\n\n\n\n\n\n\n\n________________\n\n\n7.9    Severability    69 7.10  Counterparts    70 7.11  Obligations of the Surviving Corporation    70 7.12  Specific Performance    70 7.13  Disclosure Schedules    70 7.14  Construction    71   Exhibits    \n\n\nExhibit A   Certain Definitions     iv\n\n\n\n\n\n\n\n\n________________\n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nTHIS AGREEMENT AND PLAN OF MERGER (this “Agreement”) is made and entered into as of July 12, 2020, by and among: ANALOG DEVICES, INC., a Massachusetts corporation (“Parent”); MAGNETO CORP., a Delaware corporation and a wholly owned subsidiary of Parent (“Acquisition Sub”); and MAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation (the “Company”). Certain capitalized terms used in this Agreement are defined in Exhibit A. \n\n\nRECITALS \n\n\nA.    The parties intend that Acquisition Sub be merged with and into the Company (the “Merger”) in accordance with this Agreement and the General Corporation Law of the State of Delaware (the “DGCL”). Upon consummation of the Merger, Acquisition Sub will cease to exist and the Company will continue as the Surviving Corporation and a wholly owned Subsidiary of Parent. \n\n\nB.    The Company Board has unanimously: (i) determined that the Merger is fair to and in the best interests of the Company and its stockholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that the Company’s stockholders adopt this Agreement. \n\n\nC.    The Parent Board has unanimously: (i) determined that the terms of this Agreement and the Merger are fair to, and in the best interests of, Parent and its shareholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that Parent’s shareholders approve the issuance of shares of Parent Common Stock in connection with the Merger on the terms and subject to the conditions set forth in this Agreement. \n\n\nD.    The board of directors of Acquisition Sub has: (i) determined that it is in the best interests of its sole stockholder for Acquisition Sub to enter into this Agreement; (ii) approved and declared advisable this Agreement and the transactions contemplated hereby, including the Merger; and (iii) recommended that its sole stockholder adopt this Agreement. \n\n\nE.    It is intended that, for U.S. federal income Tax purposes, the Merger will qualify as a “reorganization” within the meaning of Section 368(a) of the Code and that this Agreement be, and is hereby adopted as, a “plan of reorganization” for purposes of Sections 354 and 361 of the Code. \n\n\nAGREEMENT \n\n\nThe parties to this Agreement, in consideration of the representations, warranties, covenants and agreements set forth herein and for other good and valuable consideration, the receipt and adequacy of which are hereby acknowledged, and intending to be legally bound, agree as follows: \n\n\nSECTION 1    THE MERGER 1.1    The Merger. At the Effective Time, Acquisition Sub shall be merged with and into the Company in accordance with the DGCL and upon the terms and subject to the conditions set forth in this Agreement, whereupon the separate existence of Acquisition Sub shall cease and the Company shall be the surviving corporation (the “Surviving Corporation”) in the Merger and a \n</DOCUMENT>",
+  "context": "<DOCUMENT id=\"contract_110\" title=\"AGREEMENT AND PLAN OF MERGER BY AND AMONG PERSPECTA INC. JAGUAR PARENTCO INC. AND JAGUAR MERGER SUB INC. Dated as of January 27, 2021\">\nExhibit 2.1 \n\n\nEXECUTION VERSION \n\n\nAGREEMENT AND PLAN OF MERGER   BY AND AMONG   PERSPECTA INC.   JAGUAR PARENTCO INC.   AND   JAGUAR MERGER SUB INC.   Dated as of January 27, 2021\n\n\n\n\n\n\n\n\n________________\n\n\nTABLE OF CONTENTS \n\n\nARTICLE I DEFINITIONS 2  Section 1.1 Certain Definitions 2  Section 1.2 Interpretation 17 ARTICLE II THE MERGER; EFFECTS OF THE MERGER 18  Section 2.1 The Merger 18  Section 2.2 Closing 18  Section 2.3 Effect of the Merger 19  Section 2.4 Organizational Documents 19  Section 2.5 Directors and Officers of the Surviving Corporation 19 ARTICLE III MERGER CONSIDERATION; EXCHANGE PROCEDURES 20  Section 3.1 Effect of the Merger on Capital Stock 20  Section 3.2 Treatment of Equity Compensation Awards 21  Section 3.3 Payment for Securities 23 ARTICLE IV REPRESENTATIONS AND WARRANTIES OF THE COMPANY 26  Section 4.1 Organization, General Authority and Standing 26  Section 4.2 Capital Structure 27  Section 4.3 Company Subsidiaries; Equity Interests 28  Section 4.4 Authority; Execution and Delivery; Enforceability 29  Section 4.5 No Conflicts; Consents 29  Section 4.6 SEC Documents; Undisclosed Liabilities 30  Section 4.7 Information Supplied 32  Section 4.8 Absence of Certain Changes or Events 32  Section 4.9 Taxes 32  Section 4.10 Labor Relations 35  Section 4.11 Employee Benefits 35  Section 4.12 Title to Properties 37  Section 4.13 Company Government Contracts 38  Section 4.14 Export Controls and Anti-Bribery Compliance 39  Section 4.15 Material Contracts 40  Section 4.16 Litigation 43  Section 4.17 Compliance with Laws 43  Section 4.18 Environmental Matters 44  Section 4.19 Intellectual Property 45 \n\n\ni\n\n\n\n\n\n\n\n\n________________\n\n\nSection 4.20 Privacy and Data Security 46  Section 4.21 Insurance 46  Section 4.22 Brokers and Other Advisors 47  Section 4.23 Opinions of Financial Advisors 47  Section 4.24 Related Party Transactions 48  Section 4.25 Accounts Receivable; Accounts Payable 48  Section 4.26 No Other Representations or Warranties; Reliance Disclaimer 48 ARTICLE V REPRESENTATIONS AND WARRANTIES OF PARENT AND MERGER SUB 48  Section 5.1 Organization, General Authority and Standing 48  Section 5.2 Capitalization and Business Conduct of Merger Sub 49  Section 5.3 Authority; Execution and Delivery; Enforceability 49  Section 5.4 No Conflicts; Consents 50  Section 5.5 Financing 51  Section 5.6 Information Supplied 52  Section 5.7 Litigation 52  Section 5.8 Brokers and Other Advisors 52  Section 5.9 Ownership of Company Common Stock 52  Section 5.10 Guarantee 53  Section 5.11 Taxes 53  Section 5.12 Certain Arrangements 53  Section 5.13 No Other Representations or Warranties; Reliance Disclaimer 53 ARTICLE VI COVENANTS 54  Section 6.1 Conduct of Business by the Company 54  Section 6.2 Conduct of Business by Parent and Merger Sub 57  Section 6.3 Consummation of the Merger 58  Section 6.4 No Solicitation by the Company and Company Change in Recommendation 60  Section 6.5 Preparation of Proxy Statement and Schedule 13e‑3 64  Section 6.6 Company Stockholders Meeting 65  Section 6.7 Access to Information; Confidentiality 66  Section 6.8 Public Statements 66  Section 6.9 Takeover Laws 67  Section 6.10 Third-Party Approvals 67  Section 6.11 Indemnification; Directors’ and Officers’ Insurance 68  Section 6.12 Section 16 Matters 70 \n\n\nii\n\n\n\n\n\n\n\n\n________________\n\n\nSection 6.13 Employee Matters 70  Section 6.14 Transaction Litigation 72  Section 6.15 Financing 73  Section 6.16 Financing Cooperation 75  Section 6.17 A/R Facility 79  Section 6.18 Stock Exchange Delisting 79 ARTICLE VII CONDITIONS TO CONSUMMATION OF THE MERGER 79  Section 7.1 Mutual Closing Conditions 79  Section 7.2 Additional Company Conditions to Closing 80  Section 7.3 Additional Parent Conditions to Closing 80  Section 7.4 Frustration of Closing Conditions 81 ARTICLE VIII TERMINATION 81  Section 8.1 Termination of Agreement 81  Section 8.2 Procedure Upon Termination 83  Section 8.3 Effect of Termination 83  Section 8.4 Fees and Expense Reimbursement 83 ARTICLE IX MISCELLANEOUS 86  Section 9.1 Amendments and Waivers 86  Section 9.2 Counterparts 86  Section 9.3 Notices 86  Section 9.4 Assignment 87  Section 9.5 Entire Understanding: No Third-Party Beneficiaries 88  Section 9.6 Severability 88  Section 9.7 Governing Law; Venue; Waiver of Jury Trial 88  Section 9.8 No Recourse 89  Section 9.9 Specific Performance 89  Section 9.10 Transfer Taxes 90  Section 9.11 Survival 90  Section 9.12 Debt Financing Sources 90 \n\n\niii\n\n\n\n\n\n\n\n\n________________\n\n\nAGREEMENT AND PLAN OF MERGER   This AGREEMENT AND PLAN OF MERGER, dated as of January 27, 2021 (this “Agreement”), is entered into by and among PERSPECTA INC., a Nevada corporation (the “Company”), JAGUAR PARENTCO INC., a corporation organized under the laws of Delaware (“Parent”) and JAGUAR MERGER SUB INC., a Nevada corporation and a direct, wholly owned subsidiary of Parent (“Merger Sub” and, collectively with the Company and Parent, the “Parties”).  Certain defined terms used but not otherwise defined herein shall have the meanings set forth in Section 1.1. \n\n\nRECITALS   WHEREAS, upon the terms and subject to the conditions set forth in this Agreement, at the Effective Time, Merger Sub will be merged with and into the Company (the “Merger”) in accordance with the applicable provisions of the NRS, with the Company surviving the Merger as the Surviving Corporation and a direct, wholly owned subsidiary of Parent;   WHEREAS, the Board of Directors of the Company (the “Company Board”), at a meeting duly called and held, (a) determined that this Agreement and the Merger and other transactions contemplated hereby (the “Transactions”) are fair to, and in the best interests of, the Company’s stockholders, (b) adopted, approved and declared advisable this Agreement and the Transactions, (c) directed that this Agreement be submitted to the holders of Company Common Stock for approval and (d) resolved to recommend that the holders of Company Common Stock approve this Agreement and the Transactions;   WHEREAS, concurrently with the execution of this Agreement, and as consideration for and inducement to the Company’s willingness to enter into this Agreement, the Equity Fund is entering into the Guarantee with respect to certain obligations of Parent and Merger Sub under this Agreement;   WHEREAS, the Board of Directors of Parent (the “Parent Board”), at a meeting duly called and held, (a) determined that this Agreement and the Transactions, are fair to, and in the best interest of, Parent and Parent’s stockholders and (b) approved and declared advisable this Agreement and the Transactions; and   WHEREAS, the Board of Directors of Merger Sub (the “Merger Sub Board”) has, by unanimous vote, (a) determined that this Agreement and the Transactions are fair to, and in the best interests of, Merger Sub’s sole stockholder, (b) adopted, approved and declared advisable this Agreement and the Transactions and (c) submitted this Agreement to Parent, as sole stockholder of Merger Sub, for approval thereby and recommended that Parent approve this Agreement and the Transactions (and Parent, as sole stockholder, has executed and delivered a unanimous written consent of the sole stockholder of Merger Sub approving this Agreement and approving the Transactions in accordance with the NRS, such approval to be effective immediately following the execution and delivery of this Agreement).   NOW, THEREFORE, in consideration of the foregoing and the representations, warranties, covenants and agreements contained in this Agreement, and for other valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties agree as follows: \n\n\n1\n\n\n\n\n\n\n\n\n________________\n\n\nARTICLE I DEFINITIONS   Section 1.1          Certain Definitions. As used in this Agreement, the fo\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nExhibit 2.1   AGREEMENT AND PLAN OF MERGER \n\n\ndated as of \n\n\nFebruary 16, 2021 \n\n\namong \n\n\nTRIBUNE PUBLISHING COMPANY, \n\n\nTRIBUNE ENTERPRISES, LLC \n\n\nand \n\n\nTRIBUNE MERGER SUB, INC.       TABLE OF CONTENTS     \n\n\n  Page     Article 1  Definitions   Section 1.01.  Definitions 1 Section 1.02.  Other Definitional and Interpretative Provisions 11    Article 2  The Merger   Section 2.01.  The Merger 12 Section 2.02.  Conversion of Shares 12 Section 2.03.  Surrender and Payment 13 Section 2.04.  Dissenting Shares 15 Section 2.05.  Treatment of Equity Awards 15 Section 2.06.  Adjustments 16 Section 2.07.  Lost Certificates 16 Section 2.08.  Withholding Rights 17    Article 3  The Surviving Corporation   Section 3.01.  Certificate of Incorporation 17 Section 3.02.  Bylaws 17 Section 3.03.  Directors and Officers 17    Article 4  Representations and Warranties of the Company   Section 4.01.  Corporate Existence and Power 18 Section 4.02.  Corporate Authorization 18 Section 4.03.  Governmental Authorization 19 Section 4.04.  Non-Contravention 19 Section 4.05.  Capitalization 19 Section 4.06.  Subsidiaries 21 Section 4.07.  SEC Filings; Internal Control 22 Section 4.08.  Financial Statements 23 Section 4.09.  Disclosure Documents 23 Section 4.10.  Absence of Certain Changes 24 Section 4.11.  No Undisclosed Material Liabilities 24 Section 4.12.  Compliance with Laws; Permits 24 Section 4.13.  Compliance with Anti-Corruption and Anti-Money Laundering Laws; Sanctions 25 Section 4.14.  Litigation 25 Section 4.15.  Properties 26     i  \n\n\n\n\n\n\n\n\n________________\n\n\n     Section 4.16.  Intellectual Property; Data Privacy and Security 27 Section 4.17.  Taxes 28 Section 4.18.  Employee Benefit Plans 30 Section 4.19.  Employee and Labor Matters 31 Section 4.20.  Environmental Matters 33 Section 4.21.  Material Contracts 33 Section 4.22.  Insurance 35 Section 4.23.  Finders’ Fees 36 Section 4.24.  Opinion of Financial Advisor 36 Section 4.25.  Antitakeover Statutes 36 Section 4.26.  Transactions with Affiliates 36 Section 4.27.  Acknowledgement of No Other Representations and Warranties 36    Article 5  Representations and Warranties of Parent   Section 5.01.  Corporate Existence and Power 37 Section 5.02.  Corporate Authorization 37 Section 5.03.  Governmental Authorization 38 Section 5.04.  Non-Contravention 38 Section 5.05.  Disclosure Documents 38 Section 5.06.  Litigation 39 Section 5.07.  Finders’ Fees 39 Section 5.08.  Knowledge of Parent 39 Section 5.09.  Ownership of Common Stock 39 Section 5.10.  Guarantee; Equity Commitment Letter; Financing 40 Section 5.11.  Solvency 40 Section 5.12.  Management Agreements 41 Section 5.13.  Acknowledgement of No Other Representations and Warranties 41    Article 6  Covenants of the Company   Section 6.01.  Conduct of the Company 42 Section 6.02.  Company Stockholder Meeting 45 Section 6.03.  Access to Information 46 Section 6.04.  No Solicitation; Other Offers 47 Section 6.05.  Stock Exchange Delisting 50 Section 6.06.  Financing Cooperation; Baltimore Sun; Asset Dispositions 50    Article 7  Covenants of Parent   Section 7.01.  Conduct of Parent 54 Section 7.02.  Obligations of Merger Sub 55 Section 7.03.  Director and Officer Liability 55 Section 7.04.  Employee Matters 57   ii       Section 7.05.  Parent Voting Agreement 58    Article 8  Covenants of Parent and the Company   Section 8.01.  Regulatory Undertakings; Reasonable Best Efforts 59 Section 8.02.  Certain Filings 61 Section 8.03.  Public Announcements 62 Section 8.04.  Merger Sub Approval Without Meeting of Stockholders 63 Section 8.05.  Section 16 Matters 63 Section 8.06.  Notices of Certain Events 63 Section 8.07.  Litigation and Proceedings 63 Section 8.08.  Takeover Statutes 64    Article 9  Conditions to the Merger   Section 9.01.  Conditions to the Obligations of Each Party 64 Section 9.02.  Conditions to the Obligations of Parent and Merger Sub 64 Section 9.03.  Conditions to the Obligations of the Company 65 Section 9.04.  Frustration of Closing Conditions 66    Article 10  Termination  \n\n\n\n\n\n\n\n\n________________\n\n\nSection 10.01.  Termination 66 Section 10.02.  Effect of Termination 68    Article 11  Miscellaneous   Section 11.01.  Notices 69 Section 11.02.  No Survival 70 Section 11.03.  Amendments and Waivers 70 Section 11.04.  Expenses 70 Section 11.05.  Disclosure Schedule 72 Section 11.06.  Binding Effect; Benefit; Assignment 72 Section 11.07.  Governing Law 72 Section 11.08.  Jurisdiction 73 Section 11.09.  WAIVER OF JURY TRIAL 73 Section 11.10.  Counterparts; Effectiveness 73 Section 11.11.  Entire Agreement 73 Section 11.12.  Severability 73 Section 11.13.  Specific Performance 74   iii        AGREEMENT AND PLAN OF MERGER   AGREEMENT AND PLAN OF MERGER (this “Agreement”) dated as of February 16, 2021, among Tribune Publishing Company, a Delaware corporation (the “Company”), Tribune Enterprises, LLC, a Delaware limited liability company (“Parent”), and Tribune Merger Sub, Inc., a Delaware corporation and a wholly owned subsidiary of Parent (“Merger Sub”).    W I T N E S S E T H :   WHEREAS, the board of directors of the Company (the “Board of Directors”), acting upon the unanimous recommendation of a special committee thereof consisting only of independent and disinterested directors (the “Special Committee”), and the respective boards of directors of Parent and Merger Sub, have approved and declared advisable that the respective stockholders of the Company and Merger Sub approve and adopt this Agreement pursuant to which, among other things, Parent would acquire the Company by means of a merger of Merger Sub with and into the Company on the terms and subject to the conditions set forth in this Agreement; and   WHEREAS, the Company, Parent and Merger Sub desire to make certain representations, warranties, covenants and agreements in connection with this Agreement.   NOW, THEREFORE, in consideration of the foregoing and the representations, warranties, covenants and agreements contained herein, the parties hereto agree as follows:   ARTICLE 1 DEFINITIONS   Section 1.01. Definitions. (a) As used herein, the following terms have the following meanings:   “1933 Act” means the Securities Act of 1933.   “1934 Act” means the Securities Exchange Act of 1934.   “Acquisition Proposal” means, other than the transactions contemplated by this Agreement, any Third Party offer or proposal relating to (i) any acquisition or purchase, direct or indirect, of 20% or more of the consolidated assets of the Company and its Subsidiaries or 20% or more of any class of equity or voting securities of the Company or any of its Subsidiaries whose assets, individually or in the aggregate, constitute 20% or more of the consolidated assets of the Company, (ii) any tender offer (including a self-tender offer) or exchange offer that, if consummated, would result in such Third Party beneficially owning 20% or more of any class of equity or voting securities of the       Company or any of its Subsidiaries whose assets, individually or in the aggregate, constitute 20% or more of the consolidated assets of the Company or (iii) a merger, consolidation, share exchange, business combination, asset sale, reorganization, recapitalization, liquidation, dissolution or other similar transaction involving the Company or any of its Subsidiaries pursuant to which any Person or group (or the stockholders of any Person) would own, directly or indirectly, 20% or more of the aggregate voting power of the Company after giving effect to the consummation of such transaction.   “Adverse Recommendation Change” means, with respect to the Board of Directors (or any committee thereof), (a) withholding, withdrawing, amending, qualifying or modifying, or publicly proposing to withhold, withdraw, amend, qualify or modify, the Compa\n</DOCUMENT>",
   "questions": [
     {
       "qa_id": "q01",
-      "category": "Deal Protection and Related Provisions",
-      "question": "Acquisition Proposal Timing-Answer",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
       "answer_type": "multiple_choice",
       "gold_answers": [
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        "\"Resulting from\""
       ],
       "gold_labels": [
         "0"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
-        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
-        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        "\"Arising from/out of\"",
+        "\"Arising from/out of\", \"Relating to\"",
+        "\"Arising from/out of\", Other",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "\"Resulting from\", \"Arising from/out of\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Attributable to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", \"Attributable to\"",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", \"Attributable to\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", Other",
+        "\"Resulting from\", \"Arising from/out of\", \"Relating to\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Arising from/out of\", Relational language varies among carveouts",
+        "\"Resulting from\", \"Attributable to\"",
+        "\"Resulting from\", \"Relating to\"",
+        "No"
       ],
       "subquestions": [
-        "Different Acquisition Proposal must close during Tail Period",
-        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        "\"Attributable to\"",
+        "\"Relating to\""
       ],
-      "source_question": "Acquisition Proposal Timing-Answer",
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
       "answers": [
         {
-          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+          "text": "\"Resulting from\""
         }
       ]
     },
     {
       "qa_id": "q02",
       "category": "Material Adverse Effect",
-      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "War or terrorism, Natural disaster"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "War or terrorism",
+        "War or terrorism, Natural disaster",
+        "War or terrorism, Natural disaster, \"act of God\"",
+        "War or terrorism, Natural disaster, \"act of God\", force majeure",
+        "War or terrorism, Natural disaster, force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "War or terrorism, Natural disaster"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "announcement, consummation"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "announcement",
+        "announcement, consummation",
+        "announcement, pendency",
+        "announcement, pendency, consummation"
+      ],
+      "subquestions": [
+        "No",
+        "announcement",
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement, consummation"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Change in law (Y/N)",
       "answer_type": "multiple_choice",
       "gold_answers": [
         "Yes"
@@ -63,12 +136,12 @@
         "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "No",
         "Yes"
       ],
       "subquestions": [],
-      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "source_question": "Change in law (Y/N)",
       "answers": [
         {
           "text": "Yes"
@@ -76,110 +149,7 @@
       ]
     },
     {
-      "qa_id": "q03",
-      "category": "Deal Protection and Related Provisions",
-      "question": "Definition contains knowledge requirement - answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Known, but consequences unknown or not reasonably foreseeable, at signing"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Known, but consequences unknown or not reasonably foreseeable, at signing",
-        "Known, but consequences unknown, at signing",
-        "Not known and not reasonably foreseeable at signing",
-        "Not known at signing"
-      ],
-      "subquestions": [],
-      "source_question": "Definition contains knowledge requirement - answer",
-      "answers": [
-        {
-          "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
-        }
-      ]
-    },
-    {
-      "qa_id": "q04",
-      "category": "Operating and Efforts Covenant",
-      "question": "General Antitrust Efforts Standard-Answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Reasonable best efforts"
-      ],
-      "gold_labels": [
-        "2"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Commercially reasonable efforts",
-        "Flat standard",
-        "Reasonable best efforts"
-      ],
-      "subquestions": [],
-      "source_question": "General Antitrust Efforts Standard-Answer",
-      "answers": [
-        {
-          "text": "Reasonable best efforts"
-        }
-      ]
-    },
-    {
       "qa_id": "q05",
-      "category": "Operating and Efforts Covenant",
-      "question": "Buyer consent requirement (negative interim covenant)-Answer",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Consent may not be unreasonably withheld, conditioned or delayed"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "Consent may not be unreasonably withheld, conditioned or delayed",
-        "Flat consent"
-      ],
-      "subquestions": [],
-      "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
-      "answers": [
-        {
-          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
-        }
-      ]
-    },
-    {
-      "qa_id": "q06",
-      "category": "Material Adverse Effect",
-      "question": "FLS (MAE) applies to",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "No"
-      ],
-      "gold_labels": [
-        "0"
-      ],
-      "is_impossible": true,
-      "answer_options": [
-        "No",
-        "ability to consummate transaction",
-        "business and operation of Target",
-        "business and operation of Target, ability to consummate transaction"
-      ],
-      "subquestions": [
-        "ability to consummate transaction"
-      ],
-      "source_question": "FLS (MAE) applies to",
-      "answers": [
-        {
-          "text": "No"
-        }
-      ]
-    },
-    {
-      "qa_id": "q07",
       "category": "Deal Protection and Related Provisions",
       "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
       "answer_type": "multiple_choice",
@@ -190,6 +160,7 @@
         "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
         "Acquisition Proposal only",
         "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
@@ -203,33 +174,9 @@
       ]
     },
     {
-      "qa_id": "q08",
+      "qa_id": "q06",
       "category": "Material Adverse Effect",
-      "question": "Actions required under transaction agreement-Answer (Y/N)",
-      "answer_type": "multiple_choice",
-      "gold_answers": [
-        "Yes"
-      ],
-      "gold_labels": [
-        "1"
-      ],
-      "is_impossible": false,
-      "answer_options": [
-        "No",
-        "Yes"
-      ],
-      "subquestions": [],
-      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
-      "answers": [
-        {
-          "text": "Yes"
-        }
-      ]
-    },
-    {
-      "qa_id": "q09",
-      "category": "Operating and Efforts Covenant",
-      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
       "answer_type": "multiple_choice",
       "gold_answers": [
         "No"
@@ -237,13 +184,14 @@
       "gold_labels": [
         "0"
       ],
-      "is_impossible": true,
+      "is_impossible": false,
+      "is_negative": true,
       "answer_options": [
         "No",
         "Yes"
       ],
       "subquestions": [],
-      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "source_question": "Matters listed on disclosure schedules-Answer (Y/N)",
       "answers": [
         {
           "text": "No"
@@ -251,28 +199,196 @@
       ]
     },
     {
-      "qa_id": "q10",
+      "qa_id": "q07",
       "category": "Conditions to Closing",
-      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
       "answer_type": "multiple_choice",
       "gold_answers": [
-        "Accurate in all respects with de minimis exception"
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes"
       ],
       "gold_labels": [
-        "3"
+        "1"
       ],
       "is_impossible": false,
+      "is_negative": false,
       "answer_options": [
-        "Accurate in all material respects",
-        "Accurate in all respects",
-        "Accurate in all respects with below-threshold carveout",
-        "Accurate in all respects with de minimis exception"
+        "Authority, Approval, Enforceability",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Authority, Approval, Enforceability, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Authority, Approval, Enforceability, No MAE, Opinion of Financial Advisor, Other",
+        "Authority, Approval, Enforceability, Organization, Brokers' Fee",
+        "Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other",
+        "Capitalization-Other, Approval, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, No MAE, Brokers' Fee, Rights Agreement, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, No-Conflict, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Tax",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, No MAE, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, No-Conflict",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, Brokers' Fee",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Brokers' Fee, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Enforceability, Subsidiaries, No MAE, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Approval, Organization, Brokers' Fee, Takeover Statutes, Rights Agreement, Opinion of Financial Advisor",
+        "Capitalization-Other, Authority, Enforceability, Brokers' Fee",
+        "Capitalization-Other, Authority, Enforceability, Organization, Brokers' Fee, Takeover Statutes, Opinion of Financial Advisor, Other",
+        "Capitalization-Other, Authority, Enforceability, Organization, No MAE, Brokers' Fee, Opinion of Financial Advisor, No-Conflict",
+        "Capitalization-Other, Authority, Organization, No MAE, Brokers' Fee, Takeover Statutes, Rights Agreement",
+        "Capitalization-Other, No MAE",
+        "Capitalization-Other, No MAE, Other"
       ],
-      "subquestions": [],
-      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "subquestions": [
+        "Approval",
+        "Subsidiaries"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
       "answers": [
         {
-          "text": "Accurate in all respects with de minimis exception"
+          "text": "Capitalization-Other, Authority, Approval, Enforceability, Organization, Subsidiaries, No MAE, Brokers' Fee, Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "General R&Ws, fundamental/Special R&Ws"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "General R&Ws",
+        "General R&Ws, Capitalization R&Ws",
+        "General R&Ws, Capitalization R&Ws, Specified R&Ws only",
+        "General R&Ws, Capitalization R&Ws, fundamental/Special R&Ws",
+        "General R&Ws, Specified R&Ws only",
+        "General R&Ws, fundamental/Special R&Ws",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws, fundamental/Special R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Any breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Any breach of no-shop, (Material) breach of other provisions of agreement",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop resulting in a Superior Offer, (Material) breach of other provisions of agreement",
+        "Material breach of no-shop, (Material) breach of other provisions of agreement",
+        "Other"
+      ],
+      "subquestions": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Any breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
         }
       ]
     }

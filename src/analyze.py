@@ -7,8 +7,9 @@ deliverable from the board's `degradation-curves` card: for each
 the base-procedure signatures (latency, tokens, cost).
 
 The headline metric is chosen by the cell's `focus`:
-  * focus=spans      (rot, confusion)      -> span_f1   [+ exact_match, wrong_doc_rate]
-  * focus=abstention (missing_answer)      -> abstention_rate [+ hallucination_rate]
+  * focus=spans      (CUAD rot, confusion) -> span_f1   [+ exact_match, wrong_doc_rate]
+  * focus=abstention (CUAD missing_answer) -> abstention_rate [+ hallucination_rate]
+  * focus=labels     (MAUD, multiple choice) -> mc_accuracy [+ wrong_doc_rate]
 Override with --metric to curve any metric.
 
 Outputs: human-readable tables + ASCII sparklines to the console, and a tidy
@@ -40,15 +41,17 @@ from score_outputs import _AGG_METRICS, aggregate  # noqa: E402
 DEFAULT_RESULTS = Path("data/results/runs.jsonl")
 DEFAULT_CSV = Path("data/results/curves.csv")
 
-POSITION_ORDER = ["target_at_start", "target_at_middle", "target_at_end"]
-SHORT_POS = {"target_at_start": "start", "target_at_middle": "mid",
-             "target_at_end": "end"}
-MODALITY_ORDER = ["rot", "confusion", "missing_answer", "missing_document"]
+POSITION_ORDER = ["full", "target_at_start", "target_at_middle", "target_at_end"]
+SHORT_POS = {"full": "full", "target_at_start": "start",
+             "target_at_middle": "mid", "target_at_end": "end"}
+MODALITY_ORDER = ["clean", "rot", "confusion", "missing_answer", "missing_document"]
 
 # Headline + secondary metrics per focus.
-HEADLINE = {"spans": "span_f1", "abstention": "abstention_rate"}
+HEADLINE = {"spans": "span_f1", "abstention": "abstention_rate",
+            "labels": "mc_accuracy"}
 SECONDARY = {"spans": ["exact_match", "wrong_doc_rate"],
-             "abstention": ["hallucination_rate"]}
+             "abstention": ["hallucination_rate"],
+             "labels": ["wrong_doc_rate"]}
 
 _BLOCKS = "▁▂▃▄▅▆▇█"  # sparkline ramp for values in [0, 1]
 
@@ -256,6 +259,13 @@ def main() -> None:
     parser.add_argument("--no-csv", action="store_true",
                         help="skip writing the curves CSV")
     args = parser.parse_args()
+
+    # Sparklines use Unicode block glyphs; force UTF-8 so a legacy Windows
+    # console codepage (cp1252) doesn't crash the whole report mid-print.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except (AttributeError, ValueError):
+        pass
 
     runs = load_runs(args.results)
     summary = aggregate(runs)

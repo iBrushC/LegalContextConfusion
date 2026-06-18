@@ -16,11 +16,14 @@ imported from it, and the MAUD loaders come from inspect_maud.
     * clean           -> target agreement only (no filler).
     * rot             -> target + NON-legal filler (length-only noise).
     * confusion       -> target + OTHER merger agreements (highly confusable).
-    * missing_answer  -> target + other agreements, the abstention-focused
-                         condition. Emitted ONLY when the chosen question set
-                         contains a safe negative ("No"/"None"/"N/A" answer);
-                         otherwise skipped with a note (MAUD is forced-choice and
-                         has no SQuAD-style is_impossible).
+    * missing_answer  -> target + other agreements, the safe-negative
+                         condition: emitted ONLY when the chosen question set
+                         contains a safe negative ("No"/"None"/"N/A" answer).
+                         MAUD is forced-choice multiple choice, so the negative
+                         is just one of the options (not a SQuAD is_impossible);
+                         this modality stresses whether the model still picks
+                         that option correctly amid distractors. Skipped with a
+                         note when no safe negative is present.
 
   Documents are wrapped as <DOCUMENT id="..." title="..."> ... </DOCUMENT>. The
   target id/title are recorded so the eval can tell whether an answer came from
@@ -31,9 +34,12 @@ imported from it, and the MAUD loaders come from inspect_maud.
   records `target_fits` / `target_truncated` so that is visible downstream.
 
 Output: one JSON record per cell under data/prepared_maud/cells/, plus
-manifest.json. Each question carries both MAUD-native fields (gold_answers,
-gold_labels, answer_type) AND a SQuAD-shaped `answers` + `is_impossible` mirror,
-so the existing run/score pipeline (built for CUAD) consumes MAUD unchanged.
+manifest.json. Each question carries MAUD-native fields (answer_type,
+answer_options, gold_answers, gold_labels). On these `answer_type=multiple_choice`
+cells (focus="labels"), run_models.py asks the multiple-choice prompt (the
+lettered option set) and score_outputs.py scores by option match (mc_accuracy);
+a SQuAD-shaped `answers` field is also kept so the CUAD-shaped helpers stay
+happy. is_impossible is always False here — MAUD has no impossible questions.
 
 Usage:
     python src/build_maud_contexts.py                                   # default grid
@@ -54,7 +60,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 # Reuse the truly generic CUAD helpers (no CUAD data is touched at import time).
 from build_context import (  # noqa: E402
-    CHARS_PER_TOKEN, DOC_SEPARATOR, _NONLEGAL_SENTENCES, make_token_counter,
+    CHARS_PER_TOKEN, DOC_SEPARATOR, ROT_DIR, _NONLEGAL_SENTENCES,
+    load_rot_corpus, make_token_counter, rot_pool_size, sample_rot_sections,
     stable_seed,
 )
 from inspect_maud import (  # noqa: E402
@@ -78,7 +85,8 @@ DEFAULT_POSITIONS = POSITIONS
 MIN_TARGET_CHARS = 1000
 # Fraction of the budget reserved for the target when distractors are present.
 DEFAULT_TARGET_SHARE = 0.5
-# Approx size of one synthetic non-legal "document" for rot filler.
+# Approx size of one synthetic non-legal "document" for the rot fallback bank
+# (used only when the data/rot story corpus is missing/empty).
 ROT_DOC_CHARS = 2000
 
 FOCUS = "labels"  # MAUD cells score label/answer match, per the task spec.
@@ -133,24 +141,38 @@ def make_legal_pool(by_contract: dict, contracts_dir: Path, target_id: str):
     return ids, load
 
 
-def make_rot_pool():
-    """Synthetic non-legal 'documents' (ids + loader) for rot filler.
+def make_rot_pool(rot_dir: Path, max_filler_chars: int, seed: int):
+    """Non-legal story excerpts (ids + loader + source label) for rot filler.
 
-    The non-legal sentence bank is repeated into a few ~ROT_DOC_CHARS blocks so
-    rot filler reads as documents, not a wall of one-liners. Nothing here is
-    confusable with a merger agreement — it is length-only noise.
+    Each "document" is a random-length section taken at a random offset from a
+    randomly chosen story file under `rot_dir` (Project Gutenberg eBooks across
+    genres, boilerplate stripped), so rot filler reads as varied prose rather
+    than a repeated sentence bank. Nothing here is confusable with a merger
+    agreement — it is length-only noise. The pool is sized to the largest budget
+    so no section repeats. Falls back to the synthetic sentence bank only when
+    the corpus directory is missing/empty.
     """
-    joined = " ".join(_NONLEGAL_SENTENCES)
-    n_docs = 12
-    big = (joined + " ") * (1 + (ROT_DOC_CHARS * n_docs) // max(len(joined), 1))
-    docs = [big[i:i + ROT_DOC_CHARS] for i in range(0, ROT_DOC_CHARS * n_docs, ROT_DOC_CHARS)]
-    table = {f"filler_{i + 1:03d}": d for i, d in enumerate(docs)}
-    ids = list(table)
+    corpus = load_rot_corpus(rot_dir)
+    if not corpus:
+        joined = " ".join(_NONLEGAL_SENTENCES)
+        n_docs = 12
+        big = (joined + " ") * (1 + (ROT_DOC_CHARS * n_docs) // max(len(joined), 1))
+        docs = [big[i:i + ROT_DOC_CHARS]
+                for i in range(0, ROT_DOC_CHARS * n_docs, ROT_DOC_CHARS)]
+        table = {f"filler_{i + 1:03d}": d for i, d in enumerate(docs)}
+
+        def load_synthetic(doc_id: str) -> tuple[str, str]:
+            return "non-legal filler", table[doc_id]
+
+        return list(table), load_synthetic, "synthetic-nonlegal"
+
+    rng = random.Random(stable_seed(seed, "rot_sections"))
+    sections = dict(sample_rot_sections(corpus, rot_pool_size(max_filler_chars), rng))
 
     def load(doc_id: str) -> tuple[str, str]:
-        return "non-legal filler", table[doc_id]
+        return "non-legal story excerpt", sections[doc_id]
 
-    return ids, load
+    return list(sections), load, f"rot-sections:{rot_dir}"
 
 
 # --------------------------------------------------------------------------- #
@@ -216,13 +238,20 @@ def build_cell_context(target: dict, pool_ids: list, load_pool, budget_chars: in
 # --------------------------------------------------------------------------- #
 # Target + question set
 # --------------------------------------------------------------------------- #
-def enrich_questions(raw_questions: list[dict], negatives_mode: str) -> list[dict]:
-    """Attach opaque qa_ids + a SQuAD-shaped mirror for the shared run pipeline."""
+def enrich_questions(raw_questions: list[dict]) -> list[dict]:
+    """Attach opaque qa_ids + a SQuAD-shaped mirror for the shared run pipeline.
+
+    MAUD is closed-set MULTIPLE CHOICE: every question is answerable and is
+    scored by option match (score_outputs.tally_cell keys on answer_type), so
+    `is_impossible` is always False — there are no SQuAD-style impossible
+    questions here. A safe-negative answer ("No"/"None"/"N/A") is simply one of
+    the options; `is_negative` is kept as an informative flag, and its presence
+    is what lets the missing_answer modality build (see select_target).
+    """
     enriched = []
     for i, q in enumerate(raw_questions, 1):
-        impossible = bool(q["is_negative"]) if negatives_mode == "auto" else False
-        # `answers` / `is_impossible` mirror MAUD gold into the CUAD-shaped fields
-        # that run_models.mock_call and score_outputs.tally_cell read unchanged.
+        # `answers` mirrors the gold option into the CUAD-shaped field; for MC
+        # scoring `answer_options` + `gold_answers` are what actually matter.
         answers = [{"text": a} for a in q["gold_answers"]] or [{"text": ""}]
         enriched.append({
             "qa_id": f"q{i:02d}",
@@ -231,7 +260,8 @@ def enrich_questions(raw_questions: list[dict], negatives_mode: str) -> list[dic
             "answer_type": "multiple_choice",
             "gold_answers": q["gold_answers"],
             "gold_labels": q["gold_labels"],
-            "is_impossible": impossible,
+            "is_impossible": False,
+            "is_negative": bool(q["is_negative"]),
             # extras (additive): real-run aids + CUAD-pipeline compatibility.
             "answer_options": q.get("answer_options", q["gold_answers"]),
             "subquestions": q["subquestions"],
@@ -293,7 +323,13 @@ def select_target(by_contract: dict, all_rows: list[dict], contracts_dir: Path,
 
     sel_rng = random.Random(stable_seed(seed, "choose_questions", name))
     chosen = choose_questions(sel_rng, raw_questions, max_questions, min_negatives)
-    questions = enrich_questions(chosen, negatives_mode)
+    questions = enrich_questions(chosen)
+
+    # Safe negatives gate the missing_answer modality. They are normal MC
+    # options now (not impossible), so count them via is_negative; --negatives
+    # none suppresses the gate (and thus the missing_answer modality).
+    num_negatives = (sum(1 for q in questions if q["is_negative"])
+                     if negatives_mode == "auto" else 0)
 
     return {
         "id": name,
@@ -303,7 +339,7 @@ def select_target(by_contract: dict, all_rows: list[dict], contracts_dir: Path,
         "text_chars": len(text),
         "questions": questions,
         "num_questions": len(questions),
-        "num_negatives": sum(1 for q in questions if q["is_impossible"]),
+        "num_negatives": num_negatives,
     }
 
 
@@ -320,8 +356,8 @@ def make_cell(target: dict, modality: str, budget: int, position: str,
     if modality == "clean":
         pool_ids, load_pool, source, with_distractors = [], None, "none", False
     elif modality == "rot":
-        pool_ids, load_pool = rot_pool
-        source, with_distractors = "synthetic-nonlegal", True
+        pool_ids, load_pool, source = rot_pool
+        with_distractors = True
     else:  # confusion + missing_answer share the other-agreements pool
         pool_ids, load_pool = legal_pool
         source, with_distractors = "maud-other-agreements", True
@@ -363,6 +399,9 @@ def main() -> None:
                         help=f"MAUD CSV to sample from (default: {DEFAULT_FILE})")
     parser.add_argument("--contracts-dir", type=Path, default=DEFAULT_CONTRACTS,
                         help=f"full agreement texts (default: {DEFAULT_CONTRACTS})")
+    parser.add_argument("--rot-dir", type=Path, default=ROT_DIR,
+                        help=f"dir/file of .txt non-legal story filler; rot draws "
+                             f"random sections of random files (default: {ROT_DIR})")
     parser.add_argument("--out", type=Path, default=DEFAULT_OUT,
                         help=f"output directory (default: {DEFAULT_OUT})")
     parser.add_argument("--data-type", default=DEFAULT_DATA_TYPE,
@@ -426,7 +465,17 @@ def main() -> None:
         raise SystemExit("error: no modalities to generate.")
 
     legal_pool = make_legal_pool(by_contract, args.contracts_dir, target["id"])
-    rot_pool = make_rot_pool()
+    # Size the rot section pool to the largest budget so no section repeats.
+    max_filler_chars = (max(args.budgets) if args.budgets else 0) * CHARS_PER_TOKEN
+    rot_pool = make_rot_pool(args.rot_dir, max_filler_chars, args.seed)
+    if "rot" in modalities:
+        label = rot_pool[2]
+        if label == "synthetic-nonlegal":
+            print(f"  rot filler: synthetic placeholder "
+                  f"(no .txt stories found at {args.rot_dir})")
+        else:
+            print(f"  rot filler: {len(rot_pool[0])} random story sections "
+                  f"from {args.rot_dir}")
 
     cells_meta = []
     cells_dir = args.out / "cells"

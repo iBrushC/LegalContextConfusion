@@ -57,7 +57,9 @@ from pathlib import Path
 # Sibling modules (src/ is on sys.path when run directly; make it explicit).
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from openrouter_client import call_openrouter  # noqa: E402
-from score_outputs import aggregate, extract_json, results_of, score_cell  # noqa: E402
+from score_outputs import (  # noqa: E402
+    _normalize, aggregate, extract_json, option_label, results_of, score_cell,
+)
 
 DEFAULT_PREPARED = Path("data/prepared")
 DEFAULT_OUT = Path("data/results")
@@ -130,15 +132,61 @@ SYSTEM_PROMPT = (
 )
 
 
-def build_messages(cell: dict, questions: list[dict]) -> list[dict]:
-    """Render one prompt for a batch of questions over the cell's documents."""
+# MAUD is multiple choice, not extractive QA: the model is shown a fixed,
+# lettered option set per question and must pick the single option that is
+# correct for the TARGET agreement, returning its letter. (Cells from
+# build_maud_contexts.py carry focus="labels"; CUAD cells use SYSTEM_PROMPT.)
+MC_SYSTEM_PROMPT = (
+    "You are a precise legal contract analyst answering MULTIPLE-CHOICE "
+    "questions about merger agreements. You are given one or more documents, "
+    "each wrapped in <DOCUMENT id=\"...\"> tags, followed by questions. Each "
+    "question lists a fixed set of answer options labelled (A), (B), (C), … "
+    "For each qa_id, decide which SINGLE option is correct for the agreement "
+    "and return that option's LETTER.\n\n"
+    "Respond with ONLY a JSON object of this exact shape:\n"
+    "{\"results\": [{\"qa_id\": str, \"answer\": str, "
+    "\"document_id\": str|null}]}\n"
+    "- Include every qa_id you were given, exactly as written.\n"
+    "- answer MUST be exactly one option letter (e.g. \"A\"); do not paraphrase "
+    "the option text.\n"
+    "- Choose exactly one option per question — pick the best option even if "
+    "you are uncertain; never leave it blank.\n"
+    "- document_id must be the id of the <DOCUMENT> your answer is based on."
+)
+
+
+def is_mc_cell(cell: dict) -> bool:
+    """True for MAUD multiple-choice cells (focus='labels')."""
+    return cell.get("focus") == "labels"
+
+
+def _span_user(cell: dict, questions: list[dict]) -> str:
     lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}'
              for q in questions]
-    user = (f"DOCUMENTS:\n{cell['context']}\n\n"
+    return (f"DOCUMENTS:\n{cell['context']}\n\n"
             f"CLAUSE QUESTIONS (answer every qa_id):\n" + "\n".join(lines) +
             "\n\nReturn the JSON object now.")
+
+
+def _mc_user(cell: dict, questions: list[dict]) -> str:
+    blocks = []
+    for q in questions:
+        options = q.get("answer_options") or q.get("gold_answers") or []
+        lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}']
+        lines += [f"  ({option_label(i)}) {opt}" for i, opt in enumerate(options)]
+        blocks.append("\n".join(lines))
+    return (f"DOCUMENTS:\n{cell['context']}\n\n"
+            f"MULTIPLE-CHOICE QUESTIONS (answer every qa_id with one option "
+            f"letter):\n" + "\n\n".join(blocks) + "\n\nReturn the JSON object now.")
+
+
+def build_messages(cell: dict, questions: list[dict]) -> list[dict]:
+    """Render one prompt for a batch of questions over the cell's documents."""
+    if is_mc_cell(cell):
+        return [{"role": "system", "content": MC_SYSTEM_PROMPT},
+                {"role": "user", "content": _mc_user(cell, questions)}]
     return [{"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user}]
+            {"role": "user", "content": _span_user(cell, questions)}]
 
 
 def chunk_questions(questions: list[dict], size: int) -> list[list[dict]]:
@@ -148,11 +196,25 @@ def chunk_questions(questions: list[dict], size: int) -> list[list[dict]]:
     return [questions[i:i + size] for i in range(0, len(questions), size)]
 
 
+def _mock_mc_letter(q: dict) -> str:
+    """The option letter of q's gold answer (exercises the letter->option path)."""
+    options = q.get("answer_options") or q.get("gold_answers") or []
+    golds = q.get("gold_answers") or [a["text"] for a in q.get("answers", [])]
+    for i, opt in enumerate(options):
+        if any(_normalize(opt) == _normalize(g) for g in golds):
+            return option_label(i)
+    return golds[0] if golds else ""
+
+
 def mock_call(cell: dict, questions: list[dict]) -> dict:
     """Offline stand-in for call_openrouter: gold-perfect answers, no API."""
+    mc = is_mc_cell(cell)
     results = []
     for q in questions:
-        if q["is_impossible"]:
+        if mc:  # MAUD: return the gold option's letter
+            results.append({"qa_id": q["qa_id"], "answer": _mock_mc_letter(q),
+                            "document_id": cell["target_document_id"]})
+        elif q["is_impossible"]:
             results.append({"qa_id": q["qa_id"], "present": False,
                             "answer": "", "document_id": None})
         else:
@@ -470,7 +532,7 @@ def main() -> None:
                              "not a spend — but reasoning models burn it on hidden "
                              "thinking, so it must cover reasoning + the JSON answer "
                              "or you get an empty 'content'.")
-    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--temperature", type=float, default=0.7)
     parser.add_argument("--reasoning-effort",
                         choices=("low", "medium", "high", "none"), default=None,
                         help="control reasoning models' thinking budget via "
@@ -515,10 +577,11 @@ def main() -> None:
         batches = chunk_questions(first["questions"], args.question_batch_size)
         msgs = build_messages(first, batches[0])
         user = msgs[1]["content"]
-        print(f"\n--- prompt preview | cell {first['cell_id']} | "
+        kind = "multiple-choice" if is_mc_cell(first) else "spans"
+        print(f"\n--- prompt preview | cell {first['cell_id']} | {kind} | "
               f"batch 1/{len(batches)} ({len(batches[0])} questions) ---")
         print("[system]")
-        print(SYSTEM_PROMPT)
+        print(msgs[0]["content"])
         print(f"\n[user] ({len(user):,} chars; truncated to 1800)")
         print(user[:1800])
         if len(user) > 1800:
@@ -597,6 +660,12 @@ def main() -> None:
                     m = res["metrics"]
                     if m["scored"] == 0:
                         status = "ERR" if res["error"] else "parse-fail"
+                    elif is_mc_cell(cell):
+                        status = f"acc={_fmt(m['mc_accuracy'])}"
+                        if m.get("wrong_doc_rate") is not None:
+                            status += f" wrongD={_fmt(m['wrong_doc_rate'])}"
+                        if m["n_unscored"]:
+                            status += f" unscored={m['n_unscored']}"
                     else:
                         status = (f"F1={_fmt(m['span_f1'])} "
                                   f"abst={_fmt(m['abstention_rate'])}")

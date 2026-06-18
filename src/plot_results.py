@@ -47,6 +47,7 @@ DEFAULT_OUT = Path("data/results/plots")
 
 METRIC_LABEL = {
     "span_f1": "span token-F1", "exact_match": "exact match",
+    "mc_accuracy": "MC accuracy",
     "abstention_rate": "abstention rate", "hallucination_rate": "hallucination rate",
     "wrong_doc_rate": "wrong-document rate", "answered_positive_rate": "answered rate",
 }

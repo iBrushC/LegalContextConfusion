@@ -46,9 +46,11 @@ records feed run_models.
 Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER contracts in the
       same CUAD file (confusable, available today).
-    * rot filler uses a synthetic NON-legal placeholder until the real rot
-      corpora (Gutenberg / Wikipedia / news) are assembled; pass --rot-filler
-      with a .txt file or directory to use real text instead.
+    * rot filler is drawn from the NON-legal story corpus in data/rot — random
+      sections of randomly chosen .txt files (Project Gutenberg eBooks across
+      genres, boilerplate stripped), so the filler reads as varied prose, never
+      confusable with a contract. Override the corpus with --rot-filler; if no
+      .txt stories are found there it falls back to a synthetic sentence bank.
 
 Usage:
     python src/build_context.py                                  # rot, default grid
@@ -65,6 +67,7 @@ import hashlib
 import json
 import math
 import random
+import re
 import sys
 from pathlib import Path
 
@@ -90,8 +93,24 @@ DEFAULT_POSITIONS = POSITIONS
 
 DOC_SEPARATOR = "\n\n"
 
-# Neutral, deliberately NON-legal sentences for the rot placeholder. No
-# contract / merger vocabulary, so nothing here is confusable with CUAD.
+# Default corpus of NON-legal story files (Project Gutenberg eBooks across
+# genres) that rot filler is drawn from — random sections of random files, so
+# the filler reads as varied prose rather than a repeated sentence bank.
+ROT_DIR = Path("data/rot")
+# Each rot filler "document" is a contiguous section of this many characters,
+# drawn at a random offset from a randomly chosen story and snapped to nearby
+# paragraph/word boundaries. A range (not a fixed size) keeps the blocks varied.
+ROT_SECTION_MIN_CHARS = 1500
+ROT_SECTION_MAX_CHARS = 4000
+# Smallest pool we ever build, so even tiny budgets get some variety.
+MIN_ROT_SECTIONS = 24
+# When a snapped section starts/ends mid-paragraph, scan at most this far for a
+# clean paragraph (then word) boundary before giving up and cutting as-is.
+_SNAP_WINDOW = 400
+
+# Synthetic fallback bank: neutral, deliberately NON-legal sentences used only
+# when the rot corpus directory is missing/empty. No contract / merger
+# vocabulary, so nothing here is confusable with CUAD.
 _NONLEGAL_SENTENCES = (
     "The morning fog settled over the valley long before the hikers reached the ridge.",
     "She measured the flour twice before folding it into the warm batter.",
@@ -250,26 +269,118 @@ def legal_distractors(data: list[dict], target_index: int) -> list[tuple[str, st
     return pool
 
 
-def nonlegal_distractors(rot_filler: Path | None) -> tuple[list[tuple[str | None, str]], str]:
-    """(id, text) non-legal filler pieces + a label describing their source.
+# Project Gutenberg wraps each story body in license boilerplate marked off by
+# "*** START OF ... ***" / "*** END OF ... ***" lines. We sample only the body.
+_GUTENBERG_START = re.compile(r"\*\*\*\s*START OF.*?\*\*\*", re.IGNORECASE)
+_GUTENBERG_END = re.compile(r"\*\*\*\s*END OF.*?\*\*\*", re.IGNORECASE)
 
-    id is None for synthetic pieces (a generic filler id is assigned at
-    assembly); for real files the filename stem is used.
+
+def strip_gutenberg(text: str) -> str:
+    """Drop Project Gutenberg header/footer boilerplate, keeping the story body.
+
+    Files without the markers are returned trimmed but otherwise unchanged.
     """
-    if rot_filler is None:
+    m = _GUTENBERG_START.search(text)
+    if m:
+        text = text[m.end():]
+    m = _GUTENBERG_END.search(text)
+    if m:
+        text = text[:m.start()]
+    return text.strip()
+
+
+def load_rot_corpus(rot_dir: Path) -> list[tuple[str, str]]:
+    """(stem, story_text) for every .txt under rot_dir, boilerplate stripped."""
+    if rot_dir.is_dir():
+        files = sorted(rot_dir.rglob("*.txt"))
+    elif rot_dir.is_file():
+        files = [rot_dir]
+    else:
+        return []
+    corpus: list[tuple[str, str]] = []
+    for p in files:
+        story = strip_gutenberg(p.read_text(encoding="utf-8", errors="ignore"))
+        if story:
+            corpus.append((p.stem, story))
+    return corpus
+
+
+def _snap_section(text: str, start: int, end: int) -> str:
+    """Return text[start:end] nudged to nearby paragraph (else word) boundaries.
+
+    Avoids starting/ending a filler block mid-word or mid-sentence: scans up to
+    _SNAP_WINDOW chars for a paragraph break, falling back to a space.
+    """
+    n = len(text)
+    if start > 0:
+        para = text.find("\n\n", start, min(n, start + _SNAP_WINDOW))
+        if para != -1:
+            start = para + 2
+        else:
+            sp = text.find(" ", start, min(n, start + _SNAP_WINDOW))
+            if sp != -1:
+                start = sp + 1
+    if end < n:
+        lo = max(start, end - _SNAP_WINDOW)
+        para = text.rfind("\n\n", lo, end)
+        if para > start:
+            end = para
+        else:
+            sp = text.rfind(" ", lo, end)
+            if sp > start:
+                end = sp
+    return text[start:end].strip()
+
+
+def sample_rot_sections(corpus: list[tuple[str, str]], n_sections: int,
+                        rng: random.Random,
+                        min_chars: int = ROT_SECTION_MIN_CHARS,
+                        max_chars: int = ROT_SECTION_MAX_CHARS) -> list[tuple[str, str]]:
+    """(id, text) random-length sections drawn from random files in `corpus`.
+
+    Each section picks a random story, a random length in [min_chars, max_chars],
+    and a random offset, then snaps to boundaries. ids embed the source stem plus
+    an index so every block id is unique within a context.
+    """
+    sections: list[tuple[str, str]] = []
+    for i in range(n_sections):
+        stem, text = rng.choice(corpus)
+        length = rng.randint(min_chars, max_chars)
+        if len(text) <= length:
+            seg = text
+        else:
+            start = rng.randint(0, len(text) - length)
+            seg = _snap_section(text, start, start + length)
+        if seg:
+            sections.append((f"{stem}-{i:04d}", seg))
+    return sections
+
+
+def rot_pool_size(max_filler_chars: int, min_chars: int = ROT_SECTION_MIN_CHARS) -> int:
+    """How many sections to pre-build so the largest budget never repeats one."""
+    needed = math.ceil(max(0, max_filler_chars) / min_chars) + 8
+    return max(MIN_ROT_SECTIONS, needed)
+
+
+def nonlegal_distractors(rot_dir: Path, max_filler_chars: int,
+                         seed: int) -> tuple[list[tuple[str | None, str]], str]:
+    """(id, text) non-legal filler sections + a label describing their source.
+
+    Draws random sections of random story files from `rot_dir`. Falls back to the
+    synthetic sentence bank (id None -> generic filler id at assembly) only when
+    the corpus directory is missing or empty.
+    """
+    corpus = load_rot_corpus(rot_dir)
+    if not corpus:
         bank = list(_NONLEGAL_SENTENCES)
         paras = [" ".join(bank[i:i + 4]) for i in range(0, len(bank), 4)]
         return [(None, p) for p in paras], "synthetic-placeholder"
-
-    files = []
-    if rot_filler.is_dir():
-        files = sorted(p for p in rot_filler.rglob("*.txt"))
-    elif rot_filler.is_file():
-        files = [rot_filler]
-    if not files:
-        raise SystemExit(f"error: no .txt filler found at {rot_filler}")
-    pool: list[tuple[str | None, str]] = [(p.stem, p.read_text(encoding="utf-8", errors="ignore")) for p in files]
-    return pool, f"files:{rot_filler}"
+    rng = random.Random(stable_seed(seed, "rot_sections"))
+    pool: list[tuple[str | None, str]] = [
+        (sid, text)
+        for sid, text in sample_rot_sections(corpus, rot_pool_size(max_filler_chars), rng)
+    ]
+    return pool, f"rot-sections:{rot_dir}"
 
 
 # --------------------------------------------------------------------------- #
@@ -440,8 +551,9 @@ def main() -> None:
                         help="with --max-questions, pick ~equal pos/neg")
     parser.add_argument("--min-negatives", type=int, default=1,
                         help="minimum negative categories in the set (default: 1)")
-    parser.add_argument("--rot-filler", type=Path, default=None,
-                        help="dir/file of .txt non-legal filler (default: synthetic)")
+    parser.add_argument("--rot-filler", type=Path, default=ROT_DIR,
+                        help=f"dir/file of .txt non-legal story filler; rot draws "
+                             f"random sections of random files (default: {ROT_DIR})")
     parser.add_argument("--tokenizer", choices=("approx", "tiktoken"),
                         default="approx", help="token counter (default: approx)")
     parser.add_argument("--dry-run", action="store_true",
@@ -475,23 +587,30 @@ def main() -> None:
     print(f"  questions: {len(target['questions'])} "
           f"({target['num_positives']} pos, {target['num_negatives']} neg)")
 
-    legal_pool = legal_distractors(data, target["doc_index"])
-    nonlegal_pool, nonlegal_label = nonlegal_distractors(args.rot_filler)
-    if "rot" in modalities and nonlegal_label == "synthetic-placeholder":
-        print("  rot filler: synthetic placeholder "
-              "(pass --rot-filler for real non-legal text)")
-
-    cells_meta = []
-    cells_dir = args.out / "cells"
-    if not args.dry_run:
-        cells_dir.mkdir(parents=True, exist_ok=True)
-
     # The zero-filler case is the baseline cell, not a budget; drop any <= 0.
     budgets = sorted(b for b in args.budgets if b > 0)
     dropped = [b for b in args.budgets if b <= 0]
     if dropped:
         print(f"note: ignoring non-positive budget(s) {dropped}; the zero-filler "
               f"case is emitted as the baseline cell instead.")
+
+    legal_pool = legal_distractors(data, target["doc_index"])
+    # Size the rot section pool to the largest budget so no section repeats.
+    max_filler_chars = (max(budgets) if budgets else 0) * CHARS_PER_TOKEN
+    nonlegal_pool, nonlegal_label = nonlegal_distractors(
+        args.rot_filler, max_filler_chars, args.seed)
+    if "rot" in modalities:
+        if nonlegal_label == "synthetic-placeholder":
+            print(f"  rot filler: synthetic placeholder "
+                  f"(no .txt stories found at {args.rot_filler})")
+        else:
+            print(f"  rot filler: {len(nonlegal_pool)} random story sections "
+                  f"from {args.rot_filler}")
+
+    cells_meta = []
+    cells_dir = args.out / "cells"
+    if not args.dry_run:
+        cells_dir.mkdir(parents=True, exist_ok=True)
 
     # Job list: a zero-filler baseline per interference modality, then the
     # (budget x position) interference grid. (modality, budget, position, baseline)
