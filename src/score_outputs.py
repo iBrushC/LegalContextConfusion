@@ -334,8 +334,17 @@ def aggregate_curves(runs: list[dict]) -> list[dict]:
 #   span token-F1, exact match, abstention rate, hallucination rate,
 #   wrong-document rate (only if document_ids were returned), parse failure rate.
 # =========================================================================== #
-DEFAULT_RESULTS = Path("data/results/runs.jsonl")
-DEFAULT_PREPARED = Path("data/prepared")
+DATASETS = ("cuad", "maud")
+
+
+def prepared_dir(dataset: str) -> Path:
+    """Per-dataset gold-cells dir written by build_context.py."""
+    return Path(f"data/prepared_{dataset}")
+
+
+def results_dir(dataset: str) -> Path:
+    """Per-dataset results dir (CUAD and MAUD are scored in separate streams)."""
+    return Path(f"data/results_{dataset}")
 
 _ACC_FIELDS = ("n_positive", "n_negative", "n_unscored", "n_mc", "mc_correct",
                "sum_f1", "sum_exact",
@@ -514,27 +523,20 @@ def _print_breakdown(title: str, groups: dict) -> None:
               f"{counts:>13}")
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Re-score runs.jsonl from logged raw outputs.",
-        formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--results", type=Path, default=DEFAULT_RESULTS,
-                        help=f"runs.jsonl (or its dir) (default: {DEFAULT_RESULTS})")
-    parser.add_argument("--prepared", type=Path, default=DEFAULT_PREPARED,
-                        help=f"gold cells dir (default: {DEFAULT_PREPARED})")
-    parser.add_argument("--out", type=Path, default=None,
-                        help="optional JSON file to write the scoreboard to")
-    args = parser.parse_args()
-
-    runs = load_runs(args.results)
-    gold = load_gold(args.prepared)
+def score_dataset(dataset: str, args) -> None:
+    """Re-score one dataset's runs against its gold cells."""
+    results = args.results or (results_dir(dataset) / "runs.jsonl")
+    prepared = args.prepared or prepared_dir(dataset)
+    runs = load_runs(results)
+    gold = load_gold(prepared)
     result = score_jsonl(runs, gold)
 
+    print(f"\n=== {dataset.upper()} — {results} vs {prepared} ===")
     print(f"Scored {len(runs)} run rows against {len(gold)} gold cells "
           f"(re-parsed from raw_output).")
     if result["overall"]["missing_gold"]:
         print(f"warning: {result['overall']['missing_gold']} run rows had no "
-              f"matching gold cell in {args.prepared} (skipped).")
+              f"matching gold cell in {prepared} (skipped).")
     _print_overall(result["overall"])
     _print_breakdown("model", result["by_model"])
     _print_breakdown("modality", result["by_modality"])
@@ -551,6 +553,34 @@ def main() -> None:
         args.out.write_text(json.dumps(payload, ensure_ascii=False, indent=2),
                             encoding="utf-8")
         print(f"\nWrote scoreboard -> {args.out}")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description="Re-score runs.jsonl from logged raw outputs.",
+        formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--dataset", choices=("cuad", "maud", "both"), default="both",
+                        help="which dataset(s) to score (default: both — each from "
+                             "its own data/results_<dataset>/ stream)")
+    parser.add_argument("--results", type=Path, default=None,
+                        help="override runs.jsonl (or its dir); default "
+                             "data/results_<dataset>/runs.jsonl (single --dataset)")
+    parser.add_argument("--prepared", type=Path, default=None,
+                        help="override gold cells dir; default "
+                             "data/prepared_<dataset> (single --dataset)")
+    parser.add_argument("--out", type=Path, default=None,
+                        help="optional JSON file to write the scoreboard to "
+                             "(single --dataset)")
+    args = parser.parse_args()
+
+    datasets = DATASETS if args.dataset == "both" else (args.dataset,)
+    if (args.results is not None or args.prepared is not None
+            or args.out is not None) and len(datasets) > 1:
+        raise SystemExit("error: --results/--prepared/--out target a single "
+                         "dataset; pass --dataset cuad or --dataset maud.")
+
+    for ds in datasets:
+        score_dataset(ds, args)
 
 
 if __name__ == "__main__":

@@ -23,15 +23,19 @@ Outputs: human-readable tables + ASCII sparklines to the console, and a tidy
 long-format curves.csv (model, modality, budget, metric, mean, std)
 ready for matplotlib / seaborn / a spreadsheet.
 
+Each dataset has its OWN data/results_<dataset>/ stream (CUAD and MAUD curves
+pool by (model, modality) and must not mix); --dataset selects which to report
+(default both, each reported and written separately).
+
 Develop/test it against mock outputs:
     python src/run_models.py --mock --models claude gemini   # writes runs.jsonl
     python src/analyze.py                                     # analyze them
 
 Usage:
     python src/analyze.py
-    python src/analyze.py --results data/results/runs.jsonl
+    python src/analyze.py --dataset cuad
+    python src/analyze.py --dataset maud --results data/results_maud/runs.jsonl
     python src/analyze.py --metric wrong_doc_rate
-    python src/analyze.py --csv data/results/curves.csv
 """
 
 from __future__ import annotations
@@ -45,8 +49,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from score_outputs import _AGG_METRICS, aggregate_curves  # noqa: E402
 
-DEFAULT_RESULTS = Path("data/results/runs.jsonl")
-DEFAULT_CSV = Path("data/results/curves.csv")
+DATASETS = ("cuad", "maud")
+
+
+def results_dir(dataset: str) -> Path:
+    """Per-dataset results dir written by run_models.py (kept separate so CUAD
+    and MAUD curves, which pool by (model, modality), never mix)."""
+    return Path(f"data/results_{dataset}")
 
 MODALITY_ORDER = ["rot", "confusion", "missing_answer", "missing_document"]
 # The single shared zero-filler baseline cell (modality="baseline") anchors these
@@ -254,13 +263,36 @@ def write_curves_csv(summary: list[dict], path: Path) -> int:
 # --------------------------------------------------------------------------- #
 # CLI
 # --------------------------------------------------------------------------- #
+def analyze_dataset(dataset: str, args) -> None:
+    """Report + (optionally) write curves for one dataset's runs."""
+    results = args.results or (results_dir(dataset) / "runs.jsonl")
+    runs = load_runs(results)
+    summary = aggregate_curves(runs)
+    if not summary:
+        print(f"warning: no scored runs to analyze for {dataset} ({results}).")
+        return
+
+    print(f"\n{'#' * 72}\n# {dataset.upper()} — {results}\n{'#' * 72}")
+    report(summary, args.metric)
+
+    if not args.no_csv:
+        csv_path = args.csv or (results_dir(dataset) / "curves.csv")
+        n = write_curves_csv(summary, csv_path)
+        print(f"Wrote {n} tidy rows -> {csv_path}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--results", type=Path, default=DEFAULT_RESULTS,
-                        help=f"runs.jsonl (or its dir) (default: {DEFAULT_RESULTS})")
-    parser.add_argument("--csv", type=Path, default=DEFAULT_CSV,
-                        help=f"tidy long-format curves CSV (default: {DEFAULT_CSV})")
+    parser.add_argument("--dataset", choices=("cuad", "maud", "both"), default="both",
+                        help="which dataset(s) to analyze (default: both — each from "
+                             "its own data/results_<dataset>/ stream)")
+    parser.add_argument("--results", type=Path, default=None,
+                        help="override runs.jsonl (or its dir); default "
+                             "data/results_<dataset>/runs.jsonl (single --dataset)")
+    parser.add_argument("--csv", type=Path, default=None,
+                        help="override the tidy long-format curves CSV; default "
+                             "data/results_<dataset>/curves.csv (single --dataset)")
     parser.add_argument("--metric", default=None,
                         help="force a headline metric (default: by focus)")
     parser.add_argument("--no-csv", action="store_true",
@@ -274,16 +306,13 @@ def main() -> None:
     except (AttributeError, ValueError):
         pass
 
-    runs = load_runs(args.results)
-    summary = aggregate_curves(runs)
-    if not summary:
-        raise SystemExit("error: no scored runs to analyze.")
+    datasets = DATASETS if args.dataset == "both" else (args.dataset,)
+    if (args.results is not None or args.csv is not None) and len(datasets) > 1:
+        raise SystemExit("error: --results/--csv target a single dataset; "
+                         "pass --dataset cuad or --dataset maud.")
 
-    report(summary, args.metric)
-
-    if not args.no_csv:
-        n = write_curves_csv(summary, args.csv)
-        print(f"Wrote {n} tidy rows -> {args.csv}")
+    for ds in datasets:
+        analyze_dataset(ds, args)
 
 
 if __name__ == "__main__":

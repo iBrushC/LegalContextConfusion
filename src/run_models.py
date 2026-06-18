@@ -1,4 +1,4 @@
-"""run_models.py — run models over the prepared CUAD cells and score them.
+"""run_models.py — run models over the prepared CUAD/MAUD cells and score them.
 
 This is the Run + Eval stage and the orchestrator. The pieces it coordinates
 live in sibling modules:
@@ -30,10 +30,15 @@ map) without editing this file.
 Auth: set OPENROUTER_API_KEY in the environment for real runs. Use --mock to
 exercise the full scoring pipeline offline (no API, no cost).
 
+Each dataset is read from data/prepared_<dataset>/ (built by build_context.py)
+and run into its OWN data/results_<dataset>/ stream — CUAD and MAUD are never
+mixed (their cell ids are not namespaced and they score under a different focus).
+--dataset selects which to run (default both, looped sequentially).
+
 Usage:
-    python src/run_models.py --mock                       # offline pipeline test
-    python src/run_models.py --dry-run                    # plan + first prompt preview
-    python src/run_models.py --prototype --limit 3        # cheap real smoke test
+    python src/run_models.py --mock                       # both datasets, offline
+    python src/run_models.py --dataset cuad --dry-run     # plan + first prompt preview
+    python src/run_models.py --dataset maud --prototype --limit 3   # cheap smoke test
     python src/run_models.py --models claude gemini --runs 3
     python src/run_models.py --question-batch-size 5      # 5 questions per call
     python src/run_models.py --overwrite                  # redo instead of resume
@@ -59,8 +64,20 @@ from score_outputs import (  # noqa: E402
     _normalize, aggregate, extract_json, option_label, results_of, score_cell,
 )
 
-DEFAULT_PREPARED = Path("data/prepared")
-DEFAULT_OUT = Path("data/results")
+DATASETS = ("cuad", "maud")
+
+
+def prepared_dir(dataset: str) -> Path:
+    """Per-dataset prepared-cells dir written by build_context.py."""
+    return Path(f"data/prepared_{dataset}")
+
+
+def results_dir(dataset: str) -> Path:
+    """Per-dataset results dir. CUAD and MAUD are kept in SEPARATE streams: cell
+    ids are not dataset-namespaced (both emit d000_rot_b64000, ...) and the two
+    datasets score under a different focus, so a shared runs.jsonl would collide
+    on resume and mix incompatible cells downstream."""
+    return Path(f"data/results_{dataset}")
 
 # Friendly name -> OpenRouter slug. Verified against the live OpenRouter models
 # list on 2026-06-17. Override any of them via --models-config.
@@ -522,15 +539,149 @@ def load_done(path: Path) -> tuple[set, list[dict]]:
 
 
 # --------------------------------------------------------------------------- #
+# Per-dataset driver
+# --------------------------------------------------------------------------- #
+def process_dataset(dataset: str, args, models: list[tuple[str, str]],
+                    api_key: str | None) -> None:
+    """Plan + run one dataset, writing its results to data/results_<dataset>/."""
+    prepared = args.prepared or prepared_dir(dataset)
+    out = args.out or results_dir(dataset)
+    cell_paths = load_cells(prepared, args.limit)
+    total = len(models) * len(cell_paths) * args.runs
+
+    print(f"\n=== {dataset.upper()} — {prepared} -> {out} ===")
+    print(f"Models ({len(models)}):")
+    for name, slug in models:
+        print(f"  {name:12} {slug}")
+    batch_desc = "all" if args.question_batch_size <= 0 else args.question_batch_size
+    reason_desc = f"   Reasoning: {args.reasoning_effort}" if args.reasoning_effort else ""
+    print(f"Cells: {len(cell_paths)}   Runs/cell: {args.runs}   "
+          f"Questions/request: {batch_desc}   Total cell-runs: {total}{reason_desc}")
+
+    if args.dry_run:
+        first = json.loads(cell_paths[0].read_text(encoding="utf-8"))
+        batches = chunk_questions(first["questions"], args.question_batch_size)
+        msgs = build_messages(first, batches[0])
+        user = msgs[1]["content"]
+        kind = "multiple-choice" if is_mc_cell(first) else "spans"
+        print(f"\n--- prompt preview | cell {first['cell_id']} | {kind} | "
+              f"batch 1/{len(batches)} ({len(batches[0])} questions) ---")
+        print("[system]")
+        print(msgs[0]["content"])
+        print(f"\n[user] ({len(user):,} chars; truncated to 1800)")
+        print(user[:1800])
+        if len(user) > 1800:
+            print("...[truncated]...")
+        print("\n(dry run — no requests sent)")
+        return
+
+    if args.estimate_cost:
+        cells = [json.loads(p.read_text(encoding="utf-8")) for p in cell_paths]
+        print_cost_estimate(cells, models, args.runs,
+                            args.max_tokens, args.best_case_output_tokens)
+        return
+
+    out.mkdir(parents=True, exist_ok=True)
+    runs_path = out / "runs.jsonl"
+    done, runs, mode = set(), [], "w"
+    if runs_path.exists() and not args.overwrite:
+        done, runs = load_done(runs_path)
+        mode = "a"
+        print(f"resume: {len(done)} existing run rows; skipping those "
+              f"(use --overwrite to redo)")
+    print()
+
+    with runs_path.open(mode, encoding="utf-8") as runs_fh:
+        for cell_path in cell_paths:
+            cell = json.loads(cell_path.read_text(encoding="utf-8"))
+            batches = chunk_questions(cell["questions"], args.question_batch_size)
+            for name, slug in models:
+                for run_idx in range(args.runs):
+                    key = (name, cell["cell_id"], run_idx)
+                    if key in done:
+                        print(f"  {name:10} {cell['cell_id']:40} r{run_idx}  skip")
+                        continue
+
+                    # print the prefix first; run_cell_model emits a dot per
+                    # batch in between, then we finish the line with the score.
+                    print(f"  {name:10} {cell['cell_id']:40} r{run_idx} ",
+                          end="", flush=True)
+                    res = run_cell_model(cell, slug, batches, api_key, args, args.mock)
+                    record = {
+                        "model": name, "model_slug": slug,
+                        "dataset": cell.get("dataset", dataset),
+                        "cell_id": cell["cell_id"], "modality": cell["modality"],
+                        "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
+                        "is_baseline": cell.get("is_baseline", False),
+                        "doc_index": cell.get("doc_index"), "run_index": run_idx,
+                        "reasoning_effort": args.reasoning_effort,
+                        "batch_size": (args.question_batch_size
+                                       if args.question_batch_size > 0
+                                       else len(cell["questions"])),
+                        "num_batches": len(batches),
+                        "batch_qa_ids": [[q["qa_id"] for q in b] for b in batches],
+                        "raw_output": res["raw_output"],
+                        "parsed_output": res["parsed_output"],
+                        "json_parse_error": res["json_parse_error"],
+                        "per_batch_usage": res["per_batch_usage"],
+                        "per_batch_latency_s": res["per_batch_latency_s"],
+                        "metrics": res["metrics"], "usage": res["usage"],
+                        "latency_s": res["latency_s"], "error": res["error"],
+                    }
+                    runs.append(record)
+                    done.add(key)
+                    runs_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+                    runs_fh.flush()
+
+                    m = res["metrics"]
+                    if m["scored"] == 0:
+                        status = "ERR" if res["error"] else "parse-fail"
+                    elif is_mc_cell(cell):
+                        status = f"acc={_fmt(m['mc_accuracy'])}"
+                        if m.get("wrong_doc_rate") is not None:
+                            status += f" wrongD={_fmt(m['wrong_doc_rate'])}"
+                        if m["n_unscored"]:
+                            status += f" unscored={m['n_unscored']}"
+                    else:
+                        status = (f"F1={_fmt(m['span_f1'])} "
+                                  f"abst={_fmt(m['abstention_rate'])}")
+                        if m["n_unscored"]:
+                            status += f" unscored={m['n_unscored']}"
+                    print(f" {status}")
+
+    summary = aggregate(runs)
+    (out / "summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    if summary:
+        with (out / "summary.csv").open("w", newline="", encoding="utf-8") as fh:
+            writer = csv.DictWriter(fh, fieldnames=list(summary[0].keys()))
+            writer.writeheader()
+            writer.writerows(summary)
+
+    errors = sum(1 for r in runs if r["error"])
+    parse_fails = sum(1 for r in runs if r["metrics"].get("scored", 0) == 0)
+    print(f"\nWrote {len(runs)} runs -> {runs_path}")
+    print(f"Aggregated {len(summary)} (model x cell) rows -> "
+          f"{out}/summary.json + summary.csv")
+    if errors or parse_fails:
+        print(f"  {errors} rows with request errors, {parse_fails} with no scored questions")
+
+
+# --------------------------------------------------------------------------- #
 # CLI
 # --------------------------------------------------------------------------- #
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--prepared", type=Path, default=DEFAULT_PREPARED,
-                        help=f"prepared cells dir (default: {DEFAULT_PREPARED})")
-    parser.add_argument("--out", type=Path, default=DEFAULT_OUT,
-                        help=f"results output dir (default: {DEFAULT_OUT})")
+    parser.add_argument("--dataset", choices=("cuad", "maud", "both"), default="both",
+                        help="which dataset(s) to run (default: both — each is run "
+                             "and scored into its own data/results_<dataset>/ stream)")
+    parser.add_argument("--prepared", type=Path, default=None,
+                        help="override the prepared cells dir (default: "
+                             "data/prepared_<dataset>; requires a single --dataset)")
+    parser.add_argument("--out", type=Path, default=None,
+                        help="override the results output dir (default: "
+                             "data/results_<dataset>; requires a single --dataset)")
     parser.add_argument("--models", nargs="+", default=list(DEFAULT_MODELS),
                         help="friendly model names (default: full fleet)")
     parser.add_argument("--models-config", type=Path, default=None,
@@ -577,134 +728,29 @@ def main() -> None:
 
     models = [PROTOTYPE] if args.prototype else resolve_models(args.models,
                                                                args.models_config)
-    cell_paths = load_cells(args.prepared, args.limit)
-    total = len(models) * len(cell_paths) * args.runs
 
-    print(f"Models ({len(models)}):")
-    for name, slug in models:
-        print(f"  {name:12} {slug}")
-    batch_desc = "all" if args.question_batch_size <= 0 else args.question_batch_size
-    reason_desc = f"   Reasoning: {args.reasoning_effort}" if args.reasoning_effort else ""
-    print(f"Cells: {len(cell_paths)}   Runs/cell: {args.runs}   "
-          f"Questions/request: {batch_desc}   Total cell-runs: {total}{reason_desc}")
+    datasets = DATASETS if args.dataset == "both" else (args.dataset,)
+    # --prepared/--out name a single dir, so they only make sense for one dataset.
+    if (args.prepared is not None or args.out is not None) and len(datasets) > 1:
+        raise SystemExit("error: --prepared/--out override a single dataset's dir; "
+                         "pass --dataset cuad or --dataset maud alongside them.")
 
-    if args.dry_run:
-        first = json.loads(cell_paths[0].read_text(encoding="utf-8"))
-        batches = chunk_questions(first["questions"], args.question_batch_size)
-        msgs = build_messages(first, batches[0])
-        user = msgs[1]["content"]
-        kind = "multiple-choice" if is_mc_cell(first) else "spans"
-        print(f"\n--- prompt preview | cell {first['cell_id']} | {kind} | "
-              f"batch 1/{len(batches)} ({len(batches[0])} questions) ---")
-        print("[system]")
-        print(msgs[0]["content"])
-        print(f"\n[user] ({len(user):,} chars; truncated to 1800)")
-        print(user[:1800])
-        if len(user) > 1800:
-            print("...[truncated]...")
-        print("\n(dry run — no requests sent)")
-        return
-
-    if args.estimate_cost:
-        cells = [json.loads(p.read_text(encoding="utf-8")) for p in cell_paths]
-        print_cost_estimate(cells, models, args.runs,
-                            args.max_tokens, args.best_case_output_tokens)
-        return
-
-    api_key = os.environ.get("OPENROUTER_API_KEY")
-    if not args.mock and not api_key:
-        raise SystemExit(
-            "error: OPENROUTER_API_KEY not set. Export it for a real run, "
-            "or pass --mock to test the pipeline offline."
-        )
-    if api_key:
+    # A key is needed only for actual API calls: --mock/--dry-run/--estimate-cost
+    # never hit OpenRouter (estimate uses the public, key-less pricing endpoint).
+    api_key = None
+    if not (args.mock or args.dry_run or args.estimate_cost):
+        api_key = os.environ.get("OPENROUTER_API_KEY")
+        if not api_key:
+            raise SystemExit(
+                "error: OPENROUTER_API_KEY not set. Export it for a real run, "
+                "or pass --mock to test the pipeline offline."
+            )
         api_key = _clean_api_key(api_key)
     if args.mock:
-        print("\n[MOCK] gold-perfect answers, no API calls")
+        print("[MOCK] gold-perfect answers, no API calls")
 
-    args.out.mkdir(parents=True, exist_ok=True)
-    runs_path = args.out / "runs.jsonl"
-    done, runs, mode = set(), [], "w"
-    if runs_path.exists() and not args.overwrite:
-        done, runs = load_done(runs_path)
-        mode = "a"
-        print(f"resume: {len(done)} existing run rows; skipping those "
-              f"(use --overwrite to redo)")
-    print()
-
-    with runs_path.open(mode, encoding="utf-8") as runs_fh:
-        for cell_path in cell_paths:
-            cell = json.loads(cell_path.read_text(encoding="utf-8"))
-            batches = chunk_questions(cell["questions"], args.question_batch_size)
-            for name, slug in models:
-                for run_idx in range(args.runs):
-                    key = (name, cell["cell_id"], run_idx)
-                    if key in done:
-                        print(f"  {name:10} {cell['cell_id']:40} r{run_idx}  skip")
-                        continue
-
-                    # print the prefix first; run_cell_model emits a dot per
-                    # batch in between, then we finish the line with the score.
-                    print(f"  {name:10} {cell['cell_id']:40} r{run_idx} ",
-                          end="", flush=True)
-                    res = run_cell_model(cell, slug, batches, api_key, args, args.mock)
-                    record = {
-                        "model": name, "model_slug": slug,
-                        "cell_id": cell["cell_id"], "modality": cell["modality"],
-                        "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
-                        "is_baseline": cell.get("is_baseline", False),
-                        "doc_index": cell.get("doc_index"), "run_index": run_idx,
-                        "reasoning_effort": args.reasoning_effort,
-                        "batch_size": (args.question_batch_size
-                                       if args.question_batch_size > 0
-                                       else len(cell["questions"])),
-                        "num_batches": len(batches),
-                        "batch_qa_ids": [[q["qa_id"] for q in b] for b in batches],
-                        "raw_output": res["raw_output"],
-                        "parsed_output": res["parsed_output"],
-                        "json_parse_error": res["json_parse_error"],
-                        "per_batch_usage": res["per_batch_usage"],
-                        "per_batch_latency_s": res["per_batch_latency_s"],
-                        "metrics": res["metrics"], "usage": res["usage"],
-                        "latency_s": res["latency_s"], "error": res["error"],
-                    }
-                    runs.append(record)
-                    done.add(key)
-                    runs_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
-                    runs_fh.flush()
-
-                    m = res["metrics"]
-                    if m["scored"] == 0:
-                        status = "ERR" if res["error"] else "parse-fail"
-                    elif is_mc_cell(cell):
-                        status = f"acc={_fmt(m['mc_accuracy'])}"
-                        if m.get("wrong_doc_rate") is not None:
-                            status += f" wrongD={_fmt(m['wrong_doc_rate'])}"
-                        if m["n_unscored"]:
-                            status += f" unscored={m['n_unscored']}"
-                    else:
-                        status = (f"F1={_fmt(m['span_f1'])} "
-                                  f"abst={_fmt(m['abstention_rate'])}")
-                        if m["n_unscored"]:
-                            status += f" unscored={m['n_unscored']}"
-                    print(f" {status}")
-
-    summary = aggregate(runs)
-    (args.out / "summary.json").write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
-    if summary:
-        with (args.out / "summary.csv").open("w", newline="", encoding="utf-8") as fh:
-            writer = csv.DictWriter(fh, fieldnames=list(summary[0].keys()))
-            writer.writeheader()
-            writer.writerows(summary)
-
-    errors = sum(1 for r in runs if r["error"])
-    parse_fails = sum(1 for r in runs if r["metrics"].get("scored", 0) == 0)
-    print(f"\nWrote {len(runs)} runs -> {runs_path}")
-    print(f"Aggregated {len(summary)} (model x cell) rows -> "
-          f"{args.out}/summary.json + summary.csv")
-    if errors or parse_fails:
-        print(f"  {errors} rows with request errors, {parse_fails} with no scored questions")
+    for ds in datasets:
+        process_dataset(ds, args, models, api_key)
 
 
 if __name__ == "__main__":

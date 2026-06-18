@@ -19,11 +19,14 @@ abstention_rate for missing_answer, mc_accuracy for MAUD); override with
 matplotlib is the only non-stdlib dependency in the project and is needed only
 for this script (pip install matplotlib). Everything else stays stdlib-only.
 
+Each dataset is read from its own data/results_<dataset>/ stream and rendered
+into data/results_<dataset>/plots/; --dataset selects which (default both).
+
 Usage:
     python src/plot_results.py
+    python src/plot_results.py --dataset cuad
     python src/plot_results.py --metric wrong_doc_rate
     python src/plot_results.py --charts length overview
-    python src/plot_results.py --results data/results/runs.jsonl --out data/results/plots
 """
 
 from __future__ import annotations
@@ -34,7 +37,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from score_outputs import aggregate_curves  # noqa: E402
-from analyze import build_curves, load_runs, HEADLINE, MODALITY_ORDER  # noqa: E402
+from analyze import (  # noqa: E402
+    DATASETS, build_curves, load_runs, results_dir, HEADLINE, MODALITY_ORDER,
+)
 
 try:
     import matplotlib
@@ -45,8 +50,8 @@ except ImportError:
     raise SystemExit("error: plot_results.py needs matplotlib + numpy "
                      "(pip install matplotlib).")
 
-DEFAULT_RESULTS = Path("data/results/runs.jsonl")
-DEFAULT_OUT = Path("data/results/plots")
+# Per-dataset results live under data/results_<dataset>/ (CUAD and MAUD never
+# share a stream); --dataset selects which to plot, into that dir's plots/.
 
 METRIC_LABEL = {
     "span_f1": "span token-F1", "exact_match": "exact match",
@@ -194,13 +199,49 @@ def plot_overview(curves, models, modalities, override, out: Path, dpi: int):
 # --------------------------------------------------------------------------- #
 # CLI
 # --------------------------------------------------------------------------- #
+def plot_dataset(dataset: str, args) -> None:
+    """Render one dataset's degradation charts into its results_<dataset>/plots/."""
+    results = args.results or (results_dir(dataset) / "runs.jsonl")
+    out = args.out or (results_dir(dataset) / "plots")
+    runs = load_runs(results)
+    summary = aggregate_curves(runs)
+    if not summary:
+        print(f"warning: no scored runs to plot for {dataset} ({results}).")
+        return
+    curves = build_curves(summary)
+
+    models = sorted({m for (m, _) in curves})
+    modalities = [m for m in MODALITY_ORDER if any((mo, m) in curves for mo in models)]
+    cmap = plt.get_cmap("tab10")
+    colors = {m: cmap(i % 10) for i, m in enumerate(models)}
+
+    out.mkdir(parents=True, exist_ok=True)
+    written = []
+    if "length" in args.charts:
+        written.append(plot_length(curves, models, modalities, args.metric,
+                                   colors, out / "degradation_length.png", args.dpi))
+    if "overview" in args.charts:
+        written.append(plot_overview(curves, models, modalities, args.metric,
+                                     out / "overview.png", args.dpi))
+
+    print(f"{dataset.upper()}: plotted {len(models)} model(s) × "
+          f"{len(modalities)} modality(ies) from {len(runs)} runs:")
+    for p in written:
+        print(f"  {p}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--results", type=Path, default=DEFAULT_RESULTS,
-                        help=f"runs.jsonl (or its dir) (default: {DEFAULT_RESULTS})")
-    parser.add_argument("--out", type=Path, default=DEFAULT_OUT,
-                        help=f"output dir for PNGs (default: {DEFAULT_OUT})")
+    parser.add_argument("--dataset", choices=("cuad", "maud", "both"), default="both",
+                        help="which dataset(s) to plot (default: both — each from "
+                             "its own data/results_<dataset>/ stream)")
+    parser.add_argument("--results", type=Path, default=None,
+                        help="override runs.jsonl (or its dir); default "
+                             "data/results_<dataset>/runs.jsonl (single --dataset)")
+    parser.add_argument("--out", type=Path, default=None,
+                        help="override the PNG output dir; default "
+                             "data/results_<dataset>/plots (single --dataset)")
     parser.add_argument("--metric", default=None,
                         help="force a metric to plot (default: headline by focus)")
     parser.add_argument("--charts", nargs="+", default=["length", "overview"],
@@ -209,30 +250,13 @@ def main() -> None:
     parser.add_argument("--dpi", type=int, default=120)
     args = parser.parse_args()
 
-    runs = load_runs(args.results)
-    summary = aggregate_curves(runs)
-    if not summary:
-        raise SystemExit("error: no scored runs to plot.")
-    curves = build_curves(summary)
+    datasets = DATASETS if args.dataset == "both" else (args.dataset,)
+    if (args.results is not None or args.out is not None) and len(datasets) > 1:
+        raise SystemExit("error: --results/--out target a single dataset; "
+                         "pass --dataset cuad or --dataset maud.")
 
-    models = sorted({m for (m, _) in curves})
-    modalities = [m for m in MODALITY_ORDER if any((mo, m) in curves for mo in models)]
-    cmap = plt.get_cmap("tab10")
-    colors = {m: cmap(i % 10) for i, m in enumerate(models)}
-
-    args.out.mkdir(parents=True, exist_ok=True)
-    written = []
-    if "length" in args.charts:
-        written.append(plot_length(curves, models, modalities, args.metric,
-                                   colors, args.out / "degradation_length.png", args.dpi))
-    if "overview" in args.charts:
-        written.append(plot_overview(curves, models, modalities, args.metric,
-                                     args.out / "overview.png", args.dpi))
-
-    print(f"Plotted {len(models)} model(s) × {len(modalities)} modality(ies) "
-          f"from {len(runs)} runs:")
-    for p in written:
-        print(f"  {p}")
+    for ds in datasets:
+        plot_dataset(ds, args)
 
 
 if __name__ == "__main__":
