@@ -27,10 +27,13 @@ they are almost always built together).
                           with a note.
 
   Baseline:
-    For rot and confusion a zero-filler BASELINE cell is also emitted
-    (`<modality>_baseline`): the bare probe with no interference, the anchor every
-    degradation curve is measured against. The abstention modalities have no
-    interference axis -> no baseline.
+    A single zero-filler BASELINE cell is emitted per document (`d###_baseline`,
+    `modality="baseline"`): the bare probe with no interference, the anchor every
+    degradation curve is measured against. rot and confusion SHARE it — with zero
+    filler the cell is byte-for-byte identical no matter which filler axis it
+    anchors, so it is built once rather than once per modality. It is emitted
+    whenever any baseline-anchored modality (rot/confusion) is requested; the
+    abstention modalities have no interference axis -> they do not need it.
 
   Interference (length only):
     Budgets are how much rot/confusion FILLER to add AROUND the probe, in tokens
@@ -61,7 +64,7 @@ WHERE CUAD AND MAUD GENUINELY DIFFER (kept dataset-specific on purpose):
 
 Output: one JSON record per cell (per document: (modality x budget) +
 per-modality baselines) under each dataset's --out, plus a manifest.json. CUAD ->
-data/prepared/ ; MAUD -> data/prepared_maud/ (the dirs run_models/score_outputs
+data/prepared_cuad/ ; MAUD -> data/prepared_maud/ (the dirs run_models/score_outputs
 default to).
 
 Usage:
@@ -97,7 +100,7 @@ CHARS_PER_TOKEN = 4  # approximate; matches inspect_cuad's budgeting hint
 
 # CUAD defaults
 CUAD_DEFAULT_FILE = Path("data/cuad/test.json")
-CUAD_DEFAULT_OUT = Path("data/prepared")
+CUAD_DEFAULT_OUT = Path("data/prepared_cuad")
 # MAUD defaults
 MAUD_DEFAULT_FILE = Path("data/maud/MAUD_dev.csv")
 MAUD_DEFAULT_CONTRACTS = Path("data/maud/contracts")
@@ -106,7 +109,7 @@ MAUD_DEFAULT_DATA_TYPE = "main"
 
 # All modalities the schema knows about; only IMPLEMENTED ones generate cells.
 MODALITIES = ("rot", "confusion", "missing_answer", "missing_document")
-IMPLEMENTED_MODALITIES = ("rot", "confusion", "missing_answer")
+IMPLEMENTED_MODALITIES = ("rot", "confusion")
 # Modalities with an interference axis, so a zero-filler baseline makes sense.
 BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = IMPLEMENTED_MODALITIES
@@ -822,15 +825,19 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
     `budget` is the amount of rot/confusion FILLER (in tokens) to add before the
     full target — the independent variable, not a cap on the window. The target is
     always kept whole and placed at the end. baseline=True forces zero filler and
-    a `<modality>_baseline` cell id. The cell id carries a `d{doc_index:03d}`
-    prefix so cells stay unique across the several target documents.
+    a `d{doc_index:03d}_baseline` cell id (modality is passed as "baseline"); it is
+    the single shared anchor for both rot and confusion. The cell id carries a
+    `d{doc_index:03d}` prefix so cells stay unique across the target documents.
     """
     # Filler order is keyed by the target id so each document shuffles its own
     # pool independently yet reproducibly from --seed.
     rng = random.Random(stable_seed(seed, target["id"], modality, budget))
     filler_chars = 0 if baseline else budget * CHARS_PER_TOKEN
 
-    if modality == "rot":
+    if baseline:
+        # Zero filler regardless of axis -> the bare target; no filler source.
+        entries, loader, source = [], None, "none"
+    elif modality == "rot":
         entries, loader, source = rot_pool
     else:  # confusion + missing_answer use confusable legal filler
         entries, loader = legal_pool
@@ -840,7 +847,7 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
                                entries, loader, filler_chars, sep, rng, builder.wrapper)
 
     prefix = f"d{target['doc_index']:03d}"
-    cell_id = (f"{prefix}_{modality}_baseline" if baseline
+    cell_id = (f"{prefix}_baseline" if baseline
                else f"{prefix}_{modality}_b{budget}")
     return {
         "cell_id": cell_id,
@@ -896,9 +903,10 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
     if not args.dry_run:
         cells_dir.mkdir(parents=True, exist_ok=True)
 
-    # Per document: a zero-filler baseline per interference modality, then the
-    # budget interference grid (target always at the END). The legal distractor
-    # pool excludes the current target, so it is rebuilt per document.
+    # Per document: ONE shared zero-filler baseline (if any interference modality
+    # is requested), then each modality's budget interference grid (target always
+    # at the END). The legal distractor pool excludes the current target, so it is
+    # rebuilt per document.
     print(f"\nGenerating cells for {len(targets)} document(s):")
     for target in targets:
         modalities, note = builder.modalities_for(target, requested)
@@ -909,9 +917,11 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
 
         legal_pool = builder.legal_pool(ctx, target)
         jobs = []  # (modality, budget, baseline)
+        # rot and confusion share a single zero-filler baseline (identical with no
+        # interference); emit it once as a modality="baseline" cell.
+        if any(m in builder.baseline_modalities for m in modalities):
+            jobs.append(("baseline", 0, True))
         for modality in modalities:
-            if modality in builder.baseline_modalities:
-                jobs.append((modality, 0, True))
             for budget in budgets:
                 jobs.append((modality, budget, False))
 

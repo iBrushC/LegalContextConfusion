@@ -49,6 +49,9 @@ DEFAULT_RESULTS = Path("data/results/runs.jsonl")
 DEFAULT_CSV = Path("data/results/curves.csv")
 
 MODALITY_ORDER = ["rot", "confusion", "missing_answer", "missing_document"]
+# The single shared zero-filler baseline cell (modality="baseline") anchors these
+# interference modalities; build_curves fans it out as their budget-0 point.
+BASELINE_ANCHORS = ("rot", "confusion")
 
 # Headline + secondary metrics per focus.
 HEADLINE = {"spans": "span_f1", "abstention": "abstention_rate",
@@ -116,13 +119,29 @@ def _human_budget(n: int) -> str:
 def build_curves(summary: list[dict]) -> dict:
     """Index pooled curve rows by (model, modality) -> {budget_tokens: row}.
 
-    Budget 0 is the zero-filler baseline anchor (CUAD); other budgets are the
+    Budget 0 is the zero-filler baseline anchor; other budgets are the
     interference points. Each row is already pooled across documents.
+
+    The baseline is now emitted once per document as its own modality="baseline"
+    cell (rather than duplicated per interference modality), so here it is fanned
+    back out: the shared baseline row becomes the budget-0 anchor of every
+    modality it anchors (rot/confusion), and the standalone "baseline" group is
+    dropped. Downstream table/plot code then sees the same shape as before.
     """
     curves: dict[tuple, dict] = {}
     for row in summary:
         curves.setdefault((row["model"], row["modality"]), {})[
             row["budget_tokens"]] = row
+
+    for model in {m for (m, _) in curves}:
+        base_group = curves.pop((model, "baseline"), None)
+        if not base_group:
+            continue
+        base_row = base_group.get(0) or next(iter(base_group.values()))
+        for modality in BASELINE_ANCHORS:
+            group = curves.get((model, modality))
+            if group is not None:
+                group.setdefault(0, base_row)
     return curves
 
 
