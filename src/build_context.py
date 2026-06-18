@@ -41,10 +41,10 @@ they are almost always built together).
   Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER documents in the
       same dataset (confusable).
-    * rot filler is drawn from the NON-legal story corpus in data/rot — random
-      sections of randomly chosen .txt files (Project Gutenberg eBooks, boilerplate
-      stripped). Override with --rot-dir; with no .txt stories it falls back to a
-      synthetic sentence bank.
+    * rot filler is drawn EXCLUSIVELY from the NON-legal story corpus in data/rot
+      — random sections of randomly chosen .txt files (Project Gutenberg eBooks,
+      boilerplate stripped). Override with --rot-dir; with no .txt stories the
+      build errors out (there is no synthetic fallback).
 
 WHERE CUAD AND MAUD GENUINELY DIFFER (kept dataset-specific on purpose):
     * source format     CUAD = one JSON file of contracts; MAUD = a CSV of
@@ -130,32 +130,6 @@ MIN_ROT_SECTIONS = 24
 # When a snapped section starts/ends mid-paragraph, scan at most this far for a
 # clean paragraph (then word) boundary before giving up and cutting as-is.
 _SNAP_WINDOW = 400
-
-# Synthetic fallback bank: neutral, deliberately NON-legal sentences used only
-# when the rot corpus directory is missing/empty. No contract / merger
-# vocabulary, so nothing here is confusable with a legal document.
-_NONLEGAL_SENTENCES = (
-    "The morning fog settled over the valley long before the hikers reached the ridge.",
-    "She measured the flour twice before folding it into the warm batter.",
-    "Migrating geese trace the same river south every autumn without a map.",
-    "The old telescope needed a gentle cleaning before the comet became visible.",
-    "He repotted the basil on the windowsill where the afternoon light was strongest.",
-    "A quiet tide pulled the small boats back toward the harbor at dusk.",
-    "The bakery on the corner sells out of sourdough by nine most mornings.",
-    "Rain tapped against the greenhouse glass while the seedlings stretched upward.",
-    "They followed the coastal trail until the lighthouse came into view.",
-    "The chess club met in the library every Thursday after the last bell.",
-    "Warm bread, sharp cheese, and a handful of olives made the whole picnic.",
-    "The river otters played near the dam where the current slowed to a drift.",
-    "A single violin carried the melody before the rest of the strings joined in.",
-    "The cartographer sketched the coastline by hand, correcting it as she sailed.",
-    "Frost outlined every leaf in the garden until the sun climbed past the fence.",
-    "The train slowed through the mountain pass so passengers could watch the falls.",
-    "He brewed the coffee a little stronger on the cold, dark winter mornings.",
-    "Fireflies blinked across the meadow as the campfire settled into embers.",
-    "The potter centered the clay, then opened it slowly with both thumbs.",
-    "A kestrel hovered above the field, perfectly still against the moving clouds.",
-)
 
 
 def stable_seed(*parts) -> int:
@@ -289,20 +263,18 @@ def build_rot_pool(rot_dir: Path, max_filler_chars: int, seed: int):
 
     `entries` is a list of opaque section ids; `loader(id) -> (id, title, text)`.
     Draws random sections of random story files from `rot_dir`, sized to the
-    largest budget so no section repeats. Falls back to the synthetic sentence
-    bank only when the corpus directory is missing/empty. Nothing here is
-    confusable with a legal document — it is length-only noise.
+    largest budget so no section repeats. The corpus is the ONLY source of rot
+    filler — if `rot_dir` has no .txt stories this raises, rather than silently
+    substituting synthetic text. Nothing drawn here is confusable with a legal
+    document — it is length-only noise.
     """
     corpus = load_rot_corpus(rot_dir)
     if not corpus:
-        bank = list(_NONLEGAL_SENTENCES)
-        paras = [" ".join(bank[i:i + 4]) for i in range(0, len(bank), 4)]
-        table = {f"filler_{i + 1:03d}": p for i, p in enumerate(paras)}
-
-        def load_synthetic(did: str):
-            return did, "non-legal filler", table[did]
-
-        return list(table), load_synthetic, "synthetic-placeholder"
+        raise SystemExit(
+            f"error: no .txt rot stories found at {rot_dir}; rot filler is built "
+            f"exclusively from this corpus. Add story files there or point "
+            f"--rot-dir at a directory that contains some."
+        )
 
     rng = random.Random(stable_seed(seed, "rot_sections"))
     sections = dict(sample_rot_sections(corpus, rot_pool_size(max_filler_chars), rng))
@@ -916,12 +888,8 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
     max_filler_chars = (max(budgets) if budgets else 0) * CHARS_PER_TOKEN
     rot_pool = build_rot_pool(args.rot_dir, max_filler_chars, args.seed)
     if "rot" in requested:
-        if rot_pool[2] == "synthetic-placeholder":
-            print(f"  rot filler: synthetic placeholder "
-                  f"(no .txt stories found at {args.rot_dir})")
-        else:
-            print(f"  rot filler: {len(rot_pool[0])} random story sections "
-                  f"from {args.rot_dir}")
+        print(f"  rot filler: {len(rot_pool[0])} random story sections "
+              f"from {args.rot_dir}")
 
     cells_meta = []
     cells_dir = out / "cells"
