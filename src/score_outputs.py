@@ -167,7 +167,9 @@ def aggregate(runs: list[dict]) -> list[dict]:
         row = {
             "model": model, "model_slug": rs[0]["model_slug"], "cell_id": cell_id,
             "modality": rs[0]["modality"], "focus": rs[0]["focus"],
-            "budget_tokens": rs[0]["budget_tokens"], "position": rs[0]["position"],
+            "budget_tokens": rs[0]["budget_tokens"],
+            "is_baseline": rs[0].get("is_baseline", False),
+            "position": rs[0]["position"],
             "runs": len(rs), "ok_runs": len(ok),
         }
         for m in _AGG_METRICS:

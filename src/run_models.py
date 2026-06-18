@@ -79,7 +79,8 @@ ALIASES = {
     "glm5": "glm", "glm-5.2": "glm",
 }
 # Cheapest model for prototyping (reuse-base-procedure card). VERIFY.
-PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+# PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+PROTOTYPE = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 
 
@@ -368,6 +369,7 @@ def main() -> None:
                         "model": name, "model_slug": slug,
                         "cell_id": cell["cell_id"], "modality": cell["modality"],
                         "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
+                        "is_baseline": cell.get("is_baseline", False),
                         "position": cell["position"], "run_index": run_idx,
                         "batch_size": (args.question_batch_size
                                        if args.question_batch_size > 0
