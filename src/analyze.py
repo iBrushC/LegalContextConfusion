@@ -15,6 +15,8 @@ The headline metric is chosen by the cell's `focus`:
   * focus=spans      (CUAD rot, confusion) -> span_f1   [+ exact_match, wrong_doc_rate]
   * focus=abstention (CUAD missing_answer) -> abstention_rate [+ hallucination_rate]
   * focus=labels     (MAUD, multiple choice) -> mc_accuracy [+ wrong_doc_rate]
+    (for the missing_answer modality, mc_accuracy is over only the safe-negative
+    questions — the abstention analogue)
 Override with --metric to curve any metric.
 
 Outputs: human-readable tables + ASCII sparklines to the console, and a tidy
@@ -46,7 +48,7 @@ from score_outputs import _AGG_METRICS, aggregate_curves  # noqa: E402
 DEFAULT_RESULTS = Path("data/results/runs.jsonl")
 DEFAULT_CSV = Path("data/results/curves.csv")
 
-MODALITY_ORDER = ["clean", "rot", "confusion", "missing_answer", "missing_document"]
+MODALITY_ORDER = ["rot", "confusion", "missing_answer", "missing_document"]
 
 # Headline + secondary metrics per focus.
 HEADLINE = {"spans": "span_f1", "abstention": "abstention_rate",

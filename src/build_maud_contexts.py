@@ -16,7 +16,6 @@ imported from it, and the MAUD loaders come from inspect_maud.
        changes across that document's cells.
 
   Modalities (the same ones CUAD supports, where MAUD allows):
-    * clean           -> target agreement only (no filler).
     * rot             -> target + NON-legal filler (length-only noise).
     * confusion       -> target + OTHER merger agreements (highly confusable).
     * missing_answer  -> target + other agreements, the safe-negative
@@ -25,8 +24,15 @@ imported from it, and the MAUD loaders come from inspect_maud.
                          MAUD is forced-choice multiple choice, so the negative
                          is just one of the options (not a SQuAD is_impossible);
                          this modality stresses whether the model still picks
-                         that option correctly amid distractors. Skipped with a
-                         note when no safe negative is present.
+                         that option correctly amid distractors. Its accuracy is
+                         scored over ONLY the safe-negative questions (the
+                         abstention analogue). Skipped with a note when no safe
+                         negative is present.
+
+  Baseline (matching CUAD):
+    rot and confusion each also emit a zero-filler `<modality>_baseline` cell
+    (is_baseline=True, budget 0) — the bare agreement, the anchor every
+    degradation curve is measured against.
 
   Documents are wrapped as <DOCUMENT id="..." title="..."> ... </DOCUMENT>. The
   target id/title are recorded so the eval can tell whether an answer came from
@@ -50,7 +56,7 @@ happy. is_impossible is always False here — MAUD has no impossible questions.
 Usage:
     python src/build_maud_contexts.py                                   # 10 docs, default grid
     python src/build_maud_contexts.py --num-documents 4 --budgets 64000 128000 --seed 42
-    python src/build_maud_contexts.py --modality clean confusion
+    python src/build_maud_contexts.py --modality rot confusion
     python src/build_maud_contexts.py --contracts contract_13 --dry-run
 """
 
@@ -80,9 +86,12 @@ DEFAULT_CONTRACTS = Path("data/maud/contracts")
 DEFAULT_OUT = Path("data/prepared_maud")
 DEFAULT_DATA_TYPE = "main"
 
-MODALITIES = ("clean", "rot", "confusion", "missing_answer")
+MODALITIES = ("rot", "confusion", "missing_answer")
 DEFAULT_MODALITIES = MODALITIES
-# clean/rot/confusion always work; missing_answer needs a safe negative present.
+# Modalities with an interference axis get a zero-filler BASELINE cell (the
+# no-filler whole agreement), exactly like CUAD — it anchors every degradation
+# curve at budget 0. missing_answer needs a safe negative present to build.
+BASELINE_MODALITIES = ("rot", "confusion")
 # Budgets mirror CUAD: filler tokens ADDED around the whole agreement.
 DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
 DEFAULT_NUM_DOCUMENTS = 10
@@ -189,7 +198,7 @@ def build_cell_context(target: dict, pool_ids: list, load_pool, filler_chars: in
     rot/confusion text ADDED before it (the independent variable), NOT a cap on
     the window. Only filler blocks are trimmed to fit the budget; the target is
     never truncated. filler_chars <= 0 (or no distractors) yields the bare
-    target — the `clean` reference.
+    target — the zero-filler baseline reference.
     """
     target_block = wrap_document(target["id"], target["title"], target["text"])
 
@@ -368,34 +377,35 @@ def _build_target(by_contract: dict, names: list[str], contracts_dir: Path,
 # Cell generation
 # --------------------------------------------------------------------------- #
 def make_cell(target: dict, modality: str, budget: int,
-              count_tokens, legal_pool, rot_pool, seed: int, sep: str) -> dict:
+              count_tokens, legal_pool, rot_pool, seed: int, sep: str,
+              baseline: bool = False) -> dict:
     """Build one prepared MAUD cell.
 
     `budget` is the amount of rot/confusion FILLER (in tokens) added before the
     full target — the independent variable, not a cap on the window. The target
-    is always kept whole and placed at the end. The cell id carries a
-    `d{doc_index:03d}` prefix so cells stay unique across the target documents.
+    is always kept whole and placed at the end. baseline=True forces zero filler
+    (the bare-agreement reference point) and a `<modality>_baseline` cell id,
+    mirroring CUAD. The cell id carries a `d{doc_index:03d}` prefix so cells stay
+    unique across the target documents.
     """
     # Filler order is keyed by the target id so each document shuffles its own
     # pool independently yet reproducibly from --seed.
     rng = random.Random(stable_seed(seed, target["id"], modality, budget))
+    filler_chars = 0 if baseline else budget * CHARS_PER_TOKEN
 
-    if modality == "clean":
-        pool_ids, load_pool, source, with_distractors = [], None, "none", False
-        filler_chars = 0
-    elif modality == "rot":
+    if modality == "rot":
         pool_ids, load_pool, source = rot_pool
-        with_distractors = True
-        filler_chars = budget * CHARS_PER_TOKEN
+        with_distractors = not baseline
     else:  # confusion + missing_answer share the other-agreements pool
         pool_ids, load_pool = legal_pool
-        source, with_distractors = "maud-other-agreements", True
-        filler_chars = budget * CHARS_PER_TOKEN
+        source, with_distractors = "maud-other-agreements", not baseline
 
     built = build_cell_context(target, pool_ids, load_pool, filler_chars,
                                sep, rng, with_distractors)
     context = built["context"]
-    cell_id = f"d{target['doc_index']:03d}_{modality}_b{budget}"
+    prefix = f"d{target['doc_index']:03d}"
+    cell_id = (f"{prefix}_{modality}_baseline" if baseline
+               else f"{prefix}_{modality}_b{budget}")
 
     return {
         "cell_id": cell_id,
@@ -403,7 +413,8 @@ def make_cell(target: dict, modality: str, budget: int,
         "doc_index": target["doc_index"],
         "modality": modality,
         "focus": FOCUS,
-        "budget_tokens": budget,
+        "budget_tokens": 0 if baseline else budget,
+        "is_baseline": baseline,
         "actual_tokens": count_tokens(context),
         "actual_chars": len(context),
         "target_document_id": target["id"],
@@ -539,27 +550,38 @@ def main() -> None:
             continue
 
         legal_pool = make_legal_pool(by_contract, args.contracts_dir, target["id"])
-        print(f"  d{target['doc_index']:03d} {target['id']}: "
-              f"{len(modalities)} modality(ies)")
+        # A zero-filler baseline per interference modality, then the budget grid
+        # (target always at the END), mirroring CUAD.
+        jobs = []  # (modality, budget, baseline)
         for modality in modalities:
+            if modality in BASELINE_MODALITIES:
+                jobs.append((modality, 0, True))
             for budget in sorted(args.budgets):
-                cell = make_cell(target, modality, budget, count_tokens,
-                                 legal_pool, rot_pool, args.seed, DOC_SEPARATOR)
-                flags = []
-                if cell["filler_repeated"]:
-                    flags.append("filler-repeated")
-                flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
-                print(f"    {cell['cell_id']:32} {cell['actual_tokens']:>9,} tok  "
-                      f"{len(cell['distractor_ids']):>2} distractors{flag_str}")
+                jobs.append((modality, budget, False))
 
-                meta = {k: v for k, v in cell.items()
-                        if k not in ("context", "questions")}
-                if not args.dry_run:
-                    path = cells_dir / f"{cell['cell_id']}.json"
-                    path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
-                                    encoding="utf-8")
-                    meta["path"] = str(path)
-                cells_meta.append(meta)
+        print(f"  d{target['doc_index']:03d} {target['id']}: "
+              f"{len(modalities)} modality(ies), {len(jobs)} cells")
+        for modality, budget, baseline in jobs:
+            cell = make_cell(target, modality, budget, count_tokens,
+                             legal_pool, rot_pool, args.seed, DOC_SEPARATOR,
+                             baseline=baseline)
+            flags = []
+            if cell.get("is_baseline"):
+                flags.append("baseline / zero-filler")
+            if cell["filler_repeated"]:
+                flags.append("filler-repeated")
+            flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
+            print(f"    {cell['cell_id']:32} {cell['actual_tokens']:>9,} tok  "
+                  f"{len(cell['distractor_ids']):>2} distractors{flag_str}")
+
+            meta = {k: v for k, v in cell.items()
+                    if k not in ("context", "questions")}
+            if not args.dry_run:
+                path = cells_dir / f"{cell['cell_id']}.json"
+                path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
+                                encoding="utf-8")
+                meta["path"] = str(path)
+            cells_meta.append(meta)
 
     if args.dry_run:
         print(f"\n(dry run — {len(cells_meta)} cells planned, no files written)")
@@ -581,6 +603,8 @@ def main() -> None:
                     for t in targets],
         "modalities": base_modalities,
         "budgets": sorted(args.budgets),
+        "baseline_modalities": [m for m in base_modalities
+                                if m in BASELINE_MODALITIES],
         "cells": cells_meta,
     }
     manifest_path = args.out / "manifest.json"

@@ -151,6 +151,7 @@ def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
     so the standalone scorer can pool them across cells for micro-rates.
     """
     target_id = cell["target_document_id"]
+    modality = cell.get("modality")
     sum_f1 = 0.0
     sum_exact = n_pos = n_neg = 0
     answered_pos = wrong_doc = doc_id_present = 0
@@ -167,6 +168,13 @@ def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
         present = bool(pred and pred.get("present") and answer)
 
         if q.get("answer_type") == "multiple_choice":  # MAUD: closed-set choice
+            # missing_answer is the abstention analogue: score ONLY the safe-
+            # negative questions (does the model still pick the None/N/A option
+            # amid distractors?). Other MC modalities score the whole set; a
+            # non-negative question in a missing_answer cell is counted in
+            # neither numerator nor denominator.
+            if modality == "missing_answer" and not q.get("is_negative"):
+                continue
             n_mc += 1
             options = q.get("answer_options") or q.get("gold_answers") or []
             golds = q.get("gold_answers") or [a["text"] for a in q.get("answers", [])]

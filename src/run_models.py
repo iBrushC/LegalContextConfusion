@@ -548,7 +548,7 @@ def main() -> None:
                              "not a spend — but reasoning models burn it on hidden "
                              "thinking, so it must cover reasoning + the JSON answer "
                              "or you get an empty 'content'.")
-    parser.add_argument("--temperature", type=float, default=0.7)
+    parser.add_argument("--temperature", type=float, default=0.0)
     parser.add_argument("--reasoning-effort",
                         choices=("low", "medium", "high", "none"), default=None,
                         help="control reasoning models' thinking budget via "
