@@ -7,10 +7,13 @@ generic helpers (token counter, deterministic seed, non-legal filler bank) are
 imported from it, and the MAUD loaders come from inspect_maud.
 
   Init:
-    1. Pick ONE merger agreement as the TARGET (full text from data/maud/contracts).
-    2. Build its fixed question set from the MAUD CSV (one record per question,
-       gold MULTIPLE-CHOICE answer + label). Prefer including >=1 safe negative.
-    3. Target + question set are held FIXED; only the surrounding filler changes.
+    1. Pick N merger agreements as the TARGETS (default 10, deterministic by
+       seed; full text from data/maud/contracts).
+    2. For each, build a capped fixed question set from the MAUD CSV (<=32 by
+       default, one record per question, gold MULTIPLE-CHOICE answer + label),
+       chosen deterministically per document. Prefer including >=1 safe negative.
+    3. Each target + its question set are held FIXED; only the surrounding filler
+       changes across that document's cells.
 
   Modalities (the same ones CUAD supports, where MAUD allows):
     * clean           -> target agreement only (no filler).
@@ -29,9 +32,12 @@ imported from it, and the MAUD loaders come from inspect_maud.
   target id/title are recorded so the eval can tell whether an answer came from
   the right agreement (the wrong-document signal).
 
-  MAUD agreements are large (~85k tokens median), so at small budgets every
-  document — including the target — is TRUNCATED to its budget share. Each cell
-  records `target_fits` / `target_truncated` so that is visible downstream.
+  Interference (length only), matching CUAD:
+    Budgets are the amount of rot/confusion FILLER (in tokens) ADDED AROUND the
+    target, NOT a cap on the window. The target agreement is ALWAYS kept whole
+    and placed at the END of the window, after all the filler; only filler
+    blocks are trimmed to fit the budget. (Earlier versions truncated the target
+    to a budget share — that cutoff behaviour has been removed.)
 
 Output: one JSON record per cell under data/prepared_maud/cells/, plus
 manifest.json. Each question carries MAUD-native fields (answer_type,
@@ -42,10 +48,10 @@ a SQuAD-shaped `answers` field is also kept so the CUAD-shaped helpers stay
 happy. is_impossible is always False here — MAUD has no impossible questions.
 
 Usage:
-    python src/build_maud_contexts.py                                   # default grid
-    python src/build_maud_contexts.py --budgets 4000 16000 --positions target_at_start target_at_end --max-questions 10 --seed 42
+    python src/build_maud_contexts.py                                   # 10 docs, default grid
+    python src/build_maud_contexts.py --num-documents 4 --budgets 64000 128000 --seed 42
     python src/build_maud_contexts.py --modality clean confusion
-    python src/build_maud_contexts.py --contract contract_13 --dry-run
+    python src/build_maud_contexts.py --contracts contract_13 --dry-run
 """
 
 from __future__ import annotations
@@ -77,14 +83,10 @@ DEFAULT_DATA_TYPE = "main"
 MODALITIES = ("clean", "rot", "confusion", "missing_answer")
 DEFAULT_MODALITIES = MODALITIES
 # clean/rot/confusion always work; missing_answer needs a safe negative present.
-DEFAULT_BUDGETS = (4000, 16000, 64000)
-POSITIONS = ("target_at_start", "target_at_middle", "target_at_end")
-DEFAULT_POSITIONS = POSITIONS
-
-# Smallest slice of the target we will ever keep when distractors share the budget.
-MIN_TARGET_CHARS = 1000
-# Fraction of the budget reserved for the target when distractors are present.
-DEFAULT_TARGET_SHARE = 0.5
+# Budgets mirror CUAD: filler tokens ADDED around the whole agreement.
+DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
+DEFAULT_NUM_DOCUMENTS = 10
+DEFAULT_MAX_QUESTIONS = 32
 # Approx size of one synthetic non-legal "document" for the rot fallback bank
 # (used only when the data/rot story corpus is missing/empty).
 ROT_DOC_CHARS = 2000
@@ -178,59 +180,48 @@ def make_rot_pool(rot_dir: Path, max_filler_chars: int, seed: int):
 # --------------------------------------------------------------------------- #
 # Context assembly
 # --------------------------------------------------------------------------- #
-def build_cell_context(target: dict, pool_ids: list, load_pool, budget_chars: int,
-                       position: str, target_share: float, sep: str, rng,
-                       with_distractors: bool) -> dict:
-    """Assemble one context: target + (optional) distractors at `position`."""
-    if with_distractors and pool_ids:
-        target_alloc = min(budget_chars, max(MIN_TARGET_CHARS,
-                                              int(budget_chars * target_share)))
-    else:
-        target_alloc = budget_chars
+def build_cell_context(target: dict, pool_ids: list, load_pool, filler_chars: int,
+                       sep: str, rng, with_distractors: bool) -> dict:
+    """Assemble one context: `filler_chars` of filler, then the WHOLE target.
 
-    target_block, target_truncated = fit_block(
-        target["id"], target["title"], target["text"], target_alloc)
-    if target_block is None:  # budget smaller than the wrapper itself
-        target_block = wrap_document(target["id"], target["title"], "")
-        target_truncated = bool(target["text"])
+    Mirrors CUAD: the target agreement is ALWAYS kept whole and placed at the
+    END of the window, after all the filler. `filler_chars` is the amount of
+    rot/confusion text ADDED before it (the independent variable), NOT a cap on
+    the window. Only filler blocks are trimmed to fit the budget; the target is
+    never truncated. filler_chars <= 0 (or no distractors) yields the bare
+    target — the `clean` reference.
+    """
+    target_block = wrap_document(target["id"], target["title"], target["text"])
 
     blocks, used_ids, filler_repeated = [], [], False
-    if with_distractors and pool_ids:
+    if with_distractors and pool_ids and filler_chars > 0:
         order = pool_ids[:]
         rng.shuffle(order)
-        remaining = budget_chars - len(target_block)
+        added = 0  # filler chars accumulated (target NOT counted)
         i = 0
-        while remaining - len(sep) > 0:
+        while True:
+            budget_left = filler_chars - added
+            if budget_left - len(sep) <= 0:
+                break
             filler_repeated = filler_repeated or i >= len(order)
             doc_id = order[i % len(order)]
             title, text = load_pool(doc_id)
-            block, _ = fit_block(doc_id, title, text, remaining - len(sep))
+            block, _ = fit_block(doc_id, title, text, budget_left - len(sep))
             if block is None:
                 break
             blocks.append(block)
             used_ids.append(doc_id)
-            remaining -= len(block) + len(sep)
+            added += len(block) + len(sep)
             i += 1
             # rot filler is finite+repeatable; legal filler usually fills in one
-            # block, so stop once we've cycled the whole pool without progress.
+            # block, so stop once we've cycled a single-doc pool without progress.
             if i >= len(order) and len(order) == 1:
                 break
 
-    if position == "target_at_start":
-        idx = 0
-    elif position == "target_at_end":
-        idx = len(blocks)
-    elif position in ("target_at_middle", "full"):
-        idx = len(blocks) // 2
-    else:
-        raise SystemExit(f"error: unknown position {position!r}")
-
-    ordered = blocks[:idx] + [target_block] + blocks[idx:]
+    ordered = blocks + [target_block]
     return {
         "context": sep.join(ordered),
         "distractor_ids": used_ids,
-        "target_truncated": target_truncated,
-        "target_fits": not target_truncated,
         "filler_repeated": filler_repeated,
     }
 
@@ -246,7 +237,7 @@ def enrich_questions(raw_questions: list[dict]) -> list[dict]:
     `is_impossible` is always False — there are no SQuAD-style impossible
     questions here. A safe-negative answer ("No"/"None"/"N/A") is simply one of
     the options; `is_negative` is kept as an informative flag, and its presence
-    is what lets the missing_answer modality build (see select_target).
+    is what lets the missing_answer modality build (see select_targets).
     """
     enriched = []
     for i, q in enumerate(raw_questions, 1):
@@ -292,35 +283,65 @@ def choose_questions(rng, questions: list[dict], max_questions: int | None,
     return chosen
 
 
-def select_target(by_contract: dict, all_rows: list[dict], contracts_dir: Path,
-                  seed: int, contract: str | None, doc_index: int | None,
+def select_targets(by_contract: dict, all_rows: list[dict], contracts_dir: Path,
+                   seed: int, contracts: list[str] | None,
+                   doc_indices: list[int] | None, num_documents: int,
+                   max_questions: int | None, min_negatives: int,
+                   negatives_mode: str) -> list[dict]:
+    """Pick N agreements as targets and build each one's fixed question set.
+
+    Documents are chosen deterministically from `seed`; explicit `contracts`
+    (by name) or `doc_indices` override the random pick. Returns a list of
+    target dicts. Unlike CUAD, MAUD selection has no min-negatives gate —
+    missing_answer is decided per document at cell-generation time.
+    """
+    names = sorted(by_contract)
+    if contracts:
+        chosen_names = []
+        for c in contracts:
+            if c not in by_contract:
+                raise SystemExit(f"error: contract {c!r} not found. "
+                                 f"Try one of {names[:3]} …")
+            chosen_names.append(c)
+    elif doc_indices is not None:
+        chosen_names = []
+        for di in doc_indices:
+            if not 0 <= di < len(names):
+                raise SystemExit(f"error: --doc-indices entry {di} out of range "
+                                 f"(0..{len(names) - 1})")
+            chosen_names.append(names[di])
+    else:
+        rng = random.Random(stable_seed(seed, "select_docs"))
+        order = list(range(len(names)))
+        rng.shuffle(order)
+        if num_documents > len(names):
+            print(f"warning: only {len(names)} contracts available; "
+                  f"proceeding with all of them.")
+        indices = sorted(order[:min(num_documents, len(names))])
+        chosen_names = [names[i] for i in indices]
+
+    # The dataset-wide option set per question is identical across docs; build
+    # it once and reuse it for every target.
+    options = answer_options_map(all_rows)
+    return [_build_target(by_contract, names, contracts_dir, seed, name, options,
+                          max_questions, min_negatives, negatives_mode)
+            for name in chosen_names]
+
+
+def _build_target(by_contract: dict, names: list[str], contracts_dir: Path,
+                  seed: int, name: str, options: dict,
                   max_questions: int | None, min_negatives: int,
                   negatives_mode: str) -> dict:
-    """Pick the target agreement and build its fixed, enriched question set."""
-    names = sorted(by_contract)
-    if contract is not None:
-        if contract not in by_contract:
-            raise SystemExit(f"error: contract {contract!r} not found. "
-                             f"Try one of {names[:3]} …")
-        name = contract
-    elif doc_index is not None:
-        if not 0 <= doc_index < len(names):
-            raise SystemExit(f"error: --doc-index {doc_index} out of range "
-                             f"(0..{len(names) - 1})")
-        name = names[doc_index]
-    else:
-        rng = random.Random(stable_seed(seed, "select_target"))
-        name = rng.choice(names)
-
+    """Build one target agreement's fixed, capped, enriched question set."""
     text = read_contract_text(contracts_dir, name)
     title = derive_title(text, name)
 
     raw_questions = build_questions(by_contract[name])
-    # Attach the dataset-wide option set for each question (real-run aid).
-    options = answer_options_map(all_rows)
     for q in raw_questions:
         q["answer_options"] = options.get(q["question"], q["gold_answers"])
 
+    # Each document draws its question subset from its OWN rng, keyed by name, so
+    # documents don't share a draw and each subset is reproducible from --seed.
     sel_rng = random.Random(stable_seed(seed, "choose_questions", name))
     chosen = choose_questions(sel_rng, raw_questions, max_questions, min_negatives)
     questions = enrich_questions(chosen)
@@ -346,42 +367,48 @@ def select_target(by_contract: dict, all_rows: list[dict], contracts_dir: Path,
 # --------------------------------------------------------------------------- #
 # Cell generation
 # --------------------------------------------------------------------------- #
-def make_cell(target: dict, modality: str, budget: int, position: str,
-              count_tokens, legal_pool, rot_pool, target_share: float,
-              seed: int, sep: str) -> dict:
-    """Build one prepared MAUD cell."""
-    rng = random.Random(stable_seed(seed, modality, budget, position))
-    budget_chars = budget * CHARS_PER_TOKEN
+def make_cell(target: dict, modality: str, budget: int,
+              count_tokens, legal_pool, rot_pool, seed: int, sep: str) -> dict:
+    """Build one prepared MAUD cell.
+
+    `budget` is the amount of rot/confusion FILLER (in tokens) added before the
+    full target — the independent variable, not a cap on the window. The target
+    is always kept whole and placed at the end. The cell id carries a
+    `d{doc_index:03d}` prefix so cells stay unique across the target documents.
+    """
+    # Filler order is keyed by the target id so each document shuffles its own
+    # pool independently yet reproducibly from --seed.
+    rng = random.Random(stable_seed(seed, target["id"], modality, budget))
 
     if modality == "clean":
         pool_ids, load_pool, source, with_distractors = [], None, "none", False
+        filler_chars = 0
     elif modality == "rot":
         pool_ids, load_pool, source = rot_pool
         with_distractors = True
+        filler_chars = budget * CHARS_PER_TOKEN
     else:  # confusion + missing_answer share the other-agreements pool
         pool_ids, load_pool = legal_pool
         source, with_distractors = "maud-other-agreements", True
+        filler_chars = budget * CHARS_PER_TOKEN
 
-    built = build_cell_context(target, pool_ids, load_pool, budget_chars,
-                               position, target_share, sep, rng, with_distractors)
+    built = build_cell_context(target, pool_ids, load_pool, filler_chars,
+                               sep, rng, with_distractors)
     context = built["context"]
-    cell_id = (f"{modality}_b{budget}" if modality == "clean"
-               else f"{modality}_b{budget}_{position}")
+    cell_id = f"d{target['doc_index']:03d}_{modality}_b{budget}"
 
     return {
         "cell_id": cell_id,
         "dataset": "maud",
+        "doc_index": target["doc_index"],
         "modality": modality,
         "focus": FOCUS,
         "budget_tokens": budget,
-        "position": position,
         "actual_tokens": count_tokens(context),
         "actual_chars": len(context),
         "target_document_id": target["id"],
         "target_document_title": target["title"],
         "distractor_ids": built["distractor_ids"],
-        "target_fits": built["target_fits"],
-        "target_truncated": built["target_truncated"],
         "filler_source": source,
         "filler_repeated": built["filler_repeated"],
         "context": context,
@@ -411,23 +438,28 @@ def main() -> None:
                         help="modalities to generate (default: all four)")
     parser.add_argument("--budgets", nargs="+", type=int,
                         default=list(DEFAULT_BUDGETS),
-                        help="token budgets (default: 4000 16000 64000)")
-    parser.add_argument("--positions", nargs="+", choices=POSITIONS,
-                        default=list(DEFAULT_POSITIONS),
-                        help="target positions (default: all three)")
+                        help="rot/confusion filler tokens to add AROUND the whole "
+                             "agreement (default: 64,000 128,000 256,000 512,000)")
+    parser.add_argument("--num-documents", type=int, default=DEFAULT_NUM_DOCUMENTS,
+                        help=f"number of target agreements to sample "
+                             f"(default: {DEFAULT_NUM_DOCUMENTS})")
+    parser.add_argument("--contracts", nargs="+", default=None,
+                        help="explicit contract_name(s) to target "
+                             "(overrides random selection)")
+    parser.add_argument("--doc-indices", type=int, nargs="+", default=None,
+                        help="explicit contract indices (sorted) to target "
+                             "(overrides random selection)")
     parser.add_argument("--contract", default=None,
-                        help="use this contract_name as the target")
+                        help="deprecated alias for a single --contracts entry")
     parser.add_argument("--doc-index", type=int, default=None,
-                        help="target the Nth contract (sorted); default: seeded random")
+                        help="deprecated alias for a single --doc-indices entry")
     parser.add_argument("--seed", type=int, default=0,
                         help="seed for sampling + filler shuffles (default: 0)")
-    parser.add_argument("--max-questions", type=int, default=None,
-                        help="subsample the question set (default: all)")
+    parser.add_argument("--max-questions", type=int, default=DEFAULT_MAX_QUESTIONS,
+                        help=f"cap questions per document "
+                             f"(default: {DEFAULT_MAX_QUESTIONS}; 0 = all)")
     parser.add_argument("--min-negatives", type=int, default=1,
                         help="prefer keeping >= this many safe negatives (default: 1)")
-    parser.add_argument("--target-share", type=float, default=DEFAULT_TARGET_SHARE,
-                        help="fraction of budget reserved for the target when "
-                             "distractors are present (default: 0.5)")
     parser.add_argument("--negatives", choices=("auto", "none"), default="auto",
                         help="auto: map No/None/N/A answers to is_impossible "
                              "(enables missing_answer + abstention). none: treat "
@@ -444,31 +476,41 @@ def main() -> None:
         raise SystemExit(f"error: no contracts found in {args.file}")
 
     count_tokens = make_token_counter(args.tokenizer)
-    target = select_target(by_contract, rows, args.contracts_dir, args.seed,
-                           args.contract, args.doc_index, args.max_questions,
-                           args.min_negatives, args.negatives)
 
-    print(f"Target: [{target['doc_index']}] {target['id']} — {target['title']}")
-    print(f"  text: {target['text_chars']:,} chars "
-          f"(~{count_tokens(target['text']):,} tokens)")
-    print(f"  questions: {target['num_questions']} "
-          f"({target['num_negatives']} safe-negative)")
+    # --contract / --doc-index are deprecated aliases for the plural flags.
+    contracts = list(args.contracts) if args.contracts else None
+    if args.contract is not None:
+        print("note: --contract is deprecated; use --contracts.")
+        contracts = (contracts or []) + [args.contract]
+    doc_indices = args.doc_indices
+    if args.doc_index is not None:
+        print("note: --doc-index is deprecated; use --doc-indices.")
+        if doc_indices is None:
+            doc_indices = [args.doc_index]
+        elif args.doc_index not in doc_indices:
+            doc_indices = [args.doc_index] + list(doc_indices)
+    # --max-questions 0 means "no cap" (keep the whole set).
+    max_questions = None if args.max_questions in (0, None) else args.max_questions
 
-    # missing_answer needs a safe negative in the chosen set; otherwise skip it.
-    modalities = list(args.modality)
-    if "missing_answer" in modalities and target["num_negatives"] == 0:
-        note = ("MAUD is forced-choice; no safe negative in this question set"
-                if args.negatives == "auto" else "--negatives none disables it")
-        print(f"note: skipping 'missing_answer' ({note}).")
-        modalities = [m for m in modalities if m != "missing_answer"]
-    if not modalities:
-        raise SystemExit("error: no modalities to generate.")
+    targets = select_targets(by_contract, rows, args.contracts_dir, args.seed,
+                             contracts, doc_indices, args.num_documents,
+                             max_questions, args.min_negatives, args.negatives)
+    if not targets:
+        raise SystemExit("error: no target documents selected.")
 
-    legal_pool = make_legal_pool(by_contract, args.contracts_dir, target["id"])
-    # Size the rot section pool to the largest budget so no section repeats.
+    print(f"Selected {len(targets)} target agreement(s):")
+    for target in targets:
+        print(f"  [{target['doc_index']:>3}] {target['id']} — {target['title']}  "
+              f"~{count_tokens(target['text']):,} tok, "
+              f"{target['num_questions']} q "
+              f"({target['num_negatives']} safe-negative)")
+
+    base_modalities = list(args.modality)
+    # Size the rot section pool to the largest budget so no section repeats. The
+    # rot pool is non-legal noise, so it is built ONCE and shared across docs.
     max_filler_chars = (max(args.budgets) if args.budgets else 0) * CHARS_PER_TOKEN
     rot_pool = make_rot_pool(args.rot_dir, max_filler_chars, args.seed)
-    if "rot" in modalities:
+    if "rot" in base_modalities:
         label = rot_pool[2]
         if label == "synthetic-nonlegal":
             print(f"  rot filler: synthetic placeholder "
@@ -482,22 +524,32 @@ def main() -> None:
     if not args.dry_run:
         cells_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"\nGenerating cells ({', '.join(modalities)}):")
-    for modality in modalities:
-        for budget in sorted(args.budgets):
-            # clean is position-invariant (no filler) -> one cell per budget.
-            positions = ["full"] if modality == "clean" else args.positions
-            for position in positions:
-                cell = make_cell(target, modality, budget, position, count_tokens,
-                                 legal_pool, rot_pool, args.target_share,
-                                 args.seed, DOC_SEPARATOR)
+    # Per document: missing_answer is decided per doc (needs a safe negative);
+    # the legal distractor pool excludes the current target, so it is rebuilt
+    # per document. The target always sits at the END of the window.
+    print(f"\nGenerating cells for {len(targets)} document(s):")
+    for target in targets:
+        modalities = list(base_modalities)
+        if "missing_answer" in modalities and target["num_negatives"] == 0:
+            note = ("no safe negative in this question set"
+                    if args.negatives == "auto" else "--negatives none disables it")
+            print(f"  d{target['doc_index']:03d}: skipping 'missing_answer' ({note}).")
+            modalities = [m for m in modalities if m != "missing_answer"]
+        if not modalities:
+            continue
+
+        legal_pool = make_legal_pool(by_contract, args.contracts_dir, target["id"])
+        print(f"  d{target['doc_index']:03d} {target['id']}: "
+              f"{len(modalities)} modality(ies)")
+        for modality in modalities:
+            for budget in sorted(args.budgets):
+                cell = make_cell(target, modality, budget, count_tokens,
+                                 legal_pool, rot_pool, args.seed, DOC_SEPARATOR)
                 flags = []
-                if cell["target_truncated"]:
-                    flags.append("target-truncated")
                 if cell["filler_repeated"]:
                     flags.append("filler-repeated")
                 flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
-                print(f"  {cell['cell_id']:40} {cell['actual_tokens']:>9,} tok  "
+                print(f"    {cell['cell_id']:32} {cell['actual_tokens']:>9,} tok  "
                       f"{len(cell['distractor_ids']):>2} distractors{flag_str}")
 
                 meta = {k: v for k, v in cell.items()
@@ -523,11 +575,12 @@ def main() -> None:
         "chars_per_token": CHARS_PER_TOKEN,
         "doc_separator": DOC_SEPARATOR,
         "negatives_mode": args.negatives,
-        "target_share": args.target_share,
-        "target": {k: v for k, v in target.items() if k != "text"},
-        "modalities": modalities,
+        "num_documents": len(targets),
+        "doc_indices": [t["doc_index"] for t in targets],
+        "targets": [{k: v for k, v in t.items() if k != "text"}
+                    for t in targets],
+        "modalities": base_modalities,
         "budgets": sorted(args.budgets),
-        "positions": args.positions,
         "cells": cells_meta,
     }
     manifest_path = args.out / "manifest.json"

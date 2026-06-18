@@ -1,16 +1,20 @@
 """plot_results.py — matplotlib degradation charts from run results.
 
 Optional visualisation layer on top of analyze.py. Reads the same runs.jsonl,
-aggregates with score_outputs.aggregate, and renders PNGs:
+pools every document's runs into one curve per (model, modality, budget) via
+score_outputs.aggregate_curves, and renders PNGs:
 
   * degradation_length.png — headline metric vs context length, one line per
-    model, one panel per modality, with a +/-stdev band.
-  * degradation_depth.png  — headline metric vs target depth (start/mid/end) at
-    the longest context, one line per model, one panel per modality.
-  * heatmap.png            — per (model x modality), a length x depth heatmap.
+    model, one panel per modality, with a +/-stdev band (the band is now the
+    cross-document + multirun spread). The no-filler baseline, where present,
+    is drawn as a dashed reference line.
+  * overview.png (optional) — a compact (model x budget) heatmap of the
+    headline metric, one panel per modality. Replaces the old length x depth
+    heatmap now that the target always sits at the end of the window.
 
 The headline metric follows each modality's focus (span_f1 for rot/confusion,
-abstention_rate for missing_answer); override with --metric to plot any metric.
+abstention_rate for missing_answer, mc_accuracy for MAUD); override with
+--metric to plot any metric.
 
 matplotlib is the only non-stdlib dependency in the project and is needed only
 for this script (pip install matplotlib). Everything else stays stdlib-only.
@@ -18,7 +22,7 @@ for this script (pip install matplotlib). Everything else stays stdlib-only.
 Usage:
     python src/plot_results.py
     python src/plot_results.py --metric wrong_doc_rate
-    python src/plot_results.py --charts length depth
+    python src/plot_results.py --charts length overview
     python src/plot_results.py --results data/results/runs.jsonl --out data/results/plots
 """
 
@@ -29,9 +33,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from score_outputs import aggregate  # noqa: E402
-from analyze import (build_curves, load_runs, HEADLINE,  # noqa: E402
-                     POSITION_ORDER, SHORT_POS, MODALITY_ORDER)
+from score_outputs import aggregate_curves  # noqa: E402
+from analyze import build_curves, load_runs, HEADLINE, MODALITY_ORDER  # noqa: E402
 
 try:
     import matplotlib
@@ -61,12 +64,17 @@ def _metric_for(cells: dict, override: str | None) -> str:
     return override or HEADLINE.get(focus, "span_f1")
 
 
-def _budgets(cells: dict) -> list[int]:
-    return sorted({b for (b, _) in cells})
+def _interference_budgets(cells: dict) -> list[int]:
+    """Sorted non-baseline budgets (the actual filler-length points)."""
+    return sorted(b for b, r in cells.items() if not r.get("is_baseline"))
 
 
-def _positions(cells: dict, budgets: list[int]) -> list[str]:
-    return [p for p in POSITION_ORDER if any((b, p) in cells for b in budgets)]
+def _baseline_row(cells: dict):
+    """The no-filler baseline row for this (model, modality), if any."""
+    for r in cells.values():
+        if r.get("is_baseline"):
+            return r
+    return None
 
 
 def _human_budget(b: int) -> str:
@@ -99,116 +107,85 @@ def plot_length(curves, models, modalities, override, colors, out: Path, dpi: in
                 continue
             metric = _metric_for(cells, override)
             metric_name = metric
+            budgets = _interference_budgets(cells)
             xs, ys, es = [], [], []
-            for b in _budgets(cells):
-                vals = [cells[(b, p)].get(f"{metric}_mean")
-                        for p in POSITION_ORDER if (b, p) in cells
-                        and cells[(b, p)].get(f"{metric}_mean") is not None]
-                stds = [cells[(b, p)].get(f"{metric}_std") or 0
-                        for p in POSITION_ORDER if (b, p) in cells
-                        and cells[(b, p)].get(f"{metric}_mean") is not None]
-                if vals:
-                    xs.append(b)
-                    ys.append(float(np.mean(vals)))
-                    es.append(float(np.mean(stds)) if stds else 0.0)
-            if not xs:
-                continue
-            xs, ys, es = np.array(xs), np.array(ys), np.array(es)
-            ax.plot(xs, ys, marker="o", color=colors[model], label=model, linewidth=2)
-            ax.fill_between(xs, np.clip(ys - es, 0, 1), np.clip(ys + es, 0, 1),
-                            color=colors[model], alpha=0.15)
+            for b in budgets:
+                r = cells[b]
+                mean = r.get(f"{metric}_mean")
+                if mean is None:
+                    continue
+                xs.append(b)
+                ys.append(float(mean))
+                es.append(float(r.get(f"{metric}_std") or 0.0))
+            if xs:
+                xs, ys, es = np.array(xs), np.array(ys), np.array(es)
+                ax.plot(xs, ys, marker="o", color=colors[model], label=model,
+                        linewidth=2)
+                ax.fill_between(xs, np.clip(ys - es, 0, 1), np.clip(ys + es, 0, 1),
+                                color=colors[model], alpha=0.15)
+            # No-filler baseline as a dashed reference line (CUAD rot/confusion).
+            base = _baseline_row(cells)
+            if base is not None and base.get(f"{metric}_mean") is not None:
+                ax.axhline(base[f"{metric}_mean"], color=colors[model],
+                           linestyle="--", linewidth=1, alpha=0.6)
         ax.set_xscale("log")
         ax.set_title(modality)
-        ax.set_xlabel("context length (tokens, log)")
+        ax.set_xlabel("context length (filler tokens, log)")
         ax.set_ylabel(METRIC_LABEL.get(metric_name, metric_name or "score"))
         ax.set_ylim(-0.02, 1.02)
         ax.grid(True, alpha=0.3, which="both")
     _shared_legend(fig, axes[0])
-    fig.suptitle("Degradation vs context length", y=1.04, fontsize=13)
+    fig.suptitle("Degradation vs context length  (pooled across documents; "
+                 "dashed = no-filler baseline)", y=1.04, fontsize=12)
     fig.tight_layout()
     fig.savefig(out, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
     return out
 
 
-def plot_depth(curves, models, modalities, override, colors, out: Path, dpi: int):
-    fig, axes = plt.subplots(1, len(modalities), figsize=(5.2 * len(modalities), 4.4),
-                             squeeze=False)
-    for ax, modality in zip(axes[0], modalities):
-        metric_name, bmax = None, None
-        for model in models:
-            cells = curves.get((model, modality))
-            if not cells:
-                continue
-            metric = _metric_for(cells, override)
-            metric_name = metric
-            budgets = _budgets(cells)
-            bmax = budgets[-1]
-            positions = [p for p in POSITION_ORDER if (bmax, p) in cells]
-            # keep the x-axis aligned to all positions, but only plot points
-            # that actually have a value (a parse-failed cell has None)
-            pts = [(i, p) for i, p in enumerate(positions)
-                   if cells[(bmax, p)].get(f"{metric}_mean") is not None]
-            if pts:
-                xs = [i for i, _ in pts]
-                ys = [cells[(bmax, p)][f"{metric}_mean"] for _, p in pts]
-                es = [cells[(bmax, p)].get(f"{metric}_std") or 0 for _, p in pts]
-                ax.errorbar(xs, ys, yerr=es, marker="s", capsize=3, linewidth=2,
-                            color=colors[model], label=model)
-            ax.set_xticks(range(len(positions)))
-            ax.set_xticklabels([SHORT_POS.get(p, p) for p in positions])
-        ax.set_title(f"{modality}" + (f"  @ {_human_budget(bmax)}" if bmax else ""))
-        ax.set_xlabel("target depth")
-        ax.set_ylabel(METRIC_LABEL.get(metric_name, metric_name or "score"))
-        ax.set_ylim(-0.02, 1.02)
-        ax.grid(True, alpha=0.3)
-    _shared_legend(fig, axes[0])
-    fig.suptitle("Depth effect at longest context", y=1.04, fontsize=13)
-    fig.tight_layout()
-    fig.savefig(out, dpi=dpi, bbox_inches="tight")
-    plt.close(fig)
-    return out
-
-
-def plot_heatmaps(curves, models, modalities, override, out: Path, dpi: int):
-    fig, axes = plt.subplots(len(models), len(modalities),
-                             figsize=(4.0 * len(modalities), 3.0 * len(models)),
+def plot_overview(curves, models, modalities, override, out: Path, dpi: int):
+    """Compact (model x budget) heatmap of the headline metric, per modality."""
+    fig, axes = plt.subplots(1, len(modalities),
+                             figsize=(0.9 * len(modalities) + 3.0 * len(modalities),
+                                      1.0 + 0.6 * len(models)),
                              squeeze=False)
     im = None
-    for i, model in enumerate(models):
-        for j, modality in enumerate(modalities):
-            ax = axes[i][j]
+    for ax, modality in zip(axes[0], modalities):
+        # Union of interference budgets seen by any model for this modality.
+        budgets = sorted({b for model in models
+                          for b in _interference_budgets(curves.get((model, modality), {}))})
+        if not budgets:
+            ax.axis("off")
+            ax.set_title(modality)
+            continue
+        metric = None
+        grid = np.full((len(models), len(budgets)), np.nan)
+        for mi, model in enumerate(models):
             cells = curves.get((model, modality))
             if not cells:
-                ax.axis("off")
                 continue
             metric = _metric_for(cells, override)
-            budgets = _budgets(cells)
-            positions = _positions(cells, budgets)
-            grid = np.full((len(budgets), len(positions)), np.nan)
             for bi, b in enumerate(budgets):
-                for pi, p in enumerate(positions):
-                    r = cells.get((b, p))
-                    if r and r.get(f"{metric}_mean") is not None:
-                        grid[bi, pi] = r[f"{metric}_mean"]
-            im = ax.imshow(grid, vmin=0, vmax=1, cmap="viridis", aspect="auto")
-            ax.set_xticks(range(len(positions)))
-            ax.set_xticklabels([SHORT_POS.get(p, p) for p in positions])
-            ax.set_yticks(range(len(budgets)))
-            ax.set_yticklabels([_human_budget(b) for b in budgets])
+                r = cells.get(b)
+                if r and r.get(f"{metric}_mean") is not None:
+                    grid[mi, bi] = r[f"{metric}_mean"]
+        im = ax.imshow(grid, vmin=0, vmax=1, cmap="viridis", aspect="auto")
+        ax.set_xticks(range(len(budgets)))
+        ax.set_xticklabels([_human_budget(b) for b in budgets])
+        ax.set_yticks(range(len(models)))
+        ax.set_yticklabels(models)
+        ax.set_title(f"{modality}" + (f"\n({METRIC_LABEL.get(metric, metric)})"
+                                      if metric else ""))
+        ax.set_xlabel("filler tokens")
+        for mi in range(len(models)):
             for bi in range(len(budgets)):
-                for pi in range(len(positions)):
-                    if not np.isnan(grid[bi, pi]):
-                        ax.text(pi, bi, f"{grid[bi, pi]:.2f}", ha="center",
-                                va="center", fontsize=8,
-                                color="white" if grid[bi, pi] < 0.6 else "black")
-            if j == 0:
-                ax.set_ylabel(f"{model}\ncontext length")
-            if i == 0:
-                ax.set_title(modality)
+                if not np.isnan(grid[mi, bi]):
+                    ax.text(bi, mi, f"{grid[mi, bi]:.2f}", ha="center", va="center",
+                            fontsize=8,
+                            color="white" if grid[mi, bi] < 0.6 else "black")
     if im is not None:
         fig.colorbar(im, ax=axes, fraction=0.015, pad=0.02, label="headline metric")
-    fig.suptitle("Headline metric by length × depth", y=1.0, fontsize=13)
+    fig.suptitle("Headline metric by model × context length", y=1.02, fontsize=13)
     fig.savefig(out, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
     return out
@@ -226,14 +203,14 @@ def main() -> None:
                         help=f"output dir for PNGs (default: {DEFAULT_OUT})")
     parser.add_argument("--metric", default=None,
                         help="force a metric to plot (default: headline by focus)")
-    parser.add_argument("--charts", nargs="+", default=["length", "depth", "heatmap"],
-                        choices=["length", "depth", "heatmap"],
-                        help="which charts to render (default: all)")
+    parser.add_argument("--charts", nargs="+", default=["length", "overview"],
+                        choices=["length", "overview"],
+                        help="which charts to render (default: length overview)")
     parser.add_argument("--dpi", type=int, default=120)
     args = parser.parse_args()
 
     runs = load_runs(args.results)
-    summary = aggregate(runs)
+    summary = aggregate_curves(runs)
     if not summary:
         raise SystemExit("error: no scored runs to plot.")
     curves = build_curves(summary)
@@ -248,12 +225,9 @@ def main() -> None:
     if "length" in args.charts:
         written.append(plot_length(curves, models, modalities, args.metric,
                                    colors, args.out / "degradation_length.png", args.dpi))
-    if "depth" in args.charts:
-        written.append(plot_depth(curves, models, modalities, args.metric,
-                                  colors, args.out / "degradation_depth.png", args.dpi))
-    if "heatmap" in args.charts:
-        written.append(plot_heatmaps(curves, models, modalities, args.metric,
-                                     args.out / "heatmap.png", args.dpi))
+    if "overview" in args.charts:
+        written.append(plot_overview(curves, models, modalities, args.metric,
+                                     args.out / "overview.png", args.dpi))
 
     print(f"Plotted {len(models)} model(s) × {len(modalities)} modality(ies) "
           f"from {len(runs)} runs:")

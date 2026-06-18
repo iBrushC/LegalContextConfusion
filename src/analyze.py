@@ -3,8 +3,13 @@
 Reads the run records written by run_models.py and reshapes them into the
 deliverable from the board's `degradation-curves` card: for each
 (model x modality), the headline eval score plotted against context LENGTH
-(budget) and target DEPTH (start / middle / end), as mean +/- stdev, alongside
-the base-procedure signatures (latency, tokens, cost).
+(budget), as mean +/- stdev, alongside the base-procedure signatures (latency,
+tokens, cost).
+
+Runs are POOLED across the several target documents (aggregate_curves): every
+document's runs for a given (model, modality, budget) are treated as repeated
+trials, so the band reflects cross-document + multirun spread. (The target is
+always at the end of the window now, so there is no depth/position axis.)
 
 The headline metric is chosen by the cell's `focus`:
   * focus=spans      (CUAD rot, confusion) -> span_f1   [+ exact_match, wrong_doc_rate]
@@ -13,7 +18,7 @@ The headline metric is chosen by the cell's `focus`:
 Override with --metric to curve any metric.
 
 Outputs: human-readable tables + ASCII sparklines to the console, and a tidy
-long-format curves.csv (model, modality, budget, position, metric, mean, std)
+long-format curves.csv (model, modality, budget, metric, mean, std)
 ready for matplotlib / seaborn / a spreadsheet.
 
 Develop/test it against mock outputs:
@@ -36,14 +41,11 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from score_outputs import _AGG_METRICS, aggregate  # noqa: E402
+from score_outputs import _AGG_METRICS, aggregate_curves  # noqa: E402
 
 DEFAULT_RESULTS = Path("data/results/runs.jsonl")
 DEFAULT_CSV = Path("data/results/curves.csv")
 
-POSITION_ORDER = ["full", "target_at_start", "target_at_middle", "target_at_end"]
-SHORT_POS = {"full": "full", "target_at_start": "start",
-             "target_at_middle": "mid", "target_at_end": "end"}
 MODALITY_ORDER = ["clean", "rot", "confusion", "missing_answer", "missing_document"]
 
 # Headline + secondary metrics per focus.
@@ -110,18 +112,16 @@ def _human_budget(n: int) -> str:
 # Reshape into (model, modality) curve tables
 # --------------------------------------------------------------------------- #
 def build_curves(summary: list[dict]) -> dict:
-    """Index summary rows by (model, modality) -> {(budget, position): row}."""
+    """Index pooled curve rows by (model, modality) -> {budget_tokens: row}.
+
+    Budget 0 is the zero-filler baseline anchor (CUAD); other budgets are the
+    interference points. Each row is already pooled across documents.
+    """
     curves: dict[tuple, dict] = {}
     for row in summary:
         curves.setdefault((row["model"], row["modality"]), {})[
-            (row["budget_tokens"], row["position"])] = row
+            row["budget_tokens"]] = row
     return curves
-
-
-def _axes(cells: dict) -> tuple[list[int], list[str]]:
-    budgets = sorted({b for (b, _) in cells})
-    positions = [p for p in POSITION_ORDER if any(p == pp for (_, pp) in cells)]
-    return budgets, positions
 
 
 # --------------------------------------------------------------------------- #
@@ -130,7 +130,7 @@ def _axes(cells: dict) -> tuple[list[int], list[str]]:
 def report(summary: list[dict], metric_override: str | None) -> None:
     curves = build_curves(summary)
     models = sorted({m for (m, _) in curves})
-    print(f"Degradation curves — {len(summary)} (model x cell) rows, "
+    print(f"Degradation curves — {len(summary)} (model x modality x budget) rows, "
           f"{len(models)} model(s)\n")
 
     for model in models:
@@ -138,69 +138,53 @@ def report(summary: list[dict], metric_override: str | None) -> None:
         modalities = [m for m in MODALITY_ORDER if (model, m) in curves]
         for modality in modalities:
             cells = curves[(model, modality)]
-            focus = next(iter(cells.values()))["focus"]
+            sample = next(iter(cells.values()))
+            focus = sample["focus"]
             metric = metric_override or HEADLINE.get(focus, "span_f1")
-            budgets, positions = _axes(cells)
+            budgets = sorted(cells)
+            ndocs = sample.get("num_documents")
+            ndesc = f" across {ndocs} doc(s)" if ndocs else ""
 
             print(f"\n  modality={modality}   focus={focus}   "
-                  f"headline={metric}  (mean±stdev)")
-            header = "  " + f"{'length':>8} | " + " | ".join(
-                f"{SHORT_POS.get(p, p):^11}" for p in positions)
-            print(header)
-            print("  " + "-" * (len(header) - 2))
+                  f"headline={metric}  (mean±stdev{ndesc})")
+            print(f"  {'length':>8} | {metric:^13}")
+            print("  " + "-" * 24)
             for b in budgets:
-                row_cells = []
-                for p in positions:
-                    r = cells.get((b, p))
-                    if r:
-                        row_cells.append(_cell(r.get(f"{metric}_mean"),
-                                               r.get(f"{metric}_std")))
-                    else:
-                        row_cells.append(_cell(None, None))
-                print("  " + f"{_human_budget(b):>8} | " + " | ".join(row_cells))
+                r = cells.get(b)
+                cell_str = (_cell(r.get(f"{metric}_mean"), r.get(f"{metric}_std"))
+                            if r else _cell(None, None))
+                print(f"  {_human_budget(b):>8} | {cell_str}")
 
-            # Sparkline of the headline metric vs length, one line per position.
+            # Sparkline of the headline metric vs length (single pooled series).
+            series = [cells[b].get(f"{metric}_mean") for b in budgets]
             print(f"  curve ({metric} over length {_human_budget(budgets[0])}"
-                  f"->{_human_budget(budgets[-1])}):")
-            for p in positions:
-                series = [cells.get((b, p), {}).get(f"{metric}_mean") for b in budgets]
-                print(f"    {SHORT_POS.get(p, p):>5}: {_spark(series)}   "
-                      + " ".join(f"{v:.2f}" if v is not None else " -  " for v in series))
+                  f"->{_human_budget(budgets[-1])}): {_spark(series)}   "
+                  + " ".join(f"{v:.2f}" if v is not None else " - " for v in series))
 
-            _print_extras(cells, focus, budgets, positions, metric)
+            _print_extras(cells, focus, budgets, metric)
         print()
 
 
-def _print_extras(cells, focus, budgets, positions, metric) -> None:
-    """Secondary metrics + length/depth deltas + cost signatures."""
-    # Secondary metrics (averaged over all cells of this modality).
+def _print_extras(cells, focus, budgets, metric) -> None:
+    """Secondary metrics + length delta + cost signatures (length-only now)."""
+    # Secondary metrics (averaged over all budgets of this modality).
     for sec in SECONDARY.get(focus, []):
         if sec == metric:
             continue
         vals = [r.get(f"{sec}_mean") for r in cells.values()
                 if r.get(f"{sec}_mean") is not None]
         if vals:
-            print(f"  {sec}: {sum(vals)/len(vals):.3f} (avg over cells)")
+            print(f"  {sec}: {sum(vals)/len(vals):.3f} (avg over budgets)")
 
-    # Length effect: headline at longest vs shortest budget (avg over positions).
-    def avg_at(budget):
-        vs = [cells.get((budget, p), {}).get(f"{metric}_mean") for p in positions]
-        vs = [v for v in vs if v is not None]
-        return sum(vs) / len(vs) if vs else None
+    # Length effect: headline at the longest vs shortest budget.
+    def at(budget):
+        r = cells.get(budget)
+        return r.get(f"{metric}_mean") if r else None
 
-    lo, hi = avg_at(budgets[0]), avg_at(budgets[-1])
+    lo, hi = at(budgets[0]), at(budgets[-1])
     if lo is not None and hi is not None and len(budgets) > 1:
         print(f"  length effect: {metric} {lo:.2f} @ {_human_budget(budgets[0])} "
               f"-> {hi:.2f} @ {_human_budget(budgets[-1])}  (Δ {hi-lo:+.2f})")
-
-    # Depth effect at the longest budget: end vs start.
-    if {"target_at_start", "target_at_end"} <= set(positions) and len(budgets):
-        b = budgets[-1]
-        s = cells.get((b, "target_at_start"), {}).get(f"{metric}_mean")
-        e = cells.get((b, "target_at_end"), {}).get(f"{metric}_mean")
-        if s is not None and e is not None:
-            print(f"  depth effect @ {_human_budget(b)}: start {s:.2f} -> "
-                  f"end {e:.2f}  (Δ {e-s:+.2f})")
 
     # Signatures (averaged).
     lat = [r.get("latency_mean") for r in cells.values() if r.get("latency_mean") is not None]
@@ -230,9 +214,11 @@ def write_curves_csv(summary: list[dict], path: Path) -> int:
                 continue
             rows.append({
                 "model": r["model"], "modality": r["modality"], "focus": r["focus"],
-                "budget_tokens": r["budget_tokens"], "position": r["position"],
+                "budget_tokens": r["budget_tokens"],
+                "is_baseline": r.get("is_baseline", False),
                 "metric": metric, "mean": mean, "std": r.get(f"{metric}_std"),
                 "runs": r["runs"], "ok_runs": r["ok_runs"],
+                "num_documents": r.get("num_documents"),
                 "latency_mean": r.get("latency_mean"),
                 "prompt_tokens_mean": r.get("prompt_tokens_mean"),
                 "cost_mean": r.get("cost_mean"),
@@ -268,7 +254,7 @@ def main() -> None:
         pass
 
     runs = load_runs(args.results)
-    summary = aggregate(runs)
+    summary = aggregate_curves(runs)
     if not summary:
         raise SystemExit("error: no scored runs to analyze.")
 

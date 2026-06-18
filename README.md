@@ -7,7 +7,7 @@ This benchmark **does not** test more complex systems. No document pre-processin
 The procedure is split into three independent tests, each isolating a different failure mode. They are deliberately separated because a single "accuracy dropped" number conflates phenomena that behave differently and matter differently in legal work.
 
 ### Rot
-Rot is context within the window which is **unrelated filler**. It is non-related, non-legal text which cannot be confused with the datasets we're using. This tests pure length-to-degredation, how much the size and position of the source material alone affects accuracy. To test, we surround the relevant context with unrelated stories or internet content.
+Rot is context within the window which is **unrelated filler**. It is non-related, non-legal text which cannot be confused with the datasets we're using. This tests pure length-to-degredation, how much the sheer volume of surrounding filler alone affects accuracy. To test, we surround the relevant context with unrelated stories or internet content; the source document always sits at the end of the window, after all the filler.
 
 ### Confusion
 Confusion is context within the window which is **related and confusable filler**. It contains legal or legal-adjacent material which could cause worse performance. This tests not only context-length, but also correct identfication within context. Is the model able to get the correct answer from the correct document? To test this, we surround the correct source material with other legal and finance data. This is most similar to how models will perform in basic chat windows and basic AI systems, since often times there are sequences of context documents and related questions.

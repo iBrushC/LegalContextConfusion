@@ -24,9 +24,7 @@ any `json_parse_error` (per batch), so a reviewer can audit exactly what came
 back. Runs are resumable: existing (model, cell_id, run_index) rows are skipped
 unless --overwrite is passed.
 
-Models go through OpenRouter. The model SLUGS below are PLACEHOLDERS for several
-future models and MUST be verified against https://openrouter.ai/models.
-Override any of them with --models-config <json> (a {"friendly": "provider/slug"}
+Models go through OpenRouter. Override any of them with --models-config <json> (a {"friendly": "provider/slug"}
 map) without editing this file.
 
 Auth: set OPENROUTER_API_KEY in the environment for real runs. Use --mock to
@@ -117,18 +115,24 @@ def resolve_models(names: list[str], config: Path | None) -> list[tuple[str, str
 # --------------------------------------------------------------------------- #
 SYSTEM_PROMPT = (
     "You are a precise legal contract analyst. You are given one or more "
-    "documents, each wrapped in <document id=\"...\"> tags, followed by a list "
-    "of clause questions, each labelled with a qa_id. For each qa_id, find the "
-    "verbatim text span in the documents that answers it. If the clause is NOT "
-    "present in any document, mark it absent — do not guess or fabricate.\n\n"
+    "documents, each wrapped in <document id=\"...\"> tags. Exactly ONE of them "
+    "is the TARGET document; its id is named in the user message. You are then "
+    "given a list of clause questions, each labelled with a qa_id. Answer every "
+    "qa_id ONLY with respect to the TARGET document: find the verbatim text span "
+    "in the TARGET document that answers it. Treat every other document as "
+    "unrelated background — even if a clause appears in one of them, it does NOT "
+    "count for this task. If the clause is NOT present in the TARGET document, "
+    "mark it absent — do not guess, fabricate, or borrow an answer from another "
+    "document.\n\n"
     "Respond with ONLY a JSON object of this exact shape:\n"
     "{\"results\": [{\"qa_id\": str, \"present\": bool, "
     "\"answer\": str, \"document_id\": str|null}]}\n"
     "- Include every qa_id you were given, exactly as written.\n"
-    "- present=false means the clause is absent; then answer=\"\" and "
-    "document_id=null.\n"
-    "- answer must be copied verbatim from the document text.\n"
-    "- document_id must be the id of the <document> the answer came from."
+    "- present=false means the clause is absent from the TARGET document; then "
+    "answer=\"\" and document_id=null.\n"
+    "- answer must be copied verbatim from the TARGET document text.\n"
+    "- document_id must be the id of the document the answer came from "
+    "(this should be the TARGET document for any present=true answer)."
 )
 
 
@@ -139,10 +143,12 @@ SYSTEM_PROMPT = (
 MC_SYSTEM_PROMPT = (
     "You are a precise legal contract analyst answering MULTIPLE-CHOICE "
     "questions about merger agreements. You are given one or more documents, "
-    "each wrapped in <DOCUMENT id=\"...\"> tags, followed by questions. Each "
-    "question lists a fixed set of answer options labelled (A), (B), (C), … "
-    "For each qa_id, decide which SINGLE option is correct for the agreement "
-    "and return that option's LETTER.\n\n"
+    "each wrapped in <DOCUMENT id=\"...\"> tags. Exactly ONE of them is the "
+    "TARGET agreement; its id is named in the user message. Each question lists "
+    "a fixed set of answer options labelled (A), (B), (C), … "
+    "For each qa_id, decide which SINGLE option is correct for the TARGET "
+    "agreement and return that option's LETTER. Base your answer ONLY on the "
+    "TARGET agreement; ignore every other document in the window.\n\n"
     "Respond with ONLY a JSON object of this exact shape:\n"
     "{\"results\": [{\"qa_id\": str, \"answer\": str, "
     "\"document_id\": str|null}]}\n"
@@ -151,7 +157,8 @@ MC_SYSTEM_PROMPT = (
     "the option text.\n"
     "- Choose exactly one option per question — pick the best option even if "
     "you are uncertain; never leave it blank.\n"
-    "- document_id must be the id of the <DOCUMENT> your answer is based on."
+    "- document_id must be the id of the TARGET <DOCUMENT> your answer is "
+    "based on."
 )
 
 
@@ -161,23 +168,32 @@ def is_mc_cell(cell: dict) -> bool:
 
 
 def _span_user(cell: dict, questions: list[dict]) -> str:
+    target = cell["target_document_id"]
     lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}'
              for q in questions]
-    return (f"DOCUMENTS:\n{cell['context']}\n\n"
-            f"CLAUSE QUESTIONS (answer every qa_id):\n" + "\n".join(lines) +
-            "\n\nReturn the JSON object now.")
+    return (f'TARGET DOCUMENT id: "{target}"\n'
+            f"Answer every question ONLY about this document; treat all other "
+            f"documents as unrelated background.\n\n"
+            f"DOCUMENTS:\n{cell['context']}\n\n"
+            f'CLAUSE QUESTIONS (answer every qa_id about TARGET "{target}"):\n'
+            + "\n".join(lines) + "\n\nReturn the JSON object now.")
 
 
 def _mc_user(cell: dict, questions: list[dict]) -> str:
+    target = cell["target_document_id"]
     blocks = []
     for q in questions:
         options = q.get("answer_options") or q.get("gold_answers") or []
         lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}']
         lines += [f"  ({option_label(i)}) {opt}" for i, opt in enumerate(options)]
         blocks.append("\n".join(lines))
-    return (f"DOCUMENTS:\n{cell['context']}\n\n"
-            f"MULTIPLE-CHOICE QUESTIONS (answer every qa_id with one option "
-            f"letter):\n" + "\n\n".join(blocks) + "\n\nReturn the JSON object now.")
+    return (f'TARGET AGREEMENT id: "{target}"\n'
+            f"Answer every question ONLY about this agreement; ignore all other "
+            f"documents.\n\n"
+            f"DOCUMENTS:\n{cell['context']}\n\n"
+            f'MULTIPLE-CHOICE QUESTIONS (answer every qa_id about TARGET '
+            f'"{target}" with one option letter):\n' + "\n\n".join(blocks) +
+            "\n\nReturn the JSON object now.")
 
 
 def build_messages(cell: dict, questions: list[dict]) -> list[dict]:
@@ -637,7 +653,7 @@ def main() -> None:
                         "cell_id": cell["cell_id"], "modality": cell["modality"],
                         "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
                         "is_baseline": cell.get("is_baseline", False),
-                        "position": cell["position"], "run_index": run_idx,
+                        "doc_index": cell.get("doc_index"), "run_index": run_idx,
                         "reasoning_effort": args.reasoning_effort,
                         "batch_size": (args.question_batch_size
                                        if args.question_batch_size > 0

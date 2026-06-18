@@ -263,8 +263,47 @@ def aggregate(runs: list[dict]) -> list[dict]:
             "modality": rs[0]["modality"], "focus": rs[0]["focus"],
             "budget_tokens": rs[0]["budget_tokens"],
             "is_baseline": rs[0].get("is_baseline", False),
-            "position": rs[0]["position"],
+            "doc_index": rs[0].get("doc_index"),
             "runs": len(rs), "ok_runs": len(ok),
+        }
+        for m in _AGG_METRICS:
+            mean, std = _mean_std([r["metrics"].get(m) for r in ok])
+            row[f"{m}_mean"], row[f"{m}_std"] = mean, std
+        row["latency_mean"], _ = _mean_std([r.get("latency_s") for r in ok])
+        row["prompt_tokens_mean"], _ = _mean_std(
+            [r.get("usage", {}).get("prompt_tokens") for r in ok])
+        row["cost_mean"], _ = _mean_std(
+            [r.get("usage", {}).get("cost") for r in ok])
+        summary.append(row)
+    return summary
+
+
+def aggregate_curves(runs: list[dict]) -> list[dict]:
+    """Pool runs ACROSS documents into degradation-curve rows.
+
+    Groups by (model, modality, budget_tokens, is_baseline) and treats every
+    document's runs for a given cell type as repeated trials, so the mean/stdev
+    reflect cross-document + multirun spread. This is the headline curve view:
+    unlike aggregate() (which keys by cell_id, i.e. one row per document), it
+    collapses the document axis into a single pooled point per budget.
+    """
+    groups: dict[tuple, list[dict]] = {}
+    for r in runs:
+        key = (r["model"], r["modality"], r["budget_tokens"],
+               r.get("is_baseline", False))
+        groups.setdefault(key, []).append(r)
+
+    summary = []
+    for (model, modality, budget, is_baseline), rs in sorted(
+            groups.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2])):
+        ok = [r for r in rs if r.get("metrics", {}).get("scored", 0) > 0]
+        docs = sorted({r.get("doc_index") for r in rs
+                       if r.get("doc_index") is not None})
+        row = {
+            "model": model, "model_slug": rs[0]["model_slug"],
+            "modality": modality, "focus": rs[0]["focus"],
+            "budget_tokens": budget, "is_baseline": is_baseline,
+            "runs": len(rs), "ok_runs": len(ok), "num_documents": len(docs),
         }
         for m in _AGG_METRICS:
             mean, std = _mean_std([r["metrics"].get(m) for r in ok])

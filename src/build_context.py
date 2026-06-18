@@ -4,11 +4,12 @@ Given the raw CUAD dataset, this builds the grid of degraded-context "cells"
 that the models are run against. CUAD only for now (MAUD comes later).
 
   Init:
-    1. Sample ONE contract as the TARGET.
-    2. Fix its clause-category question set, including >=1 negative category.
+    1. Sample N contracts as the TARGETS (default 10, deterministic by seed).
+    2. For each, fix a capped clause-category question set (<=32 by default,
+       including >=1 negative category), chosen deterministically per document.
     3. Record gold spans + character offsets.
-    The target + question set are held FIXED; only the surrounding filler
-    (distractor documents) changes across cells.
+    Each target + its question set are held FIXED; only the surrounding filler
+    (distractor documents) changes across that document's cells.
 
   Modalities:
     * rot              -> wrap the target in NON-legal filler (length-only).
@@ -25,13 +26,14 @@ that the models are run against. CUAD only for now (MAUD comes later).
     `distractor_ids`, so the eval can tell whether an answer was extracted from
     the right document (the confusion signal).
 
-  Interference & position sweep:
+  Interference (length only):
     * budgets    how much rot/confusion FILLER to add AROUND the probe, in
-                 tokens (4k, 16k, 64k, ...). This is the independent variable
+                 tokens (64k, 128k, ...). This is the independent variable
                  (the amount of interference), NOT a cap on the window: the
                  probe document is ALWAYS kept whole and the filler is added on
-                 top of it. A 4k budget over a 16k probe -> a ~20k-token window.
-    * positions  target_at_start (0%), target_at_middle (50%), target_at_end (100%).
+                 top of it. A 64k budget over a 16k probe -> a ~80k-token window.
+    * placement  the target always sits at the END of the window, after all the
+                 filler. (The old start/middle/end depth sweep has been removed.)
 
   Baseline:
     For the rot and confusion modalities a zero-filler BASELINE cell is also
@@ -39,9 +41,9 @@ that the models are run against. CUAD only for now (MAUD comes later).
     anchor every degradation curve is measured against. The abstention
     modalities (missing_answer/_document) have no interference axis -> no baseline.
 
-Output: one JSON record per cell ((modality x budget x position) + per-modality
-baselines) under --out, plus a manifest.json describing the fixed target. Those
-records feed run_models.
+Output: one JSON record per cell (per document: (modality x budget) +
+per-modality baselines) under --out, plus a manifest.json describing the fixed
+targets. Those records feed run_models.
 
 Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER contracts in the
@@ -53,10 +55,10 @@ Filler sources:
       .txt stories are found there it falls back to a synthetic sentence bank.
 
 Usage:
-    python src/build_context.py                                  # rot, default grid
+    python src/build_context.py                                  # rot, 10 docs, default grid
     python src/build_context.py --modality rot confusion missing_answer
-    python src/build_context.py --budgets 4000 64000 --positions target_at_start target_at_end
-    python src/build_context.py --doc-index 19 --seed 42
+    python src/build_context.py --num-documents 4 --budgets 64000 128000
+    python src/build_context.py --doc-indices 19 23 --seed 42
     python src/build_context.py --dry-run                        # plan only, no write
 """
 
@@ -88,8 +90,8 @@ IMPLEMENTED_MODALITIES = ("rot", "confusion", "missing_answer")
 BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = ("rot",)
 DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
-POSITIONS = ("target_at_start", "target_at_middle", "target_at_end")
-DEFAULT_POSITIONS = POSITIONS
+DEFAULT_NUM_DOCUMENTS = 10
+DEFAULT_MAX_QUESTIONS = 32
 
 DOC_SEPARATOR = "\n\n"
 
@@ -168,18 +170,64 @@ def make_token_counter(kind: str):
 # --------------------------------------------------------------------------- #
 # Init: sample the fixed target + question set
 # --------------------------------------------------------------------------- #
-def select_target(data: list[dict], seed: int, doc_index: int | None,
+def _qualifies(doc: dict, min_negatives: int) -> bool:
+    """True if `doc` has a usable paragraph with >= min_negatives negatives."""
+    paragraphs = doc.get("paragraphs", [])
+    if not paragraphs:
+        return False
+    qas = paragraphs[0].get("qas", [])
+    return sum(1 for qa in qas if is_negative(qa)) >= min_negatives
+
+
+def select_targets(data: list[dict], seed: int, doc_indices: list[int] | None,
+                   num_documents: int, max_questions: int | None, balance: bool,
+                   min_negatives: int) -> list[dict]:
+    """Pick N contracts as targets and build each one's fixed question set.
+
+    Documents are chosen deterministically from `seed`. Explicit `doc_indices`
+    override the random pick (and are used verbatim). For the random path, a
+    sampled doc that lacks >= min_negatives negatives is skipped and another is
+    drawn from the remaining pool, so a short corpus never silently drops below
+    the requested count; if fewer than N qualify we warn and proceed with what
+    does.
+    """
+    n = len(data)
+    if doc_indices is not None:
+        indices = []
+        for di in doc_indices:
+            if not 0 <= di < n:
+                raise SystemExit(
+                    f"error: --doc-indices entry {di} out of range (0..{n - 1})")
+            indices.append(di)
+    else:
+        rng = random.Random(stable_seed(seed, "select_docs"))
+        order = list(range(n))
+        rng.shuffle(order)
+        indices, skipped = [], []
+        for di in order:
+            if len(indices) >= num_documents:
+                break
+            if _qualifies(data[di], min_negatives):
+                indices.append(di)
+            else:
+                skipped.append(di)
+        indices.sort()
+        if skipped:
+            print(f"note: skipped {len(skipped)} contract(s) lacking "
+                  f">= {min_negatives} negative categories during selection.")
+        if len(indices) < num_documents:
+            print(f"warning: only {len(indices)} of {num_documents} requested "
+                  f"documents qualify (>= {min_negatives} negatives); "
+                  f"proceeding with {len(indices)}.")
+
+    return [_build_target(data, di, seed, max_questions, balance, min_negatives)
+            for di in indices]
+
+
+def _build_target(data: list[dict], doc_index: int, seed: int,
                   max_questions: int | None, balance: bool,
                   min_negatives: int) -> dict:
-    """Pick one contract as the target and build its fixed question set."""
-    rng = random.Random(stable_seed(seed, "select_target"))
-    if doc_index is None:
-        doc_index = rng.randrange(len(data))
-    if not 0 <= doc_index < len(data):
-        raise SystemExit(
-            f"error: --doc-index {doc_index} out of range (0..{len(data) - 1})"
-        )
-
+    """Build the fixed, capped question set for one contract index."""
     doc = data[doc_index]
     paragraphs = doc.get("paragraphs", [])
     if not paragraphs:
@@ -197,9 +245,13 @@ def select_target(data: list[dict], seed: int, doc_index: int | None,
     if len(negatives) < min_negatives:
         raise SystemExit(
             f"error: contract {doc_index} has {len(negatives)} negative "
-            f"categories, need >= {min_negatives}. Try another --doc-index."
+            f"categories, need >= {min_negatives}. Try another --doc-indices."
         )
 
+    doc_id = doc.get("title") or f"contract_{doc_index}"
+    # Each document draws its question subset from its OWN rng, keyed by id, so
+    # documents don't share a draw and each subset is reproducible from --seed.
+    rng = random.Random(stable_seed(seed, "choose_questions", doc_id))
     chosen = _choose_questions(rng, positives, negatives, max_questions,
                                balance, min_negatives)
 
@@ -218,7 +270,7 @@ def select_target(data: list[dict], seed: int, doc_index: int | None,
 
     return {
         "doc_index": doc_index,
-        "id": doc.get("title") or f"contract_{doc_index}",
+        "id": doc_id,
         "title": doc.get("title", ""),
         "context": context,
         "context_chars": len(context),
@@ -399,13 +451,14 @@ def wrap_document(doc_id: str, text: str) -> str:
 
 def build_cell_context(target_id: str, target_text: str,
                        pool: list[tuple[str | None, str]], filler_chars: int,
-                       position: str, sep: str, rng: random.Random) -> dict:
-    """Wrap the FULL target plus `filler_chars` of distractor filler around it.
+                       sep: str, rng: random.Random) -> dict:
+    """Wrap the FULL target plus `filler_chars` of distractor filler before it.
 
-    The target document is ALWAYS included verbatim and in full; `filler_chars`
-    is the amount of rot/confusion text added AROUND it (the experiment's
-    independent variable), NOT a cap on the total window. filler_chars <= 0
-    yields the bare target (the zero-interference baseline).
+    The target document is ALWAYS included verbatim and in full, and is placed
+    at the END of the window, after all the filler; `filler_chars` is the amount
+    of rot/confusion text added BEFORE it (the experiment's independent
+    variable), NOT a cap on the total window. filler_chars <= 0 yields the bare
+    target (the zero-interference baseline).
 
     Returns a dict with the assembled context, the char offset where the raw
     target text begins (so gold offsets map as offset + answer_start), the
@@ -443,19 +496,10 @@ def build_cell_context(target_id: str, target_text: str,
             added += len(block) + len(sep)
             i += 1
 
-    # Place the target among the distractors per position. With no filler
-    # (baseline) the target stands alone, so position is moot -> index 0.
-    if position in ("target_at_start", "baseline"):
-        target_index = 0
-    elif position == "target_at_end":
-        target_index = len(blocks)
-    elif position == "target_at_middle":
-        target_index = len(blocks) // 2
-    else:
-        raise SystemExit(f"error: unknown position {position!r}")
-
-    ordered = blocks[:target_index] + [target_block] + blocks[target_index:]
-    chars_before = sum(len(b) for b in ordered[:target_index]) + len(sep) * target_index
+    # The target always sits at the END of the window, after all the filler.
+    # With no filler (baseline) it simply stands alone.
+    ordered = blocks + [target_block]
+    chars_before = sum(len(b) for b in blocks) + len(sep) * len(blocks)
     context = sep.join(ordered)
 
     return {
@@ -474,18 +518,22 @@ def cell_focus(modality: str) -> str:
     return "abstention" if modality in ("missing_answer", "missing_document") else "spans"
 
 
-def make_cell(target: dict, modality: str, budget: int, position: str,
+def make_cell(target: dict, modality: str, budget: int,
               count_tokens, legal_pool: list, nonlegal_pool: list,
               nonlegal_label: str, seed: int, sep: str,
               baseline: bool = False) -> dict:
     """Build one prepared-context record.
 
-    `budget` is the amount of rot/confusion FILLER (in tokens) to add around the
+    `budget` is the amount of rot/confusion FILLER (in tokens) to add before the
     full target — the independent variable, not a cap on the window. The target
-    is always kept whole. baseline=True forces zero filler (the bare-target
-    reference point) and a `<modality>_baseline` cell id.
+    is always kept whole and placed at the end. baseline=True forces zero filler
+    (the bare-target reference point) and a `<modality>_baseline` cell id. The
+    cell id carries a `d{doc_index:03d}` prefix so cells stay unique across the
+    several target documents.
     """
-    rng = random.Random(stable_seed(seed, modality, budget, position))
+    # Filler order is keyed by the target id so each document shuffles its own
+    # pool independently yet reproducibly from --seed.
+    rng = random.Random(stable_seed(seed, target["id"], modality, budget))
     filler_chars = 0 if baseline else budget * CHARS_PER_TOKEN
 
     if modality == "rot":
@@ -494,19 +542,20 @@ def make_cell(target: dict, modality: str, budget: int, position: str,
         pool, source = legal_pool, "cuad-other-contracts"
 
     built = build_cell_context(target["id"], target["context"], pool,
-                               filler_chars, position, sep, rng)
+                               filler_chars, sep, rng)
     context = built["context"]
     target_offset = built["target_offset"]
 
-    cell_id = (f"{modality}_baseline" if baseline
-               else f"{modality}_b{budget}_{position}")
+    prefix = f"d{target['doc_index']:03d}"
+    cell_id = (f"{prefix}_{modality}_baseline" if baseline
+               else f"{prefix}_{modality}_b{budget}")
     return {
         "cell_id": cell_id,
+        "doc_index": target["doc_index"],
         "modality": modality,
         "focus": cell_focus(modality),
         "budget_tokens": 0 if baseline else budget,  # rot/confusion filler tokens
         "is_baseline": baseline,
-        "position": position,
         "actual_tokens": count_tokens(context),
         "actual_chars": len(context),
         "target_document_id": target["id"],
@@ -538,15 +587,19 @@ def main() -> None:
                         help="rot/confusion filler tokens to add AROUND the full "
                              "probe (default: 64,000 128,000 256,000, 512,000); the zero-filler "
                              "case is emitted separately as the baseline cell")
-    parser.add_argument("--positions", nargs="+", choices=POSITIONS,
-                        default=list(DEFAULT_POSITIONS),
-                        help="target positions (default: all three)")
+    parser.add_argument("--num-documents", type=int, default=DEFAULT_NUM_DOCUMENTS,
+                        help=f"number of target contracts to sample "
+                             f"(default: {DEFAULT_NUM_DOCUMENTS})")
+    parser.add_argument("--doc-indices", type=int, nargs="+", default=None,
+                        help="explicit contract indices to target (overrides the "
+                             "random, seed-based selection)")
     parser.add_argument("--doc-index", type=int, default=None,
-                        help="target this contract index (default: random by seed)")
+                        help="deprecated alias for a single --doc-indices entry")
     parser.add_argument("--seed", type=int, default=0,
                         help="seed for sampling + filler shuffles (default: 0)")
-    parser.add_argument("--max-questions", type=int, default=None,
-                        help="subsample the question set (default: all)")
+    parser.add_argument("--max-questions", type=int, default=DEFAULT_MAX_QUESTIONS,
+                        help=f"cap questions per document "
+                             f"(default: {DEFAULT_MAX_QUESTIONS}; 0 = all)")
     parser.add_argument("--balance", action="store_true",
                         help="with --max-questions, pick ~equal pos/neg")
     parser.add_argument("--min-negatives", type=int, default=1,
@@ -578,14 +631,29 @@ def main() -> None:
         raise SystemExit("error: no implemented modalities requested.")
 
     count_tokens = make_token_counter(args.tokenizer)
-    target = select_target(data, args.seed, args.doc_index, args.max_questions,
-                           args.balance, args.min_negatives)
 
-    print(f"Target: [{target['doc_index']}] {target['id']}")
-    print(f"  context: {target['context_chars']:,} chars "
-          f"(~{count_tokens(target['context']):,} tokens)")
-    print(f"  questions: {len(target['questions'])} "
-          f"({target['num_positives']} pos, {target['num_negatives']} neg)")
+    # --doc-index is a deprecated alias for a single --doc-indices entry.
+    doc_indices = args.doc_indices
+    if args.doc_index is not None:
+        print("note: --doc-index is deprecated; use --doc-indices.")
+        if doc_indices is None:
+            doc_indices = [args.doc_index]
+        elif args.doc_index not in doc_indices:
+            doc_indices = [args.doc_index] + list(doc_indices)
+    # --max-questions 0 means "no cap" (keep the whole set).
+    max_questions = None if args.max_questions in (0, None) else args.max_questions
+
+    targets = select_targets(data, args.seed, doc_indices, args.num_documents,
+                             max_questions, args.balance, args.min_negatives)
+    if not targets:
+        raise SystemExit("error: no qualifying target documents selected.")
+
+    print(f"Selected {len(targets)} target document(s):")
+    for target in targets:
+        print(f"  [{target['doc_index']:>3}] {target['id']}  "
+              f"~{count_tokens(target['context']):,} tok, "
+              f"{len(target['questions'])} q "
+              f"({target['num_positives']} pos, {target['num_negatives']} neg)")
 
     # The zero-filler case is the baseline cell, not a budget; drop any <= 0.
     budgets = sorted(b for b in args.budgets if b > 0)
@@ -594,8 +662,8 @@ def main() -> None:
         print(f"note: ignoring non-positive budget(s) {dropped}; the zero-filler "
               f"case is emitted as the baseline cell instead.")
 
-    legal_pool = legal_distractors(data, target["doc_index"])
-    # Size the rot section pool to the largest budget so no section repeats.
+    # The rot section pool is non-legal noise (never confusable with a contract),
+    # so it is built ONCE — sized to the largest budget — and shared across docs.
     max_filler_chars = (max(budgets) if budgets else 0) * CHARS_PER_TOKEN
     nonlegal_pool, nonlegal_label = nonlegal_distractors(
         args.rot_filler, max_filler_chars, args.seed)
@@ -612,39 +680,42 @@ def main() -> None:
     if not args.dry_run:
         cells_dir.mkdir(parents=True, exist_ok=True)
 
-    # Job list: a zero-filler baseline per interference modality, then the
-    # (budget x position) interference grid. (modality, budget, position, baseline)
-    jobs = []
-    for modality in modalities:
-        if modality in BASELINE_MODALITIES:
-            jobs.append((modality, 0, "baseline", True))
-        for budget in budgets:
-            for position in args.positions:
-                jobs.append((modality, budget, position, False))
+    # Per document: a zero-filler baseline per interference modality, then the
+    # budget interference grid (target always at the END). The legal distractor
+    # pool excludes the current target, so it is rebuilt per document.
+    print(f"\nGenerating cells for {len(targets)} document(s):")
+    for target in targets:
+        legal_pool = legal_distractors(data, target["doc_index"])
+        jobs = []  # (modality, budget, baseline)
+        for modality in modalities:
+            if modality in BASELINE_MODALITIES:
+                jobs.append((modality, 0, True))
+            for budget in budgets:
+                jobs.append((modality, budget, False))
 
-    print(f"\nGenerating {len(jobs)} cells:")
-    for modality, budget, position, baseline in jobs:
-        cell = make_cell(target, modality, budget, position, count_tokens,
-                         legal_pool, nonlegal_pool, nonlegal_label,
-                         args.seed, DOC_SEPARATOR, baseline=baseline)
-        flags = []
-        if cell["is_baseline"]:
-            flags.append("baseline / zero-filler")
-        if cell["filler_repeated"]:
-            flags.append("filler-repeated")
-        flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
-        print(f"  {cell['cell_id']:42} "
-              f"{cell['actual_tokens']:>9,} tok  "
-              f"{len(cell['distractor_ids']):>3} distractors{flag_str}")
+        print(f"  d{target['doc_index']:03d} {target['id']}: {len(jobs)} cells")
+        for modality, budget, baseline in jobs:
+            cell = make_cell(target, modality, budget, count_tokens,
+                             legal_pool, nonlegal_pool, nonlegal_label,
+                             args.seed, DOC_SEPARATOR, baseline=baseline)
+            flags = []
+            if cell["is_baseline"]:
+                flags.append("baseline / zero-filler")
+            if cell["filler_repeated"]:
+                flags.append("filler-repeated")
+            flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
+            print(f"    {cell['cell_id']:32} "
+                  f"{cell['actual_tokens']:>9,} tok  "
+                  f"{len(cell['distractor_ids']):>3} distractors{flag_str}")
 
-        meta = {k: v for k, v in cell.items()
-                if k not in ("context", "questions")}
-        if not args.dry_run:
-            path = cells_dir / f"{cell['cell_id']}.json"
-            path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
-                            encoding="utf-8")
-            meta["path"] = str(path)
-        cells_meta.append(meta)
+            meta = {k: v for k, v in cell.items()
+                    if k not in ("context", "questions")}
+            if not args.dry_run:
+                path = cells_dir / f"{cell['cell_id']}.json"
+                path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
+                                encoding="utf-8")
+                meta["path"] = str(path)
+            cells_meta.append(meta)
 
     manifest = {
         "source_file": str(args.file),
@@ -653,15 +724,17 @@ def main() -> None:
         "tokenizer": args.tokenizer,
         "chars_per_token": CHARS_PER_TOKEN,
         "doc_separator": DOC_SEPARATOR,
-        "target": {k: v for k, v in target.items() if k != "context"},
+        "num_documents": len(targets),
+        "doc_indices": [t["doc_index"] for t in targets],
+        "targets": [{k: v for k, v in t.items() if k != "context"}
+                    for t in targets],
         "modalities": modalities,
         "budgets": budgets,
         "baseline_modalities": [m for m in modalities if m in BASELINE_MODALITIES],
-        "positions": args.positions,
         "cells": cells_meta,
     }
     if args.dry_run:
-        print("\n(dry run — no files written)")
+        print(f"\n(dry run — {len(cells_meta)} cells planned, no files written)")
         return
 
     manifest_path = args.out / "manifest.json"
