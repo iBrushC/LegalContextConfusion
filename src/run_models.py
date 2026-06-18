@@ -10,6 +10,12 @@ scores the answers. Questions can be sent all in one prompt (default) or split
 into smaller batches (--question-batch-size); the big context is re-sent per
 batch, so fewer batches = cheaper.
 
+Every (cell x model x run) is an independent request, so they are fanned out
+across a thread pool (--max-concurrency, default 8) and served by OpenRouter in
+parallel — the long-context / open-model sweeps that dominate runtime now overlap
+instead of running one at a time. Results are scored and written as each request
+returns; lower --max-concurrency (or set it to 1) if a provider rate-limits you.
+
 Scoring (in score_outputs.py) feeds the eval nodes on the board:
   * span token-F1 / exact-match vs gold spans      (cuad-eval)
   * abstention vs hallucination on absent clauses   (abstention-eval)
@@ -41,6 +47,8 @@ Usage:
     python src/run_models.py --dataset maud --prototype --limit 3   # cheap smoke test
     python src/run_models.py --models claude gemini --runs 3
     python src/run_models.py --question-batch-size 5      # 5 questions per call
+    python src/run_models.py --max-concurrency 16         # fan out harder
+    python src/run_models.py --max-concurrency 2          # throttle (rate limits)
     python src/run_models.py --overwrite                  # redo instead of resume
 """
 
@@ -55,6 +63,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 # Sibling modules (src/ is on sys.path when run directly; make it explicit).
@@ -99,8 +108,9 @@ ALIASES = {
     "glm5": "glm", "glm-5.2": "glm",
 }
 # Cheapest model for prototyping (reuse-base-procedure card).
-# PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
-PROTOTYPE: tuple[str, str] = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
+# PROTOTYPE: tuple[str, str] = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+PROTOTYPE: tuple[str, str] = ("mimo-2.5", "xiaomi/mimo-v2.5")
+# PROTOTYPE: tuple[str, str] = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 
 
@@ -430,8 +440,9 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
             resp = call_openrouter(slug, build_messages(cell, qbatch), api_key,
                                    args.max_tokens, args.temperature,
                                    args.timeout, args.retries, reasoning)
-            # live per-batch progress so a slow model doesn't look hung
-            print("." if resp["error"] is None else "x", end="", flush=True)
+            # Optional inter-request pause (rate limiting). Units run
+            # concurrently, so this only spaces a unit's own batches apart;
+            # cap parallelism with --max-concurrency for account-wide limits.
             if args.sleep:
                 time.sleep(args.sleep)
 
@@ -589,65 +600,93 @@ def process_dataset(dataset: str, args, models: list[tuple[str, str]],
         mode = "a"
         print(f"resume: {len(done)} existing run rows; skipping those "
               f"(use --overwrite to redo)")
-    print()
 
-    with runs_path.open(mode, encoding="utf-8") as runs_fh:
-        for cell_path in cell_paths:
-            cell = json.loads(cell_path.read_text(encoding="utf-8"))
-            batches = chunk_questions(cell["questions"], args.question_batch_size)
-            for name, slug in models:
-                for run_idx in range(args.runs):
-                    key = (name, cell["cell_id"], run_idx)
-                    if key in done:
-                        print(f"  {name:10} {cell['cell_id']:40} r{run_idx}  skip")
-                        continue
+    # Flatten every (cell x model x run) into an independent unit of work. Each
+    # unit is one or more HTTP calls (one per question batch) and produces a
+    # single run record; units share no state, so we fan them out across a
+    # thread pool and let OpenRouter serve them in parallel. Cells are read
+    # once here and reused across all their model/run units.
+    units = []  # (key, name, slug, cell, run_idx, batches)
+    for cell_path in cell_paths:
+        cell = json.loads(cell_path.read_text(encoding="utf-8"))
+        batches = chunk_questions(cell["questions"], args.question_batch_size)
+        for name, slug in models:
+            for run_idx in range(args.runs):
+                key = (name, cell["cell_id"], run_idx)
+                if key in done:
+                    continue
+                units.append((key, name, slug, cell, run_idx, batches))
 
-                    # print the prefix first; run_cell_model emits a dot per
-                    # batch in between, then we finish the line with the score.
-                    print(f"  {name:10} {cell['cell_id']:40} r{run_idx} ",
-                          end="", flush=True)
-                    res = run_cell_model(cell, slug, batches, api_key, args, args.mock)
-                    record = {
-                        "model": name, "model_slug": slug,
-                        "dataset": cell.get("dataset", dataset),
-                        "cell_id": cell["cell_id"], "modality": cell["modality"],
-                        "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
-                        "is_baseline": cell.get("is_baseline", False),
-                        "doc_index": cell.get("doc_index"), "run_index": run_idx,
-                        "reasoning_effort": args.reasoning_effort,
-                        "batch_size": (args.question_batch_size
-                                       if args.question_batch_size > 0
-                                       else len(cell["questions"])),
-                        "num_batches": len(batches),
-                        "batch_qa_ids": [[q["qa_id"] for q in b] for b in batches],
-                        "raw_output": res["raw_output"],
-                        "parsed_output": res["parsed_output"],
-                        "json_parse_error": res["json_parse_error"],
-                        "per_batch_usage": res["per_batch_usage"],
-                        "per_batch_latency_s": res["per_batch_latency_s"],
-                        "metrics": res["metrics"], "usage": res["usage"],
-                        "latency_s": res["latency_s"], "error": res["error"],
-                    }
-                    runs.append(record)
-                    done.add(key)
-                    runs_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
-                    runs_fh.flush()
+    skipped = total - len(units)
+    workers = max(1, args.max_concurrency)
+    if skipped:
+        print(f"resume: {skipped} cell-runs already done — skipping")
+    print(f"\nDispatching {len(units)} cell-run(s) across {workers} "
+          f"concurrent worker(s)...\n")
 
-                    m = res["metrics"]
-                    if m["scored"] == 0:
-                        status = "ERR" if res["error"] else "parse-fail"
-                    elif is_mc_cell(cell):
-                        status = f"acc={_fmt(m['mc_accuracy'])}"
-                        if m.get("wrong_doc_rate") is not None:
-                            status += f" wrongD={_fmt(m['wrong_doc_rate'])}"
-                        if m["n_unscored"]:
-                            status += f" unscored={m['n_unscored']}"
-                    else:
-                        status = (f"F1={_fmt(m['span_f1'])} "
-                                  f"abst={_fmt(m['abstention_rate'])}")
-                        if m["n_unscored"]:
-                            status += f" unscored={m['n_unscored']}"
-                    print(f" {status}")
+    with runs_path.open(mode, encoding="utf-8") as runs_fh, \
+            ThreadPoolExecutor(max_workers=workers) as pool:
+        fut_to_unit = {}
+        for unit in units:
+            _key, _name, slug, cell, _run, batches = unit
+            fut = pool.submit(run_cell_model, cell, slug, batches,
+                              api_key, args, args.mock)
+            fut_to_unit[fut] = unit
+
+        # Assemble/score/write on the main thread as each unit returns; only
+        # the I/O-bound model calls run in parallel, so runs.jsonl, `runs`, and
+        # `done` are never touched from a worker thread.
+        for i, fut in enumerate(as_completed(fut_to_unit), start=1):
+            key, name, slug, cell, run_idx, batches = fut_to_unit[fut]
+            try:
+                res = fut.result()
+            except Exception as e:  # never let one unit abort the whole sweep
+                print(f"  [{i}/{len(units)}] {name:10} {cell['cell_id']:40} "
+                      f"r{run_idx}  CRASH {type(e).__name__}: {e}")
+                continue
+
+            record = {
+                "model": name, "model_slug": slug,
+                "dataset": cell.get("dataset", dataset),
+                "cell_id": cell["cell_id"], "modality": cell["modality"],
+                "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
+                "is_baseline": cell.get("is_baseline", False),
+                "doc_index": cell.get("doc_index"), "run_index": run_idx,
+                "reasoning_effort": args.reasoning_effort,
+                "batch_size": (args.question_batch_size
+                               if args.question_batch_size > 0
+                               else len(cell["questions"])),
+                "num_batches": len(batches),
+                "batch_qa_ids": [[q["qa_id"] for q in b] for b in batches],
+                "raw_output": res["raw_output"],
+                "parsed_output": res["parsed_output"],
+                "json_parse_error": res["json_parse_error"],
+                "per_batch_usage": res["per_batch_usage"],
+                "per_batch_latency_s": res["per_batch_latency_s"],
+                "metrics": res["metrics"], "usage": res["usage"],
+                "latency_s": res["latency_s"], "error": res["error"],
+            }
+            runs.append(record)
+            done.add(key)
+            runs_fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+            runs_fh.flush()
+
+            m = res["metrics"]
+            if m["scored"] == 0:
+                status = "ERR" if res["error"] else "parse-fail"
+            elif is_mc_cell(cell):
+                status = f"acc={_fmt(m['mc_accuracy'])}"
+                if m.get("wrong_doc_rate") is not None:
+                    status += f" wrongD={_fmt(m['wrong_doc_rate'])}"
+                if m["n_unscored"]:
+                    status += f" unscored={m['n_unscored']}"
+            else:
+                status = (f"F1={_fmt(m['span_f1'])} "
+                          f"abst={_fmt(m['abstention_rate'])}")
+                if m["n_unscored"]:
+                    status += f" unscored={m['n_unscored']}"
+            print(f"  [{i}/{len(units)}] {name:10} {cell['cell_id']:40} "
+                  f"r{run_idx}  {status}")
 
     summary = aggregate(runs)
     (out / "summary.json").write_text(
@@ -709,7 +748,15 @@ def main() -> None:
     parser.add_argument("--timeout", type=float, default=120.0)
     parser.add_argument("--retries", type=int, default=3)
     parser.add_argument("--sleep", type=float, default=0.0,
-                        help="seconds to wait between requests (rate limiting)")
+                        help="seconds to wait between a unit's own batches "
+                             "(rate limiting); use --max-concurrency to bound "
+                             "account-wide load")
+    parser.add_argument("--max-concurrency", type=int, default=8,
+                        help="max cell-runs dispatched to OpenRouter at once "
+                             "(default: 8). Lower it (e.g. 2) if a provider "
+                             "rate-limits you; set 1 to run sequentially. "
+                             "Free models (e.g. nemotron:free) have strict "
+                             "per-minute caps — keep this low for those.")
     parser.add_argument("--overwrite", action="store_true",
                         help="redo all runs instead of resuming (skips by default)")
     parser.add_argument("--mock", action="store_true",
