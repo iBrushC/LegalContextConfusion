@@ -138,8 +138,8 @@ SYSTEM_PROMPT = (
 
 # MAUD is multiple choice, not extractive QA: the model is shown a fixed,
 # lettered option set per question and must pick the single option that is
-# correct for the TARGET agreement, returning its letter. (Cells from
-# build_maud_contexts.py carry focus="labels"; CUAD cells use SYSTEM_PROMPT.)
+# correct for the TARGET agreement, returning its letter. (MAUD cells from
+# build_context.py carry focus="labels"; CUAD cells use SYSTEM_PROMPT.)
 MC_SYSTEM_PROMPT = (
     "You are a precise legal contract analyst answering MULTIPLE-CHOICE "
     "questions about merger agreements. You are given one or more documents, "
