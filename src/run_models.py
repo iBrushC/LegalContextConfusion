@@ -46,9 +46,12 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import os
 import sys
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 # Sibling modules (src/ is on sys.path when run directly; make it explicit).
@@ -63,7 +66,7 @@ DEFAULT_OUT = Path("data/results")
 # list on 2026-06-17. Override any of them via --models-config.
 MODEL_REGISTRY = {
     "claude":   "anthropic/claude-opus-4.8",                  # Opus 4.8
-    "chatgpt":  "openai/gpt-5.4",                           # GPT 5.4 Pro
+    "chatgpt":  "openai/gpt-5.5",                             # GPT 5.5
     "gemini":   "google/gemini-3.1-pro-preview",             # Gemini 3.1 Pro
     "deepseek": "deepseek/deepseek-v4-pro",                   # DeepSeek 4 Pro
     "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # Nemotron 3 Ultra
@@ -79,7 +82,8 @@ ALIASES = {
     "glm5": "glm", "glm-5.2": "glm",
 }
 # Cheapest model for prototyping (reuse-base-procedure card).
-PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+# PROTOTYPE = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+PROTOTYPE: tuple[str, str] = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 
 
@@ -183,6 +187,134 @@ def _reasoning_config(effort: str | None) -> dict | None:
 
 
 # --------------------------------------------------------------------------- #
+# Cost estimation
+# --------------------------------------------------------------------------- #
+MODELS_URL = "https://openrouter.ai/api/v1/models"
+CHARS_PER_TOKEN = 4  # input-token approximation; matches build_context.py
+
+
+def approx_tokens(text: str) -> int:
+    """Approximate token count for prompt sizing (chars / CHARS_PER_TOKEN)."""
+    return math.ceil(len(text) / CHARS_PER_TOKEN)
+
+
+def _to_float(v) -> float:
+    """Coerce OpenRouter's string pricing fields to float (None/'' -> 0.0)."""
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def fetch_model_pricing(slugs: list[str], timeout: float = 30.0) -> dict:
+    """Map each slug -> per-token USD pricing from OpenRouter's public catalogue.
+
+    Returns {slug: {"prompt": float, "completion": float, "request": float}};
+    a slug OpenRouter doesn't list maps to None so the caller can flag it. No
+    API key required — the /models endpoint is public.
+    """
+    req = urllib.request.Request(MODELS_URL, headers={"Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        data = json.loads(resp.read().decode("utf-8")).get("data", [])
+    catalogue = {m.get("id"): (m.get("pricing") or {}) for m in data}
+
+    pricing: dict = {}
+    for slug in slugs:
+        p = catalogue.get(slug)
+        pricing[slug] = None if p is None else {
+            "prompt": _to_float(p.get("prompt")),
+            "completion": _to_float(p.get("completion")),
+            "request": _to_float(p.get("request")),
+        }
+    return pricing
+
+
+def estimate_token_plan(cells: list[dict], runs: int,
+                        worst_output_per_call: int,
+                        best_output_per_call: int) -> dict:
+    """Input/request totals + best- and worst-case output totals for the run.
+
+    Each cell is sent in ONE call with all of its questions at once (no
+    batching — the question count is capped upstream at context-build time), so
+    there is exactly one request per cell and the full context is sent once per
+    cell. Output is bracketed PER CALL by a flat token count, independent of how
+    many questions the call carries:
+      * worst case  — the call saturates the cap (worst_output_per_call).
+      * best case   — a short single response (best_output_per_call).
+    Input tokens are approximated from the actually rendered prompts (system +
+    context + questions) via chars/CHARS_PER_TOKEN. Within each run all questions
+    are asked at once, so `runs` scales the whole plan linearly.
+    """
+    input_tokens = requests = output_worst = output_best = 0
+    for cell in cells:
+        questions = cell["questions"]
+        msgs = build_messages(cell, questions)
+        input_tokens += sum(approx_tokens(m["content"]) for m in msgs)
+        output_worst += worst_output_per_call
+        output_best += min(best_output_per_call, worst_output_per_call)
+        requests += 1
+    return {
+        "input_tokens": input_tokens * runs,
+        "output_worst": output_worst * runs,
+        "output_best": output_best * runs,
+        "requests": requests * runs,
+    }
+
+
+def print_cost_estimate(cells: list[dict], models: list[tuple[str, str]],
+                        runs: int, max_output_tokens: int,
+                        best_output_per_call: int) -> None:
+    """Fetch live pricing and print a per-model best/worst-case cost table."""
+    plan = estimate_token_plan(cells, runs, max_output_tokens,
+                               best_output_per_call)
+    print(f"\nCost estimate over {len(cells)} cells x {runs} run(s)")
+    print(f"  one call per cell (all questions at once); "
+          f"worst case: {max_output_tokens:,} output tokens/call; "
+          f"best case: {best_output_per_call:,} output tokens/call")
+    print(f"  Plan: {plan['requests']:,} requests; ~{plan['input_tokens']:,} "
+          f"input tokens; output {plan['output_best']:,} (best) .. "
+          f"{plan['output_worst']:,} (worst) "
+          f"(input approx chars/{CHARS_PER_TOKEN}).")
+
+    try:
+        pricing = fetch_model_pricing([slug for _, slug in models])
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError,
+            OSError, ValueError) as e:
+        raise SystemExit(f"error: could not fetch OpenRouter pricing: {e}")
+
+    def _cost(p: dict, output_tokens: int) -> float:
+        return (plan["input_tokens"] * p["prompt"]
+                + output_tokens * p["completion"]
+                + plan["requests"] * p["request"])
+
+    print(f"\n  {'model':12} {'$/Mtok in':>10} {'$/Mtok out':>11} "
+          f"{'best cost':>12} {'worst cost':>12}")
+    total_best = total_worst = 0.0
+    unknown: list[tuple[str, str]] = []
+    for name, slug in models:
+        p = pricing.get(slug)
+        if p is None:
+            unknown.append((name, slug))
+            print(f"  {name:12} {'?':>10} {'?':>11} {'unknown':>12} {'unknown':>12}")
+            continue
+        best, worst = _cost(p, plan["output_best"]), _cost(p, plan["output_worst"])
+        total_best += best
+        total_worst += worst
+        print(f"  {name:12} {p['prompt'] * 1e6:>10.3f} "
+              f"{p['completion'] * 1e6:>11.3f} "
+              f"{'$' + format(best, '.4f'):>12} {'$' + format(worst, '.4f'):>12}")
+    print(f"  {'TOTAL':12} {'':>10} {'':>11} "
+          f"{'$' + format(total_best, '.4f'):>12} "
+          f"{'$' + format(total_worst, '.4f'):>12}")
+
+    if unknown:
+        listing = ", ".join(f"{n} ({s})" for n, s in unknown)
+        print(f"\n  note: no OpenRouter pricing found for: {listing}\n"
+              f"        verify the slug at https://openrouter.ai/models; "
+              f"TOTALs exclude these.")
+
+
+# --------------------------------------------------------------------------- #
 # Per (cell x model x run) execution
 # --------------------------------------------------------------------------- #
 def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
@@ -199,6 +331,7 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
         if mock:
             resp = mock_call(cell, qbatch)
         else:
+            assert api_key is not None
             resp = call_openrouter(slug, build_messages(cell, qbatch), api_key,
                                    args.max_tokens, args.temperature,
                                    args.timeout, args.retries, reasoning)
@@ -354,6 +487,14 @@ def main() -> None:
                         help="offline: gold-perfect answers, no API calls")
     parser.add_argument("--dry-run", action="store_true",
                         help="print the plan + first rendered prompt, then exit")
+    parser.add_argument("--estimate-cost", action="store_true",
+                        help="estimate the $ cost of this run from live "
+                             "OpenRouter pricing, bracketed best..worst case, "
+                             "then exit")
+    parser.add_argument("--best-case-output-tokens", type=int, default=256,
+                        help="best-case output tokens PER CALL for "
+                             "--estimate-cost (default: 256; worst case uses "
+                             "the full --max-tokens cap per call)")
     args = parser.parse_args()
 
     models = [PROTOTYPE] if args.prototype else resolve_models(args.models,
@@ -383,6 +524,12 @@ def main() -> None:
         if len(user) > 1800:
             print("...[truncated]...")
         print("\n(dry run — no requests sent)")
+        return
+
+    if args.estimate_cost:
+        cells = [json.loads(p.read_text(encoding="utf-8")) for p in cell_paths]
+        print_cost_estimate(cells, models, args.runs,
+                            args.max_tokens, args.best_case_output_tokens)
         return
 
     api_key = os.environ.get("OPENROUTER_API_KEY")
@@ -426,6 +573,7 @@ def main() -> None:
                         "model": name, "model_slug": slug,
                         "cell_id": cell["cell_id"], "modality": cell["modality"],
                         "focus": cell["focus"], "budget_tokens": cell["budget_tokens"],
+                        "is_baseline": cell.get("is_baseline", False),
                         "position": cell["position"], "run_index": run_idx,
                         "reasoning_effort": args.reasoning_effort,
                         "batch_size": (args.question_batch_size

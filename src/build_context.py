@@ -25,12 +25,23 @@ that the models are run against. CUAD only for now (MAUD comes later).
     `distractor_ids`, so the eval can tell whether an answer was extracted from
     the right document (the confusion signal).
 
-  Position & length sweep:
-    * budgets    token targets (4k, 16k, 64k, ...).
+  Interference & position sweep:
+    * budgets    how much rot/confusion FILLER to add AROUND the probe, in
+                 tokens (4k, 16k, 64k, ...). This is the independent variable
+                 (the amount of interference), NOT a cap on the window: the
+                 probe document is ALWAYS kept whole and the filler is added on
+                 top of it. A 4k budget over a 16k probe -> a ~20k-token window.
     * positions  target_at_start (0%), target_at_middle (50%), target_at_end (100%).
 
-Output: one JSON record per (modality x budget x position) cell under --out,
-plus a manifest.json describing the fixed target. Those records feed run_models.
+  Baseline:
+    For the rot and confusion modalities a zero-filler BASELINE cell is also
+    emitted (`<modality>_baseline`): the bare probe with no interference, the
+    anchor every degradation curve is measured against. The abstention
+    modalities (missing_answer/_document) have no interference axis -> no baseline.
+
+Output: one JSON record per cell ((modality x budget x position) + per-modality
+baselines) under --out, plus a manifest.json describing the fixed target. Those
+records feed run_models.
 
 Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER contracts in the
@@ -70,8 +81,10 @@ CHARS_PER_TOKEN = 4  # approximate; matches inspect_cuad's budgeting hint
 # All modalities the schema knows about; only IMPLEMENTED ones generate cells.
 MODALITIES = ("rot", "confusion", "missing_answer", "missing_document")
 IMPLEMENTED_MODALITIES = ("rot", "confusion", "missing_answer")
+# Modalities with an interference axis, so a zero-filler baseline makes sense.
+BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = ("rot",)
-DEFAULT_BUDGETS = (4000, 16000, 64000)
+DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
 POSITIONS = ("target_at_start", "target_at_middle", "target_at_end")
 DEFAULT_POSITIONS = POSITIONS
 
@@ -255,7 +268,7 @@ def nonlegal_distractors(rot_filler: Path | None) -> tuple[list[tuple[str | None
         files = [rot_filler]
     if not files:
         raise SystemExit(f"error: no .txt filler found at {rot_filler}")
-    pool = [(p.stem, p.read_text(encoding="utf-8", errors="ignore")) for p in files]
+    pool: list[tuple[str | None, str]] = [(p.stem, p.read_text(encoding="utf-8", errors="ignore")) for p in files]
     return pool, f"files:{rot_filler}"
 
 
@@ -274,48 +287,54 @@ def wrap_document(doc_id: str, text: str) -> str:
 
 
 def build_cell_context(target_id: str, target_text: str,
-                       pool: list[tuple[str | None, str]], budget_chars: int,
+                       pool: list[tuple[str | None, str]], filler_chars: int,
                        position: str, sep: str, rng: random.Random) -> dict:
-    """Wrap the target + distractors into one context at the given position.
+    """Wrap the FULL target plus `filler_chars` of distractor filler around it.
+
+    The target document is ALWAYS included verbatim and in full; `filler_chars`
+    is the amount of rot/confusion text added AROUND it (the experiment's
+    independent variable), NOT a cap on the total window. filler_chars <= 0
+    yields the bare target (the zero-interference baseline).
 
     Returns a dict with the assembled context, the char offset where the raw
     target text begins (so gold offsets map as offset + answer_start), the
-    distractor ids used, and whether filler had to be repeated / the target fit.
+    distractor ids used, and whether filler had to be repeated to reach the
+    requested amount.
     """
     target_block = wrap_document(target_id, target_text)
     target_inner_offset = len(_open_tag(target_id))  # raw text start within block
-    target_fits = len(target_block) <= budget_chars
 
     blocks: list[str] = []        # distractor blocks in fill order
     used_ids: list[str] = []
     repeated = False
 
-    if pool and budget_chars > len(target_block) + len(sep):
+    if pool and filler_chars > 0:
         order = pool[:]
         rng.shuffle(order)
         overhead_close = len(_CLOSE_TAG)
-        total = len(target_block)
+        added = 0                 # filler chars accumulated (target NOT counted)
         i = 0
         while True:
-            budget_left = budget_chars - total - len(sep)
+            budget_left = filler_chars - added
             if budget_left <= 0:
                 break
             raw_id, text = order[i % len(order)]
             repeated = repeated or i >= len(order)
             did = raw_id if raw_id is not None else f"filler_{i + 1:03d}"
             block = wrap_document(did, text)
-            if len(block) > budget_left:  # trim inner text so the block fits
-                keep = budget_left - len(_open_tag(did)) - overhead_close
+            if len(block) + len(sep) > budget_left:  # trim inner text so it fits
+                keep = budget_left - len(sep) - len(_open_tag(did)) - overhead_close
                 if keep <= 0:
                     break
                 block = wrap_document(did, text[:keep])
             blocks.append(block)
             used_ids.append(did)
-            total += len(block) + len(sep)
+            added += len(block) + len(sep)
             i += 1
 
-    # Place the target among the distractors per position.
-    if position == "target_at_start":
+    # Place the target among the distractors per position. With no filler
+    # (baseline) the target stands alone, so position is moot -> index 0.
+    if position in ("target_at_start", "baseline"):
         target_index = 0
     elif position == "target_at_end":
         target_index = len(blocks)
@@ -333,7 +352,6 @@ def build_cell_context(target_id: str, target_text: str,
         "target_offset": chars_before + target_inner_offset,
         "distractor_ids": used_ids,
         "filler_repeated": repeated,
-        "target_fits": target_fits,
     }
 
 
@@ -347,10 +365,17 @@ def cell_focus(modality: str) -> str:
 
 def make_cell(target: dict, modality: str, budget: int, position: str,
               count_tokens, legal_pool: list, nonlegal_pool: list,
-              nonlegal_label: str, seed: int, sep: str) -> dict:
-    """Build one prepared-context record."""
+              nonlegal_label: str, seed: int, sep: str,
+              baseline: bool = False) -> dict:
+    """Build one prepared-context record.
+
+    `budget` is the amount of rot/confusion FILLER (in tokens) to add around the
+    full target — the independent variable, not a cap on the window. The target
+    is always kept whole. baseline=True forces zero filler (the bare-target
+    reference point) and a `<modality>_baseline` cell id.
+    """
     rng = random.Random(stable_seed(seed, modality, budget, position))
-    budget_chars = budget * CHARS_PER_TOKEN
+    filler_chars = 0 if baseline else budget * CHARS_PER_TOKEN
 
     if modality == "rot":
         pool, source = nonlegal_pool, nonlegal_label
@@ -358,15 +383,18 @@ def make_cell(target: dict, modality: str, budget: int, position: str,
         pool, source = legal_pool, "cuad-other-contracts"
 
     built = build_cell_context(target["id"], target["context"], pool,
-                               budget_chars, position, sep, rng)
+                               filler_chars, position, sep, rng)
     context = built["context"]
     target_offset = built["target_offset"]
 
+    cell_id = (f"{modality}_baseline" if baseline
+               else f"{modality}_b{budget}_{position}")
     return {
-        "cell_id": f"{modality}_b{budget}_{position}",
+        "cell_id": cell_id,
         "modality": modality,
         "focus": cell_focus(modality),
-        "budget_tokens": budget,
+        "budget_tokens": 0 if baseline else budget,  # rot/confusion filler tokens
+        "is_baseline": baseline,
         "position": position,
         "actual_tokens": count_tokens(context),
         "actual_chars": len(context),
@@ -374,7 +402,6 @@ def make_cell(target: dict, modality: str, budget: int, position: str,
         "distractor_ids": built["distractor_ids"],
         "target_offset": target_offset,
         "target_end": target_offset + len(target["context"]),
-        "target_fits": built["target_fits"],
         "filler_source": source,
         "filler_repeated": built["filler_repeated"],
         "context": context,
@@ -397,7 +424,9 @@ def main() -> None:
                         help="modalities to generate (default: rot)")
     parser.add_argument("--budgets", nargs="+", type=int,
                         default=list(DEFAULT_BUDGETS),
-                        help="token budgets (default: 4000 16000 64000)")
+                        help="rot/confusion filler tokens to add AROUND the full "
+                             "probe (default: 64,000 128,000 256,000, 512,000); the zero-filler "
+                             "case is emitted separately as the baseline cell")
     parser.add_argument("--positions", nargs="+", choices=POSITIONS,
                         default=list(DEFAULT_POSITIONS),
                         help="target positions (default: all three)")
@@ -457,32 +486,46 @@ def main() -> None:
     if not args.dry_run:
         cells_dir.mkdir(parents=True, exist_ok=True)
 
-    n_cells = len(modalities) * len(args.budgets) * len(args.positions)
-    print(f"\nGenerating {n_cells} cells:")
-    for modality in modalities:
-        for budget in sorted(args.budgets):
-            for position in args.positions:
-                cell = make_cell(target, modality, budget, position, count_tokens,
-                                 legal_pool, nonlegal_pool, nonlegal_label,
-                                 args.seed, DOC_SEPARATOR)
-                flags = []
-                if not cell["target_fits"]:
-                    flags.append("TARGET>BUDGET")
-                if cell["filler_repeated"]:
-                    flags.append("filler-repeated")
-                flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
-                print(f"  {cell['cell_id']:42} "
-                      f"{cell['actual_tokens']:>9,} tok  "
-                      f"{len(cell['distractor_ids']):>3} distractors{flag_str}")
+    # The zero-filler case is the baseline cell, not a budget; drop any <= 0.
+    budgets = sorted(b for b in args.budgets if b > 0)
+    dropped = [b for b in args.budgets if b <= 0]
+    if dropped:
+        print(f"note: ignoring non-positive budget(s) {dropped}; the zero-filler "
+              f"case is emitted as the baseline cell instead.")
 
-                meta = {k: v for k, v in cell.items()
-                        if k not in ("context", "questions")}
-                if not args.dry_run:
-                    path = cells_dir / f"{cell['cell_id']}.json"
-                    path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
-                                    encoding="utf-8")
-                    meta["path"] = str(path)
-                cells_meta.append(meta)
+    # Job list: a zero-filler baseline per interference modality, then the
+    # (budget x position) interference grid. (modality, budget, position, baseline)
+    jobs = []
+    for modality in modalities:
+        if modality in BASELINE_MODALITIES:
+            jobs.append((modality, 0, "baseline", True))
+        for budget in budgets:
+            for position in args.positions:
+                jobs.append((modality, budget, position, False))
+
+    print(f"\nGenerating {len(jobs)} cells:")
+    for modality, budget, position, baseline in jobs:
+        cell = make_cell(target, modality, budget, position, count_tokens,
+                         legal_pool, nonlegal_pool, nonlegal_label,
+                         args.seed, DOC_SEPARATOR, baseline=baseline)
+        flags = []
+        if cell["is_baseline"]:
+            flags.append("baseline / zero-filler")
+        if cell["filler_repeated"]:
+            flags.append("filler-repeated")
+        flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
+        print(f"  {cell['cell_id']:42} "
+              f"{cell['actual_tokens']:>9,} tok  "
+              f"{len(cell['distractor_ids']):>3} distractors{flag_str}")
+
+        meta = {k: v for k, v in cell.items()
+                if k not in ("context", "questions")}
+        if not args.dry_run:
+            path = cells_dir / f"{cell['cell_id']}.json"
+            path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
+                            encoding="utf-8")
+            meta["path"] = str(path)
+        cells_meta.append(meta)
 
     manifest = {
         "source_file": str(args.file),
@@ -493,7 +536,8 @@ def main() -> None:
         "doc_separator": DOC_SEPARATOR,
         "target": {k: v for k, v in target.items() if k != "context"},
         "modalities": modalities,
-        "budgets": sorted(args.budgets),
+        "budgets": budgets,
+        "baseline_modalities": [m for m in modalities if m in BASELINE_MODALITIES],
         "positions": args.positions,
         "cells": cells_meta,
     }
