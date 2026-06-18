@@ -68,3 +68,4 @@ def call_openrouter(slug: str, messages: list[dict], api_key: str,
             return {"content": None, "usage": {},
                     "latency_s": round(time.monotonic() - t0, 3),
                     "error": f"{type(e).__name__}: {e}"}
+    return {"content": None, "usage": {}, "latency_s": 0.0, "error": "no attempts made"}

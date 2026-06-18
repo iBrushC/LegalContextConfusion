@@ -114,7 +114,7 @@ def score_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
                 answered_pos += 1
                 f1s.append(max(token_f1(answer, g) for g in golds))
                 exacts.append(any(_normalize(answer) == _normalize(g) for g in golds))
-                if pred.get("document_id") not in (None, target_id):
+                if pred is not None and pred.get("document_id") not in (None, target_id):
                     wrong_doc += 1
             else:  # missed an answerable clause
                 f1s.append(0.0)

@@ -63,9 +63,9 @@ DEFAULT_OUT = Path("data/results")
 # https://openrouter.ai/models and/or override via --models-config.
 MODEL_REGISTRY = {
     "claude":   "anthropic/claude-opus-4.8",                  # VERIFY
-    "chatgpt":  "openai/gpt-5.4",                              # VERIFY
+    "chatgpt":  "openai/gpt-5.5-pro",                         # VERIFY
     "gemini":   "google/gemini-3.1-pro",                      # VERIFY
-    "deepseek": "deepseek/deepseek-v4",                       # VERIFY
+    "deepseek": "deepseek/deepseek-v4-pro",                   # VERIFY
     "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # VERIFY
     "mimo":     "xiaomi/mimo-v2.5-pro",                       # VERIFY
     "glm":      "z-ai/glm-5.2",                               # VERIFY
@@ -185,6 +185,7 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
         if mock:
             resp = mock_call(cell, qbatch)
         else:
+            assert api_key is not None
             resp = call_openrouter(slug, build_messages(cell, qbatch), api_key,
                                    args.max_tokens, args.temperature,
                                    args.timeout, args.retries)

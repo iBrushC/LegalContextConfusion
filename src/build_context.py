@@ -255,7 +255,7 @@ def nonlegal_distractors(rot_filler: Path | None) -> tuple[list[tuple[str | None
         files = [rot_filler]
     if not files:
         raise SystemExit(f"error: no .txt filler found at {rot_filler}")
-    pool = [(p.stem, p.read_text(encoding="utf-8", errors="ignore")) for p in files]
+    pool: list[tuple[str | None, str]] = [(p.stem, p.read_text(encoding="utf-8", errors="ignore")) for p in files]
     return pool, f"files:{rot_filler}"
 
 
