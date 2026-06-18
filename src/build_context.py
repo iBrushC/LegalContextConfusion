@@ -425,7 +425,7 @@ def main() -> None:
     parser.add_argument("--budgets", nargs="+", type=int,
                         default=list(DEFAULT_BUDGETS),
                         help="rot/confusion filler tokens to add AROUND the full "
-                             "probe (default: 4000 16000 64000); the zero-filler "
+                             "probe (default: 64,000 128,000 256,000, 512,000); the zero-filler "
                              "case is emitted separately as the baseline cell")
     parser.add_argument("--positions", nargs="+", choices=POSITIONS,
                         default=list(DEFAULT_POSITIONS),

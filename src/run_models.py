@@ -67,7 +67,7 @@ DEFAULT_OUT = Path("data/results")
 MODEL_REGISTRY = {
     "claude":   "anthropic/claude-opus-4.8",                  # VERIFY
     "chatgpt":  "openai/gpt-5.5",                         # VERIFY
-    "gemini":   "google/gemini-3.1-pro",                      # VERIFY
+    "gemini":   "google/gemini-3.1-pro-preview",                      # VERIFY
     "deepseek": "deepseek/deepseek-v4-pro",                   # VERIFY
     "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # VERIFY
     "mimo":     "xiaomi/mimo-v2.5-pro",                       # VERIFY
@@ -217,37 +217,52 @@ def fetch_model_pricing(slugs: list[str], timeout: float = 30.0) -> dict:
 
 
 def estimate_token_plan(cells: list[dict], batch_size: int, runs: int,
-                        max_output_tokens: int) -> dict:
-    """Worst-case input/output token + request totals for the whole run.
+                        worst_output_per_call: int,
+                        best_output_per_answer: int) -> dict:
+    """Input/request totals + best- and worst-case output totals for the run.
 
     The full context is re-sent once per question batch, so input scales with
-    the batch count; output assumes every call emits the entire max_output_tokens
-    cap (the worst case). Input tokens are approximated from the actually
-    rendered prompts (system + context + questions) via chars/CHARS_PER_TOKEN.
+    the batch count. Output is bracketed PER CALL, since no single call can bill
+    more than the max_tokens cap regardless of scenario:
+      * worst case  — every call saturates the cap (worst_output_per_call).
+      * best case   — one short answer per question in the batch
+                      (best_output_per_answer x batch size), but still clamped
+                      to the cap: cramming many questions into one call can push
+                      even short answers past max_tokens.
+    Clamping per call guarantees best <= worst. Input tokens are approximated
+    from the actually rendered prompts (system + context + questions) via
+    chars/CHARS_PER_TOKEN.
     """
-    input_tokens = output_tokens = requests = 0
+    input_tokens = requests = output_worst = output_best = 0
     for cell in cells:
         batches = chunk_questions(cell["questions"], batch_size)
         for batch in batches:
             msgs = build_messages(cell, batch)
             input_tokens += sum(approx_tokens(m["content"]) for m in msgs)
-        output_tokens += max_output_tokens * len(batches)
+            output_worst += worst_output_per_call
+            output_best += min(best_output_per_answer * len(batch),
+                               worst_output_per_call)
         requests += len(batches)
     return {
         "input_tokens": input_tokens * runs,
-        "output_tokens": output_tokens * runs,
+        "output_worst": output_worst * runs,
+        "output_best": output_best * runs,
         "requests": requests * runs,
     }
 
 
 def print_cost_estimate(cells: list[dict], models: list[tuple[str, str]],
-                        batch_size: int, runs: int, max_output_tokens: int) -> None:
-    """Fetch live pricing and print a per-model worst-case cost table."""
-    plan = estimate_token_plan(cells, batch_size, runs, max_output_tokens)
-    print(f"\nCost estimate (worst case: {max_output_tokens:,} output tokens/call)")
-    print(f"  Plan: {plan['requests']:,} requests over {len(cells)} cells x "
-          f"{runs} run(s); ~{plan['input_tokens']:,} input + "
-          f"{plan['output_tokens']:,} output tokens "
+                        batch_size: int, runs: int, max_output_tokens: int,
+                        best_output_per_answer: int) -> None:
+    """Fetch live pricing and print a per-model best/worst-case cost table."""
+    plan = estimate_token_plan(cells, batch_size, runs, max_output_tokens,
+                               best_output_per_answer)
+    print(f"\nCost estimate over {len(cells)} cells x {runs} run(s)")
+    print(f"  worst case: {max_output_tokens:,} output tokens/call; "
+          f"best case: {best_output_per_answer} output tokens/answer")
+    print(f"  Plan: {plan['requests']:,} requests; ~{plan['input_tokens']:,} "
+          f"input tokens; output {plan['output_best']:,} (best) .. "
+          f"{plan['output_worst']:,} (worst) "
           f"(input approx chars/{CHARS_PER_TOKEN}).")
 
     try:
@@ -256,28 +271,36 @@ def print_cost_estimate(cells: list[dict], models: list[tuple[str, str]],
             OSError, ValueError) as e:
         raise SystemExit(f"error: could not fetch OpenRouter pricing: {e}")
 
-    print(f"\n  {'model':12} {'$/Mtok in':>10} {'$/Mtok out':>11} {'est. cost':>13}")
-    total = 0.0
+    def _cost(p: dict, output_tokens: int) -> float:
+        return (plan["input_tokens"] * p["prompt"]
+                + output_tokens * p["completion"]
+                + plan["requests"] * p["request"])
+
+    print(f"\n  {'model':12} {'$/Mtok in':>10} {'$/Mtok out':>11} "
+          f"{'best cost':>12} {'worst cost':>12}")
+    total_best = total_worst = 0.0
     unknown: list[tuple[str, str]] = []
     for name, slug in models:
         p = pricing.get(slug)
         if p is None:
             unknown.append((name, slug))
-            print(f"  {name:12} {'?':>10} {'?':>11} {'unknown':>13}")
+            print(f"  {name:12} {'?':>10} {'?':>11} {'unknown':>12} {'unknown':>12}")
             continue
-        cost = (plan["input_tokens"] * p["prompt"]
-                + plan["output_tokens"] * p["completion"]
-                + plan["requests"] * p["request"])
-        total += cost
+        best, worst = _cost(p, plan["output_best"]), _cost(p, plan["output_worst"])
+        total_best += best
+        total_worst += worst
         print(f"  {name:12} {p['prompt'] * 1e6:>10.3f} "
-              f"{p['completion'] * 1e6:>11.3f} {'$' + format(cost, '.4f'):>13}")
-    print(f"  {'TOTAL':12} {'':>10} {'':>11} {'$' + format(total, '.4f'):>13}")
+              f"{p['completion'] * 1e6:>11.3f} "
+              f"{'$' + format(best, '.4f'):>12} {'$' + format(worst, '.4f'):>12}")
+    print(f"  {'TOTAL':12} {'':>10} {'':>11} "
+          f"{'$' + format(total_best, '.4f'):>12} "
+          f"{'$' + format(total_worst, '.4f'):>12}")
 
     if unknown:
         listing = ", ".join(f"{n} ({s})" for n, s in unknown)
         print(f"\n  note: no OpenRouter pricing found for: {listing}\n"
               f"        verify the slug at https://openrouter.ai/models; "
-              f"TOTAL excludes these.")
+              f"TOTALs exclude these.")
 
 
 # --------------------------------------------------------------------------- #
@@ -415,8 +438,12 @@ def main() -> None:
                         help="print the plan + first rendered prompt, then exit")
     parser.add_argument("--estimate-cost", action="store_true",
                         help="estimate the $ cost of this run from live "
-                             "OpenRouter pricing (worst case: every call emits "
-                             "--max-tokens output), then exit")
+                             "OpenRouter pricing, bracketed best..worst case, "
+                             "then exit")
+    parser.add_argument("--best-case-answer-tokens", type=int, default=256,
+                        help="best-case output tokens PER ANSWER for "
+                             "--estimate-cost (default: 256; worst case uses "
+                             "the full --max-tokens cap per call)")
     args = parser.parse_args()
 
     models = [PROTOTYPE] if args.prototype else resolve_models(args.models,
@@ -451,7 +478,7 @@ def main() -> None:
     if args.estimate_cost:
         cells = [json.loads(p.read_text(encoding="utf-8")) for p in cell_paths]
         print_cost_estimate(cells, models, args.question_batch_size, args.runs,
-                            args.max_tokens)
+                            args.max_tokens, args.best_case_answer_tokens)
         return
 
     api_key = os.environ.get("OPENROUTER_API_KEY")
