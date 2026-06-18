@@ -63,7 +63,7 @@ DEFAULT_OUT = Path("data/results")
 # https://openrouter.ai/models and/or override via --models-config.
 MODEL_REGISTRY = {
     "claude":   "anthropic/claude-opus-4.8",                  # VERIFY
-    "chatgpt":  "openai/gpt-5.5-pro",                         # VERIFY
+    "chatgpt":  "openai/gpt-5.5",                         # VERIFY
     "gemini":   "google/gemini-3.1-pro",                      # VERIFY
     "deepseek": "deepseek/deepseek-v4-pro",                   # VERIFY
     "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # VERIFY
