@@ -84,7 +84,7 @@ IMPLEMENTED_MODALITIES = ("rot", "confusion", "missing_answer")
 # Modalities with an interference axis, so a zero-filler baseline makes sense.
 BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = ("rot",)
-DEFAULT_BUDGETS = (4000, 16000, 64000)
+DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
 POSITIONS = ("target_at_start", "target_at_middle", "target_at_end")
 DEFAULT_POSITIONS = POSITIONS
 
