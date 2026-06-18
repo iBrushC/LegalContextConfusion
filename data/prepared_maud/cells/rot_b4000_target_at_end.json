@@ -1,0 +1,283 @@
+{
+  "cell_id": "rot_b4000_target_at_end",
+  "dataset": "maud",
+  "modality": "rot",
+  "focus": "labels",
+  "budget_tokens": 4000,
+  "position": "target_at_end",
+  "actual_tokens": 4000,
+  "actual_chars": 16000,
+  "target_document_id": "contract_90",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+  "distractor_ids": [
+    "filler_006",
+    "filler_004",
+    "filler_003",
+    "filler_007"
+  ],
+  "target_fits": false,
+  "target_truncated": true,
+  "filler_source": "synthetic-nonlegal",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"filler_006\" title=\"non-legal filler\">\nvery leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached t\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_004\" title=\"non-legal filler\">\nley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the gre\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_003\" title=\"non-legal filler\">\ng it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the val\n</DOCUMENT>\n\n<DOCUMENT id=\"filler_007\" title=\"non-legal filler\">\nhe ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the basil on the windowsill where the afternoon light was strongest. A quiet tide pulled the small boats back toward the harbor at dusk. The bakery on the corner sells out of sourdough by nine most mornings. Rain tapped against the greenhouse glass while the seedlings stretched upward. They followed the coastal trail until the lighthouse came into view. The chess club met in the library every Thursday after the last bell. Warm bread, sharp cheese, and a handful of olives made the whole picnic. The river otters played near the dam where the current slowed to a drift. A single violin carried the melody before the rest of the strings joined in. The cartographer sketched the coastline by hand, correcting it as she sailed. Frost outlined every leaf in the garden until the sun climbed past the fence. The train slowed through the mountain pass so passengers could watch the falls. He brewed the coffee a little stronger on the cold, dark winter mornings. Fireflies blinked across the meadow as the campfire settled into embers. The potter centered the clay, then opened it slowly with both thumbs. A kestrel hovered above the field, perfectly still against the moving clouds. The morning fog settled over the valley long before the hikers reached the ridge. She measured the flour twice before folding it into the warm batter. Migrating geese trace the same river south every autumn without a map. The old telescope needed a gentle cleaning before the comet became visible. He repotted the bas\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_90\" title=\"AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …\">\nExhibit 2.1 \n\n\nExecution Version     \n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nby and among: \n\n\nANALOG DEVICES, INC., a Massachusetts corporation; \n\n\nMAGNETO CORP., a Delaware corporation; \n\n\nand \n\n\nMAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation    Dated as of July 12, 2020       \n\n\n\n\n\n\n\n\n________________\n\n\nSECTION 1  THE MERGER    1 1.1    The Merger    1 1.2    Closing    2 1.3    Certificate of Incorporation and Bylaws    2 1.4    Directors and Officers of the Surviving Corporation    2 1.5    Conversion of Securities    3 1.6    Certain Adjustments    3 1.7    Options; Stock Based Awards    3 1.8    No Fractional Shares    4 1.9    Closing of Transfer Books    5 1.10  Exchange of Certificates and Cancellation of Book-Entry Positions    5 1.11  Further Action    7 1.12  Tax Withholding    7 1.13  Tax Treatment    8 SECTION 2  REPRESENTATIONS AND WARRANTIES OF THE COMPANY    8 2.1    Due Organization and Good Standing; Subsidiaries    8 2.2    Organizational Documents    9 2.3    Capitalization    9 2.4    Reports; Financial Statements; Internal Controls    10 2.5    Absence of Certain Changes    12 2.6    Intellectual Property and Related Matters    12 2.7    Title to Assets; Real Property    14 2.8    Contracts    15 2.9    Compliance with Legal Requirements    17 2.10  Legal Proceedings; Investigations; Orders    18 2.11  Certain Business Practices    19 2.12  Tax Matters    19 2.13  Employee Benefit Plans    21 2.14  Labor Matters    22 2.15  Environmental Matters    22 2.16  Insurance    23 2.17  Authority; Binding Nature of Agreement    23 2.18  Vote Required    24   i\n\n\n\n\n\n\n\n\n________________\n\n\n2.19  Non-Contravention; Consents    24 2.20  Takeover Statutes    24 2.21  Ownership of Parent Common Stock    25 2.22  Opinion of Financial Advisor    25 2.23  Brokers    25 2.24  Information Supplied    25 SECTION 3  REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB    25 3.1    Due Organization and Good Standing; Subsidiaries    25 3.2    Organizational Documents    26 3.3    Capitalization    26 3.4    Reports; Financial Statements; Internal Controls    27 3.5    Absence of Certain Changes    29 3.6    Contracts    29 3.7    Compliance with Legal Requirements    29 3.8    Legal Proceedings; Investigations; Orders    31 3.9    Certain Business Practices    31 3.10  Tax Matters    31 3.11  Authority; Binding Nature of Agreement    31 3.12  Vote Required    32 3.13  Non-Contravention; Consents    33 3.14  Takeover Statutes    33 3.15  Ownership of Company Common Stock    33 3.16  Opinion of Financial Advisors    33 3.17  Brokers    33 3.18  Information Supplied    33 3.19  Acquisition Sub    34 SECTION 4  COVENANTS    34 4.1  Interim Operations    34 4.2  Company No Solicitation    39 4.3  Parent No Solicitation    40 4.4  Registration Statement; Joint Proxy Statement/Prospectus    42 4.5  Meeting of the Company’s Stockholders; Company Change in Recommendation    43   ii\n\n\n\n\n\n\n\n\n________________\n\n\n4.6    Meeting of Parent’s Shareholders; Parent Change in Recommendation    46 4.7    Filings; Other Action    49 4.8    Access    52 4.9    Interim Operations of Acquisition Sub    53 4.10  Publicity    54 4.11  Company ESPP; Other Employee Benefits    54 4.12  Certain Tax Matters    56 4.13  Indemnification; Directors’ and Officers’ Insurance    57 4.14  Stockholder Litigation    58 4.15  Obligations of Acquisition Sub    59 4.16  Stock Exchange Listing and Delisting    59 4.17  Section 16 Matters    59 4.18  Parent Vote    59 4.19  Director Resignations    59 4.20  Takeover Statutes    59 SECTION 5  CONDITIONS TO EACH PARTY’S OBLIGATION TO EFFECT THE MERGER    59 5.1  Conditions Precedent to Each Party’s Obligations    59 5.2  Additional Conditions Precedent to Parent’s Obligations    60 5.3  Additional Conditions Precedent to the Company’s Obligations    61 SECTION 6  TERMINATION    62 6.1  Termination    62 6.2  Effect of Termination    63 6.3  Termination Fees    64 SECTION 7  MISCELLANEOUS PROVISIONS    66 7.1  Amendment    66 7.2  Waiver    66 7.3  No Survival of Representations and Warranties    66 7.4  Entire Agreement; Non-Reliance; Third-Party Beneficiaries    66 7.5  Applicable Law; Jurisdiction    68 7.6  Payment of Expenses    68 7.7  Assignability; Parties in Interest    68 7.8  Notices    68   iii\n\n\n\n\n\n\n\n\n________________\n\n\n7.9    Severability    69 7.10  Counterparts    70 7.11  Obligations of the Surviving Corporation    70 7.12  Specific Performance    70 7.13  Disclosure Schedules    70 7.14  Construction    71   Exhibits    \n\n\nExhibit A   Certain Definitions     iv\n\n\n\n\n\n\n\n\n________________\n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nTHIS AGREEMENT AND PLAN OF MERGER (this “Agreement”) is made and entered into as of July 12, 2020, by and among: ANALOG DEVICES, INC., a Massachusetts corporation (“Parent”); MAGNETO CORP., a Delaware corporation and a wholly owned subsidiary of Parent (“Acquisition Sub”); and MAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation (the “Company”). Certain capitalized terms used in this Agreement are defined in Exhibit A. \n\n\nRECITALS \n\n\nA.    The parties intend that Acquisition Sub be merged with and into the Company (the “Merger”) in accordance with this Agreement and the General Corporation Law of the State of Delaware (the “DGCL”). Upon consummation of the Merger, Acquisition Sub will cease to exist and the Company will continue as the Surviving Corporation and a wholly owned Subsidiary of Parent. \n\n\nB.    The Company Board has unanimously: (i) determined that the Merger is fair to and in the best interests of the Company and its stockholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that the Company’s stockholders adopt this Agreement. \n\n\nC.    The Parent Board has unanimously: (i) determined that the terms of this Agreement and the Merger are fair to, and in the best interests of, Parent and its shareholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that Parent’s shareholders approve the issuance of shares of Parent Common Stock in connection with the Merger on the terms and subject to the conditions set forth in this Agreement. \n\n\nD.    The board of directors of Acquisition Sub has: (i) determined that it is in the best interests of its sole stockholder for Acquisition Sub to enter into this Agreement; (ii) approved and declared advisable this Agreement and the transactions contemplated hereby, including the Merger; and (iii) recommended that its sole stockholder adopt this Agreement. \n\n\nE.    It is intended that, for U.S. federal income Tax purposes, the Merger will qualify as a “reorganization” within the meaning of Section 368(a) of the Code and that this Agreement be, and is hereby adopted as, a “plan of reorganization” for purposes of Sections 354 and 361 of the Code. \n\n\nAGREEMENT \n\n\nThe parties to this Agreement, in consideration of the representations, warranties, covenants and agreements set forth herein and for other good and valuable consideration, the receipt and adequacy of which are hereby acknowledged, and intending to be legally bound, agree as follows: \n\n\nSECTION 1    THE MERGER 1.1    The Merger. At the Effective Time, Acquisition Sub shall be merged with and into the Company in accordance with the DGCL and upon the terms and subject to the conditions set forth in this Agreement, whereupon the separate existence of Acquisition Sub shall cease and the Company shall be the surviving corporation (the “Surviving Corporation”) in the Merger and a \n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Operating and Efforts Covenant",
+      "question": "General Antitrust Efforts Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat standard",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "General Antitrust Efforts Standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Operating and Efforts Covenant",
+      "question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Consent may not be unreasonably withheld, conditioned or delayed"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "subquestions": [],
+      "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": true,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target",
+        "business and operation of Target, ability to consummate transaction"
+      ],
+      "subquestions": [
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects with de minimis exception"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Accurate in all respects with de minimis exception"
+        }
+      ]
+    }
+  ]
+}

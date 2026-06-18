@@ -1,0 +1,608 @@
+{
+  "source_file": "data/maud/MAUD_dev.csv",
+  "contracts_dir": "data/maud/contracts",
+  "dataset": "maud",
+  "data_type": "main",
+  "seed": 42,
+  "tokenizer": "approx",
+  "chars_per_token": 4,
+  "doc_separator": "\n\n",
+  "negatives_mode": "auto",
+  "target_share": 0.5,
+  "target": {
+    "id": "contract_90",
+    "doc_index": 142,
+    "title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+    "text_chars": 359418,
+    "questions": [
+      {
+        "qa_id": "q01",
+        "category": "Deal Protection and Related Provisions",
+        "question": "Acquisition Proposal Timing-Answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        ],
+        "gold_labels": [
+          "0"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+          "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+          "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
+          "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+          "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+          "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+          "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+          "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        ],
+        "subquestions": [
+          "Different Acquisition Proposal must close during Tail Period",
+          "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        ],
+        "source_question": "Acquisition Proposal Timing-Answer",
+        "answers": [
+          {
+            "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+          }
+        ]
+      },
+      {
+        "qa_id": "q02",
+        "category": "Material Adverse Effect",
+        "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Yes"
+        ],
+        "gold_labels": [
+          "1"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "No",
+          "Yes"
+        ],
+        "subquestions": [],
+        "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+        "answers": [
+          {
+            "text": "Yes"
+          }
+        ]
+      },
+      {
+        "qa_id": "q03",
+        "category": "Deal Protection and Related Provisions",
+        "question": "Definition contains knowledge requirement - answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Known, but consequences unknown or not reasonably foreseeable, at signing"
+        ],
+        "gold_labels": [
+          "0"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Known, but consequences unknown or not reasonably foreseeable, at signing",
+          "Known, but consequences unknown, at signing",
+          "Not known and not reasonably foreseeable at signing",
+          "Not known at signing"
+        ],
+        "subquestions": [],
+        "source_question": "Definition contains knowledge requirement - answer",
+        "answers": [
+          {
+            "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
+          }
+        ]
+      },
+      {
+        "qa_id": "q04",
+        "category": "Operating and Efforts Covenant",
+        "question": "General Antitrust Efforts Standard-Answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Reasonable best efforts"
+        ],
+        "gold_labels": [
+          "2"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Commercially reasonable efforts",
+          "Flat standard",
+          "Reasonable best efforts"
+        ],
+        "subquestions": [],
+        "source_question": "General Antitrust Efforts Standard-Answer",
+        "answers": [
+          {
+            "text": "Reasonable best efforts"
+          }
+        ]
+      },
+      {
+        "qa_id": "q05",
+        "category": "Operating and Efforts Covenant",
+        "question": "Buyer consent requirement (negative interim covenant)-Answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Consent may not be unreasonably withheld, conditioned or delayed"
+        ],
+        "gold_labels": [
+          "0"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Consent may not be unreasonably withheld, conditioned or delayed",
+          "Flat consent"
+        ],
+        "subquestions": [],
+        "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
+        "answers": [
+          {
+            "text": "Consent may not be unreasonably withheld, conditioned or delayed"
+          }
+        ]
+      },
+      {
+        "qa_id": "q06",
+        "category": "Material Adverse Effect",
+        "question": "FLS (MAE) applies to",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "No"
+        ],
+        "gold_labels": [
+          "0"
+        ],
+        "is_impossible": true,
+        "answer_options": [
+          "No",
+          "ability to consummate transaction",
+          "business and operation of Target",
+          "business and operation of Target, ability to consummate transaction"
+        ],
+        "subquestions": [
+          "ability to consummate transaction"
+        ],
+        "source_question": "FLS (MAE) applies to",
+        "answers": [
+          {
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "qa_id": "q07",
+        "category": "Deal Protection and Related Provisions",
+        "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        ],
+        "gold_labels": [
+          "1"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Acquisition Proposal only",
+          "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        ],
+        "subquestions": [],
+        "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+        "answers": [
+          {
+            "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+          }
+        ]
+      },
+      {
+        "qa_id": "q08",
+        "category": "Material Adverse Effect",
+        "question": "Actions required under transaction agreement-Answer (Y/N)",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Yes"
+        ],
+        "gold_labels": [
+          "1"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "No",
+          "Yes"
+        ],
+        "subquestions": [],
+        "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+        "answers": [
+          {
+            "text": "Yes"
+          }
+        ]
+      },
+      {
+        "qa_id": "q09",
+        "category": "Operating and Efforts Covenant",
+        "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "No"
+        ],
+        "gold_labels": [
+          "0"
+        ],
+        "is_impossible": true,
+        "answer_options": [
+          "No",
+          "Yes"
+        ],
+        "subquestions": [],
+        "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+        "answers": [
+          {
+            "text": "No"
+          }
+        ]
+      },
+      {
+        "qa_id": "q10",
+        "category": "Conditions to Closing",
+        "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+        "answer_type": "multiple_choice",
+        "gold_answers": [
+          "Accurate in all respects with de minimis exception"
+        ],
+        "gold_labels": [
+          "3"
+        ],
+        "is_impossible": false,
+        "answer_options": [
+          "Accurate in all material respects",
+          "Accurate in all respects",
+          "Accurate in all respects with below-threshold carveout",
+          "Accurate in all respects with de minimis exception"
+        ],
+        "subquestions": [],
+        "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+        "answers": [
+          {
+            "text": "Accurate in all respects with de minimis exception"
+          }
+        ]
+      }
+    ],
+    "num_questions": 10,
+    "num_negatives": 2
+  },
+  "modalities": [
+    "clean",
+    "rot",
+    "confusion",
+    "missing_answer"
+  ],
+  "budgets": [
+    4000,
+    16000
+  ],
+  "positions": [
+    "target_at_start",
+    "target_at_end"
+  ],
+  "cells": [
+    {
+      "cell_id": "clean_b4000",
+      "dataset": "maud",
+      "modality": "clean",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "full",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "none",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/clean_b4000.json"
+    },
+    {
+      "cell_id": "clean_b16000",
+      "dataset": "maud",
+      "modality": "clean",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "full",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "none",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/clean_b16000.json"
+    },
+    {
+      "cell_id": "rot_b4000_target_at_start",
+      "dataset": "maud",
+      "modality": "rot",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_start",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "filler_010",
+        "filler_002",
+        "filler_012",
+        "filler_003"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "synthetic-nonlegal",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/rot_b4000_target_at_start.json"
+    },
+    {
+      "cell_id": "rot_b4000_target_at_end",
+      "dataset": "maud",
+      "modality": "rot",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_end",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "filler_006",
+        "filler_004",
+        "filler_003",
+        "filler_007"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "synthetic-nonlegal",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/rot_b4000_target_at_end.json"
+    },
+    {
+      "cell_id": "rot_b16000_target_at_start",
+      "dataset": "maud",
+      "modality": "rot",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_start",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "filler_010",
+        "filler_011",
+        "filler_002",
+        "filler_005",
+        "filler_006",
+        "filler_001",
+        "filler_003",
+        "filler_004",
+        "filler_007",
+        "filler_008",
+        "filler_009",
+        "filler_012",
+        "filler_010",
+        "filler_011",
+        "filler_002",
+        "filler_005"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "synthetic-nonlegal",
+      "filler_repeated": true,
+      "path": "data/prepared_maud/cells/rot_b16000_target_at_start.json"
+    },
+    {
+      "cell_id": "rot_b16000_target_at_end",
+      "dataset": "maud",
+      "modality": "rot",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_end",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "filler_008",
+        "filler_011",
+        "filler_007",
+        "filler_010",
+        "filler_006",
+        "filler_009",
+        "filler_001",
+        "filler_004",
+        "filler_002",
+        "filler_012",
+        "filler_005",
+        "filler_003",
+        "filler_008",
+        "filler_011",
+        "filler_007",
+        "filler_010"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "synthetic-nonlegal",
+      "filler_repeated": true,
+      "path": "data/prepared_maud/cells/rot_b16000_target_at_end.json"
+    },
+    {
+      "cell_id": "confusion_b4000_target_at_start",
+      "dataset": "maud",
+      "modality": "confusion",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_start",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_93"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/confusion_b4000_target_at_start.json"
+    },
+    {
+      "cell_id": "confusion_b4000_target_at_end",
+      "dataset": "maud",
+      "modality": "confusion",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_end",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_0"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/confusion_b4000_target_at_end.json"
+    },
+    {
+      "cell_id": "confusion_b16000_target_at_start",
+      "dataset": "maud",
+      "modality": "confusion",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_start",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_97"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/confusion_b16000_target_at_start.json"
+    },
+    {
+      "cell_id": "confusion_b16000_target_at_end",
+      "dataset": "maud",
+      "modality": "confusion",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_end",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_123"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/confusion_b16000_target_at_end.json"
+    },
+    {
+      "cell_id": "missing_answer_b4000_target_at_start",
+      "dataset": "maud",
+      "modality": "missing_answer",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_start",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_144"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/missing_answer_b4000_target_at_start.json"
+    },
+    {
+      "cell_id": "missing_answer_b4000_target_at_end",
+      "dataset": "maud",
+      "modality": "missing_answer",
+      "focus": "labels",
+      "budget_tokens": 4000,
+      "position": "target_at_end",
+      "actual_tokens": 4000,
+      "actual_chars": 16000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_144"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/missing_answer_b4000_target_at_end.json"
+    },
+    {
+      "cell_id": "missing_answer_b16000_target_at_start",
+      "dataset": "maud",
+      "modality": "missing_answer",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_start",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_125"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/missing_answer_b16000_target_at_start.json"
+    },
+    {
+      "cell_id": "missing_answer_b16000_target_at_end",
+      "dataset": "maud",
+      "modality": "missing_answer",
+      "focus": "labels",
+      "budget_tokens": 16000,
+      "position": "target_at_end",
+      "actual_tokens": 16000,
+      "actual_chars": 64000,
+      "target_document_id": "contract_90",
+      "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+      "distractor_ids": [
+        "contract_115"
+      ],
+      "target_fits": false,
+      "target_truncated": true,
+      "filler_source": "maud-other-agreements",
+      "filler_repeated": false,
+      "path": "data/prepared_maud/cells/missing_answer_b16000_target_at_end.json"
+    }
+  ]
+}

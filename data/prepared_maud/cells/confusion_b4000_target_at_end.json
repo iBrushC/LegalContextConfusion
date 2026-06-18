@@ -1,0 +1,280 @@
+{
+  "cell_id": "confusion_b4000_target_at_end",
+  "dataset": "maud",
+  "modality": "confusion",
+  "focus": "labels",
+  "budget_tokens": 4000,
+  "position": "target_at_end",
+  "actual_tokens": 4000,
+  "actual_chars": 16000,
+  "target_document_id": "contract_90",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …",
+  "distractor_ids": [
+    "contract_0"
+  ],
+  "target_fits": false,
+  "target_truncated": true,
+  "filler_source": "maud-other-agreements",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_0\" title=\"AMENDED AND RESTATED AGREEMENT AND PLAN OF MERGER BY AND AMONG CISCO SYSTEMS, INC., AMARONE ACQUISITION CORP. AND ACACIA COMMUNICATIONS, …\">\nExhibit 2.1 \n\n\nExecution Version \n\n\nAMENDED AND RESTATED \n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nBY AND AMONG \n\n\nCISCO SYSTEMS, INC., \n\n\nAMARONE ACQUISITION CORP. \n\n\nAND \n\n\nACACIA COMMUNICATIONS, INC. \n\n\nJANUARY 14, 2021\n\n\n\n\n\n\n\n\n________________\n\n\nTABLE OF CONTENTS Page Article I THE MERGER 1 \n\n\n1.1. Certain Definitions 1 \n\n\n1.2. The Merger 10 \n\n\n1.3. Closing 10 \n\n\n1.4. Effective Time 10 \n\n\n1.5. Effect of the Merger 10 \n\n\n1.6. Certificate of Incorporation; Bylaws 10 \n\n\n1.7. Directors and Officers of the Surviving Corporation 11 \n\n\n1.8. Effect on Company Capital Stock, Company Options, Company RSUs and Company PSUs 11 \n\n\n1.9. Surrender of Certificates 14 \n\n\n1.10. No Further Ownership Rights in Company Capital Stock 15 \n\n\n1.11. Lost, Stolen or Destroyed Certificates 15 \n\n\n1.12. Withholding Rights 15 \n\n\n1.13. Tax Consequences 16 \n\n\n1.14. Exchange Rate 16 \n\n\nArticle II REPRESENTATIONS AND WARRANTIES OF THE COMPANY 16 \n\n\n2.1. Organization, Standing and Power; Subsidiaries 16 \n\n\n2.2. Capital Structure 17 \n\n\n2.3. Authority; Non-contravention 19 \n\n\n2.4. SEC Filings; Financial Statements; Internal Controls 21 \n\n\n2.5. Absence of Certain Changes 23 \n\n\n2.6. Litigation 23 \n\n\n2.7. Compliance with Laws; Governmental Permits 23 \n\n\n2.8. Title to Assets; Real Property 25 \n\n\n2.9. Intellectual Property 25 \n\n\n2.10. Environmental Matters 31 \n\n\n2.11. Taxes 32 \n\n\n2.12. Employee Benefit Plans and Employee Matters 35 \n\n\n2.13. Interested Party Transactions 39 \n\n\n2.14. Insurance 39 \n\n\n2.15. Brokers’ and Advisors’ Fees 40 \n\n\n2.16. Customers and Suppliers 40 i\n\n\n\n\n\n\n\n\n________________\n\n\n2.17. Material Contracts 40 \n\n\n2.18. Export Control Laws, Import Control Laws and Sanctions 44 \n\n\n2.19. Fairness Opinion 45 \n\n\n2.20. Information Supplied 45 \n\n\nArticle III REPRESENTATIONS AND WARRANTIES OF PARENT AND SUB 46 \n\n\n3.1. Organization, Standing and Power 46 \n\n\n3.2. Authority; Non-contravention 46 \n\n\n3.3. No Prior Sub Operations 47 \n\n\n3.4. Stock Ownership 47 \n\n\n3.5. Information Supplied 47 \n\n\n3.6. Availability of Funds 47 \n\n\n3.7. Absence of Litigation 47 \n\n\n3.8. Brokers 47 \n\n\n3.9. No Additional Representations 47 \n\n\nArticle IV CONDUCT PRIOR TO THE EFFECTIVE TIME 48 \n\n\n4.1. Conduct of Business of the Company and the Subsidiaries 48 \n\n\n4.2. Restrictions on Conduct of Business of the Company and Subsidiaries 49 \n\n\nArticle V ADDITIONAL AGREEMENTS 53 \n\n\n5.1. Proxy Statement 53 \n\n\n5.2. Company Stockholder Meeting; Board Recommendation 54 \n\n\n5.3. No Solicitation; Acquisition Proposals 55 \n\n\n5.4. Access to Information 60 \n\n\n5.5. Confidentiality; Public Disclosure 60 \n\n\n5.6. Regulatory Approvals 61 \n\n\n5.7. Reasonable Best Efforts 63 \n\n\n5.8. Third-Party Consents; Consultations 63 \n\n\n5.9. Notice of Certain Matters 63 \n\n\n5.10. Employees and Contractors 63 \n\n\n5.11. Equity Matters 65 \n\n\n5.12. Termination of Benefit Plans 65 \n\n\n5.13. D&O Indemnification 65 \n\n\n5.14. Section 16 Matters 67 \n\n\n5.15. Takeover Statute 67 \n\n\n5.16. Certain Tax Certificates and Documents 67 \n\n\n5.17. Director and Officer Resignations 67 ii\n\n\n\n\n\n\n\n\n________________\n\n\n5.18. Stock Exchange Delisting; Deregistration 68 \n\n\n5.19. Stockholder and Material Litigation 68 \n\n\n5.20. Amendment to Supply Agreement 68 \n\n\nArticle VI CONDITIONS TO THE MERGER 68 \n\n\n6.1. Conditions to Obligations of Each Party to Effect the Merger 68 \n\n\n6.2. Additional Conditions to Obligations of the Company 69 \n\n\n6.3. Additional Conditions to the Obligations of Parent and Sub 69 \n\n\nArticle VII TERMINATION, AMENDMENT AND WAIVER 70 \n\n\n7.1. Termination 70 \n\n\n7.2. Effect of Termination 72 \n\n\n7.3. Expenses and Termination Fees 72 \n\n\n7.4. Amendment 73 \n\n\n7.5. Extension; Waiver 73 \n\n\nArticle VIII GENERAL PROVISIONS 74 \n\n\n8.1. Non-Survival of Representations and Warranties 74 \n\n\n8.2. Notices 74 \n\n\n8.3. Interpretation 75 \n\n\n8.4. Counterparts 76 \n\n\n8.5. Entire Agreement; Parties in Interest 76 \n\n\n8.6. Assignment 76 \n\n\n8.7. Severability 76 \n\n\n8.8. Remedies Cumulative; Specific Performance 76 \n\n\n8.9. Governing Law 77 \n\n\n8.10. Rules of Construction 77 \n\n\n8.11. WAIVER OF JURY TRIAL 77 \n\n\n8.12. Original Agreement 77 iii\n\n\n\n\n\n\n\n\n________________\n\n\nEXHIBITS Exhibit A - Form of Voting Agreement and Irrevocable Proxy \n\n\nExhibit B - Form of Certificate of Merger \n\n\nExhibit C - Form of Bylaws \n\n\niv\n\n\n\n\n\n\n\n\n________________\n\n\nAMENDED AND RESTATED AGREEMENT AND PLAN OF MERGER \n\n\nThis AMENDED AND RESTATED AGREEMENT AND PLAN OF MERGER (this “Agreement”) is made and entered into as of January 14, 2021 (the “Agreement Date”), by and among Cisco Systems, Inc., a California corporation (“Parent”), Amarone Acquisition Corp., a Delaware corporation and wholly-owned subsidiary of Parent (“Sub”), and Acacia Communications, Inc., a Delaware corporation (the “Company”). \n\n\nRECITALS \n\n\nA. Parent, Sub and the Company are parties to that certain Agreement and Plan of Merger (the “Original Agreement”), dated as of July 8, 2019 (the “Original Agreement Date”), pursuant to which Sub would merge with and into the Company (the “Merger”), with the Company to survive the Merger and to become a wholly-owned subsidiary of Parent, on the terms and subject to the conditions set forth in the Original Agreement. \n\n\nB. Pursuant to Section 7.4 of the Original Agreement, Parent, Sub and the Company now desire to amend and restate the Original Agreement in its entirety on the terms and subject to the conditions set forth in this Agreement. \n\n\nC. The board of directors of the Company (the “Company Board”) and the boards of directors of Parent and Sub (or duly authorized committees thereof) have determined that it would be advisable to, and in the best interests of, their respective companies and the stockholders of their respective companies to consummate the Merger, on the terms and subject to the conditions set forth in this Agreement, and, in furtherance thereof, have approved and declared advisable this Agreement and the Merger and the other transactions contemplated by this Agreement (collectively, the “Transactions”). \n\n\nD. Parent, Sub and the Company desire to set forth certain representations, warranties, covenants and other agreements in connection with the Merger as set forth herein. \n\n\nE. Concurrently with the execution of this Agreement and as a material inducement to the willingness of Parent to enter into this Agreement, certain of the Company’s stockholders are entering into voting agreements and irrevocable proxies in substantially the form attached hereto as Exhibit A (each, a “Voting Agreement”), pursuant to which such stockholders have, among other matters, agreed to vote their shares of Company Common Stock in favor of, and otherwise support, the Merger and the other Transactions, each on the terms and subject to the conditions set forth in the Voting Agreement. \n\n\nNOW, THEREFORE, in consideration of the representations, warranties, covenants and other agreements contained herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties hereto hereby agree as follows: \n\n\nARTICLE I \n\n\nTHE MERGER \n\n\n1.1. Certain Definitions. \n\n\n(a) As used in this Agreement, the following terms shall have the meanings indicated below. 1\n\n\n\n\n\n\n\n\n________________\n\n\n“Acceptable Confidentiality Agreement” means a customary confidentiality agreement (i) that contains provisions that are no less favorable in any material respect to the Company than those contained in the Confidentiality Agreement; provided that an Acceptable Confidentiality Agreement need not contain any “standstill” or similar covenant, and (ii) that does not include any provision for any exclusive right to negotiate with such Person or having the actual or purported effect of restricting the Company from fulfilling its obligations under this Agreement, including under Section 5.3. \n\n\n“Affiliate” has the meanin\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_90\" title=\"AGREEMENT AND PLAN OF MERGER by and among: ANALOG DEVICES, INC., a Massachusetts corporation; MAGNETO CORP., a Delaware corporation; and …\">\nExhibit 2.1 \n\n\nExecution Version     \n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nby and among: \n\n\nANALOG DEVICES, INC., a Massachusetts corporation; \n\n\nMAGNETO CORP., a Delaware corporation; \n\n\nand \n\n\nMAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation    Dated as of July 12, 2020       \n\n\n\n\n\n\n\n\n________________\n\n\nSECTION 1  THE MERGER    1 1.1    The Merger    1 1.2    Closing    2 1.3    Certificate of Incorporation and Bylaws    2 1.4    Directors and Officers of the Surviving Corporation    2 1.5    Conversion of Securities    3 1.6    Certain Adjustments    3 1.7    Options; Stock Based Awards    3 1.8    No Fractional Shares    4 1.9    Closing of Transfer Books    5 1.10  Exchange of Certificates and Cancellation of Book-Entry Positions    5 1.11  Further Action    7 1.12  Tax Withholding    7 1.13  Tax Treatment    8 SECTION 2  REPRESENTATIONS AND WARRANTIES OF THE COMPANY    8 2.1    Due Organization and Good Standing; Subsidiaries    8 2.2    Organizational Documents    9 2.3    Capitalization    9 2.4    Reports; Financial Statements; Internal Controls    10 2.5    Absence of Certain Changes    12 2.6    Intellectual Property and Related Matters    12 2.7    Title to Assets; Real Property    14 2.8    Contracts    15 2.9    Compliance with Legal Requirements    17 2.10  Legal Proceedings; Investigations; Orders    18 2.11  Certain Business Practices    19 2.12  Tax Matters    19 2.13  Employee Benefit Plans    21 2.14  Labor Matters    22 2.15  Environmental Matters    22 2.16  Insurance    23 2.17  Authority; Binding Nature of Agreement    23 2.18  Vote Required    24   i\n\n\n\n\n\n\n\n\n________________\n\n\n2.19  Non-Contravention; Consents    24 2.20  Takeover Statutes    24 2.21  Ownership of Parent Common Stock    25 2.22  Opinion of Financial Advisor    25 2.23  Brokers    25 2.24  Information Supplied    25 SECTION 3  REPRESENTATIONS AND WARRANTIES OF PARENT AND ACQUISITION SUB    25 3.1    Due Organization and Good Standing; Subsidiaries    25 3.2    Organizational Documents    26 3.3    Capitalization    26 3.4    Reports; Financial Statements; Internal Controls    27 3.5    Absence of Certain Changes    29 3.6    Contracts    29 3.7    Compliance with Legal Requirements    29 3.8    Legal Proceedings; Investigations; Orders    31 3.9    Certain Business Practices    31 3.10  Tax Matters    31 3.11  Authority; Binding Nature of Agreement    31 3.12  Vote Required    32 3.13  Non-Contravention; Consents    33 3.14  Takeover Statutes    33 3.15  Ownership of Company Common Stock    33 3.16  Opinion of Financial Advisors    33 3.17  Brokers    33 3.18  Information Supplied    33 3.19  Acquisition Sub    34 SECTION 4  COVENANTS    34 4.1  Interim Operations    34 4.2  Company No Solicitation    39 4.3  Parent No Solicitation    40 4.4  Registration Statement; Joint Proxy Statement/Prospectus    42 4.5  Meeting of the Company’s Stockholders; Company Change in Recommendation    43   ii\n\n\n\n\n\n\n\n\n________________\n\n\n4.6    Meeting of Parent’s Shareholders; Parent Change in Recommendation    46 4.7    Filings; Other Action    49 4.8    Access    52 4.9    Interim Operations of Acquisition Sub    53 4.10  Publicity    54 4.11  Company ESPP; Other Employee Benefits    54 4.12  Certain Tax Matters    56 4.13  Indemnification; Directors’ and Officers’ Insurance    57 4.14  Stockholder Litigation    58 4.15  Obligations of Acquisition Sub    59 4.16  Stock Exchange Listing and Delisting    59 4.17  Section 16 Matters    59 4.18  Parent Vote    59 4.19  Director Resignations    59 4.20  Takeover Statutes    59 SECTION 5  CONDITIONS TO EACH PARTY’S OBLIGATION TO EFFECT THE MERGER    59 5.1  Conditions Precedent to Each Party’s Obligations    59 5.2  Additional Conditions Precedent to Parent’s Obligations    60 5.3  Additional Conditions Precedent to the Company’s Obligations    61 SECTION 6  TERMINATION    62 6.1  Termination    62 6.2  Effect of Termination    63 6.3  Termination Fees    64 SECTION 7  MISCELLANEOUS PROVISIONS    66 7.1  Amendment    66 7.2  Waiver    66 7.3  No Survival of Representations and Warranties    66 7.4  Entire Agreement; Non-Reliance; Third-Party Beneficiaries    66 7.5  Applicable Law; Jurisdiction    68 7.6  Payment of Expenses    68 7.7  Assignability; Parties in Interest    68 7.8  Notices    68   iii\n\n\n\n\n\n\n\n\n________________\n\n\n7.9    Severability    69 7.10  Counterparts    70 7.11  Obligations of the Surviving Corporation    70 7.12  Specific Performance    70 7.13  Disclosure Schedules    70 7.14  Construction    71   Exhibits    \n\n\nExhibit A   Certain Definitions     iv\n\n\n\n\n\n\n\n\n________________\n\n\nAGREEMENT AND PLAN OF MERGER \n\n\nTHIS AGREEMENT AND PLAN OF MERGER (this “Agreement”) is made and entered into as of July 12, 2020, by and among: ANALOG DEVICES, INC., a Massachusetts corporation (“Parent”); MAGNETO CORP., a Delaware corporation and a wholly owned subsidiary of Parent (“Acquisition Sub”); and MAXIM INTEGRATED PRODUCTS, INC., a Delaware corporation (the “Company”). Certain capitalized terms used in this Agreement are defined in Exhibit A. \n\n\nRECITALS \n\n\nA.    The parties intend that Acquisition Sub be merged with and into the Company (the “Merger”) in accordance with this Agreement and the General Corporation Law of the State of Delaware (the “DGCL”). Upon consummation of the Merger, Acquisition Sub will cease to exist and the Company will continue as the Surviving Corporation and a wholly owned Subsidiary of Parent. \n\n\nB.    The Company Board has unanimously: (i) determined that the Merger is fair to and in the best interests of the Company and its stockholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that the Company’s stockholders adopt this Agreement. \n\n\nC.    The Parent Board has unanimously: (i) determined that the terms of this Agreement and the Merger are fair to, and in the best interests of, Parent and its shareholders; (ii) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger, on the terms and subject to the conditions set forth in this Agreement; and (iii) recommended that Parent’s shareholders approve the issuance of shares of Parent Common Stock in connection with the Merger on the terms and subject to the conditions set forth in this Agreement. \n\n\nD.    The board of directors of Acquisition Sub has: (i) determined that it is in the best interests of its sole stockholder for Acquisition Sub to enter into this Agreement; (ii) approved and declared advisable this Agreement and the transactions contemplated hereby, including the Merger; and (iii) recommended that its sole stockholder adopt this Agreement. \n\n\nE.    It is intended that, for U.S. federal income Tax purposes, the Merger will qualify as a “reorganization” within the meaning of Section 368(a) of the Code and that this Agreement be, and is hereby adopted as, a “plan of reorganization” for purposes of Sections 354 and 361 of the Code. \n\n\nAGREEMENT \n\n\nThe parties to this Agreement, in consideration of the representations, warranties, covenants and agreements set forth herein and for other good and valuable consideration, the receipt and adequacy of which are hereby acknowledged, and intending to be legally bound, agree as follows: \n\n\nSECTION 1    THE MERGER 1.1    The Merger. At the Effective Time, Acquisition Sub shall be merged with and into the Company in accordance with the DGCL and upon the terms and subject to the conditions set forth in this Agreement, whereupon the separate existence of Acquisition Sub shall cease and the Company shall be the surviving corporation (the “Surviving Corporation”) in the Merger and a \n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period, Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement), Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period, Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period, Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Operating and Efforts Covenant",
+      "question": "General Antitrust Efforts Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat standard",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "General Antitrust Efforts Standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Operating and Efforts Covenant",
+      "question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Consent may not be unreasonably withheld, conditioned or delayed"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "subquestions": [],
+      "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": true,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target",
+        "business and operation of Target, ability to consummate transaction"
+      ],
+      "subquestions": [
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects with de minimis exception"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Accurate in all respects with de minimis exception"
+        }
+      ]
+    }
+  ]
+}

@@ -63,7 +63,7 @@ DEFAULT_OUT = Path("data/results")
 # list on 2026-06-17. Override any of them via --models-config.
 MODEL_REGISTRY = {
     "claude":   "anthropic/claude-opus-4.8",                  # Opus 4.8
-    "chatgpt":  "openai/gpt-5.4-pro",                         # GPT 5.4 Pro
+    "chatgpt":  "openai/gpt-5.4",                           # GPT 5.4 Pro
     "gemini":   "google/gemini-3.1-pro-preview",             # Gemini 3.1 Pro
     "deepseek": "deepseek/deepseek-v4-pro",                   # DeepSeek 4 Pro
     "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # Nemotron 3 Ultra

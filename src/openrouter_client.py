@@ -70,8 +70,9 @@ def call_openrouter(slug: str, messages: list[dict], api_key: str,
             return {"content": None, "usage": {},
                     "latency_s": round(time.monotonic() - t0, 3), "error": err}
         except (urllib.error.URLError, TimeoutError, OSError,
-                http.client.HTTPException) as e:
-            # transient network / truncated-read errors (incl. IncompleteRead) — retry
+                http.client.HTTPException, json.JSONDecodeError) as e:
+            # transient network / truncated-read / malformed-response-body errors
+            # (incl. IncompleteRead and a half-streamed JSON envelope) — retry
             if attempt < retries:
                 time.sleep(2 ** attempt)
                 continue

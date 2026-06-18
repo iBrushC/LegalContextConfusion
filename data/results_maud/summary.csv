@@ -1,0 +1,15 @@
+model,model_slug,cell_id,modality,focus,budget_tokens,position,runs,ok_runs,span_f1_mean,span_f1_std,exact_match_mean,exact_match_std,abstention_rate_mean,abstention_rate_std,hallucination_rate_mean,hallucination_rate_std,wrong_doc_rate_mean,wrong_doc_rate_std,answered_positive_rate_mean,answered_positive_rate_std,latency_mean,prompt_tokens_mean,cost_mean
+claude,anthropic/claude-opus-4.8,clean_b16000,clean,labels,16000,full,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,clean_b4000,clean,labels,4000,full,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,confusion_b16000_target_at_end,confusion,labels,16000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,confusion_b16000_target_at_start,confusion,labels,16000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,confusion_b4000_target_at_end,confusion,labels,4000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,confusion_b4000_target_at_start,confusion,labels,4000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,missing_answer_b16000_target_at_end,missing_answer,labels,16000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,missing_answer_b16000_target_at_start,missing_answer,labels,16000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,missing_answer_b4000_target_at_end,missing_answer,labels,4000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,missing_answer_b4000_target_at_start,missing_answer,labels,4000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,rot_b16000_target_at_end,rot,labels,16000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,rot_b16000_target_at_start,rot,labels,16000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,16000,0.0
+claude,anthropic/claude-opus-4.8,rot_b4000_target_at_end,rot,labels,4000,target_at_end,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
+claude,anthropic/claude-opus-4.8,rot_b4000_target_at_start,rot,labels,4000,target_at_start,1,1,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,4000,0.0
