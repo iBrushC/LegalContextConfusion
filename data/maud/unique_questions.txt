@@ -1,0 +1,451 @@
+# Unique MAUD questions as shown to the model
+# source: data\maud\MAUD_dev.csv  (data_type=main)
+# 82 questions shown, 10 dropped (< 2 options)
+
+========================================================================
+QUESTIONS (exact model-facing format; category not shown)
+========================================================================
+
+q01 | [CHOOSE ONE] Type of Consideration-Answer
+  (A) All Cash
+  (B) All Stock
+  (C) Mixed Cash/Stock
+  (D) Mixed Cash/Stock: Election
+
+q02 | [CHOOSE ONE] Accuracy of Target "General" R&W: Bringdown Timing Answer
+  (A) At Closing Only
+  (B) At Signing & At Closing
+
+q03 | [CHOOSE ONE] Accuracy of Target "General" R&W: Bringdown Standard Answer
+  (A) All/The R&Ws accurate at MAE standard
+  (B) All/The R&Ws accurate in all respects (repeating R&Ws)
+  (C) Each R&W accurate at MAE standard
+  (D) R&Ws accurate at another materiality standard (e.g., hybrid standard)
+
+q04 | [CHOOSE ONE] Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer
+  (A) Accurate in all material respects
+  (B) Accurate in all respects
+  (C) Accurate in all respects with below-threshold carveout
+  (D) Accurate in all respects with de minimis exception
+
+q05 | [CHOOSE ONE] Accuracy of Fundamental Target R&Ws: Bringdown Standard
+  (A) Accurate at another materiality standard (e.g., hybrid standard)
+  (B) Accurate in all material respects
+  (C) Accurate in all respects
+
+q06 | [SELECT ALL THAT APPLY] Accuracy of Fundamental Target R&Ws-Types of R&Ws
+  (A) Approval
+  (B) Authority
+  (C) Brokers' Fee
+  (D) Capitalization-Other
+  (E) Enforceability
+  (F) No MAE
+  (G) No-Conflict
+  (H) Opinion of Financial Advisor
+  (I) Organization
+  (J) Other
+  (K) Rights Agreement
+  (L) Subsidiaries
+  (M) Takeover Statutes
+  (N) Tax
+
+q07 | [SELECT ALL THAT APPLY] Materiality/MAE Scrape applies to
+  (A) Capitalization R&Ws
+  (B) General R&Ws
+  (C) Specified R&Ws only
+  (D) fundamental/Special R&Ws
+
+q08 | [CHOOSE ONE] Compliance with Target Covenant Closing Condition-Answer
+  (A) All Covenants
+  (B) Each Covenant
+
+q09 | [CHOOSE ONE] MAE definition includes adverse impact on Target's ability to consummate (Y/N)
+  (A) No
+  (B) Yes
+
+q10 | [CHOOSE ONE] "Ability to consummate" concept is subject to MAE carveouts
+  (A) No
+  (B) Yes
+
+q11 | [CHOOSE ONE] MAE Forward looking standard (Y/N)
+  (A) No
+  (B) Yes
+
+q12 | [SELECT ALL THAT APPLY] FLS (MAE) applies to
+  (A) No
+  (B) ability to consummate transaction
+  (C) business and operation of Target
+
+q13 | [CHOOSE ONE] FLS (MAE) Standard-Answer
+  (A) "Could" (reasonably) be expected to
+  (B) "Would"
+  (C) "Would" (reasonably) be expected to
+  (D) No
+  (E) Other forward-looking standard
+
+q14 | [CHOOSE ONE] MAE applies to Target and subsidiaries (MAE)-Answer
+  (A) Applies to Target and subsidiaries "taken as a whole"
+  (B) No
+
+q15 | [CHOOSE ONE] General political and/or social conditions (Y/N)
+  (A) No
+  (B) Yes
+
+q16 | [CHOOSE ONE] General political and/or social conditions:  subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q17 | [CHOOSE ONE] General economic and financial conditions (Y/N)
+  (A) No
+  (B) Yes
+
+q18 | [CHOOSE ONE] General economic and financial conditions: subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q19 | [CHOOSE ONE] Change in Target's industry: subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q20 | [CHOOSE ONE] Change in law:  subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q21 | [CHOOSE ONE] Changes in GAAP or other accounting principles (Y/N)
+  (A) No
+  (B) Yes
+
+q22 | [CHOOSE ONE] Changes in GAAP or other accounting principles:  subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q23 | [CHOOSE ONE] Announcement, pendency or consummation of deal (Y/N)
+  (A) No
+  (B) Yes
+
+q24 | [SELECT ALL THAT APPLY] A/P/C application to-Answer
+  (A) No
+  (B) announcement
+  (C) consummation
+  (D) pendency
+
+q25 | [CHOOSE ONE] Failure to meet projections (Y/N)
+  (A) No
+  (B) Yes
+
+q26 | [CHOOSE ONE] Failure to meet projections: subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q27 | [CHOOSE ONE] Changes in market price/trading volume of Target's securities or credit rating (Y/N)
+  (A) No
+  (B) Yes
+
+q28 | [CHOOSE ONE] Target's securities or credit rating: subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q29 | [SELECT ALL THAT APPLY] W/N/A/F applies to-Answer
+  (A) "act of God"
+  (B) Natural disaster
+  (C) No
+  (D) War or terrorism
+  (E) force majeure
+
+q30 | [SELECT ALL THAT APPLY] W/N/A/F subject to "disproportionate impact"-Answer
+  (A) "act of God"
+  (B) Natural disaster
+  (C) No
+  (D) War or terrorism
+  (E) force majeure
+
+q31 | [CHOOSE ONE] Pandemic or other public health event-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q32 | [CHOOSE ONE] Pandemic or other public health event: Specific reference to COVID-19
+  (A) No
+  (B) Yes
+
+q33 | [CHOOSE ONE] Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures
+  (A) No
+  (B) Yes
+
+q34 | [CHOOSE ONE] Pandemic or other public health event:  subject to "disproportionate impact" modifier
+  (A) No
+  (B) Yes
+
+q35 | [CHOOSE ONE] Actions required under transaction agreement-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q36 | [CHOOSE ONE] Actions taken with consent or approval of Buyer-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q37 | [CHOOSE ONE] Target stockholder proceedings-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q38 | [CHOOSE ONE] Matters listed on disclosure schedules-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q39 | [CHOOSE ONE] Actions taken by Buyer-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q40 | [CHOOSE ONE] Action prohibited/omission required by the agreement-Answer
+  (A) No
+  (B) Yes
+
+q41 | [CHOOSE ONE] Relational language (MAE carveout)-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q42 | [SELECT ALL THAT APPLY] Relational language (MAE carveout)-Answer (Dropdown)
+  (A) "Arising from/out of"
+  (B) "Attributable to"
+  (C) "Relating to"
+  (D) "Resulting from"
+  (E) No
+  (F) Other
+  (G) Relational language varies among carveouts
+
+q43 | [CHOOSE ONE] Relational language (MAE) applies to
+  (A) All MAE carveouts
+  (B) No
+  (C) Some MAE carveouts
+
+q44 | [CHOOSE ONE] Knowledge Definition-Answer
+  (A) Actual knowledge
+  (B) Constructive knowledge
+
+q45 | [CHOOSE ONE] Constructive Knowledge-Answer
+  (A) Based on investigation or inquiry
+  (B) Based on role
+
+q46 | [CHOOSE ONE] Knowledge Definition limited to one or more identified persons-Answer (Y/
+  (A) No
+  (B) Yes
+
+q47 | [CHOOSE ONE] Liability for breaches of no-shop by Target Representatives (Y/N)
+  (A) No
+  (B) Yes
+
+q48 | [CHOOSE ONE] Liability standard for no-shop breach by Target Non-D&O Representatives
+  (A) Reasonable standard
+  (B) Strict liability
+
+q49 | [CHOOSE ONE] Fiduciary exception:  Board determination standard-Answer (no-shop)
+  (A) "Inconsistent" with fiduciary duties
+  (B) "Reasonably likely/expected breach" of fiduciary duties
+  (C) "Reasonably likely/expected to be inconsistent" with fiduciary duties
+  (D) "Reasonably likely/expected violation" of fiduciary duties
+  (E) None
+  (F) Other specified standard
+
+q50 | [CHOOSE ONE] Fiduciary exception: Board determination trigger (no shop)-Answer
+  (A) Acquisition Proposal only
+  (B) Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer
+
+q51 | [CHOOSE ONE] COR permitted with board fiduciary determination only
+  (A) No
+  (B) Yes
+
+q52 | [CHOOSE ONE] COR standard (board determination only)-answer
+  (A) "Reasonably likely/expected to be inconsistent" with fiduciary duties
+  (B) More likely than not violate fiduciary duties
+  (C) Other specified standard
+
+q53 | [CHOOSE ONE] COR standard (superior offer)
+  (A) "Inconsistent" with fiduciary duties
+  (B) "Reasonably likely/expected breach" of fiduciary duties
+  (C) "Reasonably likely/expected to be inconsistent" with fiduciary duties
+  (D) "Reasonably likely/expected violation" of fiduciary duties
+  (E) More likely than not violate fiduciary duties
+  (F) None
+  (G) Other specified standard
+
+q54 | [CHOOSE ONE] COR permitted in response to Intervening Event
+  (A) No
+  (B) Yes
+
+q55 | [CHOOSE ONE] COR standard (intervening event)
+  (A) "Inconsistent" with fiduciary duties
+  (B) "Reasonably likely/expected breach" of fiduciary duties
+  (C) "Reasonably likely/expected to be inconsistent" with fiduciary duties
+  (D) "Reasonably likely/expected violation" of fiduciary duties
+  (E) More likely than not violate fiduciary duties
+  (F) Other specified standard
+
+q56 | [CHOOSE ONE] Initial matching rights period (COR)-Answer
+  (A) 3 business days
+  (B) 4 business days
+  (C) 4 calendar days
+  (D) 5 business days
+
+q57 | [CHOOSE ONE] Additional matching rights period for modifications (COR)-Answer
+  (A) 2 business days or less
+  (B) 3 business days
+  (C) 3 days
+  (D) 4 business days
+  (E) None
+
+q58 | [CHOOSE ONE] Number of additional matching rights periods for modifications (COR)
+  (A) Continuous matching right
+  (B) None
+
+q59 | [CHOOSE ONE] Definition includes stock deals-Answer
+  (A) "All or substantially all"
+  (B) 50%
+  (C) Greater than 50% but not "all or substantially all"
+  (D) Less than 50%
+
+q60 | [CHOOSE ONE] Definition includes asset deals-Answer
+  (A) "All or substantially all"
+  (B) 50%
+  (C) Greater than 50% but not "all or substantially all"
+  (D) Less than 50%
+
+q61 | [CHOOSE ONE] "Financial point of view" is the sole consideration
+  (A) No
+  (B) Yes
+
+q62 | [CHOOSE ONE] Definition contains knowledge requirement - answer
+  (A) Known, but consequences unknown or not reasonably foreseeable, at signing
+  (B) Known, but consequences unknown, at signing
+  (C) Not known and not reasonably foreseeable at signing
+  (D) Not known at signing
+
+q63 | [CHOOSE ONE] Intervening Event - Required to Occur After Signing - answer
+  (A) May occur or arise prior to signing
+  (B) Must occur or arise after signing
+
+q64 | [CHOOSE ONE] Definition contains a materiality standard (Y/N)
+  (A) No
+  (B) Yes
+
+q65 | [SELECT ALL THAT APPLY] Limitations on FTR Exercise-Answer
+  (A) (Material) breach of other provisions of agreement
+  (B) Any breach of no-shop
+  (C) Breach of no-shop resulting in a Superior Offer
+  (D) Material breach of no-shop
+  (E) Material breach of no-shop resulting in a Superior Offer
+  (F) Other
+
+q66 | [CHOOSE ONE] Initial matching rights period (FTR)-Answer
+  (A) 3 business days
+  (B) 4 business days
+  (C) 4 calendar days
+  (D) 5 business days
+
+q67 | [CHOOSE ONE] Additional matching rights period for modifications (FTR)-Answer
+  (A) 2 business days or less
+  (B) 3 business days
+
+q68 | [CHOOSE ONE] Number of additional matching rights periods for modifications (FTR)
+  (A) Continuous matching right
+  (B) None
+
+q69 | [SELECT ALL THAT APPLY] Acquisition Proposal Timing-Answer
+  (A) Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)
+  (B) Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period
+  (C) Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)
+  (D) Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period
+  (E) Different Acquisition Proposal must close during Tail Period
+  (F) Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period
+  (G) Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)
+  (H) Same Acquisition Proposal - Must close during Tail Period
+  (I) Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)
+  (J) Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period
+
+q70 | [CHOOSE ONE] Acquisition Proposal required to be publicly disclosed-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q71 | [SELECT ALL THAT APPLY] Acquisition Proposal required to be publicly disclosed-Answer
+  (A) No
+  (B) “Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger
+  (C) “Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger
+  (D) “Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger
+
+q72 | [CHOOSE ONE] Acquisition Proposal required to be still pending-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q73 | [CHOOSE ONE] Tail Period Length-Answer
+  (A) within 12 months
+  (B) within 9 months
+
+q74 | [CHOOSE ONE] Buyer consent requirement (ordinary course)-Answer
+  (A) Consent may not be unreasonably withheld, conditioned or delayed
+  (B) Flat consent
+
+q75 | [CHOOSE ONE] Includes "consistent with past practice"
+  (A) No
+  (B) Yes
+
+q76 | [CHOOSE ONE] Ordinary course efforts standard-Answer
+  (A) Commercially reasonable efforts
+  (B) Flat covenant (no efforts standard)
+  (C) Reasonable best efforts
+
+q77 | [CHOOSE ONE] Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q78 | [CHOOSE ONE] Buyer consent requirement (negative interim covenant)-Answer
+  (A) Consent may not be unreasonably withheld, conditioned or delayed
+  (B) Flat consent
+
+q79 | [CHOOSE ONE] Application of Buyer consent requirement (negative interim covenant)-Answer
+  (A) Applies only to specified negative covenants
+  (B) Applies to all negative covenants
+
+q80 | [CHOOSE ONE] Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)
+  (A) No
+  (B) Yes
+
+q81 | [CHOOSE ONE] General Antitrust Efforts Standard-Answer
+  (A) Commercially reasonable efforts
+  (B) Flat standard
+  (C) Reasonable best efforts
+
+q82 | [CHOOSE ONE] Specific Performance-Answer
+  (A) "entitled to seek" specific performance
+  (B) "entitled to" specific performance
+
+========================================================================
+DROPPED — 10 question(s) with fewer than 2 options
+========================================================================
+- [multiple_choice] category="Conditions to Closing"
+    Absence of Litigation Closing Condition: Governmental v. Non-Governmental-Answer
+    only option(s): Governmental litigation only
+- [multiple_choice] category="Conditions to Closing"
+    Absence of Litigation Closing Condition: Pending v. Threatened v. Threatened in Writing-Answer
+    only option(s): Pending
+- [multiple_choice] category="Material Adverse Effect"
+    MAE definition includes reference to Target "prospects" (Y/N)
+    only option(s): No
+- [multiple_choice] category="Material Adverse Effect"
+    Changes in Target's industry (Y/N)
+    only option(s): Yes
+- [multiple_choice] category="Material Adverse Effect"
+    Change in law (Y/N)
+    only option(s): Yes
+- [multiple_choice] category="Material Adverse Effect"
+    War, terrorism, natural disasters, "acts of God" or force majeure-Answer (Y/N)
+    only option(s): Yes
+- [multiple_choice] category="Deal Protection and Related Provisions"
+    Knowledge persons include Target management (intervening event)
+    only option(s): No
+- [multiple_choice] category="Deal Protection and Related Provisions"
+    FTR Triggers-Answer
+    only option(s): Superior Offer
+- [multiple_choice] category="Deal Protection and Related Provisions"
+    Breach of No Shop required to be willful, material and/or intentional
+    only option(s): Yes
+- [multiple_choice] category="Deal Protection and Related Provisions"
+    Breach of Meeting Covenant required to be willful, material and/or intentional
+    only option(s): Yes

@@ -163,27 +163,31 @@ SYSTEM_PROMPT = (
 )
 
 
-# MAUD is multiple choice, not extractive QA: the model is shown a fixed,
-# lettered option set per question and must pick the single option that is
-# correct for the TARGET agreement, returning its letter. (MAUD cells from
-# build_context.py carry focus="labels"; CUAD cells use SYSTEM_PROMPT.)
+# MAUD is closed-set, not extractive QA: the model is shown a fixed, lettered
+# option set per question and returns option LETTER(s). Most questions are
+# [CHOOSE ONE]; a handful are [SELECT ALL THAT APPLY] (originally comma-combined
+# "dropdown" answers, now atomic) where every applicable option must be returned.
+# Both kinds are marked inline per question. (MAUD cells from build_context.py
+# carry focus="labels"; CUAD cells use SYSTEM_PROMPT.)
 MC_SYSTEM_PROMPT = (
-    "You are a precise legal contract analyst answering MULTIPLE-CHOICE "
-    "questions about merger agreements. You are given one or more documents, "
-    "each wrapped in <DOCUMENT id=\"...\"> tags. Exactly ONE of them is the "
-    "TARGET agreement; its id is named in the user message. Each question lists "
-    "a fixed set of answer options labelled (A), (B), (C), … "
-    "For each qa_id, decide which SINGLE option is correct for the TARGET "
-    "agreement and return that option's LETTER. Base your answer ONLY on the "
-    "TARGET agreement; ignore every other document in the window.\n\n"
+    "You are a precise legal contract analyst answering closed-set questions "
+    "about merger agreements. You are given one or more documents, each wrapped "
+    "in <DOCUMENT id=\"...\"> tags. Exactly ONE of them is the TARGET agreement; "
+    "its id is named in the user message. Each question lists a fixed set of "
+    "answer options labelled (A), (B), (C), … and is marked either [CHOOSE ONE] "
+    "or [SELECT ALL THAT APPLY]. Base every answer ONLY on the TARGET agreement; "
+    "ignore every other document in the window.\n\n"
     "Respond with ONLY a JSON object of this exact shape:\n"
     "{\"results\": [{\"qa_id\": str, \"answer\": str, "
     "\"document_id\": str|null}]}\n"
     "- Include every qa_id you were given, exactly as written.\n"
-    "- answer MUST be exactly one option letter (e.g. \"A\"); do not paraphrase "
-    "the option text.\n"
-    "- Choose exactly one option per question — pick the best option even if "
-    "you are uncertain; never leave it blank.\n"
+    "- For a [CHOOSE ONE] question, answer is exactly ONE option letter (e.g. "
+    "\"A\").\n"
+    "- For a [SELECT ALL THAT APPLY] question, answer is the letters of EVERY "
+    "option that applies, comma-separated (e.g. \"A, C, D\") — include every one "
+    "that applies and at least one.\n"
+    "- Do not paraphrase the option text; return letters only. Pick the best "
+    "option(s) even if you are uncertain; never leave an answer blank.\n"
     "- document_id must be the id of the TARGET <DOCUMENT> your answer is "
     "based on."
 )
@@ -196,8 +200,9 @@ def is_mc_cell(cell: dict) -> bool:
 
 def _span_user(cell: dict, questions: list[dict]) -> str:
     target = cell["target_document_id"]
-    lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}'
-             for q in questions]
+    # Category is deliberately NOT shown — it is bookkeeping for scoring, and
+    # surfacing it both pre-labels the answer and biases the model.
+    lines = [f'{q["qa_id"]} | {q["question"]}' for q in questions]
     return (f'TARGET DOCUMENT id: "{target}"\n'
             f"Answer every question ONLY about this document; treat all other "
             f"documents as unrelated background.\n\n"
@@ -206,20 +211,31 @@ def _span_user(cell: dict, questions: list[dict]) -> str:
             + "\n".join(lines) + "\n\nReturn the JSON object now.")
 
 
+def mc_question_block(q: dict) -> str:
+    """Render ONE multiple-choice question exactly as the model is shown it.
+
+    `qa_id | [CHOOSE ONE]/[SELECT ALL THAT APPLY] question` followed by lettered
+    options. Category is deliberately NOT shown (bookkeeping only). Shared with
+    show_questions.py so the standalone preview never drifts from the live prompt.
+    """
+    options = q.get("answer_options") or q.get("gold_answers") or []
+    tag = ("[SELECT ALL THAT APPLY]" if q.get("answer_type") == "multi_select"
+           else "[CHOOSE ONE]")
+    lines = [f'{q["qa_id"]} | {tag} {q["question"]}']
+    lines += [f"  ({option_label(i)}) {opt}" for i, opt in enumerate(options)]
+    return "\n".join(lines)
+
+
 def _mc_user(cell: dict, questions: list[dict]) -> str:
     target = cell["target_document_id"]
-    blocks = []
-    for q in questions:
-        options = q.get("answer_options") or q.get("gold_answers") or []
-        lines = [f'{q["qa_id"]} | category="{q["category"]}" | {q["question"]}']
-        lines += [f"  ({option_label(i)}) {opt}" for i, opt in enumerate(options)]
-        blocks.append("\n".join(lines))
+    blocks = [mc_question_block(q) for q in questions]
     return (f'TARGET AGREEMENT id: "{target}"\n'
             f"Answer every question ONLY about this agreement; ignore all other "
             f"documents.\n\n"
             f"DOCUMENTS:\n{cell['context']}\n\n"
-            f'MULTIPLE-CHOICE QUESTIONS (answer every qa_id about TARGET '
-            f'"{target}" with one option letter):\n' + "\n\n".join(blocks) +
+            f'CLOSED-SET QUESTIONS (answer every qa_id about TARGET "{target}" '
+            f"with option letter(s), following each question's [CHOOSE ONE] / "
+            f"[SELECT ALL THAT APPLY] marker):\n" + "\n\n".join(blocks) +
             "\n\nReturn the JSON object now.")
 
 
@@ -240,13 +256,17 @@ def chunk_questions(questions: list[dict], size: int) -> list[list[dict]]:
 
 
 def _mock_mc_letter(q: dict) -> str:
-    """The option letter of q's gold answer (exercises the letter->option path)."""
+    """Gold option letter(s) for q (exercises the letter->option scoring path).
+
+    Single-select returns one letter; multi-select returns every gold atom's
+    letter, comma-joined (the [SELECT ALL THAT APPLY] answer format)."""
     options = q.get("answer_options") or q.get("gold_answers") or []
     golds = q.get("gold_answers") or [a["text"] for a in q.get("answers", [])]
-    for i, opt in enumerate(options):
-        if any(_normalize(opt) == _normalize(g) for g in golds):
-            return option_label(i)
-    return golds[0] if golds else ""
+    letters = [option_label(i) for i, opt in enumerate(options)
+               if any(_normalize(opt) == _normalize(g) for g in golds)]
+    if q.get("answer_type") == "multi_select":
+        return ", ".join(letters) if letters else (golds[0] if golds else "")
+    return letters[0] if letters else (golds[0] if golds else "")
 
 
 def mock_call(cell: dict, questions: list[dict]) -> dict:

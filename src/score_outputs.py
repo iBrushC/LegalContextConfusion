@@ -22,7 +22,8 @@ from pathlib import Path
 _ARTICLES = {"a", "an", "the"}
 _PUNCT_RE = re.compile(f"[{re.escape(string.punctuation)}]")
 
-_AGG_METRICS = ("span_f1", "exact_match", "mc_accuracy", "abstention_rate",
+_AGG_METRICS = ("span_f1", "exact_match", "mc_accuracy",
+                "ms_exact_match", "ms_f1", "abstention_rate",
                 "hallucination_rate", "wrong_doc_rate", "answered_positive_rate")
 
 
@@ -143,6 +144,66 @@ def mc_is_correct(answer: str, options: list[str], golds: list[str]) -> bool:
     return any(nchosen == _normalize(g) for g in golds)
 
 
+def resolve_choices(answer: str, options: list[str]) -> list[str]:
+    """Map a SELECT-ALL answer to the set of `options` it names (order-free).
+
+    Two reading passes, in order:
+      1. Letters: if the answer tokenizes (on commas / whitespace / 'and') into a
+         list where EVERY token is a valid option letter, return those options.
+         The all-tokens-must-be-letters rule stops a verbatim multi-word answer
+         from being misread as letters.
+      2. Verbatim: otherwise comma/semicolon-split and match each part to an
+         option by normalized text (atoms are comma-free, so this is safe).
+    Returns the resolved option strings, deduped; [] if nothing resolves.
+    """
+    raw = (answer or "").strip()
+    if not raw or not options:
+        return []
+    by_label = {option_label(i): opt for i, opt in enumerate(options)}
+
+    tokens = [t for t in re.split(r"[,\s;/+]+|\band\b", raw) if t]
+    letters, all_letters = [], bool(tokens)
+    for tok in tokens:
+        m = _LETTER_RE.match(tok)
+        if m and m.group(1).upper() in by_label:
+            letters.append(by_label[m.group(1).upper()])
+        else:
+            all_letters = False
+            break
+    if all_letters and letters:
+        pick = letters
+    else:  # verbatim fallback: comma/semicolon-split, match by normalized text
+        norm_opts = {tuple(_normalize(o)): o for o in options}
+        pick = [norm_opts[key] for part in re.split(r"[;,]", raw)
+                if (key := tuple(_normalize(part))) in norm_opts]
+    out, seen = [], set()
+    for opt in pick:
+        if opt not in seen:
+            seen.add(opt)
+            out.append(opt)
+    return out
+
+
+def _set_f1(pred: set, gold: set) -> float:
+    """F1 between two atom SETS (1.0 when both empty; 0.0 if either alone is)."""
+    if not pred and not gold:
+        return 1.0
+    if not pred or not gold:
+        return 0.0
+    inter = len(pred & gold)
+    if not inter:
+        return 0.0
+    prec, rec = inter / len(pred), inter / len(gold)
+    return 2 * prec * rec / (prec + rec)
+
+
+def ms_score(answer: str, options: list[str], golds: list[str]):
+    """(exact, set_f1, chosen) for a select-all answer vs the gold atom set."""
+    chosen = resolve_choices(answer, options)
+    cset, gset = set(chosen), set(golds)
+    return cset == gset, _set_f1(cset, gset), chosen
+
+
 def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
     """Raw per-question counts for one cell (the basis for all rate metrics).
 
@@ -157,6 +218,8 @@ def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
     answered_pos = wrong_doc = doc_id_present = 0
     correct_abstain = hallucinated = n_unscored = 0
     n_mc = mc_correct = 0
+    n_ms = ms_exact = 0
+    ms_f1_sum = 0.0
 
     for q in cell["questions"]:
         qid = q["qa_id"]
@@ -167,21 +230,28 @@ def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
         answer = str(pred.get("answer", "")).strip() if pred else ""
         present = bool(pred and pred.get("present") and answer)
 
-        if q.get("answer_type") == "multiple_choice":  # MAUD: closed-set choice
+        atype = q.get("answer_type")
+        if atype in ("multiple_choice", "multi_select"):  # MAUD: closed-set
             # missing_answer is the abstention analogue: score ONLY the safe-
             # negative questions (does the model still pick the None/N/A option
-            # amid distractors?). Other MC modalities score the whole set; a
-            # non-negative question in a missing_answer cell is counted in
+            # amid distractors?). Other closed-set modalities score the whole set;
+            # a non-negative question in a missing_answer cell is counted in
             # neither numerator nor denominator.
             if modality == "missing_answer" and not q.get("is_negative"):
                 continue
-            n_mc += 1
             options = q.get("answer_options") or q.get("gold_answers") or []
             golds = q.get("gold_answers") or [a["text"] for a in q.get("answers", [])]
-            if mc_is_correct(answer, options, golds):
-                mc_correct += 1
-            # Every MC question demands a pick, so a non-empty answer counts as
-            # "answered"; document_id still feeds the wrong-document signal.
+            if atype == "multi_select":  # select-all-that-apply: set match
+                n_ms += 1
+                exact, f1, _ = ms_score(answer, options, golds)
+                ms_exact += int(exact)
+                ms_f1_sum += f1
+            else:  # single-pick multiple choice
+                n_mc += 1
+                if mc_is_correct(answer, options, golds):
+                    mc_correct += 1
+            # Every closed-set question demands a pick, so a non-empty answer
+            # counts as "answered"; document_id still feeds the wrong-doc signal.
             if answer:
                 answered_pos += 1
                 doc_id = pred.get("document_id") if pred else None
@@ -215,6 +285,7 @@ def tally_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
     return {
         "n_positive": n_pos, "n_negative": n_neg, "n_unscored": n_unscored,
         "n_mc": n_mc, "mc_correct": mc_correct,
+        "n_ms": n_ms, "ms_exact": ms_exact, "ms_f1_sum": ms_f1_sum,
         "sum_f1": sum_f1, "sum_exact": sum_exact,
         "answered_positive": answered_pos, "wrong_doc": wrong_doc,
         "doc_id_present": doc_id_present,
@@ -231,14 +302,17 @@ def score_cell(cell: dict, pred_by_qid: dict, unscored: set) -> dict:
 
     return {
         "parse_ok": t["n_unscored"] == 0,
-        "scored": t["n_positive"] + t["n_negative"] + t["n_mc"],
+        "scored": t["n_positive"] + t["n_negative"] + t["n_mc"] + t["n_ms"],
         "n_unscored": t["n_unscored"],
         "n_positive": t["n_positive"],
         "n_negative": t["n_negative"],
         "n_mc": t["n_mc"],
+        "n_ms": t["n_ms"],
         "span_f1": rate(t["sum_f1"], t["n_positive"]),
         "exact_match": rate(t["sum_exact"], t["n_positive"]),
         "mc_accuracy": rate(t["mc_correct"], t["n_mc"]),
+        "ms_exact_match": rate(t["ms_exact"], t["n_ms"]),
+        "ms_f1": rate(t["ms_f1_sum"], t["n_ms"]),
         "answered_positive_rate": rate(t["answered_positive"], t["n_positive"]),
         "wrong_doc_rate": rate(t["wrong_doc"], t["answered_positive"]),
         "abstention_rate": rate(t["correct_abstention"], t["n_negative"]),
@@ -347,6 +421,7 @@ def results_dir(dataset: str) -> Path:
     return Path(f"data/results_{dataset}")
 
 _ACC_FIELDS = ("n_positive", "n_negative", "n_unscored", "n_mc", "mc_correct",
+               "n_ms", "ms_exact", "ms_f1_sum",
                "sum_f1", "sum_exact",
                "answered_positive", "wrong_doc", "doc_id_present",
                "correct_abstention", "hallucinated",
@@ -432,6 +507,8 @@ def metrics_from_acc(acc: dict) -> dict:
         "span_f1": rate(acc["sum_f1"], acc["n_positive"]),
         "exact_match": rate(acc["sum_exact"], acc["n_positive"]),
         "mc_accuracy": rate(acc["mc_correct"], acc["n_mc"]),
+        "ms_exact_match": rate(acc["ms_exact"], acc["n_ms"]),
+        "ms_f1": rate(acc["ms_f1_sum"], acc["n_ms"]),
         "abstention_rate": rate(acc["correct_abstention"], acc["n_negative"]),
         "hallucination_rate": rate(acc["hallucinated"], acc["n_negative"]),
         # only meaningful if the model actually returned document_ids
@@ -460,7 +537,8 @@ def score_jsonl(runs: list[dict], gold: dict) -> dict:
                    by_modality.setdefault(run.get("modality", "?"), {k: 0 for k in _ACC_FIELDS})]
         for acc in targets:
             for k in ("n_positive", "n_negative", "n_unscored", "n_mc",
-                      "mc_correct", "sum_f1", "sum_exact", "answered_positive",
+                      "mc_correct", "n_ms", "ms_exact", "ms_f1_sum",
+                      "sum_f1", "sum_exact", "answered_positive",
                       "wrong_doc", "doc_id_present", "correct_abstention",
                       "hallucinated"):
                 acc[k] += t[k]
@@ -484,13 +562,17 @@ def _print_overall(acc: dict) -> None:
     m = metrics_from_acc(acc)
     print(f"\nOverall ({acc['cells']} scored cell-runs, "
           f"{acc['n_positive']:,} positive + {acc['n_negative']:,} negative + "
-          f"{acc['n_mc']:,} multiple-choice Qs):")
+          f"{acc['n_mc']:,} multiple-choice + {acc['n_ms']:,} select-all Qs):")
     print(f"  span token-F1        {_fmt(m['span_f1'])}   "
           f"(over {acc['n_positive']:,} positives)")
     print(f"  exact match          {_fmt(m['exact_match'])}")
     if acc["n_mc"]:
         print(f"  MC accuracy          {_fmt(m['mc_accuracy'])}   "
               f"(over {acc['n_mc']:,} multiple-choice)")
+    if acc["n_ms"]:
+        print(f"  select-all exact     {_fmt(m['ms_exact_match'])}   "
+              f"(over {acc['n_ms']:,} select-all)")
+        print(f"  select-all set-F1    {_fmt(m['ms_f1'])}")
     print(f"  abstention rate      {_fmt(m['abstention_rate'])}   "
           f"(over {acc['n_negative']:,} negatives)")
     print(f"  hallucination rate   {_fmt(m['hallucination_rate'])}")
@@ -511,16 +593,19 @@ def _print_breakdown(title: str, groups: dict) -> None:
     if not groups:
         return
     print(f"\nby {title}:")
-    print(f"  {title:14} {'spanF1':>7} {'exact':>7} {'mcAcc':>7} {'abst':>7} "
-          f"{'halluc':>7} {'wrongD':>7} {'parseF':>7}  {'pos/neg/mc':>13}")
+    print(f"  {title:14} {'spanF1':>7} {'exact':>7} {'mcAcc':>7} {'msExact':>7} "
+          f"{'msF1':>7} {'abst':>7} "
+          f"{'halluc':>7} {'wrongD':>7} {'parseF':>7}  {'pos/neg/mc/ms':>16}")
     for name, acc in sorted(groups.items()):
         m = metrics_from_acc(acc)
-        counts = f"{acc['n_positive']}/{acc['n_negative']}/{acc['n_mc']}"
+        counts = (f"{acc['n_positive']}/{acc['n_negative']}/"
+                  f"{acc['n_mc']}/{acc['n_ms']}")
         print(f"  {name:14} {_fmt(m['span_f1']):>7} {_fmt(m['exact_match']):>7} "
-              f"{_fmt(m['mc_accuracy']):>7} "
+              f"{_fmt(m['mc_accuracy']):>7} {_fmt(m['ms_exact_match']):>7} "
+              f"{_fmt(m['ms_f1']):>7} "
               f"{_fmt(m['abstention_rate']):>7} {_fmt(m['hallucination_rate']):>7} "
               f"{_fmt(m['wrong_doc_rate']):>7} {_fmt(m['parse_failure_rate']):>7}  "
-              f"{counts:>13}")
+              f"{counts:>16}")
 
 
 def score_dataset(dataset: str, args) -> None:

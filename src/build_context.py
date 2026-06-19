@@ -10,8 +10,9 @@ they are almost always built together).
     1. Sample N documents as the TARGETS (default 10, deterministic by seed).
     2. For each, fix a capped question set (<=32 by default), chosen
        deterministically per document. CUAD draws SQuAD-style clause questions
-       (with >=1 negative category); MAUD draws forced-choice multiple-choice
-       questions (preferring >=1 safe negative).
+       (with >=1 negative category); MAUD draws forced-choice questions —
+       single-pick multiple choice, plus a handful of select-all-that-apply
+       questions whose options are atomic labels (preferring >=1 safe negative).
     3. Each target + its question set are held FIXED; only the surrounding filler
        (distractor documents) changes across that document's cells.
 
@@ -55,8 +56,10 @@ WHERE CUAD AND MAUD GENUINELY DIFFER (kept dataset-specific on purpose):
     * source format     CUAD = one JSON file of contracts; MAUD = a CSV of
                         per-question rows + a directory of full agreement texts.
     * question model    CUAD = SQuAD spans with native is_impossible negatives;
-                        MAUD = forced-choice multiple choice (focus="labels",
-                        is_impossible always False, a safe-negative OPTION).
+                        MAUD = forced choice (focus="labels", is_impossible always
+                        False, a safe-negative OPTION) — mostly single-pick
+                        multiple choice, with some select-all-that-apply questions
+                        (answer_type="multi_select") scored by atom-set match.
     * distractor pool   CUAD contracts are small -> loaded eagerly; MAUD agreements
                         are large -> loaded lazily, one or two per budget.
     Everything else (seeding, token counting, rot corpus, context assembly, the
@@ -95,7 +98,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from inspect_cuad import category_of, is_negative, load_cuad  # noqa: E402
 from inspect_maud import (  # noqa: E402
     answer_options_map, build_questions, derive_title, group_by_contract,
-    load_maud_rows, read_contract_text,
+    load_maud_rows, multiselect_options_map, read_contract_text,
 )
 
 CHARS_PER_TOKEN = 4  # approximate; matches inspect_cuad's budgeting hint
@@ -117,7 +120,7 @@ BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = IMPLEMENTED_MODALITIES
 DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
 DEFAULT_NUM_DOCUMENTS = 10
-DEFAULT_MAX_QUESTIONS = 32
+DEFAULT_MAX_QUESTIONS = 16
 
 DOC_SEPARATOR = "\n\n"
 
@@ -578,20 +581,27 @@ def maud_enrich_questions(raw_questions: list[dict]) -> list[dict]:
     """
     enriched = []
     for i, q in enumerate(raw_questions, 1):
-        # `answers` mirrors the gold option into the CUAD-shaped field; for MC
-        # scoring `answer_options` + `gold_answers` are what actually matter.
-        answers = [{"text": a} for a in q["gold_answers"]] or [{"text": ""}]
+        # A handful of MAUD questions are SELECT-ALL-THAT-APPLY masquerading as
+        # multiple choice: the gold `answer` is a comma-joined combination, so the
+        # option set explodes into dozens of near-duplicate combinations. For those
+        # the gold is the SET of atomic labels (`gold_atoms`) and `answer_options`
+        # is the small atomic vocabulary, scored by set match rather than one pick.
+        multi = q.get("is_multiselect")
+        golds = q["gold_atoms"] if multi else q["gold_answers"]
+        # `answers` mirrors the gold into the CUAD-shaped field; for scoring it is
+        # `answer_options` + `gold_answers` (the atoms, for multi-select) that count.
+        answers = [{"text": a} for a in golds] or [{"text": ""}]
         enriched.append({
             "qa_id": f"q{i:02d}",
             "category": q["category"],
             "question": q["question"],
-            "answer_type": "multiple_choice",
-            "gold_answers": q["gold_answers"],
+            "answer_type": "multi_select" if multi else "multiple_choice",
+            "gold_answers": golds,
             "gold_labels": q["gold_labels"],
             "is_impossible": False,
             "is_negative": bool(q["is_negative"]),
             # extras (additive): real-run aids + CUAD-pipeline compatibility.
-            "answer_options": q.get("answer_options", q["gold_answers"]),
+            "answer_options": q.get("answer_options", golds),
             "subquestions": q["subquestions"],
             "source_question": q["question"],
             "answers": answers,
@@ -657,16 +667,18 @@ def maud_select_targets(by_contract: dict, all_rows: list[dict], contracts_dir: 
         indices = sorted(order[:min(num_documents, len(names))])
         chosen_names = [names[i] for i in indices]
 
-    # The dataset-wide option set per question is identical across docs; build
-    # it once and reuse it for every target.
+    # The dataset-wide option set per question is identical across docs; build it
+    # once and reuse it for every target. `ms_options` is the atomic vocabulary for
+    # the select-all-that-apply questions (absent => the question is single-select).
     options = answer_options_map(all_rows)
+    ms_options = multiselect_options_map(all_rows)
     return [_maud_build_target(by_contract, names, contracts_dir, seed, name, options,
-                               max_questions, min_negatives, negatives_mode)
+                               ms_options, max_questions, min_negatives, negatives_mode)
             for name in chosen_names]
 
 
 def _maud_build_target(by_contract: dict, names: list[str], contracts_dir: Path,
-                       seed: int, name: str, options: dict,
+                       seed: int, name: str, options: dict, ms_options: dict,
                        max_questions: int | None, min_negatives: int,
                        negatives_mode: str) -> dict:
     """Build one target agreement's fixed, capped, enriched question set."""
@@ -675,7 +687,20 @@ def _maud_build_target(by_contract: dict, names: list[str], contracts_dir: Path,
 
     raw_questions = build_questions(by_contract[name])
     for q in raw_questions:
-        q["answer_options"] = options.get(q["question"], q["gold_answers"])
+        # Multi-select questions show the small ATOMIC vocabulary; single-select
+        # ones show their full combination/answer set as before.
+        if q.get("is_multiselect"):
+            q["answer_options"] = ms_options.get(q["question"], q["gold_atoms"])
+        else:
+            q["answer_options"] = options.get(q["question"], q["gold_answers"])
+
+    # Drop degenerate questions whose dataset-wide option set collapsed to a single
+    # choice (almost always a Y/N whose only observed answer is "Yes"). One option
+    # is not a real forced choice — the model has nothing to pick between — so such
+    # questions only pollute the eval. Applies to both single- and multi-select
+    # (a multi-select with one atom is the same trivial case).
+    raw_questions = [q for q in raw_questions
+                     if len(q.get("answer_options") or []) >= 2]
 
     # Each document draws its question subset from its OWN rng, keyed by name, so
     # documents don't share a draw and each subset is reproducible from --seed.

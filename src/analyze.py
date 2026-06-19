@@ -67,7 +67,9 @@ HEADLINE = {"spans": "span_f1", "abstention": "abstention_rate",
             "labels": "mc_accuracy"}
 SECONDARY = {"spans": ["exact_match", "wrong_doc_rate"],
              "abstention": ["hallucination_rate"],
-             "labels": ["wrong_doc_rate"]}
+             # MAUD mixes single-pick (mc_accuracy) and select-all-that-apply
+             # (ms_exact_match / ms_f1) questions; surface both alongside.
+             "labels": ["ms_exact_match", "ms_f1", "wrong_doc_rate"]}
 
 _BLOCKS = "▁▂▃▄▅▆▇█"  # sparkline ramp for values in [0, 1]
 

@@ -15,10 +15,14 @@ form. It ships as CSV rows plus a directory of full merger-agreement texts:
     data/maud/contracts/contract_N.txt    the FULL agreement text
 
 Unlike CUAD, MAUD is a closed-set classification task: every question is
-answerable and picks one option from a fixed per-question answer set. There are
-no extractive spans and no SQuAD `is_impossible`. The closest thing to a native
-negative is a "No" / "None" / "N/A" answer, which means the feature is ABSENT —
-those are surfaced here as the safe negatives that feed the abstention tests.
+answerable from a fixed per-question option set. Most questions are single-pick
+multiple choice; a handful are select-all-that-apply, shipped as multiple choice
+with comma-joined COMBINATION answers — those carry atomic labels in the
+`subquestion` column and are surfaced here via multiselect_options_map (the gold
+is the SET of atoms). There are no extractive spans and no SQuAD `is_impossible`.
+The closest thing to a native negative is a "No" / "None" / "N/A" answer, which
+means the feature is ABSENT — those are surfaced here as the safe negatives that
+feed the abstention tests.
 
 This script derisks the data before any cell-building: it reports the schema, the
 document/question counts, the label/answer format, the category breakdown, and
@@ -105,6 +109,38 @@ def answer_options_map(rows: list[dict]) -> dict[str, list[str]]:
     return {q: sorted(a) for q, a in opts.items()}
 
 
+def multiselect_options_map(rows: list[dict]) -> dict[str, list[str]]:
+    """question -> sorted ATOMIC option set, for the select-all-that-apply ones.
+
+    A handful of MAUD questions are really MULTI-SELECT but ship as multiple
+    choice: each `answer` is a comma-joined COMBINATION of atomic labels, so the
+    option set balloons to dozens of near-duplicate combinations (one famous case
+    has 69 "options" built from 14 atoms). MAUD's own `subquestion` column already
+    names those atoms — every row of such a question carries one atom there (never
+    "<NONE>"), and that atom vocabulary is comma-free, so each combination
+    `answer` comma-splits back into atoms exactly. This returns, for ONLY those
+    questions, the authoritative atomic option set drawn from `subquestion`;
+    single-select questions (subquestion always "<NONE>") are absent from the map,
+    which is precisely the signal build_context uses to tell the two apart.
+    """
+    atoms: dict[str, set] = defaultdict(set)
+    for r in rows:
+        sub = (r.get("subquestion") or "").strip()
+        if sub and sub != "<NONE>":
+            atoms[r.get("question", "")].add(sub)
+    return {q: sorted(a) for q, a in atoms.items()}
+
+
+def split_combo(answer: str) -> list[str]:
+    """Comma-split a multi-select combination `answer` into its atomic labels.
+
+    Safe because the atomic vocabulary of every multi-select question is itself
+    comma-free (verified across all MAUD splits); the commas in a combination are
+    therefore only ever atom separators.
+    """
+    return [p.strip() for p in (answer or "").split(",") if p.strip()]
+
+
 def is_negative_answer(answer: str) -> bool:
     """True when a gold answer means the feature is ABSENT (a safe negative)."""
     return (answer or "").strip().lower() in NEGATIVE_MARKERS
@@ -138,7 +174,18 @@ def build_questions(contract_rows: list[dict]) -> list[dict]:
     questions = []
     for q, slot in by_q.items():
         golds = sorted(slot["answers"])
-        negative = len(golds) == 1 and is_negative_answer(golds[0])
+        # A real `subquestion` (never "<NONE>") is MAUD's own marker that this is a
+        # multi-select question whose gold `answer` is a comma-joined COMBINATION
+        # of atoms; split it back into the selected atomic labels.
+        is_multiselect = bool(slot["subquestions"])
+        gold_atoms = (sorted({a for g in golds for a in split_combo(g)})
+                      if is_multiselect else [])
+        # For single-select the negative is a lone No/None/N/A answer; for
+        # multi-select the analogue is the gold collapsing to exactly that marker
+        # (e.g. atoms == {"No"}), which still means the feature is absent.
+        negative = (len(gold_atoms) == 1 and is_negative_answer(gold_atoms[0])
+                    if is_multiselect
+                    else len(golds) == 1 and is_negative_answer(golds[0]))
         questions.append({
             "question": q,
             "category": slot["category"],
@@ -146,6 +193,8 @@ def build_questions(contract_rows: list[dict]) -> list[dict]:
             "gold_answers": golds,
             "gold_labels": sorted(slot["labels"]),
             "subquestions": sorted(slot["subquestions"]),
+            "is_multiselect": is_multiselect,
+            "gold_atoms": gold_atoms,
             "is_negative": negative,
         })
     return questions
@@ -229,6 +278,12 @@ def report_summary(path: Path, data_type: str, rows: list[dict],
     if qsizes:
         print(f"  options/question: min={min(qsizes)} "
               f"max={max(qsizes)} mean={sum(qsizes) / len(qsizes):.1f}")
+    ms = multiselect_options_map(rows)
+    if ms:
+        atom_sizes = [len(a) for a in ms.values()]
+        print(f"  select-all-that-apply questions: {len(ms)} "
+              f"(comma-combination answers; {min(atom_sizes)}–{max(atom_sizes)} "
+              f"atomic options each, from the `subquestion` column)")
 
     _header("Categories")
     for cat, n in categories.most_common():
@@ -239,6 +294,7 @@ def report_summary(path: Path, data_type: str, rows: list[dict],
 def report_example(rows: list[dict], by_contract: dict[str, list[dict]],
                    contracts_dir: Path, seed: int, contract: str | None) -> None:
     options = answer_options_map(rows)
+    ms_options = multiselect_options_map(rows)
     names = sorted(by_contract)
     if contract is None:
         contract = random.Random(seed).choice(names)
@@ -260,13 +316,18 @@ def report_example(rows: list[dict], by_contract: dict[str, list[dict]],
     _header("Example question + gold answer")
     # Prefer a negative example if one exists (it is the more interesting case).
     q = next((q for q in questions if q["is_negative"]), questions[0])
-    opts = options.get(q["question"], q["gold_answers"])
+    multi = q.get("is_multiselect")
+    opts = (ms_options.get(q["question"], q["gold_atoms"]) if multi
+            else options.get(q["question"], q["gold_answers"]))
+    gold = q["gold_atoms"] if multi else q["gold_answers"]
     print(f"  category:     {q['category']}")
     print(f"  question:     {q['question']}")
-    print(f"  answer_type:  multiple_choice ({len(opts)} options)")
+    print(f"  answer_type:  {'multi_select' if multi else 'multiple_choice'} "
+          f"({len(opts)} {'atomic ' if multi else ''}options"
+          + ("; select all that apply)" if multi else ")"))
     print(f"  options:      {', '.join(repr(o) for o in opts[:6])}"
           + (" …" if len(opts) > 6 else ""))
-    print(f"  gold answer:  {', '.join(repr(a) for a in q['gold_answers'])}  "
+    print(f"  gold answer:  {', '.join(repr(a) for a in gold)}  "
           f"(label {', '.join(q['gold_labels']) or '?'})")
     print(f"  is_negative:  {q['is_negative']}"
           + ("  (feature absent -> correct behavior is to abstain)"
