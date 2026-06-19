@@ -1,0 +1,660 @@
+{
+  "cell_id": "d092_baseline",
+  "dataset": "maud",
+  "doc_index": 92,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 3975,
+  "actual_chars": 15900,
+  "target_document_id": "contract_45",
+  "target_document_title": "among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …",
+  "distractor_ids": [],
+  "target_offset": 175,
+  "target_end": 14953,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_45\" title=\"among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …\">\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate the Merger are further subject to the satisfaction, at or prior to the Closing, of the following conditions (which may be waived, in whole or in part, to the extent permitted by Law, by Parent): (a) Representations and Warranties. The representations and warranties of the Company <omitted> (iii) set forth in Article III (other than those described in the foregoing clauses (i) and (ii)) shall be true and correct in all respects (disregarding all materiality and “Company Material Adverse Effect” qualifiers contained therein, other than as such qualifiers are used in Section 3.10 (Absence of Certain Changes)) as of the date hereof and as of the Closing as if made on and as of the Closing (except to the extent expressly made as of an earlier date, in which case as of such earlier date), except in the case of this clause (iii) where the failure of such representations and warranties to be so true and correct has not had a Company Material Adverse Effect. (Page 86)\n\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. <omitted> The representations and warranties of the Company <omitted> (iii) set forth in Article III (other than those described in the foregoing clauses (i) and (ii)) shall be true and correct in all respects <omitted> except in the case of this clause (iii) where the failure of such representations and warranties to be so true and correct has not had a Company Material Adverse Effect. (Page 86)\n\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate the Merger are further subject to the satisfaction, at or prior to the Closing, of the following conditions (which may be waived, in whole or in part, to the extent permitted by Law, by Parent): (a) Representations and Warranties. The representations and warranties of the Company (i) set forth in Section 3.5(a) (Capitalization) <omitted> shall be true and correct in all respects, except for de minimis inaccuracies therein, as of the date hereof and as of the Closing as if made on and as of the Closing (except to the extent expressly made as of an earlier date, in which case as of such earlier date) (Page 86)\n\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. <omitted> The representations and warranties of the Company (i) set forth in Section 3.5(a) (Capitalization) <omitted> shall be true and correct in all respects, except for de minimis inaccuracies therein (Page 86)\n\nSection 3.2 Corporate Authorization. \n\n(a) <omitted> This Agreement, assuming due authorization, execution and delivery by Parent and Merger Sub, constitutes a valid and binding obligation of the Company enforceable against the Company in accordance with its terms\n<omitted>\nSection 3.5 Capitalization. <omitted>\n(b) <omitted> there are no issued, reserved for issuance or outstanding <omitted> (iii) options, warrants, calls, redeemable, exercisable or exchangeable securities, rights, agreements, commitments or other understandings of any character to acquire from the Company, or other obligation of the Company to issue, any shares of capital stock or other voting securities of or other ownership interests in the Company (including any stockholder rights plan (or similar plan commonly referred to as a “poison pill”))\n<omitted>\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate the Merger are further subject to the satisfaction, at or prior to the Closing, of the following conditions (which may be waived, in whole or in part, to the extent permitted by Law, by Parent): (a) Representations and Warranties. The representations and warranties of the Company (i) set forth in <omitted> Section 3.5(b) (Capitalization) shall be true and correct in all respects, except for de minimis inaccuracies therein, as of the date hereof and as of the Closing as if made on and as of the Closing (except to the extent expressly made as of an earlier date, in which case as of such earlier date), (ii) set forth in the first two sentences of Section 3.1 (Corporate Existence and Power), Section 3.2(a) (Corporate Authorization), Section 3.5(c) (Capitalization), Section 3.23 (Finders’ Fee, etc.) and Section 3.25 (Antitakeover Statutes) (collectively, the “Company Fundamental Representations”), to the extent qualified by materiality or “Company Material Adverse Effect”, shall be true and correct in all respects as of the date hereof and as of the Closing as if made on and as of the Closing, and all Company Fundamental Representations, to the extent not qualified by materiality or “Company Material Adverse Effect”, shall be true and correct in all material respects as of the date hereof and as of the Closing as if made on and as of the Closing (in each case of this clause (ii), except to the extent any such Company Fundamental Representations are expressly made as of an earlier date, in which case as of such earlier date) (Page 86)\n\nSection 3.2 Corporate Authorization. \n\n(a) <omitted> This Agreement, assuming due authorization, execution and delivery by Parent and Merger Sub, constitutes a valid and binding obligation of the Company enforceable against the Company in accordance with its terms\n<omitted>\nSection 3.5 Capitalization. <omitted>\n(b) <omitted> there are no issued, reserved for issuance or outstanding <omitted> (iii) options, warrants, calls, redeemable, exercisable or exchangeable securities, rights, agreements, commitments or other understandings of any character to acquire from the Company, or other obligation of the Company to issue, any shares of capital stock or other voting securities of or other ownership interests in the Company (including any stockholder rights plan (or similar plan commonly referred to as a “poison pill”))\n<omitted>\nSection 8.2 Conditions to Obligations of Parent and Merger Sub. <omitted> The representations and warranties of the Company (i) set forth in Section <omitted> Section 3.5(b) (Capitalization) shall be true and correct in all respects, except for de minimis inaccuracies therein <omitted> , (ii) set forth in the first two sentences of Section 3.1 (Corporate Existence and Power), Section 3.2(a) (Corporate Authorization), Section 3.5(c) (Capitalization), Section 3.23 (Finders’ Fee, etc.) and Section 3.25 (Antitakeover Statutes) (collectively, the “Company Fundamental Representations”), to the extent qualified by materiality or “Company Material Adverse Effect”, shall be true and correct in all respects <omitted> , and all Company Fundamental Representations, to the extent not qualified by materiality or “Company Material Adverse Effect”, shall be true and correct in all material respects (Page 86)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_45\" title=\"among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …\">\nSection 5.1 Conduct of the Company. From the date of this Agreement until the earlier to occur of the Effective Time and the termination of this Agreement in accordance with Article IX except as otherwise expressly permitted or expressly contemplated by this Agreement, as set forth in Section 5.1 of the Company Disclosure Letter, as consented to in writing by Parent (such consent not to be unreasonably withheld, conditioned or delayed), for any actions taken reasonably and in good faith to respond to COVID-19 Measures, provided that the Company shall, to the extent reasonably practicable, provide reasonable advance notice of such actions and consult with Parent prior to taking such actions or as required by applicable Law, the Company shall, and shall cause each of its Subsidiaries to, (i) conduct its business in all material respects in the ordinary course of business consistent with past practice  (Page 60)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_45\" title=\"among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …\">\nSection 7.2 Company Acquisition Proposals. <omitted>\n(e) Notwithstanding anything to the contrary in this Agreement but subject to Section 7.2(f), prior to the time the Company Stockholder Approval is obtained, the Company Board may effect a Company Adverse Recommendation Change (and, in the case of a Company Acquisition Proposal that did not result from a breach of this Section 7.2, terminate this Agreement pursuant to Section 9.1(d)(ii) and concurrently pay the fees required by Section 9.3 in order to enter into a definitive agreement in connection with a Superior Proposal) if: (i) (A) a bona fide written Company Acquisition Proposal is made to the Company after the date of this Agreement that did not result from a breach of this Section 7.2 and such Company Acquisition Proposal is not withdrawn prior to such Company Adverse Recommendation Change or (B) there has been an Intervening Event; (ii) in the case of a Company Acquisition Proposal, the Company Board concludes in good faith, after consultation with the Company’s outside financial advisors and outside legal counsel, that (x) such Company Acquisition Proposal constitutes a Superior Proposal and (y) failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Laws; and (iii) in the case of an Intervening Event, the Company Board concludes in good faith, after consultation with the Company’s outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Laws.  (Page 75)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_45\" title=\"among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …\">\n“Company Material Adverse Effect” means any effect, change, condition, fact, development, occurrence or event that, individually or in the aggregate, has had, or would reasonably be expected to have, a material adverse effect on the financial condition, business, assets, liabilities or results of operations of the Company and its Subsidiaries, taken as a whole, excluding any effect, change, condition, fact, development, occurrence or event resulting from or arising out of (i) general economic or political conditions in the United States or any foreign jurisdiction or in securities, credit or financial markets, including changes in interest rates and changes in exchange rates, (ii) changes or conditions generally affecting the industries (including changes in prices for raw materials and finished products), markets or geographical areas in which the Company or any of its Subsidiaries operates (including COVID-19 Measures), (iii) any outbreak or escalation of hostilities, acts of war (whether or not declared), terrorism or sabotage, or other changes in geopolitical conditions, including any material worsening of such conditions threatened or existing as of the date hereof, (iv) any epidemics, pandemics or disease outbreaks (including COVID-19 pandemic), natural disasters (including hurricanes, tornadoes, floods or earthquakes) or other force majeure events, (v) the downgrade in rating of any debt or debt securities of the Company or any of its Subsidiaries, (vi) any failure by the Company or its Subsidiaries to meet any internal or published (including analyst) projections, expectations, forecasts or predictions in respect of the Company’s revenue, earnings or other financial performance or results of operations, or any failure by the Company to meet its internal budgets, plans or forecasts of its revenue, earnings or other financial performance or results of operations, (vii) changes in GAAP or the interpretation thereof or the adoption, implementation, promulgation, repeal, modification, amendment, in each case, after the date hereof or change of any Law (including any COVID-19 Measures) after the date hereof applicable to the operation of the business of the Company or any of its Subsidiaries, (viii) the taking of any action expressly required by, or the failure to take any action expressly prohibited by, this Agreement, including any action expressly prohibited by Section 5.1 or the taking of any action or refraining from taking any action at Parent’s or Merger Sub’s prior written request, (ix) any change in the market price or trading volume of the Company’s securities, (x) the public announcement or pendency of this Agreement or the Merger, including any resulting loss or departure of officers or other employees of the Company or any of its Subsidiaries, or the termination or reduction (or potential reduction) in the Company’s or any of its Subsidiaries’ relationships with any of its customers, suppliers, distributors or other business partners (provided, however, that the exceptions in this clause (x) shall not apply with respect to references to Company Material Adverse Effect in the representations and warranties contained in Section 3.4 and, to the extent related thereto, the condition set forth in Section 8.2(a)), and (xi) any Proceeding brought or threatened by stockholders of either Parent or the Company (whether on behalf of the Company, Parent or otherwise) asserting allegations of breach of fiduciary duty relating to this Agreement or violations of securities Laws solely in connection with the Merger; provided that the exceptions in the foregoing clauses (v), (vi) and (vii) shall not prevent or otherwise affect a determination that the underlying cause of any such failure or change referred to therein (if not otherwise falling within any of the exceptions provided by the foregoing clauses (i) through (iv), (ix), (x) or (xi) hereof) constitutes a “Company Material Adverse Effect”; and provided, further, that any effect, change, condition, fact, development, occurrence or event resulting from the matters described in the foregoing clauses (i), (ii), (iii), (iv) and (vii) (excluding any effect, change, condition, fact, development, occurrence or event arising from, resulting from or related to COVID-19 or any COVID-19 Measures) may be taken into account in determining whether there has been a “Company Material Adverse Effect” to the extent that such impact is disproportionately adverse to the Company and its Subsidiaries, taken as a whole, relative to other similarly situated companies in the industries in which the Company and its Subsidiaries operate.  (Page 9)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_45\" title=\"among DOMTAR CORPORATION, KARTA HALTEN B.V., and PEARL MERGER SUB INC. and PAPER EXCELLENCE B.V. and HERVEY INVESTMENTS B.V. Dated as of …\">\nSection 9.3 Termination Fees; Expenses. <omitted>\n(b) In the event that (i) this Agreement is terminated <omitted>\n(iii) within 12 months after such termination, the Company enters into a definitive agreement with respect to a Company Acquisition Proposal or consummates a Company Acquisition Proposal (whether or not the same Company Acquisition Proposal as that referred to in clause (ii) above), then, in any such event, the Company shall pay to Parent, by wire transfer of immediately available funds, the Company Termination Fee (less any Expense Reimbursement previously paid to Parent by the Company in accordance with Section 9.3(c)), within two Business Days following the earliest to occur of the events described in clause (iii) of this Section 9.3(b); provided, however, that for purposes of the definition of “Company Acquisition Proposal” in this Section 9.3(b), references to “20%” shall be replaced by “50%”.  (Page 90)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "General R&Ws",
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (superior offer)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (superior offer)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE) applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All MAE carveouts"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All MAE carveouts",
+        "No",
+        "Some MAE carveouts"
+      ],
+      "subquestions": [],
+      "source_question": "Relational language (MAE) applies to",
+      "answers": [
+        {
+          "text": "All MAE carveouts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Any breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Any breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "Target stockholder proceedings-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Target stockholder proceedings-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Attributable to\"",
+        "\"Resulting from\"",
+        "No"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "Organization",
+        "Rights Agreement",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Rights Agreement",
+        "Takeover Statutes"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Rights Agreement"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        },
+        {
+          "text": "force majeure"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 5,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q02": {
+      "char_offsets": [
+        175
+      ],
+      "min_char_offset": 175,
+      "min_frac": 0.011,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 3932
+    },
+    "q03": {
+      "char_offsets": [
+        8302
+      ],
+      "min_char_offset": 8302,
+      "min_frac": 0.5221,
+      "min_tokens_from_start": 2075,
+      "min_tokens_from_end": 1900
+    },
+    "q04": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q05": {
+      "char_offsets": [
+        14953
+      ],
+      "min_char_offset": 14953,
+      "min_frac": 0.9404,
+      "min_tokens_from_start": 3738,
+      "min_tokens_from_end": 237
+    },
+    "q06": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q07": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q08": {
+      "char_offsets": [
+        8302
+      ],
+      "min_char_offset": 8302,
+      "min_frac": 0.5221,
+      "min_tokens_from_start": 2075,
+      "min_tokens_from_end": 1900
+    },
+    "q09": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q10": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q11": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q12": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q13": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    },
+    "q14": {
+      "char_offsets": [
+        175
+      ],
+      "min_char_offset": 175,
+      "min_frac": 0.011,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 3932
+    },
+    "q15": {
+      "char_offsets": [
+        7191
+      ],
+      "min_char_offset": 7191,
+      "min_frac": 0.4523,
+      "min_tokens_from_start": 1797,
+      "min_tokens_from_end": 2178
+    },
+    "q16": {
+      "char_offsets": [
+        10104
+      ],
+      "min_char_offset": 10104,
+      "min_frac": 0.6355,
+      "min_tokens_from_start": 2526,
+      "min_tokens_from_end": 1449
+    }
+  }
+}

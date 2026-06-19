@@ -1,0 +1,522 @@
+{
+  "cell_id": "d078_baseline",
+  "dataset": "maud",
+  "doc_index": 78,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4964,
+  "actual_chars": 19854,
+  "target_document_id": "contract_32",
+  "target_document_title": "among: CONSTELLATION PHARMACEUTICALS, INC., a Delaware corporation; MORPHOSYS AG, a German stock corporation (Aktiengesellschaft); and …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 9872,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_32\" title=\"among: CONSTELLATION PHARMACEUTICALS, INC., a Delaware corporation; MORPHOSYS AG, a German stock corporation (Aktiengesellschaft); and …\">\n“Superior Offer” shall mean a bona fide written Acquisition Proposal that the Company Board determines, in its good-faith judgment, after consultation with outside legal counsel and its financial advisors, taking into account all legal, regulatory, timing and financing aspects (including certainty of closing) of the proposal and the Person making the proposal and other aspects of the Acquisition Proposal that the Company Board deems relevant, would, if consummated, result in a transaction that is more favorable to the Company’s stockholders (solely in their capacity as such) from a financial point of view than the Transactions; provided that for purposes of the definition of “Superior Offer,” the references to “20%” in the definition of Acquisition Proposal shall be deemed to be references to “50%.”  (Page 77)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_32\" title=\"among: CONSTELLATION PHARMACEUTICALS, INC., a Delaware corporation; MORPHOSYS AG, a German stock corporation (Aktiengesellschaft); and …\">\n8.3 Expenses; Termination Fee. <omitted> (b) In the event that: <omitted> (iii) (x) this Agreement is terminated <omitted> (z) within six (6) months of such termination the Company shall have entered into a definitive agreement with respect to an Acquisition Proposal (which Acquisition Proposal is subsequently consummated, whether during or following such six (6)-month period) or consummated an Acquisition Proposal; provided that for purposes of this clause (z) the references to “20%” in the definition of “Acquisition Proposal” shall be deemed to be references to “50%”; \n\nthen, in any such event under clause (i), (ii) or (iii) of this Section 8.3(b), the Company shall pay to Parent or its designee the Termination Fee by wire transfer of same day funds  (Page 59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_32\" title=\"among: CONSTELLATION PHARMACEUTICALS, INC., a Delaware corporation; MORPHOSYS AG, a German stock corporation (Aktiengesellschaft); and …\">\n“Material Adverse Effect” shall mean any event, occurrence, change or development that has a material adverse effect on the business, results of operations or financial condition of the Acquired Corporations taken as a whole; provided, however, that no event, occurrence, change, or development resulting or arising from or relating to or in connection with any of the following matters shall be deemed, either alone or in combination, to constitute or contribute to, or be taken into account in determining whether there has been, a Material Adverse Effect: (i) any change in the market price or trading volume of the Company’s stock (provided, however, that the underlying causes thereof, to the extent not otherwise excluded by this definition, may be deemed to contribute to a Material Adverse Effect); (ii) the execution, announcement or pendency of this Agreement or the terms hereof (including the identity of Parent or Purchaser) or the announcement, pendency or consummation of the Transactions, including the impact thereof on the relationships, contractual or otherwise, of the Company with employees, labor unions, works councils, financing sources, customers, franchisees, suppliers, partners, Governmental Bodies or other business relationships; (iii) the general conditions or trends in the industries in which the Acquired Corporations operate or in the economy generally or other general business, financial or market conditions, including competition in geographic, product or service areas; (iv) domestic, foreign or global political conditions, economic, regulatory, financial or capital markets conditions (including interest rates, exchange rates, tariffs, trade wars and credit markets); (v) any act of civil unrest, civil disobedience, protests, public demonstrations, insurrection, terrorism, war, cyberterrorism, military activity, sabotage or cybercrime, national or international calamity or any other similar event, including an outbreak or escalation of hostilities involving the United States or any other Governmental Body or the declaration by the United States or any other Governmental Body of a national emergency or war, or any worsening of any such conditions threatened or existing on the date of this Agreement; (vi) any natural or manmade disasters, epidemics, pandemics or disease outbreaks (including COVID-19) or any acts of God; (vii) changes to applicable Legal Requirements (including COVID-19 Measures); (viii) any determination by, or delay of a determination by, the FDA or any other Governmental Body, or any panel or advisory body empowered or appointed thereby, or any indication that any such entity, panel or body will make any determination or delay in making any determination, with respect to the approvability, manufacturing, labeling, contents of package insert, prescribing information, risk management profile, chemistry, manufacturing and controls (CMC) matters or pre-approval inspection matters relating to any product candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations, or any requirement relating to the results of any pre-clinical or clinical testing being conducted by or on behalf of the Acquired Corporations, any of its competitors or any of their respective collaboration partners, including any requirement to conduct further clinical trials or any delayed or accelerated launch of any   A-7\n\n\nproduct candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations; (ix) the results of, or any data derived from, any pre-clinical or clinical testing being conducted by or on behalf of the Acquired Corporations, any of its competitors or any of their respective collaboration partners or any announcement thereof; (x) increased incidence or severity of any previously identified side effects (including toxicity), adverse events or safety observations, or reports of new side effects, adverse events or safety observations, with respect to any product candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations; (xi) any recommendations, statements or other pronouncements made, published or proposed by professional medical organizations or any Governmental Body or representative thereof, or any panel or advisory body empowered or appointed thereby, relating to any product candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations; (xii) any supply chain disruption affecting product candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations; (xiii) any determination or development relating to coverage, reimbursement or payor rules or policies applicable to, or pricing of, any product candidates of the Acquired Corporations or any products or product candidates of any competitors of the Acquired Corporations; (xiv) the failure of the Company to meet internal or analysts’ expectations or projections, forecasts, guidance, estimates or budgets (provided, however, that the underlying causes thereof, to the extent not otherwise excluded by this definition, may be deemed to contribute to a Material Adverse Effect; provided, further, that this clause (xiv) shall not be construed as implying that the Company is making any representation or warranty hereunder with respect to any internal or analysts’ expectations or projections, forecasts, guidance, estimates or budgets); (xv) any Legal Proceeding relating to or resulting from this Agreement or the transactions contemplated hereby; (xvi) any action taken by the Company at the written direction of Parent or any action expressly required or permitted to be taken by Parent, Purchaser or the Company pursuant to the terms of this Agreement, or the failure of the Company to take any action that the Company is prohibited by the terms of this Agreement from taking or which the Company did not take on account of withheld consent from Parent; (xvii) any breach by Parent or Purchaser of this Agreement; (xviii) any matter to the extent expressly set forth on the Company Disclosure Schedule or (xix) any change in any Legal Requirement or GAAP or any other applicable accounting principles or standards (or change in interpretations of any Legal Requirement or GAAP or any other applicable accounting principles or standards) after the date of this Agreement; provided, however, that, to the extent such events, circumstances, conditions, changes, developments or effects referred to in clauses (iii), (iv), or (v) has had or would reasonably be expected to have, individually or in the aggregate, a disproportionate adverse effect on the business, financial condition or results of operations of the Acquired Corporations, taken as a whole, relative to other biopharmaceutical companies with products or product candidates that are, or are reasonably likely to be, competitive with the products of the Acquired Corporations (and, in the case of biopharmaceutical companies with multiple product lines or divisions, relative only to the products or product candidates that are, or are reasonably likely to be, competitive with the products of the Acquired Corporations), in which case only the incremental disproportionate impact shall be taken into account when determining whether a “Material Adverse Effect” has occurred or may, would or could occur.  (Pages 73-74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_32\" title=\"among: CONSTELLATION PHARMACEUTICALS, INC., a Delaware corporation; MORPHOSYS AG, a German stock corporation (Aktiengesellschaft); and …\">\nCONDITIONS TO THE OFFER \n\nThe obligation of Purchaser to accept for payment and pay for Shares validly tendered (and not validly withdrawn) pursuant to the Offer is subject to the satisfaction of the conditions set forth in clauses (a) through (g) below. Accordingly, notwithstanding any other provision of the Offer or the Agreement to the contrary, Purchaser shall not be required to accept for payment or (subject to any applicable rules and regulations of the SEC, including Rule 14e-1(c) under the Exchange Act) pay for, and may delay the acceptance for payment of, or (subject to any such rules and regulations) the payment for, any tendered Shares, and, to the extent permitted by the Agreement, may terminate the Offer: (i) upon termination of the Agreement in accordance with its terms; and (ii) at any scheduled Expiration Date (subject to any extensions of the Offer pursuant to Section 1.1(c) of the Agreement), if: (A) the Minimum Condition, the Termination Condition and conditions set forth in clauses (d) and (f) of this Annex I shall not be satisfied by the expiration time of the Offer on the Expiration Date; or (B) any of the additional conditions set forth below (other than the conditions set forth in clause (A)) shall not be satisfied or waived in writing by Parent: <omitted> (b) <omitted> (iii) the representations and warranties of the Company set forth in this Agreement (other than those set forth in Sections 3.3(a), 3.3(c), 3.4, 3.8, 3.23 and 3.24) that are qualified by a “Material Adverse Effect” shall be true and correct at and as of the expiration time of the Offer on the Expiration Date as if made at and as of the expiration time of the Offer on the Expiration Date (except to the extent any such representation or warranty expressly relates to an earlier date or period, in which case as of such date or period);     1\n\n\n(iv) the representations and warranties of the Company set forth in this Agreement (other than those set forth in Sections 3.3(a), 3.3(c), 3.4, 3.8, 3.23 and 3.24) that are not qualified by a “Material Adverse Effect” shall be true and correct at and as of the expiration time of the Offer on the Expiration Date as if made at and as of the expiration time of the Offer on the Expiration Date (except to the extent any such representation or warranty expressly relates to an earlier date, in which case as of such date), except where the failure of such representations and warranties to be true and correct would not have, individually or in the aggregate, a Material Adverse Effect (Pages 79-80)\n\nCONDITIONS TO THE OFFER <omitted> (iii) the representations and warranties of the Company set forth in this Agreement (other than those set forth in Sections 3.3(a), 3.3(c), 3.4, 3.8, 3.23 and 3.24) that are qualified by a “Material Adverse Effect” shall be true and correct <omitted> ;     1\n\n\n(iv) the representations and warranties of the Company set forth in this Agreement (other than those set forth in Sections 3.3(a), 3.3(c), 3.4, 3.8, 3.23 and 3.24) that are not qualified by a “Material Adverse Effect” shall be true and correct <omitted> , except where the failure of such representations and warranties to be true and correct would not have, individually or in the aggregate, a Material Adverse Effect (Pages 79-80)\n\nCONDITIONS TO THE OFFER \n\nThe obligation of Purchaser to accept for payment and pay for Shares validly tendered (and not validly withdrawn) pursuant to the Offer is subject to the satisfaction of the conditions set forth in clauses (a) through (g) below. Accordingly, notwithstanding any other provision of the Offer or the Agreement to the contrary, Purchaser shall not be required to accept for payment or (subject to any applicable rules and regulations of the SEC, including Rule 14e-1(c) under the Exchange Act) pay for, and may delay the acceptance for payment of, or (subject to any such rules and regulations) the payment for, any tendered Shares, and, to the extent permitted by the Agreement, may terminate the Offer: (i) upon termination of the Agreement in accordance with its terms; and (ii) at any scheduled Expiration Date (subject to any extensions of the Offer pursuant to Section 1.1(c) of the Agreement), if: (A) the Minimum Condition, the Termination Condition and conditions set forth in clauses (d) and (f) of this Annex I shall not be satisfied by the expiration time of the Offer on the Expiration Date; or (B) any of the additional conditions set forth below (other than the conditions set forth in clause (A)) shall not be satisfied or waived in writing by Parent: <omitted> (b) (i) the representations and warranties of the Company set forth in Section 3.3(a) (Capitalization, Etc.), Section 3.3(c) (Capitalization, Etc.), Section 3.4 (Authority; Binding Nature of Agreement), Section 3.23 (Takeover Laws) and Section 3.24 (Fairness Opinion) shall be true and correct in all material respects at and as of the expiration time of the Offer on the Expiration Date as if made at and as of the expiration time of the Offer on the Expiration Date (except to the extent any such representation or warranty expressly relates to an earlier date or period, in which case as of such date or period) (Page 79)\n\nCONDITIONS TO THE OFFER <omitted> (i) the representations and warranties of the Company set forth in Section 3.3(a) (Capitalization, Etc.) <omitted> shall be true and correct in all material respects (Page 79)\n\n3.3 Capitalization, Etc. (a) <omitted> The Company owns all of the authorized and outstanding capital stock of its Subsidiary. <omitted> 3.4 Authority; Binding Nature of Agreement. <omitted> The Company Board (at a meeting duly called and held) has <omitted> (c) approved the execution, delivery and performance by the Company of this Agreement and the consummation of the Offer and the Merger <omitted> . This Agreement has been duly executed and delivered by the Company, and assuming due authorization, execution and delivery by Parent and Purchaser, this Agreement constitutes the legal, valid and binding obligation of the Company and is enforceable against the Company in accordance with its terms, except as such enforcement may be subject to bankruptcy, insolvency, fraudulent transfer, reorganization, moratorium and other similar laws of general applicability relating to or affecting creditors’ rights, and by general equitable principles. <omitted> CONDITIONS TO THE OFFER \n\nThe obligation of Purchaser to accept for payment and pay for Shares validly tendered (and not validly withdrawn) pursuant to the Offer is subject to the satisfaction of the conditions set forth in clauses (a) through (g) below. Accordingly, notwithstanding any other provision of the Offer or the Agreement to the contrary, Purchaser shall not be required to accept for payment or (subject to any applicable rules and regulations of the SEC, including Rule 14e-1(c) under the Exchange Act) pay for, and may delay the acceptance for payment of, or (subject to any such rules and regulations) the payment for, any tendered Shares, and, to the extent permitted by the Agreement, may terminate the Offer: (i) upon termination of the Agreement in accordance with its terms; and (ii) at any scheduled Expiration Date (subject to any extensions of the Offer pursuant to Section 1.1(c) of the Agreement), if: (A) the Minimum Condition, the Termination Condition and conditions set forth in clauses (d) and (f) of this Annex I shall not be satisfied by the expiration time of the Offer on the Expiration Date; or (B) any of the additional conditions set forth below (other than the conditions set forth in clause (A)) shall not be satisfied or waived in writing by Parent: <omitted> (b) (i) the representations and warranties of the Company set forth in Section 3.3(a) (Capitalization, Etc.), Section 3.3(c) (Capitalization, Etc.), Section 3.4 (Authority; Binding Nature of Agreement), Section 3.23 (Takeover Laws) and Section 3.24 (Fairness Opinion) shall be true and correct in all material respects at and as of the expiration time of the Offer on the Expiration Date as if made at and as of the expiration time of the Offer on the Expiration Date (except to the extent any such representation or warranty expressly relates to an earlier date or period, in which case as of such date or period); (ii) the representations and warranties of the Company set forth in Section 3.8 (Absence of Changes) shall be true and correct at and as of the expiration time of the Offer on the Expiration Date (Page 79)\n\n3.3 Capitalization, Etc. (a) <omitted> The Company owns all of the authorized and outstanding capital stock of its Subsidiary. <omitted> 3.4 Authority; Binding Nature of Agreement. <omitted> The Company Board (at a meeting duly called and held) has <omitted> (c) approved the execution, delivery and performance by the Company of this Agreement and the consummation of the Offer and the Merger <omitted> . This Agreement has been duly executed and delivered by the Company, and assuming due authorization, execution and delivery by Parent and Purchaser, this Agreement constitutes the legal, valid and binding obligation of the Company and is enforceable against the Company in accordance with its terms, except as such enforcement may be subject to bankruptcy, insolvency, fraudulent transfer, reorganization, moratorium and other similar laws of general applicability relating to or affecting creditors’ rights, and by general equitable principles. <omitted> CONDITIONS TO THE OFFER <omitted> (i) the representations and warranties of the Company set forth in Section 3.3(a) (Capitalization, Etc.), Section 3.3(c) (Capitalization, Etc.), Section 3.4 (Authority; Binding Nature of Agreement), Section 3.23 (Takeover Laws) and Section 3.24 (Fairness Opinion) shall be true and correct in all material respects <omitted> ; (ii) the representations and warranties of the Company set forth in Section 3.8 (Absence of Changes) shall be true and correct (Page 79)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All/The R&Ws accurate at MAE standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "All/The R&Ws accurate at MAE standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Opinion of Financial Advisor",
+        "Other",
+        "Subsidiaries",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Enforceability",
+        "No-Conflict"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Opinion of Financial Advisor"
+        },
+        {
+          "text": "Other"
+        },
+        {
+          "text": "Subsidiaries"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "Change in law:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Change in law:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "announcement"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "consummation"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Action prohibited/omission required by the agreement-Answer",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "Other"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Relating to\""
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        },
+        {
+          "text": "\"Resulting from\""
+        },
+        {
+          "text": "Other"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE) applies to",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All MAE carveouts"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All MAE carveouts",
+        "No",
+        "Some MAE carveouts"
+      ],
+      "subquestions": [],
+      "source_question": "Relational language (MAE) applies to",
+      "answers": [
+        {
+          "text": "All MAE carveouts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "\"Financial point of view\" is the sole consideration",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Financial point of view\" is the sole consideration",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 4,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        9872
+      ],
+      "min_char_offset": 9872,
+      "min_frac": 0.4972,
+      "min_tokens_from_start": 2468,
+      "min_tokens_from_end": 2496
+    },
+    "q02": {
+      "char_offsets": [
+        9872
+      ],
+      "min_char_offset": 9872,
+      "min_frac": 0.4972,
+      "min_tokens_from_start": 2468,
+      "min_tokens_from_end": 2496
+    },
+    "q03": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q04": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q05": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q06": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q07": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q08": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q09": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q10": {
+      "char_offsets": [
+        2140
+      ],
+      "min_char_offset": 2140,
+      "min_frac": 0.1078,
+      "min_tokens_from_start": 535,
+      "min_tokens_from_end": 4429
+    },
+    "q11": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0087,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4921
+    },
+    "q12": {
+      "char_offsets": [
+        1181
+      ],
+      "min_char_offset": 1181,
+      "min_frac": 0.0595,
+      "min_tokens_from_start": 295,
+      "min_tokens_from_end": 4669
+    }
+  }
+}

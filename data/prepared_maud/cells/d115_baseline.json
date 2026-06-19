@@ -1,0 +1,643 @@
+{
+  "cell_id": "d115_baseline",
+  "dataset": "maud",
+  "doc_index": 115,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 8254,
+  "actual_chars": 33014,
+  "target_document_id": "contract_66",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 29563,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\n(g) As used in this Agreement, “Company Superior Proposal” shall mean any bona fide written Company Takeover Proposal (provided that for purposes of this definition references to twenty percent (20%) in the definition of “Company Takeover Proposal” shall be deemed to be references to fifty percent (50%)) which the Company Board determines in good faith (after consultation with its outside counsel and financial advisor) to be (i) more favorable to the Company’s stockholders from a financial point of view than the Transactions and (ii) reasonably likely to be completed on the terms proposed, in the case of each of clauses (i) and (ii), taking into account at the time of determination all relevant circumstances, including the various legal, financial and regulatory aspects of the proposal, all the terms and conditions of such proposal and this Agreement and any changes to the terms of this Agreement offered by Parent in response to such Company Takeover Proposal.  (Page 51)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 5.1 Conduct of Business. \n\n(a) Except (i) as expressly contemplated or expressly permitted by this Agreement, (ii) as required by applicable Law (including COVID-19 Measures) or (iii) as set forth in Section 5.1(a) of the Company Disclosure Schedule, during the period from the date of this Agreement until the First Effective Time, unless Parent otherwise consents in advance in writing (which consent shall not be unreasonably withheld, delayed or conditioned), the Company shall use reasonable best efforts to conduct its business in all material respects in the Ordinary Course of Business  (Page 41)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 5.5 Reasonable Best Efforts. \n\n(a) Subject to the terms and conditions of this Agreement, each of the parties hereto shall cooperate with the other parties and use (and shall cause their respective Subsidiaries to use) their respective reasonable best efforts (unless, with respect to any action, another standard of performance is expressly provided for herein) to promptly (i) take, or cause to be taken, all actions, and do, or cause to be done, and assist and cooperate with the other parties hereto in doing, all things necessary, proper or advisable to cause the conditions to Closing to be satisfied as promptly as reasonably practicable and to consummate and make effective, as promptly as reasonably practicable, the Transactions, including preparing and filing promptly and fully all documentation to effect all necessary filings, notices, petitions, statements, registrations, submissions of information, applications and other documents, (ii) obtain all approvals, consents, registrations, waivers, permits, authorizations, orders and other confirmations from any Governmental Authority or third party necessary, proper or advisable to consummate the Transactions,  (Page 54)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are further subject to the satisfaction (or waiver, if permissible under applicable Law) on or prior to the First Effective Time of the following conditions: \n\n(a) Representations and Warranties. <omitted> (iii) the other representations and warranties of the Company contained in Article III shall be true and correct, disregarding all qualifications and exceptions contained therein relating to materiality or Company Material Adverse Effect, in each case as of the First Effective Time with the same effect as though made on and as of the First Effective Time (except to the extent that such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty shall be true and correct as of such earlier date), except, in the case of this clause (iii), where the failure to be so true and correct does not have, and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect. (Page 67)\n\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted> \n\n(iii) the other representations and warranties of the Company contained in Article III shall be true and correct <omitted> except, in the case of this clause (iii), where the failure to be so true and correct does not have, and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect. (Page 67)\n\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are further subject to the satisfaction (or waiver, if permissible under applicable Law) on or prior to the First Effective Time of the following conditions: \n\n(a) Representations and Warranties. <omitted> (ii) Section 3.2(a) <omitted> (Capitalization) shall be true and correct in all respects, in each case as of the First Effective Time with the same effect as though made on and as of the First Effective Time (except to the extent that such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty shall be true and correct as of such earlier date), except for any de minimis inaccuracies (taking into account the size of the Company); (Pages 66-67)\n\n(ii) <omitted> Section 3.2(b) (Capitalization) shall be true and correct in all respects, in each case as of the First Effective Time with the same effect as though made on and as of the First Effective Time (except to the extent that such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty shall be true and correct as of such earlier date), except for any de minimis inaccuracies (taking into account the size of the Company); (Pages 66-67)\n\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted>\n\n(ii) Section 3.2(a) <omitted> (Capitalization) shall be true and correct in all respects <omitted> except for any de minimis inaccuracies (taking into account the size of the Company); (Page 67)\n\nSection 3.3 Authority; Noncontravention. <omitted> This Agreement has been duly executed and delivered by the Company and, assuming due authorization, execution and delivery hereof by the other parties hereto, constitutes a legal, valid and binding obligation of the Company, enforceable against the Company in accordance with its terms,  <omitted> (c) The Company Board, at a meeting duly called and held, has (i) determined that it is fair to and in the best interest of the Company and the holders of shares of Company Common Stock, and declared it advisable, that the Company enter into this Agreement and consummate the Transactions, including the Mergers; (ii) adopted this Agreement and approved the execution <omitted>\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are further subject to the satisfaction (or waiver, if permissible under applicable Law) on or prior to the First Effective Time of the following conditions: \n\n(a) Representations and Warranties. Each of the representations and warranties of the Company contained in: (i) Section 3.1(a) (Organization, Standing and Corporate Power), Section 3.3 (Authority; Noncontravention), Section 3.18 (Opinion of Financial Advisor), Section 3.19 (Brokers and Other Advisors) and Section 3.20 (Company Stockholder Approval) shall be true and correct in all material respects, in each case as of the First Effective Time with the same effect as though made on and as of the First Effective Time (except to the extent that such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty shall be true and correct as of such earlier date); (ii) <omitted> Section 3.2(b) (Capitalization) shall be true and correct in all respects, in each case as of the First Effective Time with the same effect as though made on and as of the First Effective Time (except to the extent that such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty shall be true and correct as of such earlier date), except for any de minimis inaccuracies (taking into account the size of the Company); (Pages 66-67)\n\nSection 3.3 Authority; Noncontravention. <omitted> This Agreement has been duly executed and delivered by the Company and, assuming due authorization, execution and delivery hereof by the other parties hereto, constitutes a legal, valid and binding obligation of the Company, enforceable against the Company in accordance with its terms,  <omitted> (c) The Company Board, at a meeting duly called and held, has (i) determined that it is fair to and in the best interest of the Company and the holders of shares of Company Common Stock, and declared it advisable, that the Company enter into this Agreement and consummate the Transactions, including the Mergers; (ii) adopted this Agreement and approved the execution <omitted>\nSection 6.2 Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted> Each of the representations and warranties of the Company contained in: (i) Section 3.1(a) (Organization, Standing and Corporate Power), Section 3.3 (Authority; Noncontravention), Section 3.18 (Opinion of Financial Advisor), Section 3.19 (Brokers and Other Advisors) and Section 3.20 (Company Stockholder Approval) shall be true and correct in all material respects <omitted> ; (ii) <omitted> Section 3.2(b) (Capitalization) shall be true and correct in all respects <omitted> except for any de minimis inaccuracies (taking into account the size of the Company); (Pages 66-67)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 5.3 No Solicitation by the Company; Company Change in Recommendation. <omitted> (d) If, at any time prior to obtaining the Company Stockholder Approval, the Company Board (or any duly authorized committee thereof) receives a Company Takeover Proposal that it determines in good faith (after consultation with its outside counsel and financial advisor) constitutes a Company Superior Proposal, the Company Board (or any duly authorized committee thereof) may (i) effect a Company Adverse Recommendation Change or (ii) authorize the Company to terminate this Agreement pursuant to Section 7.1(d)(iii) in order to enter into a definitive written agreement providing for a Company Superior Proposal (any such agreement, a “Company Alternative Acquisition Agreement”), in the case of each of clauses (i) and (ii) if (A) the Company Board (or any duly authorized committee thereof) determines in good faith (after consultation with its outside counsel and financial advisor) that the failure to take such action would be inconsistent with the Company’s directors’ fiduciary duties under applicable Law; (B) the Company has notified Parent in writing that it intends to effect a Company Adverse Recommendation Change or terminate this Agreement (which notice shall not constitute a Company Adverse Recommendation Change), including if applicable a copy of the proposed Company Alternative Acquisition Agreement between the Company and the Person making such Company Superior Proposal; (C) for a period of four (4) Business Days following the notice delivered pursuant to clause (B) of this Section 5.3(d), the Company shall have made Company Representatives available to discuss and negotiate in good faith (in each case, to the extent Parent desires to negotiate) with Parent Representatives any proposed modifications to the terms and conditions of this Agreement so that the Company Takeover Proposal that is the subject of the notice described in clause (B) above no longer constitutes a Company Superior Proposal or the failure to take such action would no longer be inconsistent with the Company’s directors’ fiduciary duties under applicable Law (it being understood and agreed that any amendment to any material term or condition of any Company Superior Proposal shall require a new notice and a new negotiation period (except that such new negotiation period shall be for two (2) Business Days)); and (D) no earlier than the end of such negotiation period, the Company Board (or any duly authorized committee thereof) shall have determined in good faith (after consultation with its outside counsel and financial advisor), after considering the terms of any proposed amendment or modification to this Agreement, that (x) the Company Takeover Proposal that is the subject of the notice described in clause (B) above would still constitute a Company Superior Proposal and (y) the failure to take such action would still be inconsistent with the Company’s directors’ fiduciary duties under applicable Law. (Page 50)\n\nIf <omitted> the Company Board (or any duly authorized committee thereof) receives a Company Takeover Proposal that it determines <omitted> constitutes a Company Superior Proposal, the Company Board (or any duly authorized committee thereof) may <omitted> (ii) authorize the Company to terminate this Agreement pursuant to Section 7.1(d)(iii) in order to enter into a definitive written agreement providing for a Company Superior Proposal (any such agreement, a “Company Alternative Acquisition Agreement”) <omitted> if <omitted> (B) the Company has notified Parent in writing that it intends to effect a Company Adverse Recommendation Change or terminate this Agreement <omitted> (C) for a period of four (4) Business Days following the notice delivered pursuant to clause (B) of this Section 5.3(d), the Company shall have made Company Representatives available to discuss and negotiate in good faith <omitted> with Parent Representatives any proposed modifications to the terms and conditions of this Agreement so that the Company Takeover Proposal that is the subject of the notice described in clause (B) above no longer constitutes a Company Superior Proposal or the failure to take such action would no longer be inconsistent with the Company’s directors’ fiduciary duties under applicable Law (Page 50)\n\nSection 5.3 No Solicitation by the Company; Company Change in Recommendation. <omitted> (d) If, at any time prior to obtaining the Company Stockholder Approval, the Company Board (or any duly authorized committee thereof) receives a Company Takeover Proposal that it determines in good faith (after consultation with its outside counsel and financial advisor) constitutes a Company Superior Proposal, the Company Board (or any duly authorized committee thereof) may (i) effect a Company Adverse Recommendation Change or (ii) authorize the Company to terminate this Agreement pursuant to Section 7.1(d)(iii) in order to enter into a definitive written agreement providing for a Company Superior Proposal (any such agreement, a “Company Alternative Acquisition Agreement”), in the case of each of clauses (i) and (ii) if (A) the Company Board (or any duly authorized committee thereof) determines in good faith (after consultation with its outside counsel and financial advisor) that the failure to take such action would be inconsistent with the Company’s directors’ fiduciary duties under applicable Law; (B) the Company has notified Parent in writing that it intends to effect a Company Adverse Recommendation Change or terminate this Agreement (which notice shall not constitute a Company Adverse Recommendation Change), including if applicable a copy of the proposed Company Alternative Acquisition Agreement between the Company and the Person making such Company Superior Proposal; (C) for a period of four (4) Business Days following the notice delivered pursuant to clause (B) of this Section 5.3(d), the Company shall have made Company Representatives available to discuss and negotiate in good faith (in each case, to the extent Parent desires to negotiate) with Parent Representatives any proposed modifications to the terms and conditions of this Agreement so that the Company Takeover Proposal that is the subject of the notice described in clause (B) above no longer constitutes a Company Superior Proposal or the failure to take such action would no longer be inconsistent with the Company’s directors’ fiduciary duties under applicable Law (it being understood and agreed that any amendment to any material term or condition of any Company Superior Proposal shall require a new notice and a new negotiation period (except that such new negotiation period shall be for two (2) Business Days)); and (D) no earlier than the end of such negotiation period, the Company Board (or any duly authorized committee thereof) shall have determined in good faith (after consultation with its outside counsel and financial advisor), after considering the terms of any proposed amendment or modification to this Agreement, that (x) the Company Takeover Proposal that is the subject of the notice described in clause (B) above would still constitute a Company Superior Proposal and (y) the failure to take such action would still be inconsistent with the Company’s directors’ fiduciary duties under applicable Law. (Page 50)\n\nIf <omitted> the Company Board (or any duly authorized committee thereof) receives a Company Takeover Proposal that it determines <omitted> constitutes a Company Superior Proposal, the Company Board (or any duly authorized committee thereof) may <omitted> (ii) authorize the Company to terminate this Agreement pursuant to Section 7.1(d)(iii) in order to enter into a definitive written agreement providing for a Company Superior Proposal (any such agreement, a “Company Alternative Acquisition Agreement”) <omitted> if <omitted> (B) the Company has notified Parent in writing that it intends to effect a Company Adverse Recommendation Change or terminate this Agreement <omitted> (it being understood and agreed that any amendment to any material term or condition of any Company Superior Proposal shall require a new notice and a new negotiation period (except that such new negotiation period shall be for two (2) Business Days)) (Page 50)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 5.3 No Solicitation by the Company; Company Change in Recommendation.(a) Except as provided in Section 5.3(b) or Section 5.3(d), from the date of this Agreement until the earlier of the First EffectiveTime and the termination of this Agreement in accordance with Section 7.1 <omitted> (ii) the Company shall not, and shall not authorize or permit any of its Subsidiaries or anyCompany Representatives to, directly or indirectly through another Person, (A) initiate, seek, solicit or knowingly encourage (including by way of furnishing any non-public information regarding the Company or any of its Subsidiaries), or knowingly induce or knowingly facilitate or take any other action which would reasonably be expected to lead to the making, submission or announcement of any Company TakeoverProposal, (B) engage or participate in negotiations or discussions with, or provide any non-public information or non-public data to, anyPerson (other than Parent or any Parent Representatives) relating to any Company Takeover Proposal or grant any waiver or release under any standstill or other agreement (except that if the Company Board (or any duly authorized committee thereof) determines in good faith (after consultation with its outside counsel) that the failure to grant any waiver or release would be inconsistent with the Company directors’ fiduciary duties under applicable law, the Company may waive any such standstill provision in order to permit a third party to make a Company Takeover Proposal) or (C) resolve to do any of the foregoing; <omitted> (b) Notwithstanding the foregoing, at any time prior to obtaining the Company Stockholder Approval, if the Company receives a written Company Takeover Proposal from a third party and the receipt of such Company Takeover Proposal was not initiated, sought, solicited, knowingly encouraged or knowingly induced or knowingly facilitated in material violation of Section 5.3(a), then the Company may (i) contact the Person who has made such Company Takeover Proposal and its Representatives in order to clarify the terms of such Company Takeover Proposal so that the Company Board (or any duly authorized committee thereof) may inform itself about such Company Takeover Proposal, (ii) furnish information concerning its business, properties or assets to the Person who has made such Company Takeover Proposal and its Representatives pursuant to an Acceptable Confidentiality Agreement (provided that all such information has previously been furnished to Parent or is furnished to Parent prior to or substantially concurrently with the time it is furnished to such Person) and (iii) negotiate and participate in discussions and negotiations with the Person who has made such Company Takeover Proposal and its Representatives concerning such Company Takeover Proposal, if, in the case of each of clauses (ii) and (iii), the Company Board (or any duly authorized committee thereof) determines in good faith (after consultation with its outside counsel and financial advisor) that such Company Takeover Proposal constitutes or would reasonably be expected to lead to a Company Superior Proposal. <omitted> (d) If, at any time prior to obtaining the Company Stockholder Approval, the Company Board (or any duly authorized committee thereof) receives a Company Takeover Proposal that it determines in good faith (after consultation with its outside counsel and financial advisor) constitutes a Company Superior Proposal, the Company Board (or any duly authorized committee thereof) may (i) effect a Company Adverse Recommendation Change or (ii) authorize the Company to terminate this Agreement pursuant to Section 7.1(d)(iii) in order to enter into a definitive written agreement providing for a Company Superior Proposal <omitted> Section 7.1 Termination. This Agreement may be terminated and the Transactions abandoned at any time prior to the First Effective Time, whether before or after receipt of the Company Stockholder Approval or the Parent Shareholder Approval, as applicable: <omitted> (d) by the Company: <omitted> (iii) prior to obtaining the Company Stockholder Approval, in order to enter into a Company Alternative Acquisition Agreement, in accordance with Section 5.3; provided that the right to terminate this Agreement pursuant to this Section 7.1(d)(iii) shall not be available to the Company unless the Company pays, has paid or causes to be paid, the Termination Fee to Parent in accordance with Section 7.3(a) (provided that Parent shall have provided wiring instructions for such payment or, if not, then such payment shall be paid promptly following delivery of such instructions); it being understood that the Company may enter into a Company Alternative Acquisition Agreement simultaneously with the termination of this Agreement pursuant to this Section 7.1(d)(iii).  (Page 69)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\n“Company Material Adverse Effect” shall mean any change, event, circumstance, occurrence, effect, development or state of facts (collectively, “Effects”) that, individually or in the aggregate, has had or would reasonably be expected to have a material adverse effect on the business, results of operations or financial condition of the Company and its Subsidiaries, taken as a whole; provided that no Effect shall be deemed to constitute, or be taken into account in determining whether there has been, or would reasonably be expected to be, a Company Material Adverse Effect to the extent arising out of, resulting from or relating to any of the following: (i) any Effect generally affecting any of the industries or markets in which the Company or its Subsidiaries operates; (ii) any promulgation or enactment of, implementation of, enforcement of, change in interpretation of, change in implementation of, or change in enforcement of, any Law or GAAP or governmental   75\n\n\npolicy; (iii) general economic, regulatory or political conditions (or changes therein), including any governmental shutdown or slowdown, or conditions (or changes therein) in the financial, credit or securities markets (including changes in interest rates, currency exchange rates, monetary policy or fiscal policy), in any country or region in which the Company or any of its Subsidiaries conducts business; (iv) any acts of God, natural disasters, terrorism, armed hostilities, sabotage, war, curfews, riots, demonstrations or public disorders or any escalation or worsening of acts of terrorism, armed hostilities, war, riots, demonstrations or public disorders; (v) any epidemic, pandemic or disease outbreak (including COVID-19) or any COVID-19 Measures or any change in such COVID-19 Measures or interpretations thereof following the date of this Agreement; (vi) the announcement, pendency of or performance of the Transaction, including by reason of the identity of Parent and including the impact of any of the foregoing on any relationships, contractual or otherwise, with customers, suppliers, distributors, collaboration partners, employees or regulators (provided that the exception set forth in this clause (vi) shall not apply with respect to the representation and warranty in Section 3.3(b) to the extent that the purpose of such representation or warranty is to address the consequences resulting from the execution, delivery or performance of this Agreement or the consummation of any of the Transactions and, to the extent related to such representation and warranty, the condition set forth in Section 6.2(a)); (vii) the taking of any action expressly required by the terms of this Agreement or taken at the written request of, or with the prior written consent of, Parent or Merger Subs; (viii) any change in the market price, or change in trading volume, of the capital stock of the Company (it being understood that the Effects giving rise or contributing to such change may be deemed to constitute, or be taken into account in determining whether there has been, or would reasonably be expected to be, a Company Material Adverse Effect to the extent that they are not otherwise excluded by clauses (i) through (x) hereof); (ix) any failure by the Company or its Subsidiaries to meet internal, analysts’ or other earnings estimates or financial projections or forecasts for any period, or any changes in credit ratings and any changes in any analysts recommendations or ratings with respect to the Company or any of its Subsidiaries (it being understood that the Effects giving rise or contributing to such failure or change may be deemed to constitute, or be taken into account in determining whether there has been, or would reasonably be expected to be, a Company Material Adverse Effect to the extent that they are not otherwise excluded by clauses (i) through (x) hereof); and (x) any Transaction Litigation; except, in each of clauses (i) through (v), such Effect shall be taken into account in the determination of whether a Company Material Adverse Effect has occurred solely to the extent (and only to the extent) that such Effect materially and disproportionately affected the Company and its Subsidiaries relative to other participants in the industries in the same geographies in which the Company and its Subsidiaries operate.  (Pages 79-80)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 7.3 Payment of Termination Fee by the Company. <omitted> (c) In the event that (i) this Agreement is terminated <omitted> (iii) within twelve (12) months of the date this Agreement is terminated, the Company consummates any Company Takeover Proposal or enters into a definitive written agreement with respect to any Company Takeover Proposal that is subsequently consummated (provided that for purposes of clause (iii) of this Section 7.3(c), the references to “20%” in the definition of “Company Takeover Proposal” shall be deemed to be references to “50%”), then the Company shall pay or cause to be paid as directed by Parent the Termination Fee  (Page 70)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_66\" title=\"AGREEMENT AND PLAN OF MERGER Dated as of June 10, 2020 by and among GRUBHUB INC., CHECKERS MERGER SUB I, INC., CHECKERS MERGER SUB II, …\">\nSection 5.3 No Solicitation by the Company; Company Change in Recommendation. \n\n(a) Except as provided in Section 5.3(b) or Section 5.3(d), from the date of this Agreement until the earlier of the First Effective Time and the termination of this Agreement in accordance with Section 7.1, (i) the Company shall cease, and shall cause its Subsidiaries and its and their respective officers and directors and shall use its reasonable best efforts to cause the other Company Representatives to cease, all existing discussions, negotiations and communications with any Persons or entities with respect to any Company Takeover Proposal (other than the transactions contemplated hereby); (ii) the Company shall not, and shall not authorize or permit any of its Subsidiaries or any Company Representatives to, directly or indirectly through another Person, (A) initiate, seek, solicit or knowingly encourage (including by way of furnishing any non- public information regarding the Company or any of its Subsidiaries), or knowingly induce or knowingly facilitate or take any other action which would reasonably be expected to lead to the making, submission or announcement of any Company Takeover Proposal, (B) engage or participate in negotiations or discussions with, or provide any non-public information or non-public data to, any Person (other than Parent or any Parent Representatives) relating to any Company Takeover Proposal or grant any waiver or release under any standstill or other agreement (except that if the Company Board (or any duly authorized committee thereof) determines in good faith (after consultation with its outside counsel) that the failure to grant any waiver or release would be inconsistent with the Company directors’ fiduciary duties under applicable law, the Company may waive any such standstill provision in order to permit a third party to make a Company Takeover Proposal) or (C) resolve to do any of the foregoing; (iii) the Company shall not provide and shall, within twenty-four (24) hours of the date hereof, terminate access of any third party to any data room (virtual or actual) containing any of the Company’s confidential information; and (iv) within five (5) Business Days after the date hereof, the Company shall request the return or destruction of all confidential, non-public information provided to third parties that have entered into confidentiality agreements relating to a possible Company Takeover Proposal with the Company or any of its Subsidiaries. Notwithstanding the foregoing, nothing contained in this Section 5.3 or in Section 5.6 or any other provision of this Agreement shall prohibit the Company or the Company Board (or any duly authorized committee thereof) from taking and disclosing to the Company’s stockholders its position with respect to any tender or exchange offer by a third party in compliance with Rules 14d-9 and 14e-2 promulgated under the Exchange Act; provided that any disclosure made in accordance with this sentence that constitutes a Company Adverse Recommendation Change shall result in all of the consequences of a Company Adverse Recommendation Change set forth in this Agreement. Without limiting the foregoing, it is agreed that any violation of the restrictions set forth in this   44\n\n\nSection 5.3(a) by any Subsidiaries of the Company or any Company Representatives shall constitute a violation of this Section 5.3(a) by the Company.  (Pages 48-49)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Resulting from\"",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        },
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal must close during Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Closing Only"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Closing Only"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "business and operation of Target"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "subquestions": [
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "business and operation of Target"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Material breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Any breach of no-shop",
+        "Other"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Material breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "\"act of God\""
+        },
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to Target and subsidiaries \"taken as a whole\""
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies to Target and subsidiaries \"taken as a whole\"",
+        "No"
+      ],
+      "subquestions": [],
+      "source_question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answers": [
+        {
+          "text": "Applies to Target and subsidiaries \"taken as a whole\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "\"Financial point of view\" is the sole consideration",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Financial point of view\" is the sole consideration",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary course efforts standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat covenant (no efforts standard)",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary course efforts standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Operating and Efforts Covenant",
+      "question": "General Antitrust Efforts Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat standard",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "General Antitrust Efforts Standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability for breaches of no-shop by Target Representatives (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Liability for breaches of no-shop by Target Representatives (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "pendency"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "consummation",
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    },
+    "q02": {
+      "char_offsets": [
+        3526
+      ],
+      "min_char_offset": 3526,
+      "min_frac": 0.1068,
+      "min_tokens_from_start": 881,
+      "min_tokens_from_end": 7373
+    },
+    "q03": {
+      "char_offsets": [
+        28709
+      ],
+      "min_char_offset": 28709,
+      "min_frac": 0.8696,
+      "min_tokens_from_start": 7177,
+      "min_tokens_from_end": 1077
+    },
+    "q04": {
+      "char_offsets": [
+        3526
+      ],
+      "min_char_offset": 3526,
+      "min_frac": 0.1068,
+      "min_tokens_from_start": 881,
+      "min_tokens_from_end": 7373
+    },
+    "q05": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    },
+    "q06": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    },
+    "q07": {
+      "char_offsets": [
+        19118
+      ],
+      "min_char_offset": 19118,
+      "min_frac": 0.5791,
+      "min_tokens_from_start": 4779,
+      "min_tokens_from_end": 3475
+    },
+    "q08": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    },
+    "q09": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    },
+    "q10": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0052,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 8211
+    },
+    "q11": {
+      "char_offsets": [
+        1345
+      ],
+      "min_char_offset": 1345,
+      "min_frac": 0.0407,
+      "min_tokens_from_start": 336,
+      "min_tokens_from_end": 7918
+    },
+    "q12": {
+      "char_offsets": [
+        1345
+      ],
+      "min_char_offset": 1345,
+      "min_frac": 0.0407,
+      "min_tokens_from_start": 336,
+      "min_tokens_from_end": 7918
+    },
+    "q13": {
+      "char_offsets": [
+        28709
+      ],
+      "min_char_offset": 28709,
+      "min_frac": 0.8696,
+      "min_tokens_from_start": 7177,
+      "min_tokens_from_end": 1077
+    },
+    "q14": {
+      "char_offsets": [
+        2144
+      ],
+      "min_char_offset": 2144,
+      "min_frac": 0.0649,
+      "min_tokens_from_start": 536,
+      "min_tokens_from_end": 7718
+    },
+    "q15": {
+      "char_offsets": [
+        29563
+      ],
+      "min_char_offset": 29563,
+      "min_frac": 0.8955,
+      "min_tokens_from_start": 7390,
+      "min_tokens_from_end": 864
+    },
+    "q16": {
+      "char_offsets": [
+        24166
+      ],
+      "min_char_offset": 24166,
+      "min_frac": 0.732,
+      "min_tokens_from_start": 6041,
+      "min_tokens_from_end": 2213
+    }
+  }
+}

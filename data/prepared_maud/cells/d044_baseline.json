@@ -1,0 +1,688 @@
+{
+  "cell_id": "d044_baseline",
+  "dataset": "maud",
+  "doc_index": 44,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4315,
+  "actual_chars": 17257,
+  "target_document_id": "contract_138",
+  "target_document_title": "dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 15957,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\n“Company Material Adverse Effect” means any event, occurrence, fact, condition, change, development or effect that (a) has had, or would reasonably be expected to have, a material adverse effect on the assets, liabilities, properties, business or results of operations or condition (financial or otherwise) of the Company and its Subsidiaries, taken as a whole, excluding any effect resulting from (i) changes or proposed changes in GAAP or the interpretation thereof, (ii) general economic or political conditions in the United States or any other country or region, including changes in financial, credit, securities or currency markets (including changes in interest or exchange rates), (iii) conditions generally affecting the industries in which the Company and its Subsidiaries operate, (iv) changes or proposed changes in Applicable Law or the interpretation thereof, (v) geopolitical conditions, the outbreak or escalation of hostilities, acts of war, sabotage, terrorism, cyberattacks, natural disasters, epidemics, pandemics or other widespread diseases (including COVID-19 and any COVID-19 Measures), (vi) the execution, delivery and performance of this Agreement or the announcement or consummation of the transactions contemplated by this Agreement or the identity of or any facts or circumstances relating to Parent or any of its Subsidiaries, including the impact on the relationships, contractual or otherwise, of the Company and any of its Subsidiaries with customers, suppliers, service providers, employees, Governmental Authorities or any other Persons resulting from any of the foregoing and any stockholder or derivative litigation relating to the execution, delivery and performance of this Agreement or the announcement or consummation of the transactions contemplated by this Agreement ((A) other than, in each case, with respect to any representation or warranty that is intended to address the consequences of the execution or delivery of this Agreement or the announcement or consummation of the transactions contemplated hereby and (B) excluding, for the avoidance of doubt, any breach of this Agreement by the Company), (vii) any failure by the Company or any of its Subsidiaries to meet any internal or published budgets, projections, forecasts or predictions of financial performance or integration synergies for any period (it being understood that any underlying facts giving rise or contributing to such failure that are not otherwise excluded from the definition of a “Company Material Adverse Effect” may be taken into account in determining whether there has been a Company Material Adverse Effect), (viii) any   3       actions taken (or omitted to be taken) at the express written request of Parent or Merger Sub, (ix) changes in the price and/or trading volume of the shares of Company Common Stock or any other securities of the Company on NASDAQ or any other market on which such securities are quoted for purchase and sale or changes in the credit ratings of the Company (it being understood that any underlying facts giving rise or contributing to such changes that are not otherwise excluded from the definition of a “Company Material Adverse Effect” may be taken into account in determining whether there has been a Company Material Adverse Effect) or (x) any actions taken (or omitted to be taken) by the Company or any of its Subsidiaries that are required or expressly contemplated to be taken (or omitted to be taken) pursuant to this Agreement, including any actions required under this Agreement to obtain any approvals, consents, registrations, permits, authorizations and other confirmations under applicable Competition Laws for the consummation of the Merger, except, in the case of clauses (i), (ii), (iii), (iv) or (v), to the extent the Company and its Subsidiaries, taken as a whole, are materially and disproportionately impacted thereby relative to other entities operating in the same industry or industries in which the Company and its Subsidiaries operate (in which case the incremental material and disproportionate impact or impacts may be taken into account in determining whether there has been a Company Material Adverse Effect) or (b) would prevent the Company from consummating the Merger or the other transactions contemplated hereby.  (Page 4)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nSection 6.01. Conduct of the Company. Except (v) with the prior written consent of Parent (which consent shall not be unreasonably withheld, conditioned or delayed) <omitted> from the date hereof until the Effective Time (provided, that the Company shall give Parent written notice of any such action that is material to the Company’s or its Subsidiaries’ business within 24 hours thereof), the Company (a) shall, and shall cause each of its Subsidiaries to, use commercially reasonable efforts to (1) preserve substantially intact its business, organization, assets and properties, and (2) preserve in all material respects its relationships with any customers, suppliers, vendors, payors, partners, Governmental Authorities, licensors, licensees and any other Persons with which it has material business relations, in each case in this clause (a) in the ordinary course of business, and (y) and (b) shall not, and shall not permit any of its Subsidiaries to:  (Page 21)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nSection 6.04. No Solicitation; Other Offers. <omitted> ( b )   Exceptions.  Notwithstanding  anything  contained  in  this Agreement  to  the  contrary,  at  any  time  prior  to  receipt  of  the  Company  Stockholder Approval: \n(i)   the Company, directly or indirectly through its Representatives, may (A) engage in negotiations or discussions with any Third Party and its Representatives that has made an unsolicited bona fide offer, inquiry, proposal or indication of interest with respect to an Acquisition Proposal not resulting, in whole or in part, from a breach of this Section 6.04, if the Board of Directors reasonably believes, after consultation with its outside legal counsel and financial advisors, based on information then available, that (1) such Acquisition Proposal constitutes, or would reasonably be expected to lead to, a Superior Proposal and (2)   failure to take such action would be reasonably likely to be inconsistent with its fiduciary duties and (B) furnish to such Third Party or its Representatives nonpublic information relating to the Company or any of its Subsidiaries and afford access to the business, properties, assets, books or records of the Company or any of its Subsidiaries pursuant to a confidentiality agreement no less favorable to the Company in any material respect to the Company than the Confidentiality Agreement (and that, for the avoidance of doubt, includes a customary standstill prohibiting a counterparty from acquiring any additional equity or voting securities of the Company or any of its Subsidiaries or any Company Securities and having a duration no shorter than the standstill set forth in the A&R Cooperation Agreement);  (Page 24)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . The obligations of Parent and Merger Sub to consummate the Merger are subject to the satisfaction or waiver of the following additional conditions: <omitted> (b)   <omitted> (iii) the other representations and warranties of the Company contained in this Agreement (disregarding all materiality and Company Material Adverse Effect qualifications contained therein) shall be true in all respects at and as of the date of this Agreement and the Effective Time as if made at and as of such times (other than representations and warranties that by their terms address matters only as of another specified time, which shall be so true only as of such time), with only such exceptions in   65       the case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . <omitted> (b)  <omitted> (iii) the other representations and warranties of the Company contained in this Agreement <omitted> shall be true in all respects <omitted> with only such exceptions in the case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n\nSection 4.05. Capitalization. <omitted>\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . The obligations of Parent and Merger Sub to consummate the Merger are subject to the satisfaction or waiver of the following additional conditions: <omitted> (b) <omitted> (ii) the representations and warranties of the Company contained in Section 4.05(a) <omitted> shall be true and correct in all respects (other than de minimis inaccuracies) contained therein at and as of the date of this Agreement and the Effective Time as if made at and as of such times (other than representations and warranties that by their terms address matters only as of another specified time, which shall be so true only as of such time)\n<omitted>\nwith only such exceptions \nin the case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n\nSection 4.05. Capitalization. <omitted>\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . <omitted> (b) <omitted> (ii) the representations and warranties of the Company contained in Section 4.05(a) <omitted> shall be true and correct in all respects (other than de minimis inaccuracies)\n<omitted>\nwith only such exceptions \nin the case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n\nSection 4.02. Corporate Authorization. (a) <omitted> The Company has duly executed and delivered this Agreement, and, assuming due authorization, execution and delivery by each of Parent and Merger Sub, this Agreement constitutes a valid and binding agreement of the Company, enforceable against the Company in accordance with its terms <omitted> (b) At a meeting duly called and held, the Board of Directors (upon the unanimous recommendation of the Special Committee) has <omitted> (ii) approved, adopted and declared advisable this Agreement and the transactions contemplated hereby\n<omitted>\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . The obligations of Parent and Merger Sub to consummate the Merger are subject to the satisfaction or waiver of the following additional conditions: <omitted> (b)   (i) the representations and warranties of the Company contained in the first sentence of Section 4.01 (Corporate Existence and Power), Section 4.02 (Corporate Authorization), Section 4.04(a) (Non-Contravention), Section 4.05(b) (Capitalization) Section 4.06(b) (Subsidiaries) (except for the first sentence thereof), Section 4.23 (Finders’ Fees) and Section 4.24 (Anti-Takeover Statutes) (except in the case of the first sentence of Section 4.01, disregarding all materiality and Company Material Adverse Effect qualifications contained therein) shall be true and correct in all material respects at and as of the date of this Agreement and the Effective Time as if made at and as of such times (other than representations and warranties that by their terms address matters only as of another specified time, which shall be so true only as of such time), (ii) the representations and warranties of the Company contained in Section 4.05(a), Section 4.05(c), the first sentence of Section 4.06(b) and Section 4.10(b) (Absence of Certain Changes) shall be true and correct in all respects (other than de minimis inaccuracies) contained therein at and as of the date of this Agreement and the Effective Time as if made at and as of such times (other than representations and warranties that by their terms address matters only as of another specified time, which shall be so true only as of such time)\n<omitted>\nwith only such exceptions \nin\n65\nthe case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n\nSection 4.02. Corporate Authorization. (a) <omitted> The Company has duly executed and delivered this Agreement, and, assuming due authorization, execution and delivery by each of Parent and Merger Sub, this Agreement constitutes a valid and binding agreement of the Company, enforceable against the Company in accordance with its terms <omitted> (b) At a meeting duly called and held, the Board of Directors (upon the unanimous recommendation of the Special Committee) has <omitted> (ii) approved, adopted and declared advisable this Agreement and the transactions contemplated hereby\n<omitted>\nSection 9.02. Conditions to the Obligations of Parent and Merger Sub . The obligations of Parent and Merger Sub to consummate the Merger are subject to the satisfaction or waiver of the following additional conditions: <omitted> (b)   (i) the representations and warranties of the Company contained in the first sentence of Section 4.01 (Corporate Existence and Power), Section 4.02 (Corporate Authorization), Section 4.04(a) (Non-Contravention), Section 4.05(b) (Capitalization) Section 4.06(b) (Subsidiaries) (except for the first sentence thereof), Section 4.23 (Finders’ Fees) and Section 4.24 (Anti-Takeover Statutes) <omitted> shall be true and correct in all material respects <omitted> , (ii) the representations and warranties of the Company contained in <omitted> Section 4.05(c), the first sentence of Section 4.06(b) and Section 4.10(b) (Absence of Certain Changes) shall be true and correct in all respects (other than de minimis inaccuracies) contained therein\n<omitted> \nwith only such exceptions \nin\n65\nthe case of this clause (b) as have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (Page 31)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\nSection  11.04. Expenses. <omitted> (b) Termination Fee. <omitted> (ii) If <omitted> (A) this Agreement is terminated <omitted> (C) within 12 months after the date of such termination, the Company or one or more of its Subsidiaries enters into a definitive agreement in respect of, or the Board of Directors approves or recommends, any Acquisition Proposal, or any Acquisition Proposal is consummated (provided that for purposes of this Section 11.04(b)(ii), each reference to “20%” in the definition of Acquisition Proposal shall be deemed to be a reference to “50%”), then the Company shall pay or cause to be paid to Parent in immediately available funds, concurrently with the earlier of the execution, approval, recommendation or consummation of such Acquisition Proposal, the Termination Fee.  (Page 34)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_138\" title=\"dated as of February 16, 2021 among TRIBUNE PUBLISHING COMPANY, TRIBUNE ENTERPRISES, LLC and TRIBUNE MERGER SUB, INC. TABLE OF CONTENTS\">\n(ii)   subject to compliance with Section 6.04(c) and Section 6.04(d), the Board of Directors may, (A) in response to an unsolicited bona fide offer, inquiry, proposal or indication of interest with respect to a written Acquisition Proposal not resulting, in whole or in part, from a breach of this Section 6.04, that the Board of Directors has determined in good faith, after consultation with its outside legal counsel and financial advisor, constitutes a Superior Proposal, make an Adverse Recommendation Change or terminate this Agreement pursuant to and in accordance with Section 10.01(d)(i) in order to enter into a definitive agreement for a Superior Proposal <omitted> \nSection  10.01. Termination.  This  Agreement  may  be  terminated  and  the  Merger  may  be  abandoned  at  any  time  prior  to  the  Effective  Time (notwithstanding any approval of this Agreement by the stockholders of the Company): <omitted> (d)  by the Company, if:   (i)   the Board of Directors authorizes the Company to enter into a written agreement concerning a Superior Proposal in compliance with the terms and conditions set forth herein; provided that immediately before and as a condition to such termination, the Company pays the Termination Fee payable pursuant to Section 11.04;  (Page 32)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Organization",
+        "Subsidiaries",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Approval",
+        "Subsidiaries"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Subsidiaries"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws",
+        "fundamental/Special R&Ws"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        },
+        {
+          "text": "fundamental/Special R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Would\" (reasonably) be expected to"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Could\" (reasonably) be expected to",
+        "\"Would\"",
+        "\"Would\" (reasonably) be expected to",
+        "No",
+        "Other forward-looking standard"
+      ],
+      "subquestions": [],
+      "source_question": "FLS (MAE) Standard-Answer",
+      "answers": [
+        {
+          "text": "\"Would\" (reasonably) be expected to"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "consummation"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "No",
+        "announcement",
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "consummation"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Action prohibited/omission required by the agreement-Answer",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Attributable to\"",
+        "\"Relating to\""
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Any breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Any breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 6,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        7722
+      ],
+      "min_char_offset": 7722,
+      "min_frac": 0.4475,
+      "min_tokens_from_start": 1930,
+      "min_tokens_from_end": 2385
+    },
+    "q02": {
+      "char_offsets": [
+        7722
+      ],
+      "min_char_offset": 7722,
+      "min_frac": 0.4475,
+      "min_tokens_from_start": 1930,
+      "min_tokens_from_end": 2385
+    },
+    "q03": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q04": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q05": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q06": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q07": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q08": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q09": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q10": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q11": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.01,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4272
+    },
+    "q12": {
+      "char_offsets": [
+        5836
+      ],
+      "min_char_offset": 5836,
+      "min_frac": 0.3382,
+      "min_tokens_from_start": 1459,
+      "min_tokens_from_end": 2856
+    },
+    "q13": {
+      "char_offsets": [
+        15957
+      ],
+      "min_char_offset": 15957,
+      "min_frac": 0.9247,
+      "min_tokens_from_start": 3989,
+      "min_tokens_from_end": 326
+    },
+    "q14": {
+      "char_offsets": [
+        14961
+      ],
+      "min_char_offset": 14961,
+      "min_frac": 0.867,
+      "min_tokens_from_start": 3740,
+      "min_tokens_from_end": 575
+    },
+    "q15": {
+      "char_offsets": [
+        14961
+      ],
+      "min_char_offset": 14961,
+      "min_frac": 0.867,
+      "min_tokens_from_start": 3740,
+      "min_tokens_from_end": 575
+    },
+    "q16": {
+      "char_offsets": [
+        4678
+      ],
+      "min_char_offset": 4678,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1169,
+      "min_tokens_from_end": 3146
+    }
+  }
+}

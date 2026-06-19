@@ -1,0 +1,647 @@
+{
+  "cell_id": "d031_baseline",
+  "dataset": "maud",
+  "doc_index": 31,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 5443,
+  "actual_chars": 21772,
+  "target_document_id": "contract_126",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …",
+  "distractor_ids": [],
+  "target_offset": 165,
+  "target_end": 17753,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 7.2. Conditions to Obligations of Parent. The obligations of Parent, Merger Sub I and Merger Sub II to consummate the Mergers shall be subject to the satisfaction on or prior to the Closing Date of each of the following conditions, any and all of which may be waived in whole or in part by Parent, Merger Sub I and Merger Sub II, as the case may be, to the extent permitted by applicable Law: <omitted> (D) the other representations and warranties of the Company set forth in this Agreement (without giving effect to any qualification as to materiality or Company Material Adverse Effect contained therein) shall be true and correct as of the date hereof and shall be true and correct as of the Closing as though made as of the Closing (except representations and warranties that by their terms speak specifically as of another date, in which case as of such date), except, with respect to this clause (D), where any failures of any such representations and warranties to be true and correct (without giving effect to any qualification as to materiality or Company Material Adverse Effect contained therein) have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect. (Page 82)\n\nSection 7.2. Conditions to Obligations of Parent. <omitted> (D) the other representations and warranties of the Company set forth in this Agreement <omitted> shall be true and correct as of the date hereof and shall be true and correct as of the Closing <omitted> , except, with respect to this clause (D), where any failures of any such representations and warranties to be true and correct <omitted> have not had and would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect. (Page 82)\n\nSection 7.2. Conditions to Obligations of Parent. The obligations of Parent, Merger Sub I and Merger Sub II to consummate the Mergers shall be subject to the satisfaction on or prior to the Closing Date of each of the following conditions, any and all of which may be waived in whole or in part by Parent, Merger Sub I and Merger Sub II, as the case may be, to the extent permitted by applicable Law: (a) Representations and Warranties. <omitted> (B) the representations and warranties of the Company set forth in Section 3.2(a) (Capitalization) <omitted> shall be true and correct other than for de minimis inaccuracies as of the date hereof and shall be true and correct other than for de minimis inaccuracies as of the Closing as though made as of the Closing (except representations and warranties that by their terms speak specifically as of another date, in which case as of such date) (Page 82)\n\nSection 7.2. Conditions to Obligations of Parent. <omitted> (B) the representations and warranties of the Company set forth in Section 3.2(a) (Capitalization) <omitted> shall be true and correct other than for de minimis inaccuracies <omitted> and shall be true and correct other than for de minimis inaccuracies (Page 82)\n\nSection 3.3. Corporate Authority. <omitted> (c) On or prior to the date hereof, the Company Board of Directors has unanimously <omitted> (iii) approved the execution and delivery by the Company of this Agreement, the performance by the Company of its covenants and agreements contained herein and the consummation of the Mergers and the other Transactions upon the terms and subject to the conditions contained herein <omitted> (e) This Agreement has been duly and validly executed and delivered by the Company and, assuming this Agreement constitutes the valid and binding agreement of Parent, Merger Sub I and Merger Sub II, constitutes the valid and binding agreement of the Company, enforceable against the Company in accordance with its terms <omitted>\nSection 3.23. State Takeover Statutes; Anti-Takeover Laws. <omitted> The Company has no rights plan, “poison-pill” or other comparable agreement designed to have the effect of delaying, deferring or discouraging any Person from acquiring control of the Company. <omitted>\nSection 7.2. Conditions to Obligations of Parent. The obligations of Parent, Merger Sub I and Merger Sub II to consummate the Mergers shall be subject to the satisfaction on or prior to the Closing Date of each of the following conditions, any and all of which may be waived in whole or in part by Parent, Merger Sub I and Merger Sub II, as the case may be, to the extent permitted by applicable Law: (a) Representations and Warranties. (A) The representations and warranties of the Company set forth in Section 3.1(a) (other than the last sentence thereof) (Qualification, Organization, Subsidiaries, etc.), the first sentence of Section 3.1(b) (Qualification, Organization, Subsidiaries, etc.), Section 3.3 (Corporate Authority), Section 3.22 (Opinion of Financial Advisor), Section 3.23 (State Takeover Statutes; Anti-Takeover Laws) and Section 3.25 (Finders and Brokers) (x) that are qualified by materiality or Company Material Adverse Effect shall be true and correct in all respects as of the date hereof and shall be true and correct in all respects as of the Closing as though made as of the Closing (except representations and warranties that by their terms speak specifically as of another date, in which case as of such date) and (y) that are <omitted> not qualified by materiality or Company Material Adverse Effect shall be true and correct in all material respects as of the date hereof and shall be true and correct in all material respects as of the Closing as though made as of the Closing (except representations and warranties that by their terms speak specifically as of another date, in which case as of such date); (B) the representations and warranties of the Company set forth in <omitted> Section 3.2(c) (Capitalization), Section 3.2(d) (Capitalization) and Section 3.2(e) (Capitalization) shall be true and correct other than for de minimis inaccuracies as of the date hereof and shall be true and correct other than for de minimis inaccuracies as of the Closing as though made as of the Closing (except representations and warranties that by their terms speak specifically as of another date, in which case as of such date); (C) the representations and warranties of the Company set forth in Section 3.8(a) (Absence of Certain Changes or Events) shall be true and correct in all respects as of the date hereof and shall be true and correct in all respects as of the Closing as though made as of the Closing (Pages 81-82)\n\nSection 3.3. Corporate Authority. <omitted> (c) On or prior to the date hereof, the Company Board of Directors has unanimously <omitted> (iii) approved the execution and delivery by the Company of this Agreement, the performance by the Company of its covenants and agreements contained herein and the consummation of the Mergers and the other Transactions upon the terms and subject to the conditions contained herein <omitted> (e) This Agreement has been duly and validly executed and delivered by the Company and, assuming this Agreement constitutes the valid and binding agreement of Parent, Merger Sub I and Merger Sub II, constitutes the valid and binding agreement of the Company, enforceable against the Company in accordance with its terms <omitted>\nSection 3.23. State Takeover Statutes; Anti-Takeover Laws. <omitted> The Company has no rights plan, “poison-pill” or other comparable agreement designed to have the effect of delaying, deferring or discouraging any Person from acquiring control of the Company. <omitted>\nSection 7.2. Conditions to Obligations of Parent. <omitted> (A) The representations and warranties of the Company set forth in Section 3.1(a) (other than the last sentence thereof) (Qualification, Organization, Subsidiaries, etc.), the first sentence of Section 3.1(b) (Qualification, Organization, Subsidiaries, etc.), Section 3.3 (Corporate Authority), Section 3.22 (Opinion of Financial Advisor), Section 3.23 (State Takeover Statutes; Anti-Takeover Laws) and Section 3.25 (Finders and Brokers) (x) that are qualified by materiality or Company Material Adverse Effect shall be true and correct in all respects <omitted> and (y) that are <omitted> not qualified by materiality or Company Material Adverse Effect shall be true and correct in all material respects as of the date hereof and shall be true and correct in all material respects as of the Closing as though made as of the Closing <omitted> ; (B) the representations and warranties of the Company set forth in <omitted> Section 3.2(c) (Capitalization), Section 3.2(d) (Capitalization) and Section 3.2(e) (Capitalization) shall be true and correct other than for de minimis inaccuracies <omitted> ; (C) the representations and warranties of the Company set forth in Section 3.8(a) (Absence of Certain Changes or Events) shall be true and correct in all respects (Pages 81-82)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 5.3. No Solicitation by the Company. <omitted> \n“Superior Proposal” means a bona fide, written Acquisition Proposal (with references in the definition thereof to fifteen percent (15%) and eighty-five percent (85%) being deemed to be replaced with references to eighty percent (80%) and twenty percent (20%), respectively) by a third party, which the Company Board of Directors determines in good faith after consultation with the Company’s outside legal counsel and financial advisors to be more favorable to the Company Stockholders from a financial point of view than the Mergers, taking into account all relevant factors (including all the terms and conditions of such proposal or offer (including the transaction consideration, conditionality, timing, certainty of financing and/or regulatory approvals and likelihood of consummation) and this Agreement (and, if applicable, any changes to the terms of this Agreement proposed by Parent pursuant to Section 5.3)).  (Page 108)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\n“Knowledge” will be deemed to be, as the case may be, the actual knowledge of (a) the individuals set forth on Section 1.1(a) of the Parent Disclosure Letter with respect to Parent, Merger Sub I or Merger Sub II or (b) the individuals set forth on Section 1.1(a) of the Company Disclosure Letter with respect to the Company, in each case after reasonable inquiry of those employees of such Party and its Subsidiaries who would reasonably be expected to have actual knowledge of the matter in question.  (Page 103)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 5.3. No Solicitation by the Company. <omitted> (d) <omitted> the Company Board of Directors may (i) make a Change of Recommendation (only of the type contemplated by Section 5.3(a)(iv) or Section 5.3(a)(vi)) in response to an Intervening Event if the Company Board of Directors has determined in good faith after consultation with the Company’s outside legal counsel and financial advisors, that the failure to take such action would be reasonably likely to violate the directors’ fiduciary duties under applicable Law or (ii) make a Change of Recommendation and cause the Company to terminate this Agreement pursuant to and in accordance with Section 8.1(h) in order to enter into a definitive agreement providing for an unsolicited Acquisition Proposal received after the date of this Agreement (which, for the avoidance of doubt, did not result from a breach of this Section 5.3 and such Acquisition Proposal is not withdrawn) if the Company Board of Directors determines in good faith after consultation with the Company’s outside legal counsel and financial advisors that such Acquisition Proposal constitutes a Superior Proposal, but only if the Company Board of Directors has determined in good faith after consultation with the Company’s outside legal counsel and financial advisors, that failure to take such action would be reasonably likely to violate the directors’ fiduciary duties under applicable Law\n\n<omitted> Section 8.1. Termination  (Page 62)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 8.2. Effect of Termination. <omitted> (i) If (A) Parent or the Company terminates this Agreement <omitted> (C) within twelve (12) months of such termination, an Acquisition Proposal is consummated or a definitive agreement with respect to an Acquisition Proposal is entered into, then on or prior to the date that is the earlier of (x) the date any such Acquisition Proposal is consummated and (y) the date of entry in any such definitive agreement, the Company shall pay to Parent a fee of nine hundred million dollars ($900,000,000) in cash (the “Termination Fee”).  (Page 86)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 5.3. No Solicitation by the Company. <omitted> \nSection 8.1. Termination. This Agreement may be terminated <omitted> (e) by Parent, if, prior to obtaining the Company Stockholder Approval, <omitted> (ii) the Company has materially breached Section 5.3 <omitted> \nSection 8.2. Effect of Termination. <omitted> (ii) If (x) Parent terminates this Agreement pursuant to Section 8.1(e) or (y) the Company terminates this Agreement pursuant to Section 8.1(d) at a time when Parent would be permitted to terminate this Agreement pursuant to Section 8.1(e), within two (2) Business Days after such termination, the Company shall pay to Parent the Termination Fee.  (Page 86)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\nSection 5.1. Conduct of Business by the Company Pending the Closing. The Company agrees that between the date hereof and the earlier of the First Effective Time or the date, if any, on which this Agreement is validly terminated pursuant to Section 8.1, except as set forth in Section 5.1 of the Company Disclosure Letter, as specifically permitted or required by this Agreement, as required by applicable Law or as consented to in writing by Parent (with respect to clauses (i) (with respect to the organizational documents of any Company Subsidiary only), (iv), (v), (ix), (x), (xi), (xii), (xiii), (xiv), (xvi), (xvii), (xix), (xxii) and (xxiv) (or (xxix) with respect to any of the foregoing) of Section 5.1(b) only, such consent not to be unreasonably withheld, conditioned or delayed), the Company (a) shall, and shall cause each Company Subsidiary to, use reasonable best efforts to conduct its business in all material respects in the ordinary course of business and use reasonable best efforts to (i) preserve intact its and their present business organizations, goodwill and ongoing businesses, (ii) keep available the services of its and their present officers and other key employees (other than where termination of such services is for cause) and (iii) preserve its and their relationships with customers, suppliers, vendors, resellers, licensors, licensees, Governmental Entities, employees and other Persons with whom it and they have material business relations (it being agreed by the Parties that with respect to the matters specifically addressed by any provision of Section 5.1(b), such specific provisions shall govern over the more general provision of this Section 5.1(a));  (Page 53)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\n“Intervening Event” means any Effect that is material to the Company and the Company Subsidiaries (taken as a whole) and was not known by or reasonably foreseeable to the Company or the Company Board of Directors as of or prior to the date hereof; provided, however, that in no event shall the following events, changes or developments constitute an Intervening Event: (A) the receipt, existence or terms of an Acquisition Proposal or any inquiry or communications relating thereto or any matter relating thereto or consequence thereof, (B) changes in the market price or trading volume of the Class A Common Stock, the Parent Common Stock or any other securities of the Company, Parent or their respective Subsidiaries, or any change in credit rating or the fact that the Company meets or exceeds (or that Parent fails to meet or exceed) internal or published estimates, projections, forecasts or predictions for any period, (C) changes in general economic, political or financial conditions or markets (including changes in interest rates, exchange rates, stock, bond and/or debt prices), (D) changes in GAAP, other applicable accounting rules or applicable Law or, in any such case, changes in the interpretation thereof or (E) natural disasters, epidemics or pandemics (including the existence and impact of the COVID-19 pandemic).  (Pages 62-63)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_126\" title=\"AGREEMENT AND PLAN OF MERGER by and among salesforce.com, inc. Skyline Strategies I Inc., Skyline Strategies II LLC and Slack …\">\n“Company Material Adverse Effect” means any Effect that, individually or in the aggregate, has had or would reasonably be expected to have a material adverse effect on the financial condition, business or operations of the Company and the Company Subsidiaries, taken as a whole; provided, however, that no Effects to the extent resulting or arising from the following shall be deemed to constitute a Company Material Adverse Effect or shall be taken into account when determining whether a Company Material Adverse Effect exists or has occurred: (a) any changes in United States, regional, global or international economic conditions, including any changes affecting financial, credit, foreign exchange or capital market conditions; (b) any changes in conditions in the business collaboration technology industry; (c) any changes in political, geopolitical, regulatory or legislative conditions in the United States or any other country or region of the world; (d) any changes after the date hereof in GAAP or the interpretation thereof; (e) any changes after the date hereof in applicable Law or the interpretation thereof; (f) any failure by the Company to meet any internal or published projections, estimates or expectations of the Company’s revenue, earnings or other financial performance or results of operations for any period, in and of itself, or any failure by the Company to meet its internal budgets, plans or forecasts of its revenues, earnings or other financial performance or results of operations, in and of itself (it being understood that the facts or occurrences giving rise or contributing to such failure that are not otherwise excluded from this definition of a “Company Material Adverse Effect” may be taken into account); (g) any acts of terrorism or sabotage, war (whether or not declared), the commencement, continuation or escalation of a war, acts of armed hostility, weather conditions, natural disasters, epidemics or pandemics (including the COVID-19 pandemic) or other force majeure events, including any material worsening of such conditions threatened or existing as of the date hereof; (h) the execution and delivery of this Agreement, the identity of Parent or any Parent Subsidiary, the pendency or consummation of this Agreement, the Mergers and the other Transactions, including the effect thereof on the relationships with current or prospective customers, suppliers, distributors, partners, financing sources, employees or sales representatives, or the public announcement of this Agreement or the Transactions, including any litigation arising out of or relating to this Agreement or the Transactions, in each case only to the extent resulting from the execution and delivery of this Agreement, the identity of Parent or any Parent Subsidiary, the pendency or consummation of this Agreement, the Mergers and the other Transactions, or the   A-5\n\n\npublic announcement of this Agreement and the Transactions, as applicable (provided that this clause (h) shall not apply to any representation or warranty to the extent the purpose of such representation or warranty is to address, as applicable, the consequences resulting from the execution and delivery of this Agreement, the pendency or consummation of this Agreement, the Mergers and the other Transactions); and (i) any action or failure to take any action which action or failure to act is requested in writing by Parent or otherwise expressly required by this Agreement (other than pursuant to Section 5.1(a)); provided that with respect to the exceptions set forth in clauses (a), (b), (c), (d), (e) and (g), if such Effect has had a disproportionate adverse effect on the Company or any Company Subsidiary relative to other companies operating in the business collaboration technology industry, then only the incremental disproportionate adverse effect of such Effect shall be taken into account for the purpose of determining whether a Company Material Adverse Effect exists or has occurred.  (Pages 98-99)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Rights Agreement",
+        "Subsidiaries",
+        "Tax"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Opinion of Financial Advisor"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Rights Agreement"
+        },
+        {
+          "text": "Subsidiaries"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "Capitalization R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\"",
+        "No",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        },
+        {
+          "text": "force majeure"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        },
+        {
+          "text": "force majeure"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Knowledge",
+      "question": "Knowledge Definition-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Constructive knowledge"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Actual knowledge",
+        "Constructive knowledge"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition-Answer",
+      "answers": [
+        {
+          "text": "Constructive knowledge"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted in response to Intervening Event",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted in response to Intervening Event",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (intervening event)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected violation\" of fiduciary duties"
+      ],
+      "gold_labels": [
+        "4"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (intervening event)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected violation\" of fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition includes asset deals-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Greater than 50% but not \"all or substantially all\""
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "subquestions": [],
+      "source_question": "Definition includes asset deals-Answer",
+      "answers": [
+        {
+          "text": "Greater than 50% but not \"all or substantially all\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "\"Financial point of view\" is the sole consideration",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Financial point of view\" is the sole consideration",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains a materiality standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains a materiality standard (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary course efforts standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat covenant (no efforts standard)",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary course efforts standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        165
+      ],
+      "min_char_offset": 165,
+      "min_frac": 0.0076,
+      "min_tokens_from_start": 41,
+      "min_tokens_from_end": 5402
+    },
+    "q02": {
+      "char_offsets": [
+        165
+      ],
+      "min_char_offset": 165,
+      "min_frac": 0.0076,
+      "min_tokens_from_start": 41,
+      "min_tokens_from_end": 5402
+    },
+    "q03": {
+      "char_offsets": [
+        17753
+      ],
+      "min_char_offset": 17753,
+      "min_frac": 0.8154,
+      "min_tokens_from_start": 4438,
+      "min_tokens_from_end": 1005
+    },
+    "q04": {
+      "char_offsets": [
+        17753
+      ],
+      "min_char_offset": 17753,
+      "min_frac": 0.8154,
+      "min_tokens_from_start": 4438,
+      "min_tokens_from_end": 1005
+    },
+    "q05": {
+      "char_offsets": [
+        17753
+      ],
+      "min_char_offset": 17753,
+      "min_frac": 0.8154,
+      "min_tokens_from_start": 4438,
+      "min_tokens_from_end": 1005
+    },
+    "q06": {
+      "char_offsets": [
+        17753
+      ],
+      "min_char_offset": 17753,
+      "min_frac": 0.8154,
+      "min_tokens_from_start": 4438,
+      "min_tokens_from_end": 1005
+    },
+    "q07": {
+      "char_offsets": [
+        17753
+      ],
+      "min_char_offset": 17753,
+      "min_frac": 0.8154,
+      "min_tokens_from_start": 4438,
+      "min_tokens_from_end": 1005
+    },
+    "q08": {
+      "char_offsets": [
+        10379
+      ],
+      "min_char_offset": 10379,
+      "min_frac": 0.4767,
+      "min_tokens_from_start": 2594,
+      "min_tokens_from_end": 2849
+    },
+    "q09": {
+      "char_offsets": [
+        11071
+      ],
+      "min_char_offset": 11071,
+      "min_frac": 0.5085,
+      "min_tokens_from_start": 2767,
+      "min_tokens_from_end": 2676
+    },
+    "q10": {
+      "char_offsets": [
+        11071
+      ],
+      "min_char_offset": 11071,
+      "min_frac": 0.5085,
+      "min_tokens_from_start": 2767,
+      "min_tokens_from_end": 2676
+    },
+    "q11": {
+      "char_offsets": [
+        9213
+      ],
+      "min_char_offset": 9213,
+      "min_frac": 0.4232,
+      "min_tokens_from_start": 2303,
+      "min_tokens_from_end": 3140
+    },
+    "q12": {
+      "char_offsets": [
+        9213
+      ],
+      "min_char_offset": 9213,
+      "min_frac": 0.4232,
+      "min_tokens_from_start": 2303,
+      "min_tokens_from_end": 3140
+    },
+    "q13": {
+      "char_offsets": [
+        16224
+      ],
+      "min_char_offset": 16224,
+      "min_frac": 0.7452,
+      "min_tokens_from_start": 4056,
+      "min_tokens_from_end": 1387
+    },
+    "q14": {
+      "char_offsets": [
+        12720
+      ],
+      "min_char_offset": 12720,
+      "min_frac": 0.5842,
+      "min_tokens_from_start": 3180,
+      "min_tokens_from_end": 2263
+    },
+    "q15": {
+      "char_offsets": [
+        14338
+      ],
+      "min_char_offset": 14338,
+      "min_frac": 0.6586,
+      "min_tokens_from_start": 3584,
+      "min_tokens_from_end": 1859
+    }
+  }
+}

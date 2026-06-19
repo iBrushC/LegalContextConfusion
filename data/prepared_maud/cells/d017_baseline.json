@@ -1,0 +1,597 @@
+{
+  "cell_id": "d017_baseline",
+  "dataset": "maud",
+  "doc_index": 17,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 6208,
+  "actual_chars": 24830,
+  "target_document_id": "contract_113",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …",
+  "distractor_ids": [],
+  "target_offset": 178,
+  "target_end": 22841,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\n“Superior Proposal” means any written bona fide (as reasonably determined by the Company Board in good faith) Acquisition Proposal received after the date of this Agreement that did not result from a material breach of Section 6.3(a) (except the references in the definition thereof to “twenty percent (20%)” will be replaced by “fifty percent (50%)”) that the Company Board or a committee thereof has determined in good faith, after consultation with outside counsel and its independent financial advisor, is superior to the Acquisition Proposal reflected in this Agreement, taking into account all of the terms and conditions (including all of the financial, regulatory, financing, conditionality, legal and other terms, as well as the likelihood of consummation thereof) and all other aspects of such Acquisition Proposal (including any changes to the terms of this Agreement proposed by Parent).  (Page 73)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nWHEREAS, the boards of directors of Parent, Purchaser and the Company each have approved the acquisition of the Company on the terms and subject to the conditions set forth in this Agreement and, accordingly, Purchaser has agreed to commence a tender offer (as it may be amended from time to time as permitted by this Agreement, the “Offer”) to purchase any (subject to the Minimum Tender Condition) and all of the issued and outstanding shares (each, a “Share” and, collectively, “Shares”) of Common Stock, par value $0.0001 per share, of the Company (“Company Common Stock”), for $22.50 per Share, net to the seller in cash, without interest (the “Closing Amount”), plus one contingent value right per share (a “CVR”) which shall represent the right to receive the Milestone Payment (as such term is used in the Contingent Value Rights Agreement in the form attached hereto as Annex IV (the “CVR Agreement”) to be entered into between Parent and a trustee mutually agreeable to Parent and the Company (the “Trustee”), if any, at the time provided for in the CVR Agreement, net to the seller in cash, without interest (the Closing Amount plus one CVR, collectively, or any higher amount per share paid pursuant to the Offer, the “Offer Price”);\n<omitted>\nSection 3.1. Conversion of Securities. At the Effective Time, by virtue of the Merger and without any further action on the part of Parent, Purchaser, the Company or the holders of any of the following securities, the following will occur: \n\n(a) each Share issued and outstanding immediately prior to the Effective Time (other than any Shares described in Section 3.1(b), Company Restricted Stock and any Dissenting Shares) will be converted into the right to receive the Offer Price, without interest (the “Merger Consideration”), less any applicable tax withholding. As of the Effective Time, all such Shares shall no longer be outstanding and shall cease to exist, and each holder of any such Shares shall cease to have any rights with respect thereto, except the right to receive the Merger Consideration in accordance with Section 3.4, without interest;  (Page 12)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nSection 6.1. Covenants of the Company. \n\n(a) Except (i) as set forth in Section 6.1(a) of the Company Disclosure Letter, (ii) as required by applicable Law, (iii) as expressly permitted by this Agreement, (iv) any action taken, or omitted to be taken, in each case, that is reasonably necessary to comply with any directives, guidelines or recommendations promulgated by any Governmental Body in connection with or in response to COVID-19 or (v) with the prior written consent of Parent (which consent will not be unreasonably delayed, withheld or conditioned), from the date of this Agreement until the earlier of the Acceptance Time or the date this Agreement is terminated (the “Pre-Closing Period”), the Company shall use commercially reasonable efforts (A) to carry on its business in the ordinary course of business  (Page 42)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\n“Company Material Adverse Effect” means any change, effect, event, inaccuracy, occurrence, or other matter that (x), would reasonably be expected to have, individually or in the aggregate, a material adverse effect on the business, condition (financial or otherwise), assets, operations, or results of operations of the Company, taken as a whole or (y) prevents the ability of the Company to consummate the Contemplated Transactions on or before the Outside Date; provided, however, that for purposes of clause (x), any changes, effects, events, inaccuracies, occurrences, or other matters resulting from any of the following will not be deemed to constitute a Company Material Adverse Effect and will be disregarded in determining whether a Company Material Adverse Effect has occurred: (a) matters generally affecting the U.S. or foreign economies, financial or securities markets, or political, legislative, or regulatory conditions, or the industry in which the Company operates, except to the extent such matters have a materially disproportionate adverse effect on the Company relative to the impact on other companies in the industry in which the Company operates; (b) the announcement of this Agreement or the Contemplated Transactions; (c) any change in the market price or trading volume of the Shares;   -56-\n\n\nprovided, that this exception will not preclude a determination that a matter underlying such change has resulted in or contributed to a Company Material Adverse Effect unless excluded under another clause; (d) acts of war or terrorism (including cyber attacks and computer hacking), national emergencies, natural disasters, force majeure events, weather or environmental events or health emergencies, including pandemics (including COVID-19) or epidemics (or the escalation of any of the foregoing), except to the extent such matters have a materially disproportionate adverse effect on the Company relative to the impact on other companies in the industry in which the Company operates; (e) changes in Laws or regulations, or the authoritative interpretations thereof, except to the extent such changes have a materially disproportionate adverse effect on the Company, relative to the impact on other companies in the industry in which the Company operates; (f) the performance of this Agreement and the Contemplated Transactions, including compliance with covenants set forth herein (excluding the requirement that the Company operate in the ordinary course of business), or any action taken or omitted to be taken by the Company at the request or with the prior written consent of Parent or Purchaser; (g) any adverse safety event, adverse regulatory development or other adverse development relating to or affecting the Company’s manufacturing process, clinical trials, product candidates or development timelines, except for any such events of developments arising from (i) fraud or (ii) if the FDA issues both (a) one or more orders that impose a clinical hold on the investigation of PR001 and (b) one or more orders that impose a clinical hold on the investigation of PR006, the result of which (both (a) and (b)) would reasonably be likely to result in a termination of, or a delay of 18 months or more in dosing patients in, both the PR001 program and the PR006 program; (h) the initiation or settlement of any legal proceedings commenced by or involving (A) any Governmental Body in connection with this Agreement or the Contemplated Transactions or (B) any holder of Shares (on their own or on behalf of the Company) arising out of or related to this Agreement or the Contemplated Transactions; (i) matters listed on the Company Disclosure Letter or in the Company SEC Documents, to the extent the effects or consequences thereof were known or reasonably foreseeable by Parent; or (j) any failure by the Company to meet any internal or analyst projections or forecasts or estimates of revenues, earnings, or other financial metrics for any period; provided, that, this exception will not preclude a determination that a matter underlying such failure has resulted in or contributed to a Company Material Adverse Effect unless excluded under another clause.  (Pages 62-63)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\n(b) Except (i) as set forth in Section 6.1(a) of the Company Disclosure Letter, without limiting the generality of Section 6.1(a), during the Pre-Closing Period and except (i) as set forth in the Company Disclosure Letter, (ii) as required by applicable Law, (iii) as expressly permitted by this Agreement or (iv) any action taken, or omitted to be taken, in each case, that is reasonably necessary to comply with any directives, guidelines or recommendations promulgated by any Governmental Body in connection with or in response to COVID-19, the Company shall not, without the prior written consent of Parent (which consent will not be unreasonably delayed, withheld or conditioned):  (Page 42)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nSection 8.5. Effect of Termination.\n<omitted>\n(b) In the event that:\n<omitted>\n(iii) (A) this Agreement is terminated \n<omitted>\n(C) within twelve (12) months after such termination, the Company enters into an Alternative Acquisition Agreement with respect to an Acquisition Proposal (and the transactions contemplated by such Acquisition Proposal are subsequently consummated) or the Acquisition Proposal is consummated (provided, that, for purposes of clause (C) of this Section 8.5(b)(iii), references to “20%” in the definition of Acquisition Proposal will be substituted for “50%”); \n\nThen, in any such case, the Company shall pay Parent a termination fee of $30,000,000.00,  (Page 58)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or, subject to any applicable rules and regulations of the SEC, including Rule 14e-l(c) under the Exchange Act (relating to Purchaser’s obligation to pay for or return tendered Shares promptly after the termination or withdrawal of the Offer), to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (ii) the representations and warranties of the Company contained in the Agreement (other than the representations and warranties set forth in Section 4.1 (Organization and Corporate Power), Section 4.2 (Authorization; Valid and Binding Agreement), Section 4.3 (Capital Stock), Section 4.20 (Brokerage), Section 4.23 (Opinion) and Section 4.24 (No Vote Required)) and that (x) are not made as of a specific date are not true and correct as of the Expiration Date, as though made on and as of the Expiration Date and (y) are made as of a specific date are not true as of such date, in each case, except, in the case of (x) or (y), where the failure of such representations and warranties to be true and correct (without giving effect to any limitation as to “materiality” or “Company Material Adverse Effect”) has not had a Company Material Adverse Effect (Page 81)\n\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or <omitted> to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (ii) the representations and warranties of the Company contained in the Agreement <omitted> and that (x) are not made as of a specific date are not true and correct as of the Expiration Date, as though made on and as of the Expiration Date <omitted> , except, in the case of (x) or (y), where the failure of such representations and warranties to be true and correct <omitted> has not had a Company Material Adverse Effect (Page 81)\n\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or, subject to any applicable rules and regulations of the SEC, including Rule 14e-l(c) under the Exchange Act (relating to Purchaser’s obligation to pay for or return tendered Shares promptly after the termination or withdrawal of the Offer), to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (iii) the representations and warranties set forth in Section 4.1 (Organization and Corporate Power),   I-1\n\n\nSection 4.2 (Authorization; Valid and Binding Agreement), Section 4.3 (Capital Stock), Section 4.20 (Brokerage), Section 4.23 (Opinion) and Section 4.24 (No Vote Required) are not true and correct in all respects, except for immaterial inaccuracies, as of the Expiration Date as though made on and as of such date and time (except to the extent that any such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty is not true and correct, except for immaterial inaccuracies, as of such earlier date); (Pages 81-82)\n\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or <omitted> to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (iii) the representations and warranties set forth in <omitted> Section 4.3 (Capital Stock) <omitted> are not true and correct in all respects, except for immaterial inaccuracies, as of the Expiration Date as though made on and as of such date and time (Pages 81-82)\n\nSection 4.1. Organization and Corporate Power. <omitted> The Company has no Subsidiaries.\n<omitted>\nSection 4.2. Authorization; Valid and Binding Agreement. <omitted> The Company Board, at a meeting duly called and held, duly and unanimously adopted resolutions, that (a) approved this Agreement <omitted> . The Company has duly executed and delivered this Agreement and, assuming the due authorization, execution and delivery by Purchaser and Parent, this Agreement constitutes its legal, valid and binding obligation, enforceable against it in accordance with its terms except as enforcement may be limited by bankruptcy, insolvency, reorganization or similar laws affecting creditors’ rights generally and by general principles of equity.\n<omitted>\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or, subject to any applicable rules and regulations of the SEC, including Rule 14e-l(c) under the Exchange Act (relating to Purchaser’s obligation to pay for or return tendered Shares promptly after the termination or withdrawal of the Offer), to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (iii) the representations and warranties set forth in Section 4.1 (Organization and Corporate Power),   I-1\n\n\nSection 4.2 (Authorization; Valid and Binding Agreement), Section 4.3 (Capital Stock), Section 4.20 (Brokerage), Section 4.23 (Opinion) and Section 4.24 (No Vote Required) are not true and correct in all respects, except for immaterial inaccuracies, as of the Expiration Date as though made on and as of such date and time (except to the extent that any such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty is not true and correct, except for immaterial inaccuracies, as of such earlier date); (Pages 81-82)\n\nSection 4.1. Organization and Corporate Power. <omitted> The Company has no Subsidiaries.\n<omitted>\nSection 4.2. Authorization; Valid and Binding Agreement. <omitted> The Company Board, at a meeting duly called and held, duly and unanimously adopted resolutions, that (a) approved this Agreement <omitted> . The Company has duly executed and delivered this Agreement and, assuming the due authorization, execution and delivery by Purchaser and Parent, this Agreement constitutes its legal, valid and binding obligation, enforceable against it in accordance with its terms except as enforcement may be limited by bankruptcy, insolvency, reorganization or similar laws affecting creditors’ rights generally and by general principles of equity.\n<omitted>\nCONDITIONS TO THE OFFER\n<omitted>\n2. Additionally, Purchaser is not required to accept for payment or <omitted> to pay for any Shares validly tendered and not validly withdrawn in connection with the Offer if, immediately prior to the then applicable Expiration Date, any of the following conditions exist:\n<omitted> \n(b) <omitted> (iii) the representations and warranties set forth in Section 4.1 (Organization and Corporate Power),   I-1\n\n\nSection 4.2 (Authorization; Valid and Binding Agreement), Section 4.3 (Capital Stock), Section 4.20 (Brokerage), Section 4.23 (Opinion) and Section 4.24 (No Vote Required) are not true and correct in all respects, except for immaterial inaccuracies (Pages 81-82)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\n“Knowledge” of the Parent or the Company, as applicable means the actual knowledge, after reasonable internal inquiry and reasonable inquiry with external patent counsel, of the chief executive officer, the members of the executive leadership team or, solely with respect of the Company, the vice president of quality assurance and vice president of human resources.  (Page 68)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\n“Intervening Event” means a change, effect, event, circumstance, occurrence, or other matter material to the Company that was not known to the Company Board or any committee thereof on the date of this Agreement (or if known, the consequences of which were not known to the Company Board or any committee thereof as of the date of this Agreement), which change, effect, event, circumstance, occurrence, or other matter, or any consequence thereof, becomes known to the Company Board or any committee thereof prior to the Acceptance Time; provided, however, that in no event will any Acquisition Proposal or any inquiry, offer, or proposal that constitutes or would reasonably be expected to lead to an Acquisition Proposal constitute an Intervening Event; provided, further, that in no event shall any of the following constitute or contribute to an Intervening Event: (i) changes in the financial or securities markets or general economic or political conditions in the United States, (ii) changes (including changes of applicable Law) or conditions generally affecting the industry in which the Company operates or (iii) the Company’s meeting or exceeding any internal or published budgets, projections, forecasts or predictions of financial performance for any period.  (Page 68)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nSection 9.15. Specific Performance. (a) The parties hereto acknowledge and agree that, in the event of any breach of this Agreement, irreparable harm would occur that monetary damages could not make whole. It is accordingly agreed that (i) each party hereto will be entitled, in addition to any other remedy to which it may be entitled at law or in equity, to compel specific performance to prevent or restrain breaches or threatened breaches of this Agreement in any action without the posting of a bond or undertaking and (ii) the parties hereto will, and hereby do, waive, in any action for specific performance, the defense of adequacy of a remedy at law and any other objections to specific performance of this Agreement.  (Page 76)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nSection 6.3. Acquisition Proposals. <omitted>\n(b) Notwithstanding Section 6.3(a) or any other provision of this Agreement, if at any time following the date of this Agreement and prior to the Acceptance Time, (i) the Company has received a written Acquisition Proposal that did not result from a material breach of Section 6.3(a) and (ii) the Company Board or a committee thereof determines in good faith, after consultation with outside counsel and a financial advisor, that such Acquisition Proposal constitutes or is reasonably likely to lead to or result in a Superior Proposal, then the Company may (A) furnish information with respect to the Company to the Person making such Acquisition Proposal and its Representatives and (B) participate in discussions or negotiations with such Person and its Representatives regarding such Acquisition Proposal; provided, that the Company may only take the actions described in clauses (A) or (B) above if the Company Board determines in good faith, after consultation with outside counsel, that the failure to take any such action would be, or would reasonably be expected to be, inconsistent with its fiduciary duties under applicable Law;  (Page 46)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_113\" title=\"AGREEMENT AND PLAN OF MERGER among ELI LILLY AND COMPANY, TYTO ACQUISITION CORPORATION, and PREVAIL THERAPEUTICS INC. Dated as of December …\">\nSection 6.3. Acquisition Proposals. \n\n(a) The Company shall not, and shall instruct its Representatives not to: (i) directly or indirectly initiate, solicit, or knowingly encourage or knowingly facilitate (including by way of providing information) any inquiries, proposals or offers, or the making of any submission or announcement of any inquiry, proposal or offer that constitutes or would reasonably be expected to lead to any Acquisition Proposal, (ii) directly or indirectly engage in, enter into or participate in any discussions or negotiations with any Person with respect to any Acquisition Proposal or (iii) provide any non-public information to, or afford access to the business, properties, assets, books or records of the Company to, any Person (other than Parent, Purchaser, or any designees of Parent or Purchaser) in connection with any Acquisition Proposal. The Company shall, and shall cause its directors and officers to, and shall direct its other Representatives to, (x) immediately cease any solicitation, discussions, or negotiations with any Person (other than Parent, Purchaser, or any designees of Parent or Purchaser) with respect to any Acquisition Proposal, (y) request the return or destruction of all confidential information provided by or on behalf of the Company to any such Person and (z) terminate access to any physical or electronic data rooms relating to a possible Acquisition Proposal. Notwithstanding the foregoing, the Company and its Representatives may, solely in response to an inquiry or proposal that did not result from a material breach of this Section 6.3(a), (A) seek to clarify and understand the terms and conditions of any inquiry or proposal made by any Person solely to determine whether such inquiry or proposal constitutes an Acquisition Proposal and (B) inform a Person that has made or, to the Knowledge of the Company, is considering making an Acquisition Proposal of the provisions of this Section 6.3.  (Page 46)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception:  Board determination standard-Answer (no-shop)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception:  Board determination standard-Answer (no-shop)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Tail Period Length-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "within 12 months"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "within 12 months",
+        "within 9 months"
+      ],
+      "subquestions": [],
+      "source_question": "Tail Period Length-Answer",
+      "answers": [
+        {
+          "text": "within 12 months"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Known, but consequences unknown, at signing"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Known, but consequences unknown, at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition includes asset deals-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "50%"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "subquestions": [],
+      "source_question": "Definition includes asset deals-Answer",
+      "answers": [
+        {
+          "text": "50%"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "General Information",
+      "question": "Type of Consideration-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All Cash"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All Cash",
+        "All Stock",
+        "Mixed Cash/Stock",
+        "Mixed Cash/Stock: Election"
+      ],
+      "subquestions": [],
+      "source_question": "Type of Consideration-Answer",
+      "answers": [
+        {
+          "text": "All Cash"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to Target and subsidiaries \"taken as a whole\""
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies to Target and subsidiaries \"taken as a whole\"",
+        "No"
+      ],
+      "subquestions": [],
+      "source_question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answers": [
+        {
+          "text": "Applies to Target and subsidiaries \"taken as a whole\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Knowledge",
+      "question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Closing Only"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Closing Only"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Strict liability"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Reasonable standard",
+        "Strict liability"
+      ],
+      "subquestions": [],
+      "source_question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answers": [
+        {
+          "text": "Strict liability"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "fundamental/Special R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains a materiality standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains a materiality standard (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 12,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        9019
+      ],
+      "min_char_offset": 9019,
+      "min_frac": 0.3632,
+      "min_tokens_from_start": 2254,
+      "min_tokens_from_end": 3954
+    },
+    "q02": {
+      "char_offsets": [
+        21453
+      ],
+      "min_char_offset": 21453,
+      "min_frac": 0.864,
+      "min_tokens_from_start": 5363,
+      "min_tokens_from_end": 845
+    },
+    "q03": {
+      "char_offsets": [
+        9907
+      ],
+      "min_char_offset": 9907,
+      "min_frac": 0.399,
+      "min_tokens_from_start": 2476,
+      "min_tokens_from_end": 3732
+    },
+    "q04": {
+      "char_offsets": [
+        4621
+      ],
+      "min_char_offset": 4621,
+      "min_frac": 0.1861,
+      "min_tokens_from_start": 1155,
+      "min_tokens_from_end": 5053
+    },
+    "q05": {
+      "char_offsets": [
+        9907
+      ],
+      "min_char_offset": 9907,
+      "min_frac": 0.399,
+      "min_tokens_from_start": 2476,
+      "min_tokens_from_end": 3732
+    },
+    "q06": {
+      "char_offsets": [
+        19050
+      ],
+      "min_char_offset": 19050,
+      "min_frac": 0.7672,
+      "min_tokens_from_start": 4762,
+      "min_tokens_from_end": 1446
+    },
+    "q07": {
+      "char_offsets": [
+        178
+      ],
+      "min_char_offset": 178,
+      "min_frac": 0.0072,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 6164
+    },
+    "q08": {
+      "char_offsets": [
+        1280
+      ],
+      "min_char_offset": 1280,
+      "min_frac": 0.0516,
+      "min_tokens_from_start": 320,
+      "min_tokens_from_end": 5888
+    },
+    "q09": {
+      "char_offsets": [
+        4621
+      ],
+      "min_char_offset": 4621,
+      "min_frac": 0.1861,
+      "min_tokens_from_start": 1155,
+      "min_tokens_from_end": 5053
+    },
+    "q10": {
+      "char_offsets": [
+        4621
+      ],
+      "min_char_offset": 4621,
+      "min_frac": 0.1861,
+      "min_tokens_from_start": 1155,
+      "min_tokens_from_end": 5053
+    },
+    "q11": {
+      "char_offsets": [
+        18481
+      ],
+      "min_char_offset": 18481,
+      "min_frac": 0.7443,
+      "min_tokens_from_start": 4620,
+      "min_tokens_from_end": 1588
+    },
+    "q12": {
+      "char_offsets": [
+        3597
+      ],
+      "min_char_offset": 3597,
+      "min_frac": 0.1449,
+      "min_tokens_from_start": 899,
+      "min_tokens_from_end": 5309
+    },
+    "q13": {
+      "char_offsets": [
+        10789
+      ],
+      "min_char_offset": 10789,
+      "min_frac": 0.4345,
+      "min_tokens_from_start": 2697,
+      "min_tokens_from_end": 3511
+    },
+    "q14": {
+      "char_offsets": [
+        22841
+      ],
+      "min_char_offset": 22841,
+      "min_frac": 0.9199,
+      "min_tokens_from_start": 5710,
+      "min_tokens_from_end": 498
+    },
+    "q15": {
+      "char_offsets": [
+        10789
+      ],
+      "min_char_offset": 10789,
+      "min_frac": 0.4345,
+      "min_tokens_from_start": 2697,
+      "min_tokens_from_end": 3511
+    },
+    "q16": {
+      "char_offsets": [
+        19050
+      ],
+      "min_char_offset": 19050,
+      "min_frac": 0.7672,
+      "min_tokens_from_start": 4762,
+      "min_tokens_from_end": 1446
+    }
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "cell_id": "d032_baseline",
+  "dataset": "maud",
+  "doc_index": 32,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 5555,
+  "actual_chars": 22218,
+  "target_document_id": "contract_127",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________",
+  "distractor_ids": [],
+  "target_offset": 174,
+  "target_end": 21667,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\n“Takeover Proposal” shall mean any inquiry, proposal or offer from any Person or group (other than Parent and its Subsidiaries) relating to, in a single transaction or series of related transactions, any direct or indirect (i) acquisition or exclusive license of 20% or more of the consolidated assets of the Company (based on the fair market value thereof, as determined in good faith by the Board of Directors of the Company or any committee thereof), (ii) issuance or acquisition of 20% or more of the outstanding Company Common Stock, (iii) tender offer or exchange offer that if consummated would result in any Person or group beneficially owning 20% or more of the outstanding Company Common Stock, or (iv) merger, consolidation, share exchange, business combination, recapitalization, liquidation, dissolution or similar transaction involving the Company pursuant to which such Person or group (or the stockholders of any Person) would acquire, directly or indirectly, 20% or more of the consolidated assets of the Company (based on the fair market value thereof, as determined in good faith by the Board of Directors of the Company or any committee thereof), 20% or more of the outstanding capital stock of the Company or 20% or more of the aggregate voting power of the Company or of the surviving entity in a merger, consolidation, share exchange or other business combination involving the Company or the resulting direct or indirect parent of the Company or such surviving entity; provided, however, that this Agreement and the Transactions shall not be deemed a Takeover Proposal. <omitted> \n\n“Superior Proposal” shall mean any bona fide written Takeover Proposal of the types described in clauses (i) through (iv) of the definition thereof, in each case, that the Board of Directors of the Company or any committee thereof has determined in its good faith judgment (i) would be more favorable to the Company’s stockholders from a financial point of view than the Transactions and (ii) is reasonably capable of being completed on the terms proposed, in each case, taking into account all legal, regulatory, financial, financing and other aspects of such proposal and of this Agreement that the Board of Directors of the Company or such committee thereof may deem appropriate; provided that for purposes of the definition of “Superior Proposal”, the references to “20%” in the definition of Takeover Proposal shall be deemed to be references to “80%”. (Page 46)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 5.02. Solicitation; Change in Recommendation.  <omitted> (d) <omitted> Notwithstanding the foregoing limitations but subject to the Company’s compliance with Section 5.02(e) or Section 5.02(f), as applicable, prior to obtaining the Stockholder Approval, but not after, the Board of Directors of the Company or any committee thereof may (I) make an Adverse Recommendation Change or (II) cause the Company to enter into a Company Acquisition Agreement with respect to a Takeover Proposal that did not result from any material breach of this Section 5.02 and terminate this Agreement pursuant to Section 7.01(d)(ii), in either case if the Board of Directors of the Company or any committee thereof has determined in good faith, after consultation with its financial advisors and outside legal counsel, that (x) in the case of clause (I), the Adverse Recommendation Change is not made in response to a Takeover Proposal and is made in response to an Intervening Event, and failure to take such action would be inconsistent with the Board of Directors’ fiduciary duties under applicable Law and (y) in the case of (A) clause (I) where such Adverse Recommendation Change is made in response to a Takeover Proposal or (B) clause (II), such Takeover Proposal constitutes a Superior Proposal. (Page 44)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\n“Material Adverse Effect” means any effect, change, event, fact, circumstance, development or occurrence that (a) has a material adverse effect on the business, results of operations, assets or financial condition of the Company or (b) would prevent or materially impede, interfere with, hinder or delay the consummation by the Company of the Transactions or the performance by the Company in all material respects of its obligations under this Agreement; provided, however, that none of the following shall be deemed either alone or in combination to constitute a Material Adverse Effect, and none of the following shall be taken into account in determining whether a Material Adverse Effect has occurred or would reasonably be expected to occur pursuant to clause (a): any effect, change, event, development or occurrence to the extent resulting from or arising in connection with (A) (1) general conditions (or changes therein) in the industry in which the Company operates, (2) business, economic or political conditions (or changes therein) in the United States or elsewhere in the world or (3) general conditions (or changes therein) in the credit, financial, banking, currency or capital markets, in the United States or elsewhere in the world, including changes in interest or exchange rates, (B) (1) changes in Law or in GAAP or other accounting standards after the date hereof, (2) acts of war (whether or not declared), sabotage, armed hostilities, civil disobedience, civil unrest or terrorism (including cyberterrorism), or any escalation or worsening of any such acts of war (whether or not declared), sabotage, armed hostilities, civil disobedience, civil unrest or terrorism, or (3) volcanoes, tsunamis, pandemics (including COVID-19 and its impact on the supply chain of the Company Products), epidemics, disease outbreaks, earthquakes, hurricanes, tornados, floods or other natural disasters, (C) (1) any decline in the market price, or change in trading volume, of the capital stock of the Company or (2) any failure to meet any internal or public projections,   70\n\n\nforecasts, guidance, estimates, milestones or budgets or internal or published financial or operating predictions of revenue, earnings, cash flow or cash position (it being understood that the exceptions in clauses (C) (1) and (2) shall not prevent or otherwise affect a determination that the underlying cause of any such change, decline or failure referred to therein is, or would reasonably be expected to be, a Material Adverse Effect), (D) the negotiation, execution, announcement or performance of this Agreement or the announcement, pendency or performance of any of the Transactions, including the impact thereof on the relationships with customers, suppliers, distributors, partners, other third parties with whom the Company has a relationship and which resulted directly and solely from the announcement of this Agreement or the pendency of this Agreement, any stockholder (direct or derivative) Action in respect of this Agreement or any of the Transactions(it being understood that this clause (D) shall not apply with respect to a representation or warranty contained in this Agreement to the extent that the purpose of such representation or warranty is to address the consequences resulting from the execution and delivery of this Agreement or the consummation of the Transactions or the performance of obligations under this Agreement), or (E) (1) any action taken by the Company at Parent’s written request or that is expressly required by this Agreement or (2) the failure by the Company to take any action if that action is prohibited by this Agreement (and for which Parent has declined to consent); provided further, however, that any effect, change, event, fact, circumstance, development or occurrence referred to in clause (A) or clauses (B)(1) or (3) may be taken into account in determining whether there has been, or would reasonably be expected to be, a Material Adverse Effect to the extent such effect, fact, circumstance, change, event, development or occurrence has a disproportionate adverse effect on the business, results of operations, assets or financial condition of the Company as compared to other similarly situated companies in the industry in which the Company operates (in which case the incremental disproportionate impact or impacts may be taken into account in determining whether there has been, or would reasonably be expected to be, a Material Adverse Effect). (Pages 74-75)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 5.01. Conduct of Business. (a) Except as required by applicable Law, Judgment or Governmental Authority, as expressly required or expressly permitted by this Agreement or as set forth in Section 5.01 of the Company Disclosure Letter, during the period from the date of this Agreement until the Effective Time (or such earlier date on which this Agreement is terminated pursuant to Section 7.01), unless Parent otherwise expressly provides consent in writing in advance of the Company taking or omitting to take any action (such consent not to be unreasonably withheld, conditioned or delayed): (i) the Company shall use its commercially reasonably efforts to carry on its business in all material respects in the ordinary course of business, <omitted> \n\n“ordinary course of business” shall mean the ordinary course of business consistent with past practice. (Page 38)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 5.02. Solicitation; Change in Recommendation. <omitted> \n\nSECTION 7.01. Termination. This Agreement may be terminated and the Transactions abandoned at any time prior to the Effective Time, whether before or after receipt of the Stockholder Approval (except as otherwise expressly noted): <omitted> (d) by the Company: <omitted>  \n\n(ii) prior to receipt of the Stockholder Approval, in connection with entering into a Company Acquisition Agreement with respect to a Superior Proposal in accordance with Section 5.02(d)(II); provided that (x) prior to or concurrently with such termination (and as a condition to such termination) the Company pays the Company Termination Fee due under Section 7.03(a) and (y) such Superior Proposal did not result from a material breach of Section 5.02 with respect to such Superior Proposal and any Takeover Proposal that was a precursor thereto. (Page 61)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\n“Knowledge” means (i) with respect to the Company, the actual knowledge of the individuals listed on Section 8.12 of the Company Disclosure Letter after having made reasonable inquiry of those employees of the Company primarily responsible for, or who would otherwise be expected to know about, such matters (Page 74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 3.01. Organization; Standing. <omitted> \n\nSECTION 3.02. Capitalization.  <omitted> \n\nSECTION 3.03. Authority; Noncontravention.  (a) <omitted> This Agreement has been duly executed and delivered by the Company and, assuming due authorization, execution and delivery  <omitted> hereof by the other parties hereto, constitutes a legal, valid and binding obligation of the Company, enforceable against the Company in accordance with its terms, <omitted> (b) The Board of Directors of the Company, acting upon the unanimous recommendation of the Strategic Alternatives Committee, at a meeting duly called and held, unanimously adopted resolutions (i) determining that the Transactions are advisable, fair to and in the best interests of the Company and its stockholders, (ii) approving and declaring advisable the execution, delivery and performance by the Company of this Agreement and the consummation of the Transactions, <omitted>\n\nSECTION 3.06. Absence of Certain Changes. Since December 31, 2020 through the date of this Agreement <omitted> (b) there has not been any Material Adverse Effect or any event, change or occurrence that would, individually or in the aggregate, reasonably be expected to have a Material Adverse Effect. <omitted> \nSECTION 3.15. No Rights Agreement; Anti-Takeover Laws. <omitted> \nSECTION 3.21. Stockholder Approval. <omitted> \nSECTION 3.24. Brokers and Other Advisors. <omitted> \n\nSECTION 6.02. Conditions to Obligations of Parent and Merger Sub. The respective obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or waiver by Parent, if permissible under applicable Law) on or prior to the Closing Date of the following conditions: \n\n(a) Representations and Warranties. The representations and warranties of the Company (i) set forth in Section 3.02(a) and the first sentence of Section 3.02(b) shall be true and correct in all respects as of the date of this Agreement and as of the Closing Date, with the same effect as though made as of the Closing Date (except to the extent expressly made as of an earlier date, in which case as of such earlier date), except for de minimis inaccuracies, (ii) set forth in the first sentence of Section 3.01, Section 3.03(a), Section 3.03(b), Section 3.15, Section 3.21 and Section 3.24 shall be true and correct in all material respects as of the date of this Agreement and as of the Closing Date, with the same effect as though made as of such date (except to the extent expressly made as of an earlier date, in which case as of such earlier date), (iii) set forth in Section 3.06(b) shall be true and correct in all respects as of the date of this Agreement, and (iv) set forth in the Agreement, other than those Sections specifically identified in clauses (i), (ii) and (iii) of this Section 6.02(a), shall be true and correct (disregarding all qualifications or limitations as to “materiality”, “Material Adverse Effect” and words of similar import set forth therein) as of the date of this Agreement and as of the Closing Date, with the same effect as though made as of the Closing Date (except to the extent expressly made as of an earlier date, in which case as of such earlier date), except, in the case of this clause (iv), where the failure to be true and correct, individually or in the aggregate, would not reasonably be expected to have a Material Adverse Effect. (Page 58)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 5.01. Conduct of Business. <omitted> (b) Without limiting the generality of the foregoing, except as required by applicable Law, Judgment or a Governmental Authority, as expressly required or expressly permitted by this Agreement or as set forth in Section 5.01 of the Company Disclosure Letter, during the period from the date of this Agreement until the Effective Time (or such earlier date on which this Agreement may be terminated pursuant to Section 7.01), unless Parent otherwise expressly consents in writing in advance (such consent not to be unreasonably withheld, conditioned or delayed), the Company shall not: (Page 38)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 7.03. Termination Fees. (a) In the event that: \n\n(i) (A) this Agreement is terminated by the Company or Parent pursuant to Section 7.01(b)(i) or Section 7.01(b)(iii), (B) a bona fide Takeover Proposal shall have been publicly made, publicly proposed or otherwise publicly communicated to the Company or shall have otherwise become publicly known after the date of this Agreement (x) in the case of a termination pursuant to Section 7.01(b)(i), prior to the date of such termination or (y) in the case of a termination pursuant to Section 7.01(b)(iii), prior to the date of the Stockholders Meeting, and (C) within twelve months of the date this Agreement is so terminated, the Company (1) enters into a Company Acquisition Agreement with any Person or Persons with respect to any Takeover Proposal or (2) consummates any Takeover Proposal; provided that (I) for purposes of clauses (B) and (C) of this Section 7.03(a)(i), the references to “20%” in the definition of Takeover Proposal shall be deemed to be references to “50%”, and (II) for clarity, for purposes of clause (C) of this Section 7.03(a)(i), a confidentiality agreement or nondisclosure agreement shall not constitute a “Company Acquisition Agreement”; or <omitted>\n\nthen, in any such event under clause (i) or (ii) of this Section 7.03(a), the Company shall pay the Company Termination Fee to Parent or its designee by wire transfer of same day funds (x) in the case of Section 7.03(a)(ii)(A), within two business days after such termination, (y) in the case of Section 7.03(a)(ii)(B), prior to or concurrently with such termination or (z) in the case of Section 7.03(a)(i), within two business days after the entry into the Company Acquisition Agreement referred to in clause (C)(1) thereof or the consummation of the Takeover Proposal referred to in clause (C)(2) thereof, as applicable; it being understood that in no event shall the Company be required to pay the Company Termination Fee on more than one occasion. (Page 62)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 5.02. Solicitation; Change in Recommendation. <omitted> \n\n(d) <omitted> Notwithstanding the foregoing limitations but subject to the Company’s compliance with Section 5.02(e) or Section 5.02(f), as applicable, prior to obtaining the Stockholder Approval, but not after, the Board of Directors of the Company or any committee thereof may <omitted> (II) cause the Company to enter into a Company Acquisition Agreement with respect to a Takeover Proposal that did not result from any material breach of this Section 5.02 and terminate this Agreement pursuant to Section 7.01(d)(ii), in either case if the Board of Directors of the Company or any committee thereof has determined in good faith, after consultation with its financial advisors and outside legal counsel, that <omitted> (y) in the case of <omitted> (B) clause (II), such Takeover Proposal constitutes a Superior Proposal. <omitted> \n\n(e) Prior to taking any of the actions expressly permitted by Section 5.02(d), in the event such action is proposed to be taken in connection with a Superior Proposal, the Board of Directors of the Company or any committee thereof shall not, and shall cause the Company not to, take any action set forth in Section 5.02(d) clause (I) or clause (II), unless (1) the Company has first given Parent at least three business days’ prior written notice of its intention to take such action (which notice shall specify the reasons therefor and, if relating to a Takeover Proposal, include an unredacted copy of any such Superior Proposal and an unredacted copy of any relevant proposed transaction agreements, the identity of the party making such Superior Proposal and the material terms and conditions thereof), (2) the Company has negotiated, and has caused its Representatives to negotiate, in good faith with Parent during such three business day notice period, to the extent Parent wishes to negotiate, to enable Parent to propose in writing an offer to effect revisions to the terms of this Agreement such that it would cause such Superior Proposal to no longer constitute a Superior Proposal, (3) following the end of such three business day notice period, the Board of Directors of the Company or any committee thereof shall have considered in good faith such offer, and shall have determined in good faith after consultation with its financial advisors and outside legal counsel that the Superior Proposal would continue to constitute a Superior Proposal if the revisions proposed in such offer were to be given effect (it being understood that the Company shall be required to comply again with its obligations under the foregoing clauses (1), (2) and (3) in the event of any change to the financial terms or any other material terms of any such Superior Proposal (but the three business day period shall instead be two business days)); provided that any purported termination of this Agreement pursuant to this sentence shall be void and of no force and effect unless the termination is in accordance with Section 7.01 and the Company pays Parent the applicable Company Termination Fee in accordance with Section 7.03 prior to or concurrently with such termination. (Page 44)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_127\" title=\"AGREEMENT AND PLAN OF MERGER By and Among ABBVIE INC., SCOUT MERGER SUB, INC. and SOLITON, INC. Dated as of May 8, 2021 ________________\">\nSECTION 6.02. Conditions to Obligations of Parent and Merger Sub. The respective obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or waiver by Parent, if permissible under applicable Law) on or prior to the Closing Date of the following conditions: <omitted>  \n\n(b) Compliance with Covenants. The Company shall have complied with or performed in all material respects its obligations required to be complied with or performed by it prior to the Closing under this Agreement. (Page 58)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition includes asset deals-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Greater than 50% but not \"all or substantially all\""
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "subquestions": [],
+      "source_question": "Definition includes asset deals-Answer",
+      "answers": [
+        {
+          "text": "Greater than 50% but not \"all or substantially all\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Signing & At Closing"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Signing & At Closing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Number of additional matching rights periods for modifications (FTR)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Continuous matching right"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Number of additional matching rights periods for modifications (FTR)",
+      "answers": [
+        {
+          "text": "Continuous matching right"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Tail Period Length-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "within 12 months"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "within 12 months",
+        "within 9 months"
+      ],
+      "subquestions": [],
+      "source_question": "Tail Period Length-Answer",
+      "answers": [
+        {
+          "text": "within 12 months"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Any breach of no-shop"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Material breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Organization",
+        "Rights Agreement",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Capitalization-Other",
+        "Organization",
+        "Other"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Rights Agreement"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all material respects"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate at another materiality standard (e.g., hybrid standard)",
+        "Accurate in all material respects",
+        "Accurate in all respects"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answers": [
+        {
+          "text": "Accurate in all material respects"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be still pending-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Acquisition Proposal required to be still pending-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Knowledge",
+      "question": "Constructive Knowledge-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Based on investigation or inquiry"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Based on investigation or inquiry",
+        "Based on role"
+      ],
+      "subquestions": [],
+      "source_question": "Constructive Knowledge-Answer",
+      "answers": [
+        {
+          "text": "Based on investigation or inquiry"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Action prohibited/omission required by the agreement-Answer",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 11,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        174
+      ],
+      "min_char_offset": 174,
+      "min_frac": 0.0078,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 5512
+    },
+    "q02": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    },
+    "q03": {
+      "char_offsets": [
+        11678
+      ],
+      "min_char_offset": 11678,
+      "min_frac": 0.5256,
+      "min_tokens_from_start": 2919,
+      "min_tokens_from_end": 2636
+    },
+    "q04": {
+      "char_offsets": [
+        18297
+      ],
+      "min_char_offset": 18297,
+      "min_frac": 0.8235,
+      "min_tokens_from_start": 4574,
+      "min_tokens_from_end": 981
+    },
+    "q05": {
+      "char_offsets": [
+        16109
+      ],
+      "min_char_offset": 16109,
+      "min_frac": 0.725,
+      "min_tokens_from_start": 4027,
+      "min_tokens_from_end": 1528
+    },
+    "q06": {
+      "char_offsets": [
+        10087
+      ],
+      "min_char_offset": 10087,
+      "min_frac": 0.454,
+      "min_tokens_from_start": 2521,
+      "min_tokens_from_end": 3034
+    },
+    "q07": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    },
+    "q08": {
+      "char_offsets": [
+        11678
+      ],
+      "min_char_offset": 11678,
+      "min_frac": 0.5256,
+      "min_tokens_from_start": 2919,
+      "min_tokens_from_end": 2636
+    },
+    "q09": {
+      "char_offsets": [
+        11678
+      ],
+      "min_char_offset": 11678,
+      "min_frac": 0.5256,
+      "min_tokens_from_start": 2919,
+      "min_tokens_from_end": 2636
+    },
+    "q10": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    },
+    "q11": {
+      "char_offsets": [
+        16109
+      ],
+      "min_char_offset": 16109,
+      "min_frac": 0.725,
+      "min_tokens_from_start": 4027,
+      "min_tokens_from_end": 1528
+    },
+    "q12": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    },
+    "q13": {
+      "char_offsets": [
+        9024
+      ],
+      "min_char_offset": 9024,
+      "min_frac": 0.4062,
+      "min_tokens_from_start": 2256,
+      "min_tokens_from_end": 3299
+    },
+    "q14": {
+      "char_offsets": [
+        11173
+      ],
+      "min_char_offset": 11173,
+      "min_frac": 0.5029,
+      "min_tokens_from_start": 2793,
+      "min_tokens_from_end": 2762
+    },
+    "q15": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    },
+    "q16": {
+      "char_offsets": [
+        4324
+      ],
+      "min_char_offset": 4324,
+      "min_frac": 0.1946,
+      "min_tokens_from_start": 1081,
+      "min_tokens_from_end": 4474
+    }
+  }
+}

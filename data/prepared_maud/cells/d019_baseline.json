@@ -1,0 +1,661 @@
+{
+  "cell_id": "d019_baseline",
+  "dataset": "maud",
+  "doc_index": 19,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 6786,
+  "actual_chars": 27144,
+  "target_document_id": "contract_115",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 20986,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\n(c) Notwithstanding the foregoing or anything else to the contrary contained in this Agreement, at any time prior to obtaining the Company Required Vote, the Company Board of Directors may, if, after consultation with its financial advisor and outside counsel, it determines that the failure to take such action would be inconsistent with the fiduciary duties of directors under Indiana Law, (x) make an Adverse Recommendation Change in response to a Change in Circumstance, (y) make an Adverse Recommendation Change in response to a Superior Proposal <omitted> if and only if: \n\n(i) the Company shall have given Parent notice at least four (4) Business Days prior to making any such Adverse Recommendation Change or causing or permitting the Company to terminate this Agreement pursuant to clause (y) above, which notice shall include (A) the material terms and conditions of any Superior Proposal that is the basis of the proposed action by the Company Board of Directors, the identity of the Person making the Superior Proposal and copies of proposed definitive documentation with respect to the Superior Proposal (it being understood and agreed that (1) any amendment to any financial terms or other terms that are material of such Superior Proposal shall require a new notice and an additional three (3) Business Day period prior to taking any specified action and (2) in determining whether to make an Adverse Recommendation Change or to cause or permit the Company to so terminate this Agreement, the Company Board of Directors shall take into account any changes to the financial and other terms of this Agreement proposed by Parent in writing to the Company (and not revoked) in response to any such notice or otherwise within the periods described above) or (B) a reasonably detailed description of the material event or development constituting such Change in Circumstance; \n\n(ii) the Company has and has caused its Subsidiaries and its and their respective Representatives to make themselves reasonably available to negotiate with Parent and its Representatives during the period referred to in clause (i) above to the extent requested in writing by Parent in order to permit Parent to propose one or more amendments to this Agreement that would result in such Takeover Proposal ceasing to constitute a Superior Proposal or such other matter no longer constituting a Change in Circumstance; \n\n(iii) after considering any proposed binding offers to amend this Agreement committed to in writing by Parent (and not revoked) during the period referred to in clause (i) above, if any, the Company Board of Directors shall have determined in good faith, after consultation with its financial advisor and outside counsel, that the failure to make the Adverse Recommendation Change in response to such Superior Proposal or Change in Circumstance or cause or permit the Company to terminate this Agreement in response to such Superior Proposal would be inconsistent with the fiduciary duties of directors under Indiana Law. (Page 49)\n\n(i) the Company shall have given Parent notice at least four (4) Business Days prior to making any such Adverse Recommendation Change <omitted> (it being understood and agreed that <omitted> in determining whether to make an Adverse Recommendation Change <omitted> , the Company Board of Directors shall take into account any changes to <omitted> this Agreement proposed by Parent\n\n(c) Notwithstanding the foregoing or anything else to the contrary contained in this Agreement, at any time prior to obtaining the Company Required Vote, the Company Board of Directors may, if, after consultation with its financial advisor and outside counsel, it determines that the failure to take such action would be inconsistent with the fiduciary duties of directors under Indiana Law, (x) make an Adverse Recommendation Change in response to a Change in Circumstance, (y) make an Adverse Recommendation Change in response to a Superior Proposal <omitted> if and only if:\n\n(i) the Company shall have given Parent notice at least four (4) Business Days prior to making any such Adverse Recommendation Change or causing or permitting the Company to terminate this Agreement pursuant to clause (y) above, which notice shall include (A) the material terms and conditions of any Superior Proposal that is the basis of the proposed action by the Company Board of Directors, the identity of the Person making the Superior Proposal and copies of proposed definitive documentation with respect to the Superior Proposal (it being understood and agreed that (1) any amendment to any financial terms or other terms that are material of such Superior Proposal shall require a new notice and an additional three (3) Business Day period prior to taking any specified action and (2) in determining whether to make an Adverse Recommendation Change or to cause or permit the Company to so terminate this Agreement, the Company Board of Directors shall take into account any changes to the financial and other terms of this Agreement proposed by Parent in writing to the Company (and not revoked) in response to any such notice or otherwise within the periods described above) or (B) a reasonably detailed description of the material event or development constituting such Change in Circumstance; (Page 49)\n\n(i) the Company shall have given Parent notice at least four (4) Business Days prior to making any such Adverse Recommendation Change <omitted> (it being understood and agreed that (1) any amendment to any financial terms or other terms that are material of such Superior Proposal shall require a new notice and an additional three (3) Business Day period prior to taking any specified action and (2) in determining whether to make an Adverse Recommendation Change <omitted> the Company Board of Directors shall take into account any changes to <omitted> this Agreement proposed by Parent\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\nSection 8.02 Fees and Expenses. <omitted> (ii) If this Agreement is terminated <omitted> (B) within twelve (12) months of such termination, the Company either consummates such Takeover Proposal or enters into a definitive agreement to consummate such Takeover Proposal and the Company thereafter consummates such Takeover Proposal (whether or not within such twelve (12) month period), then the Company shall pay Parent, as liquidated damages and not as a penalty, the Company Termination Fee; provided that for the purposes of this Section 8.02(b)(ii), all references in the term Takeover Proposal to “10% or more” shall be deemed to be references to “more than 50%.”  If the Company Termination Fee is payable, the Company Termination Fee shall be paid upon the consummation of such Takeover Proposal by wire transfer of immediately available funds to an account designated by Parent in writing.  For purposes of clause (A) of this Section 8.02(b)(ii), any Takeover Proposal deemed to have been made pursuant to the Amended and Restated Stockholder Support and Contingent Sale Agreement, dated as of August 17, 2020, by and among certain of the Company’s shareholders and the other parties thereto will be considered to have been withdrawn absent subsequent action on or after the date of this Agreement by any party thereto that would constitute a Takeover Proposal.  (Page 59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\n“Knowledge” means, with respect to (a) the Company as it relates to any fact or other matter, the actual knowledge of the natural Persons set forth in Section 1.01B of the Company Disclosure Letter of such fact or matter as of the date hereof, in each case, after reasonable inquiry, and <omitted>  provided that, in the case of the foregoing (a) and (b), for clarity, with respect to Intellectual Property, such inquiry is not required to include freedom to operate analyses, clearance searches, validity or noninfringement analyses or opinions, or any other similar analyses or opinions of counsel.  (Page 13)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\n“Change in Circumstance” means any event or development that is material to the Company and its Subsidiaries, taken as a whole, occurring after the execution and delivery of this Agreement, that was not known to, or reasonably foreseeable by, the Company Board of Directors or any committee thereof prior to the date hereof and which does not relate to (a) a Takeover Proposal or any matter related thereto or consequences thereof, (b) events or developments arising from the announcement or existence of this Agreement or actions taken pursuant to this Agreement or in connection with the transactions contemplated hereby, or (c) changes in the market price or trading volume of the Company Common Shares (but not the underlying cause thereof).  (Page 9)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\nSection 6.01 Conduct of Business by the Company Pending the Merger.  During the period from the date of this Agreement through the earlier of the Closing and the termination of this Agreement, except for any COVID-19 Measures, as expressly permitted or required by this Agreement, as required by applicable Law or Order, as otherwise consented to by Parent in writing (which consent shall not be unreasonably withheld, conditioned or delayed), or as set forth in Section 6.01 of the Company Disclosure Letter, (x) the Company shall and shall cause each of its Subsidiaries to conduct their respective businesses and operations in the ordinary course of business in all material respects and (y) the Company shall not and shall cause each of its Subsidiaries not to (it being understood that no act or omission by the Company or any of its Subsidiaries with respect to the matters specifically addressed by any provision of this clause (y) shall be deemed to be a breach of clause (x)):  (Page 43)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\nSection 8.01 Termination. This Agreement may be terminated and the Merger (and the other transactions contemplated hereby) may be abandoned at any time prior to the Effective Time (notwithstanding if the Company Required Vote has been obtained): <omitted> (d) by the Company, prior to the receipt of the Company Required Vote in accordance with Section 6.06(c) in order to substantially concurrently with such termination enter into a binding definitive written agreement to effect a Superior Proposal that did not arise as a result of a material breach of Section 6.06 so long as the Company pays, or causes to be paid, to Parent the Company Termination Fee prior to or substantially concurrently with, and as a condition to the effectiveness of, such termination;  (Page 57)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\n“Company Material Adverse Effect” means any fact, effect, change, event, circumstance, occurrence or development that, individually or in the aggregate, has or is reasonably likely to have a material adverse effect on the business, assets, liabilities, condition (financial or otherwise) or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that in no event shall any of the following, alone or in combination, be deemed to constitute, nor be taken into account in determining whether there has been or will be, a Company Material Adverse Effect: (a) changes within or affecting the general property and casualty insurance industry, the United States or global economy, or changes within or affecting global or United States economic or capital market conditions (including changes in the credit, debt, financial, or currency markets), (b) changes in or adoption of any applicable Laws or applicable accounting regulations or principles or interpretations thereof (including changes in GAAP or in SAP prescribed or permitted by the applicable Insurance Regulators and accounting pronouncements by the SEC, the National Association of Insurance Commissioners and the Financial Accounting Standards Board), (c) changes in global or national political conditions (including political action or inaction, the outbreak or escalation of war, military action, insurrection, sabotage or acts of terrorism), (d) changes due to any acts of God, natural disasters, man-made disasters, disease outbreak, global public health emergency (as declared by the World Health Organization), epidemics or pandemics (including COVID-19 and any worsening thereof or any COVID-19 Measures), (e) change, event, effect, development or circumstance arising out of the announcement of this Agreement and the transactions contemplated hereby or the pendency of the Merger or the identity of the parties to this Agreement, including any termination of, reduction in or similar negative impact on relationships, contractual or otherwise, with any Governmental Authorities or any customers, suppliers, reinsurers, agents, policyholders, partners, officers or employees of the Company and its Subsidiaries; provided, however, that this clause (e) shall not apply with respect to the representations and warranties made by the Company in Section 4.05 of this Agreement, (f) actions taken or omitted to be taken pursuant to the express provisions of this Agreement to obtain any consent, approval, authorization or waiver under applicable Law in connection with the Merger and the other transactions contemplated hereby, (g) the entering into and performance of this Agreement and the transactions contemplated hereby, including compliance with the covenants set forth herein, or any action taken or omitted to be taken by the Company at the express written request or with the prior written consent of Parent or Merger Sub, (h) the effects of any breach, violation or non- performance of any provision of this Agreement by Parent or any of its Affiliates, (i) any initiated or threatened Action against the Company, any of its Affiliates or any of their respective directors or officers arising out of this Agreement or the transactions contemplated hereby, (j) any failure in and of itself (but not the underlying cause thereof) by the Company to meet any published analyst estimates or expectations of the Company’s revenues, premiums written, earnings or other financial performance or results of operations for any period or any failure in and of itself (but not the underlying cause thereof) by the Company to meet its internal or published projections, budgets, plans or forecasts of its revenues, premiums written, earnings or other financial performance or results of operations or any change in the price or trading volume of the Company Common Shares, (k) changes in the value of the investment assets owned by a Company Insurance Subsidiary (but not the underlying cause thereof) or (l) changes or developments in and of itself (but not the underlying cause thereof) in the credit, financial strength or other rating of the Company, any of its Subsidiaries or its outstanding debt, (m) any effect, change, event, occurrence or circumstance arising out of, resulting from or related to the matters described in Section 1.01A of the Company Disclosure Letter; provided, further, however, that any effect, change, event or occurrence referred to in clause (a), (b), (c) or (d) may be taken into account in determining whether or not there has been a Company Material Adverse Effect to the extent such effect, change, event or occurrence has a disproportionate adverse effect on the Company and its Subsidiaries, taken as a whole, relative to other participants operating in the industries and geographies in which the Company and its Subsidiaries operate (in which case the incremental disproportionate effect or effects may be taken into account in determining whether or not a Company Material Adverse Effect has occurred).  (Page 10)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\n“Change in Circumstance” means any event or development that is material to the Company and its Subsidiaries, taken as a whole, occurring after the execution and delivery of this Agreement, that was not known to, or reasonably foreseeable by, the Company Board of Directors or any committee thereof prior to the date hereof and which does not relate to (a) a Takeover Proposal or any matter related thereto or consequences thereof, (b) events or developments arising from the announcement or existence of this Agreement or actions taken pursuant to this Agreement or in connection with the transactions contemplated hereby, or (c) changes in the market price or trading volume of the Company Common Shares (but not the underlying cause thereof). <omitted> Section 6.06 No Solicitation of Transactions. <omitted> (c) Notwithstanding the foregoing or anything else to the contrary contained in this Agreement, at any time prior to obtaining the Company Required Vote, the Company Board of Directors may, if, after consultation with its financial advisor and outside counsel, it determines that the failure to take such action would be inconsistent with the fiduciary duties of directors under Indiana Law, (x) make an Adverse Recommendation Change in response to a Change in Circumstance, (y) make an Adverse Recommendation Change in response to a Superior Proposal <omitted> if and only if:\n(i) the Company shall have given Parent notice at least four (4) Business Days prior to making any such Adverse Recommendation Change or causing or permitting the Company to terminate this Agreement pursuant to clause (y) above, which notice shall include (A) the material terms and conditions of any Superior Proposal that is the basis of the proposed action by the Company Board of Directors, the identity of the Person making the Superior Proposal and copies of proposed definitive documentation with respect to the Superior Proposal (it being understood and agreed that (1) any amendment to any financial terms or other terms that are material of such Superior Proposal shall require anew notice and an additional three (3) Business Day period prior to taking any specified action and (2) in determining whether to make an Adverse Recommendation Change or to cause or permit the Company to so terminate this Agreement, the Company Board of Directors shall take into account any changes to the financial and other terms of this Agreement proposed by Parent in writing to the Company (and not revoked) in response to any such notice or otherwise within the periods described above) or (B) a reasonably detailed description of the material event or development constituting such Change in Circumstance;(ii) the Company has and has caused its Subsidiaries and its and their respective Representatives to make themselves reasonably available to negotiate with Parent and its Representatives during the period referred to in clause (i) above to the extent requested in writing by Parent in order to permit Parent to propose one or more amendments to this Agreement that would result in such Takeover Proposal ceasing to constitute a Superior Proposal or such other matter no longer constituting a Change in Circumstance;(iii) after considering any proposed binding offers to amend this Agreement committed to in writing by Parent (and not revoked) during the period referred to in clause (i) above, if any, the Company Board of Directors shall have determined in good faith, after consultation with its financial advisor and outside counsel, that the failure to make the Adverse Recommendation Change in response to such Superior Proposal or Change in Circumstance or cause or permit the Company to terminate this Agreement in response to such Superior Proposal would be inconsistent with the fiduciary duties of directors under Indiana Law.  (Page 48)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_115\" title=\"AGREEMENT AND PLAN OF MERGER by and among THE PROGRESSIVE CORPORATION, CARNATION MERGER SUB INC. and PROTECTIVE INSURANCE CORPORATION …\">\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub.  The obligations of Parent and Merger Sub to effect the Merger on the Closing Date are subject to the satisfaction (or waiver by Parent and Merger Sub) as of the Closing Date of the following conditions: (a) Representations and Warranties.  The representations and warranties of the Company <omitted> (ii) set forth in Article IV (other than the Company Fundamental Representations) shall be true and correct both as of the date hereof and as of the Closing Date as if made on and as of the Closing Date (except to the extent expressly made as of a specific date, in which case as of such specific date), except where the failure of such representations and warranties to be so true and correct would not, individually or in the aggregate, reasonably be likely to have a Company Material Adverse Effect; provided, however, that for purposes of determining the satisfaction of clause (ii) of this condition, no effect shall be given to any exception or qualification in such representations and warranties relating to “material,” “materiality” or “Company Material Adverse Effect.” (Page 55)\n\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub. <omitted> (a) Representations and Warranties.  The representations and warranties of the Company <omitted> (ii) set forth in Article IV (other than the Company Fundamental Representations) shall be true and correct <omitted> , except where the failure of such representations and warranties to be so true and correct would not, individually or in the aggregate, reasonably be likely to have a Company Material Adverse Effect; (Page 55)\n\nSection 4.03 Capitalization.\n<omitted>\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub.  The obligations of Parent and Merger Sub to effect the Merger on the Closing Date are subject to the satisfaction (or waiver by Parent and Merger Sub) as of the Closing Date of the following conditions: (a) Representations and Warranties.  The representations and warranties of the Company (i) set forth in <omitted> Section 4.03(a), <omitted> shall be true and correct both as of the date hereof and as of the Closing Date as if made on and as of the Closing Date (except to the extent expressly made as of a specific date, in which case as of such specific date), in each case other than any de minimis inaccuracies with respect to Section 4.03(a), (Page 55)\n\nSection 4.03 Capitalization.\n<omitted>\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub. <omitted> (a) Representations and Warranties.  The representations and warranties of the Company (i) set forth in <omitted> Section 4.03(a), <omitted> shall be true and correct <omitted> in each case other than any de minimis inaccuracies (Page 55)\n\nSection 4.01\nOrganization and Good Standing; Organizational Documents.\n<omitted>\n\nSection 4.02\nAuthority for Agreement.\n<omitted>\nThis Agreement has been duly executed and delivered by the Company and, assuming the due authorization, execution and\ndelivery by Parent and Merger Sub, constitutes a legal, valid and \nbinding obligation of the Company enforceable against the \nCompany in accordance with its terms, except as enforcement thereof may be limited against the Company by (a) bankruptcy, insolvency, fraudulent conveyance, reorganization, moratorium and \nsimilar Laws relating to or affecting creditors’ rights \ngenerally, general equitable principles (whether\nconsidered in a proceeding in equity or at law) and any implied covenant of good faith and fair dealing, or remedies in general, as from time to time in effect, or (b) the exercise by courts of equity \npowers (the “Bankruptcy and Equity Exception”).  \n\n \nAs of the date of this Agreement, the\nSpecial \nCommittee and the Company Board of Directors (upon the unanimous \nrecommendation of the Special Committee) have adopted\nresolutions \nunanimously (i) determining that this Agreement, the Merger and the \nother transactions contemplated hereby are fair, \nadvisable and in the best interests of the Company and the \nCompany Shareholders, (ii) approving and adopting this Agreement, the Merger and the other\ntransactions contemplated hereby\n<omitted>\n\nSection 4.22\nTakeover Statutes.\n<omitted>\nSection 4.24\nBrokers or Finders.\n<omitted>  \n\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub.  The obligations of Parent and Merger Sub to effect the Merger on the Closing Date are subject to the satisfaction (or waiver by Parent and Merger Sub) as of the Closing Date of the following conditions: (a) Representations and Warranties.  The representations and warranties of the Company (i) set forth in Section 4.01(a), Section 4.02, Section 4.03(a), Section 4.22 and Section 4.24 (the “Company Fundamental Representations”) shall be true and correct both as of the date hereof and as of the Closing Date as if made on and as of the Closing Date (except to the extent expressly made as of a specific date, in which case as of such specific date), in each case other than any de minimis inaccuracies with respect to Section 4.03(a) (Page 55)\n\nSection 4.01\nOrganization and Good Standing; Organizational Documents.\n<omitted>\nSection 4.02\nAuthority for Agreement.\n<omitted>\nThis Agreement <omitted> constitutes a legal, valid and \nbinding obligation of the Company enforceable against the \nCompany in accordance with its terms, <omitted>\n\n \nAs of the date of this Agreement, the\nSpecial Committee and the Company Board of Directors (upon the unanimous recommendation of the Special Committee) have adopted\nresolutions unanimously <omitted> (ii) approving and adopting this Agreement, the Merger and the other\ntransactions contemplated hereby\n<omitted>\nSection 4.22\nTakeover Statutes.\n<omitted>\nSection 4.24\nBrokers or Finders.\n<omitted>  \n\nSection 7.02 Conditions to the Obligations of Parent and Merger Sub. <omitted> (a) Representations and Warranties.  The representations and warranties of the Company (i) set forth in Section 4.01(a), Section 4.02, <omitted> Section 4.22 and Section 4.24 (the “Company Fundamental Representations”) shall be true and correct (Page 55)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted in response to Intervening Event",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted in response to Intervening Event",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Operating and Efforts Covenant",
+      "question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to all negative covenants"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies only to specified negative covenants",
+        "Applies to all negative covenants"
+      ],
+      "subquestions": [],
+      "source_question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Applies to all negative covenants"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger"
+        },
+        {
+          "text": "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "Organization",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Capitalization-Other",
+        "Opinion of Financial Advisor"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Knowledge",
+      "question": "Knowledge Definition-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Constructive knowledge"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Actual knowledge",
+        "Constructive knowledge"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition-Answer",
+      "answers": [
+        {
+          "text": "Constructive knowledge"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Not known and not reasonably foreseeable at signing"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Not known and not reasonably foreseeable at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate at another materiality standard (e.g., hybrid standard)",
+        "Accurate in all material respects",
+        "Accurate in all respects"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answers": [
+        {
+          "text": "Accurate in all respects"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "\"act of God\""
+        },
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Additional matching rights period for modifications (COR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "3 business days"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "2 business days or less",
+        "3 business days",
+        "3 days",
+        "4 business days",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Additional matching rights period for modifications (COR)-Answer",
+      "answers": [
+        {
+          "text": "3 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "Relational language varies among carveouts"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Attributable to\""
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        },
+        {
+          "text": "\"Resulting from\""
+        },
+        {
+          "text": "Relational language varies among carveouts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Other"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Material breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Material Adverse Effect",
+      "question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Knowledge",
+      "question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        16959
+      ],
+      "min_char_offset": 16959,
+      "min_frac": 0.6248,
+      "min_tokens_from_start": 4239,
+      "min_tokens_from_end": 2547
+    },
+    "q02": {
+      "char_offsets": [
+        11716
+      ],
+      "min_char_offset": 11716,
+      "min_frac": 0.4316,
+      "min_tokens_from_start": 2929,
+      "min_tokens_from_end": 3857
+    },
+    "q03": {
+      "char_offsets": [
+        11716
+      ],
+      "min_char_offset": 11716,
+      "min_frac": 0.4316,
+      "min_tokens_from_start": 2929,
+      "min_tokens_from_end": 3857
+    },
+    "q04": {
+      "char_offsets": [
+        9570
+      ],
+      "min_char_offset": 9570,
+      "min_frac": 0.3526,
+      "min_tokens_from_start": 2392,
+      "min_tokens_from_end": 4394
+    },
+    "q05": {
+      "char_offsets": [
+        6263
+      ],
+      "min_char_offset": 6263,
+      "min_frac": 0.2307,
+      "min_tokens_from_start": 1565,
+      "min_tokens_from_end": 5221
+    },
+    "q06": {
+      "char_offsets": [
+        6263
+      ],
+      "min_char_offset": 6263,
+      "min_frac": 0.2307,
+      "min_tokens_from_start": 1565,
+      "min_tokens_from_end": 5221
+    },
+    "q07": {
+      "char_offsets": [
+        20986
+      ],
+      "min_char_offset": 20986,
+      "min_frac": 0.7731,
+      "min_tokens_from_start": 5246,
+      "min_tokens_from_end": 1540
+    },
+    "q08": {
+      "char_offsets": [
+        7830
+      ],
+      "min_char_offset": 7830,
+      "min_frac": 0.2885,
+      "min_tokens_from_start": 1957,
+      "min_tokens_from_end": 4829
+    },
+    "q09": {
+      "char_offsets": [
+        8628
+      ],
+      "min_char_offset": 8628,
+      "min_frac": 0.3179,
+      "min_tokens_from_start": 2157,
+      "min_tokens_from_end": 4629
+    },
+    "q10": {
+      "char_offsets": [
+        20986
+      ],
+      "min_char_offset": 20986,
+      "min_frac": 0.7731,
+      "min_tokens_from_start": 5246,
+      "min_tokens_from_end": 1540
+    },
+    "q11": {
+      "char_offsets": [
+        11716
+      ],
+      "min_char_offset": 11716,
+      "min_frac": 0.4316,
+      "min_tokens_from_start": 2929,
+      "min_tokens_from_end": 3857
+    },
+    "q12": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0064,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 6743
+    },
+    "q13": {
+      "char_offsets": [
+        11716
+      ],
+      "min_char_offset": 11716,
+      "min_frac": 0.4316,
+      "min_tokens_from_start": 2929,
+      "min_tokens_from_end": 3857
+    },
+    "q14": {
+      "char_offsets": [
+        10753
+      ],
+      "min_char_offset": 10753,
+      "min_frac": 0.3961,
+      "min_tokens_from_start": 2688,
+      "min_tokens_from_end": 4098
+    },
+    "q15": {
+      "char_offsets": [
+        11716
+      ],
+      "min_char_offset": 11716,
+      "min_frac": 0.4316,
+      "min_tokens_from_start": 2929,
+      "min_tokens_from_end": 3857
+    },
+    "q16": {
+      "char_offsets": [
+        7830
+      ],
+      "min_char_offset": 7830,
+      "min_frac": 0.2885,
+      "min_tokens_from_start": 1957,
+      "min_tokens_from_end": 4829
+    }
+  }
+}

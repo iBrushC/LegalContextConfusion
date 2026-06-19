@@ -1,0 +1,633 @@
+{
+  "cell_id": "d047_baseline",
+  "dataset": "maud",
+  "doc_index": 47,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 9029,
+  "actual_chars": 36114,
+  "target_document_id": "contract_140",
+  "target_document_title": "contract_140",
+  "distractor_ids": [],
+  "target_offset": 50,
+  "target_end": 35307,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         Notwithstanding anything in this Agreement to the contrary, with respect to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable (and in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)), in each case (including with respect to any such termination), if and only if (A) an unsolicited bona fide written Acquisition Proposal (that did not result from a material breach of this Section 5.4) is made to VEREIT or Realty Income, as applicable, by a third party, and such Acquisition Proposal is not withdrawn, (B) the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, has concluded in good faith (after consultation with outside legal counsel and financial advisors) that such Acquisition Proposal constitutes a Superior Proposal, (C) the Board of Directors of VEREIT or of Realty Income, as applicable, has concluded in good faith (after consultation with its outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to VEREIT or Realty Income, as applicable, (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action and specifying in reasonable detail the reasons therefor, including the terms and conditions of any such Superior Proposal that is the basis of the proposed action (a “Notice of Recommendation Change”) (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)), (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party, and (F) the Board of Directors of the party proposing to take such action, following the Notice Period, again reasonably determines in good faith (after consultation with outside legal counsel, and taking into account any adjustment or modification of the terms of this Agreement proposed by the other party) that failure to do so would reasonably be expected to result in a breach of its duties to such party. (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         <omitted> the Board of Directors of VEREIT <omitted> may <omitted> in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)) <omitted> , if and only if <omitted> (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action <omitted> (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         Notwithstanding anything in this Agreement to the contrary, with respect to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable (and in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)), in each case (including with respect to any such termination), if and only if (A) an unsolicited bona fide written Acquisition Proposal (that did not result from a material breach of this Section 5.4) is made to VEREIT or Realty Income, as applicable, by a third party, and such Acquisition Proposal is not withdrawn, (B) the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, has concluded in good faith (after consultation with outside legal counsel and financial advisors) that such Acquisition Proposal constitutes a Superior Proposal, (C) the Board of Directors of VEREIT or of Realty Income, as applicable, has concluded in good faith (after consultation with its outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to VEREIT or Realty Income, as applicable, (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action and specifying in reasonable detail the reasons therefor, including the terms and conditions of any such Superior Proposal that is the basis of the proposed action (a “Notice of Recommendation Change”) (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)), (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party, and (F) the Board of Directors of the party proposing to take such action, following the Notice Period, again reasonably determines in good faith (after consultation with outside legal counsel, and taking into account any adjustment or modification of the terms of this Agreement proposed by the other party) that failure to do so would reasonably be expected to result in a breach of its duties to such party. (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         <omitted> the Board of Directors of VEREIT <omitted> may <omitted> in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)) <omitted> , if and only if <omitted> (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action <omitted> (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)) (Page 30)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 5.4 Acquisition Proposals.\n<omitted>\n\n(b) (i) Notwithstanding the foregoing, the Board of Directors of VEREIT and the Board of Directors of Realty Income shall each be permitted, prior to its respective meeting of stockholders to be held pursuant to Section 5.1, and subject to (A) compliance with the other terms of this Section 5.4 and (B) first entering into a confidentiality agreement having provisions that are no less favorable to such party than those contained in the Confidentiality Agreement (provided that such agreement need not contain any standstill or similar provision prohibiting the making of an Acquisition Proposal), to engage in discussions and negotiations with, or provide any nonpublic information or data to, any Person in response to an unsolicited bona fide written Acquisition Proposal by such Person first made after the date of this Agreement (that did not result from a material breach of this Section 5.4) and which the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, concludes in good faith (after consultation with outside legal counsel and financial advisors) constitutes or is reasonably likely to result in a Superior Proposal, if and only to the extent that the directors of VEREIT or of Realty Income, as applicable, conclude in good faith (after consultation with their outside legal counsel) that failure to do so would reasonably be expected to result in a breach of their duties to VEREIT or Realty Income, as applicable. VEREIT or Realty Income, as applicable, shall provide the other with a copy of any nonpublic information or data provided to a third party pursuant to the prior sentence prior to or substantially concurrently with furnishing such information to such third party (except to the extent that such nonpublic information or data shall have been previously provided to the other party).  (Page 29)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\na material development or material change in circumstances has first occurred or arisen after the date of this Agreement that was neither known to such party nor reasonably foreseeable as of the date of this Agreement; provided, that (x) such change or development does not relate to an Acquisition Proposal and (y) in no event shall the fact in and of itself that VEREIT or Realty Income meets or exceeds or fails to meet or exceed internal or published projections, forecasts or revenue or earnings predictions for any period constitute such a material development or material change in circumstances that was not reasonably foreseeable as of the date of this Agreement (but the foregoing shall not exclude any change or development underlying such failure to meet or exceed such projections, forecasts or predictions)  (Page 30)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 5.4            Acquisition Proposals.   (a)          Each of VEREIT and Realty Income agrees that neither it nor any of its Subsidiaries nor any of the officers and directors of it or its Subsidiaries shall, and that it shall instruct and use its reasonable best efforts to cause its and its Subsidiaries’ Representatives not to, directly or indirectly, (i) initiate, solicit, knowingly encourage or facilitate any inquiries or the making of any proposal or offer with respect to, or a transaction to effect, a merger, reorganization, share sale, share exchange, asset sale, consolidation, business combination, recapitalization, liquidation, dissolution or similar transaction involving any purchase or sale of 20% or more of the consolidated assets (including stock or other ownership interests) of it and its Subsidiaries, taken as a whole and determined on a fair market value basis, or any purchase or sale of, or tender or exchange offer for, its voting securities that, if consummated, would result in any person (or the stockholders or other equity interest holders of such Person) beneficially owning securities representing 20% or more of its total voting power (or of the surviving parent entity in such transaction), in each case, other than any proposal, offer or transaction expressly permitted by Section 5.15(d) (any such proposal, offer or transaction (other than a proposal or offer made by one party to this Agreement or any Subsidiary thereof to another party to this Agreement or any Subsidiary thereof or any proposal, offer or transaction expressly permitted by Section 5.15(d)) being hereinafter referred to as an “Acquisition Proposal”), (ii) participate in any discussions with or provide any confidential information or data to any person relating to an Acquisition Proposal, or engage in any negotiations concerning an Acquisition Proposal, or knowingly facilitate any effort or attempt to make or implement an Acquisition Proposal, (iii) approve or execute or enter into any letter of intent, agreement in principle, merger agreement, asset purchase or share exchange agreement, option agreement or other similar agreement related to any Acquisition Proposal (an “Acquisition Agreement”) or (iv) propose or agree to do any of the foregoing.  (Page 29)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 6.3 Conditions to Obligations of Realty Income. The obligation of Realty Income to effect the Merger is subject to the satisfaction of the following conditions unless waived by Realty Income in writing:  (a) Representations and Warranties . <omitted>\n(iii) the other representations and warranties of VEREIT set forth in this Agreement shall be true and correct as of the date of this Agreement and as of the Closing Date as though made on and as of the Closing Date (except to the extent expressly made as of an earlier date, in which case as of such date), except, in the case of this clause (iii), where the failure of such representations and warranties to be so true and correct (without giving effect to any limitation as to materiality or VEREIT Material Adverse Effect) has not had, and would not reasonably be expected to have, individually or in the aggregate, a VEREIT Material Adverse Effect. (Page 39)\n\nSection 6.3 Conditions to Obligations of Realty Income. <omitted>\n(iii) the other representations and warranties of VEREIT set forth in this Agreement shall be true and correct <omitted> except, in the case of this clause (iii), where the failure of such representations and warranties to be so true and correct <omitted> has not had, and would not reasonably be expected to have, individually or in the aggregate, a VEREIT Material Adverse Effect. (Page 39)\n\nSection 3.1 Representations and Warranties of VEREIT. <omitted>\n(b) Capital Structure. <omitted>\n(i) The authorized capital stock of VEREIT <omitted>\nSection 6.3 Conditions to Obligations of Realty Income. The obligation of Realty Income to effect the Merger is subject to the satisfaction of the following conditions unless waived by Realty Income in writing:  (a) Representations and Warranties . <omitted>\n(ii) the representations and warranties set forth in Section 3.1(b)(i) shall be true and correct in all but de minimis respects as of the date of this Agreement, and (Page 39)\n\nSection 3.1 Representations and Warranties of VEREIT. <omitted>\n(b) Capital Structure. <omitted>\n(i) The authorized capital stock of VEREIT <omitted>\nSection 6.3 Conditions to Obligations of Realty Income. <omitted>\n(ii) the representations and warranties set forth in Section 3.1(b)(i) shall be true and correct in all but de minimis respects (Page 39)\n\nSection 3.1                   Representations and Warranties of VEREIT . <omitted> (c)           Authority.   (i)               <omitted> This Agreement (in the case of VEREIT and VEREIT OP) has been duly and validly executed and delivered by VEREIT and VEREIT OP, as applicable, and (subject to execution by the other parties thereto) constitutes a valid and binding obligation of each of VEREIT and VEREIT OP, subject to execution by the other parties thereto, enforceable against VEREIT and VEREIT OP, as applicable, in accordance with its terms <omitted>\nSection 6.3 Conditions to Obligations of Realty Income. The obligation of Realty Income to effect the Merger is subject to the satisfaction of the following conditions unless waived by Realty Income in writing:  (a) Representations and Warranties . \n(i) The representations and warranties of VEREIT set forth in Section 3.1 clauses (a)(i) (Organization, Standing and Power), (b) (Capital Structure) (other than clause (i) thereof), (c)(i) (Authority), (m) (Board Approval), (o) (Vote Required), (u) (Investment Company Act of 1940), (v) (Brokers or Finders) and (w) (Opinions of VEREIT Financial Advisors) shall be true and correct in all material respects as of the date of this Agreement and as of the Closing Date as though made on and as of the Closing Date (except to the extent made as of an earlier date, in which case as of such date), (Page 39)\n\nSection 3.1                   Representations and Warranties of VEREIT . <omitted> (c)           Authority.   (i)               <omitted> This Agreement (in the case of VEREIT and VEREIT OP) has been duly and validly executed and delivered by VEREIT and VEREIT OP, as applicable, and (subject to execution by the other parties thereto) constitutes a valid and binding obligation of each of VEREIT and VEREIT OP, subject to execution by the other parties thereto, enforceable against VEREIT and VEREIT OP, as applicable, in accordance with its terms <omitted>\nSection 6.3 Conditions to Obligations of Realty Income. <omitted> (i) The representations and warranties of VEREIT set forth in Section 3.1 clauses (a)(i) (Organization, Standing and Power), (b) (Capital Structure) (other than clause (i) thereof), (c)(i) (Authority), (m) (Board Approval), (o) (Vote Required), (u) (Investment Company Act of 1940), (v) (Brokers or Finders) and (w) (Opinions of VEREIT Financial Advisors) shall be true and correct in all material respects as of the date of this Agreement and as of the Closing Date as though made on and as of the Closing Date (Page 39)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 5.4            Acquisition Proposals. <omitted>\n\n(b) <omitted> (iv)         Notwithstanding anything in this Agreement to the contrary, with respect to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable (and in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)), in each case (including with respect to any such termination), if and only if (A) an unsolicited bona fide written Acquisition Proposal (that did not result from a material breach of this Section 5.4) is made to VEREIT or Realty Income, as applicable, by a third party, and such Acquisition Proposal is not withdrawn, (B) the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, has concluded in good faith (after consultation with outside legal counsel and financial advisors) that such Acquisition Proposal constitutes a Superior Proposal, (C) the Board of Directors of VEREIT or of Realty Income, as applicable, has concluded in good faith (after consultation with its outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to VEREIT or Realty Income, as applicable,  (Page 30)\n\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (v)           Notwithstanding anything in this Agreement to the contrary, in circumstances not involving or relating to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable, if and only if (A) a material development or material change in circumstances has first occurred or arisen after the date of this Agreement that was neither known to such party nor reasonably foreseeable as of the date of this Agreement; provided, that (x) such change or development does not relate to an Acquisition Proposal and (y) in no event shall the fact in and of itself that VEREIT or Realty Income meets or exceeds or fails to meet or exceed internal or published projections, forecasts or revenue or earnings predictions for any period constitute such a material development or material change in circumstances that was not reasonably foreseeable as of the date of this Agreement (but the foregoing shall not exclude any change or development underlying such failure to meet or exceed such projections, forecasts or predictions), (B) the Board of Directors of the party proposing to take such action has first reasonably determined in good faith (after consultation with outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to such party,  (Page 30)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 7.2            Effect of Termination. <omitted> (b)               VEREIT Termination Fee. <omitted> (iii)            In the event that  <omitted> (C) prior to the date that is twelve (12) months after the date of such termination, VEREIT either (1) consummates a transaction of a type set forth in the definition of “Acquisition Proposal” or (2) enters into an Acquisition Agreement, then VEREIT shall, on the earlier of the date such transaction is consummated or the date such Acquisition Agreement is entered into, pay to Realty Income a one-time fee equal to the VEREIT Termination Fee less the amount of any Realty Income Expense Reimbursement previously paid to Realty Income (if any) pursuant to Section 7.2(b)(iv)\n\n\n(provided that, for purposes of this clause (C), each reference to “20%” in the definitions of “Acquisition Proposal” and “Acquisition Agreement” shall be deemed to be a reference to “50.1%”).  (Pages 40-41)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\n“to VEREIT’s knowledge” or “to the knowledge of VEREIT” means the actual knowledge of any of the individuals listed in Section 9.1(b) of the VEREIT Disclosure Letter.  (Page 48)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\n“VEREIT Material Adverse Effect” means an event, development, change or occurrence that is materially adverse to the financial condition, business or results of operations of VEREIT and its Subsidiaries, taken as a whole; provided, however, that a VEREIT Material Adverse Effect shall not include any event, development, change or occurrence to the extent arising out of, relating to or resulting from:   (a) changes in general business, economic or market conditions in the United States or elsewhere in the world (including changes generally in prevailing interest rates, credit availability and liquidity, currency exchange rates and price levels or trading volumes in the United States or foreign securities or credit markets);   (b) changes generally affecting the industry or industries in which VEREIT or any of its Subsidiaries operates or any of the markets or geographical areas in which VEREIT or any of its Subsidiaries operate;   (c) any change or proposed change after the date hereof in Law or the interpretation thereof or GAAP or the interpretation thereof;   (d) changes in political or social conditions, including civil unrest, protects, public demonstrations, acts of war, armed hostility or terrorism (including cyber-terrorism or cyber-attacks), riots, demonstrations, public disorders, civil disobedience or any escalation or any worsening thereof;   (e) earthquakes, hurricanes, tornados or other acts of God, natural disasters or calamities;   (f) any epidemics, pandemics or disease outbreaks (including Covid-19) or worsening thereof and any Covid-19 Measures;   (g) the negotiation, execution, announcement or existence of this Agreement or the consummation of the transactions contemplated hereby (including the Mergers, the Separation and the OfficeCo Distribution), including the impact thereof on relationships, contractual or otherwise, of Realty Income or any of its Subsidiaries with tenants, customers, suppliers, lenders, partners, employees or regulators (provided, that this clause (g) shall not apply to any inaccuracy in the representations and warranties set forth in Section 3.1(c)(ii)(B));   \n\n100   \n\n  (h) any failure by VEREIT to meet any internal or published industry analyst projections or forecasts or estimates of revenues or earnings for any period (it being understood and agreed that the facts and circumstances giving rise to such failure that are not otherwise excluded from the definition of a VEREIT Material Adverse Effect may be taken into account in determining whether there has been a VEREIT Material Adverse Effect);   (i) any change in the price or trading volume of shares of VEREIT Common Stock (it being understood and agreed that the facts and circumstances giving rise to such change that are not otherwise excluded from the definition of a VEREIT Material Adverse Effect may be taken into account in determining whether there has been a VEREIT Material Adverse Effect);   (j) any reduction in the credit rating of VEREIT or its Subsidiaries (it being understood and agreed that the facts and circumstances giving rise to such change that are not otherwise excluded from the definition of a VEREIT Material Adverse Effect may be taken into account in determining whether there has been a VEREIT Material Adverse Effect); and   (k) compliance with the terms of, or the taking of any action required by, this Agreement (including the Mergers, the Separation and the OfficeCo Distribution) (other than any action or failure to take any action pursuant to Section 4.1, unless Realty Income has unreasonably withheld, conditioned or delayed its written consent to any such action or failure to take action);   provided, that (x) if any event, development, change or occurrence described in any of clauses (a), (b), (c), (d), (e) or (f) has had a disproportionate adverse effect on VEREIT and its Subsidiaries, taken as a whole, relative to other similarly situated participants in the commercial real estate REIT industry, then the incremental disproportionate adverse impact (and only the incremental disproportionate adverse impact) of such event, development, change or may be taken into account for purposes of determining whether a VEREIT Material Adverse Effect has occurred, and (y) if any event, development, change or occurrence has caused or is reasonably likely to cause VEREIT to fail to qualify as a REIT for federal Tax purposes, such event, development, change or occurrence shall be considered a VEREIT Material Adverse Effect, unless such failure has been, or is able to be, cured on commercially reasonable terms under the applicable provisions of the Code.  (Page 48)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         Notwithstanding anything in this Agreement to the contrary, with respect to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable (and in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)), in each case (including with respect to any such termination), if and only if (A) an unsolicited bona fide written Acquisition Proposal (that did not result from a material breach of this Section 5.4) is made to VEREIT or Realty Income, as applicable, by a third party, and such Acquisition Proposal is not withdrawn, (B) the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, has concluded in good faith (after consultation with outside legal counsel and financial advisors) that such Acquisition Proposal constitutes a Superior Proposal, (C) the Board of Directors of VEREIT or of Realty Income, as applicable, has concluded in good faith (after consultation with its outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to VEREIT or Realty Income, as applicable, (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action and specifying in reasonable detail the reasons therefor, including the terms and conditions of any such Superior Proposal that is the basis of the proposed action (a “Notice of Recommendation Change”) (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)), (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party, and (F) the Board of Directors of the party proposing to take such action, following the Notice Period, again reasonably determines in good faith (after consultation with outside legal counsel, and taking into account any adjustment or modification of the terms of this Agreement proposed by the other party) that failure to do so would reasonably be expected to result in a breach of its duties to such party. (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         <omitted>the Board of Directors of VEREIT <omitted> may make a Change in VEREIT Recommendation <omitted> if and only if <omitted> (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action <omitted> (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party, (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         Notwithstanding anything in this Agreement to the contrary, with respect to an Acquisition Proposal, the Board of Directors of VEREIT or Board of Directors of Realty Income, as applicable, may make a Change in VEREIT Recommendation or a Change in Realty Income Recommendation, as applicable (and in the event that the Board of Directors of VEREIT determines such Acquisition Proposal to be a Superior Proposal, in accordance with this Section 5.4, terminate this Agreement pursuant to Section 7.1(d)(i)), in each case (including with respect to any such termination), if and only if (A) an unsolicited bona fide written Acquisition Proposal (that did not result from a material breach of this Section 5.4) is made to VEREIT or Realty Income, as applicable, by a third party, and such Acquisition Proposal is not withdrawn, (B) the Board of Directors of VEREIT or the Board of Directors of Realty Income, as applicable, has concluded in good faith (after consultation with outside legal counsel and financial advisors) that such Acquisition Proposal constitutes a Superior Proposal, (C) the Board of Directors of VEREIT or of Realty Income, as applicable, has concluded in good faith (after consultation with its outside legal counsel) that failure to do so would reasonably be expected to result in a breach of its duties to VEREIT or Realty Income, as applicable, (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action and specifying in reasonable detail the reasons therefor, including the terms and conditions of any such Superior Proposal that is the basis of the proposed action (a “Notice of Recommendation Change”) (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)), (E) during the Notice Period, the notifying party has considered and, at the reasonable request of the other party, engaged in good faith discussions with such party regarding, any adjustment or modification of the terms of this Agreement proposed by the other party, and (F) the Board of Directors of the party proposing to take such action, following the Notice Period, again reasonably determines in good faith (after consultation with outside legal counsel, and taking into account any adjustment or modification of the terms of this Agreement proposed by the other party) that failure to do so would reasonably be expected to result in a breach of its duties to such party. (Page 30)\n\nSection 5.4            Acquisition Proposals. <omitted> \n\n(b) <omitted> (iv)         <omitted> the Board of Directors of VEREIT <omitted> may make a Change in VEREIT Recommendation <omitted> if and only if <omitted> (D) four (4) Business Days (the “Notice Period”) shall have elapsed since the party proposing to take such action has given written notice to the other party advising such other party that the notifying party intends to take such action <omitted> (it being understood that any amendment to any material term of such Superior Proposal shall require a new Notice of Recommendation Change and a new Notice Period, except that the four (4) Business Day Notice Period referred to in clause (D) above shall instead be equal to the longer of (1) three (3) Business Days or (2) the period remaining under the Notice Period under clause (D) above immediately prior to the delivery of such additional notice under this clause (D)) (Page 30)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_140\" title=\"contract_140\">\n(b)               VEREIT agrees as to itself and its Subsidiaries that, from the date hereof until the earlier of the Effective Time or termination of this Agreement in accordance with its terms, except (1) as expressly contemplated or permitted by this Agreement, (2) to the extent required to effect the Separation or the OfficeCo Distribution in accordance with the terms set forth on Exhibit A, (3) as set forth in Section 4.1(b) of the VEREIT Disclosure Letter, (4) as required by applicable Law or the regulations or requirements of any stock exchange or regulatory organization applicable to VEREIT or any of its Subsidiaries, or (5) with Realty Income’s prior written consent (which consent is not to be unreasonably withheld, conditioned or delayed), such entities shall not:  (Page 23)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Not known and not reasonably foreseeable at signing"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Not known and not reasonably foreseeable at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Reasonable standard",
+        "Strict liability"
+      ],
+      "subquestions": [],
+      "source_question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answers": [
+        {
+          "text": "Reasonable standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "\"Could\" (reasonably) be expected to",
+        "\"Would\"",
+        "\"Would\" (reasonably) be expected to",
+        "No",
+        "Other forward-looking standard"
+      ],
+      "subquestions": [],
+      "source_question": "FLS (MAE) Standard-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects with de minimis exception"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Accurate in all respects with de minimis exception"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Resulting from\""
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        },
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all material respects"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate at another materiality standard (e.g., hybrid standard)",
+        "Accurate in all material respects",
+        "Accurate in all respects"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answers": [
+        {
+          "text": "Accurate in all material respects"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "consummation"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "No",
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "consummation"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\""
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "\"act of God\""
+        },
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (intervening event)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected breach\" of fiduciary duties"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (intervening event)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected breach\" of fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Initial matching rights period (FTR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "4 business days"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "subquestions": [],
+      "source_question": "Initial matching rights period (FTR)-Answer",
+      "answers": [
+        {
+          "text": "4 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal must close during Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Material Adverse Effect",
+      "question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to Target and subsidiaries \"taken as a whole\""
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies to Target and subsidiaries \"taken as a whole\"",
+        "No"
+      ],
+      "subquestions": [],
+      "source_question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answers": [
+        {
+          "text": "Applies to Target and subsidiaries \"taken as a whole\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Number of additional matching rights periods for modifications (COR)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Continuous matching right"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Number of additional matching rights periods for modifications (COR)",
+      "answers": [
+        {
+          "text": "Continuous matching right"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 11,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        10240
+      ],
+      "min_char_offset": 10240,
+      "min_frac": 0.2835,
+      "min_tokens_from_start": 2560,
+      "min_tokens_from_end": 6469
+    },
+    "q02": {
+      "char_offsets": [
+        11135
+      ],
+      "min_char_offset": 11135,
+      "min_frac": 0.3083,
+      "min_tokens_from_start": 2783,
+      "min_tokens_from_end": 6246
+    },
+    "q03": {
+      "char_offsets": [
+        8271
+      ],
+      "min_char_offset": 8271,
+      "min_frac": 0.229,
+      "min_tokens_from_start": 2067,
+      "min_tokens_from_end": 6962
+    },
+    "q04": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q05": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q06": {
+      "char_offsets": [
+        13487
+      ],
+      "min_char_offset": 13487,
+      "min_frac": 0.3735,
+      "min_tokens_from_start": 3371,
+      "min_tokens_from_end": 5658
+    },
+    "q07": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q08": {
+      "char_offsets": [
+        13487
+      ],
+      "min_char_offset": 13487,
+      "min_frac": 0.3735,
+      "min_tokens_from_start": 3371,
+      "min_tokens_from_end": 5658
+    },
+    "q09": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q10": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q11": {
+      "char_offsets": [
+        18436
+      ],
+      "min_char_offset": 18436,
+      "min_frac": 0.5105,
+      "min_tokens_from_start": 4609,
+      "min_tokens_from_end": 4420
+    },
+    "q12": {
+      "char_offsets": [
+        50
+      ],
+      "min_char_offset": 50,
+      "min_frac": 0.0014,
+      "min_tokens_from_start": 12,
+      "min_tokens_from_end": 9017
+    },
+    "q13": {
+      "char_offsets": [
+        21487
+      ],
+      "min_char_offset": 21487,
+      "min_frac": 0.595,
+      "min_tokens_from_start": 5371,
+      "min_tokens_from_end": 3658
+    },
+    "q14": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q15": {
+      "char_offsets": [
+        22731
+      ],
+      "min_char_offset": 22731,
+      "min_frac": 0.6294,
+      "min_tokens_from_start": 5682,
+      "min_tokens_from_end": 3347
+    },
+    "q16": {
+      "char_offsets": [
+        27448
+      ],
+      "min_char_offset": 27448,
+      "min_frac": 0.76,
+      "min_tokens_from_start": 6862,
+      "min_tokens_from_end": 2167
+    }
+  }
+}

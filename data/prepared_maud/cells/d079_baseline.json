@@ -1,0 +1,623 @@
+{
+  "cell_id": "d079_baseline",
+  "dataset": "maud",
+  "doc_index": 79,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4170,
+  "actual_chars": 16679,
+  "target_document_id": "contract_33",
+  "target_document_title": "TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 15224,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n“knowledge” means the actual knowledge of, (a) in the case of the Company, the individuals listed in Schedule 1.2 of the Company Disclosure Letter and (b) in the case of Isla, the individuals listed in Schedule 1.1 of the Isla Disclosure Letter. (Page 124)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n6.3 No Solicitation. <omitted> \n\n(b) From and after the date of this Agreement, subject to Section 6.3(e), the Company and its officers and directors will not, and will cause the Company’s Subsidiaries and their respective officers and directors not to, and will use their respective reasonable best efforts to cause the other Representatives of the Company and its Subsidiaries not to, directly or indirectly: \n\n(i) initiate, solicit, propose, knowingly encourage or knowingly facilitate any inquiry or the making of any proposal or offer that constitutes, or would reasonably be expected to result in, a Company Competing Proposal; \n\n(ii) engage in, continue or otherwise participate in any discussions or negotiations with any Person relating to, or in furtherance of a Company Competing Proposal or any inquiry, proposal or offer that would reasonably be expected to lead to a Company Competing Proposal; \n\n(iii) furnish any non-public information regarding the Company or its Subsidiaries, or access to the properties, assets or employees of the Company or its Subsidiaries, to any Person in connection with or in response to any Company Competing Proposal or any inquiry, proposal or offer that would reasonably be expected to lead to a Company Competing Proposal; \n\n(iv) enter into any letter of intent or agreement in principle relating to, or other agreement providing for, a Company Competing Proposal (other than a confidentiality agreement as provided in Section 6.3(e)(ii) entered into in compliance with Section 6.3(e)(ii)); or \n\n(v) submit any Company Competing Proposal to the approval of the stockholders of the Company; \n\nprovided, that, notwithstanding anything to the contrary in this Agreement, the Company or any of its Representatives may, in response to an unsolicited inquiry or proposal from a third party, (A) seek to clarify the terms and conditions of such inquiry or proposal to determine whether such inquiry or proposal constitutes a bona fide Company Competing Proposal, and (B) inform a third party or its Representative of the restrictions imposed by the provisions of this Section 6.3 (without conveying, requesting or attempting to gather any other information except as otherwise specifically permitted hereunder). <omitted> \n(g) Notwithstanding anything to the contrary in this Section 6.3, any action, or failure to take action, that is taken by any Representative of the Company or any of its Subsidiaries, in each case, at the direction of a director or officer of the Company, in violation of this Section 6.3 shall be deemed to be a breach of this Section 6.3 by the Company. <omitted> \n“Representatives” means, with respect to any Person, the officers, directors, employees, accountants, consultants, agents, legal counsel, financial advisors and other representatives of such Person. (Page 79)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n6.3 No Solicitation. <omitted> (e) Notwithstanding anything in this Agreement to the contrary: <omitted> (iii) prior to, but not after, the receipt of the Company Stockholder Approval, in response to a bona fide written Company Competing Proposal from a third party that was not solicited at any time following the execution of this Agreement by the Company, its officers or directors or any of its other Representatives and did not otherwise arise from a breach of the obligations set forth in this Section 6.3, if the Company Board so chooses, the Company Board may effect a Company Change of Recommendation or terminate this Agreement pursuant to Section 8.1(e), <omitted> \n\n8.1 Termination. This Agreement may be terminated and the Merger may be abandoned at any time prior to the Merger Effective Time, whether(except as expressly set forth below) before or after Company Stockholder Approval has been obtained: <omitted> \n\n(e) by the Company, if, prior to, but not after, the time the Company Stockholder Approval is obtained (A) the Company Board authorizes the Company, to the extent permitted by and subject to complying with the terms of Section 6.3, to enter into a Company Alternative Acquisition Agreement with respect to a Company Superior Proposal, (Page 105)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n4.3 Authority; No Violations; Consents and Approvals <omitted> This Agreement has been duly executed and delivered by the Company and, assuming the due and valid execution of this Agreement by the Isla Parties, constitutes a valid and binding obligation of the Company enforceable against the Company in accordance with its terms <omitted>  The Company Board, at a meeting duly called and held, has by unanimous vote <omitted> (ii) approved and declared advisable this Agreement, the Merger and the other Transactions <omitted> \n\n7.2 Additional Conditions to Obligations of the Isla Parties. The obligations of the Isla Parties to consummate the Transactions are subject to the satisfaction at or prior to the Merger Effective Time of the following conditions, any or all of which may be waived exclusively by Isla, in whole or in part, to the extent permitted by applicable Law: \n\n(a) Representations and Warranties of the Company. (i) The representations and warranties of the Company set forth in the first sentence of Section 4.1 (Organization, Standing and Power), Section 4.2(a) (Capital Structure), the third and fifth sentences of Section 4.2(b) (Capital Structure), and Section 4.3(a) (Authority) shall have been true and correct as of the date of this Agreement and shall be true and correct as of the Closing Date, as though made on and as of the Closing Date (except, with respect to Section 4.2(a) and the third and fifth sentences of Section 4.2(b), for any de minimis inaccuracies) (except that representations and warranties that speak as of a specified date or period of time shall have been true and correct only as of such date or period of time), (ii) all representations and warranties of the Company set forth in Section 4.2(b) (Capital Structure) other than the third and fifth sentences thereof shall have been true and correct in all material respects as of the date of this Agreement and shall be true and correct in all material respects as of the Closing Date, as though made on and as of the Closing Date (except that representations and warranties that speak as of a specified date or period of time shall have been true and correct all material respects only as of such date or period of time) (it being understood   97\n\n\nthat, for purposes of determining the accuracy of such representations and warranties, all materiality, “Material Adverse Effect” and similar qualifiers set forth in such representations and warranties shall be disregarded), and (iii) each of the remaining representations and warranties of the Company set forth in this Agreement shall be true and correct, in each case as of the date of this Agreement and as of the Closing Date as if made as of the Closing Date (except to the extent such representations and warranties expressly relate to an earlier date, in which case as of such earlier date), except for inaccuracies of representations or warranties with respect to which the circumstances giving rise to such inaccuracies would not, individually or in the aggregate, reasonably be expected to have a Material Adverse Effect (it being understood that, for purposes of determining the accuracy of such representations and warranties, all materiality, “Material Adverse Effect” and similar qualifiers set forth in such representations and warranties shall be disregarded). (Pages 102-103)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n(d) If (i) (A) Isla or the Company terminates this Agreement pursuant to Section 8.1(b)(iv) (Failure to Obtain Company Stockholder Approval), and on or before the date of any such termination a Company Competing Proposal shall have been publicly announced or publicly disclosed and not publicly withdrawn without qualification at least seven Business Days prior to the Company Stockholders Meeting or (B) Isla terminates this Agreement pursuant to Section 8.1(b)(iii) (Company Terminable Breach), and following the execution of this Agreement and on or before the date of any such termination, a Company Competing Proposal shall have been announced, disclosed or otherwise communicated to senior management of the Company or to the Company Board and (ii) within twelve (12) months after the date of such termination, the Company enters into a definitive agreement with respect to a Company Competing Proposal (or publicly approves or recommends to the stockholders of the Company or otherwise does not oppose, in the case of a tender or exchange offer, a Company Competing Proposal) or a Company Competing Proposal is consummated, then the Company shall pay Isla the Company Termination Fee less any amount previously paid by the Company pursuant to Section 8.3(c). <omitted> “Company Competing Proposal” means any contract, proposal, offer or indication of interest relating to any transaction or series of related transactions (other than transactions only with Isla or any of its Subsidiaries) (Pages 106-107)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n“Material Adverse Effect” means, when used with respect to any Party, any fact, circumstance, condition, effect, change, event or development (“Effect”) that (a) prevents, materially delays or materially impairs the ability of such Party or its Subsidiaries to consummate the Transactions or could reasonably be expected to do so or (b) is, or could reasonably be expected to be, materially adverse to the financial condition, business, or results of operations of such Party and its Subsidiaries, taken as a whole; provided, however, that, in respect of clause (b) above, none of the following shall be deemed to be or constitute a “Material Adverse Effect” or shall be taken into account when determining whether a “Material Adverse Effect” has occurred or could occur: \n\n(i) general economic conditions (or changes in such conditions) or conditions in the U.S. or global economies generally; \n\n(ii) conditions (or changes in such conditions) in the securities markets, credit markets, currency markets or other financial markets, including (A) changes in interest rates and changes in exchange rates for the currencies of any countries, and (B) any suspension of trading in securities (whether equity, debt, derivative or hybrid securities) generally on any securities exchange or over-the-counter market; \n\n(iii) conditions (or changes in such conditions) in the oil and gas exploration, development or production industry (including changes in commodity prices, general market prices and regulatory changes affecting the industry); \n\n(iv) earthquakes, hurricanes, tsunamis, tornadoes, floods, mudslides, wild fires or other natural disasters, weather conditions, pandemics, epidemics, endemics or other widespread health crisis (including the existence, impact or worsening of COVID-19); \n\n(v) political conditions (or changes in such conditions) or acts of war, sabotage or terrorism, civil unrest, public demonstrations, cyber attacks, hacking, or the escalation or general worsening of any of the foregoing; \n\n(vi) changes in, or any adoption, implementation, modification, repeal, interpretation, proposal of, any Law, or changes in other legal or regulatory conditions, or the interpretation thereof, or changes in GAAP or other accounting standards (or the interpretation thereof); \n\n(vii) changes in such Party’s stock price or the trading volume of such Party’s stock, or any failure by such Party to meet any analysts’ estimates or expectations of such Party’s revenue, earnings or other financial performance or results of operations for any period, or any failure by such Party or any of its Subsidiaries to meet any internal or published budgets, plans or forecasts of its revenues, earnings or other financial performance or results of operations (it being understood that the facts or occurrences giving rise to or contributing to such changes or failures that are not otherwise excluded from the definition of may “Material Adverse Effect” may constitute, or be taken into account in determining whether there has been or will be, a Material Adverse Effect);   Annex A Page 7\n\n\n(viii) the announcement of this Agreement or the pendency or consummation of the Transactions, including the initiation of litigation by any Person with respect to this Agreement (other than with respect to any representation or warranty that is intended to address the consequences of the execution or delivery of this Agreement or the announcement or consummation of the Transactions); or \n\n(ix) compliance with the terms of, or the taking of any action expressly permitted or required by, this Agreement (except for any obligation under this Agreement to operate in the ordinary course of business pursuant to Section 6.1 or 6.2, as applicable), including the taking of any actions required under this Agreement to obtain any approval or authorization under applicable Antitrust Laws for the consummation of the Transactions, or the taking of any action requested to be taken by the other Party; \n\nprovided, however, except to the extent such effects directly or indirectly resulting from, arising out of, attributable to or related to the matters described in the foregoing clauses (i) through (vi) disproportionately adversely affect such Party and its Subsidiaries, taken as a whole, as compared to other similarly situated participants operating in the United States domestic onshore oil and gas exploration, development or production industry (in which case, the incremental disproportionate adverse effect (if any) shall be taken into account when determining whether a “Material Adverse Effect” has occurred or may or could occur solely to the extent they are disproportionate). (Pages 125-126)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_33\" title=\"TRANSACTION AGREEMENT dated as of June 7, 2021 by and among CONTANGO OIL & GAS COMPANY, INDEPENDENCE ENERGY LLC, IE OPCO LLC, IE PUBCO …\">\n6.1 Conduct of Company Business Pending the Merger. \n\n(a) Except (i) as set forth on Schedule 6.1(a) of the Company Disclosure Letter, (ii) as expressly permitted or required by this Agreement (including in connection with the Conversions), (iii) as may be required by applicable Law (including COVID-19 Measures), or (iv) otherwise consented to by Isla in writing (such consent not to be unreasonably withheld, conditioned or delayed), the Company covenants and agrees that, until the earlier of the Merger Effective Time and the termination of this Agreement pursuant to Article VIII, it shall, and shall cause each of its Subsidiaries to, use commercially reasonable efforts to conduct its businesses in the ordinary course, including by using reasonable best efforts to preserve substantially intact its present business organization and assets and preserve its existing relationships with Governmental Entities and its significant customers, suppliers, lessors and others having significant business dealings with it of business in all material respects. <omitted> \n\n“ordinary course of business” means, with respect to an action taken by any Person, that such action is consistent with the ordinary course of business of such Person, excluding (whether or not such term is qualified by “consistent with past practice” or any similar phrase) any commercially reasonable deviations therefrom due to COVID-19 or COVID-19 Measures. (Page 71)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Relational language (MAE carveout)-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "(Material) breach of other provisions of agreement"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Signing & At Closing"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Signing & At Closing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger"
+        },
+        {
+          "text": "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Change in law:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Change in law:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Knowledge",
+      "question": "Knowledge Definition-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Actual knowledge"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Actual knowledge",
+        "Constructive knowledge"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition-Answer",
+      "answers": [
+        {
+          "text": "Actual knowledge"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws",
+        "Specified R&Ws only"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "Specified R&Ws only"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        },
+        {
+          "text": "Specified R&Ws only"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All/The R&Ws accurate at MAE standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "All/The R&Ws accurate at MAE standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "announcement"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "consummation"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary course efforts standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Commercially reasonable efforts"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat covenant (no efforts standard)",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary course efforts standard-Answer",
+      "answers": [
+        {
+          "text": "Commercially reasonable efforts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 7,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q02": {
+      "char_offsets": [
+        3642
+      ],
+      "min_char_offset": 3642,
+      "min_frac": 0.2184,
+      "min_tokens_from_start": 910,
+      "min_tokens_from_end": 3260
+    },
+    "q03": {
+      "char_offsets": [
+        15224
+      ],
+      "min_char_offset": 15224,
+      "min_frac": 0.9128,
+      "min_tokens_from_start": 3806,
+      "min_tokens_from_end": 364
+    },
+    "q04": {
+      "char_offsets": [
+        5103
+      ],
+      "min_char_offset": 5103,
+      "min_frac": 0.306,
+      "min_tokens_from_start": 1275,
+      "min_tokens_from_end": 2895
+    },
+    "q05": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q06": {
+      "char_offsets": [
+        8636
+      ],
+      "min_char_offset": 8636,
+      "min_frac": 0.5178,
+      "min_tokens_from_start": 2159,
+      "min_tokens_from_end": 2011
+    },
+    "q07": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q08": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q09": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0104,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 4127
+    },
+    "q10": {
+      "char_offsets": [
+        5103
+      ],
+      "min_char_offset": 5103,
+      "min_frac": 0.306,
+      "min_tokens_from_start": 1275,
+      "min_tokens_from_end": 2895
+    },
+    "q11": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q12": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q13": {
+      "char_offsets": [
+        5103
+      ],
+      "min_char_offset": 5103,
+      "min_frac": 0.306,
+      "min_tokens_from_start": 1275,
+      "min_tokens_from_end": 2895
+    },
+    "q14": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    },
+    "q15": {
+      "char_offsets": [
+        15224
+      ],
+      "min_char_offset": 15224,
+      "min_frac": 0.9128,
+      "min_tokens_from_start": 3806,
+      "min_tokens_from_end": 364
+    },
+    "q16": {
+      "char_offsets": [
+        10335
+      ],
+      "min_char_offset": 10335,
+      "min_frac": 0.6196,
+      "min_tokens_from_start": 2583,
+      "min_tokens_from_end": 1587
+    }
+  }
+}

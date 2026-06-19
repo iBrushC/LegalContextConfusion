@@ -1,0 +1,641 @@
+{
+  "cell_id": "d057_baseline",
+  "dataset": "maud",
+  "doc_index": 57,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4860,
+  "actual_chars": 19439,
+  "target_document_id": "contract_15",
+  "target_document_title": "________________",
+  "distractor_ids": [],
+  "target_offset": 53,
+  "target_end": 18799,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_15\" title=\"________________\">\n10.3.        Expenses. <omitted> (b) <omitted> (i) if either Bryn Mawr or WSFS terminates this Agreement <omitted> within 12 months of such termination Bryn Mawr shall either (A) consummate an Acquisition Transaction or (B) enter into an Acquisition Agreement with respect to an Acquisition Transaction, whether or not such Acquisition Transaction is subsequently consummated and, in each case, whether or not relating to the same Acquisition Proposal that had been made or publicly announced prior to such termination <omitted> then Bryn Mawr shall pay to WSFS an amount equal to $37,725,000 (the “Termination Fee”). <omitted>\nIf the Termination Fee shall be payable pursuant to subsection (i) of this Section 10.3(b), the Termination Fee shall be  paid  in  same-day  funds  at  or  prior to  the  earlier  of  the  date  of  consummation  of  such Acquisition  Transaction  or  the  date  of  execution  of  an Acquisition Agreement with respect to such Acquisition Transaction. If the Termination Fee shall be payable pursuant to subsection (ii) of this Section10.3(b), the Termination Fee shall be paid in same-day funds within two Business Days from the date of termination of this Agreement.  (Page 80)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n“Material Adverse Effect” means with respect to any Party and its Subsidiaries, any fact, circumstance, event, change, effect, development or occurrence that, individually or in the aggregate together with all other facts, circumstances, events, changes, effects, developments or occurrences, directly or indirectly, (i) has had or would reasonably be expected to result in a material adverse effect on the condition (financial or otherwise), results of operations, Assets, liabilities or business of such Party and its Subsidiaries taken as a whole; provided, that a “Material Adverse Effect” shall not be deemed to include effects to the extent resulting from (A) changes after the date of this Agreement in GAAP or regulatory accounting requirements, (B) changes after the date of this Agreement in Laws of general applicability to companies in the financial services industry, (C) changes after the date of this Agreement in global, national or regional political conditions or general economic or market conditions in the United States (and with respect to Bryn Mawr, the Commonwealth of Pennsylvania, and with respect to WSFS, the State of Delaware), including changes in prevailing interest rates, credit availability and liquidity, currency exchange rates, and price levels or trading volumes in the United States or foreign securities markets, affecting other companies in the financial services industry, (D) after the date of this Agreement, general changes in the credit markets or general downgrades in the credit markets, (E) failure, in and of itself, to meet earnings projections or internal financial forecasts, but not including any underlying causes thereof unless separately excluded hereunder, or changes in the trading price of a Party’s common stock, in and of itself, but not including any underlying causes unless separately excluded hereunder, (F) the public disclosure of this Agreement and the impact thereof on relationships with customers or employees, (G) any outbreak or escalation of hostilities, declared or undeclared acts of war or terrorism, (H) changes, after the date hereof, resulting from hurricanes, earthquakes, tornados, floods or other natural disasters or from any epidemic, pandemic, or outbreak of any disease or other public health event (including the Pandemic and the implementation of the Pandemic Measures) in the jurisdictions in which Bryn Mawr or WSFS operate or (I) actions or omissions taken with the prior written consent of the other Party or expressly required by this Agreement; except, with respect to clauses (A), (B), (C), (D), (G), and (H) to the extent that the effects of such change disproportionately affect such Party and its Subsidiaries, taken as a whole, as compared to other companies in the industry in which such Party and its Subsidiaries operate or (ii) prevents or materially impairs the ability of such Party to timely consummate the transactions contemplated hereby.  (Page 73)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n8.2.          Conditions to Obligations of WSFS. The obligation of WSFS to consummate the Mergers is subject to the satisfaction at or prior to the Effective Time of the following conditions, unless waived by WSFS pursuant to Section 10.6: \n\n(a)             Representations and Warranties . <omitted>. The representations and warranties set forth in each other section in ARTICLE 4 shall, in the aggregate, be true and correct in all respects except where the failure of such representations and warranties to be true and correct has not had or would not reasonably be expected to have, either individually or in the aggregate, a Material Adverse Effect; provided, that, for purposes of this sentence only, those representations and warranties which are qualified by references to “material” or “Material Adverse Effect” shall be deemed not to include such qualifications. (Page 63)\n\n8.2.          Conditions to Obligations of WSFS. <omitted>\n(a) <omitted> \nThe representations and warranties set forth in each other section in ARTICLE 4 shall <omitted> be true and correct in all respects except where the failure of such representations and warranties to be true and correct has not had <omitted> a Material Adverse Effect (Page 63)\n\n4.3.        Capitalization of Bryn Mawr. <omitted>\n \n\n<omitted>\n\n8.2.          Conditions to Obligations of WSFS. The obligation of WSFS to consummate the Mergers is subject to the satisfaction at or prior to the Effective Time of the following conditions, unless waived by WSFS pursuant to Section 10.6:\n\n(a)             Representations and Warranties . <omitted> The representations and warranties set forth in Sections 4.3(a), 4.3(c), 4.4(a) (second and third sentences only), 4.9(a), and 4.30 shall be true and correct (except for inaccuracies which are de minimis in amount). (Page 63)\n\n4.3.        Capitalization of Bryn Mawr. \n<omitted>\n\n8.2.          Conditions to Obligations of WSFS. <omitted>\n(a)             Representations and Warranties . <omitted> . The representations and warranties set forth in Sections 4.3(a) <omitted> shall be true and correct (except for inaccuracies which are de minimis in amount). <omitted> . (Page 63)\n\n4.1.         Organization, Standing, and Power. <omitted>\n4.2.         Authority of Bryn Mawr; No Breach By Agreement. \n\n(a) Bryn Mawr has the corporate power and authority necessary to execute, deliver, and, other than with respect to the Merger, perform\nthis Agreement, and with respect to the Merger, upon the approval of this Agreement and the Merger by the affirmative vote of at least a majority of the outstanding shares of Bryn Mawr entitled to vote on this Agreement and the Merger as contemplated by Section 7.1 (the “\nBryn Mawr Shareholder Approval”), to perform  its  obligations  under  this  Agreement  and  to  consummate  the  transactions contemplated  hereby. The execution,  delivery,  and  performance  of  this\nAgreement and the consummation of the transactions contemplated herein, including the Mergers, have been duly and validly authorized and approved by all necessary corporate action in respect thereof on the part of Bryn  Mawr and Bryn Mawr Bank (including, approval by, and a determination by the boards of directors of Bryn Mawr and Bryn Mawr Bank that this Agreement and the Subsidiary Plan of Merger are advisable and in the best interests of Bryn Mawr’s shareholders and Bryn Mawr Bank’s shareholder and directing the submission of this Agreement to a vote at a meeting of shareholders), subject to receipt of the Bryn Mawr Shareholder Approval. Subject to the Bryn Mawr Shareholder Approval, and assuming the due \nauthorization, execution and delivery by WSFS, this\nAgreement represents a legal, valid, and binding obligation of Bryn Mawr, enforceable against Bryn Mawr in accordance with its terms (except in all cases as such enforceability may be limited by applicable bankruptcy, insolvency, fraudulent transfer, reorganization, receivership, conservatorship, moratorium, or similar Laws affecting  the enforcement of creditors’ rights generally and except that the availability of the equitable remedy of specific performance or injunctive relief is subject to the discretion of the court before which any proceeding may be brought (the “Bankruptcy and Equity Exceptions”)).\n\n<omitted>\n(b) No Conflicts. Subject to the receipt of the Bryn Mawr Shareholder Approval, neither the execution and delivery of this Agreement by Bryn Mawr, nor the consummation by Bryn Mawr of the transactions contemplated hereby, nor compliance by Bryn Mawr with any of the provisions hereof, will <omitted> (y) violate, conflict with, constitute or result in a Default under or the loss of any benefit under, result in the termination of or aright of termination or cancellation under, accelerate the performance required by, or result in the creation of any Lien upon any of the respective Assets of any Bryn Mawr Entity under any of the terms, conditions or provisions of any Contract or Permit of any Bryn Mawr Entity or under which any of their respective Assets may be bound, except (in the case of clause (y) above) where such violations, conflicts, or Defaults have not had or would not reasonably be expected to have, either individually or in the aggregate, a Material Adverse Effect on Bryn Mawr. <omitted>\n\n4.3.        Capitalization of Bryn Mawr. <omitted> (b) Other Rights or Obligations.\n\n4.4.        Bryn Mawr Subsidiaries. (a) Bryn Mawr has no direct or indirect Subsidiaries nor owns any equity interests in any other Person, other than Bryn Mawr Bank and the entities set forth in Section 4.4(a)(i) of Bryn Mawr’s Disclosure Memorandum and indirect ownership through Bryn Mawr Bank of the entities set forth in Section 4.4(a)(ii)of Bryn Mawr’s Disclosure Memorandum. <omitted> \n\n4.9.        Absence of Certain Changes or Events. (a) Since December 31, 2020, there has not been a Material Adverse Effect on Bryn Mawr. <omitted> \n\n4.30.      Brokers and Finders. <omitted> \n\n\n8.2.          Conditions to Obligations of WSFS. The obligation of WSFS to consummate the Mergers is subject to the satisfaction at or prior to the Effective Time of the following conditions, unless waived by WSFS pursuant to Section 10.6: \n\n(a)             Representations and Warranties . <omitted> The representations and warranties set forth in Sections <omitted> 4.9(a), and 4.30 shall be true and correct (except for inaccuracies which are de minimis in amount). The representations and warranties set forth in Sections 4.1, 4.2, 4.3(b), 4.4(a) (other than the second and third sentences), 4.4(b) and 4.4(c) shall be true and correct in all material respects. The representations and warranties set forth in each other section in ARTICLE 4 shall, in the aggregate, be true and correct in all respects except where the failure of such representations and warranties to be true and correct has not had or would not reasonably be expected to have, either individually or in the aggregate, a Material Adverse Effect; provided, that, for purposes of this sentence only, those representations and warranties which are qualified by references to “material” or “Material Adverse Effect” shall be deemed not to include such qualifications. (Page 63)\n\n4.1.         Organization, Standing, and Power.\n4.2.         Authority of Bryn Mawr; No Breach By Agreement.\n\n(a) Bryn Mawr has the corporate power and authority necessary to execute, deliver, and, other than with respect to the Merger, perform\nthis Agreement, and with respect to the Merger, <omitted> to perform  its  obligations  under  this  Agreement  and  to  consummate  the  transactions contemplated  hereby. \n\nThe execution,  delivery,  and  performance  of  this\nAgreement and the consummation of the transactions contemplated herein, including the Mergers, have been duly and validly authorized and approved by all necessary corporate action in respect thereof on the part of Bryn  Mawr and Bryn Mawr Bank \n\n<omitted>\nthis Agreement represents a legal, valid, and binding obligation of Bryn Mawr, enforceable against Bryn Mawr in accordance with its terms \n\n<omitted>\n(b) No Conflicts. Subject to the receipt of the Bryn Mawr Shareholder Approval, neither the execution and delivery of this Agreement by Bryn Mawr, nor the consummation by Bryn Mawr of the transactions contemplated hereby, nor compliance by Bryn Mawr with any of the provisions hereof, will <omitted> (y) violate, conflict with, constitute or result in a Default under or the loss of any benefit under, result in the termination of or aright of termination or cancellation under, accelerate the performance required by, or result in the creation of any Lien upon any of the respective Assets of any Bryn Mawr Entity under any of the terms, conditions or provisions of any Contract or Permit of any Bryn Mawr Entity or under which any of their respective Assets may be bound, except (in the case of clause (y) above) where such violations, conflicts, or Defaults have not had or would not reasonably be expected to have, either individually or in the aggregate, a Material Adverse Effect on Bryn Mawr.\n\n4.3.        Capitalization of Bryn Mawr. <omitted> (b)Other Rights or Obligations.\n\n4.4.        Bryn Mawr Subsidiaries. \n(a)Bryn Mawr has no direct or indirect Subsidiaries nor owns any equity interests in any other Person, other than Bryn Mawr Bank and the entities set forth in Section 4.4(a)(i) of Bryn Mawr’s Disclosure Memorandum and indirect ownership through Bryn Mawr Bank of the entities set forth in Section 4.4(a)(ii)of Bryn Mawr’s Disclosure Memorandum. <omitted> \n\n4.9.        Absence of Certain Changes or Events. (a)Since December 31, 2020, there has not been a Material Adverse Effect on Bryn Mawr. <omitted> \n\n4.30.      Brokers and Finders. <omitted> \n\n8.2.          Conditions to Obligations of WSFS. <omitted> (a)             Representations and Warranties . <omitted> The representations and warranties set forth in Sections <omitted> 4.9(a), and 4.30 shall be true and correct (except for inaccuracies which are de minimis in amount). The representations and warranties set forth in Sections 4.1, 4.2, 4.3(b), 4.4(a) (other than the second and third sentences), 4.4(b) and 4.4(c) shall be true and correct in all material respects. (Page 63)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n6.1.         Affirmative Covenants of Bryn Mawr. \n\nFrom the date of this Agreement until the earlier of the Effective Time or the termination of this Agreement, unless the prior written consent of WSFS shall have been obtained (such consent not to be unreasonably withheld, conditioned or delayed), and except required by Law, as otherwise expressly contemplated herein or as set forth in Section 6.1 of Bryn Mawr’s Disclosure Memorandum, Bryn Mawr shall, and shall cause each of its Subsidiaries to, (a) operate its business only in the Ordinary Course <omitted> Ordinary Course” means the conduct of the business of Bryn Mawr and Bryn Mawr Bank in substantially the same manner as such business was operated on the date of this Agreement, including operations in conformance and consistent with Bryn Mawr and Bryn Mawr Bank’s practices and procedures prior to and as of such date. For purposes of this Agreement, the term “Ordinary Course,” with respect to either Party, shall take into account  the  commercially reasonable  action  or  inaction  by  such  Party  and  its  Subsidiaries  in  response  to  the  Pandemic  to  comply  with  thePandemic Measures to the extent disclosed to the other Party prior to the date hereof.  (Page 46)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n(c) Each share of Bryn Mawr Common Stock issued and outstanding immediately prior to the Effective Time (excluding the Canceled Shares) shall be converted into the right to receive, without interest, 0.90 of a share (the “Exchange Ratio”) of WSFS Common Stock (the “Merger Consideration”).  (Page 7)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n7.2.         Acquisition Proposals. (a) No  Bryn Mawr Entity shall, and it shall cause its Representatives not to, directly or indirectly, (i) solicit, initiate, encourage (including by providing information or assistance), facilitate or induce any Acquisition Proposal, (ii) engage or participate in any discussions or negotiations regarding, or furnish or cause to be furnished to any Person any confidential or nonpublic information or data in connection with, or take any other action to facilitate any inquiries or the making of any offer or proposal that constitutes, or may reasonably be expected to lead to, an Acquisition Proposal, except to notify a Person that has made or, to the Knowledge of Bryn Mawr, is making inquiries with respect to, or is considering making, an Acquisition Proposal, of the existence of this Section 7.2,(iii) approve, agree to, accept, endorse or recommend any Acquisition Proposal, (iv) approve, agree to, accept, endorse or recommend, or propose to approve, agree to, accept, endorse or recommend any Acquisition Agreement contemplating or otherwise relating to any Acquisition Transaction, or (v) otherwise cooperate in any way with, or assist or participate in, or facilitate or encourage any effort or attempt by any Person to do or seek to do any of the foregoing. Without limiting the foregoing, it is agreed that any violation of the restrictions set forth in this Section 7.2 by any Subsidiary or Representative of Bryn Mawr shall constitute a breach of this Section 7.2 by Bryn Mawr. In addition to the foregoing, Bryn Mawr shall not submit to the vote of its shareholders any Acquisition Proposal other than the Merger. <omitted> \n\n9.1.          Termination. <omitted> this Agreement may be terminated and the Mergers abandoned at any time prior to the Effective Time: <omitted> \n\n(d) by  WSFS, by written notice to Bryn Mawr, in the event that the board of directors of Bryn Mawr has <omitted> (ii) breached the terms of Section 7.2 in any respect adverse to WSFS (other than unintentional, immaterial breaches that do not prejudice WSFS’s rights under such section) <omitted> \n\n10.3.        Expenses. <omitted> \n\n(ii)               if WSFS shall terminate this Agreement pursuant to Section 9.1(d), then Bryn Mawr shall pay to WSFS an amount equal to $37,725,000 (the “Termination Fee”).  (Page 80)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_15\" title=\"________________\">\n7.4.         Consents of Regulatory Authorities. \n\n(a)             WSFS and Bryn Mawr shall, and shall cause their respective Subsidiaries to, cooperate and use their respective reasonable best efforts to prepare all documentation, to effect all applications, notices and filings and to obtain all Permits and Consents, of all third parties and Regulatory Authorities that are necessary or advisable to consummate the transactions contemplated by this Agreement (including the Mergers), and to comply with the terms and conditions of all such Permits and Consents of all such third parties and Regulatory Authorities.  (Page 54)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "General Information",
+      "question": "Type of Consideration-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All Stock"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All Cash",
+        "All Stock",
+        "Mixed Cash/Stock",
+        "Mixed Cash/Stock: Election"
+      ],
+      "subquestions": [],
+      "source_question": "Type of Consideration-Answer",
+      "answers": [
+        {
+          "text": "All Stock"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Organization",
+        "Subsidiaries"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Approval",
+        "Brokers' Fee",
+        "Other"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "No-Conflict"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Subsidiaries"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "Specified R&Ws only"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "MAE Forward looking standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE Forward looking standard (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "Target stockholder proceedings-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Target stockholder proceedings-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Arising from/out of\"",
+        "No",
+        "Other"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Operating and Efforts Covenant",
+      "question": "General Antitrust Efforts Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable best efforts"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat standard",
+        "Reasonable best efforts"
+      ],
+      "subquestions": [],
+      "source_question": "General Antitrust Efforts Standard-Answer",
+      "answers": [
+        {
+          "text": "Reasonable best efforts"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 7,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        16017
+      ],
+      "min_char_offset": 16017,
+      "min_frac": 0.824,
+      "min_tokens_from_start": 4004,
+      "min_tokens_from_end": 856
+    },
+    "q02": {
+      "char_offsets": [
+        4355
+      ],
+      "min_char_offset": 4355,
+      "min_frac": 0.224,
+      "min_tokens_from_start": 1088,
+      "min_tokens_from_end": 3772
+    },
+    "q03": {
+      "char_offsets": [
+        4355
+      ],
+      "min_char_offset": 4355,
+      "min_frac": 0.224,
+      "min_tokens_from_start": 1088,
+      "min_tokens_from_end": 3772
+    },
+    "q04": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q05": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q06": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q07": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q08": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q09": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q10": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q11": {
+      "char_offsets": [
+        1329
+      ],
+      "min_char_offset": 1329,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 332,
+      "min_tokens_from_end": 4528
+    },
+    "q12": {
+      "char_offsets": [
+        53
+      ],
+      "min_char_offset": 53,
+      "min_frac": 0.0027,
+      "min_tokens_from_start": 13,
+      "min_tokens_from_end": 4847
+    },
+    "q13": {
+      "char_offsets": [
+        53
+      ],
+      "min_char_offset": 53,
+      "min_frac": 0.0027,
+      "min_tokens_from_start": 13,
+      "min_tokens_from_end": 4847
+    },
+    "q14": {
+      "char_offsets": [
+        14708
+      ],
+      "min_char_offset": 14708,
+      "min_frac": 0.7566,
+      "min_tokens_from_start": 3677,
+      "min_tokens_from_end": 1183
+    },
+    "q15": {
+      "char_offsets": [
+        18799
+      ],
+      "min_char_offset": 18799,
+      "min_frac": 0.9671,
+      "min_tokens_from_start": 4699,
+      "min_tokens_from_end": 161
+    }
+  }
+}

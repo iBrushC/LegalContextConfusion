@@ -1,0 +1,637 @@
+{
+  "cell_id": "d066_baseline",
+  "dataset": "maud",
+  "doc_index": 66,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4513,
+  "actual_chars": 18050,
+  "target_document_id": "contract_21",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …",
+  "distractor_ids": [],
+  "target_offset": 176,
+  "target_end": 10263,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n5.1 Conduct of Business Prior to the Effective Time. During the period from the date of this Agreement to the Effective Time or earlier termination of this Agreement, except as expressly contemplated or permitted by this Agreement (including as set forth in the Company Disclosure Schedule), required by law (including the Pandemic Measures) or as consented to in writing by the other party (such consent not to be unreasonably withheld, conditioned or delayed), (a) Company shall, and shall cause its Subsidiaries to, (i) conduct its business in the ordinary course in all material respects  (Page 43)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n6.9 Acquisition Proposals. (a) Company shall not, and shall cause its Subsidiaries and use its reasonable best efforts to cause its and their officers, directors, agents, advisors and representatives (collectively, “Representatives”) not to, directly or indirectly, (i) initiate, solicit, knowingly encourage or knowingly facilitate any inquiries or proposals with respect to, (ii) knowingly engage or participate in any negotiations with any person concerning or (iii) provide any confidential or nonpublic information or data to, or have or knowingly participate in any discussions with, any person relating to, any Company Acquisition Proposal, except to notify a person that has made or, to the knowledge of Company, is making any inquiries with respect to, or is considering making, a Company Acquisition Proposal of the existence of the provisions of this Section 6.9(a); provided, that, prior to the receipt of the Requisite Company Vote, in the event Company receives an unsolicited bona fide written Company Acquisition Proposal, it may, and may permit its Subsidiaries and its Subsidiaries’ Representatives to, furnish or cause to be furnished nonpublic information or data and participate in such negotiations or discussions to the extent that (A) its Board of Directors concludes in good faith (after receiving the advice of its outside counsel, and with respect to financial matters, its financial advisors) that failure to take such actions would reasonably be expected to be inconsistent with its fiduciary duties under applicable law or (B) its Board of Directors concludes in good faith (after receiving the advice of its outside counsel, and with respect to financial matters, its financial advisors), that such Acquisition Proposal constitutes, or could reasonably be expected to lead to, a Superior Proposal (as defined herein) and;  (Page 57)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n8.2 Effect of Termination. <omitted> (C) prior to the date that is twelve (12) months after the date of such termination, Company enters into a definitive agreement or consummates a transaction with respect to a Company Acquisition Proposal (whether or not the same Company Acquisition Proposal as that referred to above), then Company shall, on the earlier of the date it enters into such definitive agreement and the date of consummation of such transaction, pay Buyer, by wire transfer of same day funds, a fee equal to $25,670,000.00 (the “Termination Fee”);  (Page 65)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\nAs used in this Agreement, “Superior Proposal” shall mean a bona fide written Company Acquisition Proposal (with all of the percentages included in the definition of Company Acquisition Proposal increased to fifty percent (50%)) received after the date hereof that was not solicited or negotiated in breach of this Section 6.9, that the Board of Directors of Company determines in good faith, after receiving the advice of its outside counsel and, with respect to financial matters, its financial advisors, such proposal (A) is reasonably likely to be completed in accordance with its terms, taking into account all financial, legal, regulatory and other aspects of such proposal, including all conditions contained therein and the person making such proposal, and (B) would be more favorable to the shareholders of Company from a financial point of view than the transactions contemplated by this Agreement.  (Page 58)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\nAs used in this Agreement, the term “Material Adverse Effect” means, with respect to Buyer, Company or Company Bank, as the case may be, any effect, change, event, circumstance, condition, occurrence or development that, either individually or in the aggregate, has had or would reasonably be likely to have a material adverse effect on (i) the business, properties, assets, liabilities, prospects, results of operations or financial condition of such party and its Subsidiaries, taken as a whole (provided, however, that, with respect to this clause (i), Material Adverse Effect shall not be deemed to include the impact of (A) changes, after the date hereof, in U.S. generally accepted accounting principles (“GAAP”) or applicable regulatory accounting requirements (and not specifically relating to or having a materially disproportionate effect on such party and its Subsidiaries), (B) changes, after the date hereof, in laws, rules or regulations (including the Pandemic Measures, as defined herein) of general applicability to companies in the industries in which such party and its Subsidiaries operate, or interpretations thereof by courts or Governmental Entities (and not specifically relating to or having a materially disproportionate effect on such party and its Subsidiaries), (C) changes, after the date hereof, in global, national or regional political conditions (including the outbreak of war or acts of terrorism) or in economic or market (including equity, credit and debt markets, as well as changes in interest rates) conditions affecting the financial services industry generally and not specifically relating to such party or its Subsidiaries (including any such changes arising out of the Pandemic (as defined herein) or any Pandemic Measures), (D) changes, after the date hereof, resulting from hurricanes, earthquakes, tornados, floods or other natural disasters or from any outbreak of any disease or other public health event (including the Pandemic) (and not specifically relating to or having a materially disproportionate effect on such party and its Subsidiaries), (E) public disclosure of the execution of this Agreement, public disclosure or consummation of the transactions contemplated hereby (including any effect on a party’s relationships with its customers or employees) (it being understood that the foregoing shall not apply for purposes of the representations and warranties in Sections 3.3(b), 3.4, 4.3(b) or 4.4) or actions expressly required by this Agreement or that are taken with the prior written consent of the other party in contemplation of the transactions contemplated hereby, or (F) a decline in the trading price of a party’s common stock or the failure, in and of itself, to meet earnings projections or internal financial forecasts, but not, in either case, including   7\n\n\nany underlying causes thereof) or (ii) the ability of such party to timely consummate the transactions contemplated hereby.  (Pages 14-15)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n5.2 Company Forbearances. During the period from the date of this Agreement to the Effective Time or earlier termination of this Agreement, except as set forth in the Company Disclosure Schedule, as expressly contemplated or permitted by this Agreement or as required by law (including the Pandemic Measures), Company shall not, and shall not permit any of its Subsidiaries to, without the prior written consent of Buyer (such consent not to be unreasonably withheld, conditioned or delayed):  (Page 43)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n6.3 Company Shareholder Approval. <omitted> However, subject to Section 8.1 and Section 8.2, if (i) the Company receives a Company Acquisition Proposal (as defined below) which has not been withdrawn and (ii) the Board of Directors of Company, after receiving the advice of its outside counsel and, with respect to financial matters, its financial advisors, determines in good faith that it would reasonably be expected to be inconsistent with its fiduciary duties under applicable law to continue to recommend this Agreement and the Merger, then, prior to the receipt of the Requisite Company Vote, in submitting this Agreement and the Merger to its shareholders, the Board of Directors of Company may withhold, withdraw or amend or modify or qualify in a manner adverse to Buyer and the transactions contemplated by this Agreement, the Company Board Recommendation or may submit this Agreement and the Merger to its shareholders without recommendation (each, a “Company Adverse Recommendation Change”) (although the resolutions approving this Agreement as of the date hereof may not be rescinded), in which event the Board of Directors of Company may communicate the basis for its Company Adverse Recommendation Change to its shareholders in the Proxy Statement or an appropriate amendment or supplement thereto.  (Page 52)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_21\" title=\"AGREEMENT AND PLAN OF MERGER by and among EASTERN BANKSHARES, INC., CLARION ACQUISITION CORP., CENTURY BANCORP, INC. and CENTURY BANK AND …\">\n7.2 Conditions to Obligations of Buyer and Merger Sub. \nThe obligations of Buyer and Merger Sub to effect the Merger is also subject to the satisfaction, or waiver by Buyer and Merger Sub, at or prior to the Effective Time, of the following conditions:\n\n(a) Representations and Warranties. The representations and \nwarranties of Company set forth in \n<omitted>\n\nAll other representations and warranties of Company set forth in this Agreement (read without giving effect to any qualification as to materiality or Material Adverse Effect set forth in such representations or warranties but, in each case, after giving effect to the lead-in to Article III) shall be true and correct in all respects as of the date of this Agreement and as of the Closing Date as though made on and as of the Closing Date (except to the extent such representations and warranties speak as of an earlier date, in which case as of such earlier date); provided, however, that for purposes of this sentence, such representations and warranties shall be deemed to be true and correct unless the failure or failures of such representations and warranties to be so true and correct, either individually or in the aggregate, and without giving effect to any qualification as to materiality or Material Adverse Effect set forth in such representations or warranties, has had or would reasonably be likely to have a Material Adverse Effect on Company or Buyer. (Page 62)\n\n7.2 Conditions to Obligations of Buyer and Merger Sub. \n<omitted>\nThe representations and warranties of Company set forth in \n<omitted>\n\nAll other representations and warranties of Company set forth in this Agreement <omitted> shall be true and correct in all respects <omitted> provided, however, that for purposes of this sentence, such representations and warranties shall be deemed to be true and correct unless the failure or failures of such representations and warranties to be so true and correct, either individually or in the aggregate,<omitted> has had or would reasonably be likely to have a Material Adverse Effect on Company or Buyer. (Page 62)\n\n3.2 Capitalization.  <omitted> \n\n 7.2 Conditions to Obligations of Buyer and Merger Sub. The obligations of Buyer and Merger Sub to effect the Merger is also subject to the satisfaction, or waiver by Buyer and Merger Sub, at or prior to the Effective Time, of the following conditions: (a) Representations and Warranties. The representations and warranties of Company set forth in (i) Sections 3.2(a) and 3.8(a) (in each case after giving effect to the lead-in to Article III) shall be true and correct (other than, in the case of Section 3.2(a), such failures to be true and correct as are de minimis) in each case as of the date of this Agreement and as of the   54\n\n\nClosing Date as though made on and as of the Closing Date (except to the extent such representations and warranties speak as of an earlier date, in which case as of such earlier date), (Pages 61-62)\n\n3.2 Capitalization.  <omitted> \n\n 7.2 Conditions to Obligations of Buyer and Merger Sub. <omitted> \n\nThe representations and warranties of Company set forth in (i) Sections 3.2(a) <omitted> shall be true and correct (other than, in the case of Section 3.2(a), such failures to be true and correct as are de minimis) (Pages 61-62)\n\n3.1 Corporate Organization.\n<omitted>\n3.2 Capitalization.\n<omitted>\n(c) \nExcept as set forth on Section 3.2(c) of the Company Disclosure Schedule, Company owns, directly or indirectly, all of the issued and outstanding shares of capital stock or other equity ownership interests of each of the Company Subsidiaries, free and clear of any liens, pledges, charges, encumbrances and security interests whatsoever (“Liens”), and all of such shares or equity ownership interests are duly\nauthorized and validly issued and are fully paid, nonassessable (except, with respect to Company Subsidiaries that are insured depository\ninstitutions, as provided under 12 U.S.C. § 55 or any comparable provision of applicable state law) and free of preemptive rights, with no\npersonal liability attaching to the ownership thereof. \n<omitted>\n3.3 Authority; No Violation.\n<omitted>\n(a) <omitted> The execution and delivery of this Agreement and the \nconsummation of the Merger have been adopted by the Board of\nDirectors of Company. \n<omitted> \nThis Agreement has been duly and validly executed and delivered by Company, Company Bank and (assuming due authorization, execution and delivery by Buyer and Merger Sub) constitutes a valid and binding obligation of Company and Company Bank, enforceable against Company and Company Bank in accordance with its terms (except in all cases as such enforceability may be limited by bankruptcy, insolvency, fraudulent transfer, moratorium, reorganization or similar laws of general applicability relating to or affecting insured depository institutions or their parent companies or the rights of creditors generally and subject to general principles of equity (the “Enforceability Exceptions”)). \n<omitted>\n\n3.8 \nAbsence of Certain Changes or Events.\n<omitted>\n\n\n7.2 Conditions to Obligations of Buyer and Merger Sub. The obligations of Buyer and Merger Sub to effect the Merger is also subject to the satisfaction, or waiver by Buyer and Merger Sub, at or prior to the Effective Time, of the following conditions: (a) Representations and Warranties. The representations and warranties of Company set forth in (i) Sections 3.2(a) and 3.8(a) (in each case after giving effect to the lead-in to Article III) shall be true and correct (other than, in the case of Section 3.2(a), such failures to be true and correct as are de minimis) in each case as of the date of this Agreement and as of the   54\n\n\nClosing Date as though made on and as of the Closing Date (except to the extent such representations and warranties speak as of an earlier date, in which case as of such earlier date), and (ii) Sections 3.1(a), 3.1(b) (with respect to Company Bank only), 3.2(c) (with respect to Company Bank only) and 3.3(a) (in each case, after giving effect to the lead-in to Article III) shall be true and correct in all material respects as of the date of this Agreement and as of the Closing Date as though made on and as of the Closing Date (except to the extent such representations and warranties speak as of an earlier date, in which case as of such earlier date). (Pages 61-62)\n\n3.1 Corporate Organization.\n<omitted>\n3.2 Capitalization.\n<omitted>\n(c) \nExcept as set forth on Section 3.2(c) of the Company Disclosure Schedule, Company owns, directly or indirectly, all of the issued and outstanding shares of capital stock or other equity ownership interests of each of the Company Subsidiaries, \n<omitted>\n3.3 Authority; No Violation.\n<omitted>\n(a) <omitted> The execution and delivery of this Agreement and the \nconsummation of the Merger have been adopted by the Board of\nDirectors of Company. \n<omitted> \nThis Agreement <omitted> constitutes a valid and binding obligation of Company and Company Bank, enforceable against Company and Company Bank in accordance with its terms <omitted>\n\n3.8 \nAbsence of Certain Changes or Events.\n<omitted>\n\n7.2 Conditions to Obligations of Buyer and Merger Sub. <omitted> The representations and warranties of Company set forth in (i) Sections 3.2(a) and 3.8(a) (in each case after giving effect to the lead-in to Article III) shall be true and correct (other than, in the case of Section 3.2(a), such failures to be true and correct as are de minimis) <omitted>\n\n\n and (ii) Sections 3.1(a), 3.1(b) (with respect to Company Bank only), 3.2(c) (with respect to Company Bank only) and 3.3(a) (in each case, after giving effect to the lead-in to Article III) shall be true and correct in all material respects (Pages 61-62)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Organization",
+        "Subsidiaries"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Enforceability",
+        "Other"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Subsidiaries"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "General R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "MAE Forward looking standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE Forward looking standard (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "subquestions": [
+        "business and operation of Target"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "ability to consummate transaction"
+        },
+        {
+          "text": "business and operation of Target"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "Changes in market price/trading volume of Target's securities or credit rating (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in market price/trading volume of Target's securities or credit rating (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Resulting from\"",
+        "Relational language varies among carveouts"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "No",
+        "Relational language varies among carveouts"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Resulting from\""
+        },
+        {
+          "text": "Relational language varies among carveouts"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Reasonable standard",
+        "Strict liability"
+      ],
+      "subquestions": [],
+      "source_question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answers": [
+        {
+          "text": "Reasonable standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted with board fiduciary determination only",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted with board fiduciary determination only",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (superior offer)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (superior offer)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition includes asset deals-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "50%"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "subquestions": [],
+      "source_question": "Definition includes asset deals-Answer",
+      "answers": [
+        {
+          "text": "50%"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Operating and Efforts Covenant",
+      "question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to all negative covenants"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies only to specified negative covenants",
+        "Applies to all negative covenants"
+      ],
+      "subquestions": [],
+      "source_question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Applies to all negative covenants"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 8,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        10263
+      ],
+      "min_char_offset": 10263,
+      "min_frac": 0.5686,
+      "min_tokens_from_start": 2565,
+      "min_tokens_from_end": 1948
+    },
+    "q02": {
+      "char_offsets": [
+        10263
+      ],
+      "min_char_offset": 10263,
+      "min_frac": 0.5686,
+      "min_tokens_from_start": 2565,
+      "min_tokens_from_end": 1948
+    },
+    "q03": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q04": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q05": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q06": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q07": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q08": {
+      "char_offsets": [
+        4893
+      ],
+      "min_char_offset": 4893,
+      "min_frac": 0.2711,
+      "min_tokens_from_start": 1223,
+      "min_tokens_from_end": 3290
+    },
+    "q09": {
+      "char_offsets": [
+        968
+      ],
+      "min_char_offset": 968,
+      "min_frac": 0.0536,
+      "min_tokens_from_start": 242,
+      "min_tokens_from_end": 4271
+    },
+    "q10": {
+      "char_offsets": [
+        8748
+      ],
+      "min_char_offset": 8748,
+      "min_frac": 0.4847,
+      "min_tokens_from_start": 2187,
+      "min_tokens_from_end": 2326
+    },
+    "q11": {
+      "char_offsets": [
+        8748
+      ],
+      "min_char_offset": 8748,
+      "min_frac": 0.4847,
+      "min_tokens_from_start": 2187,
+      "min_tokens_from_end": 2326
+    },
+    "q12": {
+      "char_offsets": [
+        3784
+      ],
+      "min_char_offset": 3784,
+      "min_frac": 0.2096,
+      "min_tokens_from_start": 946,
+      "min_tokens_from_end": 3567
+    },
+    "q13": {
+      "char_offsets": [
+        3021
+      ],
+      "min_char_offset": 3021,
+      "min_frac": 0.1674,
+      "min_tokens_from_start": 755,
+      "min_tokens_from_end": 3758
+    },
+    "q14": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0098,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 4469
+    },
+    "q15": {
+      "char_offsets": [
+        8055
+      ],
+      "min_char_offset": 8055,
+      "min_frac": 0.4463,
+      "min_tokens_from_start": 2013,
+      "min_tokens_from_end": 2500
+    }
+  }
+}

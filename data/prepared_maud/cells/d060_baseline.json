@@ -1,0 +1,612 @@
+{
+  "cell_id": "d060_baseline",
+  "dataset": "maud",
+  "doc_index": 60,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 4917,
+  "actual_chars": 19666,
+  "target_document_id": "contract_16",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …",
+  "distractor_ids": [],
+  "target_offset": 174,
+  "target_end": 18369,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nSection 6.1          Conduct of Business. From the date of this Agreement until the earlier of the termination of this Agreement and the Effective Time, and except as set forth in Section 6.1 of the Company Disclosure Schedule, as any other provision of this Agreement expressly contemplates or expressly requires, as required by applicable Law, or rules and regulations of the SEC or NYSE, for any action taken by the Company to the extent necessary, desirable or appropriate in order to effect the Migration, or to the extent Parent has consented in writing thereto (such consent not to be unreasonably withheld, delayed or conditioned): (a)      the Company shall, and shall cause the Company Subsidiaries, to conduct the business of the Company and the Company Subsidiaries in the ordinary course of business consistent with past practice in all material respects; and use its commercially reasonable efforts to (A) preserve intact its present business organization, (B) maintain in effect all of its material Permits, and (C) maintain satisfactory relationships with its customers, lenders, suppliers, licensors, licensees, distributors, employees and others having material business relationships with it; (Page 45)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nSection 6.1          Conduct of Business. From the date of this Agreement until the earlier of the termination of this Agreement and the Effective Time, and except as set forth in Section 6.1 of the Company Disclosure Schedule, as any other provision of this Agreement expressly contemplates or expressly requires, as required by applicable Law, or rules and regulations of the SEC or NYSE, for any action taken by the Company to the extent necessary, desirable or appropriate in order to effect the Migration, or to the extent Parent has consented in writing thereto (such consent not to be unreasonably withheld, delayed or conditioned): <omitted> (b)       without limiting the generality of the foregoing (and provided that no action or failure to take action with respect to matters specifically addressed by any of the provisions of this Section 6.1(b) shall constitute a breach under Section 6.1(a) unless such action or failure to take action would otherwise constitute a breach of Section 6.1(a)), the Company shall not, and shall not permit any Company Subsidiary to, take any of the following actions: (Page 45)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\n“Company Material Adverse Effect” means any fact, circumstance, occurrence, effect, change, event or development that, individually or in the aggregate, has (a) resulted or would reasonably be expected to result in a material delay or impediment to the ability of the Company to consummate the Merger or the other Transactions, or (b) had or would reasonably be expected to have a material adverse effect on the assets, liabilities, business, financial condition or results of operations of the Company and the Company Subsidiaries, taken as a whole; provided, however, that, in the case of clause (b), a Company Material Adverse Effect shall not be deemed to include facts, circumstances, occurrences, effects, changes, events or developments arising from or related to (except, in the case of clauses (i), (ii), (iii), (iv), (v), (vi) or (x) below, to the extent disproportionately affecting the Company and the Company Subsidiaries, taken as a whole, relative to other similarly situated companies in the industries in which the Company and the Company Subsidiaries operate, in which case only the incremental disproportionate effect shall be taken into account): (i) conditions affecting the United States economy generally; (ii) political conditions (or changes in such conditions) in the United States (including the State of Delaware or any state in which the Company or the Company Subsidiaries operate), declared or undeclared acts of war, sabotage or terrorism, epidemics, pandemics or other contagion, including COVID-19 (including any escalation or general worsening of any of the foregoing) or national or international emergency in the United States or any other country or region of the world occurring after the date hereof; (iii) changes in the financial, credit, banking or securities markets in the United States or any other country or region in the world (including any disruption thereof and any decline in the price of any security or any market index) and including changes or developments in or relating to currency exchange or interest rates; (iv) changes required by GAAP (or interpretations thereof by the Financial Accounting Standards Board (FASB) or any Governmental Authority); (v) changes in any Laws (or interpretations thereof by a Governmental Authority); (vi) changes that are generally applicable to the industries in which the Company and the Company Subsidiaries operate; (vii) any failure by the Company to meet any internal or publicly available projections, forecasts or revenue or earnings predictions or any decline in the market price or trading volume of the capital stock of the Company (provided that the underlying causes of any such failure or decline may be considered in determining whether a Company Material Adverse Effect has occurred to the extent not otherwise excluded by another exception herein); (viii) the negotiation, execution or delivery of this Agreement, the performance by Company and the Company Subsidiaries of their obligations hereunder or the public announcement as to the identity of the parties hereto or pendency of the Merger or any of the other Transactions, including the impact of such public announcement on relationships, contractual or otherwise with customers, suppliers or employees of the Company and the Company Subsidiaries (it being understood that this clause (viii) shall not apply to any representation or warranty set forth in Section 4.5 (or the condition to Parent’s and Merger Sub’s obligation to commence the Migration Filing or consummate the Closing set forth in Section 7.2(a) or Section 7.5(a)), in each case solely to the extent related to the foregoing representations and warranties); (ix) changes in the Company’s credit rating (provided that the underlying causes of such decline may be considered in determining whether a Company Material Adverse Effect has occurred to the extent not otherwise excluded by another exception herein); (x) the occurrence of natural disasters or weather conditions adverse to the business being carried on by the Company and the Company Subsidiaries; (xi) stockholder litigation arising from or relating to this Agreement or the Merger, including any action alleging or asserting any misrepresentation or omission in any documents (including exhibits and all other information incorporated therein) filed with or furnished to the SEC; or (xii) any action taken or refrained from being taken by the Company that is required to be taken or prohibited from being taken, respectively pursuant to this Agreement, or is taken or refrained from being taken with the prior written consent or at the express direction of Parent.   (Page 9)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\n“Preferred Amount” means an amount equal to $25. <omitted>\n\nSection 3.1          Effect of the Merger on Capital Stock.   (a)          Conversion of Common Stock and Preferred Stock. At the Effective Time, as a result of the Merger and without any action on the part of the Company, Parent, Merger Sub or the holder of any capital stock of the Company:   (i)        each share of Common Stock that is issued and outstanding immediately prior to the Effective Time (collectively, “Common Shares”), other than Common Shares that are Excluded Shares, shall be converted into the right to receive $56.00 in cash, without interest (the “Common Merger Consideration”), subject to deductions of any applicable withholding Tax in accordance with Section 3.2(h);   (ii)         each share of Series A Preferred Stock that is issued and outstanding immediately prior to the Effective Time (collectively, “Series A Preferred Shares”), other than Series A Preferred Shares that are Excluded Shares, shall be converted into the right to receive an amount equal to the sum of: (A) the Preferred Amount; plus (B) the aggregate amount of all accrued and unpaid dividends on such Series A Preferred Share as of the Effective Time, in cash without interest (the “Series A Preferred Merger Consideration”), subject to deductions of any applicable withholding Tax in accordance with Section 3.2(h);   (iii)        each share of Series B Preferred Stock that is issued and outstanding immediately prior to the Effective Time (collectively, “Series B Preferred Shares” and, together with the Common Shares and Series A Preferred Shares, the “Shares”), other than Series B Preferred Shares that are Excluded Shares, shall be converted into the right to receive an amount equal to the sum of: (A) the Preferred Amount; plus (B) the aggregate amount of all accrued and unpaid dividends on such Series B Preferred Share as of the Effective Time, if any, in cash without interest (the “Series B Preferred Merger Consideration”), subject to deductions of any applicable withholding Tax in accordance with Section 3.2(h); (Page 19)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nNotwithstanding the foregoing, at any time prior to the receipt of the Company Stockholder Approval, the Company Board (or any committee thereof) may effect a Company Adverse Recommendation Change or terminate this Agreement pursuant to Section 8.3(a) and enter into a Company Acquisition Agreement, if: (i) the Company notifies Parent, in writing, at least four Business Days (the “Superior Proposal Notice Period”) before making a Company Adverse Recommendation Change or terminating the Agreement pursuant to Section 8.3(a) and entering into a Company Acquisition Agreement, of its intention to take such action with respect to a Superior Proposal (which notice shall not, by itself, constitute a Company Adverse Recommendation Change), which notice shall state expressly that the Company has received an Alternative Proposal that the Company Board (or a committee thereof) has determined in good faith, after consulting with outside legal counsel and its financial advisor, constitutes a Superior Proposal and that the Company Board (or a committee thereof) intends to effect a Company Adverse Recommendation Change; (ii) the Company attaches to such notice the most current version of the proposed agreement reflecting the Superior Proposal and any material documents related thereto, and summarizes in reasonable detail any material terms and conditions of such Superior Proposal that are not reflected in the proposed agreement with respect to such Superior Proposal and the identity of the third party making such Superior Proposal; (iii) during the Superior Proposal Notice Period, the Company negotiates with Parent in good faith, and causes its Representatives to negotiate with Parent in good faith, to make such adjustments in the terms and conditions of this Agreement so that such Alternative Proposal ceases to constitute a Superior Proposal, if Parent, in its discretion, proposes in good faith to make such adjustments (it being agreed that in the event that, after commencement of the Superior Proposal Notice Period, there is any material revision to the terms of a Superior Proposal, including any revision in price, the Superior Proposal Notice Period shall be extended, if applicable, to ensure that at least three Business Days remain in the Superior Proposal Notice Period subsequent to the time the Company notifies Parent of any such material revision); (Page 52)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nSection 4.1          Organization, No MAE  <omitted>\nSection 4.2          Company Subsidiaries. <omitted> All of the outstanding shares of capital stock or voting securities of, or other equity interests in, each Company Subsidiary have been validly issued and are fully paid and nonassessable and are owned by the Company, by a Company Subsidiary or by the Company and a Company Subsidiary, free and clear of all material Liens, excluding Permitted Liens. <omitted> \nSection 4.3          Capital Structure.  <omitted>\nSection 4.4         Authority; Execution and Delivery; Enforceability. <omitted> The Company  Board  has  validly  adopted  resolutions,  by  unanimous  vote  of  the members  of  the  Company  Board  present  at  a  meeting  duly  called  at  which  a quorum of directors of the Company was present, <omitted> (b)  approving  and  declaring  advisable this  Agreement  and  the  Transactions, including  the  Merger <omitted> \nThe Company has  duly  executed  and  delivered this  Agreement,  and,  assuming  the  due  authorization,  execution and  delivery  by  Parent  and  Merger  Sub,  this  Agreement constitutes  its legal,  valid  and  binding  obligation,  enforceable  against  it  in accordance  with  its  terms  <omitted> \nSection 4.5           No Conflicts; Consents. <omitted> \nSection 4.18         Anti-Takeover Provisions.  <omitted>\nSection 4.19       Brokers’ Fees and Expenses . <omitted>\nSection 4.20        Opinion of Financial Advisor.  <omitted>\n\nSection 7.5          Conditions to Obligations of Parent and Merger Sub to Effect the Merger. The respective obligations of each of Parent and Merger Sub to effect the Merger shall be subject to the satisfaction or waiver by Parent at or prior to the Effective Time of the following conditions:   \n\n(a)          Accuracy of Representations and Warranties.   (i)       The representations and warranties of the Company contained in this Agreement (except for the representations and warranties contained in the first sentence of Section 4.1, Section 4.2, Section 4.3, Section 4.4, Section 4.5(c), Section 4.18, Section 4.19 and Section 4.20) shall be true and correct (without giving effect to any limitation as to “materiality” or “Company Material Adverse Effect” set forth therein) as of the Closing Date as if made at and as of such time (except to the extent expressly made as of an earlier date, in which case as of such earlier date), except:  (A) where the failure of such representations and warranties to be true and correct (without giving effect to any limitation as to “materiality” or “Company Material Adverse Effect” set forth therein) has not had and would not reasonably be expected to have a Company Material Adverse Effect resulting from the Company having taken any action or omitted to take any action; or (B) where the failure of such representations and warranties to be true and correct arises out of, results from or relates to the Migration.   (ii)         The representations and warranties of the Company contained in Section 4.3 and Section 4.5(c) shall be true and correct as of the Closing Date as if made at and as of such time (except to the extent expressly made as of an earlier date, in which case as of such earlier date), except for any failures of such representations and warranties to be so true and correct that, individually or in the aggregate, are de minimis in nature and amount.   (iii) The representations and warranties of the Company contained in the first sentence of Section 4.1, Section 4.2, Section 4.4, Section 4.18, Section 4.19 and Section 4.20 shall be true and correct in all respects at and as of the Closing Date as if made at and as of such time. (Page 65)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nSection 6.4           Acquisition Proposals. <omitted> (b)         Notwithstanding the foregoing in this Section 6.4, prior to the receipt of the Company Stockholder Approval, the Company Board (or a committee thereof), directly or indirectly through any Representative, may <omitted> : (i) participate in negotiations or discussions with any third party, that has made (and not withdrawn) a bona fide Alternative Proposal in writing that was not solicited in violation of Section 6.4(a) that the Company Board(or a committee thereof) believes in good faith, after consultation with outside legal counsel and its financial advisor, constitutes or could reasonably be expected to result in a Superior  Proposal; <omitted> ; (iii) following receipt of and on account of a Superior Proposal <omitted> terminate this Agreement pursuant to and in accordance with Section 8.3(a); <omitted> \n\nSection 8.3          Termination by the Company. This Agreement may be terminated by the Company at any time prior to the Effective Time:   (a)        if prior to the receipt of the Company Stockholder Approval at the Company Stockholders Meeting, the Company Board (or a committee thereof) authorizes the Company, in accordance with Section 6.4, to terminate this Agreement and enter into a Company Acquisition Agreement in respect of a Superior Proposal; provided, that in the event of such termination, the Company substantially concurrently enters into such Company Acquisition Agreement; provided, further, that the Company may only terminate the Agreement pursuant to this Section 8.3(a) if it has paid to Parent the Termination Fee pursuant to Section 8.6(a)(ii); (Page 67)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_16\" title=\"AGREEMENT AND PLAN OF MERGER among MITSUBISHI HC CAPITAL INC., CATTLEYA ACQUISITION CORP., and CAI INTERNATIONAL, INC. Dated as of June …\">\nSection 8.6          Termination Fee; Expense Reimbursements. (a)          Termination Fee. <omitted> (iv)        If (i) this Agreement is terminated by Parent or the Company pursuant to Section 8.2(a) or Section 8.2(c), (ii) after the date of this Agreement and prior to the time of the Company Stockholders Meeting (or adjournment or postponement thereof) at which a vote was taken to adopt the Merger but the Company Stockholder Approval was not obtained, an Alternative Proposal shall have been publicly made, commenced or submitted or announced and not publicly and irrevocably withdrawn at least five Business Days prior to such Company Stockholders Meeting and (iii) the Company consummates a transaction with respect to any Alternative Proposal within 12 months after such termination, or signs a definitive agreement with respect to any Alternative Proposal within 12 months after such termination and such transaction is subsequently consummated, then the Company shall pay to Parent, within two Business Days following such consummation, the Termination Fee; provided that, solely for purposes of this Section 8.6(a)(iv), all references to “fifteen percent (15%)” in the definition of Alternative Proposal shall be deemed to be references to “fifty percent (50%).” (Page 69)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "General Information",
+      "question": "Type of Consideration-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All Cash"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All Cash",
+        "All Stock",
+        "Mixed Cash/Stock",
+        "Mixed Cash/Stock: Election"
+      ],
+      "subquestions": [],
+      "source_question": "Type of Consideration-Answer",
+      "answers": [
+        {
+          "text": "All Cash"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "MAE Forward looking standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE Forward looking standard (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects with de minimis exception"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Accurate in all respects with de minimis exception"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "subquestions": [
+        "No",
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "ability to consummate transaction"
+        },
+        {
+          "text": "business and operation of Target"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate at another materiality standard (e.g., hybrid standard)",
+        "Accurate in all material respects",
+        "Accurate in all respects"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answers": [
+        {
+          "text": "Accurate in all respects"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Material Adverse Effect",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Action prohibited/omission required by the agreement-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\""
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Arising from/out of\"",
+        "\"Relating to\""
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Closing Only"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Closing Only"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "question": "Target's securities or credit rating: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Target's securities or credit rating: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 8,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q02": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q03": {
+      "char_offsets": [
+        7750
+      ],
+      "min_char_offset": 7750,
+      "min_frac": 0.3941,
+      "min_tokens_from_start": 1937,
+      "min_tokens_from_end": 2980
+    },
+    "q04": {
+      "char_offsets": [
+        1583
+      ],
+      "min_char_offset": 1583,
+      "min_frac": 0.0805,
+      "min_tokens_from_start": 395,
+      "min_tokens_from_end": 4522
+    },
+    "q05": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q06": {
+      "char_offsets": [
+        12618
+      ],
+      "min_char_offset": 12618,
+      "min_frac": 0.6416,
+      "min_tokens_from_start": 3154,
+      "min_tokens_from_end": 1763
+    },
+    "q07": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q08": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q09": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q10": {
+      "char_offsets": [
+        12618
+      ],
+      "min_char_offset": 12618,
+      "min_frac": 0.6416,
+      "min_tokens_from_start": 3154,
+      "min_tokens_from_end": 1763
+    },
+    "q11": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q12": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q13": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q14": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    },
+    "q15": {
+      "char_offsets": [
+        12618
+      ],
+      "min_char_offset": 12618,
+      "min_frac": 0.6416,
+      "min_tokens_from_start": 3154,
+      "min_tokens_from_end": 1763
+    },
+    "q16": {
+      "char_offsets": [
+        2893
+      ],
+      "min_char_offset": 2893,
+      "min_frac": 0.1471,
+      "min_tokens_from_start": 723,
+      "min_tokens_from_end": 4194
+    }
+  }
+}

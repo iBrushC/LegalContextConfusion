@@ -1,0 +1,684 @@
+{
+  "cell_id": "d027_baseline",
+  "dataset": "maud",
+  "doc_index": 27,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 7857,
+  "actual_chars": 31427,
+  "target_document_id": "contract_122",
+  "target_document_title": "by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 30037,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n6.3 Termination Fees. <omitted>\n(b) If this Agreement is terminated by Parent or the Company <omitted>\n(ii) on or prior to the date that is twelve (12) months following the termination of this Agreement, either (A) a Company Acquisition Transaction is consummated or (B) a definitive agreement relating to a Company Acquisition Transaction is entered into by the Company (it being   70\n\n\nunderstood that, for purposes of this clause “(B),” each reference to “twenty percent (20%)” in the definition of “Company Acquisition Transaction” in Exhibit A shall be deemed to be a reference to “fifty percent (50%)”), then, within two (2) Business Days after the earlier of the consummation of such Company Acquisition Transaction or entering into a definitive agreement relating to a Company Acquisition Transaction, the Company shall cause to be paid to Parent the Termination Fee.  (Pages 74-75)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\nWithout limiting the foregoing, during the period from the date of this Agreement through the earlier of the Closing or the termination of this Agreement, except (1) to the extent Parent shall otherwise give its prior consent in writing (which consent shall not be unreasonably withheld, conditioned or delayed), (2) as set forth in Part 4.1(a) of the Company Disclosure Schedule, (3) as may be required by applicable Legal Requirements or (4) as expressly permitted or required by this Agreement, the Company shall not (and shall not permit any Company Subsidiary to), in each case by merger, consolidation, division, operation of law, or otherwise:  (Page 46)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n4.1 Interim Operations. \n(a) The Company agrees that, during the period from the date of this Agreement through the earlier of the Closing or the termination of this Agreement, except (1) to the extent Parent shall otherwise give its prior consent in writing (which consent shall not be unreasonably withheld, conditioned or delayed), (2) as set forth in Part 4.1(a) of the Company Disclosure Schedule, (3) as may be required by applicable Legal Requirements, (4) in connection with any COVID-19 Measures or (5) as expressly required by this Agreement, the Company shall, and shall cause the Company Subsidiaries to, use reasonable best efforts to conduct its business in the ordinary course consistent in all material respects with past practice and to maintain and preserve intact its business organization and maintain satisfactory relationships with customers, suppliers and distributors and other Persons with whom the Company or any Company Subsidiary has material business relations.  (Page 46)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n“Company Material Adverse Effect” shall mean any state of facts, circumstance, condition, event, change, development, occurrence, result, effect, action or omission (each, an “Effect”) that, individually or in the aggregate with any one or more other Effects, (i) results in a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole or (ii) prevents, materially impairs, materially impedes or materially delays the consummation of the Merger and the other transactions contemplated hereby on or before the End Date; provided, however, that with respect to clause (i) only, no Effect to the extent resulting or arising from any of the following, shall, to such extent, be deemed to constitute, or be taken into account in determining the occurrence of, a Company Material Adverse Effect: (A) general economic, political, business, financial or market conditions; (B) any outbreak, continuation or escalation of any military conflict, declared or undeclared war, armed hostilities, or acts of foreign or domestic terrorism; (C) any pandemic (including the SARS-CoV-2 virus and COVID-19 disease), epidemic, plague, or other outbreak of illness or public health event, hurricane, flood, tornado, earthquake or other natural disaster or act of God; (D) any failure by the Company or any of its Subsidiaries to meet any internal or external projections or forecasts or any decline in the price or trading volume of Company Common Stock (but excluding, in each case, the underlying causes of such failure or decline, as applicable, which may themselves constitute or be taken into account in determining whether there has been, or would be, a Company Material Adverse Effect); (E) the public announcement or pendency of the Merger and the other transactions contemplated hereby; (F) changes in applicable Legal Requirements; (G) changes in GAAP or any other applicable accounting standards; or (H) any action expressly required to be taken by the Company pursuant to the terms of the Agreement or at the express written direction or consent of\n\n\nParent; provided, further, that any Effect relating to or arising out of or resulting from any change or event referred to in clause (A), (B), (C), (F) or (G) above may constitute, and be taken into account in determining the occurrence of, a Company Material Adverse Effect to the extent that such change or event has a disproportionate impact (but solely to the extent of such disproportionate impact) on the Company and its Subsidiaries as compared to other participants that operate in the industry in which the Company and its Subsidiaries operate.  (Pages 87-88)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\nany state of fact, event, change, effect, circumstance, occurrence or development, or combination thereof, arises following the date of this Agreement (i) that (x) was neither known to nor reasonably foreseeable by the Company Board as of the date of this Agreement, and (y) is material to the Company and its Subsidiaries, taken as a whole, and (ii) that is not related to (A) a Company Acquisition Proposal or a Company Superior Proposal or any inquiry or communications relating thereto, or (B) in each case in and of itself, any changes in the market price or trading volume of Company Common Stock or the fact that the Company meets, fails to meet or exceeds any internal or published projections, forecasts or estimates of its revenue, earnings or other financial performance or results of operations for any period (it being understood, however, that any underlying cause of any of the foregoing may be taken into account unless excluded pursuant to clause (A)) (any such state of fact, event, change, effect, circumstance, occurrence, development, condition, circumstance, or combination thereof, being referred to as a “Company Intervening Event”);  (Page 58)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n“knowledge of the Company” shall mean the knowledge, after reasonable inquiry, of the individuals listed in Part “Definitions” of the Company Disclosure Schedule.  (Page 93)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n5.2 Additional Conditions Precedent to Parent’s Obligations. \nThe obligation of Parent to cause the Merger to be effected and\notherwise cause the \ntransactions contemplated by this Agreement to be consummated are \nsubject to the satisfaction or waiver by Parent, as of\nthe Closing, of \neach of the following conditions:\n<omitted>\n(iii) the representations and warranties of the Company set forth in this Agreement (other than those representations and warranties referred to in the foregoing clauses (i) and (ii)) shall have been true and accurate in all respects at and as of the date hereof and shall be true and accurate in all respects at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and   <omitted>\n\n\nwarranty shall be so true and accurate as of such particular date or period of time), except as, individually or in the aggregate has not constituted or resulted in or would not reasonably be expected to constitute or result in a Company Material Adverse Effect; (Pages 70-71)\n\n5.2 Additional Conditions Precedent to Parent’s Obligations. \n<omitted>\n(iii) the representations and warranties of the Company set forth in this Agreement (other than those representations and warranties referred to in the foregoing clauses (i) and (ii)) shall have been true and accurate in all respects <omitted> except as, individually or in the aggregate has not constituted or resulted in or would not reasonably be expected to constitute or result in a Company Material Adverse Effect; (Pages 70-71)\n\n2.3 Capitalization. <omitted>\n5.2 Additional Conditions Precedent to Parent’s Obligations. The obligation of Parent to cause the Merger to be effected and otherwise cause the transactions contemplated by this Agreement to be consummated are subject to the satisfaction or waiver by Parent, as of the Closing, of each of the following conditions: (a) Accuracy of Representations (i) The representations and warranties of the Company contained in Section 2.3 (other than Section 2.3(f)) shall have been true and accurate, other than de minimis inaccuracies, at and as of the date hereof and shall be true and accurate, other than de minimis inaccuracies, at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be true and accurate, other than de minimis inaccuracies, as of such particular date or period of time); (Page 70)\n\n2.3 Capitalization. <omitted>\n5.2 Additional Conditions Precedent to Parent’s Obligations. <omitted> (i) The representations and warranties of the Company contained in Section 2.3 (other than Section 2.3(f)) shall have been true and accurate, other than de minimis inaccuracies, at and as of the date hereof and shall be true and accurate, other than de minimis inaccuracies, at and as of the Closing Date as if made at and as of such time (Page 70)\n\n2.1 Due Organization and Good Standing; Subsidiaries. <omitted>\n2.3 Capitalization. <omitted> (d) Except as set forth in Section 2.3(c), as of the Company Capitalization Date, there was no <omitted> (iii) stockholder rights plan (or similar plan commonly referred to as a “poison pill”) or Contract under which the Company or any Company Subsidiary is or may become obligated to sell or otherwise issue any shares of its capital stock or other equity interest or any other securities. <omitted>\n2.4 Authority; Binding Nature of Agreement. <omitted> The Company Board has unanimously: <omitted> (c) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger; <omitted> This Agreement has been duly executed and delivered on behalf of the Company and, assuming the due authorization, execution and delivery of this Agreement on behalf of Parent and Acquisition Sub and the accuracy of the representations and warranties set forth in Section 3.10, constitutes the valid and binding obligation of the Company, enforceable against the Company in accordance with its terms\n2.5 Vote Required. <omitted>\n2.6 Non-Contravention; Consents. <omitted>\n2.20 Takeover Statutes. <omitted>\n2.23 Brokers. <omitted>\n5.2 Additional Conditions Precedent to Parent’s Obligations. The obligation of Parent to cause the Merger to be effected and otherwise cause the transactions contemplated by this Agreement to be consummated are subject to the satisfaction or waiver by Parent, as of the Closing, of each of the following conditions: (a) Accuracy of Representations (i) The representations and warranties of the Company contained in Section 2.3 (other than Section 2.3(f)) shall have been true and accurate, other than de minimis inaccuracies, at and as of the date hereof and shall be true and accurate, other than de minimis inaccuracies, at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be true and accurate, other than de minimis inaccuracies, as of such particular date or period of time); (ii) the representations and warranties of the Company contained in Section 2.1(a) (first sentence only), Section 2.3(f), Section 2.4, Section 2.5, Section 2.6(a)(i), Section 2.20 and Section 2.23 shall have been true and accurate in all material respects at and as of the date hereof and shall be true and accurate in all material respects at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be true and accurate in all material respects as of such particular date or period of time); provided, however, that, in the case of this clause (ii), for purposes of determining the accuracy of such representations and warranties, all materiality, “Company Material Adverse Effect” and similar qualifications set forth in such representations and warranties shall be disregarded; (Page 70)\n\n2.1 Due Organization and Good Standing; Subsidiaries. <omitted>\n2.3 Capitalization. <omitted> (d) Except as set forth in Section 2.3(c), as of the Company Capitalization Date, there was no <omitted> (iii) stockholder rights plan (or similar plan commonly referred to as a “poison pill”) or Contract under which the Company or any Company Subsidiary is or may become obligated to sell or otherwise issue any shares of its capital stock or other equity interest or any other securities. <omitted>\n2.4 Authority; Binding Nature of Agreement. <omitted> The Company Board has unanimously: <omitted> (c) approved and declared advisable this Agreement and the transactions contemplated by this Agreement, including the Merger; <omitted> This Agreement has been duly executed and delivered on behalf of the Company and, assuming the due authorization, execution and delivery of this Agreement on behalf of Parent and Acquisition Sub and the accuracy of the representations and warranties set forth in Section 3.10, constitutes the valid and binding obligation of the Company, enforceable against the Company in accordance with its terms\n2.5 Vote Required. <omitted>\n2.6 Non-Contravention; Consents. <omitted>\n2.20 Takeover Statutes. <omitted>\n2.23 Brokers. <omitted>\n5.2 Additional Conditions Precedent to Parent’s Obligations. The obligation of Parent to cause the Merger to be effected and otherwise cause the transactions contemplated by this Agreement to be consummated are subject to the satisfaction or waiver by Parent, as of the Closing, of each of the following conditions: (a) Accuracy of Representations (i) The representations and warranties of the Company contained in Section 2.3 (other than Section 2.3(f)) shall have been true and accurate, other than de minimis inaccuracies, at and as of the date hereof and shall be true and accurate, other than de minimis inaccuracies, at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be true and accurate, other than de minimis inaccuracies, as of such particular date or period of time); (ii) the representations and warranties of the Company contained in Section 2.1(a) (first sentence only), Section 2.3(f), Section 2.4, Section 2.5, Section 2.6(a)(i), Section 2.20 and Section 2.23 shall have been true and accurate in all material respects at and as of the date hereof and shall be true and accurate in all material respects at and as of the Closing Date as if made at and as of such time (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be true and accurate in all material respects as of such particular date or period of time); provided, however, that, in the case of this clause (ii), for purposes of determining the accuracy of such representations and warranties, all materiality, “Company Material Adverse Effect” and similar qualifications set forth in such representations and warranties shall be disregarded; (Page 70)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted>\n(c) Notwithstanding anything to the contrary contained in this Agreement, at any time prior to obtaining the Required Company Stockholder Vote, the Company Board may make a   52\n\n\nCompany Change in Recommendation related to a Company Acquisition Proposal if (x) the Company receives from a third party a bona fide written Company Acquisition Proposal after the date of this Agreement that has not been withdrawn and did not result from a material breach of Section 4.2(a) or (c) and (y) prior to making such Company Change in Recommendation: (i) the Company Board determines in good faith, after consultation with the Company’s outside legal counsel and its financial advisor, that such Company Acquisition Proposal constitutes a Company Superior Proposal and that failure to take such action would reasonably be expected to be inconsistent with the Company Board’s fiduciary duties to the Company and its stockholders under applicable law;  (Pages 56-57)\n\n\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted>\n(d) Notwithstanding anything to the contrary contained in this Agreement, at any time prior to obtaining the Required Company Stockholder Vote, the Company Board may make a   53\n\n\nCompany Change in Recommendation that is not related to a Company Acquisition Proposal if any state of fact, event, change, effect, circumstance, occurrence or development, or combination thereof, arises following the date of this Agreement (i) that (x) was neither known to nor reasonably foreseeable by the Company Board as of the date of this Agreement, and (y) is material to the Company and its Subsidiaries, taken as a whole, and (ii) that is not related to (A) a Company Acquisition Proposal or a Company Superior Proposal or any inquiry or communications relating thereto, or (B) in each case in and of itself, any changes in the market price or trading volume of Company Common Stock or the fact that the Company meets, fails to meet or exceeds any internal or published projections, forecasts or estimates of its revenue, earnings or other financial performance or results of operations for any period (it being understood, however, that any underlying cause of any of the foregoing may be taken into account unless excluded pursuant to clause (A)) (any such state of fact, event, change, effect, circumstance, occurrence, development, condition, circumstance, or combination thereof, being referred to as a “Company Intervening Event”); and, prior to making such Company Change in Recommendation, (1) the Company Board determines in good faith, after consultation with its outside legal counsel and its financial advisor, that, in light of such Company Intervening Event, a failure to effect a Company Change in Recommendation would be reasonably expected to be inconsistent with the Company Board’s fiduciary duties to its stockholders under applicable law;  (Pages 57-58)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n4.2 Company No Solicitation.\n(a) The Company will not, and the Company will cause each of its Subsidiaries and its and their respective directors, officers and U.S. employees, and will use its reasonable best efforts to cause its other Representatives, not to, except as expressly permitted by this Section 4.2 or Section 4.4, directly or indirectly: (i) solicit, initiate, knowingly encourage or knowingly facilitate any inquiries regarding, or the submission or announcement by any Person (other than Parent or its Subsidiaries) of, any proposal or offer that constitutes, or would reasonably be expected to lead to, any Company Acquisition Proposal; (ii) furnish any information regarding the Company or any Subsidiary of the Company (other than to Parent and its Subsidiaries) in connection with, or for the purpose   47\n\n\nof soliciting, initiating, encouraging or facilitating, or in response to, any inquiry, proposal or offer that constitutes or would reasonably be expected to lead to a Company Acquisition Proposal; (iii) engage in, enter into, continue or otherwise participate in any discussions or negotiations with any Person (other than Parent or its Representatives) with respect to any Company Acquisition Proposal or any inquiry, proposal or offer that would reasonably be expected to lead to any Company Acquisition Proposal; (iv) approve, adopt, recommend, agree to or enter into, or propose to approve, adopt, recommend, agree to or enter into, any letter of intent, memorandum of understanding or similar document, agreement, commitment, or agreement in principle with respect to any Company Acquisition Proposal; or (v) resolve or agree to do any of the foregoing. \n\nprovided, however, that, notwithstanding anything to the contrary contained in this Agreement, prior to obtaining the Required Company Stockholder Vote, the Company and its Representatives may engage or otherwise participate in discussions or negotiations with, and provide information to, any Person (or its Representatives) that has made a bona fide written Company Acquisition Proposal after the date hereof that did not result from any material breach of this Section 4.2(a) or Section 4.2(c) by the Company, any of its Subsidiaries or any of its or their respective Representatives if: (A) prior to taking any such action, the Company Board determines in good faith, after consultation with the Company’s outside legal counsel and its financial advisor, that such Company Acquisition Proposal constitutes, or could reasonably be expected to lead to, a Company Superior Proposal; and (B) prior to providing any information regarding the Company or any Subsidiary of the Company to such third party in response to such Company Acquisition Proposal, the Company receives from such third party (or there is then in effect with such party) an executed confidentiality agreement that contains nondisclosure provisions that are at least as restrictive of such third party as the Non-Disclosure Agreement and that does not prohibit compliance by the Company with this Section 4.2. Prior to or concurrently with providing any non-public information to such third party, the Company shall make such non-public information available to Parent (to the extent such non-public information has not been previously made available by the Company to Parent). The Company shall promptly (and in any event within one (1) Business Day) inform Parent if the Company furnishes non-public information and/or enters into discussions or negotiations as provided for in this Section 4.2(a) and will keep Parent reasonably informed, on a current basis (and, in any event, within one (1) Business Day), of the status and terms of any Company Acquisition Proposal (including any material changes to the terms thereof) and the status of any discussions and negotiations with respect thereto.  (Pages 51-52)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted> (c) <omitted> at any time prior to obtaining the Required Company Stockholder Vote, the Company Board may make a Company Change in Recommendation related to a Company Acquisition Proposal if (x) the Company receives from a third party a bona fide written Company Acquisition Proposal <omitted> and (y) prior to making such Company Change in Recommendation <omitted> (ii) the Company delivers to Parent a written notice (the “Company Superior Proposal Notice”) no less than four (4) Business Days in advance stating that the Company Board intends to make a Company Change in Recommendation <omitted> (iii) (A) during the four (4) Business Day period commencing on the date of Parent’s receipt of such Company Superior Proposal Notice (subject to any applicable extensions), if requested by Parent, the Company engages in good faith negotiations with Parent regarding a possible amendment of this Agreement <omitted> provided that if there is any material development with respect to such Company Acquisition Proposal, the Company shall, in each case, be required to deliver to Parent an additional notice consistent with that described in clause (ii) above and a new negotiation period under clause “(A)” above shall commence (except that the original four (4) Business Day notice period referred to in clause “(A)” above shall instead be equal to the longer of (1) three (3) Business Days and (2) the period remaining under the original four (4) Business Day noticed period of clause “(A)” above, during which time the Company shall be required to comply with the requirements of Section 4.4(c)(iii) anew with respect to such additional notice (but substituting the time periods therein with the foregoing three (3) Business Day period) <omitted>\n\n6.1 Termination. This Agreement may be terminated and the Merger may be abandoned <omitted> (e) by the Company, at any time prior to obtaining the Required Company Stockholder Vote, in the event that (i) the Company Board shall have authorized the Company to enter into a definitive agreement relating to a Company Superior Proposal; (ii) concurrently with the termination of this Agreement, the Company enters into the definitive agreement relating to a Company Superior Proposal and pays Parent the Termination Fee payable to Parent pursuant to Section 6.3(a); and (iii) the Company has not materially breached the provisions of Section 4.2and Section 4.4; (Pages 56-57)\n\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted> (c) <omitted> at any time prior to obtaining the Required Company Stockholder Vote, the Company Board may make a Company Change in Recommendation related to a Company Acquisition Proposal if (x) the Company receives from a third party a bona fide written Company Acquisition Proposal <omitted> and (y) prior to making such Company Change in Recommendation <omitted> (ii) the Company delivers to Parent a written notice (the “Company Superior Proposal Notice”) no less than four (4) Business Days in advance stating that the Company Board intends to make a Company Change in Recommendation <omitted> (iii) (A) during the four (4) Business Day period commencing on the date of Parent’s receipt of such Company Superior Proposal Notice (subject to any applicable extensions), if requested by Parent, the Company engages in good faith negotiations with Parent regarding a possible amendment of this Agreement <omitted> provided that if there is any material development with respect to such Company Acquisition Proposal, the Company shall, in each case, be required to deliver to Parent an additional notice consistent with that described in clause (ii) above and a new negotiation period under clause “(A)” above shall commence (except that the original four (4) Business Day notice period referred to in clause “(A)” above shall instead be equal to the longer of (1) three (3) Business Days and (2) the period remaining under the original four (4) Business Day noticed period of clause “(A)” above, during which time the Company shall be required to comply with the requirements of Section 4.4(c)(iii) anew with respect to such additional notice (but substituting the time periods therein with the foregoing three (3) Business Day period) <omitted>\n\n6.1 Termination. This Agreement may be terminated and the Merger may be abandoned <omitted> (e) by the Company, at any time prior to obtaining the Required Company Stockholder Vote, in the event that (i) the Company Board shall have authorized the Company to enter into a definitive agreement relating to a Company Superior Proposal; (ii) concurrently with the termination of this Agreement, the Company enters into the definitive agreement relating to a Company Superior Proposal and pays Parent the Termination Fee payable to Parent pursuant to Section 6.3(a); and (iii) the Company has not materially breached the provisions of Section 4.2and Section 4.4; (Pages 56-57)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_122\" title=\"by and among: VIASAT, INC., a Delaware corporation; ROYAL ACQUISITION SUB, INC., a Delaware corporation; and RIGNET, INC., a Delaware …\">\n4.2 Company No Solicitation. <omitted>\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted>\n6.1 Termination. This Agreement may be terminated and the Merger may be abandoned: <omitted>\n(e) by the Company, at any time prior to obtaining the Required Company Stockholder Vote, in the event that (i) the Company Board shall have authorized the Company to enter into a definitive agreement relating to a Company Superior Proposal; (ii) concurrently with the termination of this Agreement, the Company enters into the definitive agreement relating to a Company Superior Proposal and pays Parent the Termination Fee payable to Parent pursuant to Section 6.3(a); and (iii) the Company has not materially breached the provisions of Section 4.2 and Section 4.4;  (Page 73)\n\n\n4.2 Company No Solicitation. <omitted>\n4.4 Meeting of the Company’s Stockholders; Company Change in Recommendation. <omitted>\n6.1 Termination. This Agreement may be terminated and the Merger may be abandoned: <omitted>\n(e) by the Company, at any time prior to obtaining the Required Company Stockholder Vote, in the event that (i) the Company Board shall have authorized the Company to enter into a definitive agreement relating to a Company Superior Proposal; <omitted> and (iii) the Company has not materially breached the provisions of Section 4.2 and Section 4.4;  (Page 73)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "Changes in market price/trading volume of Target's securities or credit rating (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in market price/trading volume of Target's securities or credit rating (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "(Material) breach of other provisions of agreement",
+        "Material breach of no-shop"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "(Material) breach of other provisions of agreement"
+        },
+        {
+          "text": "Material breach of no-shop"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability for breaches of no-shop by Target Representatives (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Liability for breaches of no-shop by Target Representatives (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Knowledge",
+      "question": "Constructive Knowledge-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Based on investigation or inquiry"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Based on investigation or inquiry",
+        "Based on role"
+      ],
+      "subquestions": [],
+      "source_question": "Constructive Knowledge-Answer",
+      "answers": [
+        {
+          "text": "Based on investigation or inquiry"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Rights Agreement",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "No-Conflict",
+        "Organization"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "Opinion of Financial Advisor"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Rights Agreement"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Operating and Efforts Covenant",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Includes \"consistent with past practice\"",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "\"act of God\""
+        },
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) Standard-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "\"Could\" (reasonably) be expected to",
+        "\"Would\"",
+        "\"Would\" (reasonably) be expected to",
+        "No",
+        "Other forward-looking standard"
+      ],
+      "subquestions": [],
+      "source_question": "FLS (MAE) Standard-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Operating and Efforts Covenant",
+      "question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Consent may not be unreasonably withheld, conditioned or delayed"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "subquestions": [],
+      "source_question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "subquestions": [
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Intervening Event - Required to Occur After Signing - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Must occur or arise after signing"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "May occur or arise prior to signing",
+        "Must occur or arise after signing"
+      ],
+      "subquestions": [],
+      "source_question": "Intervening Event - Required to Occur After Signing - answer",
+      "answers": [
+        {
+          "text": "Must occur or arise after signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"act of God\"",
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\"",
+        "Natural disaster",
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "\"act of God\""
+        },
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws",
+        "fundamental/Special R&Ws"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "General R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        },
+        {
+          "text": "fundamental/Special R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 11,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q02": {
+      "char_offsets": [
+        30037
+      ],
+      "min_char_offset": 30037,
+      "min_frac": 0.9558,
+      "min_tokens_from_start": 7509,
+      "min_tokens_from_end": 348
+    },
+    "q03": {
+      "char_offsets": [
+        20778
+      ],
+      "min_char_offset": 20778,
+      "min_frac": 0.6612,
+      "min_tokens_from_start": 5194,
+      "min_tokens_from_end": 2663
+    },
+    "q04": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q05": {
+      "char_offsets": [
+        7519
+      ],
+      "min_char_offset": 7519,
+      "min_frac": 0.2393,
+      "min_tokens_from_start": 1879,
+      "min_tokens_from_end": 5978
+    },
+    "q06": {
+      "char_offsets": [
+        7879
+      ],
+      "min_char_offset": 7879,
+      "min_frac": 0.2507,
+      "min_tokens_from_start": 1969,
+      "min_tokens_from_end": 5888
+    },
+    "q07": {
+      "char_offsets": [
+        2098
+      ],
+      "min_char_offset": 2098,
+      "min_frac": 0.0668,
+      "min_tokens_from_start": 524,
+      "min_tokens_from_end": 7333
+    },
+    "q08": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q09": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q10": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q11": {
+      "char_offsets": [
+        1250
+      ],
+      "min_char_offset": 1250,
+      "min_frac": 0.0398,
+      "min_tokens_from_start": 312,
+      "min_tokens_from_end": 7545
+    },
+    "q12": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q13": {
+      "char_offsets": [
+        6164
+      ],
+      "min_char_offset": 6164,
+      "min_frac": 0.1961,
+      "min_tokens_from_start": 1541,
+      "min_tokens_from_end": 6316
+    },
+    "q14": {
+      "char_offsets": [
+        3286
+      ],
+      "min_char_offset": 3286,
+      "min_frac": 0.1046,
+      "min_tokens_from_start": 821,
+      "min_tokens_from_end": 7036
+    },
+    "q15": {
+      "char_offsets": [
+        7879
+      ],
+      "min_char_offset": 7879,
+      "min_frac": 0.2507,
+      "min_tokens_from_start": 1969,
+      "min_tokens_from_end": 5888
+    },
+    "q16": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0055,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 7814
+    }
+  }
+}

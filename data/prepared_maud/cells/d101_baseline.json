@@ -1,0 +1,644 @@
+{
+  "cell_id": "d101_baseline",
+  "dataset": "maud",
+  "doc_index": 101,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 11137,
+  "actual_chars": 44548,
+  "target_document_id": "contract_53",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …",
+  "distractor_ids": [],
+  "target_offset": 164,
+  "target_end": 43858,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nConditions to Obligations of Parent and Merger Sub.  The obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or written waiver by Parent (to the extent permitted by applicable Law)) at or prior to the Effective Time of the following conditions: <omitted> (e)  Performance of Obligations of the Company.  The Company shall have performed in all material respects the obligations, and complied in all material respects with the agreements and covenants, required to be performed by, or complied with by, it under this Agreement at or prior to the Effective Time  (Page 75)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(b) Exceptions. Notwithstanding anything to the contrary in Section 6.1 or Section 6.3,  but subject to compliance with the remainder of this Article VI,  nothing contained in this Agreement shall prevent the Company or its Board of Directors from:\n<omitted>\n\n(iii)  prior to (but not after) obtaining the Company Requisite Vote, (A) engaging in any communications, negotiations or discussions with any Person or group of Persons and their respective Representatives who has made an Acquisition Proposal after the date hereof that was not solicited in breach (other than an unintentional or de minimis breach) of Section 6.1(a) (which negotiations or discussions need not be solely for clarification purposes) and (B) providing access to the Company’s or any of its subsidiaries’ properties, books and records and providing information or data in response to a request therefor by a Person who has made a bona fide and written Acquisition Proposal after the date hereof that was not solicited in breach (other than an unintentional or de minimis breach) of Section 6.1(a), in each case, if the Board of Directors (A) shall have determined in good faith, after consultation with its outside legal counsel and financial advisor(s), that, based on the information then available, such Acquisition Proposal constitutes or would reasonably be expected to constitute, result in or lead to a Superior Proposal and (B) has received from the Person who has made such Acquisition Proposal an executed Acceptable Confidentiality Agreement; provided that the Company shall provide to Parent and Merger Sub any material non-public information or data that is provided to any Person given such access that was not previously made available to Parent or Merger Sub prior to or promptly following the time it is provided to such Person  (Page 49)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n<omitted>\n\n(i)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, if a written Acquisition Proposal that did not otherwise result from a breach (other than an unintentional or de minimis breach) of Section 6.1 is received by the Company, and the Board of Directors of the Company determines in good faith, after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may, if the Board of Directors of the Company has determined in good faith after consultation with its financial advisors and outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary -40- \n\n \n\n\n  duties under applicable Law, (x) effect a Change of Recommendation and/or (y) terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal; provided,  however, that the Company pays to Parent any Company Termination Payment required to be paid pursuant to Section 8.2(b)(i);  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance (such period from the time the Company Notice is provided until 5:00 p.m. New York City time on the fourth (4 th) Business Day immediately following the day on which the Company delivered the Company Notice, the “Notice Period”), which notice shall set forth in writing (I) that the Board of Directors of the Company has received a written Acquisition Proposal that would, if consummated, constitute a Superior Proposal, (II) the material terms and conditions of the Acquisition Proposal (including the consideration offered therein and the identity of the Person or group making the Acquisition Proposal) and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect.    Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” and such three 31) Business Day period shall expire at 5:00 p.m. on the Business Day immediately following the day on which such new Company Notice is delivered (it being understood and agreed that in no event shall any such additional three (3) Business Day notice period be deemed to shorten the initial four (4) Business Day notice period). (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n<omitted>\n\n(i)  <omitted> if a written Acquisition Proposal <omitted> is received by the Company, and the Board of Directors of the Company determines <omitted> that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may <omitted> (y) terminate this Agreement  <omitted> ;  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance  <omitted> , (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect. (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n<omitted>\n\n(i)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, if a written Acquisition Proposal that did not otherwise result from a breach (other than an unintentional or de minimis breach) of Section 6.1 is received by the Company, and the Board of Directors of the Company determines in good faith, after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may, if the Board of Directors of the Company has determined in good faith after consultation with its financial advisors and outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary -40- \n\n \n\n\n  duties under applicable Law, (x) effect a Change of Recommendation and/or (y) terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal; provided,  however, that the Company pays to Parent any Company Termination Payment required to be paid pursuant to Section 8.2(b)(i);  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance (such period from the time the Company Notice is provided until 5:00 p.m. New York City time on the fourth (4 th) Business Day immediately following the day on which the Company delivered the Company Notice, the “Notice Period”), which notice shall set forth in writing (I) that the Board of Directors of the Company has received a written Acquisition Proposal that would, if consummated, constitute a Superior Proposal, (II) the material terms and conditions of the Acquisition Proposal (including the consideration offered therein and the identity of the Person or group making the Acquisition Proposal) and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect.    Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” and such three 31) Business Day period shall expire at 5:00 p.m. on the Business Day immediately following the day on which such new Company Notice is delivered (it being understood and agreed that in no event shall any such additional three (3) Business Day notice period be deemed to shorten the initial four (4) Business Day notice period). (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n<omitted>\n\n(i) <omitted> if a written Acquisition Proposal <omitted> is received by the Company, and the Board of Directors of the Company determines <omitted> that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may <omitted> (y) terminate this Agreement  <omitted> ;  provided further, that <omitted>  Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” (Pages 49-50)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nConditions to Obligations of Parent and Merger Sub .  The obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or written waiver by Parent (to the extent permitted by applicable Law)) at or prior to the Effective Time of the following conditions: (d)  Representations and Warranties.  Each of the representations and warranties of the Company set forth in <omitted> (iv) the other representations and warranties of Article III shall be true and correct in all respects (without giving effect to any “materiality,” “Material Adverse Effect” or similar qualifiers contained in any such representations and warranties) in each case as -65- \n\n \n\n\n  of the date hereof and as of the Effective Time as though made on and as of such date (except to the extent that any such representation or warranty expressly is made as of an earlier date, in which case such representation and warranty shall be true and correct as of such specified date), except where the failures of any such representations and warranties to be so true and correct, individually or in the aggregate, would not reasonably be expected to have a Material Adverse Effect; (Pages 74-75)\n\nConditions to Obligations of Parent and Merger Sub <omitted> (iv) the other representations and warranties of Article III shall be true and correct in all respects <omitted> except where the failures of any such representations and warranties to be so true and correct, individually or in the aggregate, would not reasonably be expected to have a Material Adverse Effect; (Pages 74-75)\n\nConditions to Obligations of Parent and Merger Sub .  The obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or written waiver by Parent (to the extent permitted by applicable Law)) at or prior to the Effective Time of the following conditions: (d)  Representations and Warranties.  Each of the representations and warranties of the Company set forth in <omitted> (ii) Section 3.3(a) and Section 3.3(b) [Capitalization] shall be true and correct in all respects as of the date hereof and as of the Effective Time as though made on and as of such date (except to the extent that any such representation or warranty expressly is made as of an earlier date, in which case such representation and warranty shall be true and correct as of such specified date), other than for issuances permitted pursuant to this Agreement and other than for inaccuracies that, in the aggregate, do not increase the aggregate consideration payable by Parent pursuant to Article II in more than a de minimis respect (Page 74)\n\nConditions to Obligations of Parent and Merger Sub <omitted> Each of the representations and warranties of the Company set forth in <omitted> (ii) Section 3.3(a) and Section 3.3(b) [Capitalization] shall be true and correct in all respects <omitted> other than for inaccuracies that, in the aggregate, do not increase the aggregate consideration payable by Parent pursuant to Article II in more than a de minimis respect (Page 74)\n\nAuthority.  <omitted> This Agreement has been duly and validly executed and delivered by the Company and, assuming the due authorization, execution and delivery hereof by Parent and Merger Sub, constitutes a legal, valid and binding obligation of the Company enforceable against the Company in accordance with its terms <omitted> . The Board of Directors of the Company, at a duly called and held meeting, has <omitted> (ii) approved the execution, delivery and performance of this Agreement \n<omitted>\n\nConditions to Obligations of Parent and Merger Sub .  The obligations of Parent and Merger Sub to effect the Merger shall be further subject to the satisfaction (or written waiver by Parent (to the extent permitted by applicable Law)) at or prior to the Effective Time of the following conditions: (d)  Representations and Warranties.  Each of the representations and warranties of the Company set forth in (i) Section 3.1  [Organization and Qualification; Subsidiaries], Section 3.3(c) and (d)  [Capitalization], Section 3.4  [Authority], Section 3.19  [Opinion of Financial Advisor], Section 3.20  [Brokers] and Section 3.21  [Takeover Statutes]  shall be true and correct in all material respects as of the date hereof and as of the Effective Time as though made on and as of such date (except to the extent that any such representation or warranty expressly is made as of an earlier date, in which case such representation and warranty shall be true and correct as of such specified date) <omitted> (iii) Section 3.9(c)[Absence of Certain Changes or Events] shall be true and correct in all respects as of the date hereof and as of the Effective Time as though made on and as of such date (Page 74)\n\nAuthority.  <omitted> This Agreement has been duly and validly executed and delivered by the Company and, assuming the due authorization, execution and delivery hereof by Parent and Merger Sub, constitutes a legal, valid and binding obligation of the Company enforceable against the Company in accordance with its terms <omitted> . The Board of Directors of the Company, at a duly called and held meeting, has <omitted> (ii) approved the execution, delivery and performance of this Agreement \n<omitted>\n\nConditions to Obligations of Parent and Merger Sub <omitted> Each of the representations and warranties of the Company set forth in (i) Section 3.1  [Organization and Qualification; Subsidiaries], Section 3.3(c) and (d)  [Capitalization], Section 3.4  [Authority], Section 3.19  [Opinion of Financial Advisor], Section 3.20  [Brokers] and Section 3.21  [Takeover Statutes]  shall be true and correct in all material respects <omitted> (iii) Section 3.9(c)[Absence of Certain Changes or Events] shall be true and correct in all respects (Page 74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n\n(i)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, if a written Acquisition Proposal that did not otherwise result from a breach (other than an unintentional or de minimis breach) of Section 6.1 is received by the Company, and the Board of Directors of the Company determines in good faith, after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may, if the Board of Directors of the Company has determined in good faith after consultation with its financial advisors and outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary -40- \n\n \n\n\n  duties under applicable Law, (x) effect a Change of Recommendation and/or (y) terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal; provided,  however, that the Company pays to Parent any Company Termination Payment required to be paid pursuant to Section 8.2(b)(i);  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance (such period from the time the Company Notice is provided until 5:00 p.m. New York City time on the fourth (4 th) Business Day immediately following the day on which the Company delivered the Company Notice, the “Notice Period”), which notice shall set forth in writing (I) that the Board of Directors of the Company has received a written Acquisition Proposal that would, if consummated, constitute a Superior Proposal, (II) the material terms and conditions of the Acquisition Proposal (including the consideration offered therein and the identity of the Person or group making the Acquisition Proposal) and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect.    Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” and such three 31) Business Day period shall expire at 5:00 p.m. on the Business Day immediately following the day on which such new Company Notice is delivered (it being understood and agreed that in no event shall any such additional three (3) Business Day notice period be deemed to shorten the initial four (4) Business Day notice period).  (Pages 49-50)\n\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n<omitted>\n\n(ii)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, the Board of Directors of the Company may effect a Change of Recommendation if (x) an Intervening Event has occurred, and (y) prior to taking such action, the Board of Directors of the Company has determined in good faith, after consultation with its outside legal counsel and its financial advisor(s), that failure to take such action in response to such Intervening Event would  -41- \n\n \n\n\n  reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Law; provided,  however, that prior to effecting such Change of Recommendation, (A) the Company shall give Parent a Company Notice five (5) Business Days in advance, which notice shall include a reasonably detailed description of such Intervening Event and the rationale for the Change of Recommendation,  (B) after giving such Company Notice and prior to effecting a Change of Recommendation, the Company shall negotiate in good faith with Parent (to the extent requested by Parent), to make revisions to the terms of this Agreement and (C) at the end of the Notice Period, prior to and as a condition precedent to effecting a Change of Recommendation, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that (I) such Intervening Event remains in effect and (II) the failure to effect a Change of Recommendation in response to such Intervening Event would reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Law if such changes proposed in writing by Parent (if any) were to be given effect.  (Pages 50-51)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\n“Material Adverse Effect” means any event, development, change, effect or occurrence that, individually or in the aggregate with all other events, developments, changes, effects or occurrences that (x) prevents or materially impairs the ability of the parties hereto to consummate the Merger or the other transactions contemplated by this Agreement in accordance -78- \n\n \n\n\n  with the terms of this Agreement or (y) has had or would reasonably be expected to have a material adverse effect on or with respect to the assets, business, results of operation or financial condition of the Company and its subsidiaries taken as a whole, provided that, solely in the case of clause (y), no events, developments, changes, effects or occurrences relating to, arising out of or in connection with or resulting from any of the following shall be deemed, either alone or in combination with any of the following, to constitute or contribute to a Material Adverse Effect or be taken into account in determining whether a Material Adverse Effect has occurred or would reasonably be expected to occur: (i) general changes or developments in the economy or the financial, debt, capital, credit or securities markets or political, business or regulatory conditions in the United States or elsewhere in the world, including as a result of changes in geopolitical conditions, (ii) general changes or developments in the industries in which the Company or its subsidiaries operate or where the Company’s products or services are sold, (iii) changes or prospective changes in any applicable Laws or regulations or applicable accounting regulations or principles or interpretation or enforcement thereof, (iv) any epidemic, pandemic or other outbreak of illness or disease or public health event (including COVID-19) or any COVID-19 Measures or any changes, after the date hereof, in such COVID-19 Measures or changes, after the date hereof, in the interpretation, implementation or enforcement thereof, (v) the public announcement or pendency of the Merger or other transactions contemplated hereby, including any impact thereof on relationships, contractual or otherwise, with customers, lessors, suppliers, vendors, investors, lenders, partners, distributors, financing sources, contractors or employees of the Company and its subsidiaries, or the performance of this Agreement and the transactions contemplated hereby, including compliance with the covenants set forth herein and any action taken or omitted to be taken by the Company at the written request of or with the written consent of Parent or Merger Sub, (vi) any actions expressly required under this Agreement, including to obtain any approval or authorization under applicable antitrust or competition or other Laws for the consummation of the Merger, (vii) any hurricane, cyclone, tornado, earthquake, flood, tsunami, natural disaster, act of God or other comparable events or outbreak or escalation of hostilities or war (whether or not declared), military actions or any act of sabotage or terrorism, or national or international political or social conditions, (viii) any decline in the market price or trading volume of the Shares or the credit rating of the Company (provided that the exception in this clause (ix) shall not prevent or otherwise affect a determination that any effect underlying such change has resulted in, or contributed to, a Material Adverse Effect (if not otherwise falling within any of the exceptions in clauses (i) through (viii) and (x)), or (x) any failure by the Company to meet any published analyst estimates or expectations of the Company’s revenue, earnings or other financial performance or results of operations for any period, in and of itself, or any failure by the Company to meet its internal or published projections, budgets, plans or forecasts of its revenues, earnings or other financial performance or results of operations, in and of itself (provided that the exception in this clause (x) shall not prevent or otherwise affect a determination that any effect underlying such failure has resulted in, or contributed to, a Material Adverse Effect (if not otherwise falling within any of the exceptions in clauses (i) through (ix)); except in the cases of clauses (i) through (iv) and (viii), to the extent that the Company and its subsidiaries, taken as a whole, are adversely and disproportionately affected thereby as compared with similarly situated Persons in the industries in which the Company and its subsidiaries operate (in which case solely the incremental materially disproportionate impact or impacts may be taken into account in determining whether there has been or would reasonably be expected to be a Material Adverse Effect).  (Pages 87-88)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n\n(i)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, if a written Acquisition Proposal that did not otherwise result from a breach (other than an unintentional or de minimis breach) of Section 6.1 is received by the Company, and the Board of Directors of the Company determines in good faith, after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may, if the Board of Directors of the Company has determined in good faith after consultation with its financial advisors and outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary -40- \n\n \n\n\n  duties under applicable Law, (x) effect a Change of Recommendation and/or (y) terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal; provided,  however, that the Company pays to Parent any Company Termination Payment required to be paid pursuant to Section 8.2(b)(i);  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance (such period from the time the Company Notice is provided until 5:00 p.m. New York City time on the fourth (4 th) Business Day immediately following the day on which the Company delivered the Company Notice, the “Notice Period”), which notice shall set forth in writing (I) that the Board of Directors of the Company has received a written Acquisition Proposal that would, if consummated, constitute a Superior Proposal, (II) the material terms and conditions of the Acquisition Proposal (including the consideration offered therein and the identity of the Person or group making the Acquisition Proposal) and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect.    Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” and such three 31) Business Day period shall expire at 5:00 p.m. on the Business Day immediately following the day on which such new Company Notice is delivered (it being understood and agreed that in no event shall any such additional three (3) Business Day notice period be deemed to shorten the initial four (4) Business Day notice period) (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n\n(i)  <omitted> if a written Acquisition Proposal <omitted> is received by the Company, and the Board of Directors of the Company determines <omitted> that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may <omitted> (x) effect a Change of Recommendation <omitted> ;  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance <omitted> and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect. (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n\n(i)  Notwithstanding anything in this Agreement to the contrary, prior to the time, but not after, the Company Requisite Vote is obtained, if a written Acquisition Proposal that did not otherwise result from a breach (other than an unintentional or de minimis breach) of Section 6.1 is received by the Company, and the Board of Directors of the Company determines in good faith, after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may, if the Board of Directors of the Company has determined in good faith after consultation with its financial advisors and outside legal counsel, that failure to take such action would reasonably be expected to be inconsistent with the directors’ fiduciary -40- \n\n \n\n\n  duties under applicable Law, (x) effect a Change of Recommendation and/or (y) terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal; provided,  however, that the Company pays to Parent any Company Termination Payment required to be paid pursuant to Section 8.2(b)(i);  provided further, that, prior to taking such action described in clauses (x) and/or (y) above, (A) the Company shall give Parent written notice four (4) Business Days in advance (such period from the time the Company Notice is provided until 5:00 p.m. New York City time on the fourth (4 th) Business Day immediately following the day on which the Company delivered the Company Notice, the “Notice Period”), which notice shall set forth in writing (I) that the Board of Directors of the Company has received a written Acquisition Proposal that would, if consummated, constitute a Superior Proposal, (II) the material terms and conditions of the Acquisition Proposal (including the consideration offered therein and the identity of the Person or group making the Acquisition Proposal) and shall have contemporaneously provided an unredacted copy of the Acquisition Proposal and all other documents (other than immaterial documents) related to the Superior Proposal and (III) advise Parent that the Board of Directors of the Company intends to effect a Change of Recommendation and/or terminate this Agreement pursuant to Section 8.1(d)(ii) in order to enter into a definitive written agreement providing for such Superior Proposal (such notice, the “Company Notice”), (B) after giving such Company Notice and as a condition precedent to taking any action described in clauses (x) or (y) above, the Company and its Representatives shall negotiate in good faith with Parent (to the extent requested by Parent), to make such revisions to the terms of this Agreement as would cause such Acquisition Proposal to cease to be a Superior Proposal and (C) at the end of the Notice Period, prior to and as a condition precedent to taking any action described in clauses (x) or (y) above, the Board of Directors of the Company shall take into account in good faith any changes to the terms of this Agreement proposed in writing by Parent in response to the Company Notice and any other information offered by Parent in response to the Company Notice, and shall have determined in good faith after consultation with its outside legal counsel and its financial advisor(s) that such Acquisition Proposal continues to constitute a Superior Proposal, if such changes offered in writing by Parent (if any) were to be given effect.    Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” and such three 31) Business Day period shall expire at 5:00 p.m. on the Business Day immediately following the day on which such new Company Notice is delivered (it being understood and agreed that in no event shall any such additional three (3) Business Day notice period be deemed to shorten the initial four (4) Business Day notice period). (Pages 49-50)\n\nNon-Solicitation; Acquisition Proposals; Change of Recommendation\n<omitted>\n\n(c) Change of Recommendation.\n\n(i)  <omitted> if a written Acquisition Proposal <omitted> is received by the Company, and the Board of Directors of the Company determines <omitted> that such Acquisition Proposal would, if consummated, constitute a Superior Proposal, the Board of Directors of the Company may <omitted> (x) effect a Change of Recommendation <omitted> ;  provided further, that <omitted>  Any material amendment to any Acquisition Proposal will be deemed to be a new Acquisition Proposal for purposes of Section 6.1(d) and this Section 6.1(c)(i) and require a new Company Notice, except that references in this Section 6.1(c)(i) to “four (4) Business Days” shall be deemed to be references to “three (3)  Business Days” (Pages 49-50)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_53\" title=\"AGREEMENT AND PLAN OF MERGER Among FERRO CORPORATION, PMHC II INC. and PMHC FORTUNE MERGER SUB, INC. Dated as of May 11, 2021 …\">\nEffect of Termination <omitted> (i) In the event that: (i) this Agreement is validly terminated <omitted>  (B) within twelve (12) months after such termination, the Company shall have entered into a definitive agreement with respect to such Acquisition Proposal (which is subsequently consummated), or shall have consummated such Acquisition Proposal, then, in any such event, the Company shall pay to Parent the Company Termination Payment, such payment to be made on the date of the consummation of such Acquisition Proposal, by wire transfer of immediately available funds to the account or accounts designated in writing by Parent to the Company for such purpose.  (Page 79)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Additional matching rights period for modifications (FTR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "3 business days"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "2 business days or less",
+        "3 business days"
+      ],
+      "subquestions": [],
+      "source_question": "Additional matching rights period for modifications (FTR)-Answer",
+      "answers": [
+        {
+          "text": "3 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "General political and/or social conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General political and/or social conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "Target stockholder proceedings-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Target stockholder proceedings-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All/The R&Ws accurate at MAE standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "All/The R&Ws accurate at MAE standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Initial matching rights period (COR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "4 business days"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "subquestions": [],
+      "source_question": "Initial matching rights period (COR)-Answer",
+      "answers": [
+        {
+          "text": "4 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (intervening event)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (intervening event)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted with board fiduciary determination only",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted with board fiduciary determination only",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "question": "Change in Target's industry: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Change in Target's industry: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "pendency"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "announcement"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Subsidiaries",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Other",
+        "Tax"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Opinion of Financial Advisor"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Subsidiaries"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Additional matching rights period for modifications (COR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "3 business days"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "2 business days or less",
+        "3 business days",
+        "3 days",
+        "4 business days",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Additional matching rights period for modifications (COR)-Answer",
+      "answers": [
+        {
+          "text": "3 business days"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 8,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        3049
+      ],
+      "min_char_offset": 3049,
+      "min_frac": 0.0684,
+      "min_tokens_from_start": 762,
+      "min_tokens_from_end": 10375
+    },
+    "q02": {
+      "char_offsets": [
+        43858
+      ],
+      "min_char_offset": 43858,
+      "min_frac": 0.9845,
+      "min_tokens_from_start": 10964,
+      "min_tokens_from_end": 173
+    },
+    "q03": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q04": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q05": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q06": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q07": {
+      "char_offsets": [
+        14436
+      ],
+      "min_char_offset": 14436,
+      "min_frac": 0.3241,
+      "min_tokens_from_start": 3609,
+      "min_tokens_from_end": 7528
+    },
+    "q08": {
+      "char_offsets": [
+        32015
+      ],
+      "min_char_offset": 32015,
+      "min_frac": 0.7187,
+      "min_tokens_from_start": 8003,
+      "min_tokens_from_end": 3134
+    },
+    "q09": {
+      "char_offsets": [
+        20447
+      ],
+      "min_char_offset": 20447,
+      "min_frac": 0.459,
+      "min_tokens_from_start": 5111,
+      "min_tokens_from_end": 6026
+    },
+    "q10": {
+      "char_offsets": [
+        20447
+      ],
+      "min_char_offset": 20447,
+      "min_frac": 0.459,
+      "min_tokens_from_start": 5111,
+      "min_tokens_from_end": 6026
+    },
+    "q11": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q12": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q13": {
+      "char_offsets": [
+        14436
+      ],
+      "min_char_offset": 14436,
+      "min_frac": 0.3241,
+      "min_tokens_from_start": 3609,
+      "min_tokens_from_end": 7528
+    },
+    "q14": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q15": {
+      "char_offsets": [
+        27087
+      ],
+      "min_char_offset": 27087,
+      "min_frac": 0.608,
+      "min_tokens_from_start": 6771,
+      "min_tokens_from_end": 4366
+    },
+    "q16": {
+      "char_offsets": [
+        32015
+      ],
+      "min_char_offset": 32015,
+      "min_frac": 0.7187,
+      "min_tokens_from_start": 8003,
+      "min_tokens_from_end": 3134
+    }
+  }
+}

@@ -1,0 +1,608 @@
+{
+  "cell_id": "d040_baseline",
+  "dataset": "maud",
+  "doc_index": 40,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 7628,
+  "actual_chars": 30512,
+  "target_document_id": "contract_134",
+  "target_document_title": "contract_134",
+  "distractor_ids": [],
+  "target_offset": 50,
+  "target_end": 23524,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 6.03. Go-Shop; No Solicitation. <omitted> (c)                Except as permitted by Section 6.03, during the period commencing on (x) with respect to any Excluded Party, the Cut Off Date, or (y) with respect to any Person or “group” who is not an Excluded Party, the No-Shop Period Start Date and, in either case, continuing until the earlier of (x) the termination of this Agreement or (y) the Effective Time, (i) neither the Company nor any of its Subsidiaries shall, nor shall the Company or any of its Subsidiaries authorize or knowingly permit any of their respective Representatives to, directly or indirectly, (A) solicit, initiate, propose or knowingly facilitate, induce or encourage the submission of any Acquisition Proposal or any inquiries that could reasonably be expected to result in an Acquisition Proposal (including by way of furnishing non-public information), (B) enter into or participate in any discussions or negotiations with, or furnish any non-public information relating to the Company or any of its Subsidiaries to, any Third Party for the purpose of knowingly facilitating, inducing or encouraging an Acquisition Proposal (it being understood that notifying such Person of the existence of this Section 6.03(c) shall not be a breach of this Section 6.03(c)) or (C) except for an Acceptable Confidentiality\n\n\nAgreement, enter into any agreement in principle, letter of intent, merger agreement, acquisition agreement or other similar agreement relating to an Acquisition Proposal <omitted> “Superior Proposal” means a bona fide written Acquisition Proposal for at least a majority of the outstanding Shares or at least a majority of the consolidated assets of the Company and its Subsidiaries that was not solicited in material breach by the Company of the first sentence of Section 6.03(b) or the first sentence of Section 6.03(c) and that the Company Board determines in good faith, after consultation with its financial advisor and outside legal counsel, and taking into account all relevant terms and conditions of such Acquisition Proposal, is more favorable to the Company’s stockholders from a financial point of view than the Merger (taking into account any irrevocable written proposal by Parent to amend the terms of this Agreement pursuant to Section 6.03(h)). <omitted> Section 10.01. Termination. This Agreement may be terminated and the Transactions may be abandoned at any time only as follows: <omitted> (d) by the Company, if: (i) at any time prior to the Acceptance Time, the Company Board authorizes the Company to enter into a definitive agreement concerning a  Superior  Proposal  pursuant  to Section 6.03(h) and the Company contemporaneously enters into such definitive agreement concerning such Superior Proposal; provided, that the Company pays the Company Termination Fee payable pursuant to Section 11.05(a)(ii);  (Page 31)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nConditions of the Offer Notwithstanding any other term of the Offer or this Agreement and in addition to (and not in limitation of) Merger Subsidiary’s right to extend and  amend  the  Offer  pursuant  to  the  provisions  of  the Agreement,  Parent  shall  not  be  required  to  accept  for  payment  or,  subject  to  any  applicable  rules  and regulations  of  the  SEC,  including  Rule  14e-l(c)  under  the  1934  Act  (relating  to  Parent’s  obligation  to  pay  for  or  return  tendered  Shares  promptly  after  the termination  or  withdrawal  of  the  Offer),  to  pay  for  any  Shares  validly  tendered  and  not  validly  withdrawn  in  the  Offer,  unless,  immediately  prior  to  the  then applicable Offer Expiration Time: <omitted> (iii) each of the other representations and warranties of the Company set forth in the Merger Agreement shall be true and correct in all respects as of the date of this Agreement and as of the consummation of the Offer, as if made at such time, except to the extent such representation or warranty expressly relates to a specific date (in which case on and as of such specific date), other than, in the case of clause (iii), for such failures to be true and correct that, individually or in the aggregate, would not have a Material Adverse Effect (it being understood that for this purpose all references to the term “Material Adverse Effect” and other qualifications based on the word “material,” set forth in any such representations and warranties shall be disregarded). Solely for purposes of clause (i)(x) of this paragraph (d), if one or more inaccuracies in the sections referred to in clause (i) of this paragraph (d) would cause the Aggregate Consideration to increase by $25,000,000 or more, such inaccuracy or inaccuracies will not be considered de minimis; (Page 45)\n\nConditions of the Offer <omitted> (iii) each of the other representations and warranties of the Company set forth in the Merger Agreement shall be true and correct in all respects  <omitted> other than, in the case of clause (iii), for such failures to be true and correct that, individually or in the aggregate, would not have a Material Adverse Effect (Page 45)\n\nConditions of the Offer Notwithstanding any other term of the Offer or this Agreement and in addition to (and not in limitation of) Merger Subsidiary’s right to extend and  amend  the  Offer  pursuant  to  the  provisions  of  the Agreement,  Parent  shall  not  be  required  to  accept  for  payment  or,  subject  to  any  applicable  rules  and regulations  of  the  SEC,  including  Rule  14e-l(c)  under  the  1934  Act  (relating  to  Parent’s  obligation  to  pay  for  or  return  tendered  Shares  promptly  after  the termination  or  withdrawal  of  the  Offer),  to  pay  for  any  Shares  validly  tendered  and  not  validly  withdrawn  in  the  Offer,  unless,  immediately  prior  to  the  then applicable Offer Expiration Time: <omitted> (i) (x) the representations and warranties of the Company set forth in Section 4.05(a) (Capitalization) (other than for inaccuracies that are de minimis relative to the fully-diluted equity capitalization of the Company) and (y) Section 4.10(b) (Absence of Certain Changes) shall be true and correct in all respects as of the date of the Merger Agreement and as of the consummation of the Offer, as if made at such time, except to the extent any such representation or warranty expressly relates to a specific date (in which case on and as of such specific date) (Page 45)\n\nConditions of the Offer <omitted> (i) (x) the representations and warranties of the Company set forth in Section 4.05(a) (Capitalization) (other than for inaccuracies that are de minimis relative to the fully-diluted equity capitalization of the Company) (Page 45)\n\nSection 4.01.\nCorporate Existence and Power.\n(b)\nThe Company is a corporation duly incorporated and validly existing under the laws of the State of Delaware and has all corporate powers and\nall  governmental  licenses,  authorizations,  Permits,  consents  and  approvals  required  to  carry  on  its  business  as  currently  conducted,  except  for  those  powers,\nlicenses,  authorizations,  Permits,  consents  and  approvals  the  absence  of  which  would  not  reasonably  be  expected  to  have,  individually  or  in  the  aggregate,  a\nMaterial Adverse Effect.\n<omitted>\n\nSection  4.02.\nCorporate  Authorization. \nAssuming  the  representations  and  warranties  in \nSection  5.09\nare  true  and  correct  and  the  transactions\ncontemplated hereby are consummated and the Merger \nbecomes effective in accordance with Section 251(h) of the DGCL, the Company has all requisite corporate\npower and authority to \nexecute and deliver this Agreement, to perform its obligations hereunder and to consummate the Merger in accordance with Section 251(h)\nof the DGCL. Assuming the representations and warranties in Section 5.09 are true and correct and the transactions contemplated hereby are consummated and the Merger becomes effective in accordance with Section 251(h) of the DGCL, the execution, delivery and performance by the Company of this Agreement and the consummation by the Company of the transactions contemplated hereby have been duly and validly authorized by all necessary corporate action, and no other corporate proceedings on the part of the Company are necessary to authorize this Agreement or to consummate the transactions contemplated hereby (subject to the filing and recordation of appropriate merger documents as required by the DGCL).\n\n<omitted>\n\nThis Agreement has been duly and validly executed and delivered \nby the\nCompany and, assuming the due authorization, execution and delivery by Parent and Merger Subsidiary, constitutes a legal, valid \nand binding obligation of the\nCompany, enforceable against the Company in accordance with its terms, subject to the effect of any \napplicable bankruptcy, insolvency (including all laws relating\nto fraudulent transfers), reorganization, moratorium or similar laws \naffecting creditors’ rights generally and subject to the effect of general principles of equity\n(regardless of whether \nconsidered in a proceeding at law or in equity) (the “\nBankruptcy and Equity Exception\n”).\n\n\n\n\n<omitted>\n\n\nConditions of the Offer \n\nNotwithstanding any other term of the Offer or this Agreement and in addition to (and not in limitation of) Merger Subsidiary’s right to extend and  amend  the  Offer  pursuant  to  the  provisions  of  the Agreement,  Parent  shall  not  be  required  to  accept  for  payment  or,  subject  to  any  applicable  rules  and regulations  of  the  SEC,  including  Rule  14e-l(c)  under  the  1934  Act  (relating  to  Parent’s  obligation  to  pay  for  or  return  tendered  Shares  promptly  after  the termination  or  withdrawal  of  the  Offer),  to  pay  for  any  Shares  validly  tendered  and  not  validly  withdrawn  in  the  Offer,  unless,  immediately  prior  to  the  then applicable Offer Expiration Time: \n\n<omitted> \n\n(d)         (i) (x) the representations and warranties of the Company set forth in <omitted> (y) Section 4.10(b) (Absence of Certain Changes) shall be true and correct in all respects as of the date of the Merger Agreement and as of the consummation of the Offer, as if made at such time, except to the extent any such representation or warranty expressly relates to a specific date (in which case on and as of such specific date) (ii) the representations and warranties of the Company set forth in Section 4.01 (Corporate Existence), Section 4.02 (Corporate Authorization), Section 4.05 (other than Section 4.05(a)) (Capitalization) and Section 4.23 (Finders’ Fees) shall be true and correct in all material respects as of the date of the Merger Agreement and as of the consummation of the Offer, as if made at such time, except to the extent any such representation or warranty expressly relates to a specific date (in which case on and as of such specific date) and (Page 45)\n\nSection 4.01.\nCorporate Existence and Power.\n(b)\nThe Company is a corporation duly incorporated and validly existing under the laws of the State of Delaware \n<omitted>\n\nSection  4.02.\nCorporate  Authorization. \n<omitted> the Company has all requisite corporate\npower and authority to \nexecute and deliver this Agreement, to perform its obligations hereunder and to consummate the Merger in accordance with Section 251(h)\nof the DGCL. Assuming the representations and warranties in Section 5.09 are true and correct and the transactions contemplated hereby are consummated and the Merger becomes effective in accordance with Section 251(h) of the DGCL, the execution, delivery and performance by the Company of this Agreement and the consummation by the Company of the transactions contemplated hereby have been duly and validly authorized by all necessary corporate action, and no other corporate proceedings on the part of the Company are necessary to authorize this Agreement or to consummate the transactions contemplated hereby (subject to the filing and recordation of appropriate merger documents as required by the DGCL).\n\n<omitted>\n\nThis Agreement <omitted> constitutes a legal, valid \nand binding obligation of the\nCompany, enforceable against the Company \n\n<omitted>\n\n\n\n\nConditions of the Offer <omitted> \n\n(d)         (i) (x) the representations and warranties of the Company set forth in <omitted> (y) Section 4.10(b) (Absence of Certain Changes) shall be true and correct in all respects <omitted> (ii) the representations and warranties of the Company set forth in Section 4.01 (Corporate Existence), Section 4.02 (Corporate Authorization), Section 4.05 (other than Section 4.05(a)) (Capitalization) and Section 4.23 (Finders’ Fees) shall be true and correct in all material respects (Page 45)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 6.01.     Conduct of the Company. Except for matters set forth in Section 6.01 of the Company Disclosure Letter, as contemplated by this Agreement (including any actions taken by the Company or any of its Subsidiaries pursuant to Section 8.07(h)), as required by Applicable Law or Contract, due to factors excluded from the definition of Material Adverse Effect, or with the prior written consent of Parent (which consent shall not be unreasonably withheld, conditioned or delayed, and shall be deemed to be given if, within five (5) Business Days after the Company has provided to Parent a written request for consent, Parent has not rejected such request in writing), from and after the date hereof until the earlier of the Effective Time or the date this Agreement is terminated, as applicable, (I) the Company shall, and shall cause each of its Subsidiaries to, conduct its business in the ordinary course (except for any actions taken reasonably and in good faith in response to COVID-19 or COVID-19 Measures) and use its reasonable best efforts to (x) preserve intact its present business organization, (y) keep available the services of its directors, officers and key employees and (z) maintain existing relationships with its material suppliers and others having material business relationships with it, and, without limiting the generality of the foregoing, <omitted> References to “ordinary course” or “ordinary course of business” refers to the ordinary course of business of the  Company  and  the  Subsidiaries  of  the  Company,  taken  as  a  whole,  materially  consistent  with  past  practice,  and,  except  with  respect  to Section  6.01(II),reasonable actions or omissions taken or to be taken by the Company in good faith from time to time in response to changing economic and other conditions, circumstances  or  events  relating  to  or  arising  from  COVID-19  or  COVID-19  Measures  and  the  results  thereof.  (Page 27)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 10.01. Termination. This Agreement may be terminated and the Transactions may be abandoned at any time only as follows: <omitted> (d)               by the Company, if:   (i)             at any time prior to the Acceptance Time, the Company Board authorizes the Company to enter into a definitive agreement concerning a Superior Proposal pursuant to Section 6.03(h) and the Company contemporaneously enters into such definitive agreement concerning such Superior Proposal; provided, that the Company pays the Company Termination Fee payable pursuant to Section 11.05(a)(ii);  (Page 39)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\n“knowledge” of any Person that is not an individual means the actual knowledge of such Person’s executive officers; provided, however, that “knowledge” of the Company means the actual knowledge of the individuals listed in Section 1.01(a) of the Company Disclosure Letter.  (Page 6)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 11.05. Expenses. <omitted> (a)               Termination Fees. <omitted> (iii) If <omitted> this Agreement is terminated <omitted> (C) within nine (9) months after such termination, the Company enters into a definitive agreement with respect to an Acquisition Proposal and, at any time thereafter, consummates such Acquisition Proposal, then the Company shall pay to Parent the Company Termination Fee by wire transfer of same-day funds on the date of consummation of such Acquisition Proposal.  (Page 41)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\n. “Material Adverse Effect” means an event, occurrence, development, circumstance, change or effect that has a material adverse effect on the condition (financial or otherwise), business, assets or results of operations of the Company and its Subsidiaries, taken as a whole, excluding any effect resulting from (i)  changes in the financial, securities, credit, debt, banking or other capital markets or conditions (including changes therein) or foreign or domestic economic, financial, regulatory, legislative, political or social conditions (including changes therein), (ii) changes or conditions generally affecting the industry in which the Company and its Subsidiaries operate or to the industries to which the Company and its Subsidiaries sell their products and services, including changes in interest and exchange rates or commodity pricing, in the United States or any other jurisdiction in which the Company or its Subsidiaries operate, (iii) geopolitical conditions, the occurrence, escalation, outbreak or worsening of hostilities, acts of war (whether or not declared), tariffs, trade wars, transportation delays (including work stoppages or port closures), cyber-attacks, acts of armed hostility, sabotage, civil unrest, protests and public demonstrations, insurrection, domestic or international terrorism or national or international calamity or other occurrences of instability, (iv) any (1) plagues, pandemics (including SARS-CoV-2 or COVID-19 (collectively, “COVID-19”)) or any escalation or worsening or subsequent waves thereof, epidemics or other outbreaks of diseases or public health events, or (2) hurricane, tornado, tsunami, flood, volcanic eruption, earthquake, nuclear incident, weather conditions or other natural or man-made disaster or other force majeure event, (v) any quarantine, “shelter in place,” “stay at home,” workforce reduction, social distancing, shut down, closure, sequester, safety or similar laws, directives, restrictions, guidelines, responses or recommendations of or promulgated by any Governmental Authority, including the Centers for Disease Control and Prevention and the World Health Organization, or other reasonable actions taken, in each case, in connection with or in response to COVID-19 and any evolutions or mutations thereof or related or associated epidemics, pandemics or disease outbreaks (all of the foregoing, “COVID-19 Measures”), (vi) changes or prospective changes in Applicable Law, Tax or GAAP or authoritative interpretation or enforcement thereof on or after the date hereof, (vii) any failure, in and of itself, of the Company or any of its Subsidiaries to meet any internal or published projections, forecasts, guidance, estimates or predictions in respect of revenues, earnings or other financial or operating metrics or other matters before, on or after the date hereof, or changes or prospective changes in the market price or trading volume of the securities of such Person or the credit rating of the Company (whether made by the Company or third parties) (it being understood that the underlying facts giving rise or contributing to such failure or change may be taken into account in determining whether there has been a Material Adverse Effect if such facts are not otherwise excluded under this definition), (viii) any seasonal fluctuations materially consistent with historical seasonal fluctuations affecting the business of the Company and its Subsidiaries, (ix) the identity of, or any facts or circumstances relating to Parent, Merger Subsidiary or their respective Affiliates, (x) the negotiation, announcement, pendency or consummation of the Transactions, including any loss or change in relationship with any supplier, vendor, reseller, customer, distributor, lender, employee, investor, venture partner or other business partner of the Company or its Subsidiaries (other than for the purpose of any representation or warranty in respect of a Material Contract with any such counterparty contained in Section 4.04), (xi) any litigation, suit, action or proceeding in respect of this Agreement or the other Transaction Documents (or the transactions contemplated hereby or thereby), or the Offer Documents (including breach of fiduciary duty and disclosure claims), and (xii) (1) any action taken by the Company or any of its Subsidiaries at the written request, or with the written consent, of Parent or Merger Subsidiary or (2) compliance by the Company or any of its Subsidiaries with the express terms of, or the taking by the Company or any of its Subsidiaries of any action expressly required by, this Agreement (including Section 8.07(h)), or the failure by the Company or any of its Subsidiaries to take any action expressly prohibited by this Agreement (other than the obligations to operate in the ordinary course or restrictions on taking certain actions pursuant to Section 6.01); except, in the case of clauses (ii) through (vi), to the extent having a materially disproportionate effect on the Company and its Subsidiaries, taken as a whole, relative to other participants in the industry in which the Company and its Subsidiaries operate (in which case the incremental materially disproportionate impact or impacts may be taken into account in determining whether there has been a Material Adverse Effect).  (Page 7)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 6.03. Go-Shop; No Solicitation. <omitted> (e)                Notwithstanding anything contained in this Agreement to the contrary, at any time prior to the Acceptance Time, if the Company Board determines, after consultation with outside legal counsel, that the failure to take such action would reasonably be expected to be inconsistent with its fiduciary duties, the Company Board may make an Adverse Recommendation Change; provided, that, if the Company is making an Adverse Recommendation Change in response to any fact, event, change, development or set of circumstances other than an Acquisition Proposal (which shall be governed by Section 6.03(h)), then the Company Board shall not make such Adverse Recommendation Change unless the Company has (i) provided to Parent at least three (3) calendar days’ prior written notice that it intends to take such action and specifying in reasonable detail the facts underlying the decision by the Company Board to take such action and (ii) during such three (3) calendar day period, if requested by Parent, engaged in negotiations with Parent to amend this Agreement in such a manner that obviates the need for such Adverse Recommendation Change.\n <omitted>  \n(h) Further, the Company Board shall not make an Adverse Recommendation Change in response to an Acquisition Proposal (or terminate this Agreement pursuant to Section 10.01(d)(i)), unless (i) the Company Board has determined, after consultation with its financial advisor and outside legal counsel, that such Acquisition Proposal constitutes a Superior Proposal,  (Page 30)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_134\" title=\"contract_134\">\nSection 6.03. Go-Shop; No Solicitation. <omitted> (h)                Further, the Company Board shall not make an Adverse Recommendation Change in response to an Acquisition Proposal (or terminate this Agreement pursuant to Section 10.01(d)(i)), unless (i) the Company Board has determined, after consultation with its financial advisor and outside legal counsel, that such Acquisition Proposal constitutes a Superior Proposal, (ii) the Company promptly notifies Parent in writing, at least three (3) calendar days before taking such action, of the determination of the Company Board that such Acquisition Proposal constitutes a Superior Proposal and of its intention to take such action, attaching the most current version of the proposed agreement or material written terms under which such Superior Proposal is proposed to be consummated and the identity of the Third Party making such Superior Proposal and the material terms thereof and (iii) the Company Board (A) shall have negotiated, and shall have directed its Representatives to negotiate, in good faith with Parent during such notice period, to the extent Parent requests to negotiate, to enable Parent to propose in writing a binding offer to effect revisions to the terms of this Agreement such that it would cause such Superior Proposal to no longer constitute a Superior Proposal or, in connection with an Adverse Recommendation Change, it would cause the Company Board or such committee or subcommittee to no longer believe that the failure to make an Adverse Recommendation Change would reasonably be expected to be inconsistent with the Company Board’s fiduciary duties under Applicable Law, (B) shall have considered in good faith any revisions to this Agreement irrevocably proposed in writing by Parent and (C) shall have determined that such Acquisition Proposal would continue to constitute a Superior Proposal and in connection with an Adverse Recommendation Change, shall have determined that the failure to make an Adverse Recommendation Change would continue to reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Law, in each case, if such revisions were to be given effect (it being understood and agreed that any material amendment to the financial terms or other material terms of such Superior Proposal shall require a new written notification from the Company but only a new two (2) calendar day period under this Section 6.03(h)). Any termination of this Agreement pursuant to Section 6.03(e) or this Section 6.03(h) shall be in accordance with the applicable provisions of Section 10.01 and, to the extent required under the terms of Section 11.05(a)(i) or (a)(ii), the Company shall pay Parent the applicable Company Termination Fee in accordance with Section 11.05(a)(i) or (a)(ii), as applicable. (Page 30)\n\nSection 6.03. Go-Shop; No Solicitation. <omitted> the Company Board shall not make an Adverse Recommendation Change in response to an Acquisition Proposal <omitted> unless <omitted> (ii) the Company promptly notifies Parent in writing, at least three (3) calendar days before taking such action, of the determination of the Company Board that such Acquisition Proposal constitutes a Superior Proposal and of its intention to take such action, <omitted> and (iii) the Company Board (A) shall have negotiated <omitted> in good faith with Parent during such notice period, to the extent Parent requests to negotiate (Page 30)\n\nSection 6.03. Go-Shop; No Solicitation. <omitted> (h)                Further, the Company Board shall not make an Adverse Recommendation Change in response to an Acquisition Proposal (or terminate this Agreement pursuant to Section 10.01(d)(i)), unless (i) the Company Board has determined, after consultation with its financial advisor and outside legal counsel, that such Acquisition Proposal constitutes a Superior Proposal, (ii) the Company promptly notifies Parent in writing, at least three (3) calendar days before taking such action, of the determination of the Company Board that such Acquisition Proposal constitutes a Superior Proposal and of its intention to take such action, attaching the most current version of the proposed agreement or material written terms under which such Superior Proposal is proposed to be consummated and the identity of the Third Party making such Superior Proposal and the material terms thereof and (iii) the Company Board (A) shall have negotiated, and shall have directed its Representatives to negotiate, in good faith with Parent during such notice period, to the extent Parent requests to negotiate, to enable Parent to propose in writing a binding offer to effect revisions to the terms of this Agreement such that it would cause such Superior Proposal to no longer constitute a Superior Proposal or, in connection with an Adverse Recommendation Change, it would cause the Company Board or such committee or subcommittee to no longer believe that the failure to make an Adverse Recommendation Change would reasonably be expected to be inconsistent with the Company Board’s fiduciary duties under Applicable Law, (B) shall have considered in good faith any revisions to this Agreement irrevocably proposed in writing by Parent and (C) shall have determined that such Acquisition Proposal would continue to constitute a Superior Proposal and in connection with an Adverse Recommendation Change, shall have determined that the failure to make an Adverse Recommendation Change would continue to reasonably be expected to be inconsistent with the directors’ fiduciary duties under applicable Law, in each case, if such revisions were to be given effect (it being understood and agreed that any material amendment to the financial terms or other material terms of such Superior Proposal shall require a new written notification from the Company but only a new two (2) calendar day period under this Section 6.03(h)). Any termination of this Agreement pursuant to Section 6.03(e) or this Section 6.03(h) shall be in accordance with the applicable provisions of Section 10.01 and, to the extent required under the terms of Section 11.05(a)(i) or (a)(ii), the Company shall pay Parent the applicable Company Termination Fee in accordance with Section 11.05(a)(i) or (a)(ii), as applicable. (Page 30)\n\nSection 6.03. Go-Shop; No Solicitation. <omitted> the Company Board shall not make an Adverse Recommendation Change in response to an Acquisition Proposal <omitted> unless <omitted> the Company promptly notifies Parent in writing, <omitted> of the determination of the Company Board that such Acquisition Proposal constitutes a Superior Proposal and of its intention to take such action, <omitted> (it being understood and agreed that any material amendment to the financial terms or other material terms of such Superior Proposal shall require a new written notification from the Company but only a new two (2) calendar day period under this Section 6.03(h)). (Page 30)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Knowledge",
+      "question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        },
+        {
+          "text": "force majeure"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "MAE Forward looking standard (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "MAE Forward looking standard (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Operating and Efforts Covenant",
+      "question": "Buyer consent requirement (ordinary course)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Consent may not be unreasonably withheld, conditioned or delayed"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "subquestions": [],
+      "source_question": "Buyer consent requirement (ordinary course)-Answer",
+      "answers": [
+        {
+          "text": "Consent may not be unreasonably withheld, conditioned or delayed"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Relational language (MAE carveout)-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "General economic and financial conditions (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Number of additional matching rights periods for modifications (COR)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Continuous matching right"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Number of additional matching rights periods for modifications (COR)",
+      "answers": [
+        {
+          "text": "Continuous matching right"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (intervening event)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (intervening event)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (board determination only)-answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (board determination only)-answer",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Material breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Other"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Material breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted with board fiduciary determination only",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted with board fiduciary determination only",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        15559
+      ],
+      "min_char_offset": 15559,
+      "min_frac": 0.5099,
+      "min_tokens_from_start": 3889,
+      "min_tokens_from_end": 3739
+    },
+    "q02": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q03": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q04": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q05": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q06": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q07": {
+      "char_offsets": [
+        12880
+      ],
+      "min_char_offset": 12880,
+      "min_frac": 0.4221,
+      "min_tokens_from_start": 3220,
+      "min_tokens_from_end": 4408
+    },
+    "q08": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q09": {
+      "char_offsets": [
+        16482
+      ],
+      "min_char_offset": 16482,
+      "min_frac": 0.5402,
+      "min_tokens_from_start": 4120,
+      "min_tokens_from_end": 3508
+    },
+    "q10": {
+      "char_offsets": [
+        12880
+      ],
+      "min_char_offset": 12880,
+      "min_frac": 0.4221,
+      "min_tokens_from_start": 3220,
+      "min_tokens_from_end": 4408
+    },
+    "q11": {
+      "char_offsets": [
+        23524
+      ],
+      "min_char_offset": 23524,
+      "min_frac": 0.771,
+      "min_tokens_from_start": 5881,
+      "min_tokens_from_end": 1747
+    },
+    "q12": {
+      "char_offsets": [
+        21872
+      ],
+      "min_char_offset": 21872,
+      "min_frac": 0.7168,
+      "min_tokens_from_start": 5468,
+      "min_tokens_from_end": 2160
+    },
+    "q13": {
+      "char_offsets": [
+        21872
+      ],
+      "min_char_offset": 21872,
+      "min_frac": 0.7168,
+      "min_tokens_from_start": 5468,
+      "min_tokens_from_end": 2160
+    },
+    "q14": {
+      "char_offsets": [
+        50
+      ],
+      "min_char_offset": 50,
+      "min_frac": 0.0016,
+      "min_tokens_from_start": 12,
+      "min_tokens_from_end": 7616
+    },
+    "q15": {
+      "char_offsets": [
+        15905
+      ],
+      "min_char_offset": 15905,
+      "min_frac": 0.5213,
+      "min_tokens_from_start": 3976,
+      "min_tokens_from_end": 3652
+    },
+    "q16": {
+      "char_offsets": [
+        21872
+      ],
+      "min_char_offset": 21872,
+      "min_frac": 0.7168,
+      "min_tokens_from_start": 5468,
+      "min_tokens_from_end": 2160
+    }
+  }
+}

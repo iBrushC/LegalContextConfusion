@@ -1,0 +1,578 @@
+{
+  "cell_id": "d102_baseline",
+  "dataset": "maud",
+  "doc_index": 102,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 8100,
+  "actual_chars": 32398,
+  "target_document_id": "contract_54",
+  "target_document_title": "EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …",
+  "distractor_ids": [],
+  "target_offset": 173,
+  "target_end": 31745,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSection 7.02    Termination Fee; Liquidated Damages <omitted> (ii) in the event that <omitted> this Agreement is terminated <omitted> (b) prior to the date that is twelve (12) months after the date of such termination, First Choice enters into any agreement to consummate, or consummates an Acquisition Transaction (and such Acquisition Transaction relates to the same Acquisition Proposal as that referred to above), then First Choice shall, on the earlier of the date it enters into such agreement and the date of consummation of such transaction, pay Enterprise the Termination Fee, provided, that for purposes of this Section 7.02(a), all references in the definition of Acquisition Transaction to “twenty percent (20%)” shall instead refer to “fifty percent (50%)”.  (Page 90)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted>\n ( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, \n\nth \n\n68\n\n\nthat an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law (it being understood that the initial determination under this clause will not be considered a First Choice Subsequent Determination), but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; provided, however, that Enterprise shall not have any obligation to propose any adjustments, modifications or amendments to the terms and conditions of this Agreement, and (iii) at the end of the Notice Period, after taking into account any such adjusted, modified or amended terms, if any, as may have been proposed by Enterprise in writing before expiration of the Notice Period, the First Choice Board has again in good faith, after consultation with outside legal counsel and its financial advisor, made the determination that such Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law. In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days. <omitted>\n\nSection 7.01    Termination. This Agreement may be terminated, and the transactions contemplated hereby may be abandoned: <omitted> (i)    Superior Proposal. By First Choice, at any time prior to the Requisite First Choice Shareholder Approval being obtained, in the event that the First Choice Board (or any committee thereof) makes a First Choice Subsequent Determination with respect to a Superior Proposal; provided, that First Choice has complied with all of its obligations under Section 5.11. (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted> ( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, \n\nth \n\n68\n\n\nthat an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law <omitted>. \n<omitted>\n\nSection 7.01    Termination. This Agreement may be terminated, and the transactions contemplated hereby may be abandoned: <omitted> (i)    Superior Proposal. By First Choice, at any time prior to the Requisite First Choice Shareholder Approval being obtained, in the event that the First Choice Board (or any committee thereof) makes a First Choice Subsequent Determination with respect to a Superior Proposal; provided, that First Choice has complied with all of its obligations under Section 5.11. (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted> ( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, \n\nth \n\n68\n\n\nthat an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law (it being understood that the initial determination under this clause will not be considered a First Choice Subsequent Determination), but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; provided, however, that Enterprise shall not have any obligation to propose any adjustments, modifications or amendments to the terms and conditions of this Agreement, and (iii) at the end of the Notice Period, after taking into account any such adjusted, modified or amended terms, if any, as may have been proposed by Enterprise in writing before expiration of the Notice Period, the First Choice Board has again in good faith, after consultation with outside legal counsel and its financial advisor, made the determination that such Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law. In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days. \n<omitted>\n\nSection 7.01    Termination. This Agreement may be terminated, and the transactions contemplated hereby may be abandoned: <omitted> (i)    Superior Proposal. By First Choice, at any time prior to the Requisite First Choice Shareholder Approval being obtained, in the event that the First Choice Board (or any committee thereof) makes a First Choice Subsequent Determination with respect to a Superior Proposal; provided, that First Choice has complied with all of its obligations under Section 5.11. (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted>  In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days.\n\n<omitted>\n\nSection 7.01    Termination. This Agreement may be terminated, and the transactions contemplated hereby may be abandoned: <omitted> (i)    Superior Proposal. By First Choice, at any time prior to the Requisite First Choice Shareholder Approval being obtained, in the event that the First Choice Board (or any committee thereof) makes a First Choice Subsequent Determination with respect to a Superior Proposal; provided, that First Choice has complied with all of its obligations under Section 5.11. (Pages 73-74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted> \n\n( d )    Subject to  Section  5.11(e),  neither  the  First  Choice  Board  nor  any  committee thereof  shall  (i)  withhold,  withdraw,  change, qualify, amend or modify, or publicly propose to withdraw, change, qualify, amend or modify, in a manner adverse in any respect to the interest of Enterprise,  or  take  any other action or make any other public statement inconsistent with, the First Choice Recommendation; (ii) fail to publicly affirm  the  First Choice  Recommendation  within  five  (5)  Business  Days  following  a  request by  Enterprise  (or  such  fewer  number  of  days  as remains prior to the First Choice Meeting); (iii) approve or recommend, or publicly propose to approve or recommend, any Acquisition Proposal; (iv) resolve to take, or publicly announce an intention to take, any of the foregoing actions (each of (i), (ii), (iii) or (iv) a “First Choice Subsequent Determination”)\n<omitted>\n\n( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, that an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law (it being understood that the initial determination under this clause will not be considered a First Choice Subsequent Determination), but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; provided, however, that Enterprise shall not have any obligation to propose any adjustments, modifications or amendments to the terms and conditions of this Agreement, and (iii) at the end of the Notice Period, after taking into account any such adjusted, modified or amended terms, if any, as may have been proposed by Enterprise in writing before expiration of the Notice Period, the First Choice Board has again in good faith, after consultation with outside legal counsel and its financial advisor, made the determination that such Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law. In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days.  (Pages 73-74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSection 5.11    No Solicitation by First Choice; Superior Proposals.  <omitted>  ( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, that an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law (it being understood that the initial determination under this clause will not be considered a First Choice Subsequent Determination), but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; provided, however, that Enterprise shall not have any obligation to propose any adjustments, modifications or amendments to the terms and conditions of this Agreement, and (iii) at the end of the Notice Period, after taking into account any such adjusted, modified or amended terms, if any, as may have been proposed by Enterprise in writing before expiration of the Notice Period, the First Choice Board has again in good faith, after consultation with outside legal counsel and its financial advisor, made the determination that such Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law. In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days. (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals.  <omitted> \n\n( d )    Subject to  Section  5.11(e),  neither  the  First  Choice  Board  nor  any  committee thereof  shall  (i)  withhold,  withdraw,  change, qualify, amend or modify, or publicly propose to withdraw, change, qualify, amend or modify, in a manner adverse in any respect to the interest of Enterprise,  or  take  any other action or make any other public statement inconsistent with, the First Choice Recommendation; (ii) fail to publicly affirm  the  First Choice  Recommendation  within  five  (5)  Business  Days  following  a  request by  Enterprise  (or  such  fewer  number  of  days  as remains prior to the First Choice Meeting); (iii) approve or recommend, or publicly propose to approve or recommend, any Acquisition Proposal; (iv) resolve to take, or publicly announce an intention to take, any of the foregoing actions (each of (i), (ii), (iii) or (iv) a “First Choice Subsequent Determination”)\n<omitted>\n\n ( e )   <omitted>  the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination  <omitted> but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted> ( e )    Notwithstanding Section 5.11(d) or any other provision of this Agreement, prior to obtaining the Requisite First Choice Shareholder Approval, the First Choice Board (or any committee thereof) may make a First Choice Subsequent Determination after the fifth (5 ) Business Day following Enterprise’s receipt of a notice (the “Notice of Determination”) from First Choice informing Enterprise that the First Choice Board (or such committee) has determined in good faith, after consultation with outside legal counsel and its financial advisor, that an Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law (it being understood that the initial determination under this clause will not be considered a First Choice Subsequent Determination), but only if: (i) the Notice of Determination includes or is accompanied by the material terms and conditions of such Superior Proposal and the identity of the Person making such Superior Proposal, including copies of any proposed material agreements providing for such Superior Proposal; (ii) during the five (5) Business Day period after receipt of the Notice of Determination (the “Notice Period”), First Choice and the First Choice Board shall have negotiated in good faith with Enterprise, to the extent Enterprise desires to negotiate, to make such adjustments, modifications or amendments to the terms and conditions of this Agreement as would enable First Choice to proceed with the First Choice Recommendation without a First Choice Subsequent Determination; provided, however, that Enterprise shall not have any obligation to propose any adjustments, modifications or amendments to the terms and conditions of this Agreement, and (iii) at the end of the Notice Period, after taking into account any such adjusted, modified or amended terms, if any, as may have been proposed by Enterprise in writing before expiration of the Notice Period, the First Choice Board has again in good faith, after consultation with outside legal counsel and its financial advisor, made the determination that such Acquisition Proposal constitutes a Superior Proposal and the failure to make a First Choice Subsequent Determination with respect to such Superior Proposal would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law. In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days. (Pages 73-74)\n\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted>  In the event of any material revisions to an Acquisition Proposal that is the subject of a Notice of Determination and that occur prior to a First Choice Subsequent Determination, First Choice shall be required to deliver a new Notice of Determination to Enterprise and again comply with the requirements of this Section 5.11(e), except that the Notice Period shall be reduced to three (3) Business Days. (Pages 73-74)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSection 5.11    No Solicitation by First Choice; Superior Proposals. <omitted> (b )    Notwithstanding Section 5.11(a) or any other provision of this Agreement, at any time prior to obtaining the Requisite First Choice Shareholder Approval, First Choice may take any of the actions described in Section 5.11(a) if, but only if, (i) First Choice has received a bona fide unsolicited written Acquisition Proposal that did not result from a breach of this Section 5.11; (ii) the First Choice Board reasonably determines in good faith, after consultation with its outside financial advisor and outside legal counsel, that (a) such Acquisition Proposal constitutes or could reasonably be expected to lead to a Superior Proposal and (b) the failure to take such actions would breach or reasonably be expected to result in a breach of its fiduciary duties under applicable Law; and (iii) prior to furnishing or affording access to any information or data with respect to First Choice or any First Choice Subsidiary or otherwise relating to an Acquisition Proposal, First Choice receives from such Person a confidentiality agreement with \n\n67\n\n\nterms no less favorable to First Choice than those contained in the confidentiality agreement with Enterprise (it being understood that nothing therein shall have the effect of a standstill provision). First Choice shall promptly provide to Enterprise any non-public information regarding First Choice or First Choice Subsidiaries provided to any other Person which was not previously provided to Enterprise, such additional information to be provided no later than the date of provision of such information to such other party.  (Pages 72-73)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nCOVENANTS Section 5.01    Covenants of First Choice. ( a )    During the period from the date of this Agreement until the Effective Time (or earlier termination of this Agreement in accordance with Article 7), except as set forth in Section 5.01(a) of the First Choice Disclosure Schedule as of the date hereof, except as expressly contemplated or permitted by this Agreement, except as required by applicable Law, or except with the prior written consent of Enterprise (which consent will not be unreasonably withheld or delayed), First Choice shall, and shall cause each First Choice Subsidiary to (a) carry on its business only in the Ordinary Course of Business, including in respect of loan loss provisioning, securities portfolio management, compensation and other expense management and other operations which are reasonably expected to impact First Choice’s shareholders’ equity, and in compliance in all material respects with all applicable Laws <omitted> \n\n“Ordinary  Course  of  Business” means  the  ordinary  course  of  business  of  First  Choice  and  First  Choice Subsidiaries  (including  First Choice  Bank)  or  Enterprise  and  Enterprise Subsidiaries  (including  EB&T),  as  applicable,  consistent  with  past practice, including with respect to frequency and amount in all material respects.  (Page 59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\n“Material Adverse Effect” means with respect to any Person, any effect, circumstance, occurrence or change that is material and adverse to the financial position, results of operations or business of such Person and its Subsidiaries, taken as a whole, or which would materially impair the ability of such Person to perform its obligations under this Agreement or otherwise materially impairs the ability of such Person to consummate the transactions contemplated hereby; provided, however, that Material Adverse Effect shall not be deemed to include the impact of (a) changes in banking and similar Laws of general applicability or interpretations thereof by Governmental Authorities, (b) changes in GAAP or regulatory accounting requirements applicable to banks or bank holding companies generally, (c) changes after the date of this Agreement in general economic or capital market conditions affecting financial institutions or their market prices generally, including, but not limited to, changes in levels of interest rates generally and any change in the value of deposits, borrowings or loan service rights associated therewith, (d) the effects of any action or omission taken by First Choice or any First Choice Subsidiary with the prior consent of Enterprise, and vice versa, or as otherwise expressly permitted or contemplated by this Agreement; (e) the impact of the Agreement and the transactions contemplated hereby, including the impact of any public announcement thereof, on relationships with customers or employees (including the loss of personnel subsequent to the date of this Agreement); (f) changes in national or international political or social conditions including the engagement by the United States in hostilities, whether or not pursuant to the declaration of a national emergency or war, or the occurrence of any military or terrorist attack upon or within the United States, and any national or global epidemic, pandemic or disease outbreak (including COVID-19), or the worsening of such conditions threatened or existing as of the date of this Agreement; (g) the failure, in and of itself, to meet earnings projections or internal financial forecasts, but not including the underlying causes thereof (unless otherwise excluded hereunder); (h) any actual or threatened Legal Proceeding against First Choice and/or the members of the First Choice Board related to this Agreement and the disposition, adjudication or settlement thereof; and (i) natural disaster or other force majeure event; provided, further, that any effect, circumstance, occurrence or change referred to in clauses (a), (b), (c), and (f)  above shall be taken into account in determining whether a Material Adverse Effect has occurred to the extent such effect, circumstance, occurrence or change has disproportionally affected First Choice and First Choice Subsidiaries or Enterprise and Enterprise Subsidiaries, as applicable, as compared to similarly situated participants in the banking industry. For the avoidance of doubt, any changes in any program administered by or related to the SBA under which First Choice participates, including, without limitation, any changes in any Laws \n\n96\n\n\napplicable or relating thereto (or any interpretations of any such Laws), that would (A) eliminate or materially limit or impair the ability of First Choice or any First Choice Subsidiary to originate or service Loans under any such program, or (B) eliminate or materially limit or impair Loan guarantees under such program, whether on a prospective or retroactive basis, in each case shall be deemed a “Material Adverse Effect” with respect to First Choice and its Subsidiaries, taken as a whole.  (Pages 101-102)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\n(b)    Without limiting the generality of, and in furtherance of the foregoing, during the period from the date of this Agreement until the Effective Time (or earlier termination of this Agreement in accordance with Article 7), except as set forth in Section 5.01(b) of the First Choice Disclosure Schedule as of the date hereof, except as expressly contemplated or permitted by this Agreement, except as required by applicable Law, or except with the prior written consent of Enterprise (which consent will not be unreasonably withheld or delayed), First Choice shall not, and shall cause each First Choice Subsidiary not to:  (Page 59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_54\" title=\"EX-2.1 AGREEMENT AND PLAN OF MERGER by and among ENTERPRISE FINANCIAL SERVICES CORP, ENTERPRISE BANK & TRUST, FIRST CHOICE BANCORP and …\">\nSpecific Performance. Shareholder acknowledges that (a) irreparable damage would occur in the event that Shareholder fails to comply with any of its obligations contained in this Agreement, (b) every obligation of Shareholder herein is material, and (c) in the event of such failure, Enterprise will not have an adequate remedy at law or in damages. Accordingly, Shareholder agrees that Enterprise shall be entitled to seek an injunction to prevent a breach of this Agreement and to seek to enforce specifically the terms and provisions hereof, in addition to any other remedy to which Enterprise is entitled at law or in equity.  (Page 118)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "FLS (MAE) applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "ability to consummate transaction"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "subquestions": [
+        "ability to consummate transaction"
+      ],
+      "source_question": "FLS (MAE) applies to",
+      "answers": [
+        {
+          "text": "ability to consummate transaction"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\""
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Action prohibited/omission required by the agreement-Answer",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR standard (superior offer)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"Reasonably likely/expected breach\" of fiduciary duties"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "subquestions": [],
+      "source_question": "COR standard (superior offer)",
+      "answers": [
+        {
+          "text": "\"Reasonably likely/expected breach\" of fiduciary duties"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Initial matching rights period (COR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "5 business days"
+      ],
+      "gold_labels": [
+        "5"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "subquestions": [],
+      "source_question": "Initial matching rights period (COR)-Answer",
+      "answers": [
+        {
+          "text": "5 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Initial matching rights period (FTR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "5 business days"
+      ],
+      "gold_labels": [
+        "5"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "subquestions": [],
+      "source_question": "Initial matching rights period (FTR)-Answer",
+      "answers": [
+        {
+          "text": "5 business days"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal must close during Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be still pending-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Acquisition Proposal required to be still pending-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Operating and Efforts Covenant",
+      "question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Applies to all negative covenants"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Applies only to specified negative covenants",
+        "Applies to all negative covenants"
+      ],
+      "subquestions": [],
+      "source_question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answers": [
+        {
+          "text": "Applies to all negative covenants"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Remedies",
+      "question": "Specific Performance-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "\"entitled to\" specific performance"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"entitled to seek\" specific performance",
+        "\"entitled to\" specific performance"
+      ],
+      "subquestions": [],
+      "source_question": "Specific Performance-Answer",
+      "answers": [
+        {
+          "text": "\"entitled to\" specific performance"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        27027
+      ],
+      "min_char_offset": 27027,
+      "min_frac": 0.8342,
+      "min_tokens_from_start": 6756,
+      "min_tokens_from_end": 1344
+    },
+    "q02": {
+      "char_offsets": [
+        27027
+      ],
+      "min_char_offset": 27027,
+      "min_frac": 0.8342,
+      "min_tokens_from_start": 6756,
+      "min_tokens_from_end": 1344
+    },
+    "q03": {
+      "char_offsets": [
+        27027
+      ],
+      "min_char_offset": 27027,
+      "min_frac": 0.8342,
+      "min_tokens_from_start": 6756,
+      "min_tokens_from_end": 1344
+    },
+    "q04": {
+      "char_offsets": [
+        27027
+      ],
+      "min_char_offset": 27027,
+      "min_frac": 0.8342,
+      "min_tokens_from_start": 6756,
+      "min_tokens_from_end": 1344
+    },
+    "q05": {
+      "char_offsets": [
+        27027
+      ],
+      "min_char_offset": 27027,
+      "min_frac": 0.8342,
+      "min_tokens_from_start": 6756,
+      "min_tokens_from_end": 1344
+    },
+    "q06": {
+      "char_offsets": [
+        23644
+      ],
+      "min_char_offset": 23644,
+      "min_frac": 0.7298,
+      "min_tokens_from_start": 5911,
+      "min_tokens_from_end": 2189
+    },
+    "q07": {
+      "char_offsets": [
+        10872
+      ],
+      "min_char_offset": 10872,
+      "min_frac": 0.3356,
+      "min_tokens_from_start": 2718,
+      "min_tokens_from_end": 5382
+    },
+    "q08": {
+      "char_offsets": [
+        15002
+      ],
+      "min_char_offset": 15002,
+      "min_frac": 0.4631,
+      "min_tokens_from_start": 3750,
+      "min_tokens_from_end": 4350
+    },
+    "q09": {
+      "char_offsets": [
+        1141
+      ],
+      "min_char_offset": 1141,
+      "min_frac": 0.0352,
+      "min_tokens_from_start": 285,
+      "min_tokens_from_end": 7815
+    },
+    "q10": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0053,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 8057
+    },
+    "q11": {
+      "char_offsets": [
+        173
+      ],
+      "min_char_offset": 173,
+      "min_frac": 0.0053,
+      "min_tokens_from_start": 43,
+      "min_tokens_from_end": 8057
+    },
+    "q12": {
+      "char_offsets": [
+        25511
+      ],
+      "min_char_offset": 25511,
+      "min_frac": 0.7874,
+      "min_tokens_from_start": 6377,
+      "min_tokens_from_end": 1723
+    },
+    "q13": {
+      "char_offsets": [
+        30921
+      ],
+      "min_char_offset": 30921,
+      "min_frac": 0.9544,
+      "min_tokens_from_start": 7730,
+      "min_tokens_from_end": 370
+    },
+    "q14": {
+      "char_offsets": [
+        30921
+      ],
+      "min_char_offset": 30921,
+      "min_frac": 0.9544,
+      "min_tokens_from_start": 7730,
+      "min_tokens_from_end": 370
+    },
+    "q15": {
+      "char_offsets": [
+        31745
+      ],
+      "min_char_offset": 31745,
+      "min_frac": 0.9798,
+      "min_tokens_from_start": 7936,
+      "min_tokens_from_end": 164
+    }
+  }
+}

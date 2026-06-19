@@ -1,0 +1,476 @@
+{
+  "cell_id": "d095_baseline",
+  "dataset": "maud",
+  "doc_index": 95,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 7122,
+  "actual_chars": 28487,
+  "target_document_id": "contract_48",
+  "target_document_title": "EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …",
+  "distractor_ids": [],
+  "target_offset": 176,
+  "target_end": 27500,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n“Company Material Adverse Effect” means any change, event, occurrence, state of facts, condition, circumstance, development or effect that, individually or in the aggregate with such other changes, events, occurrences, state of facts, conditions, circumstances, developments or effects, has had, or would reasonably be expected to have, a material adverse effect on the business, results of operations or financial condition of the Company; provided, however, that none of the following, and no change, event, occurrence, state of facts,   -62-\n\n\ncondition, circumstance, development or effect arising out of, or resulting from, any of the following, shall be deemed to constitute or be taken into account in determining whether there has occurred or would reasonably be expected to occur a Company Material Adverse Effect: (i) changes in the economy, credit or financial markets or political, regulatory or business conditions in the United States or any other countries in which the Company has any material operations; (ii) changes that are the result of factors generally affecting the industries, markets or geographical areas in which the Company conducts its businesses; (iii) changes in GAAP or in any Law unrelated to this Agreement or the Merger and of general applicability, including the repeal thereof, or in the interpretation or enforcement thereof, after the date hereof; (iv) any failure by the Company to meet any internal or public projections or forecasts or estimates of revenues or earnings for any period ending on or after the date hereof and prior to the Closing; provided that the exception in this clause (iv) shall not prevent or otherwise affect a determination that any change, event, occurrence, state of facts, condition, circumstance, development or effect (not otherwise excluded under this definition) underlying such failure has resulted in, or contributed to, or would reasonably be expected to result in, or contribute to, a Company Material Adverse Effect; (v) acts of war (whether or not declared), civil disobedience, hostilities, sabotage, cyberattacks (provided that the Company has not breached any representation or warranty in Section 5.15(d) or Section 5.15(e)), terrorism, military actions or the escalation of any of the foregoing, any hurricane, flood, tornado, earthquake or other catastrophic weather or natural disaster, or any epidemic, pandemic or outbreak of illness (including the COVID-19 (or SARS-CoV-2) virus) or other public health event or any other force majeure event, whether or not caused by any Person (other than the Company or any of its Affiliates or Representatives), or any national or international calamity or crisis; (vi) any actions taken or omitted to be taken by the Company that are expressly required to be taken by this Agreement or any actions taken or omitted to be taken with Parent’s prior written consent or at Parent’s written request (except for any obligation to operate in the ordinary course or similar obligation); provided, however, that the exceptions in this clause (vi) shall not apply with respect to references to Company Material Adverse Effect in the representations and warranties contained in Section 5.4 (and in Section 8.2(a) and Section 9.4(b) to the extent related to such portions of such representation); (vii) any changes, events, occurrences, state of facts, conditions, circumstances, developments or effects that were caused by the negotiation of, entry into or announcement, pendency or performance of the transactions contemplated by this Agreement or any Transaction Litigation, including any changes in the relationship of the Company, contractual or otherwise, with customers, employees, unions, suppliers, distributors, financing sources, partners or similar relationships; provided, however, that the exceptions in this clause (vii) shall not apply with respect to references to Company Material Adverse Effect in the representations and warranties contained in Section 5.4 (and in Section 8.2(a) and Section 9.4(b) to the extent related to such portions of such representation); (viii) a decline in the market price, or change in trading volume, of the Shares on NASDAQ; provided that the exception in this clause (viii) shall not prevent or otherwise affect a determination that any change, event, occurrence, state of facts, condition, circumstance, development or effect (not otherwise excluded under this definition) underlying such decline or change has resulted in, or contributed to, or would reasonably be expected to result in, or contribute to, a Company Material Adverse Effect; or (ix) the results of, or any data derived from or any delay in (including any delays in identifying, recruiting, training or enrolling suitable patients or clinical investigators), any pre-clinical or clinical testing being conducted for Acoramidis or any competitive products or Product Candidates of any other Person; provided, further, that, with respect to clauses (i), (ii), (iii), and (v), such change, event, occurrence, state of facts, condition, circumstance, development or effect shall be taken into account in determining whether a “Company Material Adverse Effect” has occurred to the extent it disproportionately adversely affects the Company compared to other companies of similar size in the industry in which the Company primarily operates.  (Pages 67-68)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n7.2.    Company Acquisition Proposals. (a)    No Solicitation or Negotiation. The Company agrees that, except as expressly permitted by this Section 7.2, neither it nor any of its directors, officers and employees shall, and that it shall instruct and use its reasonable best efforts to cause its investment bankers, attorneys, accountants and other advisors or representatives (such directors, officers, employees, investment bankers, attorneys, accountants and other advisors or representatives, collectively, “Representatives”) not to, directly or indirectly: (i)    initiate, solicit or knowingly encourage or facilitate any inquiries or the making of any proposal or offer that constitutes, or would reasonably be expected to lead to, any Company Acquisition Proposal; \n\n(ii)    engage in, continue or otherwise participate in any discussions or negotiations regarding, or that would reasonably be expected to lead to, any Company Acquisition Proposal, or provide any nonpublic information or data to any Person in connection with the foregoing, in each case, except to notify such Person of the existence of the provisions of this Section 7.2; or \n\n(iii)    resolve or agree to do any of the foregoing.  (Page 42)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n7.2.    Company Acquisition Proposals. <omitted> (b) No Change in Company Recommendation or Alternative Acquisition Agreement. <omitted> Notwithstanding anything to the contrary set forth in this Section 7.2(b), the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee may, prior to but not after the time the Requisite Company Stockholder Approvals are obtained, make a Change of Company Recommendation if, and only if, (A) an Intervening Event has occurred and the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in good faith, after consulting with its financial advisor and outside legal counsel, that failure to take such action would be inconsistent with such directors’ fiduciary duties under applicable Law, or (B) the Company receives a Company Acquisition Proposal and the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in good faith, after consulting with its financial advisor and outside legal counsel, that such Company Acquisition Proposal constitutes a Company Superior Proposal and that failure to take such action would be inconsistent with such directors’ fiduciary duties under applicable Law; provided that neither the Company Board nor the Special Committee may take any such action (and the Special Committee may not recommend to the Company Board to take such action) unless (I) prior to making such Change of Company Recommendation, the Company provides prior written notice to Parent at least four (4) Business Days in advance (the “Notice Period”) of its intention to take such action and the basis thereof, which notice shall include, in the case of a Company Superior Proposal, the information required under Section 7.2(e) and, in the case of an Intervening   -38-\n\n\nEvent, a reasonably detailed description of such Intervening Event, (II) during the Notice Period, the Company shall, and shall cause its employees, financial advisor and outside legal counsel to, be reasonably available to negotiate with Parent in good faith should Parent propose to make amendments or other revisions to the terms and conditions of this Agreement such that, in the case of a Company Superior Proposal, such Company Acquisition Proposal no longer constitutes a Company Superior Proposal or, in the case of an Intervening Event, the failure to take such action would no longer be inconsistent with the directors’ fiduciary duties under applicable Law as determined in the good faith judgment of the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee, after consulting with its financial advisor and outside legal counsel, and (III) the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee, as the case may be, has taken into account any amendments or other revisions to the terms and conditions of this Agreement agreed to by Parent in writing prior to the end of the Notice Period and has determined in good faith, after consulting with its financial advisor and outside legal counsel, that a failure to make such Change of Company Recommendation would still be inconsistent with the directors’ fiduciary duties under applicable Law; it being understood that any amendments or other revisions to any Company Acquisition Proposal will be deemed to be a new Company Acquisition Proposal, including for purposes of the Notice Period; provided, however, subsequent to the initial Notice Period, the Notice Period shall be reduced to two (2) Business Days. (Pages 43-44)\n\n7.2.    Company Acquisition Proposals. <omitted> (b) <omitted> the Company Board <omitted> may <omitted> make a Change of Company Recommendation <omitted>; provided that neither the Company Board nor the Special Committee may take any such action <omitted> unless (I) prior to making such Change of Company Recommendation, the Company provides prior written notice to Parent at least four (4) Business Days in advance (the “Notice Period”) of its intention to take such action and the basis thereof, which notice shall include, in the case of a Company Superior Proposal, the information required under Section 7.2(e) <omitted>\n\n(II) during the Notice Period, the Company shall, and shall cause its employees, financial advisor and outside legal counsel to, be reasonably available to negotiate with Parent in good faith should Parent propose to make amendments or other revisions to the terms and conditions of this Agreement such that, in the case of a Company Superior Proposal, such Company Acquisition Proposal no longer constitutes a Company Superior Proposal or, in the case of an Intervening Event, the failure to take such action would no longer be inconsistent with the directors’ fiduciary duties under applicable Law as determined in the good faith judgment of the Company Board (Pages 43-44)\n\n7.2.    Company Acquisition Proposals. <omitted> (b) No Change in Company Recommendation or Alternative Acquisition Agreement. <omitted> Notwithstanding anything to the contrary set forth in this Section 7.2(b), the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee may, prior to but not after the time the Requisite Company Stockholder Approvals are obtained, make a Change of Company Recommendation if, and only if, (A) an Intervening Event has occurred and the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in good faith, after consulting with its financial advisor and outside legal counsel, that failure to take such action would be inconsistent with such directors’ fiduciary duties under applicable Law, or (B) the Company receives a Company Acquisition Proposal and the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in good faith, after consulting with its financial advisor and outside legal counsel, that such Company Acquisition Proposal constitutes a Company Superior Proposal and that failure to take such action would be inconsistent with such directors’ fiduciary duties under applicable Law; provided that neither the Company Board nor the Special Committee may take any such action (and the Special Committee may not recommend to the Company Board to take such action) unless (I) prior to making such Change of Company Recommendation, the Company provides prior written notice to Parent at least four (4) Business Days in advance (the “Notice Period”) of its intention to take such action and the basis thereof, which notice shall include, in the case of a Company Superior Proposal, the information required under Section 7.2(e) and, in the case of an Intervening   -38-\n\n\nEvent, a reasonably detailed description of such Intervening Event, (II) during the Notice Period, the Company shall, and shall cause its employees, financial advisor and outside legal counsel to, be reasonably available to negotiate with Parent in good faith should Parent propose to make amendments or other revisions to the terms and conditions of this Agreement such that, in the case of a Company Superior Proposal, such Company Acquisition Proposal no longer constitutes a Company Superior Proposal or, in the case of an Intervening Event, the failure to take such action would no longer be inconsistent with the directors’ fiduciary duties under applicable Law as determined in the good faith judgment of the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee, after consulting with its financial advisor and outside legal counsel, and (III) the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee, as the case may be, has taken into account any amendments or other revisions to the terms and conditions of this Agreement agreed to by Parent in writing prior to the end of the Notice Period and has determined in good faith, after consulting with its financial advisor and outside legal counsel, that a failure to make such Change of Company Recommendation would still be inconsistent with the directors’ fiduciary duties under applicable Law; it being understood that any amendments or other revisions to any Company Acquisition Proposal will be deemed to be a new Company Acquisition Proposal, including for purposes of the Notice Period; provided, however, subsequent to the initial Notice Period, the Notice Period shall be reduced to two (2) Business Days. (Pages 43-44)\n\n7.2.    Company Acquisition Proposals. <omitted> (b) <omitted> the Company Board <omitted> may <omitted> make a Change of Company Recommendation <omitted> ; provided that neither the Company Board nor the Special Committee may take any such action (and the Special Committee may not recommend to the Company Board to take such action) unless <omitted> (III) the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee, as the case may be, has taken into account any amendments or other revisions to the terms and conditions of this Agreement agreed to by Parent in writing prior to the end of the Notice Period and has determined in good faith, after consulting with its financial advisor and outside legal counsel, that a failure to make such Change of Company Recommendation would still be inconsistent with the directors’ fiduciary duties under applicable Law; it being understood that any amendments or other revisions to any Company Acquisition Proposal will be deemed to be a new Company Acquisition Proposal, including for purposes of the Notice Period; provided, however, subsequent to the initial Notice Period, the Notice Period shall be reduced to two (2) Business Days. (Pages 43-44)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are also subject to the satisfaction or waiver by Parent at or prior to the Effective Time of the following conditions: (a)    Representations and Warranties. <omitted> (iii) each other representation and warranty of the Company set forth in Article V shall be true and correct as of the Closing Date (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be so true and correct as of such particular date or period of time), except, in the case of this clause (iii), for any failure of any such representation and warranty to be so true and correct (disregarding all qualifications or limitations as to “material,” “Company Material Adverse Effect” and words of similar import set forth therein) that does not constitute a Company Material Adverse Effect. (Page 56)\n\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted> (iii) each other representation and warranty of the Company set forth in Article V shall be true and correct as of the Closing Date <omitted> except, in the case of this clause (iii), for any failure of any such representation and warranty to be so true and correct <omitted> that does not constitute a Company Material Adverse Effect. (Page 56)\n\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are also subject to the satisfaction or waiver by Parent at or prior to the Effective Time of the following conditions: (a)    Representations and Warranties. (i) Each of the representations and warranties of the Company set forth in Section 5.1 (Organization, Good Standing and Qualification), Section 5.2(a) (Capital Structure) (other than any inaccuracies that individually or in the aggregate are de minimis relative to the total fully diluted equity capitalization of the Company), Section 5.3(a) (Corporate Authority) and Section 5.6(b) (Absence of Certain Changes) shall be true and correct in all respects as of the Closing Date (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be so true and correct in all respects as of such particular date or period of time); (Page 56)\n\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted> (i) Each of the representations and warranties of the Company set forth in <omitted> Section 5.2(a) (Capital Structure) (other than any inaccuracies that individually or in the aggregate are de minimis relative to the total fully diluted equity capitalization of the Company) <omitted> shall be true and correct in all respects (Page 56)\n\n5.1.    Organization, Good Standing and Qualification. <omitted> The Company has no Subsidiaries. <omitted>\n5.3.    Corporate Authority; Approval and Fairness. \n\n(a)    <omitted> This Agreement <omitted> constitutes a valid and binding agreement of the Company enforceable against the Company in accordance with its terms <omitted> \n(b)    <omitted> The Special Committee has (<omitted> (ii) received an opinion of Centerview Partners LLC, the Special Committee’s financial advisor (the “Special Committee Financial Advisor”), to the effect that the Merger Consideration is fair, from a financial point of view, as of the date of such opinion and subject to the limitations, qualifications and assumptions set forth therein, to the holders of Shares (other than Excluded Shares and Shares that are subject to Company Restricted Share Awards) and as of the date of this Agreement such opinion has not been withdrawn, revoked or modified\n\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. The obligations of Parent, Merger Sub and Merger Sub II to effect the Mergers are also subject to the satisfaction or waiver by Parent at or prior to the Effective Time of the following conditions: (a)    Representations and Warranties. (i) Each of the representations and warranties of the Company set forth in Section 5.1 (Organization, Good Standing and Qualification), <omitted> Section 5.3(a) (Corporate Authority) and Section 5.6(b) (Absence of Certain Changes) shall be true and correct in all respects as of the Closing Date (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be so true and correct in all respects as of such particular date or period of time); (ii) each of the representations and warranties of the Company set forth in Section 5.3(b) (Approval and Fairness), Section 5.17 (Takeover Statutes) and Section 5.18 (Brokers and Finders) shall be true and correct in all material respects as of the Closing Date (except to the extent that any such representation and warranty expressly speaks as of a particular date or period of time, in which case such representation and warranty shall be so true and correct in all material respects as of such particular date or period of time) (disregarding all qualifications or limitations as to “material,” “Company Material Adverse Effect” and words of similar import set forth therein); (Page 56)\n\n5.3.    Corporate Authority; Approval and Fairness.(a)    The Company has all requisite corporate power and authority and has taken all corporate action necessary in order to execute and deliver this Agreement <omitted> and to consummate the Mergers and the other transactions <omitted> This Agreement <omitted> constitutes a valid and binding agreement of the Company enforceable against the Company in accordance with its terms <omitted> \n\n8.2.    Conditions to Obligations of Parent, Merger Sub and Merger Sub II. <omitted> (i) Each of the representations and warranties of the Company set forth in Section 5.1 (Organization, Good Standing and Qualification), <omitted> Section 5.3(a) (Corporate Authority) and Section 5.6(b) (Absence of Certain Changes) shall be true and correct in all respects <omitted> ; (ii) each of the representations and warranties of the Company set forth in Section 5.3(b) (Approval and Fairness), Section 5.17 (Takeover Statutes) and Section 5.18 (Brokers and Finders) shall be true and correct in all material respects (Page 56)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n7.2.    Company Acquisition Proposals. (a) <omitted> Notwithstanding anything to the contrary in the foregoing provisions of this Section 7.2(a), prior to the time, but not after, the Requisite Company Stockholder Approvals are obtained, the Company and its Representatives may, after complying with Section 7.2(e), (A) provide information in response to a request therefor by a Person who has made an unsolicited bona fide written Company Acquisition Proposal after the date of this Agreement that did not result from a breach in any material respect of this Section 7.2 if the Company receives from the Person so requesting such information an executed confidentiality agreement on terms not less restrictive to such Person than those contained in the Confidentiality Agreement; provided, however, that such information has previously been made available to Parent or is made available to Parent prior to or promptly after the time such information is made available to such Person; and (B) engage or otherwise participate in any discussions or negotiations with any Person who has made such an unsolicited bona fide written Company Acquisition Proposal, if and only to the extent that, (I) prior to taking any action described in clause (A) or (B) directly above, the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee determines in good faith after consultation with its outside legal counsel that failure to take such action would be inconsistent with the directors’ fiduciary duties under applicable Law and (II) in each such case referred to in clause (A) or (B) directly above, the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in good faith based on the information then available and after consultation with its outside legal counsel and financial advisor that such Company Acquisition Proposal either constitutes a Company Superior Proposal or could reasonably be expected to result in a Company Superior Proposal. <omitted>\n\n“Company Superior Proposal” means an unsolicited bona fide written Company Acquisition Proposal that would result in any Person (other than the Company, Parent, Merger Sub, Merger Sub II or any controlled Affiliate thereof) becoming the beneficial owner, directly or indirectly, of fifty percent (50%) or more of the assets (on a consolidated basis) or fifty percent (50%) or more of the total voting power of the equity securities of the Company (or of the surviving entity in a merger involving the Company or the resulting direct or indirect parent of the Company or such surviving entity) that the Company Board (acting upon the recommendation of the Special Committee) or the Special Committee has determined in its good faith judgment, after consultation with its outside financial advisor(s) and outside legal counsel (a) would result in a transaction that, if consummated, would be more favorable to the stockholders of the Company (other than Parent and its Affiliates) from a financial point of view than the Mergers (after taking into account any amendments or other revisions to the terms and conditions of this Agreement agreed to by Parent in writing pursuant to Section 7.2(b) and the time likely to be required to consummate such Company Acquisition Proposal) and (b) is reasonably capable of being consummated on the terms so proposed.  (Pages 42-43)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_48\" title=\"EX-99.1 EXHIBIT 1 AGREEMENT AND PLAN OF MERGER by and among EIDOS THERAPEUTICS, INC., BRIDGEBIO PHARMA, INC. GLOBE MERGER SUB I, INC. and …\">\n9.5.    Effect of Termination and Abandonment. <omitted> (b)    In the event that: <omitted> (i)    (A) this Agreement is terminated <omitted> (II) concurrently with or within twelve (12) months of such termination, the Company shall have consummated a Company Acquisition Proposal or entered into an Alternative Company Acquisition Agreement relating to a Company Acquisition Proposal (whether or not, in each case, such Company Acquisition Proposal is the same one as the Company Acquisition Proposal referred to in clause (B)(I)); <omitted> then the Company shall pay to Parent (or its designee(s)), by wire transfer of same-day funds, a termination fee of $35,000,000 (the “Termination Fee”) (x) in the case of Section 9.5(b)(ii), no later than two (2) Business Days after the date of such termination or (y) in the case of Section 9.5(b)(i), immediately prior to or substantially concurrent with the last to occur of the events set forth in Section 9.5(b)(i).  (Page 59)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Each R&W accurate at MAE standard"
+      ],
+      "gold_labels": [
+        "2"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Each R&W accurate at MAE standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Accurate in all respects with de minimis exception"
+      ],
+      "gold_labels": [
+        "3"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "Accurate in all respects with de minimis exception"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "pendency"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "pendency"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "\"act of God\"",
+        "Natural disaster"
+      ],
+      "source_question": "W/N/A/F applies to-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        },
+        {
+          "text": "force majeure"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Material Adverse Effect",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Reasonable standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Reasonable standard",
+        "Strict liability"
+      ],
+      "subquestions": [],
+      "source_question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answers": [
+        {
+          "text": "Reasonable standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Additional matching rights period for modifications (COR)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "2 business days or less"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "2 business days or less",
+        "3 business days",
+        "3 days",
+        "4 business days",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Additional matching rights period for modifications (COR)-Answer",
+      "answers": [
+        {
+          "text": "2 business days or less"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 6,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        17181
+      ],
+      "min_char_offset": 17181,
+      "min_frac": 0.6031,
+      "min_tokens_from_start": 4295,
+      "min_tokens_from_end": 2827
+    },
+    "q02": {
+      "char_offsets": [
+        17181
+      ],
+      "min_char_offset": 17181,
+      "min_frac": 0.6031,
+      "min_tokens_from_start": 4295,
+      "min_tokens_from_end": 2827
+    },
+    "q03": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0062,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7078
+    },
+    "q04": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0062,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7078
+    },
+    "q05": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0062,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7078
+    },
+    "q06": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0062,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7078
+    },
+    "q07": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0062,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7078
+    },
+    "q08": {
+      "char_offsets": [
+        5750
+      ],
+      "min_char_offset": 5750,
+      "min_frac": 0.2018,
+      "min_tokens_from_start": 1437,
+      "min_tokens_from_end": 5685
+    },
+    "q09": {
+      "char_offsets": [
+        23894
+      ],
+      "min_char_offset": 23894,
+      "min_frac": 0.8388,
+      "min_tokens_from_start": 5973,
+      "min_tokens_from_end": 1149
+    },
+    "q10": {
+      "char_offsets": [
+        7159
+      ],
+      "min_char_offset": 7159,
+      "min_frac": 0.2513,
+      "min_tokens_from_start": 1789,
+      "min_tokens_from_end": 5333
+    },
+    "q11": {
+      "char_offsets": [
+        27500
+      ],
+      "min_char_offset": 27500,
+      "min_frac": 0.9654,
+      "min_tokens_from_start": 6875,
+      "min_tokens_from_end": 247
+    },
+    "q12": {
+      "char_offsets": [
+        27500
+      ],
+      "min_char_offset": 27500,
+      "min_frac": 0.9654,
+      "min_tokens_from_start": 6875,
+      "min_tokens_from_end": 247
+    }
+  }
+}

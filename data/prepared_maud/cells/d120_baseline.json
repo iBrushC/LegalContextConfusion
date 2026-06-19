@@ -1,0 +1,666 @@
+{
+  "cell_id": "d120_baseline",
+  "dataset": "maud",
+  "doc_index": 120,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 7803,
+  "actual_chars": 31211,
+  "target_document_id": "contract_70",
+  "target_document_title": "AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …",
+  "distractor_ids": [],
+  "target_offset": 176,
+  "target_end": 29750,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\n“Company Material Adverse Effect” means any event, circumstance, development, occurrence, fact, condition, effect, or change (each, an “Effect”) that has, or would reasonably be expected to have, individually or in the aggregate, a materially adverse effect to: (a) the business, results of operations, condition (financial or otherwise), or assets of the Company and its Subsidiaries, taken as a whole; or (b) the ability of the Company to timely perform its obligations under this Agreement or consummate the transactions contemplated hereby on a timely basis; provided, however, that, for the purposes of clause (a), a Company Material Adverse Effect shall not be deemed to include any Effect (alone or in combination) arising out of, relating to, or resulting from: (i) any change in any Law or GAAP; (ii) any change resulting from conditions affecting any of the industries in which the Company or its Subsidiaries operates; (iii) any change resulting from changes in general business, financial, political, capital market or economic conditions (including any changes in interest and exchange rates or commodity pricing); or any change resulting from any calamity, natural disaster, pandemic (including COVID-19 and COVID-19 Measures), hostilities, war or military or terrorist attack) tariffs, trade wars, transportation delays (including work stoppages or port closures); (iv) any change resulting from the announcement or pendency of the Offer, the Merger, the other transactions contemplated hereby or attributable to the fact that Parent or any of its Affiliates are the prospective owners of the Company (including any loss or change in relationship with any supplier, vendor, reseller, customer, distributor, employee or other business partner of the Company or its Subsidiaries); (v) the failure of the Company or its Subsidiaries to achieve any financial projections or budget (it being understood that the fact or occurrences giving rise to such failure may be taken into account in determining whether there has been a Company Material Adverse Effect so long as such facts or occurrences are not otherwise excluded by any other clause in this definition); (vi) any litigation, claims, suit, action or proceeding in respect of this Agreement, the Merger, the Offer or the Offer Documents and any transactions contemplated hereby and thereby (including breach of fiduciary duty and disclosure claims); and (vii) (1) any action taken by the Company or any of its Subsidiaries at the written request, or with the written consent, of Parent or Merger Sub or (2) compliance by the Company or any of its Subsidiaries with the express terms of, or the taking by the Company or any of its Subsidiaries of any action expressly required by, this Agreement (other than the obligations to operate in the ordinary course or restrictions on taking certain actions pursuant to Section 6.01); provided further, however, that any Effect referred to in clauses (i), (ii) or (iii), immediately above shall be taken into account in determining whether a Company Material Adverse Effect has occurred or would reasonably be expected to occur if it has a disproportionate effect on the Company and its Subsidiaries, taken as a whole, compared to other participants in the industries in which the Company and its Subsidiaries conduct their businesses. (Page 78)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 4.01 Organization; Standing and Power; Charter Documents; Subsidiaries. <omitted>\nSection 4.02 Capital Structure.  <omitted>\nSection 4.03 Authority; Non-Contravention; Governmental Consents; Board Approval; Anti-Takeover Statutes. <omitted>\n(a) <omitted> This Agreement has been duly executed and delivered by the Company and, assuming due execution and delivery by Parent and Merger Sub, constitutes the legal, valid, and binding obligation of the Company, enforceable against the Company in accordance with its terms, except as such enforceability may be limited by bankruptcy, insolvency, moratorium, and other similar Laws affecting creditors’ rights generally and by general principles of equity (the“Enforceability Exceptions”). <omitted> (d) Board Approval. <omitted> (e) Anti-Takeover Statutes. <omitted>\nSection 4.05 Absence of Certain Changes or Events. Since the date of the Company Balance Sheet, except in connection with the execution and delivery of this Agreement and the consummation of the transactions contemplated hereby and except for anyCOVID-19Measures, the business of the Company and each of its Subsidiaries has been conducted in the ordinary course of business consistent with past practice and there has not been or occurred: (a) any Company Material Adverse Effect or any event, condition, change, or effect that could reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; or <omitted>\nSection 4.10 Brokers’ and Finders’ Fees. <omitted>\nSection 4.19 Fairness Opinion. <omitted>\n\nCONDITIONS TO THE OFFER Notwithstanding any other provision of the Agreement and Plan of Merger, dated as of August 12, 2021, by and among by and among IEC Electronics Corp., a Delaware corporation (the “Company”), Creation Technologies International Inc., a Delawarecorporation (“Parent”), CTI Acquisition Corp., a Delaware corporation and a wholly-owned Subsidiary of Parent (“Merger Sub”) and, solely for purposes of Sections 5.04, 6.05, 9.13 (to the extent related to specific performance of its obligations under Section 6.05) and 9.17, Creation Technologies Inc., a Delaware corporation (“Guarantor”), to which this Annex I is attached (the “Agreement”) or the Offer, Merger Sub shall not be required to (and Parent shall not be required to cause Merger Sub to) accept for payment or, subject toany applicable rules and regulations of the SEC including Rule 14e-1(c), pay for any Company Common Stock validly tendered and notproperly withdrawn pursuant to the Offer unless all of the following conditions have been satisfied, or waived by Parent (to the extentpermitted by applicable Law), at the scheduled Expiration Time of the Offer: <omitted> \n(d) Representations and Warranties. The representations and warranties of the Company: (i) set forth in ARTICLE IV of the Agreement (other than in Section 4.01(a), Section 4.02 (with respect to Section 4.02(b)(i), only the first sentence and clause (C) of second sentence), Section 4.03(a), Section 4.03(b)(i), Section 4.03(d), Section 4.03(e), Section 4.05(a), Section 4.10 and Section 4.19) shall be true and correct in all respects (without giving effect to any limitation indicated by the words “Company Material Adverse Effect,” “in all material\n\n\nrespects,” “in any material respect,” “material,” or “materially”) when made and as of immediately prior to the Expiration Time, as if made at and as of such time (except those representations and warranties that address matters only as of a particular date, in which case on and as of that date), except where the failure of such representations and warranties to be so true and correct would not reasonably be expected to have, individually or in the aggregate, a Company Material Adverse Effect; (ii) contained in Section 4.02 (with respect to Section 4.02(b)(i), only the first sentence and clause (C) of second sentence) of the Agreement shall be true and correct (other than de minimis inaccuracies) when made and as of immediately prior to the Expiration Time, as if made at and as of such time (except those representations and warranties that address matters only as of a particular date, which shall be true and correct in all material respects as of that date); (iii) contained in Section 4.01(a), Section 4.03(a), Section 4.03(b)(i), Section 4.03(d), Section 4.03(e), Section 4.05(a), Section 4.10, and Section 4.19 of the Agreement shall be true and correct in all material respects when made and as of immediately prior to the Expiration Time, as if made at and as of such time (except those representations and warranties that address matters only as of a particular date, in which case on and as of that date); and (iv) contained in Section 4.05(a) of the Agreement shall be true and correct in all respects when made and as of immediately prior to the Expiration Time, as if made at and as of such time (except those representations and warranties that address matters only as of a particular date, in which case on and as of that date). (Pages 100-101)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\n(c) Superior Proposal. Notwithstanding anything to the contrary contained in this Agreement, if, at any time from and after the No-Shop Period Start Date and prior to the Offer Closing, the Company receives a bona fide written Takeover Proposal that is not withdrawn from any Person that did not result from or involve a breach of Section 6.03(b), and if the Company Board determines in good faith, after consultation with its financial advisors and outside legal counsel, (i) that such Takeover Proposal constitutes or would reasonably be expected to lead to a Superior Proposal, and (ii) failure to take the actions set forth in clauses (A) and (B) below would be inconsistent with the Company Board’s fiduciary duties under applicable Law, then the Company and its Representatives may, in response to such Takeover Proposal, (A) furnish, pursuant and subject to an Acceptable Confidentiality Agreement, information (including non-public information) with respect to the Company and its Subsidiaries to the Person that has made such written Takeover Proposal and its Representatives; provided, that the Company shall, (x) provide Parent with a copy of such executed Applicable Confidentiality Agreement promptly (and in no event later than 24 hours) after execution and (y) prior to or substantially concurrently with the delivery to such Person, provide to Parent any information or data concerning the Company or any of its Subsidiaries that is provided or made available to such Person or its directors, officers, employees, investment bankers, attorneys, accountants and other advisors or Representatives, whether in writing or orally, unless such information has been previously provided to Parent, in which case the Company shall promptly (and in no event later than 24 hours) provide written notification to Parent of the information and data so provided (unless such information was not previously provided to Parent or Merger Sub at the request of Parent or Merger Sub or to comply with applicable Law); and (B) engage in, facilitate or otherwise participate in discussions or negotiations with the Person making such Takeover Proposal and its Representatives regarding such Takeover Proposal. The Company Board shall promptly (and in any event within 24 hours) notify Parent in writing if the Company Board makes the determinations set forth in this Section 6.03(c). Nothing in this Section 6.03(c) shall limit the Company’s rights prior to the Cut-Off Time with respect to an Excluded Party. (Page 55)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 6.01 Conduct of Business of the Company. The Company shall, and shall cause each of its Subsidiaries to, during the period from the date of this Agreement until the Effective Time, and except as expressly permitted or required by this Agreement, as required by applicable Law, or with the prior written consent of Parent (which consent shall not be unreasonably withheld, conditioned, or delayed), (1) conduct its business in all material respects in the ordinary course of business consistent with past practice (except for any actions taken reasonably and in good faith in response to COVID-19 or COVID-19 Measures), and, to the extent consistent therewith, the Company shall, and shall cause each of its Subsidiaries to, use its reasonable best efforts to preserve substantially intact its and its Subsidiaries’ business organization, to keep available the services of its and its Subsidiaries’ current officers and employees, to preserve its and its Subsidiaries’ present relationships with customers, suppliers, distributors, licensors, licensees, and other Persons having material business relationships with it. (Page 50)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 6.03 No Solicitation. <omitted> (e) Recommendation. <omitted> (ii) Notwithstanding anything to the contrary set forth in this Agreement, prior to the Offer Closing, the Company Board,   \n\n  \n\n(A) in response to a Takeover Proposal received by the Company after the date of this Agreement that did not result from or involve a breach of Section 6.03(b), (x) may make a Company Adverse Recommendation Change or (y) may cause the Company to terminate this Agreement in accordance with and pursuant to Section 8.04(a) in order to cause the Company to enter into a definitive agreement with respect to a Takeover Proposal, if and only if the Company Board has determined in good faith, after consultation with its financial advisor and outside legal counsel and after taking into account any revisions to the terms of this Agreement that may be offered in writing by Parent in accordance with this Section 6.03(e), (I) that such Takeover Proposal constitutes a Superior Proposal and (II) that the failure to make a Company Adverse Recommendation Change or cause the Company to validly terminate this Agreement in accordance with Section 8.04(a) would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, provided, that prior to making such Company Adverse Recommendation Change or terminating this Agreement in accordance with Section 8.04(a), (i) the Company shall have given Parent at least four (4) Business Days’ prior written notice of its intention to take such action, including its reasonable basis for such decision and the material terms and conditions of, and the identity of the Person making any such Superior Proposal and contemporaneously provided to Parent a copy of the Superior Proposal, a copy of any proposed Company Acquisition Agreement and all related documentation, including with respect to financing arrangements, (ii) during such four (4) Business Day period following the date on which such notice is received, the Company shall and shall cause its Representatives to, if requested by Parent, negotiate with Parent in good faith to make such adjustments to the terms and conditions of this Agreement as Parent may propose, (iii) upon the end of such notice period (or such subsequent notice period as   52\n\n\n \n\ncontemplated by clause (iv)), the Company Board shall have considered in good faith any revisions to the terms of this Agreement proposed in writing by Parent and capable of being accepted by the Company, and shall have determined, after consultation with its financial advisors and outside legal counsel, that the Superior Proposal would nevertheless continue to constitute a Superior Proposal, and (iv) in the event of any change to any of the financial terms or any other material terms of such Superior Proposal, the Company shall, in each case, have delivered to Parent an additional notice consistent with that described in clause (i) above of this proviso and a new notice period under clause (i) of this proviso shall commence (provided, that the notice period thereunder shall only be three (3) Business Days during which time the Company shall be required to comply with the requirements of this Section 6.03(e) anew with respect to such additional notice, including clauses (i) through (iii) above of this proviso; or   \n\n  \n\n(B) in response to a Company Intervening Event, may effect a Company Adverse Recommendation Change in response to a Company Intervening Event if the Company determines in good faith (after consultation with its outside legal counsel) that the failure to do so would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, provided, that prior to making such Company Adverse Recommendation Change, (i) the Company shall have given Parent at least four (4) Business Days’ prior written notice of its intention to take such action, including specifying the Company Intervening Event in reasonable detail, (ii) during such four (4) Business Day period following the date on which such notice is received, the Company shall and shall cause its Representatives to, if requested by Parent, negotiate with Parent in good faith to make such adjustments to the terms and conditions of this Agreement as Parent may propose, (iii) upon the end of such notice period the Company Board shall have considered in good faith any revisions to the terms of this Agreement proposed in writing by Parent and capable of being accepted by the Company, and shall have determined, after consultation with its financial advisors and outside legal counsel, that the failure to make a Company Board Recommendation Change in response to such Company Intervening Event still would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, and (iv) in the event of any material   53\n\n\n \n\nchange in the events surrounding the Company Intervening Event, the Company shall, in each case, have delivered to Parent an additional notice consistent with that described in clause (i) above of this proviso and a new notice period under clause (i) of this proviso shall commence (provided, that the notice period thereunder shall only be three (3) Business Days during which time the Company shall be required to comply with the requirements of this Section 6.03(e) anew with respect to such additional notice, including clauses (i) through (iii) above of this proviso. (Pages 57-59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\n“Knowledge” means: (a) with respect to the Company and its Subsidiaries, the actual knowledge of each of the individuals listed in Section 9.01 of the Company’s Disclosure Letter; and (b) with respect to Parent and its Subsidiaries, the actual knowledge of each of the individuals listed in Section 9.01 of Parent’s Disclosure Letter; in each case, after due inquiry. (Page 83)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 8.06 Fees Following Termination\n\n<omitted> \n\n(b) If this Agreement is properly terminated: \n\n<omitted> \n\n(A) prior to such termination, a Takeover Proposal shall: (1) in the case of a termination in accordance with Section 8.02(a), have been publicly disclosed and not withdrawn prior to the effective date of termination or (2) in the case of a termination in accordance with Section 8.03(b), have been publicly disclosed or otherwise made or communicated to the Company or the Company Board and not withdrawn prior to the effective date of termination, and (B) within nine (9) months following the date of such termination of this Agreement the Company shall have entered into a definitive agreement with respect to any Takeover Proposal, or any Takeover Proposal shall have been consummated (in each case whether or not such Takeover Proposal is the same as the original Takeover Proposal made, communicated, or publicly disclosed), then in any such event the Company shall pay to Parent (by wire transfer of immediately available funds), immediately prior to and as a condition to consummating such transaction, the Termination Fee (it being understood for all purposes of this Section 8.06(b), all references in the definition of Takeover Proposal to “15%” shall be deemed to be references to “more than 50%” instead); (Page 73)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 6.03 No Solicitation <omitted> (e) Recommendation. <omitted> (ii) Notwithstanding anything to the contrary set forth in this Agreement, prior to the Offer Closing, the Company Board,   \n\n  \n\n(A) in response to a Takeover Proposal received by the Company after the date of this Agreement that did not result from or involve a breach of Section 6.03(b), (x) may make a Company Adverse Recommendation Change or (y) may cause the Company to terminate this Agreement in accordance with and pursuant to Section 8.04(a) in order to cause the Company to enter into a definitive agreement with respect to a Takeover Proposal, if and only if the Company Board has determined in good faith, after consultation with its financial advisor and outside legal counsel and after taking into account any revisions to the terms of this Agreement that may be offered in writing by Parent in accordance with this Section 6.03(e), (I) that such Takeover Proposal constitutes a Superior Proposal and (II) that the failure to make a Company Adverse Recommendation Change or cause the Company to validly terminate this Agreement in accordance with Section 8.04(a) would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, provided, that prior to making such Company Adverse Recommendation Change or terminating this Agreement in accordance with Section 8.04(a), (i) the Company shall have given Parent at least four (4) Business Days’ prior written notice of its intention to take such action, including its reasonable basis for such decision and the material terms and conditions of, and the identity of the Person making any such Superior Proposal and contemporaneously provided to Parent a copy of the Superior Proposal, a copy of any proposed Company Acquisition Agreement and all related documentation, including with respect to financing arrangements, (ii) during such four (4) Business Day period following the date on which such notice is received, the Company shall and shall cause its Representatives to, if requested by Parent, negotiate with Parent in good faith to make such adjustments to the terms and conditions of this Agreement as Parent may propose, (iii) upon the end of such notice period (or such subsequent notice period as   52\n\n\n \n\ncontemplated by clause (iv)), the Company Board shall have considered in good faith any revisions to the terms of this Agreement proposed in writing by Parent and capable of being accepted by the Company, and shall have determined, after consultation with its financial advisors and outside legal counsel, that the Superior Proposal would nevertheless continue to constitute a Superior Proposal, and (iv) in the event of any change to any of the financial terms or any other material terms of such Superior Proposal, the Company shall, in each case, have delivered to Parent an additional notice consistent with that described in clause (i) above of this proviso and a new notice period under clause (i) of this proviso shall commence (provided, that the notice period thereunder shall only be three (3) Business Days during which time the Company shall be required to comply with the requirements of this Section 6.03(e) anew with respect to such additional notice, including clauses (i) through (iii) above of this proviso; or   \n\n  \n\n(B) in response to a Company Intervening Event, may effect a Company Adverse Recommendation Change in response to a Company Intervening Event if the Company determines in good faith (after consultation with its outside legal counsel) that the failure to do so would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, provided, that prior to making such Company Adverse Recommendation Change, (i) the Company shall have given Parent at least four (4) Business Days’ prior written notice of its intention to take such action, including specifying the Company Intervening Event in reasonable detail, (ii) during such four (4) Business Day period following the date on which such notice is received, the Company shall and shall cause its Representatives to, if requested by Parent, negotiate with Parent in good faith to make such adjustments to the terms and conditions of this Agreement as Parent may propose, (iii) upon the end of such notice period the Company Board shall have considered in good faith any revisions to the terms of this Agreement proposed in writing by Parent and capable of being accepted by the Company, and shall have determined, after consultation with its financial advisors and outside legal counsel, that the failure to make a Company Board Recommendation Change in response to such Company Intervening Event still would reasonably be expected to conflict with the Company Board’s fiduciary duties under applicable Law, and (iv) in the event of any material   53\n\n\n \n\nchange in the events surrounding the Company Intervening Event, the Company shall, in each case, have delivered to Parent an additional notice consistent with that described in clause (i) above of this proviso and a new notice period under clause (i) of this proviso shall commence (provided, that the notice period thereunder shall only be three (3) Business Days during which time the Company shall be required to comply with the requirements of this Section 6.03(e) anew with respect to such additional notice, including clauses (i) through (iii) above of this proviso. (Pages 57-59)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\n“Superior Proposal” means a bona fide written Takeover Proposal (except that, for purposes of this definition, each reference in the definition of “Takeover Proposal” to “15% or more” shall be “more than 50%”) that the Company Board determines in good faith (after consultation with outside legal counsel and the Company Financial Advisor) is (i) reasonably likely to be consummated and (ii) more favorable from a financial point of view to the holders of Company Common Stock than the transactions contemplated by this Agreement, taking into account: (a) all financial considerations; (b) the identity of the third party making such Takeover Proposal; (c) the anticipated timing, conditions (including any financing condition or the reliability of any debt or equity funding commitments) and prospects for completion of such Takeover Proposal; (d) the other terms and conditions of such Takeover Proposal and the implications thereof on the Company, including relevant legal, regulatory, and other aspects of such Takeover Proposal deemed relevant by the Company Board; and (e) any revisions to the terms of this Agreement and the Merger proposed by Parent. <omitted>\n“Takeover Proposal” means an inquiry, proposal, or offer from any Person or group (other than Parent and its Subsidiaries,including Merger Sub), relating to any transaction or series of related transactions (other than the transactions contemplated by thisAgreement), involving any: (a) direct acquisition of assets of the Company or its Subsidiaries (including any voting equity interests of Subsidiaries, but excluding sales of assets in the ordinary course of business) equal to 15% or more of the fair market value of the Company’s and its Subsidiaries’ consolidated assets or to which 15% or more of the Company’s and its Subsidiaries’ net revenues ornet income on a consolidated basis are attributable; (b) direct acquisition of 15% or more of the voting equity interests of the Companyor any of its Subsidiaries whose business constitutes 15% or more of the consolidated net revenues, net income, or assets of theCompany and its Subsidiaries, taken as a whole; (c) tender offer or exchange offer that if consummated would result in any Person orgroup (as defined in Section 13(d) of the Exchange Act) beneficially owning (within the meaning of Section 13(d) of the Exchange Act) 15% or more of the voting power of the Company; (d) merger, consolidation, share exchange, business combination, or similartransaction involving the Company or any of its Subsidiaries, pursuant to which such Person or group (as defined in Section 13(d) of theExchange Act) would own 15% or more of the consolidated net revenues, net income, or assets of the Company, and its Subsidiaries,taken as a whole; (e) liquidation, dissolution (or the adoption of a plan of liquidation or dissolution), or recapitalization or other significantcorporate reorganization of the Company or one or more of its Subsidiaries which, individually or in the aggregate, generate or constitute 15% or more of the consolidated net revenues, net income, or assets of the Company and its Subsidiaries, taken as a whole; or (f) anycombination of the foregoing. (Page 87)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_70\" title=\"AGREEMENT AND PLAN OF MERGER By and Among CREATION TECHNOLOGIES INTERNATIONAL INC. CTI ACQUISITION CORP., CREATION TECHNOLOGIES INC., and …\">\nSection 6.03 No Solicitation. <omitted> (c) Superior Proposal. Notwithstanding anything to the contrary contained in this Agreement, if, at any time from and after the No-ShopPeriod Start Date and prior to the Offer Closing, the Company receives a bona fide written Takeover Proposal that is not withdrawn from any Person that did not result from or involve a breach of Section 6.03(b), and if the Company Board determines in good faith, after consultation with its financial advisors and outside legal counsel, (i) that such Takeover Proposal constitutes or would reasonably be expected to lead to a Superior Proposal, and (ii) failure to take the actions set forth in clauses (A) and (B) below would be inconsistent with the Company Board’s fiduciary duties under applicable Law, then the Company and its Representatives may, in response to such Takeover Proposal, <omitted> \n\nSection 8.04 Termination by the Company. This Agreement may be terminated by the Company: (a) if, prior to the Offer Closing, the Company Board authorizes the Company, to the extent permitted by and subject to full compliance with Section 6.03 hereof with respect to such Superior Proposal, to enter into a Company Acquisition Agreement (other than an Acceptable Confidentiality Agreement) in respect of a Superior Proposal; provided, that in the event of such termination, the Company substantially concurrently enters into such Company Acquisition Agreement; (Page 71)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Material Adverse Effect",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "\"Arising from/out of\"",
+        "\"Relating to\"",
+        "\"Resulting from\""
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "subquestions": [
+        "\"Arising from/out of\"",
+        "Relational language varies among carveouts"
+      ],
+      "source_question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answers": [
+        {
+          "text": "\"Arising from/out of\""
+        },
+        {
+          "text": "\"Relating to\""
+        },
+        {
+          "text": "\"Resulting from\""
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted in response to Intervening Event",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted in response to Intervening Event",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Natural disaster",
+        "War or terrorism"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "force majeure"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "Natural disaster"
+        },
+        {
+          "text": "War or terrorism"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Operating and Efforts Covenant",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "pendency"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "announcement",
+        "consummation"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Number of additional matching rights periods for modifications (FTR)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Continuous matching right"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Number of additional matching rights periods for modifications (FTR)",
+      "answers": [
+        {
+          "text": "Continuous matching right"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "(Material) breach of other provisions of agreement"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "\"Financial point of view\" is the sole consideration",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "\"Financial point of view\" is the sole consideration",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Organization"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "No MAE"
+        },
+        {
+          "text": "Opinion of Financial Advisor"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Other"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "question": "Target stockholder proceedings-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Target stockholder proceedings-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Knowledge",
+      "question": "Constructive Knowledge-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Based on investigation or inquiry"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Based on investigation or inquiry",
+        "Based on role"
+      ],
+      "subquestions": [],
+      "source_question": "Constructive Knowledge-Answer",
+      "answers": [
+        {
+          "text": "Based on investigation or inquiry"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition includes asset deals-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "50%"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "subquestions": [],
+      "source_question": "Definition includes asset deals-Answer",
+      "answers": [
+        {
+          "text": "50%"
+        }
+      ]
+    },
+    {
+      "qa_id": "q15",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "subquestions": [],
+      "source_question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answers": [
+        {
+          "text": "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q16",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "At Signing & At Closing"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answers": [
+        {
+          "text": "At Signing & At Closing"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 10,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0056,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7759
+    },
+    "q02": {
+      "char_offsets": [
+        12979
+      ],
+      "min_char_offset": 12979,
+      "min_frac": 0.4158,
+      "min_tokens_from_start": 3244,
+      "min_tokens_from_end": 4559
+    },
+    "q03": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0056,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7759
+    },
+    "q04": {
+      "char_offsets": [
+        11653
+      ],
+      "min_char_offset": 11653,
+      "min_frac": 0.3734,
+      "min_tokens_from_start": 2913,
+      "min_tokens_from_end": 4890
+    },
+    "q05": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0056,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7759
+    },
+    "q06": {
+      "char_offsets": [
+        19188
+      ],
+      "min_char_offset": 19188,
+      "min_frac": 0.6148,
+      "min_tokens_from_start": 4797,
+      "min_tokens_from_end": 3006
+    },
+    "q07": {
+      "char_offsets": [
+        20719
+      ],
+      "min_char_offset": 20719,
+      "min_frac": 0.6638,
+      "min_tokens_from_start": 5179,
+      "min_tokens_from_end": 2624
+    },
+    "q08": {
+      "char_offsets": [
+        29750
+      ],
+      "min_char_offset": 29750,
+      "min_frac": 0.9532,
+      "min_tokens_from_start": 7437,
+      "min_tokens_from_end": 366
+    },
+    "q09": {
+      "char_offsets": [
+        26360
+      ],
+      "min_char_offset": 26360,
+      "min_frac": 0.8446,
+      "min_tokens_from_start": 6590,
+      "min_tokens_from_end": 1213
+    },
+    "q10": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0056,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7759
+    },
+    "q11": {
+      "char_offsets": [
+        3719
+      ],
+      "min_char_offset": 3719,
+      "min_frac": 0.1192,
+      "min_tokens_from_start": 929,
+      "min_tokens_from_end": 6874
+    },
+    "q12": {
+      "char_offsets": [
+        176
+      ],
+      "min_char_offset": 176,
+      "min_frac": 0.0056,
+      "min_tokens_from_start": 44,
+      "min_tokens_from_end": 7759
+    },
+    "q13": {
+      "char_offsets": [
+        18621
+      ],
+      "min_char_offset": 18621,
+      "min_frac": 0.5966,
+      "min_tokens_from_start": 4655,
+      "min_tokens_from_end": 3148
+    },
+    "q14": {
+      "char_offsets": [
+        26360
+      ],
+      "min_char_offset": 26360,
+      "min_frac": 0.8446,
+      "min_tokens_from_start": 6590,
+      "min_tokens_from_end": 1213
+    },
+    "q15": {
+      "char_offsets": [
+        8949
+      ],
+      "min_char_offset": 8949,
+      "min_frac": 0.2867,
+      "min_tokens_from_start": 2237,
+      "min_tokens_from_end": 5566
+    },
+    "q16": {
+      "char_offsets": [
+        3719
+      ],
+      "min_char_offset": 3719,
+      "min_frac": 0.1192,
+      "min_tokens_from_start": 929,
+      "min_tokens_from_end": 6874
+    }
+  }
+}

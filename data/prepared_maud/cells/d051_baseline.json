@@ -1,0 +1,595 @@
+{
+  "cell_id": "d051_baseline",
+  "dataset": "maud",
+  "doc_index": 51,
+  "modality": "baseline",
+  "focus": "labels",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 9028,
+  "actual_chars": 36111,
+  "target_document_id": "contract_144",
+  "target_document_title": "________________",
+  "distractor_ids": [],
+  "target_offset": 54,
+  "target_end": 35732,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"contract_144\" title=\"________________\">\nA “Company Material Adverse Effect” means any change, effect, event, occurrence or state of facts (or any development that, insofar as can reasonably be foreseen, could reasonably be expected to result in any change, effect, event, occurrence or state of facts) that, taken alone or together with any other related or unrelated changes, effects, events, occurrences or states of facts: (1) is materially adverse to the business, properties, assets, liabilities, condition (financial or otherwise) or results of operations of the Company and its Subsidiaries, taken as a whole, other than any change, effect, event, occurrence, state of facts or development arising from or related to (except, in the case of clauses (a), (b), (f), (g) or (i) below, to the extent disproportionately affecting the Company and the Company Subsidiaries relative to other similarly situated companies in the industries in which the Company and the Company Subsidiaries operate, in which case only the incremental disproportionate impact or impacts may be taken into account in determining whether or not there has been a Company Material Adverse Effect) the following: (a) changes in the conditions generally of the industries in which the Company and the Company Subsidiaries operate; (b) conditions affecting the United States economy or the global economy generally or political conditions in the United States or any other country in the world; (c) acts of hostilities, war, acts of war, sabotage or terrorism (including any outbreak, escalation or general worsening of the foregoing) in the United States or any other country or region in the world, (d) any epidemic or pandemic (including continuation or escalation of the COVID-19 pandemic or orders issued by a Governmental Entity in response to the COVID-19 pandemic) in the United States or any other country or region in the world, or any escalation of the foregoing; (e) earthquakes, hurricanes, tsunamis, tornadoes, floods, mudslides, wild fires or other natural or man-made disasters or acts of God in the United States or any other country or region in the world, or any escalation of the foregoing; (f) changes in the financial, credit, banking, currency or securities markets in the United States or any other country or region in the world, including (A) changes in interest rates in the United States or any other country and changes in exchange rates for the currencies of any countries and (B) any suspension of trading in securities (whether equity, debt, derivative or hybrid securities) generally on any securities exchange or over-the-counter market operating in the United States or any other country or region in the world; (g) changes in GAAP or other accounting standards (or the enforcement or interpretation thereof); (h) changes in the Company’s stock price or trading volume in and of themselves (it being understood that the facts or causes underlying or contributing to any such changes may be considered in determining whether a Company Material Adverse Effect has occurred); (i) changes in any Laws or Privacy Obligations (or the enforcement or interpretation thereof) after the date hereof; (j) any failure by the Company to meet, or changes to, any internal or published projections or any decline in and of itself in the market price or trading volume of the Company Common Stock (it being understood that the facts or causes underlying or contributing to any such failure or decline may be considered in determining whether a Company Material Adverse Effect has occurred); (k) the negotiation, execution, delivery or announcement of this Agreement, the performance by any party hereto of its obligations hereunder, including the impact thereof on the relationships, contractual or otherwise, of the Company with employees, customers, investors, contractors, lenders, suppliers, vendors, or partners, or the identity of Parent or any of its Affiliates as the acquirer of the Company (provided that this clause (k) shall not diminish the effect of, and shall be disregarded for purposes of, the representations and warranties contained in Section 3.05) or the public announcement (including as to the identity of the parties hereto) or pendency of the Merger or any of the other Transactions; (l) the availability or cost of equity, debt or other financing to Parent, Sub or the Surviving Corporation; (m) any action taken, or failure to take action, which Parent has in writing requested or consented; or (n) Transaction Litigation or any demand or Legal Proceeding for appraisal or the fair value of any shares of Company Common Stock pursuant to the DGCL in connection herewith; or (2) prevents the ability of the Company to consummate the Merger and the other Transactions.  (Page 81)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nSECTION 5.02. No Solicitation.  <omitted> (b) <omitted> Notwithstanding the foregoing, and only at a time prior to the receipt of the Company Stockholder Approval, the Company may (x) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to an Intervening Event, (y) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to a Superior Proposal or (z) terminate this Agreement pursuant to Section 8.01(f) in response to a Superior Proposal in order to enter into a definitive agreement providing for such Superior Proposal, but in each case only if: (1) the Company Board has received a Superior Proposal that did not result, directly or indirectly, from a breach of Section 5.02 (in the case of the preceding clause (y) or clause (z)), or an Intervening Event has occurred (in the case of the preceding clause (x)); (2) in light of such Superior Proposal (in the case of the preceding clause (y) or clause (z)) or such Intervening Event (in the case of the preceding clause (x)), as the case may be, the Company Board shall have determined in good faith, after consultation with outside legal counsel and consultation with a financial advisor of nationally recognized reputation, that failure to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (y)) or to terminate this Agreement (in the case of the preceding clause (z)) or to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (x)) would reasonably be expected to be inconsistent with its fiduciary duties to the stockholders of the Company under Delaware Law (any such determination, a “Withdrawal Determination”); (3) the Company has notified Parent in writing that it has made a Withdrawal Determination (any such notice, a “Triggering Notice”) and provided Parent unredacted copies of the documents and/or agreements providing for the Superior Proposal (including any other documents or agreements referred to in or to be entered into in connection with the Superior Proposal) or described the Intervening Event in writing in reasonable detail, as the case may be; (4) during the five (5) business days commencing on the date of receipt by Parent of the Triggering Notice (such time period, the “Notice Period”), if requested by Parent, the Company shall have negotiated in good faith with Parent to permit Parent to make a proposal to amend the terms of the Transactions or the Transaction Agreements; (5) at the end of the Notice Period, and taking into account any irrevocable written proposals (including any proposal to amend the terms of the Transactions or the Transaction Agreements) made by Parent since receipt of the Triggering Notice (a “Parent Proposal”), such Superior Proposal remains a Superior Proposal and the Company Board has again made a Withdrawal Determination in response to such Superior Proposal or such Intervening Event is continuing and the Company Board has again made a Withdrawal Determination in response to such Intervening Event (it being understood and agreed that if, in light of any Parent Proposal, the Company Board is no longer able to make a Withdrawal Determination with respect to such Superior Proposal or Intervening Event, then the Company shall immediately enter into amendments to the Transaction Agreements with Parent and Sub that embodies the terms of such Parent Proposal); (6) the Company is in compliance in all material respects with Section 5.02 and Parent is not at such time entitled to terminate this Agreement pursuant to Section 8.01(c) or Section 8.01(d)(ii); and (7) the Company (i) has paid prior to or concurrently pays the Termination Fee to Parent pursuant to Section 8.02 and immediately after such termination enters into a definitive agreement providing for such Superior Proposal, in the case of a termination of this Agreement pursuant to the preceding clause (z) or (ii) has set aside for immediate payment, the funds for the fee due under Section 8.02 in the case of an Adverse Recommendation Change pursuant to the preceding clause (x) or (y). The Company acknowledges and agrees that each successive modification to the financial terms or other material terms of an Acquisition Proposal that is determined to be a Superior Proposal, and any material change to the Intervening Event, shall require a new Triggering Notice and a new Notice Period (except that the five (5) business day notice period referred to in the Notice Period shall instead be equal to the longer of (I) three (3) business days and (II) the period remaining under the Notice Period immediately prior to the delivery of such additional notice under this sentence).  (Page 53)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\n“knowledge”, with respect to the Company, means the actual knowledge of the Company’s President, Chief Executive Officer, Chief Financial Officer, Chief Operating Officer, Chief Strategy Officer or General Counsel;  (Page 84)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nSECTION 5.02.No Solicitation. (a) The Company shall not, and shall cause its subsidiaries not to, and shall cause any officer, director or employee of, or any investment banker, attorney, accountant or other advisor or representative (collectively, “Representatives”) of, the Company or any of its subsidiaries not to, directly or indirectly (i) solicit, initiate or encourage the submission of, any Acquisition Proposal, or take any other action to facilitate any inquiries or the making of any proposal that constitutes, or may reasonably be expected to lead to, any Acquisition Proposal, (ii) enter into any AcquisitionAgreement with respect to any Acquisition Proposal, <omitted> Notwithstanding the foregoing, and only at a time prior to the receipt of the Company Stockholder Approval, the Company may (x) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to an Intervening Event, (y) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to a Superior Proposal or (z) terminate this Agreement pursuant to Section 8.01(f) in response to a Superior Proposal in order to enter into a definitive agreement providing for such Superior Proposal, but in each case only if: (1) the Company Board has received a Superior Proposal that did not result, directly or indirectly, from a breach of Section 5.02 (in the case of the preceding clause (y) or clause (z)), or an Intervening Event has occurred (in the case of the preceding clause (x)); (2) in light of such Superior Proposal (in the case of the preceding clause (y) or clause (z)) or such Intervening Event (in the case of the preceding clause (x)), as the case may be, the Company Board shall have determined in good faith, after consultation with outside legal counsel and consultation with a financial advisor of nationally recognized reputation, that failure to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (y)) or to terminate this Agreement (in the case of the preceding clause (z)) or to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (x)) would reasonably be expected to be inconsistent with its fiduciary duties to the stockholders of the Company under Delaware Law (any such determination, a “Withdrawal Determination”); (3) the Company has notified Parent in writing that it has made a Withdrawal Determination (any such notice, a “Triggering Notice”) and provided Parent unredacted copies of the documents and/or agreements providing for the Superior Proposal (including any other documents or agreements referred to in or to be entered into in connection with the Superior Proposal) or described the Intervening Event in writing in reasonable detail, as the case may be; (4) during the five (5) business days commencing on the date of receipt by Parent of the Triggering Notice (such time period, the “Notice Period”), if requested by Parent, the Company shall have negotiated in good faith with Parent to permit Parent to make a proposal to amend the terms of the Transactions or the Transaction Agreements; (5) at the end of the Notice Period, and taking into account any irrevocable written proposals (including any proposal to amend the terms of the Transactions or the Transaction Agreements) made by Parent since receipt of the Triggering Notice (a “Parent Proposal”), such Superior Proposal remains a Superior Proposal and the Company Board has again made a Withdrawal Determination in response to such Superior Proposal or such Intervening Event is continuing and the Company Board has again made a Withdrawal Determination in response to such Intervening Event (it being understood and agreed that if, in light of any Parent Proposal, the Company Board is no longer able to make a Withdrawal Determination with respect to such Superior Proposal or Intervening Event, then the Company shall immediately enter into amendments to the Transaction Agreements with Parent and Sub that embodies the terms of such Parent Proposal); (6) the Company is in compliance in all material respects with Section 5.02 and Parent is not at such time entitled to terminate this Agreement pursuant to Section 8.01(c) or Section 8.01(d)(ii); and (7) the Company (i) has paid prior to or concurrently pays the Termination Fee to Parent pursuant to Section 8.02 and immediately after such termination enters into a definitive agreement providing for such Superior Proposal, in the case of a termination of this Agreement pursuant to the preceding clause (z) or (ii) has set aside for immediate payment, the funds for the fee due under Section 8.02 in the case of an Adverse Recommendation Change pursuant to the preceding clause (x) or (y). The Company acknowledges and agrees that each successive modification to the financial terms or other material terms of an Acquisition Proposal that is determined to be a Superior Proposal, and any material change to the Intervening Event, shall require a new Triggering Notice and a new Notice Period (except that the five (5) business day notice period referred to in the Notice Period shall instead be equal to the longer of (I) three (3) business days and (II) the period remaining under the Notice Period immediately prior to the delivery of such additional notice under this sentence).  (Page 53)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nSECTION 7.02. Conditions to Obligations of Parent and Sub. The obligations of Parent and Sub to effect the Merger are further subject to the following conditions:(a)               Representations and Warranties. <omitted> (ii) each of the other representations and warranties (excluding those representations and warranties specified in the preceding clause (i) of this Section 7.02(a)) of the Company in this Agreement shall be true and correct as of the date of this Agreement and as of the Closing Date as though made on the Closing Date, except to the extent any such other representations and warranties expressly relate to an earlier date (in which case such other representations and warranties shall be true and correct on and as of such earlier date), in each case determined without regard to qualifications as to materiality or Company Material Adverse Effect, unless, for purposes of this clause (ii), the failure of any such other representations and warranties to be so true and correct has not resulted in, and would not reasonably be expected to result in, individually or in the aggregate, a Company Material Adverse Effect. (Page 72)\n\nSECTION 7.02. Conditions to Obligations of Parent and Sub. <omitted> (ii) each of the other representations and warranties <omitted> of the Company in this Agreement shall be true and correct <omitted> unless <omitted> the failure of any such other representations and warranties to be so true and correct has not resulted in, and would not reasonably be expected to result in, individually or in the aggregate, a Company Material Adverse Effect. (Page 72)\n\nSECTION 7.02. Conditions to Obligations of Parent and Sub. The obligations of Parent and Sub to effect the Merger are further subject to the following conditions:(a)               Representations and Warranties. <omitted> (i) The representations and warranties of the Company in Section 3.01 (Organization, Standing and Power), Section 3.02 (Company Subsidiaries; Equity Interests), Section 3.03(a), (b) <omitted> (Capital Structure), Section 3.04 (Authority; Execution and Delivery; Enforceability), Section 3.13 (Brokers and Other Advisors) and in Section 3.20 (Vote Required) shall be true and correct in all but de minimis respects as of the date of this Agreement and as of the Closing Date as though made on the Closing Date, except to the extent that such representations and warranties expressly relate to an earlier date (in which case such representations and warranties shall be true and correct in all but de minimis respects on and as of such earlier date) (Page 72)\n\nSECTION 7.02. Conditions to Obligations of Parent and Sub. <omitted> The representations and warranties of the Company in <omitted> Section 3.03(a), (b) <omitted> (Capital Structure) <omitted> shall be true and correct in all but de minimis respects (Page 72)\n\nSECTION 3.04. Authority; Execution and Delivery; Enforceability.   <omitted> (b)               The Board of Directors of the Company (the “Company Board”), at a meeting duly called and held at which all directors of the Company were present, duly and unanimously adopted resolutions (i) approving and declaring advisable this Agreement and the other Transaction Agreements, the Merger and the other Transactions and approving the execution, delivery and performance of this Agreement and the other Transaction Agreements <omitted> and (v) electing that the Merger not be subject to any “moratorium,” “control share acquisition,” “business combination,” “fair price” or other form of anti-takeover laws and regulations (collectively, “Takeover Laws”) of any jurisdiction that may purport to be applicable to this Agreement, which resolutions have not been rescinded, modified or withdrawn in any way.\nSECTION 7.02. Conditions to Obligations of Parent and Sub. The obligations of Parent and Sub to effect the Merger are further subject to the following conditions:(a)               Representations and Warranties. <omitted> (i) The representations and warranties of the Company in Section 3.01 (Organization, Standing and Power), Section 3.02 (Company Subsidiaries; Equity Interests), Section 3.03 <omitted> (b), (c) (first sentence only) and (f) (Capital Structure), Section 3.04 (Authority; Execution and Delivery; Enforceability), Section 3.13 (Brokers and Other Advisors) and in Section 3.20 (Vote Required) shall be true and correct in all but de minimis respects as of the date of this Agreement and as of the Closing Date as though made on the Closing Date, except to the extent that such representations and warranties expressly relate to an earlier date (in which case such representations and warranties shall be true and correct in all but de minimis respects on and as of such earlier date), (Page 72)\n\nSECTION 3.04. Authority; Execution and Delivery; Enforceability.   <omitted> (b)               The Board of Directors of the Company (the “Company Board”), at a meeting duly called and held at which all directors of the Company were present, duly and unanimously adopted resolutions (i) approving and declaring advisable this Agreement and the other Transaction Agreements, the Merger and the other Transactions and approving the execution, delivery and performance of this Agreement and the other Transaction Agreements <omitted> and (v) electing that the Merger not be subject to any “moratorium,” “control share acquisition,” “business combination,” “fair price” or other form of anti-takeover laws and regulations (collectively, “Takeover Laws”) of any jurisdiction that may purport to be applicable to this Agreement, which resolutions have not been rescinded, modified or withdrawn in any way.\nSECTION 7.02. Conditions to Obligations of Parent and Sub. <omitted> (i) The representations and warranties of the Company in Section 3.01 (Organization, Standing and Power), Section 3.02 (Company Subsidiaries; Equity Interests), Section 3.03 <omitted> (b), (c) (first sentence only) and (f) (Capital Structure), Section 3.04 (Authority; Execution and Delivery; Enforceability), Section 3.13 (Brokers and Other Advisors) and in Section 3.20 (Vote Required) shall be true and correct in all but de minimis respects (Page 72)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nSECTION 5.02. No Solicitation.  <omitted> (b) <omitted> Notwithstanding the foregoing, and only at a time prior to the receipt of the Company Stockholder Approval, the Company may (x) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to an Intervening Event, (y) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to a Superior Proposal or (z) terminate this Agreement pursuant to Section 8.01(f) in response to a Superior Proposal in order to enter into a definitive agreement providing for such Superior Proposal, but in each case only if: (1) the Company Board has received a Superior Proposal that did not result, directly or indirectly, from a breach of Section 5.02 (in the case of the preceding clause (y) or clause (z)), or an Intervening Event has occurred (in the case of the preceding clause (x)); (2) in light of such Superior Proposal (in the case of the preceding clause (y) or clause (z)) or such Intervening Event (in the case of the preceding clause (x)), as the case may be, the Company Board shall have determined in good faith, after consultation with outside legal counsel and consultation with a financial advisor of nationally recognized reputation, that failure to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (y)) or to terminate this Agreement (in the case of the preceding clause (z)) or to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (x)) would reasonably be expected to be inconsistent with its fiduciary duties to the stockholders of the Company under Delaware Law (any such determination, a “Withdrawal Determination”); (3) the Company has notified Parent in writing that it has made a Withdrawal Determination (any such notice, a “Triggering Notice”) and provided Parent unredacted copies of the documents and/or agreements providing for the Superior Proposal (including any other documents or agreements referred to in or to be entered into in connection with the Superior Proposal) or described the Intervening Event in writing in reasonable detail, as the case may be; (4) during the five (5) business days commencing on the date of receipt by Parent of the Triggering Notice (such time period, the “Notice Period”), if requested by Parent, the Company shall have negotiated in good faith with Parent to permit Parent to make a proposal to amend the terms of the Transactions or the Transaction Agreements; (5) at the end of the Notice Period, and taking into account any irrevocable written proposals (including any proposal to amend the terms of the Transactions or the Transaction Agreements) made by Parent since receipt of the Triggering Notice (a “Parent Proposal”), such Superior Proposal remains a Superior Proposal and the Company Board has again made a Withdrawal Determination in response to such Superior Proposal or such Intervening Event is continuing and the Company Board has again made a Withdrawal Determination in response to such Intervening Event (it being understood and agreed that if, in light of any Parent Proposal, the Company Board is no longer able to make a Withdrawal Determination with respect to such Superior Proposal or Intervening Event, then the Company shall immediately enter into amendments to the Transaction Agreements with Parent and Sub that embodies the terms of such Parent Proposal); (6) the Company is in compliance in all material respects with Section 5.02 and Parent is not at such time entitled to terminate this Agreement pursuant to Section 8.01(c) or Section 8.01(d)(ii); and (7) the Company (i) has paid prior to or concurrently pays the Termination Fee to Parent pursuant to Section 8.02 and immediately after such termination enters into a definitive agreement providing for such Superior Proposal, in the case of a termination of this Agreement pursuant to the preceding clause (z) or (ii) has set aside for immediate payment, the funds for the fee due under Section 8.02 in the case of an Adverse Recommendation Change pursuant to the preceding clause (x) or (y). The Company acknowledges and agrees that each successive modification to the financial terms or other material terms of an Acquisition Proposal that is determined to be a Superior Proposal, and any material change to the Intervening Event, shall require a new Triggering Notice and a new Notice Period (except that the five (5) business day notice period referred to in the Notice Period shall instead be equal to the longer of (I) three (3) business days and (II) the period remaining under the Notice Period immediately prior to the delivery of such additional notice under this sentence). (Page 53)\n\nSECTION 5.02. No Solicitation.  <omitted> (b) <omitted> the Company may (x) make an Adverse Recommendation Change <omitted> only if: <omitted> (3) the Company has notified Parent in writing that it has made a Withdrawal Determination <omitted> ; (4) during the five (5) business days commencing on the date of receipt by Parent of the Triggering Notice <omitted> the Company shall have negotiated in good faith with Parent to permit Parent to make a proposal to amend the terms of the Transactions or the Transaction Agreements; (Page 53)\n\nSECTION 5.02. No Solicitation.  <omitted> (b) <omitted> Notwithstanding the foregoing, and only at a time prior to the receipt of the Company Stockholder Approval, the Company may (x) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to an Intervening Event, (y) make an Adverse Recommendation Change under clause (A) of the definition thereof in response to a Superior Proposal or (z) terminate this Agreement pursuant to Section 8.01(f) in response to a Superior Proposal in order to enter into a definitive agreement providing for such Superior Proposal, but in each case only if: (1) the Company Board has received a Superior Proposal that did not result, directly or indirectly, from a breach of Section 5.02 (in the case of the preceding clause (y) or clause (z)), or an Intervening Event has occurred (in the case of the preceding clause (x)); (2) in light of such Superior Proposal (in the case of the preceding clause (y) or clause (z)) or such Intervening Event (in the case of the preceding clause (x)), as the case may be, the Company Board shall have determined in good faith, after consultation with outside legal counsel and consultation with a financial advisor of nationally recognized reputation, that failure to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (y)) or to terminate this Agreement (in the case of the preceding clause (z)) or to make an Adverse Recommendation Change under clause (A) of the definition thereof (in the case of the preceding clause (x)) would reasonably be expected to be inconsistent with its fiduciary duties to the stockholders of the Company under Delaware Law (any such determination, a “Withdrawal Determination”); (3) the Company has notified Parent in writing that it has made a Withdrawal Determination (any such notice, a “Triggering Notice”) and provided Parent unredacted copies of the documents and/or agreements providing for the Superior Proposal (including any other documents or agreements referred to in or to be entered into in connection with the Superior Proposal) or described the Intervening Event in writing in reasonable detail, as the case may be; (4) during the five (5) business days commencing on the date of receipt by Parent of the Triggering Notice (such time period, the “Notice Period”), if requested by Parent, the Company shall have negotiated in good faith with Parent to permit Parent to make a proposal to amend the terms of the Transactions or the Transaction Agreements; (5) at the end of the Notice Period, and taking into account any irrevocable written proposals (including any proposal to amend the terms of the Transactions or the Transaction Agreements) made by Parent since receipt of the Triggering Notice (a “Parent Proposal”), such Superior Proposal remains a Superior Proposal and the Company Board has again made a Withdrawal Determination in response to such Superior Proposal or such Intervening Event is continuing and the Company Board has again made a Withdrawal Determination in response to such Intervening Event (it being understood and agreed that if, in light of any Parent Proposal, the Company Board is no longer able to make a Withdrawal Determination with respect to such Superior Proposal or Intervening Event, then the Company shall immediately enter into amendments to the Transaction Agreements with Parent and Sub that embodies the terms of such Parent Proposal); (6) the Company is in compliance in all material respects with Section 5.02 and Parent is not at such time entitled to terminate this Agreement pursuant to Section 8.01(c) or Section 8.01(d)(ii); and (7) the Company (i) has paid prior to or concurrently pays the Termination Fee to Parent pursuant to Section 8.02 and immediately after such termination enters into a definitive agreement providing for such Superior Proposal, in the case of a termination of this Agreement pursuant to the preceding clause (z) or (ii) has set aside for immediate payment, the funds for the fee due under Section 8.02 in the case of an Adverse Recommendation Change pursuant to the preceding clause (x) or (y). The Company acknowledges and agrees that each successive modification to the financial terms or other material terms of an Acquisition Proposal that is determined to be a Superior Proposal, and any material change to the Intervening Event, shall require a new Triggering Notice and a new Notice Period (except that the five (5) business day notice period referred to in the Notice Period shall instead be equal to the longer of (I) three (3) business days and (II) the period remaining under the Notice Period immediately prior to the delivery of such additional notice under this sentence). (Page 53)\n\nSECTION 5.02. No Solicitation.  <omitted> (b) <omitted> the Company may (x) make an Adverse Recommendation Change <omitted> in response to an Intervening Event, (y) make an Adverse Recommendation Change <omitted> in response to a Superior Proposal <omitted> , but in each case only if: <omitted> (3) the Company has notified Parent in writing that it has made a Withdrawal Determination <omitted> . The Company acknowledges and agrees that each successive modification to the financial terms or other material terms of an Acquisition Proposal that is determined to be a Superior Proposal, and any material change to the Intervening Event, shall require a new Triggering Notice and a new Notice Period (except that the five (5) business day notice period referred to in the Notice Period shall instead be equal to the longer of (I) three (3) business days and (II) the period remaining under the Notice Period immediately prior to the delivery of such additional notice under this sentence). (Page 53)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\n“Intervening Event” means a material fact, event, change, development or circumstance related to the Company (A) that first occurs after the date of this Agreement which (i) is unknown to, nor reasonably foreseeable by, the Company Board as of or prior to the date of this Agreement and (ii) becomes known to or by the Company Board prior to the receipt of the Company Stockholder Approval or (B) that occurred prior to the date of this Agreement which (i) was known or reasonably foreseeable by the Company Board as of the date of this Agreement, but the consequences of which were not known or reasonably foreseeable to the Company Board as of the date of this Agreement and (ii) which consequences became known to or by the Company Board prior to the receipt of the Company Stockholder Approval; provided, however, that in no event shall the receipt of an Acquisition Proposal or Superior Proposal, any development or change in the industries the Company and the Company Subsidiaries operate in, or any changes in the market price or trading volume of the shares of Company Common Stock, the matter set forth in Section 5.02(e) of the Company Disclosure Letter, any increase in value of any assets of the Company or its Subsidiaries, the Company or any Company Subsidiary engaging a new client or entering into a new Contract, any changes in Laws,  any COVID-19 related developments (e.g., a vaccine) or the fact in and of itself that the Company exceeds internal or published projections, in any such case, constitute or be taken into account in determining an Intervening Event .  (Page 55)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nfrom the date of this Agreement to the Effective Time, the Company shall not, and shall not permit any Company Subsidiary to, directly or indirectly, do any of the following, except (A) with the prior written consent of Parent, (B) as set forth in Section 5.01 of the Company Disclosure Letter, (C) as expressly required by this Agreement or (D) during any period of full or partial suspension of operations related to COVID-19 or any COVID-19 Measures, the Company or any of its Subsidiaries may, in connection with COVID-19 or any COVID-19 Measures, take such actions as are reasonably necessary (i) to protect the health and safety of the Company’s or its Subsidiaries’ employees and other individuals having business dealings with the Company or any of its Subsidiaries or (ii) to respond to third-party supply or service disruptions caused by COVID-19 or any COVID-19 Measures, in each case of clause (D)(i) and (D)(ii), subject to reasonable prior consultation with Parent to the extent reasonably practicable:  (Page 47)\n</DOCUMENT>\n\n<DOCUMENT id=\"contract_144\" title=\"________________\">\nSECTION 8.02. Effect of Termination. <omitted> (b)               The Company shall pay to Parent a fee of $54,330,000 (the “Termination Fee”) if: <omitted> (B) within 12 months of such termination the Company or any of its Subsidiaries enters into an Acquisition Agreement with respect to any Acquisition Proposal or any Acquisition Proposal is consummated  (Page 76)\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "All/The R&Ws accurate at MAE standard"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "subquestions": [],
+      "source_question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answers": [
+        {
+          "text": "All/The R&Ws accurate at MAE standard"
+        }
+      ]
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "Organization",
+        "Other",
+        "Subsidiaries",
+        "Takeover Statutes"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "subquestions": [
+        "Brokers' Fee",
+        "Rights Agreement"
+      ],
+      "source_question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answers": [
+        {
+          "text": "Approval"
+        },
+        {
+          "text": "Authority"
+        },
+        {
+          "text": "Brokers' Fee"
+        },
+        {
+          "text": "Capitalization-Other"
+        },
+        {
+          "text": "Enforceability"
+        },
+        {
+          "text": "Organization"
+        },
+        {
+          "text": "Other"
+        },
+        {
+          "text": "Subsidiaries"
+        },
+        {
+          "text": "Takeover Statutes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q03",
+      "category": "Conditions to Closing",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "General R&Ws"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "subquestions": [
+        "Capitalization R&Ws"
+      ],
+      "source_question": "Materiality/MAE Scrape applies to",
+      "answers": [
+        {
+          "text": "General R&Ws"
+        }
+      ]
+    },
+    {
+      "qa_id": "q04",
+      "category": "Material Adverse Effect",
+      "question": "A/P/C application to-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "announcement",
+        "pendency"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "subquestions": [
+        "announcement"
+      ],
+      "source_question": "A/P/C application to-Answer",
+      "answers": [
+        {
+          "text": "announcement"
+        },
+        {
+          "text": "pendency"
+        }
+      ]
+    },
+    {
+      "qa_id": "q05",
+      "category": "Material Adverse Effect",
+      "question": "Failure to meet projections (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Failure to meet projections (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "category": "Material Adverse Effect",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "subquestions": [
+        "No"
+      ],
+      "source_question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q07",
+      "category": "Knowledge",
+      "question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q08",
+      "category": "Deal Protection and Related Provisions",
+      "question": "COR permitted in response to Intervening Event",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "COR permitted in response to Intervening Event",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    },
+    {
+      "qa_id": "q09",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Number of additional matching rights periods for modifications (COR)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Continuous matching right"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "subquestions": [],
+      "source_question": "Number of additional matching rights periods for modifications (COR)",
+      "answers": [
+        {
+          "text": "Continuous matching right"
+        }
+      ]
+    },
+    {
+      "qa_id": "q10",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "subquestions": [],
+      "source_question": "Definition contains knowledge requirement - answer",
+      "answers": [
+        {
+          "text": "Known, but consequences unknown or not reasonably foreseeable, at signing"
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "subquestions": [
+        "Breach of no-shop resulting in a Superior Offer"
+      ],
+      "source_question": "Limitations on FTR Exercise-Answer",
+      "answers": [
+        {
+          "text": "Breach of no-shop resulting in a Superior Offer"
+        }
+      ]
+    },
+    {
+      "qa_id": "q12",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+      ],
+      "gold_labels": [
+        "0"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "subquestions": [
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period"
+      ],
+      "source_question": "Acquisition Proposal Timing-Answer",
+      "answers": [
+        {
+          "text": "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        },
+        {
+          "text": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)"
+        }
+      ]
+    },
+    {
+      "qa_id": "q13",
+      "category": "Deal Protection and Related Provisions",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_type": "multi_select",
+      "gold_answers": [
+        "No"
+      ],
+      "gold_labels": [
+        "0",
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": true,
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "subquestions": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "source_question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answers": [
+        {
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "qa_id": "q14",
+      "category": "Operating and Efforts Covenant",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_type": "multiple_choice",
+      "gold_answers": [
+        "Yes"
+      ],
+      "gold_labels": [
+        "1"
+      ],
+      "is_impossible": false,
+      "is_negative": false,
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "subquestions": [],
+      "source_question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answers": [
+        {
+          "text": "Yes"
+        }
+      ]
+    }
+  ],
+  "num_target_fragments": 9,
+  "question_locations": {
+    "q01": {
+      "char_offsets": [
+        15521
+      ],
+      "min_char_offset": 15521,
+      "min_frac": 0.4298,
+      "min_tokens_from_start": 3880,
+      "min_tokens_from_end": 5148
+    },
+    "q02": {
+      "char_offsets": [
+        15521
+      ],
+      "min_char_offset": 15521,
+      "min_frac": 0.4298,
+      "min_tokens_from_start": 3880,
+      "min_tokens_from_end": 5148
+    },
+    "q03": {
+      "char_offsets": [
+        15521
+      ],
+      "min_char_offset": 15521,
+      "min_frac": 0.4298,
+      "min_tokens_from_start": 3880,
+      "min_tokens_from_end": 5148
+    },
+    "q04": {
+      "char_offsets": [
+        54
+      ],
+      "min_char_offset": 54,
+      "min_frac": 0.0015,
+      "min_tokens_from_start": 13,
+      "min_tokens_from_end": 9015
+    },
+    "q05": {
+      "char_offsets": [
+        54
+      ],
+      "min_char_offset": 54,
+      "min_frac": 0.0015,
+      "min_tokens_from_start": 13,
+      "min_tokens_from_end": 9015
+    },
+    "q06": {
+      "char_offsets": [
+        54
+      ],
+      "min_char_offset": 54,
+      "min_frac": 0.0015,
+      "min_tokens_from_start": 13,
+      "min_tokens_from_end": 9015
+    },
+    "q07": {
+      "char_offsets": [
+        9739
+      ],
+      "min_char_offset": 9739,
+      "min_frac": 0.2697,
+      "min_tokens_from_start": 2434,
+      "min_tokens_from_end": 6594
+    },
+    "q08": {
+      "char_offsets": [
+        4878
+      ],
+      "min_char_offset": 4878,
+      "min_frac": 0.1351,
+      "min_tokens_from_start": 1219,
+      "min_tokens_from_end": 7809
+    },
+    "q09": {
+      "char_offsets": [
+        21778
+      ],
+      "min_char_offset": 21778,
+      "min_frac": 0.6031,
+      "min_tokens_from_start": 5444,
+      "min_tokens_from_end": 3584
+    },
+    "q10": {
+      "char_offsets": [
+        32974
+      ],
+      "min_char_offset": 32974,
+      "min_frac": 0.9131,
+      "min_tokens_from_start": 8243,
+      "min_tokens_from_end": 785
+    },
+    "q11": {
+      "char_offsets": [
+        10032
+      ],
+      "min_char_offset": 10032,
+      "min_frac": 0.2778,
+      "min_tokens_from_start": 2508,
+      "min_tokens_from_end": 6520
+    },
+    "q12": {
+      "char_offsets": [
+        35732
+      ],
+      "min_char_offset": 35732,
+      "min_frac": 0.9895,
+      "min_tokens_from_start": 8933,
+      "min_tokens_from_end": 95
+    },
+    "q13": {
+      "char_offsets": [
+        35732
+      ],
+      "min_char_offset": 35732,
+      "min_frac": 0.9895,
+      "min_tokens_from_start": 8933,
+      "min_tokens_from_end": 95
+    },
+    "q14": {
+      "char_offsets": [
+        34637
+      ],
+      "min_char_offset": 34637,
+      "min_frac": 0.9592,
+      "min_tokens_from_start": 8659,
+      "min_tokens_from_end": 369
+    }
+  }
+}
