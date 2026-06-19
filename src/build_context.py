@@ -38,8 +38,10 @@ they are almost always built together).
   Interference (length only):
     Budgets are how much rot/confusion FILLER to add AROUND the probe, in tokens
     (64k, 128k, ...) — the independent variable, NOT a cap on the window. The
-    probe document is ALWAYS kept whole and placed at the END of the window, after
-    all the filler; only filler blocks are trimmed to fit the budget.
+    probe document is ALWAYS kept whole and placed at the FRONT of the window,
+    BEFORE all the filler (with the query appended last), so increasing the budget
+    pushes the probe progressively further from the point of retrieval; only
+    filler blocks are trimmed to fit the budget.
 
   Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER documents in the
@@ -318,13 +320,17 @@ class DocWrapper:
 def build_cell_context(target_id: str, target_title: str, target_text: str,
                        entries: list, loader, filler_chars: int, sep: str,
                        rng: random.Random, wrapper: DocWrapper) -> dict:
-    """Wrap the FULL target plus `filler_chars` of distractor filler before it.
+    """Wrap the FULL target plus `filler_chars` of distractor filler after it.
 
     The target document is ALWAYS included verbatim and in full, and is placed at
-    the END of the window, after all the filler; `filler_chars` is the amount of
-    rot/confusion text added BEFORE it (the experiment's independent variable),
-    NOT a cap on the total window. filler_chars <= 0 (or no entries) yields the
-    bare target (the zero-interference baseline).
+    the FRONT of the window, BEFORE all the filler; `filler_chars` is the amount
+    of rot/confusion text added AFTER it (the experiment's independent variable),
+    NOT a cap on the total window. Placing the target first and the query last
+    (the query is appended after this context by run_models) means the distance
+    between the target and the point of retrieval GROWS with the filler budget —
+    the target is progressively buried, instead of sitting in the recency slot
+    right next to the question. filler_chars <= 0 (or no entries) yields the bare
+    target (the zero-interference baseline).
 
     `entries` are opaque distractor handles; `loader(handle) -> (id, title, text)`
     (eager for CUAD, lazy file reads for MAUD). Returns the assembled context, the
@@ -366,15 +372,15 @@ def build_cell_context(target_id: str, target_title: str, target_text: str,
             if len(order) == 1 and i >= 1:
                 break
 
-    # The target always sits at the END of the window, after all the filler.
-    # With no filler (baseline) it simply stands alone.
-    ordered = blocks + [target_block]
-    chars_before = sum(len(b) for b in blocks) + len(sep) * len(blocks)
+    # The target sits at the FRONT of the window; all filler follows it, so the
+    # distance between the target and the query (appended after this context)
+    # grows with the filler budget. With no filler (baseline) it stands alone.
+    ordered = [target_block] + blocks
     context = sep.join(ordered)
 
     return {
         "context": context,
-        "target_offset": chars_before + target_inner_offset,
+        "target_offset": target_inner_offset,
         "distractor_ids": used_ids,
         "filler_repeated": repeated,
     }
@@ -736,7 +742,11 @@ class Builder:
 
 class CuadBuilder(Builder):
     name = "cuad"
-    wrapper = DocWrapper("DOCUMENT", with_title=True)
+    # No title attribute: the CUAD distractor pool has no titles to emit, so a
+    # titled target would be the ONLY document carrying a populated title= — a
+    # tell that flags the needle. The CUAD id already equals the contract title,
+    # so dropping the attribute loses nothing and keeps every document symmetric.
+    wrapper = DocWrapper("DOCUMENT", with_title=False)
     legal_source = "cuad-other-contracts"
 
     def file(self, args): return args.cuad_file
@@ -822,9 +832,9 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
               baseline: bool = False) -> dict:
     """Build one prepared-context record (schema shared across datasets).
 
-    `budget` is the amount of rot/confusion FILLER (in tokens) to add before the
+    `budget` is the amount of rot/confusion FILLER (in tokens) to add after the
     full target — the independent variable, not a cap on the window. The target is
-    always kept whole and placed at the end. baseline=True forces zero filler and
+    always kept whole and placed at the front. baseline=True forces zero filler and
     a `d{doc_index:03d}_baseline` cell id (modality is passed as "baseline"); it is
     the single shared anchor for both rot and confusion. The cell id carries a
     `d{doc_index:03d}` prefix so cells stay unique across the target documents.
@@ -905,8 +915,8 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
 
     # Per document: ONE shared zero-filler baseline (if any interference modality
     # is requested), then each modality's budget interference grid (target always
-    # at the END). The legal distractor pool excludes the current target, so it is
-    # rebuilt per document.
+    # at the FRONT, filler after it). The legal distractor pool excludes the
+    # current target, so it is rebuilt per document.
     print(f"\nGenerating cells for {len(targets)} document(s):")
     for target in targets:
         modalities, note = builder.modalities_for(target, requested)

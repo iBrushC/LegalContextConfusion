@@ -104,14 +104,23 @@ def _shared_legend(fig, axes) -> None:
 def plot_length(curves, models, modalities, override, colors, out: Path, dpi: int):
     fig, axes = plt.subplots(1, len(modalities), figsize=(5.2 * len(modalities), 4.4),
                              squeeze=False)
+    scaled_any = False
     for ax, modality in zip(axes[0], modalities):
         metric_name = None
+        ymax = 1.0
+        ticks: set[int] = set()
         for model in models:
             cells = curves.get((model, modality))
             if not cells:
                 continue
             metric = _metric_for(cells, override)
             metric_name = metric
+            # Scale each model's curve by its own no-filler baseline, so the
+            # y-axis reads as "fraction of baseline performance retained" and
+            # every modality shares the same 1.0 = no-degradation anchor.
+            base = _baseline_row(cells)
+            base_mean = base.get(f"{metric}_mean") if base is not None else None
+            scale = base_mean if (base_mean is not None and base_mean > 0) else None
             budgets = _interference_budgets(cells)
             xs, ys, es = [], [], []
             for b in budgets:
@@ -120,28 +129,48 @@ def plot_length(curves, models, modalities, override, colors, out: Path, dpi: in
                 if mean is None:
                     continue
                 xs.append(b)
-                ys.append(float(mean))
-                es.append(float(r.get(f"{metric}_std") or 0.0))
+                val = float(mean)
+                err = float(r.get(f"{metric}_std") or 0.0)
+                if scale:
+                    val /= scale
+                    err /= scale
+                ys.append(val)
+                es.append(err)
             if xs:
+                ticks.update(xs)
                 xs, ys, es = np.array(xs), np.array(ys), np.array(es)
+                lo, hi = ys - es, ys + es
+                if not scale:  # absolute metrics live in [0, 1]; clip the band
+                    lo, hi = np.clip(lo, 0, 1), np.clip(hi, 0, 1)
+                ymax = max(ymax, float(hi.max()))
                 ax.plot(xs, ys, marker="o", color=colors[model], label=model,
                         linewidth=2)
-                ax.fill_between(xs, np.clip(ys - es, 0, 1), np.clip(ys + es, 0, 1),
+                ax.fill_between(xs, np.clip(lo, 0, None), hi,
                                 color=colors[model], alpha=0.15)
-            # No-filler baseline as a dashed reference line (CUAD rot/confusion).
-            base = _baseline_row(cells)
-            if base is not None and base.get(f"{metric}_mean") is not None:
+            # No-filler baseline reference: 1.0 when scaled, else the raw level.
+            if scale:
+                scaled_any = True
+                ax.axhline(1.0, color=colors[model], linestyle="--",
+                           linewidth=1, alpha=0.6)
+            elif base is not None and base.get(f"{metric}_mean") is not None:
                 ax.axhline(base[f"{metric}_mean"], color=colors[model],
                            linestyle="--", linewidth=1, alpha=0.6)
-        ax.set_xscale("log")
+        ax.set_xscale("log", base=2)
+        if ticks:  # exact filler-length labels (64k/128k/256k/512k), not log2
+            xt = sorted(ticks)
+            ax.set_xticks(xt)
+            ax.set_xticklabels([_human_budget(b) for b in xt])
+            ax.minorticks_off()
         ax.set_title(modality)
-        ax.set_xlabel("context length (filler tokens, log)")
-        ax.set_ylabel(METRIC_LABEL.get(metric_name, metric_name or "score"))
-        ax.set_ylim(-0.02, 1.02)
+        ax.set_xlabel("context length (filler tokens)")
+        ylab = METRIC_LABEL.get(metric_name, metric_name or "score")
+        ax.set_ylabel(ylab + " (rel. to baseline)" if scaled_any else ylab)
+        ax.set_ylim(-0.02, max(1.05, ymax * 1.05))
         ax.grid(True, alpha=0.3, which="both")
     _shared_legend(fig, axes[0])
     fig.suptitle("Degradation vs context length  (pooled across documents; "
-                 "dashed = no-filler baseline)", y=1.04, fontsize=12)
+                 "dashed = no-filler baseline"
+                 + (" = 1.0)" if scaled_any else ")"), y=1.04, fontsize=12)
     fig.tight_layout()
     fig.savefig(out, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
@@ -152,8 +181,8 @@ def plot_overview(curves, models, modalities, override, out: Path, dpi: int):
     """Compact (model x budget) heatmap of the headline metric, per modality."""
     fig, axes = plt.subplots(1, len(modalities),
                              figsize=(0.9 * len(modalities) + 3.0 * len(modalities),
-                                      1.0 + 0.6 * len(models)),
-                             squeeze=False)
+                                      1.6 + 0.6 * len(models)),
+                             squeeze=False, constrained_layout=True)
     im = None
     for ax, modality in zip(axes[0], modalities):
         # Union of interference budgets seen by any model for this modality.
@@ -190,8 +219,10 @@ def plot_overview(curves, models, modalities, override, out: Path, dpi: int):
                             color="white" if grid[mi, bi] < 0.6 else "black")
     if im is not None:
         fig.colorbar(im, ax=axes, fraction=0.015, pad=0.02, label="headline metric")
-    fig.suptitle("Headline metric by model × context length", y=1.02, fontsize=13)
-    fig.savefig(out, dpi=dpi, bbox_inches="tight")
+    # constrained_layout reserves room for the suptitle above the (two-line)
+    # per-axis titles, so it no longer collides with the per-modality metric.
+    fig.suptitle("Headline metric by model × context length", fontsize=13)
+    fig.savefig(out, dpi=dpi)
     plt.close(fig)
     return out
 

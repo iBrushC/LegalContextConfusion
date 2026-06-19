@@ -1,0 +1,291 @@
+{
+  "cell_id": "d053_baseline",
+  "dataset": "cuad",
+  "doc_index": 53,
+  "modality": "baseline",
+  "focus": "spans",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 853,
+  "actual_chars": 3411,
+  "target_document_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4",
+  "target_document_title": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4",
+  "distractor_ids": [],
+  "target_offset": 85,
+  "target_end": 3399,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4\">\nADDENDUM REQUIRED BY THE DEPARTMENT OF LAW OF THE STATE OF NEW YORK   The following Items are required to be included within the Disclosure Document and shall be deemed to supersede the language in the Disclosure Document itself:   3. LITIGATION   Neither the Franchisor, its Predecessor nor any person listed under Item 2 or an affiliate offering franchises under Franchisor's principal trademark:     (A) has an administrative, criminal or civil action pending against that person alleging: a felony; a violation of a franchise, antitrust or securities law; fraud; embezzlement; fraudulent conversion; misappropriation of property; unfair or deceptive practices; or comparable civil or misdemeanor allegations.\n\n  (B) has been convicted of a felony or pleaded nolo contendere to a felony charge or, within the ten year period immediately preceding the application for registration, has been convicted of or pleaded nolo contendere to a misdemeanor charge or has been the subject of a civil action alleging: violation of a franchise; anti-fraud or securities law; fraud; embezzlement; fraudulent conversion or misappropriation of property; unfair or deceptive practices; or comparable allegations.\n\n  (C) is subject to a currently effective injunctive or restrictive order or decree relating to the franchise, or under a Federal, State or Canadian franchise, securities, antitrust, trade regulation or trade practice law, resulting from a concluded or pending action or proceeding brought by a public agency; or is subject to any currently effective order of any national securities association or national securities exchange, as defined in the Securities and Exchange Act of 1934, suspending or expelling such person from membership in such association or exchange; or is subject to a currently effective injunctive or restrictive order relating to any other business activity as a result of an action brought by a public agency or department, including, without limitation, actions affecting a license as a real estate broker or sales agent.   4. BANKRUPTCY   Neither the Franchisor, its affiliate, its predecessor, officers, or general partner during the ten year period immediately before the date of the disclosure document: (a) filed as debtor (or had filed against it) a petition to start an action under the U.S. Bankruptcy Code (or any comparable foreign law); (b) obtained a discharge of its debts under the bankruptcy code; or (c) was a principal officer of a company or a general partner in a partnership that either filed as a debtor (or had filed against it) a petition to start an action under the U.S. Bankruptcy Code or that obtained a discharge of its debts under the U.S. Bankruptcy Code during or within one year after the officer or general partner of the Franchisor held this position in the company or partnership.   IN WITNESS WHEREOF, the parties hereto have duly executed, sealed and delivered this Addendum dated this ______ day of ______________, 2015.\n\n2\n\nSource: SOUPMAN, INC., 8-K, 8/14/2015\n\n\n\n\n\n\n\n              ATTEST   KIOSK CONCEPTS, INC.:                 By:       Witness   Name:       Title:                     MASTER FRANCHISEE: THE GRILLED CHEESE TRUCK, INC.                 By:           Name:       Title:               Witness\n\n3\n\nSource: SOUPMAN, INC., 8-K, 8/14/2015\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Source Code Escrow",
+      "category": "Source Code Escrow",
+      "question": "Highlight the parts (if any) of this contract related to \"Source Code Escrow\" that should be reviewed by a lawyer. Details: Is one party required to deposit its source code into escrow with a third party, which can be released to the counterparty upon the occurrence of certain events (bankruptcy,  insolvency, etc.)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q02",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Anti-Assignment",
+      "category": "Anti-Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details: Is consent or notice required of a party if the contract is assigned to a third party?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q03",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Competitive Restriction Exception",
+      "category": "Competitive Restriction Exception",
+      "question": "Highlight the parts (if any) of this contract related to \"Competitive Restriction Exception\" that should be reviewed by a lawyer. Details: This category includes the exceptions or carveouts to Non-Compete, Exclusivity and No-Solicit of Customers above.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q04",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__No-Solicit Of Employees",
+      "category": "No-Solicit Of Employees",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Employees\" that should be reviewed by a lawyer. Details: Is there a restriction on a party’s soliciting or hiring employees and/or contractors from the  counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q05",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Parties",
+      "category": "Parties",
+      "question": "Highlight the parts (if any) of this contract related to \"Parties\" that should be reviewed by a lawyer. Details: The two or more parties who signed the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "THE GRILLED CHEESE TRUCK, INC.",
+          "answer_start": 3171
+        },
+        {
+          "text": "KIOSK CONCEPTS, INC.",
+          "answer_start": 3055
+        }
+      ]
+    },
+    {
+      "qa_id": "q06",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Audit Rights",
+      "category": "Audit Rights",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Does a party have the right to  audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q07",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Post-Termination Services",
+      "category": "Post-Termination Services",
+      "question": "Highlight the parts (if any) of this contract related to \"Post-Termination Services\" that should be reviewed by a lawyer. Details: Is a party subject to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q08",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Expiration Date",
+      "category": "Expiration Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details: On what date will the contract's initial term expire?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q09",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Warranty Duration",
+      "category": "Warranty Duration",
+      "question": "Highlight the parts (if any) of this contract related to \"Warranty Duration\" that should be reviewed by a lawyer. Details: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q10",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Governing Law",
+      "category": "Governing Law",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: Which state/country's law governs the interpretation of the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q11",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Termination For Convenience",
+      "category": "Termination For Convenience",
+      "question": "Highlight the parts (if any) of this contract related to \"Termination For Convenience\" that should be reviewed by a lawyer. Details: Can a party terminate this  contract without cause (solely by giving a notice and allowing a waiting  period to expire)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q12",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Ip Ownership Assignment",
+      "category": "Ip Ownership Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Ip Ownership Assignment\" that should be reviewed by a lawyer. Details: Does intellectual property created  by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q13",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Unlimited/All-You-Can-Eat-License",
+      "category": "Unlimited/All-You-Can-Eat-License",
+      "question": "Highlight the parts (if any) of this contract related to \"Unlimited/All-You-Can-Eat-License\" that should be reviewed by a lawyer. Details: Is there a clause granting one party an “enterprise,” “all you can eat” or unlimited usage license?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q14",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Most Favored Nation",
+      "category": "Most Favored Nation",
+      "question": "Highlight the parts (if any) of this contract related to \"Most Favored Nation\" that should be reviewed by a lawyer. Details: Is there a clause that if a third party gets better terms on the licensing or sale of technology/goods/services described in the contract, the buyer of such technology/goods/services under the contract shall be entitled to those better terms?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q15",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Cap On Liability",
+      "category": "Cap On Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details: Does the contract include a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q16",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Joint Ip Ownership",
+      "category": "Joint Ip Ownership",
+      "question": "Highlight the parts (if any) of this contract related to \"Joint Ip Ownership\" that should be reviewed by a lawyer. Details: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q17",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Non-Transferable License",
+      "category": "Non-Transferable License",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Transferable License\" that should be reviewed by a lawyer. Details: Does the contract limit the ability of a party to transfer the license being granted to a third party?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q18",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Revenue/Profit Sharing",
+      "category": "Revenue/Profit Sharing",
+      "question": "Highlight the parts (if any) of this contract related to \"Revenue/Profit Sharing\" that should be reviewed by a lawyer. Details: Is one party required to share revenue or profit with the counterparty for any technology, goods, or services?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q19",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Insurance",
+      "category": "Insurance",
+      "question": "Highlight the parts (if any) of this contract related to \"Insurance\" that should be reviewed by a lawyer. Details: Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q20",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Exclusivity",
+      "category": "Exclusivity",
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing  commitment with the counterparty? This includes a commitment to procure all “requirements” from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on  collaborating or working with other parties), whether during the contract or  after the contract ends (or both).",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q21",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Non-Compete",
+      "category": "Non-Compete",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Compete\" that should be reviewed by a lawyer. Details: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q22",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Document Name",
+      "category": "Document Name",
+      "question": "Highlight the parts (if any) of this contract related to \"Document Name\" that should be reviewed by a lawyer. Details: The name of the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "ADDENDUM REQUIRED BY THE DEPARTMENT OF LAW OF THE STATE OF NEW YORK",
+          "answer_start": 0
+        }
+      ]
+    },
+    {
+      "qa_id": "q23",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Irrevocable Or Perpetual License",
+      "category": "Irrevocable Or Perpetual License",
+      "question": "Highlight the parts (if any) of this contract related to \"Irrevocable Or Perpetual License\" that should be reviewed by a lawyer. Details: Does the contract contain a  license grant that is irrevocable or perpetual?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q24",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Affiliate License-Licensee",
+      "category": "Affiliate License-Licensee",
+      "question": "Highlight the parts (if any) of this contract related to \"Affiliate License-Licensee\" that should be reviewed by a lawyer. Details: Does the contract contain a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q25",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Liquidated Damages",
+      "category": "Liquidated Damages",
+      "question": "Highlight the parts (if any) of this contract related to \"Liquidated Damages\" that should be reviewed by a lawyer. Details: Does the contract contain a clause that would award either party liquidated damages for breach or a fee upon the termination of a contract (termination fee)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q26",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Covenant Not To Sue",
+      "category": "Covenant Not To Sue",
+      "question": "Highlight the parts (if any) of this contract related to \"Covenant Not To Sue\" that should be reviewed by a lawyer. Details: Is a party restricted from contesting the validity of the counterparty’s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q27",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__License Grant",
+      "category": "License Grant",
+      "question": "Highlight the parts (if any) of this contract related to \"License Grant\" that should be reviewed by a lawyer. Details: Does the contract contain a license granted by one party to its counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q28",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Volume Restriction",
+      "category": "Volume Restriction",
+      "question": "Highlight the parts (if any) of this contract related to \"Volume Restriction\" that should be reviewed by a lawyer. Details: Is there a fee increase or consent requirement, etc. if one party’s use of the product/services exceeds certain threshold?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q29",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Non-Disparagement",
+      "category": "Non-Disparagement",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Disparagement\" that should be reviewed by a lawyer. Details: Is there a requirement on a party not to disparage the counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q30",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Price Restrictions",
+      "category": "Price Restrictions",
+      "question": "Highlight the parts (if any) of this contract related to \"Price Restrictions\" that should be reviewed by a lawyer. Details: Is there a restriction on the  ability of a party to raise or reduce prices of technology, goods, or  services provided?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q31",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__Uncapped Liability",
+      "category": "Uncapped Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Uncapped Liability\" that should be reviewed by a lawyer. Details: Is a party’s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q32",
+      "source_id": "SoupmanInc_20150814_8-K_EX-10.1_9230148_EX-10.1_Franchise Agreement4__No-Solicit Of Customers",
+      "category": "No-Solicit Of Customers",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Customers\" that should be reviewed by a lawyer. Details: Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    }
+  ]
+}

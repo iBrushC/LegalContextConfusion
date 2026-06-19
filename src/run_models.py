@@ -95,7 +95,7 @@ MODEL_REGISTRY = {
     "chatgpt":  "openai/gpt-5.5",                             # GPT 5.5
     "gemini":   "google/gemini-3.1-pro-preview",             # Gemini 3.1 Pro
     "deepseek": "deepseek/deepseek-v4-pro",                   # DeepSeek 4 Pro
-    "nemotron": "nvidia/nemotron-3-ultra-550b-a55b:free",     # Nemotron 3 Ultra
+    "nemotron": "nvidia/nemotron-3-ultra-550b-a55b",     # Nemotron 3 Ultra
     "mimo":     "xiaomi/mimo-v2.5-pro",                       # MiMo v2.5 Pro
     "glm":      "z-ai/glm-5.2",                               # GLM 5.2
 }
@@ -108,8 +108,8 @@ ALIASES = {
     "glm5": "glm", "glm-5.2": "glm",
 }
 # Cheapest model for prototyping (reuse-base-procedure card).
-# PROTOTYPE: tuple[str, str] = ("deepseek-flash", "deepseek/deepseek-v4-flash")
-PROTOTYPE: tuple[str, str] = ("mimo-2.5", "xiaomi/mimo-v2.5")
+PROTOTYPE: tuple[str, str] = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+# PROTOTYPE: tuple[str, str] = ("mimo-2.5", "xiaomi/mimo-v2.5")
 # PROTOTYPE: tuple[str, str] = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 

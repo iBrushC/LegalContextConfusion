@@ -1,0 +1,282 @@
+{
+  "cell_id": "d074_baseline",
+  "dataset": "cuad",
+  "doc_index": 74,
+  "modality": "baseline",
+  "focus": "spans",
+  "budget_tokens": 0,
+  "is_baseline": true,
+  "actual_tokens": 921,
+  "actual_chars": 3682,
+  "target_document_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT",
+  "target_document_title": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT",
+  "distractor_ids": [],
+  "target_offset": 75,
+  "target_end": 3670,
+  "filler_source": "none",
+  "filler_repeated": false,
+  "context": "<DOCUMENT id=\"MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT\">\nEXHIBIT D JOINT FILING AGREEMENT MFA FINANCIAL, INC. In accordance with Rule 13d-1(k) under the Securities Exchange Act of 1934, as amended, the undersigned hereby confirm the agreement by and among them to the joint filing on behalf of them of the Statement on Schedule 13D and any and all further amendments thereto, with respect to the securities of the above referenced issuer, and that this Agreement be included as an Exhibit to such filing. This Agreement may be executed in any number of counterparts each of which shall be deemed to be an original and all of which together shall be deemed to constitute one and the same Agreement. IN WITNESS WHEREOF, the undersigned hereby execute this Agreement as of July 6, 2020. ATHENE ANNUITY AND LIFE COMPANY By: Apollo Insurance Solutions Group LP, its investment adviser By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory ATHENE ANNUITY & LIFE ASSURANCE COMPANY By: Apollo Insurance Solutions Group LP, its investment adviser By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory ATHENE USA CORPORATION By: Apollo Insurance Solutions Group LP, its investment adviser By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory\n\n\n\n\n\nATHENE LIFE RE LTD. By: Apollo Insurance Solutions Group LP, its investment adviser By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory ATHENE HOLDING LTD. By: Apollo Insurance Solutions Group LP, its investment adviser By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory APOLLO INSURANCE SOLUTIONS GROUP LP By: AISG GP Ltd., its general partner By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory AISG GP LTD. By: /s/ Matthew S. O'Mara Matthew S. O'Mara Authorized Signatory APOLLO LIFE ASSET, L.P. By: Apollo Life Asset GP, LLC, its general partner By: /s/ William B. Kuesel William B. Kuesel Vice President\n\n\n\n\n\nAPOLLO LIFE ASSET GP, LLC By: /s/ William B. Kuesel William B. Kuesel Vice President APOLLO CAPITAL MANAGEMENT, L.P. By: Apollo Capital Management GP, LLC, its general partner By: /s/ William B. Kuesel William B. Kuesel Vice President APOLLO CAPITAL MANAGEMENT GP, LLC By: /s/ William B. Kuesel William B. Kuesel Vice President APOLLO MANAGEMENT HOLDINGS, L.P. By: Apollo Management Holdings GP, LLC, its general partner By: /s/ William B. Kuesel William B. Kuesel Vice President APOLLO MANAGEMENT HOLDINGS GP, LLC By: /s/ William B. Kuesel William B. Kuesel Vice President OMAHA EQUITY AGGREGATOR, L.P. By: AP Omaha Advisors, LLC, its general partner By: Apollo Hybrid Value Advisors, L.P., its sole member By: Apollo Hybrid Value Capital Management, LLC, its general partner By: /s/ Joseph D. Glatt Joseph D. Glatt Vice President\n\n\n\n\n\nAP OMAHA ADVISORS, LLC By: Apollo Hybrid Value Advisors, L.P., its sole member By: Apollo Hybrid Value Capital Management, LLC, its general partner By: /s/ Joseph D. Glatt Joseph D. Glatt Vice President APOLLO HYBRID VALUE ADVISORS, L.P. By: Apollo Hybrid Value Capital Management, LLC, its general partner By: /s/ Joseph D. Glatt Joseph D. Glatt Vice President APOLLO HYBRID VALUE CAPITAL MANAGEMENT, LLC By: /s/ Joseph D. Glatt Joseph D. Glatt Vice President APH HOLDINGS, L.P. By: Apollo Principal Holdings III GP, Ltd., its general partner By: /s/ William B. Kuesel William B. Kuesel Vice President APOLLO PRINCIPAL HOLDINGS III GP, LTD. By: /s/ William B. Kuesel William B. Kuesel Vice President\n</DOCUMENT>",
+  "questions": [
+    {
+      "qa_id": "q01",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Change Of Control",
+      "category": "Change Of Control",
+      "question": "Highlight the parts (if any) of this contract related to \"Change Of Control\" that should be reviewed by a lawyer. Details: Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q02",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Source Code Escrow",
+      "category": "Source Code Escrow",
+      "question": "Highlight the parts (if any) of this contract related to \"Source Code Escrow\" that should be reviewed by a lawyer. Details: Is one party required to deposit its source code into escrow with a third party, which can be released to the counterparty upon the occurrence of certain events (bankruptcy,  insolvency, etc.)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q03",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__No-Solicit Of Customers",
+      "category": "No-Solicit Of Customers",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Customers\" that should be reviewed by a lawyer. Details: Is a party restricted from contracting or soliciting customers or partners of the counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q04",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Rofr/Rofo/Rofn",
+      "category": "Rofr/Rofo/Rofn",
+      "question": "Highlight the parts (if any) of this contract related to \"Rofr/Rofo/Rofn\" that should be reviewed by a lawyer. Details: Is there a clause granting one party a right of first refusal, right of first offer or right of first negotiation to purchase, license, market, or distribute equity interest, technology, assets, products or services?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q05",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Cap On Liability",
+      "category": "Cap On Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Cap On Liability\" that should be reviewed by a lawyer. Details: Does the contract include a cap on liability upon the breach of a party’s obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q06",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Audit Rights",
+      "category": "Audit Rights",
+      "question": "Highlight the parts (if any) of this contract related to \"Audit Rights\" that should be reviewed by a lawyer. Details: Does a party have the right to  audit the books, records, or physical locations of the counterparty to ensure compliance with the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q07",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Termination For Convenience",
+      "category": "Termination For Convenience",
+      "question": "Highlight the parts (if any) of this contract related to \"Termination For Convenience\" that should be reviewed by a lawyer. Details: Can a party terminate this  contract without cause (solely by giving a notice and allowing a waiting  period to expire)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q08",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Irrevocable Or Perpetual License",
+      "category": "Irrevocable Or Perpetual License",
+      "question": "Highlight the parts (if any) of this contract related to \"Irrevocable Or Perpetual License\" that should be reviewed by a lawyer. Details: Does the contract contain a  license grant that is irrevocable or perpetual?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q09",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Joint Ip Ownership",
+      "category": "Joint Ip Ownership",
+      "question": "Highlight the parts (if any) of this contract related to \"Joint Ip Ownership\" that should be reviewed by a lawyer. Details: Is there any clause providing for joint or shared ownership of intellectual property between the parties to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q10",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Agreement Date",
+      "category": "Agreement Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Agreement Date\" that should be reviewed by a lawyer. Details: The date of the contract",
+      "is_impossible": false,
+      "answers": [
+        {
+          "text": "July 6, 2020",
+          "answer_start": 713
+        }
+      ]
+    },
+    {
+      "qa_id": "q11",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Expiration Date",
+      "category": "Expiration Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Expiration Date\" that should be reviewed by a lawyer. Details: On what date will the contract's initial term expire?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q12",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Covenant Not To Sue",
+      "category": "Covenant Not To Sue",
+      "question": "Highlight the parts (if any) of this contract related to \"Covenant Not To Sue\" that should be reviewed by a lawyer. Details: Is a party restricted from contesting the validity of the counterparty’s ownership of intellectual property or otherwise bringing a claim against the counterparty for matters unrelated to the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q13",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Exclusivity",
+      "category": "Exclusivity",
+      "question": "Highlight the parts (if any) of this contract related to \"Exclusivity\" that should be reviewed by a lawyer. Details: Is there an exclusive dealing  commitment with the counterparty? This includes a commitment to procure all “requirements” from one party of certain technology, goods, or services or a prohibition on licensing or selling technology, goods or services to third parties, or a prohibition on  collaborating or working with other parties), whether during the contract or  after the contract ends (or both).",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q14",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Non-Compete",
+      "category": "Non-Compete",
+      "question": "Highlight the parts (if any) of this contract related to \"Non-Compete\" that should be reviewed by a lawyer. Details: Is there a restriction on the ability of a party to compete with the counterparty or operate in a certain geography or business or technology sector? ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q15",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Price Restrictions",
+      "category": "Price Restrictions",
+      "question": "Highlight the parts (if any) of this contract related to \"Price Restrictions\" that should be reviewed by a lawyer. Details: Is there a restriction on the  ability of a party to raise or reduce prices of technology, goods, or  services provided?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q16",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Warranty Duration",
+      "category": "Warranty Duration",
+      "question": "Highlight the parts (if any) of this contract related to \"Warranty Duration\" that should be reviewed by a lawyer. Details: What is the duration of any  warranty against defects or errors in technology, products, or services  provided under the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q17",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Unlimited/All-You-Can-Eat-License",
+      "category": "Unlimited/All-You-Can-Eat-License",
+      "question": "Highlight the parts (if any) of this contract related to \"Unlimited/All-You-Can-Eat-License\" that should be reviewed by a lawyer. Details: Is there a clause granting one party an “enterprise,” “all you can eat” or unlimited usage license?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q18",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Affiliate License-Licensee",
+      "category": "Affiliate License-Licensee",
+      "question": "Highlight the parts (if any) of this contract related to \"Affiliate License-Licensee\" that should be reviewed by a lawyer. Details: Does the contract contain a license grant to a licensee (incl. sublicensor) and the affiliates of such licensee/sublicensor?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q19",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Governing Law",
+      "category": "Governing Law",
+      "question": "Highlight the parts (if any) of this contract related to \"Governing Law\" that should be reviewed by a lawyer. Details: Which state/country's law governs the interpretation of the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q20",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Minimum Commitment",
+      "category": "Minimum Commitment",
+      "question": "Highlight the parts (if any) of this contract related to \"Minimum Commitment\" that should be reviewed by a lawyer. Details: Is there a minimum order size or minimum amount or units per-time period that one party must buy from the counterparty under the contract?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q21",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Renewal Term",
+      "category": "Renewal Term",
+      "question": "Highlight the parts (if any) of this contract related to \"Renewal Term\" that should be reviewed by a lawyer. Details: What is the renewal term after the initial term expires? This includes automatic extensions and unilateral extensions with prior notice.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q22",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Uncapped Liability",
+      "category": "Uncapped Liability",
+      "question": "Highlight the parts (if any) of this contract related to \"Uncapped Liability\" that should be reviewed by a lawyer. Details: Is a party’s liability uncapped upon the breach of its obligation in the contract? This also includes uncap liability for a particular type of breach such as IP infringement or breach of confidentiality obligation.",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q23",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__No-Solicit Of Employees",
+      "category": "No-Solicit Of Employees",
+      "question": "Highlight the parts (if any) of this contract related to \"No-Solicit Of Employees\" that should be reviewed by a lawyer. Details: Is there a restriction on a party’s soliciting or hiring employees and/or contractors from the  counterparty, whether during the contract or after the contract ends (or both)?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q24",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Anti-Assignment",
+      "category": "Anti-Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Anti-Assignment\" that should be reviewed by a lawyer. Details: Is consent or notice required of a party if the contract is assigned to a third party?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q25",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Effective Date",
+      "category": "Effective Date",
+      "question": "Highlight the parts (if any) of this contract related to \"Effective Date\" that should be reviewed by a lawyer. Details: The date when the contract is effective ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q26",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Ip Ownership Assignment",
+      "category": "Ip Ownership Assignment",
+      "question": "Highlight the parts (if any) of this contract related to \"Ip Ownership Assignment\" that should be reviewed by a lawyer. Details: Does intellectual property created  by one party become the property of the counterparty, either per the terms of the contract or upon the occurrence of certain events?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q27",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Insurance",
+      "category": "Insurance",
+      "question": "Highlight the parts (if any) of this contract related to \"Insurance\" that should be reviewed by a lawyer. Details: Is there a requirement for insurance that must be maintained by one party for the benefit of the counterparty?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q28",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Most Favored Nation",
+      "category": "Most Favored Nation",
+      "question": "Highlight the parts (if any) of this contract related to \"Most Favored Nation\" that should be reviewed by a lawyer. Details: Is there a clause that if a third party gets better terms on the licensing or sale of technology/goods/services described in the contract, the buyer of such technology/goods/services under the contract shall be entitled to those better terms?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q29",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Notice Period To Terminate Renewal",
+      "category": "Notice Period To Terminate Renewal",
+      "question": "Highlight the parts (if any) of this contract related to \"Notice Period To Terminate Renewal\" that should be reviewed by a lawyer. Details: What is the notice period required to terminate renewal?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q30",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Affiliate License-Licensor",
+      "category": "Affiliate License-Licensor",
+      "question": "Highlight the parts (if any) of this contract related to \"Affiliate License-Licensor\" that should be reviewed by a lawyer. Details: Does the contract contain a license grant by affiliates of the licensor or that includes intellectual property of affiliates of the licensor? ",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q31",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Post-Termination Services",
+      "category": "Post-Termination Services",
+      "question": "Highlight the parts (if any) of this contract related to \"Post-Termination Services\" that should be reviewed by a lawyer. Details: Is a party subject to obligations after the termination or expiration of a contract, including any post-termination transition, payment, transfer of IP, wind-down, last-buy, or similar commitments?",
+      "is_impossible": true,
+      "answers": []
+    },
+    {
+      "qa_id": "q32",
+      "source_id": "MFAFINANCIAL,INC_07_06_2020-EX-99.D-JOINT FILING AGREEMENT__Revenue/Profit Sharing",
+      "category": "Revenue/Profit Sharing",
+      "question": "Highlight the parts (if any) of this contract related to \"Revenue/Profit Sharing\" that should be reviewed by a lawyer. Details: Is one party required to share revenue or profit with the counterparty for any technology, goods, or services?",
+      "is_impossible": true,
+      "answers": []
+    }
+  ]
+}
