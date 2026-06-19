@@ -1,0 +1,1073 @@
+{
+  "source": "data\\maud\\MAUD_dev.csv",
+  "data_type": "main",
+  "question_count": 82,
+  "questions": [
+    {
+      "qa_id": "q01",
+      "category": "General Information",
+      "answer_type": "multiple_choice",
+      "question": "Type of Consideration-Answer",
+      "answer_options": [
+        "All Cash",
+        "All Stock",
+        "Mixed Cash/Stock",
+        "Mixed Cash/Stock: Election"
+      ],
+      "example_answer": "All Cash",
+      "example_text": "2.6 Conversion of Securities. At the Effective Time, by virtue of the Merger and without any action on the part of Parent, Merger Sub, the Company or the holders of any of the following securities: (a) Each Company Share issued and outstanding immediately prior to the Effective Time (other than any Company Shares to be canceled or to remain outstanding pursuant to Section 2.6(b) and any Dissenting Company Shares) shall be canceled and shall be converted automatically into the right to receive an amount in cash, net of applicable withholding taxes and without interest, equal to the fourteen U.S. dollars ($14.00) (the “Per Share Merger Consideration”) payable to the holder of such Company Share, upon surrender, in the manner provided in Section 2.9. If, between the date of this Agreement and the Effective Time, the outstanding shares of Company Common Stock are changed into a different number or class of shares by reason of any stock split, division or subdivision of shares, stock dividend, reverse stock split, consolidation of shares, reclassification, recapitalization or other similar transaction, then the Per Share Merger Consideration shall be appropriately and equitably …"
+    },
+    {
+      "qa_id": "q02",
+      "category": "Conditions to Closing",
+      "answer_type": "multiple_choice",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Timing Answer",
+      "answer_options": [
+        "At Closing Only",
+        "At Signing & At Closing"
+      ],
+      "example_answer": "At Closing Only",
+      "example_text": "Section 4.1 Organization, No MAE <omitted> Section 4.2 Company Subsidiaries. <omitted> All of the outstanding shares of capital stock or voting securities of, or other equity interests in, each Company Subsidiary have been validly issued and are fully paid and nonassessable and are owned by the Company, by a Company Subsidiary or by the Company and a Company Subsidiary, free and clear of all material Liens, excluding Permitted Liens. <omitted> Section 4.3 Capital Structure. <omitted> Section 4.4 Authority; Execution and Delivery; Enforceability. <omitted> The Company Board has validly adopted resolutions, by unanimous vote of the members of the Company Board present at a meeting duly called at which a quorum of directors of the Company was present, <omitted> (b) approving and declaring advisable this Agreement and the Transactions, including the Merger <omitted> The Company has duly executed and delivered this Agreement, and, assuming the due authorization, execution and delivery by Parent and Merger Sub, this Agreement constitutes its legal, valid and binding obligation, enforceable against it in accordance with its terms <omitted> Section 4.5 No Conflicts; Consents. <omitted> …"
+    },
+    {
+      "qa_id": "q03",
+      "category": "Conditions to Closing",
+      "answer_type": "multiple_choice",
+      "question": "Accuracy of Target \"General\" R&W: Bringdown Standard Answer",
+      "answer_options": [
+        "All/The R&Ws accurate at MAE standard",
+        "All/The R&Ws accurate in all respects (repeating R&Ws)",
+        "Each R&W accurate at MAE standard",
+        "R&Ws accurate at another materiality standard (e.g., hybrid standard)"
+      ],
+      "example_answer": "All/The R&Ws accurate at MAE standard",
+      "example_text": "4.3 Authority; No Violations; Consents and Approvals <omitted> This Agreement has been duly executed and delivered by the Company and, assuming the due and valid execution of this Agreement by the Isla Parties, constitutes a valid and binding obligation of the Company enforceable against the Company in accordance with its terms <omitted> The Company Board, at a meeting duly called and held, has by unanimous vote <omitted> (ii) approved and declared advisable this Agreement, the Merger and the other Transactions <omitted> 7.2 Additional Conditions to Obligations of the Isla Parties. The obligations of the Isla Parties to consummate the Transactions are subject to the satisfaction at or prior to the Merger Effective Time of the following conditions, any or all of which may be waived exclusively by Isla, in whole or in part, to the extent permitted by applicable Law: (a) Representations and Warranties of the Company. (i) The representations and warranties of the Company set forth in the first sentence of Section 4.1 (Organization, Standing and Power), Section 4.2(a) (Capital Structure), the third and fifth sentences of Section 4.2(b) (Capital Structure), and Section 4.3(a) …"
+    },
+    {
+      "qa_id": "q04",
+      "category": "Conditions to Closing",
+      "answer_type": "multiple_choice",
+      "question": "Accuracy of Target Capitalization R&W (outstanding shares): Bringdown Standard Answer",
+      "answer_options": [
+        "Accurate in all material respects",
+        "Accurate in all respects",
+        "Accurate in all respects with below-threshold carveout",
+        "Accurate in all respects with de minimis exception"
+      ],
+      "example_answer": "Accurate in all material respects",
+      "example_text": "2.1. Organization. Standing and Power: Subsidiaries. <omitted> 2.2. Capital Structure. <omitted> 2.3. Authority: Non-contravention. <omitted> This Agreement has been duly executed and delivered by the Company and, assuming due authorization, execution and delivery thereof by each of the other parties hereto, constitutes the valid and binding obligation of the Company, enforceable against the Company in accordance with its terms, subject only to the effect, if any, of (i) applicable bankruptcy and other similar laws affecting the rights of creditors generally and (ii) Applicable Legal Requirements governing specific performance, injunctive relief and other equitable remedies (collectively, the “Enforceability Limitations”). The Company Board, by resolutions duly adopted on or prior to the Agreement Date (and, subject to Section 5.3, not thereafter modified or rescinded in a manner adverse to Parent) by the unanimous vote of the members of the Company Board participating in such vote, has (i) approved this Agreement and the Merger, (ii) determined that the Merger and the terms and 19 conditions of this Agreement are fair to, advisable and in the best interests of the Company and …"
+    },
+    {
+      "qa_id": "q05",
+      "category": "Conditions to Closing",
+      "answer_type": "multiple_choice",
+      "question": "Accuracy of Fundamental Target R&Ws: Bringdown Standard",
+      "answer_options": [
+        "Accurate at another materiality standard (e.g., hybrid standard)",
+        "Accurate in all material respects",
+        "Accurate in all respects"
+      ],
+      "example_answer": "Accurate at another materiality standard (e.g., hybrid standard)",
+      "example_text": "7.2 Conditions to the Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate the Merger will be subject to the satisfaction or waiver (where permissible pursuant to applicable law) prior to the Effective Time of each of the following conditions, any of which may be waived exclusively by Parent: (a) Representations and Warranties. (i) Other than the representations and warranties listed in clauses (ii), (iii) and (iv) in this Section 7.2(a), the representations and warranties of the Company set forth in Article III will be true and correct (without giving effect to any materiality, Company Material Adverse Effect or similar qualifications set forth therein) as of the Closing Date as if made at and as of the Closing Date (except to the extent that any such representation and warranty expressly speaks as of an earlier date, in which case such representation and warranty will be true and correct as of such earlier date), except for such failures to be true and correct that would not have a Company Material Adverse Effect; (Page 94) 7.2 Conditions to the Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate …"
+    },
+    {
+      "qa_id": "q06",
+      "category": "Conditions to Closing",
+      "answer_type": "multi_select",
+      "question": "Accuracy of Fundamental Target R&Ws-Types of R&Ws",
+      "answer_options": [
+        "Approval",
+        "Authority",
+        "Brokers' Fee",
+        "Capitalization-Other",
+        "Enforceability",
+        "No MAE",
+        "No-Conflict",
+        "Opinion of Financial Advisor",
+        "Organization",
+        "Other",
+        "Rights Agreement",
+        "Subsidiaries",
+        "Takeover Statutes",
+        "Tax"
+      ],
+      "example_answer": "Capitalization-Other, No MAE, Other",
+      "example_text": "8.2 Additional Conditions to Obligations of Parent, MergerCo 1 and MergerCo 2. The obligations of Parent, MergerCo 1 and MergerCo 2 to effect the Mergers are further subject to the satisfaction (or written waiver, if permissible under applicable Law), by the Parent (on behalf of the Parent, MergerCo 1and MergerCo 2), as of the Closing, of each of the following conditions: (a) Representations and Warranties <omitted> (iii) all other representations and warranties of the Paired Entities set forth in this Agreement shall be true and correct in all respects (without regard to any materiality or Company Material Adverse Effect qualifications set forth therein) as of the date hereof and as of the Closing Date, as though made on and as of the Closing Date (except to the extent such representations and warranties expressly relate to a specific date or time, in which case such representations and warranties need only be so true and correct as of such specific date or time), except where the failure or failures of all such representations and warranties to be so true and correct would not, individually or in the aggregate, have a Company Material Adverse Effect. (Page 77) 8.2 Additional …"
+    },
+    {
+      "qa_id": "q07",
+      "category": "Conditions to Closing",
+      "answer_type": "multi_select",
+      "question": "Materiality/MAE Scrape applies to",
+      "answer_options": [
+        "Capitalization R&Ws",
+        "General R&Ws",
+        "Specified R&Ws only",
+        "fundamental/Special R&Ws"
+      ],
+      "example_answer": "General R&Ws",
+      "example_text": "7.2 Additional Conditions to Obligations of Parent and Merger Sub. The obligations of Parent and Merger Sub to consummate the Merger are subject to the satisfaction at or prior to the Effective Time of the following conditions, any or all of which may be waived exclusively by Parent, in whole or in part, to the extent permitted by applicable Law: (a) Representations and Warranties of the Company. <omitted> (iii) all other representations and warranties of the Company set forth in Article IV shall have been true and correct as of the date of this Agreement and shall be true and correct as of the Closing Date, as though made on and as of the Closing Date (except that representations and warranties that speak as of a specified date or -76- period of time shall have been true and correct only as of such date or period of time), except, in the case of this clause (iii), where the failure of such representations and warranties to be so true and correct (without regard to qualification or exceptions contained therein as to “materiality”, “in all material respects” or “Company Material Adverse Effect”) would not reasonably be expected to have, individually or in the aggregate, a Company …"
+    },
+    {
+      "qa_id": "q08",
+      "category": "Conditions to Closing",
+      "answer_type": "multiple_choice",
+      "question": "Compliance with Target Covenant Closing Condition-Answer",
+      "answer_options": [
+        "All Covenants",
+        "Each Covenant"
+      ],
+      "example_answer": "All Covenants",
+      "example_text": "ARTICLE 8 CONDITIONS PRECEDENT TO OBLIGATIONS OF NICOLET The obligations of Nicolet to consummate the Contemplated Transactions and to take the other actions required to be taken by Nicolet at the Closing are subject to the satisfaction, at or prior to the Closing, of each of the following conditions (any of which may be waived by Nicolet in whole or in part): <omitted>\nSection 8.2    Performance by the Company. The Company shall have performed or complied in all material respects with all of the covenants and obligations to be performed or complied with by it under the terms of this Agreement on or prior to the Closing Date.  (Page 48)"
+    },
+    {
+      "qa_id": "q09",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "MAE definition includes adverse impact on Target's ability to consummate (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, with respect to any Person and its Subsidiaries, any event, circumstance, change, effect, development, condition or occurrence that (i) individually or in the aggregate with all other events, circumstances, changes, effects, developments, conditions or occurrences has or would reasonably be expected to have a material 10 and adverse effect on the business, assets, liabilities, condition (financial or otherwise) or results of operations of such Person and its Subsidiaries, taken as a whole, or prevents or materially impairs the ability of such Person and its Subsidiaries to consummate the Mergers or any of the other transactions contemplated by this Agreement, or (ii) prevents or materially impairs the ability of such Person and its Subsidiaries to perform their obligations hereunder, in each case in this clause (ii) before the Outside Date; provided, that for purposes of clause (i), “Material Adverse Effect” shall not include any event, circumstance, change, effect, development, condition or occurrence to the extent arising out of or resulting from (A) any failure of such Person to meet any projections or forecasts or any estimates of earnings, …"
+    },
+    {
+      "qa_id": "q10",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "\"Ability to consummate\" concept is subject to MAE carveouts",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any effect, event, development or change that, individually or in the aggregate with all other effects, events, developments or changes, is, or would reasonably be expected to be, materially adverse to (i) the business, results of operations or financial condition, assets of the Company and its Subsidiaries, taken as a whole or (ii) the ability of the Company or Hospitality to consummate the Mergers before the End Date; provided, however, that in the case of clause (i), no effect, event, development or change resulting from, arising out of, attributable to or relating to any of the following shall be deemed to be or constitute a “Company Material Adverse Effect,” and no effect, event, development or change (by itself or when aggregated or taken together with any and all other such effects, events, developments or changes) to the extent resulting from, arising out of, attributable to, or related to any of the following shall be taken into account when determining whether a “Company Material Adverse Effect” has occurred or would reasonably be likely to occur: (a) general economic conditions (or changes in such conditions) in the United States …"
+    },
+    {
+      "qa_id": "q11",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "MAE Forward looking standard (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means any change, effect, event, occurrence or development that has a material adverse effect on the business, operations or financial condition of the Company and its Subsidiaries, taken as a whole, excluding the impact of (i) any changes or developments in domestic, foreign or global markets or domestic, foreign or global economic conditions generally, including (A) any changes or developments in or affecting the domestic or any foreign securities, equity, credit or financial markets or (B) any changes or developments in or affecting domestic or any foreign interest or exchange rates, (ii) actual, proposed or pending changes in GAAP or any official interpretation or enforcement thereof, (iii) actual, proposed or pending changes in Law or any changes or developments in the official interpretation or enforcement thereof by Governmental Entities, including any changes in Laws relating to Taxes, (iv) changes in domestic, foreign or global political conditions, including the outbreak or escalation of war, military actions, or acts of terrorism or sabotage, civil disobedience or civil unrest, protests and public demonstrations (including any escalation or …"
+    },
+    {
+      "qa_id": "q12",
+      "category": "Material Adverse Effect",
+      "answer_type": "multi_select",
+      "question": "FLS (MAE) applies to",
+      "answer_options": [
+        "No",
+        "ability to consummate transaction",
+        "business and operation of Target"
+      ],
+      "example_answer": "business and operation of Target, ability to consummate transaction",
+      "example_text": "“Company Material Adverse Effect” means any event, condition, change, occurrence or development of a state of facts, individually or in the aggregate with all other events, conditions, changes, occurrences or developments of a state of facts, that has had, or would reasonably be expected to have, a material adverse effect on (i) the business, operations, assets, properties, liabilities (contingent or otherwise), condition (financial or otherwise) or results of operations of the Company and the Company Subsidiaries, taken as a whole, or (ii) the ability of the Company to consummate the Transactions on or before the Outside Date; provided that no such event, condition, change, occurrence or development of a state of facts shall be considered in determining whether a Company Material Adverse Effect has occurred for purposes of clause (i) above to the extent that it results from (1) changes or proposed changes in any applicable Law or GAAP or interpretation thereof occurring after the date hereof, (2) changes generally affecting the economy or financial or securities markets (including changes in interest rates and exchange rates), (3) general conditions in the biopharmaceutical …"
+    },
+    {
+      "qa_id": "q13",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "FLS (MAE) Standard-Answer",
+      "answer_options": [
+        "\"Could\" (reasonably) be expected to",
+        "\"Would\"",
+        "\"Would\" (reasonably) be expected to",
+        "No",
+        "Other forward-looking standard"
+      ],
+      "example_answer": "\"Could\" (reasonably) be expected to",
+      "example_text": "“Material Adverse Effect” means, when used with respect to any Party, any fact, circumstance, condition, effect, change, event or development (“Effect”) that (a) prevents, materially delays or materially impairs the ability of such Party or its Subsidiaries to consummate the Transactions or could reasonably be expected to do so or (b) is, or could reasonably be expected to be, materially adverse to the financial condition, business, or results of operations of such Party and its Subsidiaries, taken as a whole; provided, however, that, in respect of clause (b) above, none of the following shall be deemed to be or constitute a “Material Adverse Effect” or shall be taken into account when determining whether a “Material Adverse Effect” has occurred or could occur: (i) general economic conditions (or changes in such conditions) or conditions in the U.S. or global economies generally; (ii) conditions (or changes in such conditions) in the securities markets, credit markets, currency markets or other financial markets, including (A) changes in interest rates and changes in exchange rates for the currencies of any countries, and (B) any suspension of trading in securities (whether …"
+    },
+    {
+      "qa_id": "q14",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "MAE applies to Target and subsidiaries (MAE)-Answer",
+      "answer_options": [
+        "Applies to Target and subsidiaries \"taken as a whole\"",
+        "No"
+      ],
+      "example_answer": "Applies to Target and subsidiaries \"taken as a whole\"",
+      "example_text": "“Company Material Adverse Effect” means any event, change, effect, fact, circumstance, development, condition or occurrence (each an “Effect”) that (a) has, or would reasonably be expected to, prevent or materially impair the ability of the Company to consummate the Transactions, or (b) has had, or would reasonably be expected to have a material adverse effect on the results of operations or financial condition of the Acquired Companies, taken as a whole; provided, however, that, for purposes of this clause (b), in no event would any of the following, alone or in combination, be deemed to constitute, nor shall any of the following (including the Effect of any of the following) be taken into account in determining whether there has been or will be, a “Company Material Adverse Effect”: (i) any change in Applicable Law, GAAP or any applicable accounting standards or any interpretation thereof; (ii) general economic, political or business conditions or changes therein, or acts of terrorism, epidemics or pandemics (including COVID-19), disease outbreaks or changes in geopolitical conditions (including commencement, continuation or escalation of war, armed hostilities or national or …"
+    },
+    {
+      "qa_id": "q15",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "General political and/or social conditions (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“TRMT Material Adverse Effect” means any event, circumstance, change, effect, development, condition or occurrence that, individually or in the aggregate with all other events, circumstances, changes, effects, developments, conditions or occurrences, (i) is, or would reasonably be expected to be, material and adverse to the business, assets, liabilities, condition (financial or otherwise) or results of operations of TRMT and the TRMT Subsidiaries, taken as a whole, or (ii) will, or would reasonably be expected to, prevent or materially impair the ability of TRMT to consummate the Merger before the Outside Date, or prevent or materially impair the ability of TRMT to perform its obligations hereunder; provided, however, that for purposes of clause (i), “TRMT Material Adverse Effect” shall not include any event, circumstance, change, effect, development, condition or occurrence, and any such event, circumstance, change, effect, development, condition or occurrence shall not be taken into account when determining whether a TRMT Material Adverse Effect has occurred or is reasonably expected to occur, to the extent arising out of or resulting from (A) any failure of TRMT to meet any …"
+    },
+    {
+      "qa_id": "q16",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "General political and/or social conditions:  subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any effect, circumstance, occurrence or change that is material and adverse to the business, assets or deposit liabilities, properties, operations, results of operations or condition (financial or otherwise) of the Company and its Subsidiaries, taken as a whole, or that materially impairs the ability of the Company to consummate the Merger and the transactions contemplated hereby on a timely basis; provided, however, that none of the following effects, circumstances, occurrences or changes shall be considered when determining if a Company Material Adverse Effect has occurred: (A) any change in Law or GAAP or interpretations thereof (except to the extent that, with respect to this clause (A), such effect, circumstance, occurrence or change disproportionately adversely affects the Company and its Subsidiaries compared to other companies of similar size operating in the commercial banking industry in which the Company operates, in which case only the disproportionate effect will be taken into account); (B) effects resulting from worsening of geopolitical conditions in the United States or acts of war, sabotage or terrorism (including any …"
+    },
+    {
+      "qa_id": "q17",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "General economic and financial conditions (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” shall mean, with respect to Bridge Bancorp or DCB, respectively, any effect that (i) is material and adverse to the financial condition, results of operations or business of Bridge Bancorp and the Bridge Bancorp Subsidiaries taken as a whole, or of DCB and the DCB Subsidiaries, taken as a whole, or (ii) does or would materially impair the ability of either DCB, on the one hand, or Bridge Bancorp, on the other hand, to perform its obligations under this Agreement or otherwise materially threaten or materially impede the consummation of the transactions contemplated by this Agreement; provided that “Material Adverse Effect” shall not be deemed to include the impact of (a) changes in laws and regulations affecting financial institutions or their holding companies generally, or interpretations thereof by Governmental Entities, (b) changes in GAAP or regulatory accounting principles generally applicable to financial institutions and their holding companies, (c) actions and omissions of a party hereto (or any of its Subsidiaries) taken with the prior written consent of the other party, (d) the announcement of this Agreement and the transactions contemplated …"
+    },
+    {
+      "qa_id": "q18",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "General economic and financial conditions: subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": ". “Material Adverse Effect” means an event, occurrence, development, circumstance, change or effect that has a material adverse effect on the condition (financial or otherwise), business, assets or results of operations of the Company and its Subsidiaries, taken as a whole, excluding any effect resulting from (i) changes in the financial, securities, credit, debt, banking or other capital markets or conditions (including changes therein) or foreign or domestic economic, financial, regulatory, legislative, political or social conditions (including changes therein), (ii) changes or conditions generally affecting the industry in which the Company and its Subsidiaries operate or to the industries to which the Company and its Subsidiaries sell their products and services, including changes in interest and exchange rates or commodity pricing, in the United States or any other jurisdiction in which the Company or its Subsidiaries operate, (iii) geopolitical conditions, the occurrence, escalation, outbreak or worsening of hostilities, acts of war (whether or not declared), tariffs, trade wars, transportation delays (including work stoppages or port closures), cyber-attacks, acts of armed …"
+    },
+    {
+      "qa_id": "q19",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Change in Target's industry: subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” shall mean, with respect to Bridge Bancorp or DCB, respectively, any effect that (i) is material and adverse to the financial condition, results of operations or business of Bridge Bancorp and the Bridge Bancorp Subsidiaries taken as a whole, or of DCB and the DCB Subsidiaries, taken as a whole, or (ii) does or would materially impair the ability of either DCB, on the one hand, or Bridge Bancorp, on the other hand, to perform its obligations under this Agreement or otherwise materially threaten or materially impede the consummation of the transactions contemplated by this Agreement; provided that “Material Adverse Effect” shall not be deemed to include the impact of (a) changes in laws and regulations affecting financial institutions or their holding companies generally, or interpretations thereof by Governmental Entities, (b) changes in GAAP or regulatory accounting principles generally applicable to financial institutions and their holding companies, (c) actions and omissions of a party hereto (or any of its Subsidiaries) taken with the prior written consent of the other party, (d) the announcement of this Agreement and the transactions contemplated …"
+    },
+    {
+      "qa_id": "q20",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Change in law:  subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” shall mean any event, occurrence, change or development that has a material adverse effect on the business, results of operations or financial condition of the Acquired Corporations taken as a whole; provided, however, that no event, occurrence, change, or development resulting or arising from or relating to or in connection with any of the following matters shall be deemed, either alone or in combination, to constitute or contribute to, or be taken into account in determining whether there has been, a Material Adverse Effect: (i) any change in the market price or trading volume of the Company’s stock (provided, however, that the underlying causes thereof, to the extent not otherwise excluded by this definition, may be deemed to contribute to a Material Adverse Effect); (ii) the execution, announcement or pendency of this Agreement or the terms hereof (including the identity of Parent or Purchaser) or the announcement, pendency or consummation of the Transactions, including the impact thereof on the relationships, contractual or otherwise, of the Company with employees, labor unions, works councils, financing sources, customers, franchisees, suppliers, …"
+    },
+    {
+      "qa_id": "q21",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Changes in GAAP or other accounting principles (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, with respect to OCSL, OCSI or OFA, as the case may be, any event, development, change, effect or occurrence (each, an “Effect”) that is, or would reasonably be expected to be, individually or in the aggregate, materially adverse to (i) the business, operations, condition (financial or otherwise) or results of operations of such party and its Consolidated Subsidiaries, taken as a whole, other than (A) any Effect resulting from or attributable to (1) changes in general economic, social or political conditions or the financial markets in general, including the commencement or escalation of a war, armed hostilities or other material international or national calamity or acts of terrorism or earthquakes, hurricanes, other natural disasters or acts of God, COVID-19 or any other pandemic (including the impact on economies generally and the results of any actions taken by Governmental Entities in response thereto), (2) general changes or developments in the industries in which such party and its Consolidated Subsidiaries operate, including general changes in Law after the date hereof across such industries, except, in the case of the foregoing clauses (1) …"
+    },
+    {
+      "qa_id": "q22",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Changes in GAAP or other accounting principles:  subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means an event, change, occurrence, circumstance or development that either (a) has a material adverse effect on the business, assets, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole, or (b) would prevent or materially delay the consummation by the Company of the Offer or the Merger; provided, that in the case of clause (a) of this definition, none of the following shall be deemed in and of themselves, either alone or in combination, to constitute, and none of the following shall be taken into account in determining whether there is, or would reasonably likely to be, a Material Adverse Effect on the Company: (i) any change in the market price or trading A-6 volume of the Company’s stock; (ii) any event, change, occurrence, circumstance or development resulting from the execution, announcement, pendency or consummation of the Transactions (other than for purposes of any representation or warranty contained in Section 3.23 but subject to disclosures in Section 3.23 of the Company Disclosure Schedule); (iii) any event, occurrence, circumstance, change or effect in the industries in which the Company or any …"
+    },
+    {
+      "qa_id": "q23",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Announcement, pendency or consummation of deal (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "(ll) “Material Adverse Effect” as used with respect to a party, means an event, circumstance, change, effect or occurrence which, individually or together with any other event, circumstance, change, effect or occurrence: (i) is materially adverse to the business, condition (financial or otherwise), assets, liabilities or results of operations of such party and its Subsidiaries, taken as a whole; or (ii) materially impairs the ability of such party to perform its obligations under this Agreement or to consummate the Merger and the other Contemplated Transactions on a timely basis; provided that, in determining whether a Material Adverse Effect has occurred, there shall be excluded any effect to the extent attributable to or resulting from: (A) changes in Legal Requirements and the interpretation of such Legal Requirements by courts or governmental authorities; (B) changes in GAAP or regulatory accounting requirements; (C) changes or events generally affecting banks, bank holding companies or financial holding companies, or the economy or the financial, securities or credit markets, including changes in prevailing interest rates, liquidity and quality, currency exchange rates, …"
+    },
+    {
+      "qa_id": "q24",
+      "category": "Material Adverse Effect",
+      "answer_type": "multi_select",
+      "question": "A/P/C application to-Answer",
+      "answer_options": [
+        "No",
+        "announcement",
+        "consummation",
+        "pendency"
+      ],
+      "example_answer": "announcement",
+      "example_text": "“Material Adverse Effect” means any Effect which, individually or in the aggregate, (A) has had, or would reasonably be expected to have, a material adverse effect on the business, assets, financial condition, results of operations or financial prospects of the Company and its Subsidiaries, taken as a whole, or (B) would prevent the Company from consummating the Transactions on or before the End Date; provided, that none of the following shall be deemed in and of themselves, either alone or in combination, to constitute, and none of the following shall be taken into account in determining whether there is, or would reasonably be expected to be, a Material Adverse Effect: (i) any Effect generally affecting the U.S. or foreign economies, financial or securities markets, or political, legislative, or regulatory conditions, or the industries in which the Company and its Subsidiaries operate; (ii) any Effect arising out of or otherwise relating to fluctuations in the value of any currency exchange, interest or inflation rates or tariffs; (iii) any Effect arising out of or otherwise relating to any change (or proposed change) in, or any compliance with or action taken for the purpose …"
+    },
+    {
+      "qa_id": "q25",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Failure to meet projections (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, with respect to any Person and its Subsidiaries, any event, circumstance, change, effect, development, condition or occurrence that (i) individually or in the aggregate with all other events, circumstances, changes, effects, developments, conditions or occurrences has or would reasonably be expected to have a material 10 and adverse effect on the business, assets, liabilities, condition (financial or otherwise) or results of operations of such Person and its Subsidiaries, taken as a whole, or prevents or materially impairs the ability of such Person and its Subsidiaries to consummate the Mergers or any of the other transactions contemplated by this Agreement, or (ii) prevents or materially impairs the ability of such Person and its Subsidiaries to perform their obligations hereunder, in each case in this clause (ii) before the Outside Date; provided, that for purposes of clause (i), “Material Adverse Effect” shall not include any event, circumstance, change, effect, development, condition or occurrence to the extent arising out of or resulting from (A) any failure of such Person to meet any projections or forecasts or any estimates of earnings, …"
+    },
+    {
+      "qa_id": "q26",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Failure to meet projections: subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means any Change that, (A) individually or in the aggregate with all other Changes, has a material adverse effect on the business, condition (financial or otherwise) or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that no Changes arising out of or resulting from any of the following shall, either alone or in combination, constitute or contribute to a Material Adverse Effect: (i) Changes in the economy in the United States or elsewhere in the world, including as a result of changes in geopolitical conditions, (ii) Changes that affect any of the industries in which the Company or any of its Subsidiaries do business or in which the products or services of the Company or any of its Subsidiaries are used or distributed, (iii) Changes in the financial, debt, capital, credit or securities markets generally in the United States or elsewhere in the world, including changes in interest rates, (iv) any Change in the stock price, trading volume or credit rating of the Company or any of its Subsidiaries or any failure by the Company to meet published analyst estimates or expectations of the Company’s revenue, …"
+    },
+    {
+      "qa_id": "q27",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Changes in market price/trading volume of Target's securities or credit rating (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means an event, state of facts, circumstance, change, effect, development, occurrence or combination of the foregoing (an “Effect”) that individually or in the aggregate has had, or would reasonably be expected to have, a material adverse effect on the business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole; provided that the term Company Material Adverse Effect will not include any Effect to the extent resulting from or arising out of: 102 (A) changes after the date of this Agreement in general business, economic or market conditions in the United States or elsewhere in the world (including changes generally in prevailing interest rates, credit availability and liquidity, currency exchange rates and price levels or trading volumes in the United States or foreign securities or credit markets), changes in political or social conditions, including civil unrest, protests and public demonstrations or any other law, directive, pronouncement or guideline issued by a Governmental Entity, or any outbreak or escalation of hostilities, declared or undeclared acts of war or terrorism, in each case …"
+    },
+    {
+      "qa_id": "q28",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Target's securities or credit rating: subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, with respect to SYBT, KTYB or the Surviving Corporation, as the case may be, any effect, change, event, circumstance, condition, occurrence or development that, either individually or in the aggregate, has had or would reasonably be likely to have a material adverse effect on (i) the business, properties, assets, liabilities, results of operations or financial condition of the party and/or any of its Subsidiaries taken as a whole (provided that, with respect to this clause (i), Material Adverse Effect shall not be deemed to include the impact of (A) changes, after the date hereof, in U.S. generally accepted accounting principles (“GAAP”) or applicable regulatory accounting requirements, (B) changes, after the date hereof, in laws, rules or regulations (including the Pandemic Measures) of general applicability to companies in the industries in which the party and its Subsidiaries operate, or interpretations thereof by courts or Governmental Entities, (C) changes, after the date hereof, in global, national or regional political conditions (including the outbreak of war or acts of terrorism) or in economic or market (including equity, credit and debt …"
+    },
+    {
+      "qa_id": "q29",
+      "category": "Material Adverse Effect",
+      "answer_type": "multi_select",
+      "question": "W/N/A/F applies to-Answer",
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "example_answer": "War or terrorism, Natural disaster, force majeure",
+      "example_text": "“Company Material Adverse Effect” means such developments, occurrences, events, changes, effects, circumstances, conditions, facts or state of facts that, individually or in the aggregate, are materially adverse to the business, financial condition or operations of the Company and its Subsidiaries, taken as a whole, provided, that any of the following will not be taken into account in determining whether a Company Material Adverse Effect has occurred or would reasonably be expected to occur: (i) any changes in general United States or global economic or political conditions, (ii) changes in the securities, credit or financial markets, (iii) general changes or developments in the industries in which the Company and its Subsidiaries operate or the industries to which the Company and its Subsidiaries sell their products, solutions and services, (iv) (I) changes or proposed changes of Laws or regulations or (II) any quarantine, “shelter in place,” “stay at home,” workforce reduction, social distancing, shut down, closure, sequester, safety or similar Law, directive, guidelines or recommendations promulgated by any Governmental Entity, including the Centers for Disease Control and …"
+    },
+    {
+      "qa_id": "q30",
+      "category": "Material Adverse Effect",
+      "answer_type": "multi_select",
+      "question": "W/N/A/F subject to \"disproportionate impact\"-Answer",
+      "answer_options": [
+        "\"act of God\"",
+        "Natural disaster",
+        "No",
+        "War or terrorism",
+        "force majeure"
+      ],
+      "example_answer": "War or terrorism, Natural disaster",
+      "example_text": "“Material Adverse Effect” means, with respect to Huntington, TCF or the Surviving Corporation, as the case may be, any effect, change, event, circumstance, condition, occurrence or development that, either individually or in the aggregate, has had or would reasonably be likely to have a material adverse effect on (i) the business, properties, assets, liabilities, results of operations or financial condition of such party and its Subsidiaries, taken as a whole (provided, however, that, with respect to this clause (i), Material Adverse Effect shall not be deemed to include the impact of (A) changes, after the date hereof, in U.S. generally accepted accounting principles (“GAAP”) or applicable regulatory accounting requirements, (B) changes, after the date hereof, in laws, rules or regulations (including the Pandemic Measures) of general applicability to companies in the industries in which such party and its Subsidiaries operate, or interpretations thereof by courts or Governmental Entities, (C) changes, after the date hereof, in global, national or regional political conditions (including the outbreak of war or acts of terrorism) or in economic or market (including equity, credit …"
+    },
+    {
+      "qa_id": "q31",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Pandemic or other public health event-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any state of facts, change, effect, condition, development, event or occurrence that, individually or in the aggregate, materially and adversely affects the business, properties, financial condition or results of operations of the Company and the Company Subsidiaries, taken as a whole, excluding any such state of facts, change, effect, condition, development, event or occurrence to the extent arising out of or in connection with (A) any change generally affecting the economic, financial, regulatory or political conditions in the United States or elsewhere in the world, (B) the outbreak or escalation of hostilities or any acts of war, sabotage or terrorism, or any earthquake, hurricane, tornado, tsunami or other natural disaster, (C) any change that is generally applicable to the industries or markets in which the Company and the Company Subsidiaries operate, (D) any change in applicable Laws or applicable accounting regulations or principles or authoritative interpretations thereof, in each case arising after the date hereof, (E) any failure, in and of itself, to meet projections, forecasts, estimates or predictions in respect of revenues, …"
+    },
+    {
+      "qa_id": "q32",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Pandemic or other public health event: Specific reference to COVID-19",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any event, change, effect, development, state of facts, condition, circumstance or occurrence that has a material adverse effect on the business, assets, liabilities, condition (financial or otherwise) or results of operations of the Acquired Companies, taken as a whole; provided, however, in no event shall any of the following events, changes, effects, developments, states of facts, conditions, circumstances or occurrences be deemed to constitute, nor be taken into account in determining whether there has been or may be, a Company Material Adverse Effect: (a) changes in or affecting general political or economic conditions (including changes in interest rates) or the financial, credit, or securities markets in the United States or elsewhere in the world; (b) changes in or conditions generally affecting the industries in which the Acquired Companies operate; or (c) resulting from or arising out of (i) the announcement of, or taking any action expressly required by this Agreement or the Transactions (provided, if any of the foregoing results in a breach of Section 3.3 or Section 3.4 of this Agreement, the effects that result from or arise …"
+    },
+    {
+      "qa_id": "q33",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Pandemic or other public health event: specific reference to pandemic-related governmental responses or measures",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any event, circumstance, development, change, occurrence or effect that, individually or in the aggregate, has had or would reasonably be expected to have, a material adverse effect on the financial condition, assets, liabilities, business or results of operations of the Company and its Subsidiaries, taken as a whole; provided that no event, circumstance, development, change, occurrence or effect to the extent resulting from, arising out of, or relating to any of the following shall be deemed to constitute, or shall be taken into account in determining whether there has been, a Company Material Adverse Effect, or whether a Company Material Adverse Effect would reasonably be expected to occur: (i) any changes after the date hereof in general United States or global economic conditions, including changes in United States or global securities, credit, financial, debt or other capital markets, (ii) any changes after the date hereof in conditions generally affecting the industries in which the Company or any of its Subsidiaries materially engages, (iii) any reduction in the assets under management of the Company or any of its Subsidiaries (it …"
+    },
+    {
+      "qa_id": "q34",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Pandemic or other public health event:  subject to \"disproportionate impact\" modifier",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, when used with respect to any Party, any fact, circumstance, effect, change, event or development (“Effect”) that (a) would prevent, materially delay or materially impair the ability of such Party or its Subsidiaries to consummate the Transactions or (b) has, or would have, a material adverse effect on the financial condition, business, assets or results of operations of such Party and its Subsidiaries, taken as a whole; provided, however, that with respect to this clause (b) only, no Effect (by itself or when aggregated or taken together with any and all other Effects) to the extent directly or indirectly resulting from, arising out of, or attributable to any of the following shall be deemed to be or constitute a “Material Adverse Effect” or shall be taken into account when determining whether a “Material Adverse Effect” has occurred or may, would or could occur: A-6 (i) general economic conditions (or changes in such conditions) or conditions in the global economy generally; (ii) conditions (or changes in such conditions) in the securities markets, credit markets, currency markets or other financial markets, including (A) changes in interest …"
+    },
+    {
+      "qa_id": "q35",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Actions required under transaction agreement-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means with respect to any Person, any effect, circumstance, occurrence or change that (a) is material and adverse to the financial position, results of operations, or business of such Person and its Subsidiaries, taken as a whole, or (b) which does or would materially impair the ability of such Person to perform its obligations under this Agreement or otherwise materially impairs the ability of such Person to timely consummate the transactions contemplated by this Agreement; provided, however, that for the purposes of clause (a) above, Material Adverse Effect shall not be deemed to include the impact of: (i) changes, after the date hereof, in banking and similar Laws of general applicability or interpretations of banking and similar Laws of general applicability by Governmental Authorities (including the COVID Measures); (ii) changes, after the date hereof, in GAAP or regulatory accounting requirements applicable to banks or bank holding companies generally; (iii) any modifications or changes to Company valuation policies and practices in connection with the transactions contemplated by this Agreement or restructuring charges taken in connection with the …"
+    },
+    {
+      "qa_id": "q36",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Actions taken with consent or approval of Buyer-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "Material Adverse Effect. “Material Adverse Effect” shall mean any event, occurrence, circumstance, change or effect which, individually or in the aggregate, has had or would reasonably be expected to have a material adverse effect on the business, assets, condition (financial or otherwise) or results of operations of the Acquired Corporations, taken as a whole; provided, however, that none of the following shall be deemed to constitute or be taken into account in determining whether there is, or would reasonably be expected to be, a Material Adverse Effect: (i) any change in the market price or trading volume of the Company’s stock or change in the Company’s credit ratings; provided that the underlying causes of any such change may be considered in determining whether a Material Adverse Effect has occurred to the extent not otherwise excluded by another exception herein; (ii) any event, occurrence, circumstance, change or effect resulting from the announcement, pendency or performance of the Transactions (other than for purposes of any representation or warranty contained in Section 3.21); (iii) any event, occurrence, circumstance, change or effect generally affecting the …"
+    },
+    {
+      "qa_id": "q37",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Target stockholder proceedings-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any fact, development, occurrence, change or event that, individually or in the aggregate, has had, or would reasonably be expected to have, a material adverse effect on the business, operations, results of operations, assets, liabilities, properties or condition (financial or otherwise) of the Company Entities (including solely for purposes of this definition, Iconix India Joint Venture), taken as a whole, in no event shall any of the following, alone or in combination, be deemed to constitute a Company Material Adverse Effect, nor shall any fact, development, occurrence, change or event relating to any of the following be taken into account in determining whether a Company Material Adverse Effect has occurred or would result: (i) general economic or financial market conditions in the geographical areas in which the Business operates; (ii) conditions generally affecting the industry in which the Business operates; (iii) changes in the capital markets, including changes in interest rates, (iv) changes in Law or in accepted accounting principles required by GAAP; (v) the commencement or material worsening of a war or armed hostilities or …"
+    },
+    {
+      "qa_id": "q38",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Matters listed on disclosure schedules-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” shall mean any condition, fact, occurrence, development, change, event, effect or circumstance which, individually or in the aggregate, has resulted in or would reasonably be expected to result in a material adverse effect on the assets, properties, liabilities, operations, business, financial condition or results of operations of the Company and its Subsidiaries, taken as a whole; provided, however, that conditions, facts, occurrences, developments, changes, events, effects or circumstances, to the extent they directly or indirectly relate to or result from the following, shall be excluded from the determination of Company Material Adverse Effect: (i) any condition, fact, occurrence, development, change, event, effect or circumstance generally affecting any of the industries or markets in which the Company or its Subsidiaries operate; (ii) any change in any Law or GAAP (or changes in interpretations of any Law or GAAP) and, to the extent relevant to the business of the Company and its Subsidiaries, in any legal or regulatory requirement or condition or the regulatory enforcement environment; (iii) general economic, regulatory or political …"
+    },
+    {
+      "qa_id": "q39",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Actions taken by Buyer-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” with respect to a Person means an effect that: (a) is materially adverse to the business, financial condition or results of operations of the Person and its Subsidiaries taken as a whole; or (b) materially and adversely affects the ability of the Person to consummate the Merger on or by the Termination Date or to perform its material obligations under this Agreement; provided, however, that a Material Adverse Effect shall not be deemed to include the impact of or be deemed to occur as a result of, either alone or in combination, any effects to the extent attributable to: (i) any changes in Laws or other changes affecting depository institutions generally; (ii) any changes to GAAP or regulatory accounting requirements; (iii) any changes in general economic conditions; (iv) any changes in prevailing interest and deposit rates, or changes in financial, securities or credit markets; (v) any changes in national or international political or social conditions, including any outbreak or escalation of major hostilities or acts of terrorism which involves the United States, declarations of any national or global epidemic, pandemic or disease outbreak (including …"
+    },
+    {
+      "qa_id": "q40",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Action prohibited/omission required by the agreement-Answer",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Company Material Adverse Effect” means any fact, circumstance, occurrence, effect, change, event or development that, individually or in the aggregate, has (a) resulted or would reasonably be expected to result in a material delay or impediment to the ability of the Company to consummate the Merger or the other Transactions, or (b) had or would reasonably be expected to have a material adverse effect on the assets, liabilities, business, financial condition or results of operations of the Company and the Company Subsidiaries, taken as a whole; provided, however, that, in the case of clause (b), a Company Material Adverse Effect shall not be deemed to include facts, circumstances, occurrences, effects, changes, events or developments arising from or related to (except, in the case of clauses (i), (ii), (iii), (iv), (v), (vi) or (x) below, to the extent disproportionately affecting the Company and the Company Subsidiaries, taken as a whole, relative to other similarly situated companies in the industries in which the Company and the Company Subsidiaries operate, in which case only the incremental disproportionate effect shall be taken into account): (i) conditions affecting the …"
+    },
+    {
+      "qa_id": "q41",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Relational language (MAE carveout)-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Material Adverse Effect” means, when used with respect to any Party, any fact, circumstance, condition, effect, change, event or development (“Effect”) that (a) prevents, materially delays or materially impairs the ability of such Party or its Subsidiaries to consummate the Transactions or could reasonably be expected to do so or (b) is, or could reasonably be expected to be, materially adverse to the financial condition, business, or results of operations of such Party and its Subsidiaries, taken as a whole; provided, however, that, in respect of clause (b) above, none of the following shall be deemed to be or constitute a “Material Adverse Effect” or shall be taken into account when determining whether a “Material Adverse Effect” has occurred or could occur: (i) general economic conditions (or changes in such conditions) or conditions in the U.S. or global economies generally; (ii) conditions (or changes in such conditions) in the securities markets, credit markets, currency markets or other financial markets, including (A) changes in interest rates and changes in exchange rates for the currencies of any countries, and (B) any suspension of trading in securities (whether …"
+    },
+    {
+      "qa_id": "q42",
+      "category": "Material Adverse Effect",
+      "answer_type": "multi_select",
+      "question": "Relational language (MAE carveout)-Answer (Dropdown)",
+      "answer_options": [
+        "\"Arising from/out of\"",
+        "\"Attributable to\"",
+        "\"Relating to\"",
+        "\"Resulting from\"",
+        "No",
+        "Other",
+        "Relational language varies among carveouts"
+      ],
+      "example_answer": "\"Resulting from\"",
+      "example_text": "“Company Material Adverse Effect” means any effect, circumstance, occurrence or change that is material and adverse to the business, assets or deposit liabilities, properties, operations, results of operations or condition (financial or otherwise) of the Company and its Subsidiaries, taken as a whole, or that materially impairs the ability of the Company to consummate the Merger and the transactions contemplated hereby on a timely basis; provided, however, that none of the following effects, circumstances, occurrences or changes shall be considered when determining if a Company Material Adverse Effect has occurred: (A) any change in Law or GAAP or interpretations thereof (except to the extent that, with respect to this clause (A), such effect, circumstance, occurrence or change disproportionately adversely affects the Company and its Subsidiaries compared to other companies of similar size operating in the commercial banking industry in which the Company operates, in which case only the disproportionate effect will be taken into account); (B) effects resulting from worsening of geopolitical conditions in the United States or acts of war, sabotage or terrorism (including any …"
+    },
+    {
+      "qa_id": "q43",
+      "category": "Material Adverse Effect",
+      "answer_type": "multiple_choice",
+      "question": "Relational language (MAE) applies to",
+      "answer_options": [
+        "All MAE carveouts",
+        "No",
+        "Some MAE carveouts"
+      ],
+      "example_answer": "All MAE carveouts",
+      "example_text": "“Company Material Adverse Effect” means any fact, circumstance, effect, change, event or development that, individually or in the aggregate, (a) prevents, or has a material adverse effect on, the ability of the Company to consummate the Transactions or (b) has a material adverse effect on the business, properties, financial condition or results of operations of the Company and the Company Subsidiaries (without giving effect to the Merger), taken as a whole; provided, however, that none of the following, nor any fact, circumstance, effect, change, event or development to the extent arising out of or relating to the following, shall constitute or be taken 65 into account in determining whether a “Company Material Adverse Effect” has occurred or may, would or could occur under the foregoing clause (b) only: (i) general economic or political conditions or securities, credit, financial or other capital markets conditions, in each case, in the United States or any foreign jurisdiction, (ii) any failure, in and of itself, by the Company to meet any internal or published projections, forecasts, estimates or predictions in respect of revenues, earnings or other financial or operating …"
+    },
+    {
+      "qa_id": "q44",
+      "category": "Knowledge",
+      "answer_type": "multiple_choice",
+      "question": "Knowledge Definition-Answer",
+      "answer_options": [
+        "Actual knowledge",
+        "Constructive knowledge"
+      ],
+      "example_answer": "Actual knowledge",
+      "example_text": "“knowledge” means (i) for OCSI, the actual knowledge of its executive officers and directors set forth in Section 9 of the OCSI Disclosure Schedule, (Page 69)"
+    },
+    {
+      "qa_id": "q45",
+      "category": "Knowledge",
+      "answer_type": "multiple_choice",
+      "question": "Constructive Knowledge-Answer",
+      "answer_options": [
+        "Based on investigation or inquiry",
+        "Based on role"
+      ],
+      "example_answer": "Based on investigation or inquiry",
+      "example_text": "“Knowledge” means the actual knowledge of (a) for Parent, the individuals listed in Section 9.14(a) of the Parent Disclosure Schedule under the heading “Knowledge” (the “Parent Knowledge Persons”) and (b) for the Company, the individuals listed in Section 9.14(a) of the Company Disclosure Schedule under the heading “Knowledge” (the “Company Knowledge Persons”), in each case, after due inquiry; provided that none of the Parent Knowledge Persons or Company Knowledge Persons shall have any personal liability or obligations arising out of this Agreement or the transactions contemplated hereby regarding such knowledge.  (Page 102)"
+    },
+    {
+      "qa_id": "q46",
+      "category": "Knowledge",
+      "answer_type": "multiple_choice",
+      "question": "Knowledge Definition limited to one or more identified persons-Answer (Y/",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Knowledge” with respect to an Entity means with respect to any matter in question the actual knowledge of such Entity’s executive officers after reasonable inquiry of their direct reports. (Page 9)"
+    },
+    {
+      "qa_id": "q47",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Liability for breaches of no-shop by Target Representatives (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Representatives” means, with respect to any Person, such Person’s directors, officers, agents, control persons, employees, consultants and professional advisors (including attorneys, accountants and financial advisors). <omitted> Section 7.2 No Solicitation. (a) From and after the date of this Agreement until the earlier to occur of the Effective Time and the termination of this Agreement in accordance with Article IX, and except as otherwise specifically provided for in this Section 7.2, <omitted> (ii) the Company shall not, and shall cause each of its Subsidiaries and its and their respective directors, officers and employees not to, and shall not permit its and their respective other Representatives to, directly or indirectly, (A) solicit, initiate or knowingly encourage any Company Acquisition Proposal or any inquiry, proposal or offer which constitutes, or could reasonably be expected to lead to, a Company Acquisition Proposal, (B) participate in any negotiations or discussions regarding, or furnish to any Person (other than Parent, its Affiliates and their respective Representatives) any nonpublic information relating to the Company and its Subsidiaries, or provide access …"
+    },
+    {
+      "qa_id": "q48",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Liability standard for no-shop breach by Target Non-D&O Representatives",
+      "answer_options": [
+        "Reasonable standard",
+        "Strict liability"
+      ],
+      "example_answer": "Reasonable standard",
+      "example_text": "Section 6.3. Acquisition Proposals. <omitted> (b) Except as it may relate to any Excluded Party or as permitted by this Section 6.3, including the last sentence of this Section 6.3(a), from 11:59 p.m. (California time) on the No-Shop Period Start Date until the Effective Time or, if earlier, the termination of this Agreement in accordance with Section 8.1, and except for actions or omissions taken by or at the direction of any Purchaser Party, including in such Person’s capacity as a director, officer or employee of any of the Acquired Companies, the Company and the other Acquired Companies shall not, and the Company and the other Acquired Companies shall instruct and use their reasonable best efforts to cause their respective Representatives not to, directly or indirectly: (i) solicit or initiate, or knowingly facilitate or knowingly encourage the submission of any Acquisition Proposal; (ii) furnish any nonpublic information regarding or afford access to the properties, books or records of any of the Acquired Companies to any Person for the purpose of knowingly facilitating or knowingly encouraging an Acquisition Proposal; (iii) engage in discussions or negotiations with any …"
+    },
+    {
+      "qa_id": "q49",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Fiduciary exception:  Board determination standard-Answer (no-shop)",
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "example_answer": "\"Inconsistent\" with fiduciary duties",
+      "example_text": "7.3 Other Offers, etc. <omitted> provided, however, that prior to receipt of the Requisite SB Shareholder Approval, this Section 7.3 shall not prohibit a SB Entity from furnishing nonpublic information regarding any SB Entity or other access to, or entering into a confidentiality agreement or discussions or negotiations with, any Person or Group in response to a bona fide, unsolicited written Acquisition Proposal submitted by such Person or Group (and not withdrawn) if and only if: (A) no SB Entity or Representative or Affiliate thereof shall have violated any of the restrictions set forth in this Section 7.3 (other than an unintentional violation that did not, directly or indirectly, result in the submission of such Acquisition Proposal), (B) SB’s board of directors shall have determined in good faith, after consultation with the SB Financial Advisor (or such other financial advisor as SB may use) and outside legal counsel, that such Acquisition Proposal constitutes or is reasonably likely to result in a Superior Proposal, (C) SB’s board of directors concludes in good faith, after consultation with its outside counsel, that the failure to take such action would be inconsistent …"
+    },
+    {
+      "qa_id": "q50",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Fiduciary exception: Board determination trigger (no shop)-Answer",
+      "answer_options": [
+        "Acquisition Proposal only",
+        "Superior Offer, or Acquisition Proposal reasonably likely/expected to result in a Superior Offer"
+      ],
+      "example_answer": "Acquisition Proposal only",
+      "example_text": "6.9           Acquisition Proposals. (a) <omitted> provided, that, prior to receipt of the Requisite Boston Private Vote, in the event Boston Private receives an unsolicited bona fide written Acquisition Proposal, it may, and may permit its Subsidiaries and its and its Subsidiaries’ officers, directors, agents, advisors and representatives to, furnish or cause to be furnished nonpublic information or data and participate in such negotiations or discussions to the extent that its Board of Directors concludes in good faith (after receiving the advice of its outside counsel, and with respect to financial matters, its financial advisors) that failure to take such actions would be more likely than not to result in a violation of its fiduciary duties under applicable law;  (Page 70)"
+    },
+    {
+      "qa_id": "q51",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "COR permitted with board fiduciary determination only",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "Section 7.3 No Solicitation by the Company. <omitted> (d) Notwithstanding anything in this Agreement to the contrary: <omitted> (iii) prior to the receipt of the Company Stockholder Approval, in response to an unsolicited bona fide written Company Competing Proposal from a third party made after the date of this Agreement that has not been withdrawn (provided that the Company Competing Proposal by such Person did not result from a breach or violation of this Section 7.3), (1) the Company Board may make a Company Change of Recommendation and/or (2) the Company may terminate this Agreement pursuant to Section 9.1(d) to enter into a definitive agreement with respect to a Company Superior Proposal, if (and only if), prior to taking any such action in clause (1) or (2), (A) the Company Board determines in good faith, after consultation with its financial advisors and outside legal counsel, that (x) such Company Competing Proposal is a Company Superior Proposal, and (y) the failure to terminate this Agreement to enter into a definitive agreement with respect to such Company Superior Proposal or make a Company Change of Recommendation would be inconsistent with the directors’ duties …"
+    },
+    {
+      "qa_id": "q52",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "COR standard (board determination only)-answer",
+      "answer_options": [
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "example_answer": "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+      "example_text": "Section 6.03. Go-Shop; No Solicitation. <omitted> (e) Notwithstanding anything contained in this Agreement to the contrary, at any time prior to the Acceptance Time, if the Company Board determines, after consultation with outside legal counsel, that the failure to take such action would reasonably be expected to be inconsistent with its fiduciary duties, the Company Board may make an Adverse Recommendation Change; provided, that, if the Company is making an Adverse Recommendation Change in response to any fact, event, change, development or set of circumstances other than an Acquisition Proposal (which shall be governed by Section 6.03(h)), then the Company Board shall not make such Adverse Recommendation Change unless the Company has (i) provided to Parent at least three (3) calendar days’ prior written notice that it intends to take such action and specifying in reasonable detail the facts underlying the decision by the Company Board to take such action and (ii) during such three (3) calendar day period, if requested by Parent, engaged in negotiations with Parent to amend this Agreement in such a manner that obviates the need for such Adverse Recommendation Change. <omitted> …"
+    },
+    {
+      "qa_id": "q53",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "COR standard (superior offer)",
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "None",
+        "Other specified standard"
+      ],
+      "example_answer": "\"Inconsistent\" with fiduciary duties",
+      "example_text": "Section 6.3 No Solicitation by the Company. <omitted> (iii) prior to, but not after, the receipt of the Company Stockholder Approval, in response to a bona fide written Company Competing Proposal from a third party that was not solicited at any time following the execution of this Agreement and did not arise from a breach of the obligations set forth in this Section 6.3, if the Company Board so chooses, the Company Board may effect a Company Change of Recommendation if: (A) the Company Board or any committee thereof determines in good faith after consultation with the Company’s financial advisors and outside legal counsel that such Company Competing Proposal is a Company Superior Proposal; (B) the Company Board determines in good faith, after consultation with its outside legal counsel, that failure to effect a Company Change of Recommendation in response to such Company Superior Proposal would be inconsistent with the fiduciary duties owed by the Company Board to the stockholders of the Company under applicable Law; (C) the Company provides Parent written notice of such proposed action and the basis thereof five (5) Business Days in advance, which notice shall set forth in …"
+    },
+    {
+      "qa_id": "q54",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "COR permitted in response to Intervening Event",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "6.06 Acquisition Proposal. <omitted>\n(d) Notwithstanding anything herein to the contrary, at any time prior to the Premier Financial Meeting, Premier Financial may accept or approve a Superior Proposal thereby withdrawing its recommendation of the Agreement (“Acceptance of Superior Proposal”), if and only if (x) from and after the date hereof, Premier Financial has complied with Sections 6.02 and 6.06, and (y) the Premier Financial Board has determined in good faith, after consultation with outside legal counsel, that the failure to take such action would cause it to violate its fiduciary duties under applicable law;  (Page 54)"
+    },
+    {
+      "qa_id": "q55",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "COR standard (intervening event)",
+      "answer_options": [
+        "\"Inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected breach\" of fiduciary duties",
+        "\"Reasonably likely/expected to be inconsistent\" with fiduciary duties",
+        "\"Reasonably likely/expected violation\" of fiduciary duties",
+        "More likely than not violate fiduciary duties",
+        "Other specified standard"
+      ],
+      "example_answer": "\"Inconsistent\" with fiduciary duties",
+      "example_text": "4.2 Acquisition Proposals. <omitted> (e) Notwithstanding anything to the contrary set forth in this Agreement (including Section 4.2(d)) , at any time prior to the Company Requisite Vote is obtained, following receipt of a written Acquisition Proposal by the Company after the date of this Agreement that is not preceded by a breach of Section 4.2, if the Company Board determines in good faith, after consultation with its outside legal counsel and Financial Advisor, that such Acquisition Proposal constitutes a Superior Proposal and that failure to do so would be inconsistent with the directors’ fiduciary duties under applicable Law, the Company Board may (i)make a Change of Recommendation and/or (ii)terminate this Agreement to enter into a definitive Alternative Acquisition Agreement) with respect to such Superior Proposal; (Page 21) 4.2 Acquisition Proposals. <omitted> (g) Notwithstanding anything to the contrary set forth in this Agreement, at any time prior to the time the Company Requisite Vote is obtained, the Company Board may make a Change of Recommendation for a reason unrelated to a Superior Proposal if the Company Board determines, in good faith, after consultation with …"
+    },
+    {
+      "qa_id": "q56",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Initial matching rights period (COR)-Answer",
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "example_answer": "3 business days",
+      "example_text": "Section 6.1 Company Board Recommendation. <omitted> (i) if the Company has received a written Acquisition Proposal (which Acquisition Proposal did not result from a breach in any material respect of Section 5.3) from any Person that has not been withdrawn, <omitted> (b) At any time prior to accepting for payment such number of Shares validly tendered and not properly withdrawn pursuant to the Offer as satisfies the Minimum Condition (the “Offer Acceptance Time”): <omitted> (2) the Company shall have given Parent prior written notice of its intention to consider making a Company Adverse Change Recommendation or terminate this Agreement pursuant to Section 8.1(e) at least three business days prior to making any such Company Adverse Change Recommendation or termination (a “Determination Notice”) (which notice shall not constitute a Company Adverse Change Recommendation); and (3) (x) the Company shall have provided to Parent a summary of the material terms and conditions of the Acquisition Proposal in accordance with Section 5.3(d) and provided to Parent the latest draft of any documentation being negotiated in connection with the applicable Acquisition Proposal, (y) the Company …"
+    },
+    {
+      "qa_id": "q57",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Additional matching rights period for modifications (COR)-Answer",
+      "answer_options": [
+        "2 business days or less",
+        "3 business days",
+        "3 days",
+        "4 business days",
+        "None"
+      ],
+      "example_answer": "2 business days or less",
+      "example_text": "Section 5.03 Solicitation; Change of Company Recommendation. <omitted> (e) <omitted> (iii) prior to making such Change of Company Recommendation in accordance with Section 5.03(e) or terminating this Agreement in accordance with Section 7.01(d) in order to enter into the Alternative Acquisition Agreement, as applicable, if requested by Parent, the Company has negotiated, and directed the applicable Representatives of the Company to negotiate, in good faith with Parent during the three (3) Business Days (as may be extended by two (2) Business Days solely as required by clause (iv) below) following the date of such Notice of Superior Proposal Change of Recommendation with respect to any changes to the terms of this Agreement proposed by Parent in response thereto; and (iv) taking into account any changes to the terms of this Agreement offered by Parent pursuant to clause (iii) above and any other information provided by Parent in response to such Notice of Superior Proposal Change of Recommendation, the Company Board (or any committee thereof) has determined in good faith, after consultation with its outside financial advisors and outside legal counsel, that such Competing Proposal …"
+    },
+    {
+      "qa_id": "q58",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Number of additional matching rights periods for modifications (COR)",
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "example_answer": "Continuous matching right",
+      "example_text": "7.1 Shareholder Approvals. <omitted> (C) SB’s board of directors provides written notice (a “Notice of Recommendation Change”) to Buyer of its receipt of the Superior Proposal and its intent to announce an Adverse Recommendation Change on the third business day following delivery of such notice, which notice shall specify the material terms and conditions of the Superior Proposal (and include a copy thereof with all accompanying documentation, if in writing) and identify the Person or Group making such Superior Proposal (it being understood that any amendment to any material term of such Acquisition Proposal shall require a new Notice of Recommendation Change, except that, in such case, the three business day period referred to in this clause (C) and in clauses (D) and (E) shall be reduced to two business days following the giving of such new Notice of Recommendation Change); (D) after providing such Notice of Recommendation Change, SB shall negotiate in good faith with Buyer (if requested by Buyer) and provide Buyer reasonable opportunity during the subsequent three business day period to make such adjustments in the terms and conditions of this Agreement as would enable SB’s …"
+    },
+    {
+      "qa_id": "q59",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Definition includes stock deals-Answer",
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "example_answer": "\"All or substantially all\"",
+      "example_text": "“Company Superior Offer” means an unsolicited, bona fide, written offer by a third party to purchase, in exchange for consideration consisting exclusively of cash or publicly traded equity securities or a combination thereof, substantially all of the outstanding shares of Company Common Stock, that is on terms and conditions that the Company’s board of directors determines in good faith, after having taken into account the advice of an independent financial advisor of nationally recognized reputation and the Company’s outside legal counsel and the likelihood and anticipated timing of consummation of the transaction contemplated by such offer, to be more favorable from a financial point of view to the Company’s stockholders than the Mergers.  (Page 115)"
+    },
+    {
+      "qa_id": "q60",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Definition includes asset deals-Answer",
+      "answer_options": [
+        "\"All or substantially all\"",
+        "50%",
+        "Greater than 50% but not \"all or substantially all\"",
+        "Less than 50%"
+      ],
+      "example_answer": "\"All or substantially all\"",
+      "example_text": "“Company Superior Proposal” means a Company Takeover Proposal (i) that if consummated would result in a third party (or in the case of a direct merger between such third party and the Company, the shareholders of such third party) acquiring, directly or indirectly, more than 50% of the voting power of the Company Common Stock or all or substantially all the assets of the Company and its Subsidiaries, taken as a whole, for consideration consisting of cash and/or securities, (ii) that is reasonably capable of being completed, taking into account all financial, legal, regulatory and other aspects of such proposal, including all conditions contained therein, and (iii) that the Company Board determines in good faith, after consultation with legal counsel and its financial advisor (taking into account any changes to this Agreement proposed by Parent as contemplated by Section 5.2), is more favorable to the stockholders of the Company than the consideration to be received by the stockholders of the Company in the Merger.  (Page 78)"
+    },
+    {
+      "qa_id": "q61",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "\"Financial point of view\" is the sole consideration",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Superior Proposal” means, with respect to a Party, any bona fide, written Acquisition Proposal made after the date of this Agreement that is fully financed or has fully committed financing that the Board of Directors of such Party determines in good faith, after consultation with its financial advisor and outside legal counsel, and taking into account all legal, financial, regulatory and other terms and conditions of the Acquisition Proposal (including any governmental or other approval requirements, the availability and terms of any necessary financing, and other aspects of the Acquisition Proposal and the Third Party making the Acquisition Proposal), (i) would result in a transaction that is more favorable to such Party’s stockholders from a financial point of view than the Merger (including any adjustment to the terms and conditions proposed by the other Party hereto in response to such Acquisition Proposal) and (ii) is reasonably likely of being completed on the terms proposed on a timely basis; provided that for purposes of this definition, references in the term “Acquisition Proposal” to twenty percent (20%) shall be deemed to be references to fifty percent (50%).  (Page 19)"
+    },
+    {
+      "qa_id": "q62",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Definition contains knowledge requirement - answer",
+      "answer_options": [
+        "Known, but consequences unknown or not reasonably foreseeable, at signing",
+        "Known, but consequences unknown, at signing",
+        "Not known and not reasonably foreseeable at signing",
+        "Not known at signing"
+      ],
+      "example_answer": "Known, but consequences unknown or not reasonably foreseeable, at signing",
+      "example_text": "“East Intervening Event” shall mean a material event, fact, circumstance, development or occurrence not related to an Acquisition Proposal that is not known or reasonably foreseeable (or if known or reasonably foreseeable, the probability or magnitude of consequences of which were not known or reasonably foreseeable) to or by the East Board as of the date of this Agreement, which event, fact, circumstance, development or occurrence becomes known to the East Board prior to obtaining the East Stockholder Approval. Notwithstanding the foregoing, in no event shall the following events, changes or developments constitute an East Intervening Event: changes in the market price or trading volume of Central Common Stock, East Common Stock or any other securities of Central or East, or any change in the credit rating of Central or East or the fact that Central or East meets, fails to meet, or exceeds internal or published estimates, projections, forecasts or predictions for any period (it being understood that the underlying cause thereof may constitute an East Intervening Event).  (Page 110)"
+    },
+    {
+      "qa_id": "q63",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Intervening Event - Required to Occur After Signing - answer",
+      "answer_options": [
+        "May occur or arise prior to signing",
+        "Must occur or arise after signing"
+      ],
+      "example_answer": "May occur or arise prior to signing",
+      "example_text": "(i) the Company Board (or a committee thereof) may effect a Company Board Recommendation Change in response to any material event, fact, circumstance, development or occurrence that was (A) not known to, or reasonably foreseeable by, the Company Board as of the date hereof; and (B) does not relate to (a) any Acquisition Proposal (or any proposal or inquiry that constitutes, or is reasonably expected to lead to, an Acquisition Proposal); or (b) the mere fact, in and of itself, that the Company meets or exceeds any internal or published projections, forecasts, estimates or predictions of revenue, earnings or other financial or operating metrics for any period ending on or after the date hereof, or changes after the date hereof in the market price of the Company Common Stock or the credit rating of the Company (it being understood that the underlying cause of any of the foregoing in this clause (b) may be considered and taken into account); (each such event, an “Intervening Event”)  (Page 69)"
+    },
+    {
+      "qa_id": "q64",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Definition contains a materiality standard (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "“Change in Circumstance” means any material event or development or material change in circumstances with respect to the Company that was neither known to the Company Board nor reasonably foreseeable as of the Agreement Date and does not relate to (a) any Acquisition Proposal or (b) any events, changes or circumstances relating to Parent, Purchaser or any of their Affiliates. (Page 6)"
+    },
+    {
+      "qa_id": "q65",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multi_select",
+      "question": "Limitations on FTR Exercise-Answer",
+      "answer_options": [
+        "(Material) breach of other provisions of agreement",
+        "Any breach of no-shop",
+        "Breach of no-shop resulting in a Superior Offer",
+        "Material breach of no-shop",
+        "Material breach of no-shop resulting in a Superior Offer",
+        "Other"
+      ],
+      "example_answer": "Any breach of no-shop",
+      "example_text": "Section 6.3. Acquisition Proposals.\n<omitted>\n(b) <omitted> the Company and the other Acquired Companies shall not <omitted>: (i) solicit or initiate, or knowingly facilitate or knowingly encourage the submission of any Acquisition Proposal;\n\n<omitted>\n\nSection 8.1. Termination. This Agreement may be terminated, and the Merger may be abandoned at any time prior to the Effective Time (notwithstanding the adoption of this Agreement by the stockholders of the Company or Merger Sub), only as follows (it being understood and agreed that this Agreement may not be terminated for any reason or on any other basis):\n\n<omitted>\n\n(ii) at any time prior to the receipt of the Company Stockholder Approval and the Majority of the Minority Approval, if the Board authorized the Company to enter into a definitive agreement with respect to a Superior Proposal, to the extent permitted by and in accordance with the terms of Section 6.3; provided, however, that the Company shall concurrently with, and as a condition of, such termination, pay the Company Termination Fee to Parent pursuant to Section 8.2(b)(i);  (Page 72)"
+    },
+    {
+      "qa_id": "q66",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Initial matching rights period (FTR)-Answer",
+      "answer_options": [
+        "3 business days",
+        "4 business days",
+        "4 calendar days",
+        "5 business days"
+      ],
+      "example_answer": "3 business days",
+      "example_text": "SECTION 7.1 Non-Solicitation; Acquisition Proposals. <omitted> (c) Notwithstanding anything in this Section 7.1 to the contrary, if, at any time prior to the Offer Acceptance Time, the Company’s Board of Directors determines in good faith, after consultation with its financial advisor(s) and outside legal counsel, in response to an Acquisition Proposal that did not result from a breach of this Section 7.1, that such proposal constitutes a Superior Proposal, the Company or its Board of Directors may, prior to the Offer Acceptance Time, <omitted> (B) terminate this Agreement pursuant to Section 9.1(d)(iv) to enter into a definitive agreement with respect to such Superior Proposal; provided that the Company pays to Parent the Company Termination Payment required to be paid pursuant to Section 9.2(b)(i) at or prior to the time of such termination (it being agreed that such termination shall not be effective unless such fee is so paid); provided, further, that the Company will not be entitled to <omitted> terminate this Agreement in accordance with Section 9.1(d)(iv) unless (x) the Company delivers to Parent a written notice (a “Company Notice”) advising Parent that the Company’s …"
+    },
+    {
+      "qa_id": "q67",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Additional matching rights period for modifications (FTR)-Answer",
+      "answer_options": [
+        "2 business days or less",
+        "3 business days"
+      ],
+      "example_answer": "2 business days or less",
+      "example_text": "Section 5.03 Solicitation; Change of Company Recommendation. <omitted> (e) <omitted> (iii) prior to making such Change of Company Recommendation in accordance with Section 5.03(e) or terminating this Agreement in accordance with Section 7.01(d) in order to enter into the Alternative Acquisition Agreement, as applicable, if requested by Parent, the Company has negotiated, and directed the applicable Representatives of the Company to negotiate, in good faith with Parent during the three (3) Business Days (as may be extended by two (2) Business Days solely as required by clause (iv) below) following the date of such Notice of Superior Proposal Change of Recommendation with respect to any changes to the terms of this Agreement proposed by Parent in response thereto; and (iv) taking into account any changes to the terms of this Agreement offered by Parent pursuant to clause (iii) above and any other information provided by Parent in response to such Notice of Superior Proposal Change of Recommendation, the Company Board (or any committee thereof) has determined in good faith, after consultation with its outside financial advisors and outside legal counsel, that such Competing Proposal …"
+    },
+    {
+      "qa_id": "q68",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Number of additional matching rights periods for modifications (FTR)",
+      "answer_options": [
+        "Continuous matching right",
+        "None"
+      ],
+      "example_answer": "Continuous matching right",
+      "example_text": "Section 5.2 No Solicitation; Recommendations. <omitted> (d) Notwithstanding Section 5.2(b), at any time prior to obtaining the Company Stockholder Approval, the Company Board may, if it determines in good faith (after consultation with outside counsel) that the failure to do so would be inconsistent with its fiduciary duties to the Company Stockholders under applicable Law, taking into account all adjustments to the terms of this Agreement that may be offered by the Parent pursuant to this Section 5.2, (x) make an Adverse Recommendation Change in response to either (1) a Superior Proposal or (2) an Intervening Event or (y) terminate this Agreement pursuant to Section 7.1(e) in response to a Superior Proposal; provided, however, that the Company Board may not make an Adverse Recommendation Change or terminate this Agreement pursuant to Section 7.1(e) in response to a Superior Proposal unless: (i) the Company notifies Parent in writing at least four Business Days before taking that action of its intention to do so, and specifies the reasons therefor, including the terms and conditions of, and the identity of the Person making, such Superior Proposal, and contemporaneously furnishes …"
+    },
+    {
+      "qa_id": "q69",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multi_select",
+      "question": "Acquisition Proposal Timing-Answer",
+      "answer_options": [
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Different Acquisition Proposal - Must sign during Tail Period and close after Tail Period",
+        "Different Acquisition Proposal must close during Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed (or another similar action) during Tail Period and transaction must close after Tail Period",
+        "Same Acquisition Proposal - Must be approved or not opposed to (or another similar action) during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must close during Tail Period",
+        "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+        "Same Acquisition Proposal - Must sign during Tail Period and close after Tail Period"
+      ],
+      "example_answer": "Same Acquisition Proposal - Must sign during Tail Period (no closing requirement), Different Acquisition Proposal - Must sign during Tail Period (no closing requirement)",
+      "example_text": "7.02 Effect of Termination and Abandonment. <omitted> (b) (i) The Company shall pay a termination fee of $8,500,000 (the “Termination Fee”) to Parent payable by wire transfer of immediately available funds to an account specified by Parent in the event of any of the following: <omitted> (3) within twelve (12) months of the termination of this Agreement, the Company enters into a definitive agreement with respect to or consummates an Acquisition Proposal;  (Page 70)"
+    },
+    {
+      "qa_id": "q70",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "Section 8.2 Effect of Termination <omitted> (b) In the event that: (i) (A) after the date of this Agreement, a Company Alternative Proposal (substituting in the definition thereof “50%” for “25%” and for “75%” in each place each such phrase appears) shall have been received by the Company or its Representatives or is publicly proposed or publicly disclosed (a “Qualifying Transaction”), (B) this Agreement is terminated by the Company or Parent pursuant to ​Section 8.1(c) or ​Section 8.1(g) or by Parent pursuant to ​Section 8.1(b)(i) and (C) concurrently with or within twelve (12) months after such termination, the Company shall have (1) consummated such Qualifying Transaction or another Company Alternative Proposal (substituting in the definition thereof “50%” for “25%” and for “75%” in each place each such phrase appears) or (2) entered into a definitive agreement providing for and later consummated such Qualifying Transaction or Company Alternative Proposal; <omitted> then, in any such event under clause (i), (ii) or (iii) of this ​Section 8.2(b), the Company shall pay Parent or its designee the Company Termination Payment in accordance with the escrow procedures set forth in …"
+    },
+    {
+      "qa_id": "q71",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multi_select",
+      "question": "Acquisition Proposal required to be publicly disclosed-Answer",
+      "answer_options": [
+        "No",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Breach Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger",
+        "“Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger"
+      ],
+      "example_answer": "“Publicly disclosed” requirement applies to Acquisition Proposal + No-Vote / MTC Failure Trigger, “Publicly disclosed” requirement applies to Acquisition Proposal + Outside Date Trigger",
+      "example_text": "8.2          Effect of Termination. <omitted> (b)          Termination Fee. (i)          If (A) Tyler or NIC terminates this Agreement <omitted> (C) within 12 months of such termination, an Acquisition Proposal is consummated or a definitive agreement with respect to an Acquisition Proposal is entered into, then on or prior to the date any such Acquisition Proposal is consummated, NIC shall pay to Tyler a fee of fifty-five million dollars ($55,000,000) in cash (the “Termination Fee”).  (Page 50)"
+    },
+    {
+      "qa_id": "q72",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Acquisition Proposal required to be still pending-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "Section 9.04 Fees and Expenses. <omitted> (b) In the event that: <omitted> (iii) this Agreement is terminated pursuant to Section 8.01(b) (provided that the Stockholder Approval shall not have been obtained), Section 8.01(d) or Section 8.01(e) and (A) prior to the date of termination (in the case termination pursuant to Section 8.01(b) or Section 8.01(e)) or the date of the Stockholder Meeting (in the case of termination pursuant to Section 8.01(d)) an Acquisition Proposal is made to the Company or made to the Company’s stockholders or is otherwise publicly disclosed or made known and (B) within twelve months after the date of such termination, the Company either (1) enters into a definitive agreement in respect of any Acquisition Proposal (whether or not such Acquisition Proposal is the same Acquisition Proposal described in clause (A) above) or (2) consummates any Acquisition Proposal (whether or not such Acquisition Proposal is the same Acquisition Proposal described in clause (A) above); provided that for purposes of this subsection (iii), each reference to “20%” in the definition of Acquisition Transaction shall be deemed to be references to “50%”; then the Company shall pay …"
+    },
+    {
+      "qa_id": "q73",
+      "category": "Deal Protection and Related Provisions",
+      "answer_type": "multiple_choice",
+      "question": "Tail Period Length-Answer",
+      "answer_options": [
+        "within 12 months",
+        "within 9 months"
+      ],
+      "example_answer": "within 12 months",
+      "example_text": "Section 7.3 Termination Fee; Expenses.\n(a) If this Agreement is terminated:\n\n <omitted>\n\n(C) within 12 months of the termination of this Agreement, the Company or any of its Subsidiaries enters into a definitive agreement with a third party with respect to or consummates a transaction that is a Company Takeover Proposal with a third party; then the Company shall pay to Parent the Company Termination Fee by wire transfer (to an account designated by Parent) in immediately available funds in the case of clause (i), within two Business Days of such termination, or in the case of clause (ii), at or prior to such termination, or, in the case of clause (iii), upon the earlier of the entry into a definitive agreement with respect to the transactions contemplated by such Company Takeover Proposal and the consummation of such transactions  (Page 96)"
+    },
+    {
+      "qa_id": "q74",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Buyer consent requirement (ordinary course)-Answer",
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "example_answer": "Consent may not be unreasonably withheld, conditioned or delayed",
+      "example_text": "Section 5.01         Conduct of Business by the Company Pending the Merger. The Company agrees that between the date of this Agreement and the earlier of the Effective Time and the termination of this Agreement in accordance with its terms, except as expressly set forth in Section 5.01 of the Company Disclosure Letter, as expressly contemplated or required by any other provision of this Agreement or as required by applicable Law (including any COVID-19 Measures), unless Parent otherwise agrees in writing (which agreement shall not be unreasonably withheld, delayed or conditioned), the Company will, and will cause each Company Subsidiary to, use commercially reasonable efforts to conduct its operations in all material respects in the ordinary course of business  (Page 22)"
+    },
+    {
+      "qa_id": "q75",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Includes \"consistent with past practice\"",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "5.1 Conduct of Business Prior to the Effective Time. During the period from the date of this Agreement to the Effective Time or earlier termination of this Agreement, except as expressly contemplated or permitted by this Agreement (including as set forth in the Company Disclosure Schedule), required by law (including the Pandemic Measures) or as consented to in writing by the other party (such consent not to be unreasonably withheld, conditioned or delayed), (a) Company shall, and shall cause its Subsidiaries to, (i) conduct its business in the ordinary course in all material respects  (Page 43)"
+    },
+    {
+      "qa_id": "q76",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Ordinary course efforts standard-Answer",
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat covenant (no efforts standard)",
+        "Reasonable best efforts"
+      ],
+      "example_answer": "Commercially reasonable efforts",
+      "example_text": "Section 6.1 Conduct of Business. From the date of this Agreement until the earlier of the termination of this Agreement and the Effective Time, and except as set forth in Section 6.1 of the Company Disclosure Schedule, as any other provision of this Agreement expressly contemplates or expressly requires, as required by applicable Law, or rules and regulations of the SEC or NYSE, for any action taken by the Company to the extent necessary, desirable or appropriate in order to effect the Migration, or to the extent Parent has consented in writing thereto (such consent not to be unreasonably withheld, delayed or conditioned): (a) the Company shall, and shall cause the Company Subsidiaries, to conduct the business of the Company and the Company Subsidiaries in the ordinary course of business consistent with past practice in all material respects; and use its commercially reasonable efforts to (A) preserve intact its present business organization, (B) maintain in effect all of its material Permits, and (C) maintain satisfactory relationships with its customers, lenders, suppliers, licensors, licensees, distributors, employees and others having material business relationships with it; …"
+    },
+    {
+      "qa_id": "q77",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Ordinary Course Covenant includes carve-out for Pandemic responses-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "COVENANTS Section 5.01 Covenants of First Choice. ( a ) During the period from the date of this Agreement until the Effective Time (or earlier termination of this Agreement in accordance with Article 7), except as set forth in Section 5.01(a) of the First Choice Disclosure Schedule as of the date hereof, except as expressly contemplated or permitted by this Agreement, except as required by applicable Law, or except with the prior written consent of Enterprise (which consent will not be unreasonably withheld or delayed), First Choice shall, and shall cause each First Choice Subsidiary to (a) carry on its business only in the Ordinary Course of Business, including in respect of loan loss provisioning, securities portfolio management, compensation and other expense management and other operations which are reasonably expected to impact First Choice’s shareholders’ equity, and in compliance in all material respects with all applicable Laws <omitted> “Ordinary Course of Business” means the ordinary course of business of First Choice and First Choice Subsidiaries (including First Choice Bank) or Enterprise and Enterprise Subsidiaries (including EB&T), as applicable, consistent with …"
+    },
+    {
+      "qa_id": "q78",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_options": [
+        "Consent may not be unreasonably withheld, conditioned or delayed",
+        "Flat consent"
+      ],
+      "example_answer": "Consent may not be unreasonably withheld, conditioned or delayed",
+      "example_text": "Without limiting the generality of the foregoing, during the Interim Period, the Company will not and the Company shall cause each Company Subsidiary not to (except as (v) expressly permitted or expressly contemplated by this Agreement or as expressly contemplated by the transactions contemplated hereby, (w) as required by Law, (x) as set forth in Section 5.1 of the Company Disclosure Letter, (y) to the extent requested by Parent pursuant to Section 5.12 or otherwise or (z) to the extent that Parent shall otherwise consent in writing, which consent shall not be unreasonably withheld, delayed or conditioned): (Page 25)"
+    },
+    {
+      "qa_id": "q79",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Application of Buyer consent requirement (negative interim covenant)-Answer",
+      "answer_options": [
+        "Applies only to specified negative covenants",
+        "Applies to all negative covenants"
+      ],
+      "example_answer": "Applies only to specified negative covenants",
+      "example_text": "Section 4.1    Conduct of Business by the Company. <omitted> (b)    Without limiting the generality of the foregoing (except as provided herein), from the date of this Agreement until the earlier of the Effective Time or the date, if any, on which this Agreement is terminated pursuant to Section 7.1, except (x) as prohibited or required by applicable Law or by any Governmental Entity,   31\n\n\n(y) as set forth in Section 4.1(b) of the Company Disclosure Schedule or (z) as otherwise contemplated, required or permitted by this Agreement, unless Parent shall otherwise consent (which consent shall not be unreasonably withheld, conditioned or delayed, except with respect to any consent requested under Section 4.1(b)(ii), (iii), (vi), (xi), (xix) or (xxii) (in connection with any of the foregoing Sections)), the Company shall not, and shall not permit any of its Subsidiaries to, directly or indirectly: (Pages 35-36)"
+    },
+    {
+      "qa_id": "q80",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "Negative Interim Covenant includes carveout for pandemic responses-Answer (Y/N)",
+      "answer_options": [
+        "No",
+        "Yes"
+      ],
+      "example_answer": "No",
+      "example_text": "Section 6.1          Conduct of Business. From the date of this Agreement until the earlier of the termination of this Agreement and the Effective Time, and except as set forth in Section 6.1 of the Company Disclosure Schedule, as any other provision of this Agreement expressly contemplates or expressly requires, as required by applicable Law, or rules and regulations of the SEC or NYSE, for any action taken by the Company to the extent necessary, desirable or appropriate in order to effect the Migration, or to the extent Parent has consented in writing thereto (such consent not to be unreasonably withheld, delayed or conditioned): <omitted> (b)       without limiting the generality of the foregoing (and provided that no action or failure to take action with respect to matters specifically addressed by any of the provisions of this Section 6.1(b) shall constitute a breach under Section 6.1(a) unless such action or failure to take action would otherwise constitute a breach of Section 6.1(a)), the Company shall not, and shall not permit any Company Subsidiary to, take any of the following actions: (Page 45)"
+    },
+    {
+      "qa_id": "q81",
+      "category": "Operating and Efforts Covenant",
+      "answer_type": "multiple_choice",
+      "question": "General Antitrust Efforts Standard-Answer",
+      "answer_options": [
+        "Commercially reasonable efforts",
+        "Flat standard",
+        "Reasonable best efforts"
+      ],
+      "example_answer": "Commercially reasonable efforts",
+      "example_text": "(a) Each of Buyer and Company and their respective Subsidiaries shall cooperate and use their respective commercially reasonable efforts (i) to promptly prepare all documentation (including the Joint Proxy Statement-Prospectus), to effect all filings, to obtain all permits, consents, approvals and authorizations of all third parties and Governmental Authorities necessary to consummate the transactions contemplated by this Agreement, including, without limitation, all Regulatory Approvals and all other consents and approvals of a Governmental Authority required to consummate the Merger (Page 67)"
+    },
+    {
+      "qa_id": "q82",
+      "category": "Remedies",
+      "answer_type": "multiple_choice",
+      "question": "Specific Performance-Answer",
+      "answer_options": [
+        "\"entitled to seek\" specific performance",
+        "\"entitled to\" specific performance"
+      ],
+      "example_answer": "\"entitled to seek\" specific performance",
+      "example_text": "9.13 Specific Performance. (a) The parties hereto acknowledge and agree that irreparable damage would occur and that the parties would not have any adequate remedy at Law in the event that any of the obligations, undertakings, covenants or agreements of the parties to this Agreement were not performed in accordance with their specific terms or were otherwise breached, and that monetary damages, even if available, would not be an adequate remedy therefor. It is accordingly agreed that the Company, on the one hand, and Parent, on the other hand, shall be entitled to seek an injunction or injunctions to prevent breaches of this Agreement by the other party, and to enforce   84\n\n\nspecifically the terms and provisions of this Agreement (including Section 6.5, and including to cause Parent and Merger Sub to consummate the Merger and the Closing and to make the payments contemplated by this Agreement, including ARTICLE I and ARTICLE IV) by a decree of specific performance,  (Pages 91-92)"
+    }
+  ]
+}

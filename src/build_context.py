@@ -38,15 +38,29 @@ they are almost always built together).
 
   Interference (length only):
     Budgets are how much rot/confusion FILLER to add AROUND the probe, in tokens
-    (64k, 128k, ...) — the independent variable, NOT a cap on the window. The
-    probe document is ALWAYS kept whole and placed at the FRONT of the window,
-    BEFORE all the filler (with the query appended last), so increasing the budget
-    pushes the probe progressively further from the point of retrieval; only
-    filler blocks are trimmed to fit the budget.
+    (64k, 128k, ...) — the independent variable, NOT a cap on the window. Two probe
+    layouts:
+    * whole-target (CUAD, and MAUD --full-documents): the probe is kept whole and
+      placed at the FRONT of the window, BEFORE all the filler (query appended
+      last), so a bigger budget buries the probe progressively deeper — distance to
+      the point of retrieval is the thing the budget grows.
+    * fragmented-target (MAUD default): the probe is split into its clause excerpts
+      and those fragments are SHUFFLED IN among the distractor fragments (all under
+      the target id), so the relevant pieces are scattered through the noise. Here
+      the budget grows the signal-to-noise DILUTION rather than a single distance,
+      and each cell records, per question, WHERE its evidence fragment landed
+      (`question_locations`) so location->accuracy can be measured downstream.
+    Only filler blocks are trimmed to fit the budget; target fragments are always
+    all included (they carry the answer evidence).
 
   Filler sources:
     * confusion / missing_answer filler is drawn from the OTHER documents in the
-      same dataset (confusable).
+      same dataset (confusable). For MAUD this defaults to CLAUSE FRAGMENTS — the
+      per-row `text` excerpts from the CSV, each wrapped as its own <DOCUMENT> —
+      rather than whole agreements: fragments yield MANY more distractors and are
+      filtered so none reproduces a target gold answer (no other document hands
+      the model a correct answer). Pass --full-documents to restore whole-agreement
+      filler. CUAD always uses whole (small) contracts and ignores the flag.
     * rot filler is drawn EXCLUSIVELY from the NON-legal story corpus in data/rot
       — random sections of randomly chosen .txt files (Project Gutenberg eBooks,
       boilerplate stripped). Override with --rot-dir; with no .txt stories the
@@ -60,8 +74,11 @@ WHERE CUAD AND MAUD GENUINELY DIFFER (kept dataset-specific on purpose):
                         False, a safe-negative OPTION) — mostly single-pick
                         multiple choice, with some select-all-that-apply questions
                         (answer_type="multi_select") scored by atom-set match.
-    * distractor pool   CUAD contracts are small -> loaded eagerly; MAUD agreements
-                        are large -> loaded lazily, one or two per budget.
+    * distractor pool   CUAD contracts are small -> loaded eagerly. MAUD defaults
+                        to a fragment pool (CSV `text` excerpts, eager, filtered to
+                        drop the target's gold answers); --full-documents switches
+                        it back to whole agreements loaded lazily, one or two per
+                        budget.
     Everything else (seeding, token counting, rot corpus, context assembly, the
     per-document cell grid, the cell schema, the manifest) is shared. If you find
     yourself adding a third per-dataset branch, that is the warning sign the two
@@ -76,6 +93,7 @@ Usage:
     python src/build_context.py                                  # both datasets, default grid
     python src/build_context.py --dataset cuad --modality rot confusion missing_answer
     python src/build_context.py --dataset maud --num-documents 4 --budgets 64000 128000
+    python src/build_context.py --dataset maud --full-documents      # whole-agreement filler
     python src/build_context.py --dataset cuad --doc-indices 19 23 --seed 42
     python src/build_context.py --dry-run                        # plan only, no write
 """
@@ -111,6 +129,7 @@ MAUD_DEFAULT_FILE = Path("data/maud/MAUD_dev.csv")
 MAUD_DEFAULT_CONTRACTS = Path("data/maud/contracts")
 MAUD_DEFAULT_OUT = Path("data/prepared_maud")
 MAUD_DEFAULT_DATA_TYPE = "main"
+MAUD_DEFAULT_NATURAL_QUESTIONS = Path("data/maud/unique_questions_natural.json")
 
 # All modalities the schema knows about; only IMPLEMENTED ones generate cells.
 MODALITIES = ("rot", "confusion", "missing_answer", "missing_document")
@@ -118,7 +137,7 @@ IMPLEMENTED_MODALITIES = ("rot", "confusion")
 # Modalities with an interference axis, so a zero-filler baseline makes sense.
 BASELINE_MODALITIES = ("rot", "confusion")
 DEFAULT_MODALITIES = IMPLEMENTED_MODALITIES
-DEFAULT_BUDGETS = (64_000, 128_000, 256_000, 512_000)
+DEFAULT_BUDGETS = (128_000, 256_000, 512_000)
 DEFAULT_NUM_DOCUMENTS = 10
 DEFAULT_MAX_QUESTIONS = 16
 
@@ -320,6 +339,48 @@ class DocWrapper:
         return self.open(doc_id, title) + text + self.close
 
 
+def _fill_distractor_blocks(entries: list, loader, filler_chars: int, sep: str,
+                            rng: random.Random, wrapper: DocWrapper):
+    """Draw shuffled distractor blocks until `filler_chars` is spent.
+
+    Returns (blocks, used_ids, repeated). The last block is trimmed to fit the
+    remaining budget; a single-entry pool stops after one use (it can't add
+    variety by repeating). Shared by both the whole-target and the fragmented
+    assembly paths so the budget accounting stays identical.
+    """
+    blocks: list[str] = []        # distractor blocks in fill order
+    used_ids: list[str] = []
+    repeated = False
+    if not (entries and filler_chars > 0):
+        return blocks, used_ids, repeated
+
+    order = entries[:]
+    rng.shuffle(order)
+    overhead_close = len(wrapper.close)
+    added = 0                     # filler chars accumulated (target NOT counted)
+    i = 0
+    while True:
+        budget_left = filler_chars - added
+        if budget_left <= 0:
+            break
+        handle = order[i % len(order)]
+        repeated = repeated or i >= len(order)
+        did, title, text = loader(handle)
+        block = wrapper.block(did, title, text)
+        if len(block) + len(sep) > budget_left:  # trim inner text so it fits
+            keep = budget_left - len(sep) - len(wrapper.open(did, title)) - overhead_close
+            if keep <= 0:
+                break
+            block = wrapper.block(did, title, text[:keep])
+        blocks.append(block)
+        used_ids.append(did)
+        added += len(block) + len(sep)
+        i += 1
+        if len(order) == 1 and i >= 1:
+            break
+    return blocks, used_ids, repeated
+
+
 def build_cell_context(target_id: str, target_title: str, target_text: str,
                        entries: list, loader, filler_chars: int, sep: str,
                        rng: random.Random, wrapper: DocWrapper) -> dict:
@@ -343,37 +404,8 @@ def build_cell_context(target_id: str, target_title: str, target_text: str,
     target_block = wrapper.block(target_id, target_title, target_text)
     target_inner_offset = len(wrapper.open(target_id, target_title))  # raw text start
 
-    blocks: list[str] = []        # distractor blocks in fill order
-    used_ids: list[str] = []
-    repeated = False
-
-    if entries and filler_chars > 0:
-        order = entries[:]
-        rng.shuffle(order)
-        overhead_close = len(wrapper.close)
-        added = 0                 # filler chars accumulated (target NOT counted)
-        i = 0
-        while True:
-            budget_left = filler_chars - added
-            if budget_left <= 0:
-                break
-            handle = order[i % len(order)]
-            repeated = repeated or i >= len(order)
-            did, title, text = loader(handle)
-            block = wrapper.block(did, title, text)
-            if len(block) + len(sep) > budget_left:  # trim inner text so it fits
-                keep = budget_left - len(sep) - len(wrapper.open(did, title)) - overhead_close
-                if keep <= 0:
-                    break
-                block = wrapper.block(did, title, text[:keep])
-            blocks.append(block)
-            used_ids.append(did)
-            added += len(block) + len(sep)
-            i += 1
-            # A single-document pool (e.g. MAUD's one huge agreement) can't add
-            # variety by repeating, so stop once it has been used in full.
-            if len(order) == 1 and i >= 1:
-                break
+    blocks, used_ids, repeated = _fill_distractor_blocks(
+        entries, loader, filler_chars, sep, rng, wrapper)
 
     # The target sits at the FRONT of the window; all filler follows it, so the
     # distance between the target and the query (appended after this context)
@@ -384,8 +416,66 @@ def build_cell_context(target_id: str, target_title: str, target_text: str,
     return {
         "context": context,
         "target_offset": target_inner_offset,
+        "target_end": target_inner_offset + len(target_text),
         "distractor_ids": used_ids,
         "filler_repeated": repeated,
+    }
+
+
+def build_fragment_cell_context(target_id: str, target_title: str,
+                                target_fragments: list[str], entries: list, loader,
+                                filler_chars: int, sep: str, rng: random.Random,
+                                wrapper: DocWrapper) -> dict:
+    """Disperse the target's OWN clause fragments among the distractor fragments.
+
+    The target is no longer one whole block at the front: it is split into its
+    clause excerpts (`target_fragments`), each wrapped as its own <DOCUMENT> under
+    the SAME target id/title, and those blocks are SHUFFLED IN among the distractor
+    fragment blocks. So the relevant pieces are scattered through the noise and the
+    only thing tying them to the target is the id — which is exactly the
+    attribution-under-confusion signal we want to measure. Every target fragment is
+    ALWAYS included (it carries the answer evidence); `filler_chars` bounds only the
+    distractor fill, so the budget now controls the signal-to-noise DILUTION rather
+    than a front-to-back burial distance.
+
+    Returns, additionally to the usual fields, `fragment_offsets`: the char offset
+    of each target fragment's inner text in the assembled context (aligned to
+    `target_fragments` by index, None if somehow dropped). make_cell turns these
+    into per-question evidence locations for the location->accuracy analysis.
+    """
+    distractor_blocks, used_ids, repeated = _fill_distractor_blocks(
+        entries, loader, filler_chars, sep, rng, wrapper)
+
+    inner = len(wrapper.open(target_id, target_title))  # block-start -> inner text
+    # Tag each block so we can recover where the target fragments landed after the
+    # shuffle: frag_index >= 0 for a target fragment, -1 for a distractor.
+    items = [(idx, wrapper.block(target_id, target_title, frag))
+             for idx, frag in enumerate(target_fragments)]
+    items += [(-1, blk) for blk in distractor_blocks]
+    rng.shuffle(items)
+
+    fragment_offsets: list[int | None] = [None] * len(target_fragments)
+    parts: list[str] = []
+    offset = 0
+    for k, (idx, blk) in enumerate(items):
+        if k > 0:
+            offset += len(sep)
+        if idx >= 0:
+            fragment_offsets[idx] = offset + inner
+        parts.append(blk)
+        offset += len(blk)
+    context = sep.join(parts)
+
+    present = [o for o in fragment_offsets if o is not None]
+    target_offset = min(present) if present else 0
+    return {
+        "context": context,
+        "target_offset": target_offset,                 # closest target fragment
+        "target_end": max(present) if present else 0,   # no single contiguous span
+        "distractor_ids": used_ids,
+        "filler_repeated": repeated,
+        "num_target_fragments": len(target_fragments),
+        "fragment_offsets": fragment_offsets,
     }
 
 
@@ -570,7 +660,135 @@ def maud_legal_pool(by_contract: dict, contracts_dir: Path, target_id: str):
     return ids, load
 
 
-def maud_enrich_questions(raw_questions: list[dict]) -> list[dict]:
+def _maud_source_title(contracts_dir: Path, name: str, cache: dict) -> str:
+    """Derived agreement title for a fragment's SOURCE contract (cached).
+
+    Each fragment is titled by the whole agreement it was excerpted from, so every
+    block in the window reads as a real, separable document. We only need the head
+    for derive_title, but a plain read + cache keeps it simple; a missing file
+    falls back to the id rather than aborting the whole build (the loud failure
+    path is the TARGET read, not a distractor's).
+    """
+    if name not in cache:
+        path = contracts_dir / f"{name}.txt"
+        if path.exists():
+            text = path.read_text(encoding="utf-8", errors="ignore").lstrip("﻿")
+            cache[name] = derive_title(text, name)
+        else:
+            cache[name] = name
+    return cache[name]
+
+
+def maud_fragment_pool(rows: list[dict], by_contract: dict, contracts_dir: Path,
+                       target: dict, title_cache: dict):
+    """(entries, loader) of CLAUSE FRAGMENTS from OTHER agreements (the default).
+
+    Each distractor is a single CSV `text` excerpt wrapped as its own <DOCUMENT>,
+    so a budget fills with MANY small distractors (a noisier, more realistic
+    window) instead of the 1–8 whole agreements the lazy pool yields. The pool
+    excludes:
+      * the target agreement's own rows, and
+      * any fragment whose (question, answer) reproduces one of the target's gold
+        answers for a SCORED question — so no other document in the window hands
+        the model a correct answer (the failure mode whole-document filler had,
+        where a shared question/answer let the model read the right answer off the
+        wrong doc).
+    Fragments sharing a different answer for the SAME question are KEPT on purpose:
+    a document asserting a CONFLICTING answer is the strongest, most realistic
+    distractor. Identical excerpts are de-duplicated; each fragment is wrapped as a
+    <DOCUMENT> under its SOURCE agreement's id + title — so, exactly like the
+    fragmented target, one source agreement appears as SEVERAL same-id clause
+    blocks scattered through the window, and every block is structurally symmetric
+    with the target's. The model singles out the TARGET by the id named in the
+    prompt, not by any surface tell.
+
+    `entries` are eager (the whole CSV text column is only a few MB); the loader
+    resolves the source title on demand.
+    """
+    target_id = target["id"]
+    asked = {q["question"] for q in target["questions"]}
+    # The target's own (question, answer) golds for the scored questions, compared
+    # on raw answer strings (so multi-select COMBINATION answers match cleanly).
+    # Any distractor reproducing one of these would leak a correct answer. We also
+    # collect the target's own answer-bearing excerpts so a clause duplicated
+    # verbatim in another agreement (boilerplate) can't sneak the gold back in.
+    excluded_qa: set[tuple[str, str]] = set()
+    target_texts: set[str] = set()
+    for r in by_contract.get(target_id, []):
+        text = (r.get("text") or "").strip()
+        if text:
+            target_texts.add(text)
+        q = r.get("question", "")
+        if q in asked:
+            a = (r.get("answer") or "").strip().lower()
+            if a:
+                excluded_qa.add((q, a))
+
+    # De-duplicate by excerpt FIRST, accumulating every (question, answer) a given
+    # excerpt evidences, then exclude the excerpt if ANY of those pairs reproduces a
+    # target gold (or the excerpt is verbatim target text). Per-row filtering alone
+    # leaks, because one clause can answer several questions and only one of them
+    # needs to match — the model would read the right answer off that clause.
+    order: list[str] = []                       # first-seen order of distinct texts
+    src_of: dict[str, str] = {}                 # text -> source contract (first seen)
+    qa_of: dict[str, set] = {}                  # text -> {(question, answer_norm)}
+    for r in rows:
+        name = r.get("contract_name", "")
+        if not name or name.startswith("<") or name == target_id:
+            continue
+        text = (r.get("text") or "").strip()
+        if not text:
+            continue
+        if text not in src_of:
+            src_of[text] = name
+            qa_of[text] = set()
+            order.append(text)
+        qa_of[text].add((r.get("question", ""),
+                         (r.get("answer") or "").strip().lower()))
+
+    entries: list[tuple[str, str]] = []        # (source_contract, text)
+    for text in order:
+        if text in target_texts:
+            continue
+        if any(pair in excluded_qa for pair in qa_of[text]):
+            continue
+        entries.append((src_of[text], text))
+
+    def load(handle):
+        source, text = handle
+        return source, _maud_source_title(contracts_dir, source, title_cache), text
+
+    return entries, load
+
+
+def load_natural_questions(path: Path) -> dict[str, str]:
+    """original question text -> natural-language rewrite, from a JSON sidecar.
+
+    The sidecar mirrors show_questions' unique_questions.json (a {"questions":[...]}
+    wrapper, or a bare list of records) with an added `natural_question` per record.
+    We key each rewrite by the record's ORIGINAL `question` text so it maps onto
+    MAUD's raw question strings regardless of qa_id ordering. A missing/empty file
+    (or a record lacking a non-empty `natural_question`) contributes nothing — the
+    build then falls back to the original phrasing for those questions, so the
+    feature degrades quietly until the sidecar is filled in.
+    """
+    if not path or not path.exists() or path.stat().st_size == 0:
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    records = data.get("questions", []) if isinstance(data, dict) else data
+    mapping: dict[str, str] = {}
+    for rec in records:
+        if not isinstance(rec, dict):
+            continue
+        original = (rec.get("question") or "").strip()
+        natural = (rec.get("natural_question") or "").strip()
+        if original and natural:
+            mapping[original] = natural
+    return mapping
+
+
+def maud_enrich_questions(raw_questions: list[dict],
+                          natural_map: dict[str, str] | None = None) -> list[dict]:
     """Attach opaque qa_ids + a SQuAD-shaped mirror for the shared run pipeline.
 
     MAUD is closed-set MULTIPLE CHOICE: every question is answerable and is scored
@@ -578,7 +796,14 @@ def maud_enrich_questions(raw_questions: list[dict]) -> list[dict]:
     always False. A safe-negative answer ("No"/"None"/"N/A") is simply one of the
     options; `is_negative` is kept as an informative flag, and its presence is
     what lets the missing_answer modality build.
+
+    `natural_map` (if given) maps a raw MAUD question to its natural-language
+    rewrite; the rewrite becomes the model-facing `question` while the raw text is
+    preserved as `source_question`. Only the prompt wording changes — options,
+    golds, and scoring are untouched — so a question with no rewrite simply keeps
+    its original phrasing.
     """
+    natural_map = natural_map or {}
     enriched = []
     for i, q in enumerate(raw_questions, 1):
         # A handful of MAUD questions are SELECT-ALL-THAT-APPLY masquerading as
@@ -591,10 +816,12 @@ def maud_enrich_questions(raw_questions: list[dict]) -> list[dict]:
         # `answers` mirrors the gold into the CUAD-shaped field; for scoring it is
         # `answer_options` + `gold_answers` (the atoms, for multi-select) that count.
         answers = [{"text": a} for a in golds] or [{"text": ""}]
+        original_q = q["question"]
+        shown_q = natural_map.get(original_q, original_q)
         enriched.append({
             "qa_id": f"q{i:02d}",
             "category": q["category"],
-            "question": q["question"],
+            "question": shown_q,
             "answer_type": "multi_select" if multi else "multiple_choice",
             "gold_answers": golds,
             "gold_labels": q["gold_labels"],
@@ -603,7 +830,7 @@ def maud_enrich_questions(raw_questions: list[dict]) -> list[dict]:
             # extras (additive): real-run aids + CUAD-pipeline compatibility.
             "answer_options": q.get("answer_options", golds),
             "subquestions": q["subquestions"],
-            "source_question": q["question"],
+            "source_question": original_q,
             "answers": answers,
         })
     return enriched
@@ -634,7 +861,8 @@ def maud_select_targets(by_contract: dict, all_rows: list[dict], contracts_dir: 
                         seed: int, contracts: list[str] | None,
                         doc_indices: list[int] | None, num_documents: int,
                         max_questions: int | None, min_negatives: int,
-                        negatives_mode: str) -> list[dict]:
+                        negatives_mode: str,
+                        natural_map: dict[str, str] | None = None) -> list[dict]:
     """Pick N agreements as targets and build each one's fixed question set.
 
     Documents are chosen deterministically from `seed`; explicit `contracts`
@@ -673,14 +901,16 @@ def maud_select_targets(by_contract: dict, all_rows: list[dict], contracts_dir: 
     options = answer_options_map(all_rows)
     ms_options = multiselect_options_map(all_rows)
     return [_maud_build_target(by_contract, names, contracts_dir, seed, name, options,
-                               ms_options, max_questions, min_negatives, negatives_mode)
+                               ms_options, max_questions, min_negatives, negatives_mode,
+                               natural_map)
             for name in chosen_names]
 
 
 def _maud_build_target(by_contract: dict, names: list[str], contracts_dir: Path,
                        seed: int, name: str, options: dict, ms_options: dict,
                        max_questions: int | None, min_negatives: int,
-                       negatives_mode: str) -> dict:
+                       negatives_mode: str,
+                       natural_map: dict[str, str] | None = None) -> dict:
     """Build one target agreement's fixed, capped, enriched question set."""
     text = read_contract_text(contracts_dir, name)
     title = derive_title(text, name)
@@ -706,13 +936,35 @@ def _maud_build_target(by_contract: dict, names: list[str], contracts_dir: Path,
     # documents don't share a draw and each subset is reproducible from --seed.
     sel_rng = random.Random(stable_seed(seed, "choose_questions", name))
     chosen = _maud_choose_questions(sel_rng, raw_questions, max_questions, min_negatives)
-    questions = maud_enrich_questions(chosen)
+    questions = maud_enrich_questions(chosen, natural_map)
 
     # Safe negatives gate the missing_answer modality. They are normal MC options
     # now (not impossible), so count them via is_negative; --negatives none
     # suppresses the gate (and thus the missing_answer modality).
     num_negatives = (sum(1 for q in questions if q["is_negative"])
                      if negatives_mode == "auto" else 0)
+
+    # Fragment-mode representation of the target: its OWN distinct clause excerpts
+    # (cell-independent), plus a map from each scored qa_id to the fragment indices
+    # that carry its answer evidence. build_fragment_cell_context later disperses
+    # these fragments and reports where each landed, so make_cell can record the
+    # per-question location for the location->accuracy analysis. Whole-document mode
+    # (--full-documents) ignores both fields.
+    fragments: list[str] = []
+    frag_idx: dict[str, int] = {}
+    q_text_to_frags: dict[str, list[int]] = {}
+    for r in by_contract[name]:
+        t = (r.get("text") or "").strip()
+        if not t:
+            continue
+        if t not in frag_idx:
+            frag_idx[t] = len(fragments)
+            fragments.append(t)
+        q_text_to_frags.setdefault(r.get("question", ""), [])
+        if frag_idx[t] not in q_text_to_frags[r.get("question", "")]:
+            q_text_to_frags[r.get("question", "")].append(frag_idx[t])
+    question_evidence = {q["qa_id"]: sorted(q_text_to_frags.get(q["question"], []))
+                         for q in questions}
 
     return {
         "id": name,
@@ -723,6 +975,9 @@ def _maud_build_target(by_contract: dict, names: list[str], contracts_dir: Path,
         "questions": questions,
         "num_positives": len(questions) - num_negatives,
         "num_negatives": num_negatives,
+        "fragments": fragments,
+        "num_fragments": len(fragments),
+        "question_evidence": question_evidence,
     }
 
 
@@ -744,6 +999,15 @@ class Builder:
     def select_targets(self, args, ctx, doc_indices, contracts) -> list[dict]: raise NotImplementedError
     def legal_pool(self, ctx, target): raise NotImplementedError
 
+    def assemble(self, target: dict, entries: list, loader, filler_chars: int,
+                 sep: str, rng: random.Random) -> dict:
+        """Assemble one cell's context. Default: the FULL target at the front,
+        distractor filler after it. MAUD overrides this in fragment mode to split
+        the target into clause fragments and disperse them among the distractors."""
+        return build_cell_context(target["id"], target.get("title", ""),
+                                  target["text"], entries, loader, filler_chars,
+                                  sep, rng, self.wrapper)
+
     def focus(self, modality: str) -> str:
         """Primary scoring focus per modality (recorded for the eval step)."""
         raise NotImplementedError
@@ -763,6 +1027,10 @@ class Builder:
     def manifest_extra(self, args) -> dict:
         """Dataset-specific manifest fields layered on the shared base."""
         return {}
+
+    def filler_mode_note(self) -> str | None:
+        """One-line description of the confusable-filler source (printed once)."""
+        return None
 
 
 class CuadBuilder(Builder):
@@ -801,7 +1069,10 @@ class CuadBuilder(Builder):
 class MaudBuilder(Builder):
     name = "maud"
     wrapper = DocWrapper("DOCUMENT", with_title=True)
-    legal_source = "maud-other-agreements"
+    legal_source = "maud-other-fragments"
+    # Filler mode is decided per-run from --full-documents (set in load()); the
+    # title cache is shared across every target document in the run.
+    full_documents = False
 
     def file(self, args): return args.maud_file
     def out(self, args): return args.maud_out
@@ -811,18 +1082,46 @@ class MaudBuilder(Builder):
         by_contract = group_by_contract(rows)
         if not by_contract:
             raise SystemExit(f"error: no contracts found in {args.maud_file}")
+        self.full_documents = bool(args.full_documents)
+        self.legal_source = ("maud-other-agreements" if self.full_documents
+                             else "maud-other-fragments")
+        self._title_cache: dict = {}
+        # Natural-language question rewrites (optional): map raw question -> natural
+        # phrasing, applied at enrichment so the model sees the natural wording.
+        # Empty/missing sidecar => fall back to the original MAUD phrasing.
+        self._natural_map = load_natural_questions(args.maud_natural_questions)
+        if self._natural_map:
+            print(f"  natural questions: {len(self._natural_map)} rewrite(s) "
+                  f"from {args.maud_natural_questions}")
+        else:
+            print(f"  natural questions: none at {args.maud_natural_questions}; "
+                  f"using original MAUD phrasing")
         return {"rows": rows, "by_contract": by_contract}
 
     def select_targets(self, args, ctx, doc_indices, contracts) -> list[dict]:
         return maud_select_targets(
             ctx["by_contract"], ctx["rows"], args.maud_contracts_dir, args.seed,
             contracts, doc_indices, args.num_documents, args.max_questions,
-            args.min_negatives, args.maud_negatives)
+            args.min_negatives, args.maud_negatives, self._natural_map)
 
     def legal_pool(self, ctx, target):
         # contracts_dir is stashed on ctx by run_build so the pool can be rebuilt
         # per document without threading args through the shared driver.
-        return maud_legal_pool(ctx["by_contract"], ctx["contracts_dir"], target["id"])
+        if self.full_documents:
+            return maud_legal_pool(ctx["by_contract"], ctx["contracts_dir"],
+                                   target["id"])
+        return maud_fragment_pool(ctx["rows"], ctx["by_contract"],
+                                  ctx["contracts_dir"], target, self._title_cache)
+
+    def assemble(self, target, entries, loader, filler_chars, sep, rng):
+        # Fragment mode (default): split the target into its clause excerpts and
+        # disperse them among the distractor fragments. --full-documents keeps the
+        # whole target at the front (the shared base behavior).
+        if self.full_documents:
+            return super().assemble(target, entries, loader, filler_chars, sep, rng)
+        return build_fragment_cell_context(
+            target["id"], target.get("title", ""), target["fragments"],
+            entries, loader, filler_chars, sep, rng, self.wrapper)
 
     def focus(self, modality):
         return "labels"  # MAUD cells score label/answer match, per the task spec.
@@ -846,7 +1145,18 @@ class MaudBuilder(Builder):
             "contracts_dir": str(args.maud_contracts_dir),
             "data_type": args.maud_data_type,
             "negatives_mode": args.maud_negatives,
+            "full_documents": bool(args.full_documents),
+            "filler_mode": "whole-agreements" if args.full_documents else "fragments",
+            "natural_questions_file": str(args.maud_natural_questions),
+            "natural_questions_applied": len(getattr(self, "_natural_map", {})),
         }
+
+    def filler_mode_note(self):
+        if self.full_documents:
+            return ("  confusion filler: WHOLE other agreements "
+                    "(--full-documents; 1–8 large distractors)")
+        return ("  confusion filler: clause FRAGMENTS from other agreements "
+                "(many distractors; target gold answers excluded)")
 
 
 # =========================================================================== #
@@ -857,10 +1167,12 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
               baseline: bool = False) -> dict:
     """Build one prepared-context record (schema shared across datasets).
 
-    `budget` is the amount of rot/confusion FILLER (in tokens) to add after the
-    full target — the independent variable, not a cap on the window. The target is
-    always kept whole and placed at the front. baseline=True forces zero filler and
-    a `d{doc_index:03d}_baseline` cell id (modality is passed as "baseline"); it is
+    `budget` is the amount of rot/confusion FILLER (in tokens) to add around the
+    probe — the independent variable, not a cap on the window. In the default
+    (whole-target) path the target is kept whole at the front; in MAUD fragment
+    mode it is split into clause fragments dispersed among the distractors (the
+    builder's `assemble` decides). baseline=True forces zero filler and a
+    `d{doc_index:03d}_baseline` cell id (modality is passed as "baseline"); it is
     the single shared anchor for both rot and confusion. The cell id carries a
     `d{doc_index:03d}` prefix so cells stay unique across the target documents.
     """
@@ -878,13 +1190,14 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
         entries, loader = legal_pool
         source = builder.legal_source
 
-    built = build_cell_context(target["id"], target.get("title", ""), target["text"],
-                               entries, loader, filler_chars, sep, rng, builder.wrapper)
+    built = builder.assemble(target, entries, loader, filler_chars, sep, rng)
 
     prefix = f"d{target['doc_index']:03d}"
     cell_id = (f"{prefix}_baseline" if baseline
                else f"{prefix}_{modality}_b{budget}")
-    return {
+    actual_chars = len(built["context"])
+    actual_tokens = count_tokens(built["context"])
+    cell = {
         "cell_id": cell_id,
         "dataset": builder.name,
         "doc_index": target["doc_index"],
@@ -892,18 +1205,44 @@ def make_cell(builder: Builder, target: dict, modality: str, budget: int,
         "focus": builder.focus(modality),
         "budget_tokens": 0 if baseline else budget,  # rot/confusion filler tokens
         "is_baseline": baseline,
-        "actual_tokens": count_tokens(built["context"]),
-        "actual_chars": len(built["context"]),
+        "actual_tokens": actual_tokens,
+        "actual_chars": actual_chars,
         "target_document_id": target["id"],
         "target_document_title": target.get("title", ""),
         "distractor_ids": built["distractor_ids"],
         "target_offset": built["target_offset"],
-        "target_end": built["target_offset"] + len(target["text"]),
+        "target_end": built.get("target_end", built["target_offset"] + len(target["text"])),
         "filler_source": source,
         "filler_repeated": built["filler_repeated"],
         "context": built["context"],
         "questions": target["questions"],
     }
+
+    # Fragmented-target cells carry per-question evidence LOCATIONS so a later
+    # analysis can correlate where a question's answer fragment landed against
+    # whether the model got it right (location -> accuracy). `min_frac` is the
+    # closest evidence fragment's position through the window (0=front, 1=end);
+    # tokens_from_start/end give absolute distance to the front and to the query
+    # (which run_models appends AFTER the context, so from-end ~ retrieval distance).
+    if "fragment_offsets" in built:
+        offs = built["fragment_offsets"]
+        cell["num_target_fragments"] = built["num_target_fragments"]
+        locations = {}
+        for q in target["questions"]:
+            ev = [offs[i] for i in target.get("question_evidence", {}).get(q["qa_id"], [])
+                  if i < len(offs) and offs[i] is not None]
+            if not ev:
+                continue
+            nearest = min(ev)
+            locations[q["qa_id"]] = {
+                "char_offsets": sorted(ev),
+                "min_char_offset": nearest,
+                "min_frac": round(nearest / actual_chars, 4) if actual_chars else None,
+                "min_tokens_from_start": nearest // CHARS_PER_TOKEN,
+                "min_tokens_from_end": max(0, actual_tokens - nearest // CHARS_PER_TOKEN),
+            }
+        cell["question_locations"] = locations
+    return cell
 
 
 def run_build(builder: Builder, args, count_tokens, requested: list[str],
@@ -932,6 +1271,10 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
     if "rot" in requested:
         print(f"  rot filler: {len(rot_pool[0])} random story sections "
               f"from {args.rot_dir}")
+    if any(m in ("confusion", "missing_answer") for m in requested):
+        note = builder.filler_mode_note()
+        if note:
+            print(note)
 
     cells_meta = []
     cells_dir = out / "cells"
@@ -939,9 +1282,10 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
         cells_dir.mkdir(parents=True, exist_ok=True)
 
     # Per document: ONE shared zero-filler baseline (if any interference modality
-    # is requested), then each modality's budget interference grid (target always
-    # at the FRONT, filler after it). The legal distractor pool excludes the
-    # current target, so it is rebuilt per document.
+    # is requested), then each modality's budget interference grid (whole target at
+    # the FRONT, or — MAUD fragment mode — target clauses dispersed among the
+    # filler). The legal distractor pool excludes the current target, so it is
+    # rebuilt per document.
     print(f"\nGenerating cells for {len(targets)} document(s):")
     for target in targets:
         modalities, note = builder.modalities_for(target, requested)
@@ -972,12 +1316,14 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
             if cell["filler_repeated"]:
                 flags.append("filler-repeated")
             flag_str = ("  [" + ", ".join(flags) + "]") if flags else ""
+            tgt_frags = (f" + {cell['num_target_fragments']} target frags"
+                         if "num_target_fragments" in cell else "")
             print(f"    {cell['cell_id']:32} "
                   f"{cell['actual_tokens']:>9,} tok  "
-                  f"{len(cell['distractor_ids']):>3} distractors{flag_str}")
+                  f"{len(cell['distractor_ids']):>3} distractors{tgt_frags}{flag_str}")
 
             meta = {k: v for k, v in cell.items()
-                    if k not in ("context", "questions")}
+                    if k not in ("context", "questions", "question_locations")}
             if not args.dry_run:
                 path = cells_dir / f"{cell['cell_id']}.json"
                 path.write_text(json.dumps(cell, ensure_ascii=False, indent=2),
@@ -994,7 +1340,8 @@ def run_build(builder: Builder, args, count_tokens, requested: list[str],
         "doc_separator": DOC_SEPARATOR,
         "num_documents": len(targets),
         "doc_indices": [t["doc_index"] for t in targets],
-        "targets": [{k: v for k, v in t.items() if k != "text"} for t in targets],
+        "targets": [{k: v for k, v in t.items() if k not in ("text", "fragments")}
+                    for t in targets],
         "modalities": requested,
         "budgets": budgets,
         "baseline_modalities": [m for m in requested if m in builder.baseline_modalities],
@@ -1077,10 +1424,24 @@ def main() -> None:
                              f"(default: {MAUD_DEFAULT_CONTRACTS})")
     parser.add_argument("--maud-data-type", default=MAUD_DEFAULT_DATA_TYPE,
                         help=f"MAUD row split to use (default: {MAUD_DEFAULT_DATA_TYPE})")
+    parser.add_argument("--maud-natural-questions", type=Path,
+                        default=MAUD_DEFAULT_NATURAL_QUESTIONS,
+                        help=f"JSON of natural-language question rewrites (records "
+                             f"with `question` + `natural_question`); the natural "
+                             f"phrasing replaces the terse MAUD wording shown to the "
+                             f"model. Missing/empty => original phrasing "
+                             f"(default: {MAUD_DEFAULT_NATURAL_QUESTIONS})")
     parser.add_argument("--maud-negatives", choices=("auto", "none"), default="auto",
                         help="MAUD only: auto maps No/None/N/A answers to safe "
                              "negatives (enables missing_answer); none treats every "
                              "question as answerable.")
+    parser.add_argument("--full-documents", action="store_true",
+                        help="MAUD only: build confusion/missing_answer filler from "
+                             "WHOLE other agreements (the original behavior, 1–8 "
+                             "large distractors). Default OFF — filler is built from "
+                             "many small clause FRAGMENTS (the CSV `text` column), "
+                             "each its own <DOCUMENT>, excluding any fragment that "
+                             "reproduces a target gold answer. CUAD ignores this.")
     parser.add_argument("--contracts", nargs="+", default=None,
                         help="MAUD only: explicit contract_name(s) to target "
                              "(overrides random selection; requires --dataset maud)")

@@ -108,8 +108,8 @@ ALIASES = {
     "glm5": "glm", "glm-5.2": "glm",
 }
 # Cheapest model for prototyping (reuse-base-procedure card).
-PROTOTYPE: tuple[str, str] = ("deepseek-flash", "deepseek/deepseek-v4-flash")
-# PROTOTYPE: tuple[str, str] = ("mimo-2.5", "xiaomi/mimo-v2.5")
+# PROTOTYPE: tuple[str, str] = ("deepseek-flash", "deepseek/deepseek-v4-flash")
+PROTOTYPE: tuple[str, str] = ("mimo-2.5", "xiaomi/mimo-v2.5")
 # PROTOTYPE: tuple[str, str] = ("nemotron3", "nvidia/nemotron-3-ultra-550b-a55b:free")
 DEFAULT_MODELS = ("claude", "chatgpt", "gemini", "deepseek", "nemotron", "mimo", "glm")
 
@@ -758,7 +758,7 @@ def main() -> None:
                              "not a spend — but reasoning models burn it on hidden "
                              "thinking, so it must cover reasoning + the JSON answer "
                              "or you get an empty 'content'.")
-    parser.add_argument("--temperature", type=float, default=0.0)
+    parser.add_argument("--temperature", type=float, default=1.0)
     parser.add_argument("--reasoning-effort",
                         choices=("low", "medium", "high", "none"), default=None,
                         help="control reasoning models' thinking budget via "
