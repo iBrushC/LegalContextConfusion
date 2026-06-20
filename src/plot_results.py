@@ -376,29 +376,29 @@ def plot_position_accuracy(points_by, models, modalities, colors, out: Path,
     dots behind the line so the binning and sample density stay visible.
     """
     fig, axes = plt.subplots(1, len(modalities),
-                             figsize=(5.2 * len(modalities), 4.4), squeeze=False)
+                             figsize=(4.6 * len(modalities), 4.6), squeeze=False)
+    total_n = 0
     for ax, modality in zip(axes[0], modalities):
         for model in models:
             pts = points_by.get((model, modality))
             if not pts:
                 continue
+            total_n += len(pts)
             xs = [p[0] for p in pts]
             ys = [p[1] for p in pts]
             ax.scatter(xs, ys, s=10, color=colors[model], alpha=0.10, linewidths=0)
             cx, cy, ns = _bin_means(pts, nbins)
             if len(cx):
                 ax.plot(cx, cy, marker="o", color=colors[model], linewidth=2,
-                        markersize=4, label=f"{model} (n={len(pts)})")
-        ax.set_title(modality)
+                        markersize=4)
         ax.set_xlabel("evidence position in window (0 = front, 1 = end)")
         ax.set_ylabel("per-question accuracy")
         ax.set_xlim(-0.02, 1.02)
         ax.set_ylim(-0.02, 1.05)
+        ax.set_box_aspect(1)
         ax.grid(True, alpha=0.3)
-    _shared_legend(fig, axes[0])
-    fig.suptitle("MAUD accuracy vs. evidence position in context window  "
-                 f"(binned mean per model, {nbins} bins; faint dots = individual "
-                 "questions)", y=1.04, fontsize=12)
+    fig.suptitle(f"Accuracy vs Info Position in Context (n={total_n})",
+                fontsize=13)
     fig.tight_layout()
     fig.savefig(out, dpi=dpi, bbox_inches="tight")
     plt.close(fig)
