@@ -511,13 +511,27 @@ def run_cell_model(cell: dict, slug: str, batches: list[list[dict]],
 # --------------------------------------------------------------------------- #
 # Cell loading + resume
 # --------------------------------------------------------------------------- #
-def load_cells(prepared: Path, limit: int | None) -> list[Path]:
+def load_cells(prepared: Path, limit: int | None,
+               no_baseline: bool = False) -> list[Path]:
+    """Cell paths to run, in manifest order (falling back to a sorted glob).
+
+    With no_baseline=True the zero-filler baseline cells (`d###_baseline`,
+    is_baseline=True) are dropped, so the run is a pure long-context sweep with
+    nothing to anchor a degradation curve against — used to study position in
+    context vs question accuracy on its own. The manifest carries is_baseline per
+    cell; the glob fallback keys off the `_baseline` cell-id suffix instead.
+    """
     manifest = prepared / "manifest.json"
     if manifest.exists():
         meta = json.loads(manifest.read_text(encoding="utf-8"))
-        paths = [Path(c["path"]) for c in meta.get("cells", []) if c.get("path")]
+        cells = meta.get("cells", [])
+        if no_baseline:
+            cells = [c for c in cells if not c.get("is_baseline")]
+        paths = [Path(c["path"]) for c in cells if c.get("path")]
     else:
         paths = sorted((prepared / "cells").glob("*.json"))
+        if no_baseline:
+            paths = [p for p in paths if not p.stem.endswith("_baseline")]
     if not paths:
         raise SystemExit(
             f"error: no cells found under {prepared}. Run build_context.py first."
@@ -577,7 +591,7 @@ def process_dataset(dataset: str, args, models: list[tuple[str, str]],
     """Plan + run one dataset, writing its results to data/results_<dataset>/."""
     prepared = args.prepared or prepared_dir(dataset)
     out = args.out or results_dir(dataset)
-    cell_paths = load_cells(prepared, args.limit)
+    cell_paths = load_cells(prepared, args.limit, args.no_baseline)
     total = len(models) * len(cell_paths) * args.runs
 
     print(f"\n=== {dataset.upper()} — {prepared} -> {out} ===")
@@ -586,8 +600,10 @@ def process_dataset(dataset: str, args, models: list[tuple[str, str]],
         print(f"  {name:12} {slug}")
     batch_desc = "all" if args.question_batch_size <= 0 else args.question_batch_size
     reason_desc = f"   Reasoning: {args.reasoning_effort}" if args.reasoning_effort else ""
+    baseline_desc = "   Baseline: EXCLUDED" if args.no_baseline else ""
     print(f"Cells: {len(cell_paths)}   Runs/cell: {args.runs}   "
-          f"Questions/request: {batch_desc}   Total cell-runs: {total}{reason_desc}")
+          f"Questions/request: {batch_desc}   "
+          f"Total cell-runs: {total}{reason_desc}{baseline_desc}")
 
     if args.dry_run:
         first = json.loads(cell_paths[0].read_text(encoding="utf-8"))
@@ -751,6 +767,11 @@ def main() -> None:
                         help="multiruns per cell for mean+/-stdev (default: 1)")
     parser.add_argument("--limit", type=int, default=None,
                         help="cap number of cells (cheap testing)")
+    parser.add_argument("--no-baseline", action="store_true",
+                        help="skip the zero-filler baseline cells and run only "
+                             "the long-context cells — a pure position-in-context "
+                             "vs accuracy sweep with no degradation anchor "
+                             "(intended for the MAUD dataset)")
     parser.add_argument("--question-batch-size", type=int, default=0,
                         help="questions per request (0 = all in one; e.g. 5)")
     parser.add_argument("--max-tokens", type=int, default=16000,
